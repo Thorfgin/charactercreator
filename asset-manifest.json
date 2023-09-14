@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/charactercreator/static/css/main.9d1458b7.css",
+    "main.js": "/charactercreator/static/js/main.bb12ff9b.js",
+    "static/js/787.77ec2231.chunk.js": "/charactercreator/static/js/787.77ec2231.chunk.js",
+    "index.html": "/charactercreator/index.html",
+    "main.9d1458b7.css.map": "/charactercreator/static/css/main.9d1458b7.css.map",
+    "main.bb12ff9b.js.map": "/charactercreator/static/js/main.bb12ff9b.js.map",
+    "787.77ec2231.chunk.js.map": "/charactercreator/static/js/787.77ec2231.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d1458b7.css",
+    "static/js/main.bb12ff9b.js"
+  ]
+}
