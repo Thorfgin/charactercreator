@@ -40,6 +40,12 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+/**
+ * @preserve Bug.js - https://github.com/Auz/Bug
+ * Released under MIT-style license.
+ * Original Screen Bug http://screen-bug.googlecode.com/git/index.html
+ */
+
 /** @license React v16.13.1
  * react-is.production.min.js
  *
