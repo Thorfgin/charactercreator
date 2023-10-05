@@ -1,11 +1,12 @@
 {
   "name": "charactercreator",
-  "version": "2023 v0.16-alpha",
-  "ruleset_version": "2023-10", 
+  "version": "2023 v0.17-alpha",
+  "ruleset_version": "2023-10",
   "creator": "Design by Deprecated Dodo",
   "private": true,
   "homepage": ".",
   "dependencies": {
+    "@sentry/react": "^7.73.0",
     "fs": "^0.0.1-security",
     "gh-pages": "^6.0.0",
     "kill-port": "^2.0.1",

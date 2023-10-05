@@ -6,7 +6,6 @@ import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import Tooltip from './tooltip.js';
 import Toolbar from './toolbar.js';
 import ModalMessage from './modalmessage.js'
-import BugReportForm from './bugReport.js'
 import FileUploadModal from './fileupload.js'
 import LoadCharacterModal from './loadcharacter.js'
 
@@ -25,7 +24,29 @@ import vaardigheden from './json/vaardigheden.json';
 import spreuken from './json/spreuken.json';
 import recepten from './json/recepten.json';
 import packageInfo from '../package.json';
+import * as Sentry from "@sentry/react";
 import './App.css';
+
+
+// Sentry activeren
+Sentry.init({
+    dsn: "https://c46c4a1529354a5e6cb900e73da17033@o4505997486915584.ingest.sentry.io/4505997516210176",
+    integrations: [
+        new Sentry.BrowserTracing({
+            tracePropagationTargets: [
+                "localhost",
+                /^http:\/\/localhost:3000/,
+                /^https:\/\/thorfgin\.github\.io\/charactercreator\//],
+        }),
+        new Sentry.Replay(),
+    ],
+    // Performance Monitoring
+    tracesSampleRate: 0.5, // Capture 100% of the transactions, reduce in production!
+
+    // Session Replay
+    replaysSessionSampleRate: 0.1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
+    replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
+});
 
 export let totalXP = 0; // Berekende totaal waarde
 
@@ -528,7 +549,6 @@ export default function App() {
     const [isChecked, setIsChecked] = useState(getInitialData(false, false, true));
     const [MAX_XP, setMAX_XP] = useState(getInitialData(false, true, false));
     const [showModal, setShowModal] = useState(false);
-    const [showBugModal, setShowBugModal] = useState(false);
     const [showUploadModal, setShowUploadModal] = useState(false);
     const [showLoadCharacterModal, setShowLoadCharacterModal] = useState(false);
     const [modalMsg, setModalMsg] = useState("");
@@ -784,10 +804,6 @@ export default function App() {
         setTableData(updatedTableData);
     };
 
-    function showBugReport() {
-        setShowBugModal(true);
-    }
-
     function showDisclaimer() {
         setModalMsg(
             "De character creator geeft een indicatie van de mogelijkheden.\n " +
@@ -800,7 +816,6 @@ export default function App() {
     }
 
     const closeModal = () => { setShowModal(false); };
-    const closeBugModal = () => { setShowBugModal(false); };
     const closeUploadModal = () => { setShowUploadModal(false); };
     const closeLoadCharacterModal = () => { setShowLoadCharacterModal(false); };
 
@@ -882,10 +897,6 @@ export default function App() {
                         modalMsg={modalMsg}
                         closeModal={closeModal}/>
                     )}              
-                    {showBugModal && (
-                        <BugReportForm
-                            closeModal={closeBugModal} />
-                    )}
                     {showUploadModal && (
                         <FileUploadModal
                             closeModal={closeUploadModal}
@@ -964,7 +975,7 @@ export default function App() {
                 <div>{packageInfo.creator}{'\u2122'}</div>
                 <div>
                     <label className="disclaimer" onClick={showDisclaimer}>Disclaimer</label>
-                    <label className="bugreport" onClick={showBugReport}>Bug melden</label>
+                    <label className="faq" onClick={console.log("OK")}>F.A.Q.</label>
                 </div>
 
             </footer>

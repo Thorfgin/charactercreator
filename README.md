@@ -22,6 +22,9 @@
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	DONE:
+	20231005	BUGREPORT: removed the option, in favor of SENTRY implementation
+			FAQ: added a FAQ page to answer some common questions
+
 	20231004	RULESET_VERSION: futureproofing - added support to check on the ruleset version.
 			generic fixes: seperated some components and functions for maintainability
 			EXPORT BUILD: Export the current skillset into a downloadable file
