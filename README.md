@@ -8,6 +8,7 @@
 	MUST
 
 	SHOULD:
+	- FAQ: add a set of FAQ to save time
 
 	COULD:
 	- PREREQUISITES: add button to remove all skills that have it as a prerequisite.
