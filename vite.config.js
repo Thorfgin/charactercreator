@@ -9,6 +9,12 @@ export default defineConfig({
     publicDir: 'public',
     build: {
         copyPublicDir: true,
+        rollupOptions: {
+            input: {
+                main: './src/main.jsx',
+                editor: './src/editor.jsx',
+            },
+        },
     },
 
     // Enable CSS support

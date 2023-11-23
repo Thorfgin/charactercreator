@@ -12,11 +12,11 @@
 	- LANGUAGE: add English as an option
 
 	SHOULD:
-	- 
+	- JSON EDITOR: create an editor / screen that allows for editing the json files safely.
 
 	COULD:
-	- PREREQUISITES: add button to remove all skills that have it as a prerequisite.
-	
+	- 
+
 	WOULD: 
 	- integration with VOIDWALKER / create new characters
 		> this requires integration on perhaps an API level

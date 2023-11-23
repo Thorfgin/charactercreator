@@ -9,10 +9,7 @@ Sentry.init({
     dsn: "https://c46c4a1529354a5e6cb900e73da17033@o4505997486915584.ingest.sentry.io/4505997516210176",
     integrations: [
         new Sentry.BrowserTracing({
-            tracePropagationTargets: [
-                "localhost",
-                /^http:\/\/localhost:5173/,
-                /^https:\/\/thorfgin\.github\.io\/charactercreator\//],
+            tracePropagationTargets: [/^https:\/\/thorfgin\.github\.io\/charactercreator\//]
         }),
         new Sentry.Replay(),
     ],

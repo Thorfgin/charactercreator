@@ -26,10 +26,7 @@ import {
 } from './SharedObjects.js';
 
 // Components
-import {
-    SpellTile,
-    RecipeTile
-} from './components/GridTileItem.jsx';
+import { SpellTile, RecipeTile } from './components/GridTileItem.jsx';
 import FAQModal from './components/FaqModal.jsx'
 import FileUploadModal from './components/FileUploadModal.jsx'
 import GridEigenschapItem from './components/GridEigenschapItem.jsx';
