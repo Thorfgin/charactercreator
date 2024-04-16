@@ -16,7 +16,7 @@
 	>> DEFECT: jsPDF PubSub Error Font is not stored as string-data in vFS, import fonts or remove declaration doc.addFont('InknutAntiqua-Regular.ttf'). 
 	
 	SHOULD:
-	- FEATURE: Extend the character with a NOTE section to allow players to register remarks, powers/conditions, etc.
+	- FEATURE: Extend the character with a NOTE section to allow players to register remarks, powers/conditions, etc. deze direct mee toegevoegd worden.
 	- LANGUAGE: add English as an option
 
 	COULD:
