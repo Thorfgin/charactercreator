@@ -11,7 +11,7 @@
 	This may cause issues with the saves, because everything is reference by skillname.
 	
 	- FIX: Chromium browser compatibility
-	- CRITICAL FIX: Automatic CNAME listing for the GitHub Pages > or the site goes down
+	- CRITICAL FIX: Automatic CNAME listing for the GitHub Pages > or the site goes down.
 
 	SHOULD:
 	- FEATURE: Extend the character with a NOTE section to allow players to register remarks, powers/conditions, etc.
