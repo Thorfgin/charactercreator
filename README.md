@@ -10,7 +10,7 @@
 	Skills may no be unique in name, for example 'extra wilskracht' exists twice in ExtraVaardigheden
 	This may cause issues with the saves, because everything is reference by skillname.
 	
-	- FIX: Chromium browso compatibility
+	- FIX: Chromium browser compatibility
 
 	SHOULD:
 	- FEATURE: Extend the character with a NOTE section to allow players to register remarks, powers/conditions, etc.
