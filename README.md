@@ -12,7 +12,9 @@
 	
 	- FIX: Chromium browser compatibility
 	- CRITICAL FIX: Automatic CNAME listing for the GitHub Pages > or the site goes down
-
+	- FIX: Ensure Safari can handle the PDF 
+	>> DEFECT: jsPDF PubSub Error Font is not stored as string-data in vFS, import fonts or remove declaration doc.addFont('InknutAntiqua-Regular.ttf'). 
+	
 	SHOULD:
 	- FEATURE: Extend the character with a NOTE section to allow players to register remarks, powers/conditions, etc.
 	- LANGUAGE: add English as an option
