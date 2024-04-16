@@ -35,7 +35,7 @@
 	
 	> APPROVED: Het zou fijn zijn, als je een vaardigheid pakt met hele duidelijke prereqs, zoals Harnas 3, dat hij je dan automatisch Harnas 1 en 2 geeft.
 	
-	> DCELINED: Powers & Conditions beschikbaar maken bij characters. 
+	> DECLINED: Powers & Conditions beschikbaar maken bij characters. 
 
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
