@@ -11,7 +11,6 @@
 	This may cause issues with the saves, because everything is reference by skillname.
 	
 	- FIX: Chromium browser compatibility
-	TEST 
 
 	SHOULD:
 	- FEATURE: Extend the character with a NOTE section to allow players to register remarks, powers/conditions, etc.
