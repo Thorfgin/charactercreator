@@ -9,12 +9,15 @@
 	- FIX: change the way skills are selected, by referencing id instead of skill.
 	Skills may no be unique in name, for example 'extra wilskracht' exists twice in ExtraVaardigheden
 	This may cause issues with the saves, because everything is reference by skillname.
-	- LANGUAGE: add English as an option
+	
+	- FIX: Chromium browso compatibility
 
 	SHOULD:
-	- 
+	- FEATURE: Extend the character with a NOTE section to allow players to register remarks, powers/conditions, etc.
+	- LANGUAGE: add English as an option
 
 	COULD:
+	- PREREQUISITES: add all single-tree prerequisite skills that have are listed as a prerequisite.
 	- PREREQUISITES: add button to remove all skills that have it as a prerequisite.
 	
 	WOULD: 
@@ -22,9 +25,23 @@
 		> this requires integration on perhaps an API level
 		> Needs to be done from within a player portal? Probably requires a Node.js server
 
+
+	PLAYER REQURESTS:
+	> UNDER REVIEW: Als ik een skill wil toevoegen die niet mag (bijvoorbeeld een c skill zonder de B) dan wordt mij niet verteld WAAROM het niet mag.
+	> UNDER REVIEW: De standaard templates knop zou wel iets groter mogen, deze is nu bijna onzichtbaar  (2x)
+	
+	> APPROVED: Het zou fijn zijn, als je een vaardigheid pakt met hele duidelijke prereqs, zoals Harnas 3, dat hij je dan automatisch Harnas 1 en 2 geeft.
+	
+	> DCELINED: Powers & Conditions beschikbaar maken bij characters. 
+
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	DONE
+	20240416	FIX: Kennis van Kruiden inspirition adjusted 3 to 2 inspiration.
+				FIX: Max saved XP cap raised from 2 to 3.
+			FIX: Size of the Recipy panel adjusted so "Minor potion of inspiration of the magi" fits.
+			FIX: Changed the info panel for Spells to show Energy instead of Mana.
+
 	20231106	PRESETS: add a generic text and description per preset explaing the general style of play 
 				for this type of character on Vortex Adventure
 			NEWCHAR: expand the XP warning with a explainatory text on skill shuffle for new players.	
