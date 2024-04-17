@@ -6,7 +6,6 @@
 	TODO:
 
 	CRITICALS:
-	- CRITICAL FIX: Automatic CNAME listing for the GitHub Pages > or the site goes down
 	- CRITICAL FIX: Sentry finding, ensure Safari can handle the PDF.
 	>> DEFECT: jsPDF PubSub Error Font is not stored as string-data in vFS, import fonts or remove declaration doc.addFont('InknutAntiqua-Regular.ttf'). 
 
@@ -17,8 +16,6 @@
 	- LANGUAGE: add multi-language support as an option >> English
 
 	- FIX: Chromium browser compatibility
-	- FIX: Add text '/per Day' to mana gained.
-	- FIX: Change minimum XP to 0, so editing MAX XP on mobile is allowed.
 	- BUG FIX: When skills are sorted and a new skill is added, it is not added in the sorted order.
 	
 	SHOULD:
@@ -65,6 +62,10 @@
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	DONE
+	20240417	CRITICAL FIX: Automatic CNAME listing for the GitHub Pages > or the site goes down
+				FIX: Add text '/per Day' to mana gained.
+				FIX: Change minimum XP to 0, so editing MAX XP on mobile is allowed.
+
 	20240416	FIX: Kennis van Kruiden inspirition adjusted 3 to 2 inspiration.
 				FIX: Max saved XP cap raised from 2 to 3.
 			FIX: Size of the Recipy panel adjusted so "Minor potion of inspiration of the magi" fits.
