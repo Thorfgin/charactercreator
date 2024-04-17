@@ -46,13 +46,15 @@ const columns = [
     { Header: "ID", accessor: "id", className: "col-id" },
     { Header: "Vaardigheid", accessor: "skill", className: "col-vaardigheid" },
     { Header: "XP Kosten", accessor: "xp", className: "col-xp" },
-    {
-        Header: "Loresheet", accessor: "loresheet", className: "col-loresheet", Cell: (table) => {
-            return <LoreSheet pdf={table?.cell?.value?.pdf}></LoreSheet>
+    { Header: "Loresheet", accessor: "loresheet", className: "col-loresheet", Cell: (table) => {
+        return <LoreSheet pdf={table?.cell?.value?.pdf}></LoreSheet>
         }
     },
     { Header: "Aantal keer", accessor: "count", className: "col-aantalkeer" },
-    { Header: "Info", className: "col-info", Cell: (table) => { return <InfoTooltip row={table.cell.row}></InfoTooltip> } }
+    { Header: "Info", className: "col-info", Cell: (table) => {
+        return <InfoTooltip row={table.cell.row}></InfoTooltip>
+        }
+    }
 ];
 
 /// --- MAIN APP --- ///
@@ -103,8 +105,8 @@ export default function App() {
         });
 
         const updatedGridEnergiePerDag = updatedAllGridContent.filter((property) => {
-            return property.name === 'willpower'
-                || property.name === 'inspiration'
+            return (property.value !== 0 && property.name === 'willpower')
+                || (property.value !== 0 && property.name === 'inspiration')
                 || (property.value !== 0 && property.name.includes('elemental'))
                 || (property.value !== 0 && property.name.includes('spiritual'))
         });
@@ -410,7 +412,6 @@ export default function App() {
                                 />
                             ))}
                         </div>
-
                         <div className="summary-title">
                             <h5>Energie per Dag</h5>
                         </div>
