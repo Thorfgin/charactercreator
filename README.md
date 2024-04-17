@@ -12,7 +12,7 @@
 
 	MUST:
 	- FIX: change the way skills are selected, by referencing id instead of skill.
-	Skills may no be unique in name, for example 'extra wilskracht' exists twice in ExtraVaardigheden
+	Skills may no be unique in name, for example 'extra wilskracht' exists twice in ExtraVaardigheden.
 	This may cause issues with the saves, because everything is reference by skillname.
 	- LANGUAGE: add multi-language support as an option >> English
 
