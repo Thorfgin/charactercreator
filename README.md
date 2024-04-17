@@ -7,7 +7,7 @@
 
 	CRITICALS:
 	- CRITICAL FIX: Automatic CNAME listing for the GitHub Pages > or the site goes down
-	- CRITICAL FIX: Sentry finding, ensure Safari can handle the PDF
+	- CRITICAL FIX: Sentry finding, ensure Safari can handle the PDF.
 	>> DEFECT: jsPDF PubSub Error Font is not stored as string-data in vFS, import fonts or remove declaration doc.addFont('InknutAntiqua-Regular.ttf'). 
 
 	MUST:
