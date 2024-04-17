@@ -30,7 +30,7 @@
 	
 
 	COULD:
-	- PREREQUISITES: add all single-tree prerequisite skills that have are listed as a prerequisite.
+	- PREREQUISITES: add all single-tree prerequisite skills that are listed as a prerequisite.
 	- PREREQUISITES: add button to remove all skills that have it as a prerequisite.
 	- FEATURE: add option that adds XP based on nr of events player.
 
