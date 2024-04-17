@@ -15,6 +15,10 @@
         {
           "description": "Deelvensters zijn naast de sluit knop (X) nu ook te sluiten door buiten het venster te klikken.",
           "title": "FIX: Deelvenster sluiten aangepast."
+        },
+        {
+          "description": "Omschrijvingen van een aantal componenten met imbue verhogende waarde zijn ter verduidelijking aangepast.",
+          "title": "FIX: Verduidelijking van bepaalde crafting componenten."
         }
       ]
     },

@@ -9,7 +9,7 @@
             {
               "id": 1,
               "recipy": "Meesterstuk A (Metal)",
-              "effect": "Je kunt nu Mythical Metal verwerken. Deze verhoogd per stuk de Imbue cap met: 2",
+              "effect": "Je kunt nu Mythical Metal verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 2",
               "inspiration": "0.5",
               "components": "Mythical Metal"
             },
@@ -28,7 +28,7 @@
             {
               "id": 3,
               "recipy": "Meesterstuk B (Steel)",
-              "effect": "Je kunt nu Mythical Steel verwerken. Deze verhoogd per stuk de Imbue cap met: 7",
+              "effect": "Je kunt nu Mythical Steel verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 7",
               "inspiration": "2",
               "components": "Mythical Steel"
             },
@@ -47,7 +47,7 @@
             {
               "id": 5,
               "recipy": "Meesterstuk C (Mithril)",
-              "effect": "Je kunt nu Mythical Mithrill verwerken. Deze verhoogd per stuk de Imbue cap met: 27",
+              "effect": "Je kunt nu Mythical Mithrill verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 27",
               "inspiration": "7",
               "components": "Mythical Mithril"
             },
@@ -66,7 +66,7 @@
             {
               "id": 7,
               "recipy": "Meesterstuk A (Wood)",
-              "effect": "Je kunt nu Mythical Wood verwerken. Deze verhoogd per stuk de Imbue cap met: 2",
+              "effect": "Je kunt nu Mythical Wood verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 2",
               "inspiration": "0.5",
               "components": "Mythical Wood"
             },
@@ -85,7 +85,7 @@
             {
               "id": 9,
               "recipy": "Meesterstuk B (Ebony)",
-              "effect": "Je kunt nu Mythical Ebony verwerken. Deze verhoogd per stuk de Imbue cap met: 7",
+              "effect": "Je kunt nu Mythical Ebony verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 7",
               "inspiration": "2",
               "components": "Mythical Ebony"
             },
@@ -104,7 +104,7 @@
             {
               "id": 11,
               "recipy": "Meesterstuk C (Worldtree Sapling)",
-              "effect": "Je kunt nu Mythical Worldtree Sapling verwerken. Deze verhoogd per stuk de Imbue cap met: 27",
+              "effect": "Je kunt nu Mythical Worldtree Sapling verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 27",
               "inspiration": "7",
               "components": "Mythical Worldtree Sapling"
             },
@@ -123,7 +123,7 @@
             {
               "id": 13,
               "recipy": "Meesterstuk A (Cloth)",
-              "effect": "Je kunt nu Mythical Cloth verwerken. Deze verhoogd per stuk de Imbue cap met: 2",
+              "effect": "Je kunt nu Mythical Cloth verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 2",
               "inspiration": "0.5",
               "components": "Mythical Cloth"
             },
@@ -142,7 +142,7 @@
             {
               "id": 15,
               "recipy": "Meesterstuk B (Velvet)",
-              "effect": "Je kunt nu Mythical Velvet verwerken. Deze verhoogd per stuk de Imbue cap met: 7",
+              "effect": "Je kunt nu Mythical Velvet verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 7",
               "inspiration": "2",
               "components": "Mythical Velvet"
             },
@@ -161,7 +161,7 @@
             {
               "id": 17,
               "recipy": "Meesterstuk C (Spidersilk)",
-              "effect": "Je kunt nu Mythical Spidersilk verwerken. Deze verhoogd per stuk de Imbue cap met: 27",
+              "effect": "Je kunt nu Mythical Spidersilk verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 27",
               "inspiration": "7",
               "components": "Mythical Spidersilk "
             },
@@ -180,7 +180,7 @@
             {
               "id": 19,
               "recipy": "Meesterstuk A (Paper)",
-              "effect": "Je kunt nu Mythical Paper verwerken. Deze verhoogd per stuk de Imbue cap met: 2",
+              "effect": "Je kunt nu Mythical Paper verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 2",
               "inspiration": "0.5",
               "components": "Mythical Paper"
             },
@@ -199,7 +199,7 @@
             {
               "id": 21,
               "recipy": "Meesterstuk B (Vellum)",
-              "effect": "Je kunt nu Mythical Vellum verwerken. Deze verhoogd per stuk de Imbue cap met: 7",
+              "effect": "Je kunt nu Mythical Vellum verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 7",
               "inspiration": "2",
               "components": "Mythical Vellum"
             },
@@ -218,7 +218,7 @@
             {
               "id": 23,
               "recipy": "Meesterstuk C (Griffinskin Vellum)",
-              "effect": "Je kunt nu Mythical Griffinskin Vellum verwerken. Deze verhoogd per stuk de Imbue cap met: 27",
+              "effect": "Je kunt nu Mythical Griffinskin Vellum verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 27",
               "inspiration": "7",
               "components": "Mythical Griffinskin Vellum"
             },
@@ -237,7 +237,7 @@
             {
               "id": 25,
               "recipy": "Meesterstuk A (Leather)",
-              "effect": "Je kunt nu Mythical Leather verwerken. Deze verhoogd per stuk de Imbue cap met: 2",
+              "effect": "Je kunt nu Mythical Leather verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 2",
               "inspiration": "0.5",
               "components": "Mythical Leather"
             },
@@ -256,7 +256,7 @@
             {
               "id": 27,
               "recipy": "Meesterstuk B (Scale)",
-              "effect": "Je kunt nu Mythical Scale verwerken. Deze verhoogd per stuk de Imbue cap met: 7",
+              "effect": "Je kunt nu Mythical Scale verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 7",
               "inspiration": "2",
               "components": "Mythical Scale"
             },
@@ -275,7 +275,7 @@
             {
               "id": 29,
               "recipy": "Meesterstuk C (Dragonscale)",
-              "effect": "Je kunt nu Mythical Dragonscale verwerken. Deze verhoogd per stuk de Imbue cap met: 27",
+              "effect": "Je kunt nu Mythical Dragonscale verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 27",
               "inspiration": "7",
               "components": "Mythical Dragonscale"
             },
@@ -294,7 +294,7 @@
             {
               "id": 31,
               "recipy": "Meesterstuk A (Copper Ingot)",
-              "effect": "Je kunt nu Copper Ingots verwerken. Deze verhoogd per stuk de Imbue cap met: 2",
+              "effect": "Je kunt nu Copper Ingots verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 2",
               "inspiration": "0.5",
               "components": "Copper Ingot"
             },
@@ -313,7 +313,7 @@
             {
               "id": 33,
               "recipy": "Meesterstuk B (Silver Ingot)",
-              "effect": "Je kunt nu Silver Ingots verwerken. Deze verhoogd per stuk de Imbue cap met: 7",
+              "effect": "Je kunt nu Silver Ingots verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 7",
               "inspiration": "2",
               "components": "Silver Ingot"
             },
@@ -332,7 +332,7 @@
             {
               "id": 35,
               "recipy": "Meesterstuk C (Golden Ingot)",
-              "effect": "Je kunt nu Golden Ingots verwerken. Deze verhoogd per stuk de Imbue cap met: 27",
+              "effect": "Je kunt nu Golden Ingots verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 27",
               "inspiration": "7",
               "components": "Gold Ingot"
             },
@@ -351,7 +351,7 @@
             {
               "id": 37,
               "recipy": "Meesterstuk A (Quartz)",
-              "effect": "Je kunt nu Quartz verwerken. Deze verhoogd per stuk de Imbue cap met: 2",
+              "effect": "Je kunt nu Quartz verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 2",
               "inspiration": "0.5",
               "components": "Quartz"
             },
@@ -370,7 +370,7 @@
             {
               "id": 39,
               "recipy": "Meesterstuk B (Gems)",
-              "effect": "Je kunt nu Gems verwerken. Deze verhoogd per stuk de Imbue cap met: 5",
+              "effect": "Je kunt nu Gems verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 5",
               "inspiration": "1",
               "components": "Gem"
             },
@@ -389,7 +389,7 @@
             {
               "id": 41,
               "recipy": "Meesterstuk C (Flawless Gems)",
-              "effect": "Je kunt nu Flawless Gems verwerken. Deze verhoogd per stuk de Imbue cap met: 10",
+              "effect": "Je kunt nu Flawless Gems verwerken. \\nDeze verhoogd per stuk de Imbue cap van het item met: 10",
               "inspiration": "2",
               "components": "Flawless Gem"
             },
