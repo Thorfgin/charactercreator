@@ -21,7 +21,7 @@ export default function ModalMessage() {
 
     return (
         <div className="modal-overlay" onClick={closeModal}>
-            <div className="modal">
+            <div className="modal" onClick={e => e.stopPropagation()}>
                 <div className="modal-container">
                     {msgBlocks.map((block) => (
                         <div key={uuidv4()} className="modal-block">

@@ -50,7 +50,7 @@ export default function LoadPresetModal() {
 
     return (
         <div className="modal-overlay" onClick={closeModal}>
-            <div className="preset-modal">
+            <div className="preset-modal" onClick={e => e.stopPropagation()}>
                 <h3>Bekijk een template</h3>
                 <p>
                     Deze templates dienen als voorbeeld voor hoe bepaalde<br />
