@@ -51,7 +51,7 @@ function LoadCharacterModal() {
     function handleCharacterChange(selectedChar) { setSelectedCharacter(selectedChar); }
 
     return (
-        <div className="modal-overlay">
+        <div className="modal-overlay" onClick={closeModal}>
             <div className="load-modal">
                 <h3>Laad een personage</h3>
                 <div className="upload-modal-block center-content">

@@ -49,7 +49,7 @@ export default function LoadPresetModal() {
     }
 
     return (
-        <div className="modal-overlay">
+        <div className="modal-overlay" onClick={closeModal}>
             <div className="preset-modal">
                 <h3>Bekijk een template</h3>
                 <p>

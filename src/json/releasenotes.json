@@ -11,6 +11,10 @@
         {
           "description": "Om wijzigen doorvoeren in het veld op Mobiele devices te verbeteren, is de minimale waarde voor het veld Max XP aangepast naar 1 > 0.",
           "title": "FIX: Minimale MaxXP waarde verlaagd naar 0."
+        },
+        {
+          "description": "Deelvensters zijn naast de sluit knop (X) nu ook te sluiten door buiten het venster te klikken.",
+          "title": "FIX: Deelvenster sluiten aangepast."
         }
       ]
     },

@@ -20,7 +20,6 @@
 	
 	SHOULD:
 	- FIX: Change Recipe > Omschrijving, add text: 'Je kan nu Mythical Metal verwerken'.
-	- FIX: Close a modal when the user clicks outside the msg.
 	- FEATURE: Extend the character with a NOTE section to allow players to register remarks, powers/conditions, etc.
 	- FEATURE: Extend the character with a Imbue section to allow players to register imbues, description and cost, etc.
 	- FEATURE: Add a button to forcefully add a skill and re-adjust the max XP.
@@ -64,7 +63,8 @@
 	DONE
 	20240417	CRITICAL FIX: Automatic CNAME listing for the GitHub Pages > or the site goes down
 				FIX: Add text '/per Day' to mana gained.
-				FIX: Change minimum XP to 0, so editing MAX XP on mobile is allowed.
+			FIX: Change minimum XP to 0, so editing MAX XP on mobile is allowed.
+			FIX: Close a modal when the user clicks outside the msg.
 
 	20240416	FIX: Kennis van Kruiden inspirition adjusted 3 to 2 inspiration.
 				FIX: Max saved XP cap raised from 2 to 3.

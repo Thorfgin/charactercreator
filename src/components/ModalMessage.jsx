@@ -20,7 +20,7 @@ export default function ModalMessage() {
     const getBlock = (block) => block.match(urlRegex) ? <a target="_blank" rel="noopener noreferrer" href={block}>{block}</a> : block
 
     return (
-        <div className="modal-overlay">
+        <div className="modal-overlay" onClick={closeModal}>
             <div className="modal">
                 <div className="modal-container">
                     {msgBlocks.map((block) => (
