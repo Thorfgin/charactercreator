@@ -42,6 +42,7 @@ export default function Toolbar() {
 
         // table
         tableData, setTableData,
+        tableSortState,
         charName, setCharName,
         isChecked, setIsChecked,
         MAX_XP, setMAX_XP,

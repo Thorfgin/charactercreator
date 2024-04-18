@@ -1,3 +1,4 @@
+import { useEffect, useCallback } from 'react';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import { useTable, useSortBy } from 'react-table';
 import { v4 as uuidv4 } from 'uuid';
@@ -7,6 +8,9 @@ import { useSharedState } from '../SharedStateContext.jsx';
 import {
     getSkillById,
     isSkillAPrerequisiteToAnotherSkill,
+    updateGridEigenschappenTiles,
+    updateGridSpreukenTiles,
+    updateGridReceptenTiles,
 } from '../SharedActions.js';
 
 import {
@@ -16,9 +20,19 @@ import {
     sourceExtraVaardigheden,
 } from '../SharedObjects.js';
 
+import { saveCharacterToStorage } from '../SharedStorage.js';
+
+import {
+    resetTotalXP,
+    regeneratedBasisVaardigheden,
+    regeneratedExtraVaardigheden,
+    defaultProperties,
+} from '../SharedObjects.js';
+
 // Components
 import { InfoTooltip } from './Tooltip.jsx';
 import LoreSheet from './LoreSheet.jsx';
+
 
 // SkillTabel Kolommen
 const columns = [
@@ -34,17 +48,21 @@ export default function SkillTable() {
     // SharedStateContext
     const {
         tableData, setTableData,
-        isSorted, setIsSorted,
-        setIsChecked,
+        tableSortState, setTableSortState,
+        isChecked, setIsChecked,
         MAX_XP, setMAX_XP,
-        setCharName,
+        charName, setCharName,
         setSelectedBasicSkill,
         setSelectedExtraSkill,
 
         setShowModal,
         setModalMsg,
-    } = useSharedState();
 
+        setGridEigenschappen,
+        setGridEnergiePerDag,
+        setGridSpreuken,
+        setGridRecepten
+    } = useSharedState();
 
     /// --- TABLE CONTENT --- ///
     function getTableDataSums() {
@@ -212,7 +230,6 @@ export default function SkillTable() {
 
     const determineSortinSymbol = (column) => {
         if (column.isSorted) {
-            console.log(column.isSorted, column.isSortedDesc);
             return column.isSortedDesc ? ' \u25B2' : ' \u25BC';
         }
         return '';
@@ -223,16 +240,65 @@ export default function SkillTable() {
         getTableBodyProps,
         headerGroups,
         rows,
-        prepareRow } = useTable(
-            {
-                columns,
-                data: tableData,
-                initialState: {
-                    sortBy: [{ id: 'table-skill' }], // Set a default sorting column
-                },
-            },
-            useSortBy
-        );
+        prepareRow,
+        state: { sortBy }, // Accessing sortBy from the state object
+        toggleSortBy
+    } = useTable(
+        {
+            columns,
+            data: tableData,
+            tableSortState
+        },
+        useSortBy
+    );
+
+    // Wanneer er iets aan de tableData verandert, wordt de nieuwe data opgeslagen.
+    // Op basis van de nieuwe tableData worden de Selects, Grid en Spreuken/Recepten bijewerkt.
+    const onUpdateTableData = useCallback(() => {
+
+        // LocalStorage bijwerken
+        saveCharacterToStorage('CCdata', charName, isChecked, MAX_XP, tableData);
+
+        // SELECT skill options bijwerken | reeds geselecteerde items worden uitgesloten.
+        // INPUT resterende XP bijwerken
+        regeneratedBasisVaardigheden(tableData);
+        regeneratedExtraVaardigheden(tableData);
+        resetTotalXP(tableData);
+
+        // karakter eigenschappen container
+        const updatedAllGridContent = updateGridEigenschappenTiles(tableData, defaultProperties)
+        const updatedGridEigenschappenContent = updatedAllGridContent.filter((property) => {
+            return property.name === 'hitpoints'
+                || property.name === 'armourpoints'
+                || (property.value !== 0 && property.name.includes('glyph'))
+                || (property.value !== 0 && property.name.includes('rune'))
+        });
+
+        const updatedGridEnergiePerDag = updatedAllGridContent.filter((property) => {
+            return (property.value !== 0 && property.name === 'willpower')
+                || (property.value !== 0 && property.name === 'inspiration')
+                || (property.value !== 0 && property.name.includes('elemental'))
+                || (property.value !== 0 && property.name.includes('spiritual'))
+        });
+
+        setGridEigenschappen(updatedGridEigenschappenContent);
+        setGridEnergiePerDag(updatedGridEnergiePerDag)
+
+        // spreuken & techieken container
+        const updatedGridSpreukenContent = updateGridSpreukenTiles(tableData).filter((property) => {
+            return property.value !== ""
+        });
+        setGridSpreuken(updatedGridSpreukenContent);
+
+        // recepten container
+        const updatedGridReceptenContent = updateGridReceptenTiles(tableData).filter((property) => {
+            return property.value !== ""
+        });
+        setGridRecepten(updatedGridReceptenContent);
+    }, [charName, isChecked, MAX_XP, tableData, setGridEigenschappen, setGridEnergiePerDag, setGridSpreuken, setGridRecepten]);
+
+    useEffect(() => { onUpdateTableData(); },
+        [onUpdateTableData, tableData]);
 
     return (
         <DragDropContext onDragEnd={handleDragEnd}>

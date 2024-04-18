@@ -1,21 +1,8 @@
-import { useEffect, useCallback } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
 // Shared
 import { useSharedState } from './SharedStateContext.jsx';
-import { saveCharacterToStorage } from './SharedStorage.js';
-import {
-    updateGridEigenschappenTiles,
-    updateGridSpreukenTiles,
-    updateGridReceptenTiles,
-} from './SharedActions.js';
 
-import {
-    resetTotalXP,
-    regeneratedBasisVaardigheden,
-    regeneratedExtraVaardigheden,
-    defaultProperties,
-} from './SharedObjects.js';
 
 // Components
 import {
@@ -38,10 +25,6 @@ export default function App() {
     const {
         version,
         creator,
-        tableData,
-        isChecked,
-        MAX_XP,
-        charName,
 
         showModal, setShowModal,
         showFAQModal, setShowFAQModal,
@@ -50,59 +33,11 @@ export default function App() {
         showLoadCharacterModal,
         showLoadPresetModal,
         setModalMsg,
-        gridEigenschappen, setGridEigenschappen,
-        gridEnergiePerDag, setGridEnergiePerDag,
-        gridSpreuken, setGridSpreuken,
-        gridRecepten, setGridRecepten
+        gridEigenschappen,
+        gridEnergiePerDag,
+        gridSpreuken,
+        gridRecepten
     } = useSharedState();
-
-    // Wanneer er iets aan de tableData verandert, wordt de nieuwe data opgeslagen.
-    // Op basis van de nieuwe tableData worden de Selects, Grid en Spreuken/Recepten bijewerkt.
-    const onUpdateTableData = useCallback(() => {
-
-
-        // LocalStorage bijwerken
-        saveCharacterToStorage('CCdata', charName, isChecked, MAX_XP, tableData);
-
-        // SELECT skill options bijwerken | reeds geselecteerde items worden uitgesloten.
-        // INPUT resterende XP bijwerken
-        regeneratedBasisVaardigheden(tableData);
-        regeneratedExtraVaardigheden(tableData);
-        resetTotalXP(tableData);
-
-        // karakter eigenschappen container
-        const updatedAllGridContent = updateGridEigenschappenTiles(tableData, defaultProperties)
-        const updatedGridEigenschappenContent = updatedAllGridContent.filter((property) => {
-            return property.name === 'hitpoints'
-                || property.name === 'armourpoints'
-                || (property.value !== 0  && property.name.includes('glyph'))
-                || (property.value !== 0 && property.name.includes('rune'))
-        });
-
-        const updatedGridEnergiePerDag = updatedAllGridContent.filter((property) => {
-            return (property.value !== 0 && property.name === 'willpower')
-                || (property.value !== 0 && property.name === 'inspiration')
-                || (property.value !== 0 && property.name.includes('elemental'))
-                || (property.value !== 0 && property.name.includes('spiritual'))
-        });
-
-        setGridEigenschappen(updatedGridEigenschappenContent);
-        setGridEnergiePerDag(updatedGridEnergiePerDag)
-
-        // spreuken & techieken container
-        const updatedGridSpreukenContent = updateGridSpreukenTiles(tableData).filter((property) => {
-            return property.value !== ""
-        });
-        setGridSpreuken(updatedGridSpreukenContent);
-
-        // recepten container
-        const updatedGridReceptenContent = updateGridReceptenTiles(tableData).filter((property) => {
-            return property.value !== ""
-        });
-        setGridRecepten(updatedGridReceptenContent);
-    }, [charName, isChecked, MAX_XP, tableData, setGridEigenschappen, setGridEnergiePerDag, setGridSpreuken, setGridRecepten]);
-
-    useEffect(() => { onUpdateTableData(); }, [onUpdateTableData, tableData]);
 
     function showDisclaimer() {
         if (showModal !== true) {
