@@ -60,6 +60,7 @@ export default function App() {
     // Op basis van de nieuwe tableData worden de Selects, Grid en Spreuken/Recepten bijewerkt.
     const onUpdateTableData = useCallback(() => {
 
+
         // LocalStorage bijwerken
         saveCharacterToStorage('CCdata', charName, isChecked, MAX_XP, tableData);
 

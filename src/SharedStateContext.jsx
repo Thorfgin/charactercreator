@@ -63,6 +63,7 @@ export function SharedStateProvider({ children }) {
     const [ruleset_version] = useState(packageInfo.ruleset_version);
     const [creator] = useState(packageInfo.creator);
     const [tableData, setTableData] = useState(getInitialData());
+    const [isSorted, setIsSorted] = useState([]);
     const [isChecked, setIsChecked] = useState(getInitialCheckState());
     const [MAX_XP, setMAX_XP] = useState(getInitialXP());
     const [charName, setCharName] = useState(getInitialName());
@@ -98,6 +99,7 @@ export function SharedStateProvider({ children }) {
         selectedExtraSkill, setSelectedExtraSkill,
 
         tableData, setTableData,
+        isSorted, setIsSorted,
 
         modalMsg, setModalMsg,
         showModal, setShowModal,
@@ -127,6 +129,7 @@ export function SharedStateProvider({ children }) {
         selectedExtraSkill, setSelectedExtraSkill,
 
         tableData, setTableData,
+        isSorted, setIsSorted,
 
         modalMsg, setModalMsg,
         showModal, setShowModal,

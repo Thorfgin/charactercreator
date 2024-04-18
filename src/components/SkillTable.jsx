@@ -1,7 +1,6 @@
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import { useTable, useSortBy } from 'react-table';
 import { v4 as uuidv4 } from 'uuid';
-import PropTypes from 'prop-types';
 
 // shared
 import { useSharedState } from '../SharedStateContext.jsx';
@@ -23,18 +22,19 @@ import LoreSheet from './LoreSheet.jsx';
 
 // SkillTabel Kolommen
 const columns = [
-    { Header: "ID", accessor: "id", className: "col-id" },
-    { Header: "Vaardigheid", accessor: "skill", className: "col-vaardigheid" },
-    { Header: "XP Kosten", accessor: "xp", className: "col-xp" },
-    { Header: "Loresheet", accessor: "loresheet", className: "col-loresheet", Cell: (table) => {return <LoreSheet pdf={table?.cell?.value?.pdf}></LoreSheet>}},
-    { Header: "Aantal keer", accessor: "count", className: "col-aantalkeer" },
-    { Header: "Info", className: "col-info", Cell: (table) => {return <InfoTooltip row={table.cell.row}></InfoTooltip>}}
+    { Header: "ID", accessor: "id", id: "table-id", className: "col-id" },
+    { Header: "Vaardigheid", accessor: "skill", id: "table-skill", className: "col-vaardigheid" },
+    { Header: "XP Kosten", accessor: "xp", id: "table-xp", className: "col-xp" },
+    { Header: "Loresheet", accessor: "loresheet", id: "table-loresheet", className: "col-loresheet", Cell: (table) => { return <LoreSheet pdf={table?.cell?.value?.pdf}></LoreSheet> } },
+    { Header: "Aantal keer", accessor: "count", id: "table-count", className: "col-aantalkeer" },
+    { Header: "Info", id: "table-info", className: "col-info", Cell: (table) => { return <InfoTooltip row={table.cell.row}></InfoTooltip> } }
 ];
 
 export default function SkillTable() {
     // SharedStateContext
     const {
         tableData, setTableData,
+        isSorted, setIsSorted,
         setIsChecked,
         MAX_XP, setMAX_XP,
         setCharName,
@@ -210,15 +210,29 @@ export default function SkillTable() {
         setTableData(updatedTableData);
     };
 
-    SkillTable.propTypes = {
-        selectedCharacter: PropTypes.string,
-        handleCharacterChange: PropTypes.func.isRequired,
-    };
+    const determineSortinSymbol = (column) => {
+        if (column.isSorted) {
+            console.log(column.isSorted, column.isSortedDesc);
+            return column.isSortedDesc ? ' \u25B2' : ' \u25BC';
+        }
+        return '';
+    }
 
-
-    const determineSortinSymbol = (isSorted) => { return isSorted ? ' \u25BC' : ' \u25B2'; }
-
-    const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = useTable({ columns, data: tableData }, useSortBy);
+    const {
+        getTableProps,
+        getTableBodyProps,
+        headerGroups,
+        rows,
+        prepareRow } = useTable(
+            {
+                columns,
+                data: tableData,
+                initialState: {
+                    sortBy: [{ id: 'table-skill' }], // Set a default sorting column
+                },
+            },
+            useSortBy
+        );
 
     return (
         <DragDropContext onDragEnd={handleDragEnd}>
@@ -234,7 +248,7 @@ export default function SkillTable() {
                                 >
                                     {column.render('Header')}
                                     <span>
-                                        {column.isSorted ? determineSortinSymbol(column.isSortedDesc) : ''}
+                                        {determineSortinSymbol(column)}
                                     </span>
                                 </th>
                             ))}
