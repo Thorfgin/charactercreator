@@ -377,7 +377,7 @@ async function addSkillTableToPdf(pdf, tableData, posY) {
 }
 
 // Voeg een Afbeelding van een element via ID toe aan de pdf
-async function addImgElementToPDF(pdf, element, width, height, posX = 10, posY = 10) {
+async function addImgElementToPDF(pdf, element, posX = 10, posY = 10) {
     const input = document.getElementById(element);
     const canvas = await html2canvas(input);
     const imgData = canvas.toDataURL("image/png");
@@ -387,22 +387,25 @@ async function addImgElementToPDF(pdf, element, width, height, posX = 10, posY =
         img.src = imgData;
 
         img.onload = function () {
-            let imgWidth;
-            let imgHeight;
-
-            if (img.width > img.height) {
-                imgWidth = width * 0.2;
-                imgHeight = (img.height / img.width) * width * 0.2;
-            } else {
-                imgHeight = height * 0.2;
-                imgWidth = (img.width / img.height) * height * 0.2;
-            }
-
             const pageWidth = pdf.internal.pageSize.getWidth();
             const pageHeight = pdf.internal.pageSize.getHeight();
 
+            const maxWidth = pageWidth * 0.45; // Adjust as needed
+            const maxHeight = pageHeight * 0.45; // Adjust as needed
+
+            let imgWidth = img.width;
+            let imgHeight = img.height;
+
+            // Afbeelding aanpassen zodat hij altijd past
+            if (imgWidth > maxWidth || imgHeight > maxHeight) {
+                const scaleFactor = Math.min(maxWidth / imgWidth, maxHeight / imgHeight);
+                imgWidth *= scaleFactor;
+                imgHeight *= scaleFactor;
+            }
+
             const x = posX <= 0 ? (pageWidth - imgWidth) / 2 : posX;
             const y = posY <= 0 ? (pageHeight - imgHeight) / 2 : posY;
+
             pdf.addImage(imgData, "PNG", x, y, imgWidth, imgHeight);
             resolve();
         };
@@ -524,7 +527,7 @@ export default async function useExportToPDF(charName, ruleset_version, tableDat
         `Aantal spreuken/technieken: ${gridSpreuken.length}`,
         `Aantal recepten: ${gridRecepten.length}`], 35, 110, false);
 
-    await addImgElementToPDF(pdf, "side-container-b", 350, 625, 100, 45);
+    await addImgElementToPDF(pdf, "side-container-b", 100, 45);
 
     // Page 3
     await addNewPage(pdf);

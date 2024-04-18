@@ -4,9 +4,8 @@
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	TODO:
-
+	
 	CRITICALS:
-	- CRITICAL FIX: Automatic CNAME listing for the GitHub Pages > or the site goes down
 	- CRITICAL FIX: Sentry finding, ensure Safari can handle the PDF.
 	>> DEFECT: jsPDF PubSub Error Font is not stored as string-data in vFS, import fonts or remove declaration doc.addFont('InknutAntiqua-Regular.ttf'). 
 
@@ -17,21 +16,17 @@
 	- LANGUAGE: add multi-language support as an option >> English
 
 	- FIX: Chromium browser compatibility
-	- FIX: Add text '/per Day' to mana gained.
-	- FIX: Change minimum XP to 0, so editing MAX XP on mobile is allowed.
-	- BUG FIX: When skills are sorted and a new skill is added, it is not added in the sorted order.
-	
+	- FIX: When skills are sorted and a new skill is added, it is not added in the sorted order.
+
 	SHOULD:
-	- FIX: Change Recipe > Omschrijving, add text: 'Je kan nu Mythical Metal verwerken'.
-	- FIX: Close a modal when the user clicks outside the msg.
 	- FEATURE: Extend the character with a NOTE section to allow players to register remarks, powers/conditions, etc.
 	- FEATURE: Extend the character with a Imbue section to allow players to register imbues, description and cost, etc.
 	- FEATURE: Add a button to forcefully add a skill and re-adjust the max XP.
-	
 
 	COULD:
 	- PREREQUISITES: add all single-tree prerequisite skills that are listed as a prerequisite.
 	- PREREQUISITES: add button to remove all skills that have it as a prerequisite.
+	- FEATURE: add an option to set a random amount of XP and sets random skills
 	- FEATURE: add option that adds XP based on nr of events player.
 
 	WOULD: 
@@ -47,8 +42,6 @@
 	> UNDER REVIEW: Ik wil meerdere skills kunnen selecteren en in 1x toe toevoegen.
 	> UNDER REVIEW: Ik wil leven in duisternis, DARK MODE!
 	
-	> APPROVED: Is het mogelijk om componenten aan te passen naar iets als: 'Je kan nu mythical metal verwerken'?
-	> APPROVED: Zou fijn zijn als Modals sluiten wanneer je buiten de msg klikt.
 	> APPROVED: Zou fijn zijn als je kan zeggen hoeveel evenementen je hebt mee gedaan en dat dan het aantal xp automatisch om hoog gaat.
 	> APPROVED: RANDOM button toevoegen die RANDOM xp en bijbehorende vaardigheden selecteert.
 	> APPROVED: wanneer skill je over de XP heen brengt kun je hem niet toevoegen. kan er een knop komen om dit te forceren?
@@ -65,6 +58,13 @@
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	DONE
+	20240417	CRITICAL FIX: Automatic CNAME listing for the GitHub Pages > or the site goes down
+				FIX: Add text '/per Day' to mana gained.
+			FIX: Character Eigenschappen and Energy per Day is not not exporting propperly.
+			FIX: Change minimum XP to 0, so editing MAX XP on mobile is allowed.
+			FIX: Close a modal when the user clicks outside the msg.
+			FIX: Change Recipe > Omschrijving, add text: 'Je kan nu Mythical Metal verwerken'.
+
 	20240416	FIX: Kennis van Kruiden inspirition adjusted 3 to 2 inspiration.
 				FIX: Max saved XP cap raised from 2 to 3.
 			FIX: Size of the Recipy panel adjusted so "Minor potion of inspiration of the magi" fits.

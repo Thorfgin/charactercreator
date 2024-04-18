@@ -46,13 +46,15 @@ const columns = [
     { Header: "ID", accessor: "id", className: "col-id" },
     { Header: "Vaardigheid", accessor: "skill", className: "col-vaardigheid" },
     { Header: "XP Kosten", accessor: "xp", className: "col-xp" },
-    {
-        Header: "Loresheet", accessor: "loresheet", className: "col-loresheet", Cell: (table) => {
-            return <LoreSheet pdf={table?.cell?.value?.pdf}></LoreSheet>
+    { Header: "Loresheet", accessor: "loresheet", className: "col-loresheet", Cell: (table) => {
+        return <LoreSheet pdf={table?.cell?.value?.pdf}></LoreSheet>
         }
     },
     { Header: "Aantal keer", accessor: "count", className: "col-aantalkeer" },
-    { Header: "Info", className: "col-info", Cell: (table) => { return <InfoTooltip row={table.cell.row}></InfoTooltip> } }
+    { Header: "Info", className: "col-info", Cell: (table) => {
+        return <InfoTooltip row={table.cell.row}></InfoTooltip>
+        }
+    }
 ];
 
 /// --- MAIN APP --- ///
@@ -75,6 +77,7 @@ export default function App() {
         showLoadPresetModal,
         setModalMsg,
         gridEigenschappen, setGridEigenschappen,
+        gridEnergiePerDag, setGridEnergiePerDag,
         gridSpreuken, setGridSpreuken,
         gridRecepten, setGridRecepten
     } = useSharedState();
@@ -93,12 +96,23 @@ export default function App() {
         resetTotalXP(tableData);
 
         // karakter eigenschappen container
-        const updatedGridEigenschappenContent = updateGridEigenschappenTiles(tableData, defaultProperties).filter((property) => {
-            return property.value !== 0
-                || property.name === 'hitpoints'
-                || property.name === 'armourpoints';
+        const updatedAllGridContent = updateGridEigenschappenTiles(tableData, defaultProperties)
+        const updatedGridEigenschappenContent = updatedAllGridContent.filter((property) => {
+            return property.name === 'hitpoints'
+                || property.name === 'armourpoints'
+                || (property.value !== 0  && property.name.includes('glyph'))
+                || (property.value !== 0 && property.name.includes('rune'))
         });
+
+        const updatedGridEnergiePerDag = updatedAllGridContent.filter((property) => {
+            return (property.value !== 0 && property.name === 'willpower')
+                || (property.value !== 0 && property.name === 'inspiration')
+                || (property.value !== 0 && property.name.includes('elemental'))
+                || (property.value !== 0 && property.name.includes('spiritual'))
+        });
+
         setGridEigenschappen(updatedGridEigenschappenContent);
+        setGridEnergiePerDag(updatedGridEnergiePerDag)
 
         // spreuken & techieken container
         const updatedGridSpreukenContent = updateGridSpreukenTiles(tableData).filter((property) => {
@@ -111,7 +125,7 @@ export default function App() {
             return property.value !== ""
         });
         setGridRecepten(updatedGridReceptenContent);
-    }, [charName, isChecked, MAX_XP, tableData, setGridEigenschappen, setGridSpreuken, setGridRecepten]);
+    }, [charName, isChecked, MAX_XP, tableData, setGridEigenschappen, setGridEnergiePerDag, setGridSpreuken, setGridRecepten]);
 
     useEffect(() => { onUpdateTableData(); }, [onUpdateTableData, tableData]);
 
@@ -389,6 +403,20 @@ export default function App() {
                         </div>
                         <div className="grid-eigenschappen">
                             {gridEigenschappen.map((item) => (
+                                <GridEigenschapItem
+                                    name={item.name}
+                                    key={uuidv4()}
+                                    image={item.image}
+                                    text={item.text}
+                                    value={item.value}
+                                />
+                            ))}
+                        </div>
+                        <div className="summary-title">
+                            <h5>Energie per Dag</h5>
+                        </div>
+                        <div className="grid-eigenschappen">
+                            {gridEnergiePerDag.map((item) => (
                                 <GridEigenschapItem
                                     name={item.name}
                                     key={uuidv4()}

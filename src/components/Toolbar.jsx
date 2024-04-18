@@ -369,7 +369,7 @@ export default function Toolbar() {
                                     name="max_xp_input"
                                     type="number"
                                     value={MAX_XP}
-                                    min={1}
+                                    min={0}
                                     max={100}
                                     onBlur={handleInputValidate}
                                     onChange={handleInputUpdate}
