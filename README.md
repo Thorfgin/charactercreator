@@ -4,7 +4,7 @@
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	TODO:
-
+	
 	CRITICALS:
 	- CRITICAL FIX: Sentry finding, ensure Safari can handle the PDF.
 	>> DEFECT: jsPDF PubSub Error Font is not stored as string-data in vFS, import fonts or remove declaration doc.addFont('InknutAntiqua-Regular.ttf'). 
@@ -17,17 +17,16 @@
 
 	- FIX: Chromium browser compatibility
 	- FIX: When skills are sorted and a new skill is added, it is not added in the sorted order.
-	- FIX: Character Eigenschappen and Energy per Day is not not exporting propperly.
 
 	SHOULD:
 	- FEATURE: Extend the character with a NOTE section to allow players to register remarks, powers/conditions, etc.
 	- FEATURE: Extend the character with a Imbue section to allow players to register imbues, description and cost, etc.
 	- FEATURE: Add a button to forcefully add a skill and re-adjust the max XP.
-	
 
 	COULD:
 	- PREREQUISITES: add all single-tree prerequisite skills that are listed as a prerequisite.
 	- PREREQUISITES: add button to remove all skills that have it as a prerequisite.
+	- FEATURE: add an option to set a random amount of XP and sets random skills
 	- FEATURE: add option that adds XP based on nr of events player.
 
 	WOULD: 
@@ -61,6 +60,7 @@
 	DONE
 	20240417	CRITICAL FIX: Automatic CNAME listing for the GitHub Pages > or the site goes down
 				FIX: Add text '/per Day' to mana gained.
+			FIX: Character Eigenschappen and Energy per Day is not not exporting propperly.
 			FIX: Change minimum XP to 0, so editing MAX XP on mobile is allowed.
 			FIX: Close a modal when the user clicks outside the msg.
 			FIX: Change Recipe > Omschrijving, add text: 'Je kan nu Mythical Metal verwerken'.
