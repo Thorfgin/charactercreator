@@ -15,8 +15,7 @@
 	This may cause issues with the saves, because everything is reference by skillname.
 	- LANGUAGE: add multi-language support as an option >> English
 
-	- FIX: Chromium browser compatibility
-	- FIX: When skills are sorted and a new skill is added, it is not added in the sorted order.
+	- FIX: Chromium browser compatibility.
 
 	SHOULD:
 	- FEATURE: Extend the character with a NOTE section to allow players to register remarks, powers/conditions, etc.
@@ -58,12 +57,13 @@
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	DONE
-	20240417	CRITICAL FIX: Automatic CNAME listing for the GitHub Pages > or the site goes down
+	20240418	CRITICAL FIX: Automatic CNAME listing for the GitHub Pages > or the site goes down
 				FIX: Add text '/per Day' to mana gained.
 			FIX: Character Eigenschappen and Energy per Day is not not exporting propperly.
 			FIX: Change minimum XP to 0, so editing MAX XP on mobile is allowed.
 			FIX: Close a modal when the user clicks outside the msg.
 			FIX: Change Recipe > Omschrijving, add text: 'Je kan nu Mythical Metal verwerken'.
+			FIX: When skills are sorted and a new skill is added, it is not added in the sorted order.
 
 	20240416	FIX: Kennis van Kruiden inspirition adjusted 3 to 2 inspiration.
 				FIX: Max saved XP cap raised from 2 to 3.
