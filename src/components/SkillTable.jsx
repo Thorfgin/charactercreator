@@ -48,7 +48,6 @@ export default function SkillTable() {
     // SharedStateContext
     const {
         tableData, setTableData,
-        tableSortState, setTableSortState,
         isChecked, setIsChecked,
         MAX_XP, setMAX_XP,
         charName, setCharName,
@@ -228,34 +227,31 @@ export default function SkillTable() {
         setTableData(updatedTableData);
     };
 
-    const determineSortinSymbol = (column) => {
-        if (column.isSorted) {
-            return column.isSortedDesc ? ' \u25B2' : ' \u25BC';
-        }
-        return '';
-    }
-
     const {
         getTableProps,
         getTableBodyProps,
         headerGroups,
         rows,
-        prepareRow,
-        state: { sortBy }, // Accessing sortBy from the state object
-        toggleSortBy
+        prepareRow
     } = useTable(
         {
             columns,
             data: tableData,
-            tableSortState
+            initialState: [],
+            autoResetSortBy: false
         },
         useSortBy
     );
 
+    const determineSortinSymbol = (column) => {
+        if (column.isSorted) {
+            return column.isSortedDesc ? ' \u25B2' : ' \u25BC';
+        }
+    }
+
     // Wanneer er iets aan de tableData verandert, wordt de nieuwe data opgeslagen.
     // Op basis van de nieuwe tableData worden de Selects, Grid en Spreuken/Recepten bijewerkt.
     const onUpdateTableData = useCallback(() => {
-
         // LocalStorage bijwerken
         saveCharacterToStorage('CCdata', charName, isChecked, MAX_XP, tableData);
 
@@ -297,8 +293,12 @@ export default function SkillTable() {
         setGridRecepten(updatedGridReceptenContent);
     }, [charName, isChecked, MAX_XP, tableData, setGridEigenschappen, setGridEnergiePerDag, setGridSpreuken, setGridRecepten]);
 
-    useEffect(() => { onUpdateTableData(); },
-        [onUpdateTableData, tableData]);
+    // Wanneer tableData aangepast wordt, aanpassingen doorvoeren.
+    useEffect(() => {
+        onUpdateTableData();
+    }, [tableData, onUpdateTableData]);
+
+
 
     return (
         <DragDropContext onDragEnd={handleDragEnd}>
