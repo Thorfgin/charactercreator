@@ -5,6 +5,10 @@
       "version": "v0.5.5",
       "Items": [
         {
+          "description": "Wanneer 't vinkje 'nieuw personage' aan staat, is het niet langer mogelijk om 'Leermeester Expertise' te kiezen uit de selectielijst.",
+          "title": "Looks & Feels: Leermeester Expertise niet langer beschikbaar voor nieuwe personages."
+        },
+        {
           "description": "De character eigenschappen zijn opgesplitst tussen Character Eigenschappen en Energie per dag ter verduidelijking.",
           "title": "Looks & Feels: Opsplitsing eigenschappen en Energie per Dag."
         },
