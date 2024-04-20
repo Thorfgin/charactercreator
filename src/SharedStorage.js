@@ -32,9 +32,6 @@ export function setLocalStorage(key, data) {
             if (data) { localStorage.setObject(key, data); }
             else { localStorage.removeItem(key); }
         }
-        else {
-            console.Error("")
-        }
     }
 }
 

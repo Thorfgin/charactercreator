@@ -19,7 +19,12 @@
         {
           "description": "Omschrijvingen van een aantal componenten met imbue verhogende waarde zijn ter verduidelijking aangepast.",
           "title": "FIX: Verduidelijking van bepaalde crafting componenten."
+        },
+        {
+          "description": "Wanneer er gewisseld werd tussen nieuw/bestaand en weer terug naar nieuw kon negatieve total xp ontstaan. Het toevoegen van een skill leverde hierbij een foutmelding op.",
+          "title": "FIX: Toevoegen van skill bij negatieve total xp."
         }
+
       ]
     },
     {
