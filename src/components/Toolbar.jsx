@@ -206,7 +206,7 @@ export default function Toolbar() {
     function handleAddToTable(selectedRecord) {
         const hasSufficientFreeXP = (totalXP + selectedRecord.xp) <= Math.floor(MAX_XP) || selectedRecord.xp === 0;
         if (!hasSufficientFreeXP) {
-            if (totalXP === Math.floor(MAX_XP)) {
+            if (totalXP >= Math.floor(MAX_XP)) {
                 setModalMsg(
                     "Maximum XP (" + MAX_XP + ") bereikt. \n" +
                     "Toevoegen is niet toegestaan.\n");
