@@ -91,6 +91,7 @@ export function getPropertyByName(name) {
 // Ophalen van de skills uit vaardigheden/spreuken/recepten
 export function generateOptions(source) {
     return source.map((record) => ({
+        id: record.id,
         value: record.skill,
         label: `${record.skill} (${record.xp} xp)`
     }));
@@ -100,6 +101,7 @@ export function generateOptions(source) {
 // Ophalen van de skills uit vaardigheden/spreuken/recepten, minus geselecteerde skills
 export function regenerateOptions(source, tableData) {
     return source.map((record) => ({
+        id: record.id,
         value: record.skill,
         label: `${record.skill} (${record.xp} xp)`
     })).filter((currentSkill) =>

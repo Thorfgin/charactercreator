@@ -6,7 +6,6 @@ import { v4 as uuidv4 } from 'uuid';
 import {
     openPdfPage,
     getSkillById,
-    getSkillByName,
     getSpellBySkillName,
     getRecipeBySkillName
 } from '../SharedActions.js'
@@ -47,7 +46,7 @@ export function InfoTooltip({ row }) {
     return (
         <div className="info">
             <div className="acties-info">
-                <SkillTooltip skillName={currentItem.skill} />
+                <SkillTooltip id={currentItem.id} />
                 <img
                     className="btn-image"
                     title={"Open Vaardigheden.pdf - pagina " + currentItem.page}
@@ -61,13 +60,13 @@ export function InfoTooltip({ row }) {
 }
 
 SkillTooltip.propTypes = {
-    skillName: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
     image: PropTypes.string
 };
 
-export function SkillTooltip({ skillName, image = './images/img-info.png' }) {
+export function SkillTooltip({ id, image = './images/img-info.png' }) {
 
-    const sourceSkill = getSkillByName(skillName);
+    const sourceSkill = getSkillById(id);
     let fullRequirementsBlock = "";
 
     function formatList(items) { return items.join(', \n'); }

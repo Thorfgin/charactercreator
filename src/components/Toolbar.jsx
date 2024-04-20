@@ -452,7 +452,7 @@ export default function Toolbar() {
                     selectedBasicSkill &&
                     <div className="select-info">
                             <SkillTooltip
-                            skillName={selectedBasicSkill.value}
+                            id={selectedBasicSkill.id}
                             image={imageSrc[currentBasicImageIndex]}
                         />
                     </div>
@@ -488,7 +488,7 @@ export default function Toolbar() {
                             selectedExtraSkill.value !== "" &&
                             <div className="select-info">
                                 <SkillTooltip
-                                    skillName={selectedExtraSkill.value}
+                                    id={selectedExtraSkill.id}
                                     image={imageSrc[currentExtraImageIndex]}
                                     />
                             </div>

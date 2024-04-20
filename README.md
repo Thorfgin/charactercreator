@@ -9,13 +9,9 @@
 	- 
 
 	MUST:
-	- FIX: change the way skills are selected, by referencing id instead of skill.
-	Skills may no be unique in name, for example 'extra wilskracht' exists twice in ExtraVaardigheden.
-	This may cause issues with the saves, because everything is reference by skillname.
 	- LANGUAGE: add multi-language support as an option >> English
 
-	- FIX: Chromium browser compatibility.
-
+	
 	SHOULD:
 	- FEATURE: Extend the character with a NOTE section to allow players to register remarks, powers/conditions, etc.
 	- FEATURE: Extend the character with a Imbue section to allow players to register imbues, description and cost, etc.
@@ -32,6 +28,9 @@
 	- integration with VOIDWALKER / create new characters
 		> this requires integration on perhaps an API level
 		> Needs to be done from within a player portal? Probably requires a Node.js server
+
+	COULD NOT REPRODUCE: 
+	- Chromium browser compatibility issues
 
 
 	PLAYER REQUESTS:
@@ -53,11 +52,18 @@
 	> DECLINED: Loresheet kolom is lang niet overal nodig, is het handig om de download PDF knop bij de acties te plaatsen?
 		Meh, weten dat er *geen* loresheet voor is, is soms net zo belangrijk. Ik zie ze liever in de tabel direct erbij
 
+
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	DONE
+	20240427	FIX: change the way skills are selected, by referencing id instead of skill.
+			Skills may no be unique in name, for example 'extra wilskracht' exists twice in ExtraVaardigheden.
+			This may cause issues with the saves, because everything is reference by skillname.
+			
+
+
 	20240420	CRITICAL FIX: Automatic CNAME listing for the GitHub Pages > or the site goes down
-				CRITICAL FIX: Sentry finding, ensure Safari can handle the PDF.
+			CRITICAL FIX: Sentry finding, ensure Safari can handle the PDF.
 				>> DEFECT: jsPDF PubSub Error Font is not stored as string-data in vFS, import fonts or remove declaration doc.addFont('InknutAntiqua-Regular.ttf'). 
 			FIX: Add text '/per Day' to mana gained.
 			FIX: Character Eigenschappen and Energy per Day is not not exporting propperly.
@@ -65,6 +71,7 @@
 			FIX: Close a modal when the user clicks outside the msg.
 			FIX: Change Recipe > Omschrijving, add text: 'Je kan nu Mythical Metal verwerken'.
 			FIX: When skills are sorted and a new skill is added, it is not added in the sorted order.
+			FIX: Filter skill 'Leermeester Expertise' from the Basisvaardigheden when IsChecked is set. 
 			
 	20240416	FIX: Kennis van Kruiden inspirition adjusted 3 to 2 inspiration.
 				FIX: Max saved XP cap raised from 2 to 3.
