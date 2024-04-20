@@ -390,7 +390,7 @@ async function addImgElementToPDF(pdf, element, posX = 10, posY = 10) {
             const pageWidth = pdf.internal.pageSize.getWidth();
             const pageHeight = pdf.internal.pageSize.getHeight();
 
-            const maxWidth = pageWidth * 0.45; // Adjust as needed
+            const maxWidth = 80; // Adjust as needed
             const maxHeight = pageHeight * 0.45; // Adjust as needed
 
             let imgWidth = img.width;
@@ -398,7 +398,7 @@ async function addImgElementToPDF(pdf, element, posX = 10, posY = 10) {
 
             // Afbeelding aanpassen zodat hij altijd past
             if (imgWidth > maxWidth || imgHeight > maxHeight) {
-                const scaleFactor = Math.min(maxWidth / imgWidth, maxHeight / imgHeight);
+                let scaleFactor = Math.min(maxWidth / imgWidth, maxHeight / imgHeight);
                 imgWidth *= scaleFactor;
                 imgHeight *= scaleFactor;
             }
