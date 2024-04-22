@@ -6,8 +6,8 @@ import { v4 as uuidv4 } from 'uuid';
 import {
     openPdfPage,
     getSkillById,
-    getSpellBySkillName,
-    getRecipeBySkillName
+    getSpellBySkill,
+    getRecipeBySkill
 } from '../SharedActions.js'
 
 
@@ -104,16 +104,16 @@ export function SkillTooltip({ id, image = './images/img-info.png' }) {
 }
 
 SpellTooltip.propTypes = {
-    skillName: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
     spellName: PropTypes.string.isRequired,
     page: PropTypes.number.isRequired,
     image: PropTypes.string
 };
 
-export function SpellTooltip({ skillName, spellName, page, image = './images/img-info.png' }) {
+export function SpellTooltip({ id, spellName, page, image = './images/img-info.png' }) {
 
-    const sourceSkill = getSkillByName(skillName);
-    const sourceSpell = getSpellBySkillName(skillName, spellName);
+    const sourceSkill = getSkillById(id);
+    const sourceSpell = getSpellBySkill(sourceSkill, spellName);
     const description = getBlock(sourceSpell?.description, "description-block");
 
     const tooltipData = [
@@ -148,15 +148,14 @@ export function SpellTooltip({ skillName, spellName, page, image = './images/img
 }
 
 RecipeTooltip.propTypes = {
-    skillName: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
     recipeName: PropTypes.string.isRequired,
     image: PropTypes.string
 };
 
-export function RecipeTooltip({ skillName, recipeName, image = './images/img-info.png' }) {
-
-    const sourceSkill = getSkillByName(skillName);
-    const sourceRecipe = getRecipeBySkillName(skillName, recipeName);
+export function RecipeTooltip({ id, recipeName, image = './images/img-info.png' }) {
+    const sourceSkill = getSkillById(id);
+    const sourceRecipe = getRecipeBySkill(sourceSkill, recipeName);
     const description = getBlock(sourceRecipe?.effect, "description-block");
 
     const tooltipData = [

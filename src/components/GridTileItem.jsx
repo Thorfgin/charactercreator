@@ -7,19 +7,19 @@ import {
 } from './Tooltip.jsx';
 
 SpellTile.propTypes = {
-    skillName: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
     spellName: PropTypes.string.isRequired,
     page: PropTypes.number,
 };
 
-export function SpellTile({ skillName, spellName, page=1 }) {
+export function SpellTile({ id, spellName, page=1 }) {
     return (
 
         <div className="grid-spreuk-item">
             <div className="grid-spreuk-text">{"  " + spellName}</div>
             <div className="grid-spreuk-icons">
                 <SpellTooltip
-                    skillName={skillName}
+                    id={id}
                     spellName={spellName}
                     page={page}
                 />
@@ -29,17 +29,17 @@ export function SpellTile({ skillName, spellName, page=1 }) {
 }
 
 RecipeTile.propTypes = {
-    skillName: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
     recipeName: PropTypes.string.isRequired,
 };
 
-export function RecipeTile({ skillName, recipeName }) {
+export function RecipeTile({ id, recipeName }) {
     return (
         <div className="grid-spreuk-item">
             <div className="grid-spreuk-text">{"  " + recipeName}</div>
             <div className="grid-spreuk-icons">
                 <RecipeTooltip
-                    skillName={skillName}
+                    id={id}
                     recipeName={recipeName}
                 />
             </div>

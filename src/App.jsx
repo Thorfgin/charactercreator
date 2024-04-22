@@ -117,7 +117,7 @@ export default function App() {
                             {gridSpreuken?.map((item) => (
                                 <SpellTile
                                     key={uuidv4()}
-                                    skillName={item.skill}
+                                    id={item.id}
                                     spellName={item.name}
                                     page={item.page}
                                 />
@@ -131,7 +131,7 @@ export default function App() {
                             {gridRecepten.map((item) => (
                                 <RecipeTile
                                     key={uuidv4()}
-                                    skillName={item.skill}
+                                    id={item.id}
                                     recipeName={item.name}
                                 />
                             ))}
