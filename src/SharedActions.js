@@ -9,6 +9,10 @@ import {
     sourceExtraVaardigheden,
 } from './SharedObjects.js';
 
+import {
+    teacherSkill,
+    ritualismSkills
+} from './SharedConstants.js';
 
 /// --- SKILLS --- ///
 
@@ -45,7 +49,7 @@ export function getBasicSkillsFromTable(tableData) {
     const basicSkills = []
     for (const tableSkill of tableData) {
         const isBasicSkill = sourceBasisVaardigheden.some((record) => record.id === tableSkill.id);
-        if (isBasicSkill) { basicSkills.push(tableSkill.skill); }
+        if (isBasicSkill) { basicSkills.push(tableSkill); }
     }
     return basicSkills;
 }
@@ -55,7 +59,7 @@ export function getExtraSkillsFromTable(tableData) {
     const extraSkills = []
     for (const tableSkill of tableData) {
         const isExtraSkill = sourceExtraVaardigheden.some((record) => record.id === tableSkill.id);
-        if (isExtraSkill) { extraSkills.push(tableSkill.skill); }
+        if (isExtraSkill) { extraSkills.push(tableSkill); }
     }
     return extraSkills;
 }
@@ -85,7 +89,6 @@ export function getPropertyByName(name) {
 
 /// --- SELECT --- ///
 
-// Bewust verborgen. Exports worden verderop geregeld.
 // Ophalen van de skills uit vaardigheden/spreuken/recepten
 export function generateOptions(source) {
     return source.map((record) => ({
@@ -95,7 +98,6 @@ export function generateOptions(source) {
     }));
 }
 
-// Bewust verborgen. Exports worden verderop geregeld.
 // Ophalen van de skills uit vaardigheden/spreuken/recepten, minus geselecteerde skills
 export function regenerateOptions(source, tableData) {
     return source.map((record) => ({
@@ -236,15 +238,15 @@ function verifyTableMeetsPrerequisiteException(reqExceptions, tableData) {
 }
 
 // Check of de skill een vereiste is voor een van de gekozen skills
-export function isSkillAPrerequisiteToAnotherSkill(nameSkillToRemove, isRemoved, tableData, setModalMsg) {
+export function isSkillAPrerequisiteToAnotherSkill(removedSkillId, isRemoved, tableData, setModalMsg) {
     let isPrerequisite = false;
 
     if (tableData.length > 1) {
         // Check leermeester expertise afhankelijkheden
-        const containsTeacherSkill = tableData.some((record) => record.skill === "Leermeester Expertise");
+        const containsTeacherSkill = tableData.some((record) => record.id === teacherSkill);
         if (containsTeacherSkill) {
             const extraSkills = getExtraSkillsFromTable(tableData);
-            const filteredSkills = extraSkills.filter(extraSkill => extraSkill.toLowerCase() !== nameSkillToRemove.toLowerCase())
+            const filteredSkills = extraSkills.filter(extraSkill => extraSkill.id !== removedSkillId)
             if (filteredSkills.length === 0) {
                 isPrerequisite = true;
                 setModalMsg("Dit item is een vereiste voor vaardigheid:\n Leermeester Expertise \nVerwijderen is niet toegestaan.\n");
@@ -260,8 +262,7 @@ export function isSkillAPrerequisiteToAnotherSkill(nameSkillToRemove, isRemoved,
                 const reqCategory = skillTableData.Requirements.Category;
                 const reqException = skillTableData.Requirements.exception;
 
-                if (isRemoved === true &&
-                    skillTableData.skill.toLowerCase() === nameSkillToRemove.toLowerCase()) { continue; }
+                if (isRemoved === true && skillTableData.id === removedSkillId) { continue; }
                 else if (
                     reqSkills.length === 0 &&
                     reqAny.length === 0 &&
@@ -270,7 +271,7 @@ export function isSkillAPrerequisiteToAnotherSkill(nameSkillToRemove, isRemoved,
                 else {
                     // skill
                     if (reqSkills.length > 0 && isPrerequisite === false) {
-                        isPrerequisite = verifyRemovedSkillIsNotSkillPrerequisite(reqSkills, skillTableData, nameSkillToRemove, isRemoved);
+                        isPrerequisite = verifyRemovedSkillIsNotSkillPrerequisite(reqSkills, skillTableData, removedSkillId, isRemoved);
                         if (isPrerequisite === true) {
                             setModalMsg("Dit item is een vereiste voor vaardigheid:\n " + skillTableData.skill + " \nVerwijderen is niet toegestaan.\n");
                             break;
@@ -279,7 +280,7 @@ export function isSkillAPrerequisiteToAnotherSkill(nameSkillToRemove, isRemoved,
 
                     // any_list
                     if (reqAny.length > 0 && isPrerequisite === false) {
-                        isPrerequisite = verifyRemovedSkillIsNotOnlyAnyListPrerequisite(reqAny, nameSkillToRemove, tableData);
+                        isPrerequisite = verifyRemovedSkillIsNotOnlyAnyListPrerequisite(reqAny, removedSkillId, tableData);
                         if (isPrerequisite === true) {
                             setModalMsg("Dit item is een vereiste voor vaardigheid: \n" + skillTableData.skill + " \nVerwijderen is niet toegestaan.\n");
                             break;
@@ -294,11 +295,11 @@ export function isSkillAPrerequisiteToAnotherSkill(nameSkillToRemove, isRemoved,
                         // Afhandelen uitzondering
                         if (categories.length === 1 &&
                             categories.includes("Ritualisme")) {
-                            isPrerequisite = verifyRemovedSkillIsNotARitualismPrerequisite(nameSkillToRemove, tableData, isRemoved, totalReqXP);
+                            isPrerequisite = verifyRemovedSkillIsNotARitualismPrerequisite(removedSkillId, tableData, isRemoved, totalReqXP);
                         }
                         // Standaard werking categorie
                         else {
-                            isPrerequisite = verifyRemovedSkillIsNotACategoryPrerequisite(tableData, categories, skillTableData, nameSkillToRemove, totalReqXP);
+                            isPrerequisite = verifyRemovedSkillIsNotACategoryPrerequisite(tableData, categories, skillTableData, removedSkillId, totalReqXP);
                         }
 
                         if (isPrerequisite === true) {
@@ -311,7 +312,7 @@ export function isSkillAPrerequisiteToAnotherSkill(nameSkillToRemove, isRemoved,
 
                     // exception
                     if (reqException && isPrerequisite === false) {
-                        isPrerequisite = verifyTableExceptionSkillMeetsPrerequisite(tableData, reqException, skillTableData, nameSkillToRemove,);
+                        isPrerequisite = verifyTableExceptionSkillMeetsPrerequisite(tableData, reqException, skillTableData, removedSkillId,);
                         if (isPrerequisite === true) {
                             setModalMsg("Dit item is nodig voor als uitzondering" +
                                 " voor de vaardigheid: \n" + skillTableData.skill + "\n" +
@@ -327,40 +328,28 @@ export function isSkillAPrerequisiteToAnotherSkill(nameSkillToRemove, isRemoved,
 }
 
 // Check of de skill niet een prequisite is uit de Any_Skill
-function verifyRemovedSkillIsNotSkillPrerequisite(reqSkillIds, currentSkill, nameSkillToRemove, isRemoved) {
+function verifyRemovedSkillIsNotSkillPrerequisite(reqSkillIds, currentSkill, removedSkillId, isRemoved) {
     let isPrerequisite = false;
     for (const reqSkillId of reqSkillIds) {
-        if (isRemoved) {
-            const reqSkill = getSkillById(reqSkillId);
-            if (nameSkillToRemove.toLowerCase() === reqSkill.skill.toLowerCase()) {
-                isPrerequisite = true;
-                break;
-            }
-        }
-        else if (!isRemoved && currentSkill.skill.toLowerCase() === nameSkillToRemove.toLowerCase()) {
-            if (currentSkill.count === 1) { isPrerequisite = true; }
+        if ((isRemoved && removedSkillId === reqSkillId) ||
+            (!isRemoved && currentSkill.id === removedSkillId && currentSkill.count === 1)
+        ) {
+            return true;
         }
     }
     return isPrerequisite;
 }
 
 // Check of na verwijderen de overige skills nog voldoen voor de item.Any-List
-function verifyRemovedSkillIsNotOnlyAnyListPrerequisite(reqAny, nameSkillToRemove, tableData) {
-
-    // TODO: REWRITE TO FIND IDS INSTEAD
-
+function verifyRemovedSkillIsNotOnlyAnyListPrerequisite(reqAnyIds, removedSkillId, tableData) {
     let hasOtherSkillThatIsPrerequisite = false;
-    const cleanSkillName = nameSkillToRemove.includes("(") ? nameSkillToRemove.split(" (")[0] : nameSkillToRemove;
 
-    if (!reqAny.includes(cleanSkillName) &&
-        !reqAny.includes(nameSkillToRemove)) {
-        hasOtherSkillThatIsPrerequisite = true;
-    }
+    if (!reqAnyIds.includes(removedSkillId)) { hasOtherSkillThatIsPrerequisite = true; }
     else {
-        for (const req of reqAny) {
+        for (const reqAnyId of reqAnyIds) {
             hasOtherSkillThatIsPrerequisite = tableData.some((record) =>
-                record.skill.toLowerCase().includes(req.toLowerCase()) &&
-                record.skill.toLowerCase() !== nameSkillToRemove.toLowerCase());
+                record.id === reqAnyId &&
+                record.id !== removedSkillId);
             if (hasOtherSkillThatIsPrerequisite === true) { break; }
         }
     }
@@ -369,14 +358,14 @@ function verifyRemovedSkillIsNotOnlyAnyListPrerequisite(reqAny, nameSkillToRemov
 }
 
 // Check of een Category prerequisite behouden wordt wanneer de skill verwijdert/verlaagd wordt
-function verifyRemovedSkillIsNotACategoryPrerequisite(tableData, categories, item, nameSkillToRemove, totalReqXP) {
+function verifyRemovedSkillIsNotACategoryPrerequisite(tableData, categories, item, removedSkillId, totalReqXP) {
     let isPrerequisite = false;
     let selectedSkillsXP = 0;
 
     const selectedSkills = tableData.filter(tableItem => categories.includes(tableItem.category) && // van de juiste categorie
         (tableItem.Spreuken.length > 2 || tableItem.Recepten.length > 2) && // alleen skills met recepten of spreuken zijn doorgaans relevant                             
-        tableItem.skill.toLowerCase() !== item.skill.toLowerCase() && // item waarvan pre-reqs gecheckt worden uitsluiten
-        tableItem.skill.toLowerCase() !== nameSkillToRemove.toLowerCase()); // Skip zelf, deze is wordt verwijderd.
+        tableItem.id !== item.id && // item waarvan pre-reqs gecheckt worden uitsluiten
+        tableItem.id !== removedSkillId); // Skip zelf, deze is wordt verwijderd.
 
     selectedSkills.forEach(item => selectedSkillsXP += item.xp); // calculate XP
     if (totalReqXP > selectedSkillsXP) { isPrerequisite = true; }
@@ -409,10 +398,11 @@ function verifyTableExceptionSkillMeetsPrerequisite(tableData, reqExceptions, sk
 
 // Check of de ritualisme vaardigheid verwijdert wordt, en zo ja of deze een prerequisite is.
 // Zo ja, check ook of de vereiste door een andere ritualisme vaardigheid nog behaald wordt.
-function verifyRemovedSkillIsNotARitualismPrerequisite(nameSkillToRemove, tableData, isRemoved, totalReqXP) {
+function verifyRemovedSkillIsNotARitualismPrerequisite(removedSkillId, tableData, isRemoved, totalReqXP) {
     let isPrerequisite = false;
 
-    if (nameSkillToRemove.includes("Ritualisme")) {
+    // List all Ritualism skills
+    if (ritualismSkills.includes(removedSkillId)) {
         let tableSkillTotalXP = 0;
         const tableSkills = tableData.filter(tableItem => tableItem.category.includes("Ritualism"));
 
@@ -421,7 +411,7 @@ function verifyRemovedSkillIsNotARitualismPrerequisite(nameSkillToRemove, tableD
         else {
             for (const tableSkill of tableSkills) {
                 // Check of skill die vermindert wordt nog voldoet
-                if (tableSkill.skill === nameSkillToRemove) {
+                if (tableSkill.id === removedSkillId) {
                     if (!isRemoved) {
                         tableSkillTotalXP = tableSkill.xp - (tableSkill.xp / tableSkill.count);
                         isPrerequisite = totalReqXP > tableSkillTotalXP;
@@ -496,7 +486,8 @@ export function updateGridReceptenTiles(tableData) {
 
         for (const recipy of recepten) {
             const existingRecipy = recipyAccumulator.find((existing) => existing?.name.toLowerCase() === recipy.name.toLowerCase());
-            if (existingRecipy) { existingRecipy.count += recipy.count;
+            if (existingRecipy) {
+                existingRecipy.count += recipy.count;
             } else {
                 recipy.id = vaardigheid.id;
                 recipyAccumulator.push({ ...recipy });

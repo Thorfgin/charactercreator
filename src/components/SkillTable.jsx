@@ -104,12 +104,11 @@ export default function SkillTable() {
     // Verwijderen uit de tabel, updaten van grid
     function handleDelete(row) {
         // check of het een vereiste is
-        const isPrerequisite = isSkillAPrerequisiteToAnotherSkill(row.skill, true, tableData, setModalMsg);
+        const isPrerequisite = isSkillAPrerequisiteToAnotherSkill(row.id, true, tableData, setModalMsg);
         if (isPrerequisite) { setShowModal(true); }
         else {
             // Item weghalen uit grid
-            setTableData((prevData) => prevData.filter((item) =>
-                item.skill.toLowerCase() !== row.skill.toLowerCase()));
+            setTableData((prevData) => prevData.filter((item) => item.id !== row.id));
         }
     }
 

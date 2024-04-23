@@ -137,8 +137,8 @@ export default function Toolbar() {
         }
 
         const selectedRecord =
-            sourceBasisVaardigheden.find(record => record.skill.toLowerCase() === selectedSkill.value.toLowerCase()) ||
-            sourceExtraVaardigheden.find(record => record.skill.toLowerCase() === selectedSkill.value.toLowerCase());
+            sourceBasisVaardigheden.find(record => record.id === selectedSkill.id) ||
+            sourceExtraVaardigheden.find(record => record.id === selectedSkill.id);
         if (!selectedRecord) { return; }
 
         const meetsPrerequisites = meetsAllPrerequisites(selectedRecord, tableData);
@@ -163,8 +163,7 @@ export default function Toolbar() {
     // Voeg de geselecteerde Basis vaardigheid toe aan de tabel
     function handleBasicSkillSelection() {
         if (selectedBasicSkill) {
-            const selectedBasicRecord = sourceBasisVaardigheden.find((record) =>
-                record.skill.toLowerCase() === selectedBasicSkill.value.toLowerCase());
+            const selectedBasicRecord = sourceBasisVaardigheden.find((record) => record.id === selectedBasicSkill.id);
             const wasSuccesfull = handleAddToTable(selectedBasicRecord)
             if (wasSuccesfull) { setSelectedBasicSkill(''); }
         }
@@ -186,13 +185,9 @@ export default function Toolbar() {
             return;
         }
 
-        const selectedExtraRecord = sourceExtraVaardigheden.find((record) =>
-            record.skill.toLowerCase() === selectedExtraSkill.value.toLowerCase()
-        );
-
+        const selectedExtraRecord = sourceExtraVaardigheden.find((record) => record.id === selectedExtraSkill.id );
         if (selectedExtraRecord && handleAddToTable(selectedExtraRecord)) { setSelectedExtraSkill(''); }
     }
-
 
     // Acteer op een Key Press op de geselecteerde Extra vaaardigheid
     const handleExtraSkillSelectKeyPress = (event) => {
