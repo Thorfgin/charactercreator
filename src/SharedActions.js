@@ -16,26 +16,6 @@ import {
 
 /// --- SKILLS --- ///
 
-//getSkillByName.propTypes = { skillName: PropTypes.string.isRequired };
-
-//// Ophalen van een vaardigheid op naam
-//export function getSkillByName(skillName, useIncludes = false) {
-//    let sourceSkill = null;
-//    if (useIncludes === true) {
-//        sourceSkill = sourceBasisVaardigheden.find((item) => item.skill.toLowerCase().includes(skillName.toLowerCase()));
-//        if (!sourceSkill || sourceSkill === null) {
-//            sourceSkill = sourceExtraVaardigheden.find((item) => item.skill.toLowerCase().includes(skillName.toLowerCase()));
-//        }
-//    }
-//    else {
-//        sourceSkill = sourceBasisVaardigheden.find((item) => item.skill.toLowerCase() === skillName.toLowerCase());
-//        if (!sourceSkill || sourceSkill === null) {
-//            sourceSkill = sourceExtraVaardigheden.find((item) => item.skill.toLowerCase() === skillName.toLowerCase());
-//        }
-//    }
-//    return sourceSkill;
-//}
-
 // Ophalen van een vaardigheid op id
 export function getSkillById(id) {
     let sourceSkill = null;
@@ -227,8 +207,7 @@ function verifyTableMeetsPrerequisiteCategoryXP(reqCategory, tableData) {
 function verifyTableMeetsPrerequisiteException(reqExceptions, tableData) {
     let meetsException = false;
     for (const reqException of reqExceptions) {
-        const matchingSkills = tableData.filter(skillTableData =>
-            skillTableData.skill.toLowerCase().includes(reqException.toLowerCase()));
+        const matchingSkills = tableData.filter(skillTableData => skillTableData.id === reqException);
         if (matchingSkills.length > 0) {
             meetsException = true;
             break;
@@ -374,15 +353,15 @@ function verifyRemovedSkillIsNotACategoryPrerequisite(tableData, categories, ite
 
 // Check of de uitgezonderde skills aanwezig zijn in tableData en of deze nog voldoen zonder verwijderde vaardigheid
 // Dit is specifiek voor Druid/Necro die bepaalde vereisten mogen negeren
-function verifyTableExceptionSkillMeetsPrerequisite(tableData, reqExceptions, skillTableData, nameSkillToRemove) {
+function verifyTableExceptionSkillMeetsPrerequisite(tableData, reqExceptions, skillTableData, removedSkillId) {
     let isExceptionPrerequisite = false;
 
-    for (const exception of reqExceptions) {
-        if (nameSkillToRemove.toLowerCase() === exception.toLowerCase()) {
+    for (const exceptionId of reqExceptions) {
+        if (removedSkillId === exceptionId) {
             const filteredTableData = []
             for (const oldSkill of tableData) {
-                if (oldSkill.skill.toLowerCase() !== skillTableData.skill.toLowerCase() &&
-                    oldSkill.skill.toLowerCase() !== nameSkillToRemove.toLowerCase())
+                if (oldSkill.id !== skillTableData.id &&
+                    oldSkill.id !== removedSkillId)
                     filteredTableData.push(oldSkill)
             }
 

@@ -1617,7 +1617,7 @@
           "name": [ "Magiërvaardigheden" ],
           "value": 4
         },
-        "exception": [ "Doods Druidisme A", "Necromancer A" ]
+        "exception": [ 651, 675 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -1802,7 +1802,7 @@
           "name": [ "Magiërvaardigheden" ],
           "value": 4
         },
-        "exception": [ "Levens Druidisme A" ]
+        "exception": [ 650 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -2155,7 +2155,7 @@
           "name": [ "Priestervaardigheden" ],
           "value": 4
         },
-        "exception": [ "Doods Druidisme A", "Necromancer A" ]
+        "exception": [ 651, 675 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -2248,7 +2248,7 @@
           "name": [ "Priestervaardigheden" ],
           "value": 4
         },
-        "exception": [ "Levens Druidisme A" ]
+        "exception": [ 650 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -4086,7 +4086,7 @@
       "Requirements": {
         "skill": [ 279 ],
         "any_list": [],
-        "exception": [ "Doods Druidisme A", "Necromancer A" ]
+        "exception": [ 651, 675 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -4223,7 +4223,7 @@
       "Requirements": {
         "skill": [ 283 ],
         "any_list": [],
-        "exception": [ "Levens Druidisme A" ]
+        "exception": [ 650 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -4528,7 +4528,7 @@
       "Requirements": {
         "skill": [ 330 ],
         "any_list": [],
-        "exception": [ "Doods Druidisme A", "Necromancer A" ]
+        "exception": [ 651, 675 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -4597,7 +4597,7 @@
       "Requirements": {
         "skill": [ 332 ],
         "any_list": [],
-        "exception": [ "Levens Druidisme A" ]
+        "exception": [ 650 ]
       },
       "xp": 4,
       "loresheet": {},

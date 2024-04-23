@@ -25,6 +25,7 @@ import {
 // json
 import vaardigheden_schema from './schemas/vaardigheden-schema.json';
 
+
 const sourceVaardigheden = getSourceVaardigheden();
 
 
