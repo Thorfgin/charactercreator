@@ -4,6 +4,7 @@
       "categorie": "Vechter technieken",
       "Skills": [
         {
+          "id": [ 175 ],
           "skill": "Doorzettingsvermogen",
           "Spells": [
             {
@@ -29,6 +30,7 @@
           ]
         },
         {
+          "id": [ 176 ],
           "skill": "Kracht A",
           "Spells": [
             {
@@ -54,6 +56,7 @@
           ]
         },
         {
+          "id": [ 601 ],
           "skill": "Kracht B",
           "Spells": [
             {
@@ -79,6 +82,7 @@
           ]
         },
         {
+          "id": [ 177 ],
           "skill": "Taaiheid A",
           "Spells": [
             {
@@ -104,6 +108,7 @@
           ]
         },
         {
+          "id": [ 602 ],
           "skill": "Taaiheid B",
           "Spells": [
             {
@@ -129,6 +134,7 @@
           ]
         },
         {
+          "id": [ 178 ],
           "skill": "Leiderschap A",
           "Spells": [
             {
@@ -154,6 +160,7 @@
           ]
         },
         {
+          "id": [ 603 ],
           "skill": "Leiderschap B",
           "Spells": [
             {
@@ -179,6 +186,7 @@
           ]
         },
         {
+          "id": [ 179 ],
           "skill": "Bescherming A",
           "Spells": [
             {
@@ -204,6 +212,7 @@
           ]
         },
         {
+          "id": [ 604 ],
           "skill": "Bescherming B",
           "Spells": [
             {
@@ -229,6 +238,7 @@
           ]
         },
         {
+          "id": [ 180 ],
           "skill": "Berserker A",
           "Spells": [
             {
@@ -254,6 +264,7 @@
           ]
         },
         {
+          "id": [ 605 ],
           "skill": "Berserker B",
           "Spells": [
             {
@@ -284,6 +295,7 @@
       "categorie": "Magiërspreuken",
       "Skills": [
         {
+          "id": [ 275 ],
           "skill": "White magic",
           "Spells": [
             {
@@ -339,6 +351,7 @@
           ]
         },
         {
+          "id": [ 276 ],
           "skill": "Grey magic",
           "Spells": [
             {
@@ -394,6 +407,7 @@
           ]
         },
         {
+          "id": [ 277 ],
           "skill": "Black magic",
           "Spells": [
             {
@@ -449,6 +463,7 @@
           ]
         },
         {
+          "id": [ 278 ],
           "skill": "Air Magic B",
           "Spells": [
             {
@@ -494,6 +509,7 @@
           ]
         },
         {
+          "id": [ 526 ],
           "skill": "Air magic C",
           "Spells": [
             {
@@ -519,6 +535,7 @@
           ]
         },
         {
+          "id": [ 279 ],
           "skill": "Metal magic B",
           "Spells": [
             {
@@ -564,6 +581,7 @@
           ]
         },
         {
+          "id": [ 527 ],
           "skill": "Metal magic C",
           "Spells": [
             {
@@ -589,6 +607,7 @@
           ]
         },
         {
+          "id": [ 280 ],
           "skill": "Earth magic B",
           "Spells": [
             {
@@ -634,6 +653,7 @@
           ]
         },
         {
+          "id": [ 528 ],
           "skill": "Earth magic C",
           "Spells": [
             {
@@ -659,6 +679,7 @@
           ]
         },
         {
+          "id": [ 281 ],
           "skill": "Water magic B",
           "Spells": [
             {
@@ -704,6 +725,7 @@
           ]
         },
         {
+          "id": [ 529 ],
           "skill": "Water magic C",
           "Spells": [
             {
@@ -729,6 +751,7 @@
           ]
         },
         {
+          "id": [ 282 ],
           "skill": "Fire Magic B",
           "Spells": [
             {
@@ -774,6 +797,7 @@
           ]
         },
         {
+          "id": [ 530 ],
           "skill": "Fire Magic C",
           "Spells": [
             {
@@ -799,6 +823,7 @@
           ]
         },
         {
+          "id": [ 283 ],
           "skill": "Wood Magic B",
           "Spells": [
             {
@@ -844,6 +869,7 @@
           ]
         },
         {
+          "id": [ 531 ],
           "skill": "Wood Magic C",
           "Spells": [
             {
@@ -869,6 +895,7 @@
           ]
         },
         {
+          "id": [ 532, 533, 534 ],
           "skill": "Speciale Magiërspreuken",
           "Spells": [
             {
@@ -909,6 +936,7 @@
       "categorie": "Paladijnspreuken",
       "Skills": [
         {
+          "id": [ 300 ],
           "skill": "Paladijn A",
           "Spells": [
             {
@@ -944,6 +972,7 @@
           ]
         },
         {
+          "id": [ 301 ],
           "skill": "Paladijn B",
           "Spells": [
             {
@@ -984,6 +1013,7 @@
       "categorie": "Priesterspreuken",
       "Skills": [
         {
+          "id": [ 325 ],
           "skill": "Purity A",
           "Spells": [
             {
@@ -1039,6 +1069,7 @@
           ]
         },
         {
+          "id": [ 328 ],
           "skill": "Purity B",
           "Spells": [
             {
@@ -1084,6 +1115,7 @@
           ]
         },
         {
+          "id": [ 552 ],
           "skill": "Purity C",
           "Spells": [
             {
@@ -1109,6 +1141,7 @@
           ]
         },
         {
+          "id": [ 326 ],
           "skill": "Wrath A",
           "Spells": [
             {
@@ -1164,6 +1197,7 @@
           ]
         },
         {
+          "id": [ 329 ],
           "skill": "Wrath B",
           "Spells": [
             {
@@ -1209,6 +1243,7 @@
           ]
         },
         {
+          "id": [ 553 ],
           "skill": "Wrath C",
           "Spells": [
             {
@@ -1234,6 +1269,7 @@
           ]
         },
         {
+          "id": [ 327 ],
           "skill": "Death A",
           "Spells": [
             {
@@ -1289,6 +1325,7 @@
           ]
         },
         {
+          "id": [ 330 ],
           "skill": "Death B",
           "Spells": [
             {
@@ -1334,6 +1371,7 @@
           ]
         },
         {
+          "id": [ 554 ],
           "skill": "Death C",
           "Spells": [
             {
@@ -1359,6 +1397,7 @@
           ]
         },
         {
+          "id": [ 331 ],
           "skill": "Mind B",
           "Spells": [
             {
@@ -1404,6 +1443,7 @@
           ]
         },
         {
+          "id": [ 555 ],
           "skill": "Mind C",
           "Spells": [
             {
@@ -1429,6 +1469,7 @@
           ]
         },
         {
+          "id": [ 332 ],
           "skill": "Nature B",
           "Spells": [
             {
@@ -1474,6 +1515,7 @@
           ]
         },
         {
+          "id": [ 556 ],
           "skill": "Nature C",
           "Spells": [
             {
@@ -1499,6 +1541,7 @@
           ]
         },
         {
+          "id": [ 557, 558, 559 ],
           "skill": "Speciale Priesterspreuken",
           "Spells": [
             {
@@ -1539,6 +1582,7 @@
       "categorie": "Genezingsspreuken",
       "Skills": [
         {
+          "id": [ 350, 351 ],
           "skill": "Genezing A",
           "Spells": [
             {
@@ -1594,6 +1638,7 @@
           ]
         },
         {
+          "id": [ 352, 353 ],
           "skill": "Genezing B",
           "Spells": [
             {
@@ -1639,6 +1684,7 @@
           ]
         },
         {
+          "id": [ 354, 355 ],
           "skill": "Genezer van Giffen",
           "Spells": [
             {
@@ -1684,6 +1730,7 @@
           ]
         },
         {
+          "id": [ 356, 357 ],
           "skill": "Genezer van Ziekten",
           "Spells": [
             {
@@ -1729,6 +1776,7 @@
           ]
         },
         {
+          "id": [ 358, 359 ],
           "skill": "Genezer van Geest",
           "Spells": [
             {
@@ -1776,6 +1824,7 @@
           ]
         },
         {
+          "id": [ 502, 503 ],
           "skill": "Genezing C",
           "Spells": [
             {
@@ -1816,6 +1865,7 @@
       "categorie": "Demonologie",
       "Skills": [
         {
+          "id": [ 625 ],
           "skill": "Demonoloog A",
           "Spells": [
             {
@@ -1861,6 +1911,7 @@
           ]
         },
         {
+          "id": [ 626, 627 ],
           "skill": "Demonoloog B",
           "Spells": [
             {
@@ -1916,6 +1967,7 @@
           ]
         },
         {
+          "id": [ 628, 629 ],
           "skill": "Demonoloog C",
           "Spells": [
             {
@@ -1956,6 +2008,7 @@
       "categorie": "Druidisme",
       "Skills": [
         {
+          "id": [ 650, 651 ],
           "skill": "Druid A",
           "Spells": [
             {
@@ -2001,6 +2054,7 @@
           ]
         },
         {
+          "id": [ 652, 653, 654, 655 ],
           "skill": "Druid B",
           "Spells": [
             {
@@ -2046,6 +2100,7 @@
           ]
         },
         {
+          "id": [ 656, 657, 658, 659 ],
           "skill": "Druid C",
           "Spells": [
             {
@@ -2086,6 +2141,7 @@
       "categorie": "Necromantie",
       "Skills": [
         {
+          "id": [ 675 ],
           "skill": "Necromancer A",
           "Spells": [
             {
@@ -2141,6 +2197,7 @@
           ]
         },
         {
+          "id": [ 676, 677 ],
           "skill": "Necromancer B",
           "Spells": [
             {
@@ -2186,6 +2243,7 @@
           ]
         },
         {
+          "id": [ 678, 679 ],
           "skill": "Necromancer C",
           "Spells": [
             {

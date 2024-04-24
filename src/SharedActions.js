@@ -35,10 +35,9 @@ getBasicSkillsFromTable.propTypes = {
 // Ophalen van alle vaardigheden uit de basis vaardigheden die aanwezig zijn in de tabel
 export function getBasicSkillsFromTable(tableData) {
     const basicSkills = []
-    for (const tableSkill of tableData) {
-        const isBasicSkill = sourceBasisVaardigheden.some((record) => record.id === tableSkill.id);
-        if (isBasicSkill) { basicSkills.push(tableSkill); }
-    }
+    tableData.forEach((tableSkill) => {
+        if (sourceBasisVaardigheden.some((record) => record.id === tableSkill.id)) { basicSkills.push(tableSkill) }
+    });
     return basicSkills;
 }
 
@@ -48,11 +47,12 @@ getExtraSkillsFromTable.propTypes = {
 
 // Ophalen van alle vaardigheden uit de extra vaardigheden die aanwezig zijn in de tabel
 export function getExtraSkillsFromTable(tableData) {
+    if (!tableData || !tableData.length === 0) { return []; }
     const extraSkills = []
-    for (const tableSkill of tableData) {
-        const isExtraSkill = sourceExtraVaardigheden.some((record) => record.id === tableSkill.id);
-        if (isExtraSkill) { extraSkills.push(tableSkill); }
-    }
+    tableData.forEach((tableSkill) => {
+        if (sourceExtraVaardigheden.some((record) =>
+            record.id === tableSkill.id)) { extraSkills.push(tableSkill) }
+    });
     return extraSkills;
 }
 
