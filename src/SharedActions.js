@@ -16,6 +16,10 @@ import {
 
 /// --- SKILLS --- ///
 
+getSkillById.propTypes = {
+    id: PropTypes.number.isRequired
+};
+
 // Ophalen van een vaardigheid op id
 export function getSkillById(id) {
     let sourceSkill = null;
@@ -23,6 +27,10 @@ export function getSkillById(id) {
     if (!sourceSkill) { sourceSkill = sourceExtraVaardigheden.find((record) => record.id === id); }
     return sourceSkill;
 }
+
+getBasicSkillsFromTable.propTypes = {
+    tableData: PropTypes.array.isRequired
+};
 
 // Ophalen van alle vaardigheden uit de basis vaardigheden die aanwezig zijn in de tabel
 export function getBasicSkillsFromTable(tableData) {
@@ -33,6 +41,10 @@ export function getBasicSkillsFromTable(tableData) {
     }
     return basicSkills;
 }
+
+getExtraSkillsFromTable.propTypes = {
+    tableData: PropTypes.array.isRequired
+};
 
 // Ophalen van alle vaardigheden uit de extra vaardigheden die aanwezig zijn in de tabel
 export function getExtraSkillsFromTable(tableData) {
@@ -45,6 +57,7 @@ export function getExtraSkillsFromTable(tableData) {
 }
 
 /// --- SPELLS & RECIPE --- ///
+// Ophalen van een spreuk op bases van de skill
 export function getSpellBySkill(sourceSkill, spellName) {
     if (!sourceSkill || !spellName) { return; }
 
@@ -54,6 +67,7 @@ export function getSpellBySkill(sourceSkill, spellName) {
     return sourceSpell?.Spells.find((item) => item.spell.toLowerCase() === spellName.toLowerCase());
 }
 
+// Ophalen van een recept op bases van de skill
 export function getRecipeBySkill(sourceSkill, recipeName) {
     if (!sourceSkill || !recipeName) { return; }
 

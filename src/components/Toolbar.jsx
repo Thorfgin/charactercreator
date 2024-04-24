@@ -318,14 +318,14 @@ export default function Toolbar() {
                 <ConfirmModal
                     header={headerConfirmModal}
                     modalMsg={msgConfirmModal}
-                    onClose={closeConfirmRemoveModal}
+                    closeModal={closeConfirmRemoveModal}
                     onConfirm={removeCharacterFromLocalStorage}
                 />)}
             {showConfirmUpdateModal === true && (
                 <ConfirmModal
                     header={headerConfirmModal}
                     modalMsg={msgConfirmModal}
-                    onClose={closeConfirmUpdateModal}
+                    closeModal={closeConfirmUpdateModal}
                     onConfirm={saveCharacterToLocalStorage}
                 />)}
             <div className="character-container">
