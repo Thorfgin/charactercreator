@@ -72,7 +72,7 @@
               "description": "De krijger is in staat om zijn wilskracht te concentreren in zijn aanval. De krijger kan met zijn eerstvolgende klap een BLAST slaan. Dit mag alleen met een wapen wat groter is dan 45 cm. Het effect treedt alleen op wanneer de krijger zijn wapen met twee handen hanteert. \n\nDeze techniek kan slechts een keer per minuut gebruikt worden.",
               "spell_effect": "Direct",
               "spell_duration": "",
-              "page": 0
+              "page": 18
             },
             {
               "id": 6,
@@ -83,7 +83,7 @@
               "description": "De krijger is in staat om middels zijn wilskracht zich te verzetten tegen een aanval. \nAls reactie op een STRIKE effect kan een krijger zijn of haar wilskracht gebruiken en het effect negeren, je krijgt nog wel de eventuele schade van de wapenslag.",
               "spell_effect": "Direct, Zelf",
               "spell_duration": "",
-              "page": 0
+              "page": 18
             }
           ]
         },
@@ -128,7 +128,7 @@
               "description": "De krijger is in staat om middels zijn wilskracht zich te verzetten tegen een aanval. \nDe krijger zal voor de duratie van deze techniek immuun zijn voor het eerstvolgende POISON of DISEASE effect.",
               "spell_effect": "Zelf",
               "spell_duration": "1 uur of tot gebruikt",
-              "page": 0
+              "page": 19
             },
             {
               "id": 10,
@@ -139,7 +139,7 @@
               "description": "De krijger is in staat om middels zijn wilskracht zich te verzetten tegen een aanval. \nAls reactie op een CRUSH effect, kan een krijger zijn of haar wilskracht gebruiken en slechts 1 schade krijgen.",
               "spell_effect": "Direct, Zelf",
               "spell_duration": "",
-              "page": 0
+              "page": 19
             }
           ]
         },
@@ -184,7 +184,7 @@
               "description": "Het aangeraakte pantser krijgt 1 extra armourpoint voor een uur of tot deze eraf geslagen is. \nDeze techniek werkt enkel als de ontvanger minimaal 1 punt aan fysiek armour draagt dat kort (15 seconden) geïnspecteerd dient te worden. \n\nDeze spreuk kan op maximaal 3 pantsers tegelijk gebruikt worden door het laatste deel van de incantatie te herhalen en tot 3 pantsers aan te raken.",
               "spell_effect": "Aanraking",
               "spell_duration": "1 uur",
-              "page": 0
+              "page": 20
             },
             {
               "id": 14,
@@ -195,7 +195,7 @@
               "description": "Als reactie op een GEESTBEINVLOEDEND effect, je kunt je willpower gebruiken en het effect negeren",
               "spell_effect": "Direct, Zelf",
               "spell_duration": "",
-              "page": 0
+              "page": 20
             }
           ]
         },
@@ -240,7 +240,7 @@
               "description": "De krijger zal zich achter zijn schild verschuilen en zijn positie vasthouden, hij mag niet meer dan 1 meter van zijn huidige locatie lopen anders eindigt deze techniek, \nDe krijger krijgt 2 extra hitpoints, en is immuun voor STRIKE en FEAR. \n\nDeze techniek kan slechts een keer per 5 minuten gebruikt worden.",
               "spell_effect": "Direct, Zelf",
               "spell_duration": "5 minuten of tot de stance verbreekt",
-              "page": 0
+              "page": 21
             },
             {
               "id": 18,
@@ -251,7 +251,7 @@
               "description": "Als reactie op een TORTURE effect, kun je als krijger je willpower gebruiken en het effect negeren. \nDeze techniek moet gestart zijn binnen 2 seconden nadat de torture is gecast.",
               "spell_effect": "Direct, Zelf",
               "spell_duration": "",
-              "page": 0
+              "page": 21
             }
           ]
         },
@@ -296,7 +296,7 @@
               "description": "De krijger wordt roekeloos en agressief.\n(Let wel op veilig vechten) \nDe krijger krijgt voor de duratie van deze techniek 3 extra hitpoints, en kan voor de duur van deze techniek geen andere vaardigheden dan vechters vaardigheden gebruiken. \n\nDeze techniek kan slechts een keer per 5 minuten gebruikt worden.",
               "spell_effect": "Zelf",
               "spell_duration": "1 minuut",
-              "page": 0
+              "page": 22
             },
             {
               "id": 22,
@@ -307,7 +307,7 @@
               "description": "Als reactie op een FEAR effect, kun je als krijger je willpower gebruiken en het effect negeren",
               "spell_effect": "Direct, Zelf",
               "spell_duration": "",
-              "page": 0
+              "page": 22
             }
           ]
         }
@@ -562,7 +562,7 @@
               "description": "De ontvanger krijgt voor de duratie van deze spreuk 3 extra armour points, wordt beschermd tegen BLAST effecten welke slechts 1 schade doen, en ontvangt tevens het SLOW effect. \n\nDeze spreuk werkt alleen als de ontvanger andere vormen van pantser draagt (dit spreekt de reguliere regels rondom extra AP tegen). \nHet SLOW effect kan nooit teniet gedaan worden.",
               "spell_effect": "Enchantment, Zelf",
               "spell_duration": "1 uur",
-              "page": 0
+              "page": 28
             },
             {
               "id": 45,
@@ -573,7 +573,7 @@
               "description": "Zal alle enchantments opheffen die actief zijn op het doel van deze spreuk.",
               "spell_effect": "Direct, 5 meter",
               "spell_duration": "",
-              "page": 0
+              "page": 28
             }
           ]
         },
@@ -640,7 +640,7 @@
               "description": "De magiër kan gedurende de duur van de spreuk (30 seconden) een onbeperkt aantal keer FEAR effect uitdelen – hiervoor moet het slachtoffer aangeraakt worden. Het effect van deze FEAR is verder identiek aan de spreuk FEAR.",
               "spell_effect": "Enchantment, Zelf",
               "spell_duration": "30 seconden",
-              "page": 0
+              "page": 30
             },
             {
               "id": 51,
@@ -651,7 +651,7 @@
               "description": "De ontvanger van deze spreuk krijgt een CRUSH effect (5 schade).",
               "spell_effect": "Direct, 5 meter",
               "spell_duration": "",
-              "page": 0
+              "page": 30
             }
           ]
         },
@@ -718,7 +718,7 @@
               "description": "De ontvanger krijgt voor de duratie van deze spreuk 3 extra hitpoints.",
               "spell_effect": "Enchantment, Zelf",
               "spell_duration": "5 minuten",
-              "page": 0
+              "page": 32
             },
             {
               "id": 57,
@@ -729,7 +729,7 @@
               "description": "Het aangeraakte wapen doet bij één slag naar keuze CRUSH (5 schade). Alleen te gebruiken op wapens langer dan 45 cm en niet te gebruiken op afstandwapens.",
               "spell_effect": "Enchantment, Aanraking",
               "spell_duration": "1 uur of tot gebruik",
-              "page": 0
+              "page": 32
             }
           ]
         },
@@ -796,7 +796,7 @@
               "description": "Deze spreuk kan op 3 verschillende manieren gebruikt worden (maar niet tegelijkertijd). \n\nKennis van spreuken \nDe ontvanger van de spreuk zal voor de duur van de spreuk de spreuken van de door de magiër gekozen magiërvaardigeid met een maximaal niveau van C, die de magiër zelf vanuit een vaardigheid (geen item, scroll of condition) kent, kunnen casten. De ontvanger moet de mana voor het casten van de spreuk zelf betalen. \nDe ontvanger krijgt géén extra mana.\nDirect ,Enchantment, Aanraking, 1 uur \n\nKennis van Glyphs \nOntvanger krijgt de vaardigheid GLYPHS LEZEN. Deze optie vereist dat de magiër zelf de vaardigheid GLYPHS LEZEN heeft; zonder dat kan hij de ontvanger deze kennis niet geven.\nDirect, Enchantment,Aanraking, 1 uur \n\nKennis van talen \nDe ontvanger kan elke normale, taal lezen voor de duur van de spreuk. Geheimtaal en versleutelde taal kunnen hier vaak niet mee gelezen worden.\nEnchantment, aanraking, 1 dag",
               "spell_effect": "",
               "spell_duration": "",
-              "page": 0
+              "page": 34
             },
             {
               "id": 63,
@@ -807,7 +807,7 @@
               "description": "De ontvanger van de spreuk is verstijfd voor de duur van de spreuk en kan niet bewegen (of door anderen in andere posities gezet worden). Als zijn ogen open waren op het moment van uitspreken van de spreuk, dan kan hij wel alles zien. Andere zintuigen werken als normaal. Wanneer de persoon een voorwerp in de hand had toen hij geparalyseerd werd, kan dit voorwerp niet verwijderd worden. Indien de ontvanger van de spreuk dodelijk gewond raakt, wordt de spreuk opgeheven.",
               "spell_effect": "Enchantment, Aanraking",
               "spell_duration": "5 minuten",
-              "page": 0
+              "page": 34
             }
           ]
         },
@@ -874,7 +874,7 @@
               "description": "De gewillige ontvanger van de spreuk zal 1 minuut lang schreeuwen van de pijn. Tijdens deze minuut kan de speler 3x een DESTROY effect uitdelen door iemand aan te raken. \n\nNa deze minuut zal de ontvanger van de spreuk een FATAL effect krijgen. Dit FATAL effect kan niet tegengehouden of verminderd worden.",
               "spell_effect": "Enchantment, Aanraking",
               "spell_duration": "1 minuut",
-              "page": 0
+              "page": 35
             },
             {
               "id": 69,
@@ -885,7 +885,7 @@
               "description": "Doet een DESTROY effect (10 schade).",
               "spell_effect": "Direct, Aanraking",
               "spell_duration": "",
-              "page": 0
+              "page": 36
             }
           ]
         },
@@ -952,7 +952,7 @@
               "description": "De ontvanger van deze spreuk zal voor de duur van deze spreuk 3 extra hitpoints krijgen, en immuun worden voor geestbeïnvloedende effecten (buiten de Primal Rage zelf). Gedurende de duur van de spreuk zal hij alle vijanden die hij ziet aanvallen. \n\nIndien er geen vijanden in zicht zijn, zal hij willekeurige personen aanvallen. De vechtstijl van de ontvanger zal roekeloos en wild zijn. De ontvanger zal geen vaardigheden kunnen gebruiken behalve vaardigheden om fysiek mee te vechten (praktisch alleen de Wapen- en Pantservaardigheden). \nDe ontvanger kan geen spreuken of vechter technieken gebruiken.",
               "spell_effect": "Enchantment, Geestbeïnvloedend, Aanraking",
               "spell_duration": "5 minuten",
-              "page": 0
+              "page": 37
             },
             {
               "id": 75,
@@ -963,7 +963,7 @@
               "description": "De magiër kan een wapen naar keuze imbuen. Dit wapen kan vervolgens 1 slag naar keuze een PARALYZE POISON effect doen. Als de magiër dit wapen loslaat voordat de spreuk eindigt dan ontvangt de magiër een CURSE LIFE POISON waar de magiër niet immuun tegen kan zijn. \nDit effect werkt niet op afstandswapens.",
               "spell_effect": "Enchantment, Aanraking",
               "spell_duration": "1 uur of tot gebruik",
-              "page": 0
+              "page": 37
             }
           ]
         },
@@ -980,7 +980,7 @@
               "description": "Bij deze spreuk kan het tweede deel van de incantatie tot 3 keer toe herhaald worden (binnen 1 minuut) om tot 3 verschillende personen te beïnvloeden. De ontvanger krijgt een DESTROY effect (10 schade). \n\nDe magiër kan na het uitspreken van deze incantatie een uur lang niet casten (zowel vanuit zichzelf als items, scrolls en dergelijke) afgezien van het bovenstaande beschreven effect. \n\nDeze spreuk is maar één keer per dag te gebruiken.\n Deze spreuk kan niet gecountered worden.",
               "spell_effect": "Direct, 5 meter",
               "spell_duration": "",
-              "page": 0
+              "page": 38
             },
             {
               "id": 101,
@@ -991,7 +991,7 @@
               "description": "De ontvanger van deze spreuk moet uitgeschakeld zijn. De ontvanger krijgt een TOTAL HEALING en een DOMINATE effect, waarbij hij zonder inachtneming van zijn eigen veiligheid gedurende 5 minuten alle commando’s van de spreukgebruiker moet opvolgen. \n\nDe magiër kan na het uitspreken van deze incantatie een uur lang niet casten (zowel vanuit zichzelf als items, scrolls en dergelijke). \nDeze spreuk kan niet gecountered worden.",
               "spell_effect": "Enchantment, aanraking",
               "spell_duration": "5 minuten",
-              "page": 0
+              "page": 38
             },
             {
               "id": 102,
@@ -1002,7 +1002,7 @@
               "description": "De ontvanger van deze spreuk moet uitgeschakeld zijn. De ontvanger krijgt een FATAL DISEASE effect. Zolang de fatal disease nog actief is zullen de eerste 3 personen die de ontvanger van deze spreuk daarna aanraken een BLAST DISEASE ontvangen. (deze call moet de ontvanger van de spreuk geven aan de eerste 3 personen die hem/haar aanraken. Dit wordt door de magiër uitgelegd aan de ontvanger van de spreuk!) \nDeze spreuk kan niet gecountered worden.",
               "spell_effect": "Aanraking",
               "spell_duration": "10 seconden",
-              "page": 0
+              "page": 38
             }
           ]
         }
@@ -1218,7 +1218,7 @@
               "description": "De ontvanger krijgt een CRUSH schade (5 schade)",
               "spell_effect": "Direct, 5 meter",
               "spell_duration": "",
-              "page": 0
+              "page": 43
             },
             {
               "id": 160,
@@ -1229,7 +1229,7 @@
               "description": "Het aangeraakte pantser krijgt 3 extra armourpoints totdat de spreuk is afgelopen of tot deze eraf geslagen zijn en wordt immuun voor SHATTER. \nDe spreuk werkt enkel als de ontvanger minimaal 3 punten aan fysiek armour draagt.",
               "spell_effect": "Enchantment, Aanraking",
               "spell_duration": "1 uur",
-              "page": 0
+              "page": 43
             }
           ]
         },
@@ -1357,7 +1357,7 @@
               "description": "De ontvanger van de spreuk zal gedurende 30 seconden immense pijn voelen, en niet anders kunnen doen dan krijsen, op de grond vallen en kronkelen van de pijn.",
               "spell_effect": "Enchantment, 5 meter",
               "spell_duration": "30 seconden",
-              "page": 0
+              "page": 45
             },
             {
               "id": 171,
@@ -1368,7 +1368,7 @@
               "description": "Het aangeraakte wapen mag door iedereen gehanteerd worden, kan 2 klappen naar keuze BLAST (3 schade) slaan en geeft bescherming tegen FEAR, CONFUSE en SLEEP. Werkt niet op afstandswapens.",
               "spell_effect": "Enchantment, Aanraking",
               "spell_duration": "1 uur",
-              "page": 0
+              "page": 46
             }
           ]
         },
@@ -1496,7 +1496,7 @@
               "description": "De aangeraakte persoon ontvangt een DESTROY effect (10 schade).",
               "spell_effect": "Direct, aanraking",
               "spell_duration": "",
-              "page": 0
+              "page": 49
             },
             {
               "id": 182,
@@ -1507,7 +1507,7 @@
               "description": "Het aangeraakte wapen doet bij drie slagen naar keuze HIT POISON.",
               "spell_effect": "Enchantment, Aanraking",
               "spell_duration": "1 uur of tot gebruik",
-              "page": 0
+              "page": 49
             }
           ]
         },
@@ -1574,7 +1574,7 @@
               "description": "Deze spreuk kan op 3 verschillende manieren gebruikt worden (maar niet tegelijkertijd). \n\nOpties: \nKennis van spreuken \nDe ontvanger van de spreuk zal voor de duur van de spreuk de spreuken uit een van de door de priester gekozen priestervaardigheid met een maximaal niveau van C, die de priester zelf vanuit een vaardigheid (geen item, scroll of condition) kent, kunnen casten. De ontvanger moet de mana voor het casten van de spreuk zelf betalen. De ontvanger krijgt géén extra mana. \nEnchantment, Direct, Aanraking, 1 uur \n\nKennis van runen\nOntvanger krijgt de vaardigheid RUNES LEZEN. Deze optie vereist dat de priester zelf de vaardigheid RUNES LEZEN heeft; zonder dat kan hij de ontvanger deze kennis niet geven.\n Enchantment, Direct, Aanraking, 1 uur\n\n Kennis van talen \nDe ontvanger kan elke normale, niet-magische taal lezen voor de duur van de spreuk. Geheimtaal en versleutelde taal kunnen hier vaak niet mee gelezen worden.\nEnchantment, aanraking, 1 dag\n",
               "spell_effect": "Enchantment, Direct, Aanraking",
               "spell_duration": "1 uur",
-              "page": 0
+              "page": 51
             },
             {
               "id": 188,
@@ -1585,7 +1585,7 @@
               "description": "De priester is, zolang hij de incantatie blijft herhalen, immuun voor alle spreuken.",
               "spell_effect": "Concentratie, Zelf",
               "spell_duration": "max 5 minuten",
-              "page": 0
+              "page": 51
             }
           ]
         },
@@ -1652,7 +1652,7 @@
               "description": "De ontvanger krijgt voor de duratie van de spreuk 3 extra hitpoints.",
               "spell_effect": "Enchantment, Zelf",
               "spell_duration": "5 minuten",
-              "page": 0
+              "page": 52
             },
             {
               "id": 194,
@@ -1663,7 +1663,7 @@
               "description": "De ontvanger krijgt een BLAST DISEASE effect (3 schade).",
               "spell_effect": "Direct, 5 meter",
               "spell_duration": "",
-              "page": 0
+              "page": 52
             }
           ]
         },
@@ -1680,7 +1680,7 @@
               "description": "De ontvanger van de spreuk wordt ontdaan van alle wonden, ziektes, giffen, FATALs en CURSE LIFE enchantments en is niet meer uitgeschakeld of stervende. De ontvanger mag er ook voor kiezen om negatieve enchantmentsen en invites te verliezen. Tevens wordt alle aanwezige pantser op de ontvanger hersteld. \n\nWanneer deze spreuk gecombineerd wordt met de vaardigheid HEAL OTHER BEING, kunnen met deze Miracle of Healing ook ondoden, servitars, demonen en andere other beings genezen worden. \n\nDe priester kan na het uitspreken van deze incantatie een uur lang niet casten (zowel vanuit zichzelf als items, scrolls en dergelijke).",
               "spell_effect": "Direct, Aanraking",
               "spell_duration": "30 seconde incantatie tijd",
-              "page": 0
+              "page": 53
             },
             {
               "id": 201,
@@ -1691,7 +1691,7 @@
               "description": "De ontvanger van deze spreuk moet uitgeschakeld zijn. De ontvanger krijgt een FATAL Effect. Nadat dit fatal effect is uitgedeeld kan de incantatie “Feel the wrath of the/my God(s)! Destroy!” tot 5 keer herhaald worden (binnen 1 uur) om tot 5 personen een DESTROY (10 schade) effect uit te delen. \n\nDe priester kan na het uitspreken van deze incantatie een uur lang niet casten (zowel vanuit zichzelf als items, scrolls en dergelijke) afgezien van het bovenstaande beschreven effect. Deze spreuk kan niet gecountered worden.",
               "spell_effect": "Direct, aanraking",
               "spell_duration": "",
-              "page": 0
+              "page": 54
             },
             {
               "id": 202,
@@ -1702,7 +1702,7 @@
               "description": "Relikwie Vervaardigen: \nEen gewoon voorwerp (bijvoorbeeld een zwaard, banier, beker) wordt een spiritueel meesterstuk. Haal hiervoor een temp item card bij de infobalie. Meerdere priesters met Miracle of Consecration kunnen samenwerken bij het vervaardigen van de relikwie en moet ook de spreuk zelf mee casten (dus kost per persoon 10 mana) De mana threshold van het meesterstuk is 8, plus 4 voor elke extra priester die meewerkt aan de vervaardiging. Je kunt maximaal één relikwie per evenement (moots of summoning) maken, maar mag wel onbeperkt anderen helpen met de vervaardiging van hun relikwieën. Het gemaakte Reliek is dan nog NIET voorzien van een Spirituele imbue. Alle deelnemende priesters kunnen na het uitspreken van deze incantatie een uur lang niet casten (zowel vanuit zichzelf als items, scrolls en dergelijke). Dit voorwerp kan niet gesalvaged worden.",
               "spell_effect": "Direct, Aanraking",
               "spell_duration": "Ritueel van minimaal 10 minuten (als duur van de incantatie)",
-              "page": 0
+              "page": 53
             }
           ]
         }
@@ -2031,7 +2031,7 @@
               "description": "Deze spreuk detecteert servitars of lichamen bezeten door servitars. De ontvanger fluistert het antwoord (ja of nee) in het oor van de caster.",
               "spell_effect": "Direct, aanraking",
               "spell_duration": "",
-              "page": 0
+              "page": 60
             },
             {
               "id": 276,
@@ -2042,7 +2042,7 @@
               "description": "Deze spreuk laat servitars of lichamen bezeten door servitars even opgloeien. Dit is voor iedereen eromheen zichtbaar. \n\nAlle servitars of lichamen bezeten door servitars binnen 5 meter antwoorden met “Servitar”.",
               "spell_effect": "Direct, 5 meter",
               "spell_duration": "",
-              "page": 0
+              "page": 61
             },
             {
               "id": 277,
@@ -2053,7 +2053,7 @@
               "description": "Een invite spreuk komt onmiddellijk ten einde.",
               "spell_effect": "Direct, aanraking",
               "spell_duration": "",
-              "page": 0
+              "page": 61
             },
             {
               "id": 278,
@@ -2064,7 +2064,7 @@
               "description": "Je doelwit krijgt een DESTROY effect. De caster, of een ongedwongen gewillig ander persoon dat naast je staat en nog minstens 1 hitpoint heeft, heeft tot aan de volgende zonsopgang permanent 2 hitpoints minder. \n\nLet op dat als je op 0 maximum HP staat dat je dan dus permanent uitgeschakeld bent. Iedere keer dat je deze spreuk gebruikt, kost het dus iemand 2 maximum hitpoints.",
               "spell_effect": "Direct, aanraking",
               "spell_duration": "",
-              "page": 0
+              "page": 61
             }
           ]
         },
@@ -2081,7 +2081,7 @@
               "description": "Deze spreuk werkt alleen op een uitgeschakeld of stervende doelwit. Als je later op de dag dit doelwit nogmaals tegenkomt mag je eenmalig een BLAST effect uitdelen op 5 meter. Let op dat de enchantment van deze spreuk op de gebruiker van de spreuk zit, niet op het uiteindelijke doelwit!",
               "spell_effect": "Enchantment, 5 meter",
               "spell_duration": "tot zonsopgang of gebruik.",
-              "page": 0
+              "page": 61
             },
             {
               "id": 280,
@@ -2092,7 +2092,7 @@
               "description": "Je mag na deze spreuk een commando geven aan een servitar. Deze servitar mag op elk moment kiezen om dit commando niet uit te voeren. Deze spreuk doet dus op zichzelf niks maar is nodig om “Banish servitar” te casten.",
               "spell_effect": "Direct, 5 meter",
               "spell_duration": "",
-              "page": 0
+              "page": 62
             },
             {
               "id": 281,
@@ -2103,7 +2103,7 @@
               "description": "Deze spreuk mag alleen op een servitar gecast worden die jij opgeroepen hebt (met een ritueel of invite demon spreuk) en waarvan jij door hebt dat de demoon een commando niet heeft uitgevoerd dat gegeven is door de “Command servitar” spreuk. De invite spreuk of ritueel zal direct ten einde zijn.",
               "spell_effect": "Direct, 5 meter",
               "spell_duration": "",
-              "page": 0
+              "page": 62
             },
             {
               "id": 282,
@@ -2114,7 +2114,7 @@
               "description": "Een servitar ontvangt een BLAST effect (3 schade).",
               "spell_effect": "Direct, 5 meter",
               "spell_duration": "",
-              "page": 0
+              "page": 62
             },
             {
               "id": 283,
@@ -2125,7 +2125,7 @@
               "description": "De gewillige ontvanger (die van te voren de spreuk uitgelegd heeft gekregen) zal tot het einde van de spreuk gedeeltelijk bezeten zijn door een demoon die zoveel mogelijk narigheid probeert te zaaien, de twee zielen vechten vaak om controle over het lichaam. \n\nEen discern soul detecteert 2 zielen in het lichaam van de ontvanger (waarvan 1 een demoon). \nEen detect servitar spreuk detecteert dit ook. \nEen break minor posession spreuk eindigd deze spreuk. \n\nDe ontvanger krijgt 2 hitpoints extra en kan 4 keer per dag de fireblast spreuk casten zonder dat dit mana kost. \\nAls de ontvanger van de spreuk niet voor het einde van de spreuk minstens 4onwillige personen uitgeschakeld heeft dan verliest de ontvanger onmiddellijk 10 energie naar keuze. Als deze energie niet meer aanwezig is zal de ontvanger onmiddellijk stervende zijn, en kan alleen genezen worden als de ontbrekende energie alsnog betaald wordt door anderen die de ontvanger aanraken.",
               "spell_effect": "Aanraking",
               "spell_duration": "tot zonsopgang.",
-              "page": 0
+              "page": 63
             }
           ]
         },
@@ -2142,7 +2142,7 @@
               "description": "Deze spreuk werkt alleen op een uitgeschakeld of stervende doelwit. Als je later op de dag dit doelwit nogmaals tegenkomt mag je eenmalig een CRUSH effect uitdelen op 5 meter afstand op het doelwit. \n\nLet op dat de enchantment van deze spreuk op de gebruiker van de spreuk zit, niet op het uiteindelijke doelwit!",
               "spell_effect": "Enchantment, 5 meter",
               "spell_duration": "tot zonsopgang of gebruik.",
-              "page": 0
+              "page": 63
             },
             {
               "id": 285,
@@ -2153,7 +2153,7 @@
               "description": "De gewillige ontvanger (die van te voren de spreuk uitgelegd heeft gekregen) zal tot het einde van de spreuk gedeeltelijk bezeten zijn door een demoon die zoveel mogelijk narigheid probeert te zaaien, de twee zielen vechten vaak om controle over het lichaam. \n\nEen discern soul detecteert 2 zielen in het lichaam van de ontvanger (waarvan 1 een demoon). \nEen detect servitar spreuk detecteert dit ook. \nEen break minor posession spreuk eindigd deze spreuk. \n\nDe ontvanger krijgt 3 hitpoints extra, kan 4 keer per dag de Fireblast spreuk casten zonder dat dit mana kost en kan 2 keer per dag de Incinerate spreuk casten zonder dat dit mana kost. \n\nAls de ontvanger van de spreuk niet voor het einde van de spreuk minstens onwillige personen uitgeschakeld heeft dan verliest de ontvanger onmiddellijk 20 energie naar keuze. Als deze energie niet meer aanwezig is zal de ontvanger onmiddellijk stervende zijn, en kan alleen genezen worden als de ontbrekende energie alsnog betaald wordt door anderen die de ontvanger aanraken.",
               "spell_effect": "Aanraking",
               "spell_duration": "tot zonsopgang",
-              "page": 0
+              "page": 63
             },
             {
               "id": 286,
@@ -2164,7 +2164,7 @@
               "description": "Een andere persoon kan (met energie naar keuze) “Command servitar” en “Banish servitar” casten op de servitar die jij opgeroepen hebt, ook al kunnen ze deze spreuken normaal niet.",
               "spell_effect": "Direct, aanraking",
               "spell_duration": "tot zonsopgang",
-              "page": 0
+              "page": 64
             }
           ]
         }
@@ -2186,7 +2186,7 @@
               "description": "Deze spreuk detecteert spirits of lichamen bezeten door spirits. \nDe ontvanger fluistert het antwoord (ja of nee) in het oor van de caster.",
               "spell_effect": "Direct, aanraking",
               "spell_duration": "",
-              "page": 0
+              "page": 64
             },
             {
               "id": 301,
@@ -2197,7 +2197,7 @@
               "description": "Deze spreuk laat spirits of lichamen bezeten door spirits even opgloeien. Dit is voor iedereen eromheen zichtbaar. Alle spirits of lichamen bezeten door spirits binnen 5 meter antwoorden met “spirit”.",
               "spell_effect": "Direct, 5 meter",
               "spell_duration": "",
-              "page": 0
+              "page": 65
             },
             {
               "id": 302,
@@ -2208,7 +2208,7 @@
               "description": "Een invite spreuk komt onmiddellijk ten einde.",
               "spell_effect": "Direct, aanraking",
               "spell_duration": "",
-              "page": 0
+              "page": 65
             },
             {
               "id": 303,
@@ -2219,7 +2219,7 @@
               "description": "Je definieert een stuk natuur als jouw persoonlijke grove tot het einde van het evenement. \nDit doe je door drie bomen (van minimaal 2 meter hoog) uit te kiezen die maximaal 5 meter van elkaar verwijderd staan. Dit mag geen bestaande rituele plaats zijn, noch een persoonlijke grove van een ander. Alles in deze driehoek telt als jouw grove. Je moet in het midden van je grove ook een persoonlijk voorwerp achterlaten. \n\nEen druïde kan slechts 1 grove tegelijk hebben en moet zijn persoonlijke voorwerp verplaatsen van de ene naar de andere grove als hij een nieuwe wilt. Een persoonlijke grove telt niet als rituele plek. De volgende spreuken mogen door de druïde gratis in de grove gecast worden (als de druïde de spreuken kent) Ze mogen niet gratis op scrolls gecast worden: Detect Impurity Horrific revelation Speak with the dead Break minor possession Charm person Resist special damage (maar komt ten einde als de druïde de grove verlaat)",
               "spell_effect": "Direct, aanraking",
               "spell_duration": "5 minuten incantatie tijd",
-              "page": 0
+              "page": 65
             }
           ]
         },
@@ -2236,7 +2236,7 @@
               "description": "Deze spreuk detecteert spirits, ondoden, servitars of lichamen bezeten door spirits, ondoden of servitars. De ontvanger fluistert het antwoord (ja + welk type of nee) in het oor van de caster.",
               "spell_effect": "Direct, aanraking",
               "spell_duration": "",
-              "page": 0
+              "page": 66
             },
             {
               "id": 305,
@@ -2247,7 +2247,7 @@
               "description": "Deze spreuk laat spirits, ondoden of servitars of lichamen bezeten door spirits ondoden of servitars even opgloeien. Dit is voor iedereen eromheen zichtbaar. Alle spirits of lichamen bezeten door spirits binnen 5 meter antwoorden met “spirit”. \nAlle ondoden of lichamen bezeten door ondoden binnen 5 meter antwoorden met “undead”. \nAlle servitars of lichamen bezeten door servitars binnen 5 meter antwoorden met “servitar”.",
               "spell_effect": "Direct, 5 meter",
               "spell_duration": "",
-              "page": 0
+              "page": 66
             },
             {
               "id": 306,
@@ -2258,7 +2258,7 @@
               "description": "De ontvanger krijgt voor de duur van de spreuk 3 extra hitpoints. Deze extra hitpoints kunnen alleen genezen worden in de persoonlijke Grove van de druïde die deze spreuk gecast heeft. Je moet je dus bewust zijn van de locatie van deze grove en het persoonlijke voorwerp van de druïde als je wilt dat deze extra hitpoints genezen worden. \n\nDit is een grove spreuk, na deze spreuk uitgesproken te hebben moet de druïde terugkeren naar zijn persoonlijke grove voordat hij nog een grove spreuk mag casten.",
               "spell_effect": "Enchantment, Aanraking",
               "spell_duration": "1 uur",
-              "page": 0
+              "page": 66
             },
             {
               "id": 307,
@@ -2269,7 +2269,7 @@
               "description": "De gewillige ontvanger (die van te voren de spreuk uitgelegd heeft gekregen) zal tot het einde van de spreuk gedeeltelijk bezeten zijn door een natuurgeest die zoveel mogelijk leven en dood probeert te veroorzaken, maar zal de vrienden van het lichaam waar hij in zit (over het algemeen) helpen. Een discern soul detecteert 2 zielen in het lichaam van de ontvanger (waarvan 1 spirit). Een detect spirit spreuk detecteert dit ook. Een break minor possession spreuk eindigt deze spreuk. De ontvanger heeft tot aan de volgende zonsopgang 2 extra hitpoints, en kan tweemaal gratis incite aggression casten en tweemaal gratis charm person. Ook kan de ontvanger voor 4 energie naar keuze een enkel effect verwijderen van iemand (bijvoorbeeld een poison, fear, enchantment of fatal). \n\nDe ontvanger van de spreuk zal zijn best doen om of 2 personen die niet weten dat hij possessed is te laten vechten met elkaar, of zijn best doen om 2 personen waarvan minstens 1 niet weet dat hij possessed is consensuele seks te laten hebben met elkaar. Als dit niet lukt voordat het effect van deze spreuk ophoud dan verliest de ontvanger onmiddellijk 5 energie naar keuze. Als deze energie niet meer aanwezig is zal de ontvanger onmiddellijk stervende zijn, en kan alleen genezen worden als de ontbrekende energie alsnog betaald wordt door anderen die de ontvanger aanraken. \n\nDit is een grove spreuk, na deze spreuk uitgesproken te hebben moet de druïde terugkeren naar zijn persoonlijke grove voordat hij nog een grove spreuk mag casten.",
               "spell_effect": "Aanraking",
               "spell_duration": "tot zonsopgang.",
-              "page": 0
+              "page": 67
             }
           ]
         },
@@ -2286,7 +2286,7 @@
               "description": "De ontvanger van de spreuk moet voor het einde van de spreuk 5 minuten in de persoonlijke grove van de druïde mediteren om deze spreuk te laten werken. Je moet je dus bewust zijn van de locatie van deze grove en het persoonlijke voorwerp van de druïde als je wilt dat deze spreuk werkt. Na de meditatie verliest de ontvanger alle negatieve enchantments en geneest alle hitpoints, poisons, diseases en de effecten van de poisons en diseases. Maar als de meditatie onderbroken wordt doordat de persoon wordt aangesproken, aangeraakt of aangevallen, dan mislukt de spreuk. \n\nDit is een grove spreuk, na deze spreuk uitgesproken te hebben moet de druïde terugkeren naar zijn persoonlijke grove voordat hij nog een grove spreuk mag casten.",
               "spell_effect": "Enchantment, Aanraking",
               "spell_duration": "1 uur",
-              "page": 0
+              "page": 67
             },
             {
               "id": 309,
@@ -2297,7 +2297,7 @@
               "description": "Een persoon die met een spreuk aan je toonbaar gemaakt is als ondood, servitar, spirit of als bezeten door zo een wezen krijgt een DESTROY effect (10 schade). \n\nDit is een grove spreuk, na deze spreuk uitgesproken te hebben moet de druïde terugkeren naar zijn persoonlijke grove voordat hij nog een grove spreuk mag casten.",
               "spell_effect": "Direct, 5 meter",
               "spell_duration": "",
-              "page": 0
+              "page": 38
             },
             {
               "id": 310,
@@ -2308,7 +2308,7 @@
               "description": "De gewillige ontvanger, die van te voren de spreuk uitgelegd heeft gekregen, zal tot het einde van de spreuk gedeeltelijk bezeten zijn door een natuurgeest genaamd “avatar of the cycle” die probeert zoveel mogelijk “onnatuurlijke” invloeden op de zielenstroom te bevechten zoals ondoden, servitars die de materiële wereld beïnvloeden en zelfs spirits die zich op de materiële wereld bevinden (al maakt hij soms uitzonderingen voor uitgenodigde nature spirits aangezien die ook de cycles versterken). Hij zal de vrienden van het lichaam waar hij in zit (over het algemeen) helpen zolang die dit doel ook maar nastreven. Een discern soul detecteert 2 zielen in het lichaam van de ontvanger (waarvan 1 een spirit). Een detect spirit spreuk detecteert dit ook. Een break minor possession spreuk eindigt deze spreuk. De ontvanger heeft tot aan de volgende zonsopgang 3 extra hitpoints, kan gratis detect impurity casten en kan voor 1 energie naar keuze reveal all impurities of break minor posession casten. Tot slot kan de ontvanger met elk wapen langer dan 45cm, per minuut een BLAST slaan op ondoden, servitars, spirits, of lichamen bezeten door dit soort wezens. \n\nDe aanwezigheid van een avatar of the cycle kan een krachtig symbool zijn in sommige rituelen betreffende de zielenstroom en exorcism rituelen. De ontvanger van de spreuk zal zijn best doen om ondoden, servitars of spirits te vinden en bevechten. Hij wil minstens 1 possession (die is veroorzaakt door vijanden) breken of 1 ondode, servitar of spirit in de materiële wereld doden/vernietigen. Als dit niet lukt voordat het effect van deze spreuk ophoud dan verliest de ontvanger onmiddellijk 5 energie naar keuze. Als deze energie niet meer aanwezig is zal de ontvanger onmiddellijk stervende zijn, en kan alleen genezen worden als de ontbrekende energie alsnog betaald wordt door anderen die de ontvanger aanraken. \n\nDit is een grove spreuk, na deze spreuk uitgesproken te hebben moet de druïde terugkeren naar zijn persoonlijke grove voordat hij nog een grove spreuk mag casten.",
               "spell_effect": "Aanraking",
               "spell_duration": "tot zonsopgang.",
-              "page": 0
+              "page": 38
             }
           ]
         }
@@ -2330,7 +2330,7 @@
               "description": "Deze spreuk detecteert ondoden of lichamen bezeten door ondoden. De ontvanger fluistert het antwoord (ja of nee) in het oor van de caster.",
               "spell_effect": "Direct, aanraking",
               "spell_duration": "",
-              "page": 0
+              "page": 69
             },
             {
               "id": 326,
@@ -2341,7 +2341,7 @@
               "description": "Deze spreuk laat ondoden of lichamen bezeten door ondoden even opgloeien. Dit gloeiende effect is zichtbaar voor iedereen. Alle ondoden of lichamen bezeten door ondoden binnen 5 meter antwoorden met “Undead”.",
               "spell_effect": "Direct, 5 meter",
               "spell_duration": "",
-              "page": 0
+              "page": 70
             },
             {
               "id": 327,
@@ -2352,7 +2352,7 @@
               "description": "Een invite spreuk komt onmiddellijk ten einde.",
               "spell_effect": "Direct, aanraking",
               "spell_duration": "",
-              "page": 0
+              "page": 70
             },
             {
               "id": 328,
@@ -2363,7 +2363,7 @@
               "description": "De spreuk werkt op een net overleden ongedwongen gewillige personages (maximaal 10 minuten dood). Deze spreuk mag ook gecast worden op een ongedwongen gewillig nog levend personage (inclusief jijzelf) maar alleen als er genoeg tijd is om de spreuk goed uit te leggen. Een break enchantment kan de spreuk alleen teniet doen voordat je in een zombie bent veranderd. Zodra het personage dood gaat (of het al is) zal het herrijzen als een Mindless, Soulless zombie met 8 hitpoints dat immuun is voor geestbeïnvloedende effecten en al je orders uitvoert. Als je de zombie geen orders geeft (of kan geven omdat je bijvoorbeeld niet bij het sterven aanwezig bent… of de spreuk op jezelf gecast hebt) zal hij in plaats daarvan iedereen aanvallen die hij ziet. Hij kan alle wapen-en pantservaardigheden gebruiken die hij ook tijdens zijn leven kende. Andere vaardigheden zal hij echter niet meer kennen. Ook zal hij niet kunnen praten. Elke 5 minuten verliest de ondode een hitpoint die alleen met 1 mana genezen kan worden door iemand met (MINOR) RECONSTRUCT tot zijn beschikking.",
               "spell_effect": "Enchantment, aanraking",
               "spell_duration": "tot zonsopgang10 seconden incantatie tijd",
-              "page": 0
+              "page": 71
             },
             {
               "id": 329,
@@ -2374,7 +2374,7 @@
               "description": "Deze spreuk zal 1 hitpoint genezen op de aangeraakte ondode. Deze spreuk werkt ook op other beings die ondoden zijn.",
               "spell_effect": "Direct, Aanraking",
               "spell_duration": "",
-              "page": 0
+              "page": 71
             }
           ]
         },
@@ -2391,7 +2391,7 @@
               "description": "Deze spreuk zal per 10 seconden 1 hitpoint genezen op de aangeraakte ondode of lichaam bezeten door een ondode. De genezer moet na het uitspreken van de spreuk de hand op de te genezen persoon houden en zachtjes prevelen. Er kunnen maximaal 3 hitpoints, normale en/of extra, per keer genezen worden. Voor meer hitpoints moet men de spreuk opnieuw doen. Deze spreuk werkt ook op other beings die ondoden zijn.",
               "spell_effect": "Direct, Aanraking",
               "spell_duration": "10 seconden incantatie tijd",
-              "page": 0
+              "page": 71
             },
             {
               "id": 331,
@@ -2402,7 +2402,7 @@
               "description": "De ontvanger van de spreuk ontvangt het freeze effect, zolang de necromancer “Freeze” elke seconde blijft herhalen (zie “Freeze body” spreuk), maar de necromancer moet ook op dezelfde plek blijven staan om de concentratie vol te blijven houden. Als de necromancer stopt met de spreuk dan mag de necromancer ook nog het “fear” effect roepen op de ontvanger van de spreuk. Het effect van deze FEAR is verder identiek aan de spreuk FEAR.",
               "spell_effect": "Concentratie, Enchantment, Geestbeïnvloedend, 5 meter",
               "spell_duration": "30 seconden",
-              "page": 0
+              "page": 71
             },
             {
               "id": 332,
@@ -2413,7 +2413,7 @@
               "description": "De ontvanger van deze spreuk krijgt 1 schade, waarbij 1 extra armourpoint wordt toegevoegd aan de armourpoints van gebruiker van de spreuk. Verloren extra armourpoints zullen hiermee hersteld worden of anders worden er extra armourpoints toegevoegd, tot een maximum van 3. \n\nDeze spreuk werkt alleen als de gebruiker van de spreuk andere vormen van pantser draagt (dit spreekt de reguliere regels rondom extra AP tegen). De extra armourpoints van bone armour zijn cumulatief, maar kunnen niet gecombineerd worden met andere spreuken en effecten (het sterkste effect telt). Alle middels deze spreuk verkregen extra armourpoints verdwijnen na een uur.",
               "spell_effect": "Direct, aanraking",
               "spell_duration": "1 uur",
-              "page": 0
+              "page": 72
             },
             {
               "id": 333,
@@ -2424,7 +2424,7 @@
               "description": "De ongedwongen gewillige ontvanger (die van te voren de spreuk uitgelegd heeft gekregen) zal tot het einde van de spreuk gedeeltelijk bezeten zijn door een kwaadaardige geest van een overleden persoon, die zoveel mogelijk angst probeert te zaaien, de twee zielen vechten vaak om controle over het lichaam. Een discern soul detecteert 2 zielen in het lichaam van de ontvanger (waarvan 1 geest). Een detect undead spreuk detecteert dit ook. Een break minor possession spreuk zal deze spreuk eindigen. \n\nDe ontvanger heeft tot aan de volgende zonsopgang permanent 2 hitpoints minder, zelfs als deze spreuk ten einde komt. Let op dat als je op 0 maximum HP staat dat je dan dus permanent uitgeschakeld bent. Iedereen die de ontvanger aanspreekt, aanvalt, een spreuk cast of naar eigen beweging aanraakt ontvangt een FEAR effect van de ontvanger. De ontvanger kan 4 keer vandaag de sleep spreuk en 4 keer vandaag curse life spreuk casten zonder dat dit mana kost.",
               "spell_effect": "Direct, Aanraking",
               "spell_duration": "tot zonsopgang.",
-              "page": 0
+              "page": 72
             }
           ]
         },
@@ -2441,7 +2441,7 @@
               "description": "Deze spreuk werkt niet in een gevecht. De ontvanger van deze spreuk voelt zich aan iets of iemand vastgezet worden door onzichtbare onbreekbare boeien. De boeien houden ook het uitgeven van energie tegen. (De ontvanger kan hierdoor zolang de spreuk effect heeft, geen items gebruike, spreuken, technieken, rituelen of imbues doen en kan zich niet concentreren op crafting of alchemie projecten)",
               "spell_effect": "Enchantment, Aanraking",
               "spell_duration": "1 uur10 seconden incantie tijd",
-              "page": 0
+              "page": 73
             },
             {
               "id": 335,
@@ -2452,7 +2452,7 @@
               "description": "De ontvanger krijgt een CRUSH schade (5 schade)",
               "spell_effect": "Direct, 5 meter",
               "spell_duration": "",
-              "page": 0
+              "page": 73
             },
             {
               "id": 336,
@@ -2463,7 +2463,7 @@
               "description": "De gewillige ontvanger (die van te voren de spreuk uitgelegd heeft gekregen) zal tot het einde van de spreuk volledig bezeten zijn door zijn voorouder naar keuze of een voorouder van de necromancer naar keuze die zich zal gedragen zoals die voorouder wilt (en vaak wilt helpen en vergelijkbare doelen heeft als de ontvanger). \n\nEen discern soul detecteert 2 zielen in het lichaam van de ontvanger (waarvan 1 een voorouder). Een detect undead spreuk detecteert dit ook. Een break minor posession spreuk eindigd deze spreuk. \n\nDe ontvanger kan geen vaardigheden meer gebruiken tot het einde van de spreuk. In plaats daarvan kan de ontvanger 10 karakter punten aan vaardigheden kiezen die hij kan gebruiken en die de voorouder ooit had (dit mag de ontvanger zelf bedenken). Vereisten mogen genegeerd worden. Let op dat de ontvanger energie ontvangt vanuit de nieuwe vaardigheden! Hij mag nog wel energie (naar keuze) van de uitgeschakelde vaardigheden gebruiken om voor de nieuwe vaardigheden te betalen, maar nooit meer dan de voorouder gehad zou hebben. Je mag maximaal 3 karakter punten aan rituele vaardigheden besteden. Je mag geen karakter punten aan ambacht en alchemie vaardigheden besteden.",
               "spell_effect": "Direct, Aanraking",
               "spell_duration": "tot zonsopgang",
-              "page": 0
+              "page": 73
             }
           ]
         }
