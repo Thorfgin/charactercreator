@@ -1,6 +1,20 @@
 {
   "ReleaseNotes": [
     {
+      "date": "30-04-2024",
+      "version": "v0.5.6",
+      "Items": [
+        {
+          "description": "De omschrijving van een aantal templates is aangepast, ter verduidelijking.",
+          "title": "Looks & Feels: Verschillende tekstuele aanpassingen in de template omschrijvingen."
+        },
+        {
+          "description": "De omschrijving van een template wordt opgedeeld in twee vlakken, waardoor te tekst niet goed weergegeven werd",
+          "title": "Looks & Feels: Veld grote van template omschrijving."
+        }
+      ]
+    },
+    {
       "date": "20-04-2024",
       "version": "v0.5.5",
       "Items": [

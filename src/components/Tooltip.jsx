@@ -31,7 +31,7 @@ const getMapping = (tooltipData) => {
 
         return (
             <tr key={uniqueKey}>
-                <td className="tooltip-property">{label ? label + ":" : null}</td>
+                {label ? <td className="tooltip-property">{label + ":"}</td> : null}
                 <td className="tooltip-value">{value}</td>
             </tr>
         );
