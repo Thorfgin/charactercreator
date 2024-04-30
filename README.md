@@ -56,12 +56,12 @@
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	DONE
-	20240427	FIX: change the way skills are selected, by referencing id instead of skill.
+	20240431	FIX: change the way skills are selected, by referencing id instead of skill.
 			Skills may no be unique in name, for example 'extra wilskracht' exists twice in ExtraVaardigheden.
 			This may cause issues with the saves, because everything is reference by skillname.
 
-	20240430	FIX: Typos in templates, sizing of the Info description of a Template
-			FIX: Updated FAQ description, related to Printing.
+	20240430	FIX: Typos in templates, sizing of the Info description of a Template.
+				FIX: Updated FAQ > printing the character is possible by PDF export.
 
 	20240420	CRITICAL FIX: Automatic CNAME listing for the GitHub Pages > or the site goes down
 			CRITICAL FIX: Sentry finding, ensure Safari can handle the PDF.
