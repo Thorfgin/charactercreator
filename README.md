@@ -56,7 +56,8 @@
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	DONE
-	20240430	FIX: Typos in templates, sizing of the Info description of a Template
+	20240430	FIX: Typos in templates, sizing of the Info description of a Template.
+				FIX: Updated FAQ > printing the character is possible by PDF export.
 
 	20240420	CRITICAL FIX: Automatic CNAME listing for the GitHub Pages > or the site goes down
 				CRITICAL FIX: Sentry finding, ensure Safari can handle the PDF.
