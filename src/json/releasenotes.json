@@ -9,7 +9,7 @@
           "title": "Looks & Feels: Verschillende tekstuele aanpassingen in de template omschrijvingen."
         },
         {
-          "description": "De omschrijving van een template wordt opgedeeld in twee vlakken, waardoor te tekst niet goed weergegeven werd",
+          "description": "De omschrijving van een template werd opgedeeld in twee vlakken, waardoor te tekst niet goed weergegeven werd. Dit is aangepast naar 1 veld.",
           "title": "Looks & Feels: Veld grote van template omschrijving."
         }
       ]
