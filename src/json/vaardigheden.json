@@ -1170,7 +1170,7 @@
           "name": "Minor fever potion"
         },
         {
-          "id":81,
+          "id": 81,
           "name": "Vision of the soul"
         },
         {
@@ -2321,7 +2321,7 @@
       ],
       "Spreuken": [],
       "Recepten": []
-    }  
+    }
   ],
   "ExtraVaardigheden": [
     {
@@ -5063,9 +5063,7 @@
         }
       ],
       "Spreuken": [ 308, 309, 310 ],
-        "Recepten",
-        :,
-        []
+      "Recepten": []
     },
     {
       "id": 659,
