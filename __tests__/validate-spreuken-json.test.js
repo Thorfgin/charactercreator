@@ -13,7 +13,8 @@ import {
 } from '../src/SharedObjects.js';
 
 import {
-    getSkillById
+    getSkillById,
+    getSpellBySkill,
 } from '../src/SharedActions.js';
 
 
@@ -53,13 +54,15 @@ function hasExistingSkillIDs(jsonData) {
     return faultyIDs.size === 0;
 }
 
+test('Spreuken JSON should have skill IDs per Spell that exist', () => {
+    expect(hasExistingSkillIDs(sourceSpreuken)).toBe(true);
+});
+
+
 test('Spreuken JSON should have unique IDs per Spell', () => {
     expect(hasUniqueSpellIDs(sourceSpreuken)).toBe(true);
 });
 
-test('Spreuken JSON should have skill IDs per Spell that exist', () => {
-    expect(hasExistingSkillIDs(sourceSpreuken)).toBe(true);
-});
 
 /// --- FORMATTING --- ///
 function hasCorrectFormat(jsonData, schema) {

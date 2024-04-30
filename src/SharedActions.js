@@ -57,14 +57,19 @@ export function getExtraSkillsFromTable(tableData) {
 }
 
 /// --- SPELLS & RECIPE --- ///
-// Ophalen van een spreuk op bases van de skill
+// Ophalen van een spreuk op basis van de skill
 export function getSpellBySkill(sourceSkill, spellName) {
     if (!sourceSkill || !spellName) { return; }
 
-    const sourceSpell = sourceSpreuken.find((item) =>
-        item.skill.toLowerCase() === sourceSkill?.skill.toLowerCase() ||
-        item.skill.toLowerCase() === sourceSkill?.alt_skill.toLowerCase());
+    const sourceSpell = sourceSpreuken.find((item) => item.id.includes(sourceSkill?.id));
     return sourceSpell?.Spells.find((item) => item.spell.toLowerCase() === spellName.toLowerCase());
+}
+
+// Ophalen van alle spreuken op basis van de skill
+export function getSpellsBySkill(skillId) {
+    if (!skillId) { return; }
+    const sourceSpell = sourceSpreuken.find((item) => item.id.includes(skillId));
+    return sourceSpell?.Spells;
 }
 
 // Ophalen van een recept op bases van de skill
@@ -425,13 +430,7 @@ export function updateGridEigenschappenTiles(tableData, defaultProperties) {
     const propertySums = defaultProperties.map((property) => (
         {
             ...property, value: tableData.reduce((sum, record) => {
-                let vaardigheid = sourceBasisVaardigheden.find((vaardigheid) =>
-                    vaardigheid.skill.toLowerCase() === record.skill.toLowerCase());
-                if (!vaardigheid) {
-                    vaardigheid = sourceExtraVaardigheden.find((vaardigheid) =>
-                        vaardigheid.skill.toLowerCase() === record.skill.toLowerCase());
-                }
-
+                const vaardigheid = getSkillById(record.id);
                 const propertyValue = vaardigheid.Eigenschappen?.find((prop) =>
                     prop.name.toLowerCase() === property.name.toLowerCase())?.value || 0;
                 return sum + propertyValue * record.count;
@@ -443,18 +442,10 @@ export function updateGridEigenschappenTiles(tableData, defaultProperties) {
 // Op basis van de Spreuken, voeg nieuwe tegels toe.
 export function updateGridSpreukenTiles(tableData) {
     const spellProperties = tableData.reduce((spellsAccumulator, record) => {
-        let vaardigheid = sourceBasisVaardigheden.find((vaardigheid) =>
-            vaardigheid.skill.toLowerCase() === record.skill.toLowerCase());
-        if (!vaardigheid) {
-            vaardigheid = sourceExtraVaardigheden.find((vaardigheid) =>
-                vaardigheid.skill.toLowerCase() === record.skill.toLowerCase());
-        }
-
+        const vaardigheid = getSkillById(record.id);
         const spells = vaardigheid.Spreuken || [];
-
         spells.forEach((spell) => {
-            const existingSpell = spellsAccumulator.find((existing) =>
-                existing.name.toLowerCase() === spell.name.toLowerCase());
+            const existingSpell = spellsAccumulator.find((existing) =>  existing.name.toLowerCase() === spell.name.toLowerCase());
             if (existingSpell) { existingSpell.count += spell.count; }
             else {
                 spell.id = vaardigheid.id;
@@ -470,11 +461,7 @@ export function updateGridSpreukenTiles(tableData) {
 // Op basis van de Recepten, voeg nieuwe tegels toe.
 export function updateGridReceptenTiles(tableData) {
     const recipyProperties = tableData.reduce((recipyAccumulator, record) => {
-        let vaardigheid = sourceBasisVaardigheden.find((vaardigheid) => vaardigheid.id === record.id);
-        if (!vaardigheid) {
-            vaardigheid = sourceExtraVaardigheden.find((vaardigheid) => vaardigheid.id === record.id);
-        }
-
+        const vaardigheid = getSkillById(record.id);
         const recepten = vaardigheid ? vaardigheid.Recepten : [];
 
         for (const recipy of recepten) {

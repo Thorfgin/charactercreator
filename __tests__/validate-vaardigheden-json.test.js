@@ -52,7 +52,6 @@ test('Skills in ExtraVaardigheden JSON should have unique IDs', () => {
 });
 
 /// --- FORMATTING --- ///
-
 function hasCorrectFormat(jsonData, schema) {
     const ajv = new Ajv({ allErrors: true });
     ajvKeywords(ajv);
