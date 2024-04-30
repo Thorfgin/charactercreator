@@ -568,16 +568,7 @@
           "value": 3
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Minor Resilience",
-          "page": 17
-        },
-        {
-          "name": "Crippling Blow",
-          "page": 17
-        }
-      ],
+      "Spreuken": [ 1, 2 ],
       "Recepten": []
     },
     {
@@ -602,16 +593,7 @@
           "value": 3
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Striking Blow",
-          "page": 17
-        },
-        {
-          "name": "Confusing Blow",
-          "page": 18
-        }
-      ],
+      "Spreuken": [ 3, 4 ],
       "Recepten": []
     },
     {
@@ -636,16 +618,7 @@
           "value": 3
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Resist Blast",
-          "page": 19
-        },
-        {
-          "name": "Pain Suppression",
-          "page": 19
-        }
-      ],
+      "Spreuken": [ 7, 8 ],
       "Recepten": []
     },
     {
@@ -670,16 +643,7 @@
           "value": 3
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Hold the Line",
-          "page": 20
-        },
-        {
-          "name": "Rescue Comrade",
-          "page": 20
-        }
-      ],
+      "Spreuken": [ 11, 12 ],
       "Recepten": []
     },
     {
@@ -704,16 +668,7 @@
           "value": 3
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Block Spell",
-          "page": 21
-        },
-        {
-          "name": "Withstand Freeze",
-          "page": 21
-        }
-      ],
+      "Spreuken": [ 15, 16 ],
       "Recepten": []
     },
     {
@@ -738,16 +693,7 @@
           "value": 3
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Fearful Presence",
-          "page": 22
-        },
-        {
-          "name": "Withstand Slow",
-          "page": 22
-        }
-      ],
+      "Spreuken": [ 19, 20 ],
       "Recepten": []
     },
     {
@@ -768,10 +714,12 @@
       "maxcount": 1,
       "Eigenschappen": [
         {
+          "id": 0,
           "name": "hitpoints",
           "value": 1
         },
         {
+          "id": 0,
           "name": "willpower",
           "value": 3
         }
@@ -1054,12 +1002,30 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Heal scrape potion" },
-        { "name": "Heal wound potion" },
-        { "name": "Minor potion of heal crippling wound" },
-        { "name": "Bleed salve" },
-        { "name": "Heal crippling wound potion" },
-        { "name": "Heal hangover" }
+        {
+          "id": 43,
+          "name": "Heal scrape potion"
+        },
+        {
+          "id": 44,
+          "name": "Heal wound potion"
+        },
+        {
+          "id": 45,
+          "name": "Minor potion of heal crippling wound"
+        },
+        {
+          "id": 47,
+          "name": "Bleed salve"
+        },
+        {
+          "id": 46,
+          "name": "Heal crippling wound potion"
+        },
+        {
+          "id": 48,
+          "name": "Heal hangover"
+        }
       ]
     },
     {
@@ -1089,12 +1055,30 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Martial skill potion" },
-        { "name": "Minor potion of strengthen will" },
-        { "name": "Minor potion of focus" },
-        { "name": "Retreat potion" },
-        { "name": "Minor potion of strengthen body" },
-        { "name": "Confidence potion" }
+        {
+          "id": 97,
+          "name": "Martial skill potion"
+        },
+        {
+          "id": 98,
+          "name": "Minor potion of strengthen will"
+        },
+        {
+          "id": 99,
+          "name": "Minor potion of focus"
+        },
+        {
+          "id": 100,
+          "name": "Retreat potion"
+        },
+        {
+          "id": 101,
+          "name": "Minor potion of strengthen body"
+        },
+        {
+          "id": 102,
+          "name": "Confidence potion"
+        }
       ]
     },
     {
@@ -1124,12 +1108,30 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Fire breath potion" },
-        { "name": "Minor potion of divine connection" },
-        { "name": "Minor potion of magic veins" },
-        { "name": "Minor potion of divine inspiration" },
-        { "name": "Minor potion of inspiration of the magi" },
-        { "name": "Magical hair dye" }
+        {
+          "id": 115,
+          "name": "Fire breath potion"
+        },
+        {
+          "id": 116,
+          "name": "Minor potion of divine connection"
+        },
+        {
+          "id": 117,
+          "name": "Minor potion of magic veins"
+        },
+        {
+          "id": 118,
+          "name": "Minor potion of divine inspiration"
+        },
+        {
+          "id": 119,
+          "name": "Minor potion of inspiration of the magi"
+        },
+        {
+          "id": 120,
+          "name": "Magical hair dye"
+        }
       ]
     },
     {
@@ -1159,12 +1161,30 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Smell of confusion" },
-        { "name": "Minor fever potion" },
-        { "name": "Vision of the soul" },
-        { "name": "Vision of symbols" },
-        { "name": "Visions of the lifted veil" },
-        { "name": "Relive potion" }
+        {
+          "id": 79,
+          "name": "Smell of confusion"
+        },
+        {
+          "id": 80,
+          "name": "Minor fever potion"
+        },
+        {
+          "id":81,
+          "name": "Vision of the soul"
+        },
+        {
+          "id": 82,
+          "name": "Vision of symbols"
+        },
+        {
+          "id": 83,
+          "name": "Visions of the lifted veil"
+        },
+        {
+          "id": 84,
+          "name": "Relive potion"
+        }
       ]
     },
     {
@@ -1194,12 +1214,30 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Minor venom" },
-        { "name": "Minor weapon oil" },
-        { "name": "Fright venom" },
-        { "name": "Sleep poison" },
-        { "name": "Muscle lock poison" },
-        { "name": "Abortion poison" }
+        {
+          "id": 62,
+          "name": "Minor venom"
+        },
+        {
+          "id": 61,
+          "name": "Minor weapon oil"
+        },
+        {
+          "id": 63,
+          "name": "Fright venom"
+        },
+        {
+          "id": 64,
+          "name": "Sleep poison"
+        },
+        {
+          "id": 65,
+          "name": "Muscle lock poison"
+        },
+        {
+          "id": 66,
+          "name": "Abortion poison"
+        }
       ]
     },
     {
@@ -1229,8 +1267,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk A (Metal)" },
-        { "name": "Wetsteen (Lvl 1)" }
+        {
+          "id": 1,
+          "name": "Meesterstuk A (Metal)"
+        },
+        {
+          "id": 2,
+          "name": "Wetsteen (Lvl 1)"
+        }
       ]
     },
     {
@@ -1260,8 +1304,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk A (Wood)" },
-        { "name": "Totem van de Wolf" }
+        {
+          "id": 7,
+          "name": "Meesterstuk A (Wood)"
+        },
+        {
+          "id": 8,
+          "name": "Totem van de Wolf"
+        }
       ]
     },
     {
@@ -1291,8 +1341,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk A (Cloth)" },
-        { "name": "Hoog kwaliteit Verband" }
+        {
+          "id": 13,
+          "name": "Meesterstuk A (Cloth)"
+        },
+        {
+          "id": 14,
+          "name": "Hoog kwaliteit Verband"
+        }
       ]
     },
     {
@@ -1322,8 +1378,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk A (Paper)" },
-        { "name": "Scrollpapier" }
+        {
+          "id": 19,
+          "name": "Meesterstuk A (Paper)"
+        },
+        {
+          "id": 20,
+          "name": "Scrollpapier"
+        }
       ]
     },
     {
@@ -1353,8 +1415,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk A (Leather)" },
-        { "name": "Pantser Reparatie Set" }
+        {
+          "id": 25,
+          "name": "Meesterstuk A (Leather)"
+        },
+        {
+          "id": 26,
+          "name": "Pantser Reparatie Set"
+        }
       ]
     },
     {
@@ -1384,8 +1452,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk A (Copper Ingot)" },
-        { "name": "Vriendschaps Geschenk" }
+        {
+          "id": 31,
+          "name": "Meesterstuk A (Copper Ingot)"
+        },
+        {
+          "id": 32,
+          "name": "Vriendschaps Geschenk"
+        }
       ]
     },
     {
@@ -1415,8 +1489,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk A (Quartz)" },
-        { "name": "Basis Sieraad" }
+        {
+          "id": 37,
+          "name": "Meesterstuk A (Quartz)"
+        },
+        {
+          "id": 38,
+          "name": "Basis Sieraad"
+        }
       ]
     },
     {
@@ -1441,28 +1521,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Detect Magic",
-          "page": 23
-        },
-        {
-          "name": "Confusion",
-          "page": 23
-        },
-        {
-          "name": "Wind Strike",
-          "page": 23
-        },
-        {
-          "name": "Counter Spell",
-          "page": 24
-        },
-        {
-          "name": "Break Enchantment",
-          "page": 24
-        }
-      ],
+      "Spreuken": [ 25, 26, 27, 28, 29 ],
       "Recepten": []
     },
     {
@@ -1487,28 +1546,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Mend",
-          "page": 24
-        },
-        {
-          "name": "Minor Reinforcement",
-          "page": 24
-        },
-        {
-          "name": "Imbue Strike",
-          "page": 25
-        },
-        {
-          "name": "Iron Will",
-          "page": 25
-        },
-        {
-          "name": "Slow",
-          "page": 25
-        }
-      ],
+      "Spreuken": [ 30, 31, 32, 33, 34 ],
       "Recepten": []
     },
     {
@@ -1533,28 +1571,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Magic Blast",
-          "page": 26
-        },
-        {
-          "name": "Fear",
-          "page": 26
-        },
-        {
-          "name": "Incite Aggression",
-          "page": 26
-        },
-        {
-          "name": "Mute",
-          "page": 26
-        },
-        {
-          "name": "Steal",
-          "page": 26
-        }
-      ],
+      "Spreuken": [ 35, 36, 37, 38, 39 ],
       "Recepten": []
     },
     {
@@ -1583,24 +1600,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Hidden Object",
-          "page": 27
-        },
-        {
-          "name": "Chilling Winds",
-          "page": 27
-        },
-        {
-          "name": "Freedom of Movement",
-          "page": 27
-        },
-        {
-          "name": "Strike Cascade",
-          "page": 28
-        }
-      ],
+      "Spreuken": [ 40, 41, 42, 43 ],
       "Recepten": []
     },
     {
@@ -1630,24 +1630,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Strengthen Armour",
-          "page": 29
-        },
-        {
-          "name": "Horrific Revelation",
-          "page": 29
-        },
-        {
-          "name": "Boon of Disease",
-          "page": 29
-        },
-        {
-          "name": "Life Draw",
-          "page": 30
-        }
-      ],
+      "Spreuken": [ 46, 47, 48, 49 ],
       "Recepten": []
     },
     {
@@ -1676,24 +1659,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Harden",
-          "page": 31
-        },
-        {
-          "name": "Minor Reinforcement Cascade",
-          "page": 31
-        },
-        {
-          "name": "Sleep",
-          "page": 31
-        },
-        {
-          "name": "Boon of Mending",
-          "page": 31
-        }
-      ],
+      "Spreuken": [ 52, 53, 54, 55 ],
       "Recepten": []
     },
     {
@@ -1722,24 +1688,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Mind Protection",
-          "page": 33
-        },
-        {
-          "name": "Force Truth",
-          "page": 33
-        },
-        {
-          "name": "Corrupt the Flow of Life",
-          "page": 33
-        },
-        {
-          "name": "Iceblast",
-          "page": 33
-        }
-      ],
+      "Spreuken": [ 58, 59, 60, 61 ],
       "Recepten": []
     },
     {
@@ -1768,24 +1717,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Cleansed by Fire",
-          "page": 35
-        },
-        {
-          "name": "Fireblast",
-          "page": 35
-        },
-        {
-          "name": "Inner Fire",
-          "page": 35
-        },
-        {
-          "name": "Imbue Blast",
-          "page": 35
-        }
-      ],
+      "Spreuken": [ 64, 65, 66, 67 ],
       "Recepten": []
     },
     {
@@ -1815,24 +1747,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Rend Enchantment",
-          "page": 36
-        },
-        {
-          "name": "Shatter Armour",
-          "page": 36
-        },
-        {
-          "name": "Nature’s Protection",
-          "page": 36
-        },
-        {
-          "name": "Charm Person",
-          "page": 36
-        }
-      ],
+      "Spreuken": [ 70, 71, 72, 73 ],
       "Recepten": []
     },
     {
@@ -1857,20 +1772,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Hammer of Righteousness",
-          "page": 39
-        },
-        {
-          "name": "Honorable challenge",
-          "page": 39
-        },
-        {
-          "name": "Mercy call",
-          "page": 39
-        }
-      ],
+      "Spreuken": [ 125, 126, 127 ],
       "Recepten": []
     },
     {
@@ -1895,20 +1797,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Divine Heroism",
-          "page": 39
-        },
-        {
-          "name": "Divine Blessing",
-          "page": 40
-        },
-        {
-          "name": "Sanctuary",
-          "page": 40
-        }
-      ],
+      "Spreuken": [ 128, 129, 130 ],
       "Recepten": []
     },
     {
@@ -1933,28 +1822,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Endure Poison",
-          "page": 41
-        },
-        {
-          "name": "Minor Reinforcement",
-          "page": 41
-        },
-        {
-          "name": "Break Enchantment",
-          "page": 41
-        },
-        {
-          "name": "Counter Spell",
-          "page": 41
-        },
-        {
-          "name": "Detect Spiritual influence",
-          "page": 42
-        }
-      ],
+      "Spreuken": [ 150, 151, 152, 153, 154 ],
       "Recepten": []
     },
     {
@@ -1979,28 +1847,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Shattering Touch",
-          "page": 44
-        },
-        {
-          "name": "Endure Disease",
-          "page": 44
-        },
-        {
-          "name": "Fear",
-          "page": 44
-        },
-        {
-          "name": "Hit Disease",
-          "page": 44
-        },
-        {
-          "name": "Crave",
-          "page": 44
-        }
-      ],
+      "Spreuken": [ 161, 162, 163, 164, 165 ],
       "Recepten": []
     },
     {
@@ -2025,28 +1872,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Discern Soul",
-          "page": 47
-        },
-        {
-          "name": "Sanctuary",
-          "page": 47
-        },
-        {
-          "name": "Lay to Rest",
-          "page": 47
-        },
-        {
-          "name": "Ancestral mind protection",
-          "page": 47
-        },
-        {
-          "name": "Reveal all undead",
-          "page": 47
-        }
-      ],
+      "Spreuken": [ 172, 173, 174, 175, 176 ],
       "Recepten": []
     },
     {
@@ -2075,24 +1901,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Disease of temperance",
-          "page": 42
-        },
-        {
-          "name": "Minor Regeneration",
-          "page": 42
-        },
-        {
-          "name": "Pure Body and Mind",
-          "page": 42
-        },
-        {
-          "name": "Protection from Impairment",
-          "page": 43
-        }
-      ],
+      "Spreuken": [ 155, 156, 157, 158 ],
       "Recepten": []
     },
     {
@@ -2121,24 +1930,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Mute Cascade",
-          "page": 44
-        },
-        {
-          "name": "Shatter Armour",
-          "page": 45
-        },
-        {
-          "name": "Boon of Break Enchantment",
-          "page": 45
-        },
-        {
-          "name": "Curse Life",
-          "page": 45
-        }
-      ],
+      "Spreuken": [ 166, 167, 168, 169 ],
       "Recepten": []
     },
     {
@@ -2168,24 +1960,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Paralyze Undead",
-          "page": 48
-        },
-        {
-          "name": "Speak with the Dead",
-          "page": 48
-        },
-        {
-          "name": "Sanctuary Ward",
-          "page": 48
-        },
-        {
-          "name": "Life Draw",
-          "page": 49
-        }
-      ],
+      "Spreuken": [ 177, 178, 179, 180 ],
       "Recepten": []
     },
     {
@@ -2214,24 +1989,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Fascinate",
-          "page": 49
-        },
-        {
-          "name": "Discern Pattern",
-          "page": 50
-        },
-        {
-          "name": "Mind Protection",
-          "page": 50
-        },
-        {
-          "name": "Command",
-          "page": 50
-        }
-      ],
+      "Spreuken": [ 183, 184, 185, 186 ],
       "Recepten": []
     },
     {
@@ -2261,24 +2019,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Hex Weapon",
-          "page": 51
-        },
-        {
-          "name": "Freedom of Movement",
-          "page": 52
-        },
-        {
-          "name": "Resist Special Damage",
-          "page": 52
-        },
-        {
-          "name": "Aspect of the Dryad",
-          "page": 52
-        }
-      ],
+      "Spreuken": [ 189, 190, 191, 192 ],
       "Recepten": []
     },
     {
@@ -2303,28 +2044,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Discern Wounds",
-          "page": 55
-        },
-        {
-          "name": "Discern Poisons",
-          "page": 55
-        },
-        {
-          "name": "Discern Diseases",
-          "page": 55
-        },
-        {
-          "name": "Heal Wounds",
-          "page": 55
-        },
-        {
-          "name": "Remove Paralysis",
-          "page": 55
-        }
-      ],
+      "Spreuken": [ 225, 226, 227, 228, 229 ],
       "Recepten": []
     },
     {
@@ -2349,28 +2069,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Discern Wounds",
-          "page": 55
-        },
-        {
-          "name": "Discern Poisons",
-          "page": 55
-        },
-        {
-          "name": "Discern Diseases",
-          "page": 55
-        },
-        {
-          "name": "Heal Wounds",
-          "page": 55
-        },
-        {
-          "name": "Remove Paralysis",
-          "page": 55
-        }
-      ],
+      "Spreuken": [ 225, 226, 227, 228, 229 ],
       "Recepten": []
     },
     {
@@ -2395,24 +2094,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Heal Fatal Wound",
-          "page": 55
-        },
-        {
-          "name": "Strengthen Body",
-          "page": 56
-        },
-        {
-          "name": "Total Healing",
-          "page": 56
-        },
-        {
-          "name": "Boon of Minor Healing",
-          "page": 56
-        }
-      ],
+      "Spreuken": [ 230, 231, 232, 233 ],
       "Recepten": []
     },
     {
@@ -2437,24 +2119,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Heal Fatal Wound",
-          "page": 55
-        },
-        {
-          "name": "Strengthen Body",
-          "page": 56
-        },
-        {
-          "name": "Total Healing",
-          "page": 56
-        },
-        {
-          "name": "Boon of Minor Healing",
-          "page": 56
-        }
-      ],
+      "Spreuken": [ 230, 231, 232, 233 ],
       "Recepten": []
     },
     {
@@ -2479,24 +2144,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Heal Fatal Wound",
-          "page": 57
-        },
-        {
-          "name": "Protection from Poison",
-          "page": 57
-        },
-        {
-          "name": "Neutralise Poisons",
-          "page": 57
-        },
-        {
-          "name": "Purge all Poisons",
-          "page": 57
-        }
-      ],
+      "Spreuken": [ 234, 235, 236, 237 ],
       "Recepten": []
     },
     {
@@ -2521,24 +2169,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Heal Fatal Wound",
-          "page": 57
-        },
-        {
-          "name": "Protection from Poison",
-          "page": 57
-        },
-        {
-          "name": "Neutralise Poisons",
-          "page": 57
-        },
-        {
-          "name": "Purge all Poisons",
-          "page": 57
-        }
-      ],
+      "Spreuken": [ 234, 235, 236, 237 ],
       "Recepten": []
     },
     {
@@ -2563,24 +2194,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Heal Fatal Wound",
-          "page": 57
-        },
-        {
-          "name": "Protection from Disease",
-          "page": 58
-        },
-        {
-          "name": "Cure Diseases",
-          "page": 58
-        },
-        {
-          "name": "Cure All Diseases",
-          "page": 58
-        }
-      ],
+      "Spreuken": [ 238, 239, 240, 241 ],
       "Recepten": []
     },
     {
@@ -2605,24 +2219,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Heal Fatal Wound",
-          "page": 57
-        },
-        {
-          "name": "Protection from Disease",
-          "page": 58
-        },
-        {
-          "name": "Cure Diseases",
-          "page": 58
-        },
-        {
-          "name": "Cure All Diseases",
-          "page": 58
-        }
-      ],
+      "Spreuken": [ 238, 239, 240, 241 ],
       "Recepten": []
     },
     {
@@ -2647,24 +2244,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Heal Fatal Wound",
-          "page": 58
-        },
-        {
-          "name": "Discern Mind-Affecting",
-          "page": 59
-        },
-        {
-          "name": "Protection from Fear",
-          "page": 59
-        },
-        {
-          "name": "Break Enchantment Cascade",
-          "page": 59
-        }
-      ],
+      "Spreuken": [ 242, 243, 244, 245 ],
       "Recepten": []
     },
     {
@@ -2689,24 +2269,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Heal Fatal Wound",
-          "page": 58
-        },
-        {
-          "name": "Discern Mind-Affecting",
-          "page": 59
-        },
-        {
-          "name": "Protection from Fear",
-          "page": 59
-        },
-        {
-          "name": "Break Enchantment Cascade",
-          "page": 59
-        }
-      ],
+      "Spreuken": [ 242, 243, 244, 245 ],
       "Recepten": []
     },
     {
@@ -2933,12 +2496,30 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Heal deadly wound potion" },
-        { "name": "Cure weak disease potion" },
-        { "name": "Cure disease potion" },
-        { "name": "Courage potion" },
-        { "name": "Wakeful potion" },
-        { "name": "Cure heartache" }
+        {
+          "id": 49,
+          "name": "Heal deadly wound potion"
+        },
+        {
+          "id": 50,
+          "name": "Cure weak disease potion"
+        },
+        {
+          "id": 51,
+          "name": "Cure disease potion"
+        },
+        {
+          "id": 52,
+          "name": "Courage potion"
+        },
+        {
+          "id": 53,
+          "name": "Wakeful potion"
+        },
+        {
+          "id": 54,
+          "name": "Cure heartache"
+        }
       ]
     },
     {
@@ -2968,12 +2549,30 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Heal all wounds potion" },
-        { "name": "Cure strong disease potion" },
-        { "name": "Muscle control potion" },
-        { "name": "Concentration potion" },
-        { "name": "Reroute blood potion" },
-        { "name": "Cure amnesia" }
+        {
+          "id": 55,
+          "name": "Heal all wounds potion"
+        },
+        {
+          "id": 56,
+          "name": "Cure strong disease potion"
+        },
+        {
+          "id": 57,
+          "name": "Muscle control potion"
+        },
+        {
+          "id": 58,
+          "name": "Concentration potion"
+        },
+        {
+          "id": 59,
+          "name": "Reroute blood potion"
+        },
+        {
+          "id": 60,
+          "name": "Cure amnesia"
+        }
       ]
     },
     {
@@ -3003,12 +2602,30 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Healing spit" },
-        { "name": "Strengthen body potion" },
-        { "name": "Long lasting strengthen body potion" },
-        { "name": "Strengthen will potion" },
-        { "name": "Focus potion" },
-        { "name": "Empathy potion" }
+        {
+          "id": 103,
+          "name": "Healing spit"
+        },
+        {
+          "id": 104,
+          "name": "Strengthen body potion"
+        },
+        {
+          "id": 105,
+          "name": "Long lasting strengthen body potion"
+        },
+        {
+          "id": 106,
+          "name": "Strengthen will potion"
+        },
+        {
+          "id": 107,
+          "name": "Focus potion"
+        },
+        {
+          "id": 108,
+          "name": "Empathy potion"
+        }
       ]
     },
     {
@@ -3038,12 +2655,30 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Healing blood" },
-        { "name": "Major strengthen body potion" },
-        { "name": "Anti-magic skin oil" },
-        { "name": "Major strengthen will potion" },
-        { "name": "Major focus potion" },
-        { "name": "Happiness drink" }
+        {
+          "id": 109,
+          "name": "Healing blood"
+        },
+        {
+          "id": 110,
+          "name": "Major strengthen body potion"
+        },
+        {
+          "id": 111,
+          "name": "Anti-magic skin oil"
+        },
+        {
+          "id": 112,
+          "name": "Major strengthen will potion"
+        },
+        {
+          "id": 113,
+          "name": "Major focus potion"
+        },
+        {
+          "id": 114,
+          "name": "Happiness drink"
+        }
       ]
     },
     {
@@ -3073,12 +2708,30 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Magical inspiration potion" },
-        { "name": "Potion of the divine connection" },
-        { "name": "Potion of magic veins" },
-        { "name": "Divine inspiration potion" },
-        { "name": "Inspiration of the magi potion" },
-        { "name": "Magical skin dye" }
+        {
+          "id": 121,
+          "name": "Magical inspiration potion"
+        },
+        {
+          "id": 122,
+          "name": "Potion of the divine connection"
+        },
+        {
+          "id": 123,
+          "name": "Potion of magic veins"
+        },
+        {
+          "id": 124,
+          "name": "Divine inspiration potion"
+        },
+        {
+          "id": 125,
+          "name": "Inspiration of the magi potion"
+        },
+        {
+          "id": 126,
+          "name": "Magical skin dye"
+        }
       ]
     },
     {
@@ -3108,12 +2761,30 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Major magical inspiration potion" },
-        { "name": "Major potion of divine connection" },
-        { "name": "Major potion of magic veins" },
-        { "name": "Major divine inspiration potion" },
-        { "name": "Major inspiration of the magi potion" },
-        { "name": "Mirror personality potion" }
+        {
+          "id": 127,
+          "name": "Major magical inspiration potion"
+        },
+        {
+          "id": 128,
+          "name": "Major potion of divine connection"
+        },
+        {
+          "id": 129,
+          "name": "Major potion of magic veins"
+        },
+        {
+          "id": 130,
+          "name": "Major divine inspiration potion"
+        },
+        {
+          "id": 131,
+          "name": "Major inspiration of the magi potion"
+        },
+        {
+          "id": 132,
+          "name": "Mirror personality potion"
+        }
       ]
     },
     {
@@ -3143,12 +2814,30 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Fever potion" },
-        { "name": "Visions of glowing symbols" },
-        { "name": "Visions of magic" },
-        { "name": "Visions of numen" },
-        { "name": "Visions of the past" },
-        { "name": "Relive other potion" }
+        {
+          "id": 85,
+          "name": "Fever potion"
+        },
+        {
+          "id": 86,
+          "name": "Visions of glowing symbols"
+        },
+        {
+          "id": 87,
+          "name": "Visions of magic"
+        },
+        {
+          "id": 88,
+          "name": "Visions of numen"
+        },
+        {
+          "id": 89,
+          "name": "Visions of the past"
+        },
+        {
+          "id": 90,
+          "name": "Relive other potion"
+        }
       ]
     },
     {
@@ -3178,12 +2867,30 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Major fever potion" },
-        { "name": "Visions of death" },
-        { "name": "Visions of the zeitgeist" },
-        { "name": "Visions of present" },
-        { "name": "Future visions" },
-        { "name": "Be other potion" }
+        {
+          "id": 91,
+          "name": "Major fever potion"
+        },
+        {
+          "id": 92,
+          "name": "Visions of death"
+        },
+        {
+          "id": 93,
+          "name": "Visions of the zeitgeist"
+        },
+        {
+          "id": 94,
+          "name": "Visions of present"
+        },
+        {
+          "id": 95,
+          "name": "Future visions"
+        },
+        {
+          "id": 96,
+          "name": "Be other potion"
+        }
       ]
     },
     {
@@ -3213,12 +2920,30 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Venom" },
-        { "name": "Weapon oil" },
-        { "name": "Mute venom" },
-        { "name": "Muscle lock venom" },
-        { "name": "Agonizing poison" },
-        { "name": "Sorrow drink" }
+        {
+          "id": 67,
+          "name": "Venom"
+        },
+        {
+          "id": 68,
+          "name": "Weapon oil"
+        },
+        {
+          "id": 69,
+          "name": "Mute venom"
+        },
+        {
+          "id": 70,
+          "name": "Muscle lock venom"
+        },
+        {
+          "id": 71,
+          "name": "Agonizing poison"
+        },
+        {
+          "id": 72,
+          "name": "Sorrow drink"
+        }
       ]
     },
     {
@@ -3248,12 +2973,30 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Batch of venom" },
-        { "name": "Major weapon oil" },
-        { "name": "Confuse venom" },
-        { "name": "Fatal venom" },
-        { "name": "Fatal poison" },
-        { "name": "Drink of willed death" }
+        {
+          "id": 73,
+          "name": "Batch of venom"
+        },
+        {
+          "id": 74,
+          "name": "Major weapon oil"
+        },
+        {
+          "id": 75,
+          "name": "Confuse venom"
+        },
+        {
+          "id": 76,
+          "name": "Fatal venom"
+        },
+        {
+          "id": 77,
+          "name": "Fatal poison"
+        },
+        {
+          "id": 78,
+          "name": "Drink of willed death"
+        }
       ]
     },
     {
@@ -3312,8 +3055,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk B (Steel)" },
-        { "name": "Wetsteen (Lvl 2)" }
+        {
+          "id": 3,
+          "name": "Meesterstuk B (Steel)"
+        },
+        {
+          "id": 4,
+          "name": "Wetsteen (Lvl 2)"
+        }
       ]
     },
     {
@@ -3343,8 +3092,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk C (Mithril)" },
-        { "name": "Wetsteen (Lvl 3)" }
+        {
+          "id": 5,
+          "name": "Meesterstuk C (Mithril)"
+        },
+        {
+          "id": 6,
+          "name": "Wetsteen (Lvl 3)"
+        }
       ]
     },
     {
@@ -3374,8 +3129,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk B (Ebony)" },
-        { "name": "Totem van de Uil" }
+        {
+          "id": 9,
+          "name": "Meesterstuk B (Ebony)"
+        },
+        {
+          "id": 10,
+          "name": "Totem van de Uil"
+        }
       ]
     },
     {
@@ -3405,8 +3166,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk C (Worldtree Sapling)" },
-        { "name": "Totem van de Stier" }
+        {
+          "id": 11,
+          "name": "Meesterstuk C (Worldtree Sapling)"
+        },
+        {
+          "id": 12,
+          "name": "Totem van de Stier"
+        }
       ]
     },
     {
@@ -3436,8 +3203,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk B (Velvet)" },
-        { "name": "Vlag van de Groep" }
+        {
+          "id": 15,
+          "name": "Meesterstuk B (Velvet)"
+        },
+        {
+          "id": 16,
+          "name": "Vlag van de Groep"
+        }
       ]
     },
     {
@@ -3467,8 +3240,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk C (Spidersilk)" },
-        { "name": "Banier van de Groep" }
+        {
+          "id": 17,
+          "name": "Meesterstuk C (Spidersilk)"
+        },
+        {
+          "id": 18,
+          "name": "Banier van de Groep"
+        }
       ]
     },
     {
@@ -3498,8 +3277,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk B (Vellum)" },
-        { "name": "Leeg Vaardigheid Onderzoek Boek" }
+        {
+          "id": 21,
+          "name": "Meesterstuk B (Vellum)"
+        },
+        {
+          "id": 22,
+          "name": "Leeg Vaardigheid Onderzoek Boek"
+        }
       ]
     },
     {
@@ -3529,8 +3314,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk C (Griffinskin Vellum)" },
-        { "name": "Boek der Ervaringen" }
+        {
+          "id": 23,
+          "name": "Meesterstuk C (Griffinskin Vellum)"
+        },
+        {
+          "id": 24,
+          "name": "Boek der Ervaringen"
+        }
       ]
     },
     {
@@ -3560,8 +3351,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk B (Scale)" },
-        { "name": "Pantser Versterking" }
+        {
+          "id": 27,
+          "name": "Meesterstuk B (Scale)"
+        },
+        {
+          "id": 28,
+          "name": "Pantser Versterking"
+        }
       ]
     },
     {
@@ -3591,8 +3388,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk C (Dragonscale)" },
-        { "name": "Zware Pantser Versterking" }
+        {
+          "id": 29,
+          "name": "Meesterstuk C (Dragonscale)"
+        },
+        {
+          "id": 30,
+          "name": "Zware Pantser Versterking"
+        }
       ]
     },
     {
@@ -3622,8 +3425,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk B (Silver Ingot)" },
-        { "name": "Alliantie Juweel" }
+        {
+          "id": 33,
+          "name": "Meesterstuk B (Silver Ingot)"
+        },
+        {
+          "id": 34,
+          "name": "Alliantie Juweel"
+        }
       ]
     },
     {
@@ -3653,8 +3462,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk C (Golden Ingot)" },
-        { "name": "Huwelijks Juweel" }
+        {
+          "id": 35,
+          "name": "Meesterstuk C (Golden Ingot)"
+        },
+        {
+          "id": 36,
+          "name": "Huwelijks Juweel"
+        }
       ]
     },
     {
@@ -3684,8 +3499,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk B (Gems)" },
-        { "name": "Duur Sieraad" }
+        {
+          "id": 39,
+          "name": "Meesterstuk B (Gems)"
+        },
+        {
+          "id": 40,
+          "name": "Duur Sieraad"
+        }
       ]
     },
     {
@@ -3715,8 +3536,14 @@
       ],
       "Spreuken": [],
       "Recepten": [
-        { "name": "Meesterstuk C (Flawless Gems)" },
-        { "name": "Koninklijk Sieraad" }
+        {
+          "id": 41,
+          "name": "Meesterstuk C (Flawless Gems)"
+        },
+        {
+          "id": 42,
+          "name": "Koninklijk Sieraad"
+        }
       ]
     },
     {
@@ -3795,20 +3622,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Discern Diseases and Afflictions",
-          "page": 59
-        },
-        {
-          "name": "Major Regeneration",
-          "page": 60
-        },
-        {
-          "name": "Purify Body",
-          "page": 60
-        }
-      ],
+      "Spreuken": [ 256, 257, 258 ],
       "Recepten": []
     },
     {
@@ -3837,20 +3651,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "name": "Discern Diseases and Afflictions",
-          "page": 59
-        },
-        {
-          "name": "Major Regeneration",
-          "page": 60
-        },
-        {
-          "name": "Purify Body",
-          "page": 60
-        }
-      ],
+      "Spreuken": [ 256, 257, 258 ],
       "Recepten": []
     },
     {
@@ -4066,10 +3867,12 @@
       ],
       "Spreuken": [
         {
+          "id": 44,
           "name": "Force Field",
           "page": 28
         },
         {
+          "id": 46,
           "name": "Break All Enchantments",
           "page": 28
         }
@@ -4101,10 +3904,12 @@
       ],
       "Spreuken": [
         {
+          "id": 50,
           "name": "Aura of Fear",
           "page": 30
         },
         {
+          "id": 51,
           "name": "Elemental Bolt",
           "page": 30
         }
@@ -4135,10 +3940,12 @@
       ],
       "Spreuken": [
         {
+          "id": 56,
           "name": "Stoneskin",
           "page": 32
         },
         {
+          "id": 57,
           "name": "Imbue Crush",
           "page": 32
         }
@@ -4169,10 +3976,12 @@
       ],
       "Spreuken": [
         {
+          "id": 62,
           "name": "Gift of Knowledge",
           "page": 34
         },
         {
+          "id": 63,
           "name": "Paralyzing Touch",
           "page": 34
         }
@@ -4203,10 +4012,12 @@
       ],
       "Spreuken": [
         {
+          "id": 68,
           "name": "Aspect of the Efreet",
           "page": 35
         },
         {
+          "id": 69,
           "name": "Incinerate",
           "page": 36
         }
@@ -4238,10 +4049,12 @@
       ],
       "Spreuken": [
         {
+          "id": 74,
           "name": "Primal Rage",
           "page": 37
         },
         {
+          "id": 75,
           "name": "Aspect of the Viper",
           "page": 37
         }
@@ -4272,6 +4085,7 @@
       ],
       "Spreuken": [
         {
+          "id": 100,
           "name": "Wave of Destruction",
           "page": 38
         }
@@ -4302,6 +4116,7 @@
       ],
       "Spreuken": [
         {
+          "id": 101,
           "name": "Dominate the Weak",
           "page": 38
         }
@@ -4332,6 +4147,7 @@
       ],
       "Spreuken": [
         {
+          "id": 102,
           "name": "Epidemic",
           "page": 38
         }
@@ -4474,10 +4290,12 @@
       ],
       "Spreuken": [
         {
+          "id": 159,
           "name": "Holy Bolt",
           "page": 43
         },
         {
+          "id": 160,
           "name": "Divine Armour",
           "page": 43
         }
@@ -4508,10 +4326,12 @@
       ],
       "Spreuken": [
         {
+          "id": 170,
           "name": "Torture",
           "page": 45
         },
         {
+          "id": 171,
           "name": "Divine Weapon",
           "page": 46
         }
@@ -4543,10 +4363,12 @@
       ],
       "Spreuken": [
         {
+          "id": 181,
           "name": "Destroy",
           "page": 49
         },
         {
+          "id": 182,
           "name": "Septic Weapon",
           "page": 49
         }
@@ -4577,10 +4399,12 @@
       ],
       "Spreuken": [
         {
+          "id": 187,
           "name": "Gift of Wisdom",
           "page": 51
         },
         {
+          "id": 188,
           "name": "Spell Shield",
           "page": 51
         }
@@ -4612,10 +4436,12 @@
       ],
       "Spreuken": [
         {
+          "id": 193,
           "name": "Barkskin",
           "page": 52
         },
         {
+          "id": 194,
           "name": "Blast Disease",
           "page": 52
         }
@@ -4646,6 +4472,7 @@
       ],
       "Spreuken": [
         {
+          "id": 202,
           "name": "Miracle of Consecration",
           "page": 53
         }
@@ -4676,6 +4503,7 @@
       ],
       "Spreuken": [
         {
+          "id": 200,
           "name": "Miracle of Healing",
           "page": 53
         }
@@ -4706,6 +4534,7 @@
       ],
       "Spreuken": [
         {
+          "id": 201,
           "name": "Wrath of the Gods",
           "page": 54
         }
@@ -4912,10 +4741,12 @@
       ],
       "Spreuken": [
         {
+          "id": 5,
           "name": "Heavy Blow",
           "page": 18
         },
         {
+          "id": 6,
           "name": "Withstand Strike",
           "page": 18
         }
@@ -4946,10 +4777,12 @@
       ],
       "Spreuken": [
         {
+          "id": 9,
           "name": "Poison & Disease Protection",
           "page": 19
         },
         {
+          "id": 10,
           "name": "Resist Crush",
           "page": 19
         }
@@ -4980,10 +4813,12 @@
       ],
       "Spreuken": [
         {
+          "id": 13,
           "name": "Inspect Armour",
           "page": 20
         },
         {
+          "id": 14,
           "name": "Insight",
           "page": 20
         }
@@ -5014,10 +4849,12 @@
       ],
       "Spreuken": [
         {
+          "id": 17,
           "name": "Defensive Stance",
           "page": 21
         },
         {
+          "id": 18,
           "name": "Withstand Torture",
           "page": 21
         }
@@ -5048,10 +4885,12 @@
       ],
       "Spreuken": [
         {
+          "id": 21,
           "name": "Rage",
           "page": 22
         },
         {
+          "id": 22,
           "name": "Withstand Fear",
           "page": 22
         }
@@ -5106,18 +4945,22 @@
       "Eigenschappen": [],
       "Spreuken": [
         {
+          "id": 275,
           "name": "Detect Servitar",
           "page": 60
         },
         {
+          "id": 276,
           "name": "Reveal All Servitars",
           "page": 61
         },
         {
+          "id": 277,
           "name": "Break Minor Possession",
           "page": 61
         },
         {
+          "id": 278,
           "name": "Faustian Deal",
           "page": 61
         }
@@ -5148,22 +4991,27 @@
       ],
       "Spreuken": [
         {
+          "id": 279,
           "name": "Demonic Eye",
           "page": 61
         },
         {
+          "id": 280,
           "name": "Command Servitar",
           "page": 62
         },
         {
+          "id": 281,
           "name": "Banish Servitar",
           "page": 62
         },
         {
+          "id": 282,
           "name": "Smite Servitar",
           "page": 62
         },
         {
+          "id": 283,
           "name": "Invite Demon",
           "page": 63
         }
@@ -5194,22 +5042,27 @@
       ],
       "Spreuken": [
         {
+          "id": 279,
           "name": "Demonic Eye",
           "page": 61
         },
         {
+          "id": 280,
           "name": "Command Servitar",
           "page": 62
         },
         {
+          "id": 281,
           "name": "Banish Servitar",
           "page": 62
         },
         {
+          "id": 282,
           "name": "Smite Servitar",
           "page": 62
         },
         {
+          "id": 283,
           "name": "Invite Demon",
           "page": 63
         }
@@ -5240,14 +5093,17 @@
       ],
       "Spreuken": [
         {
+          "id": 284,
           "name": "Greater Demonic Eye",
           "page": 63
         },
         {
+          "id": 285,
           "name": "Invite Greater Demon",
           "page": 63
         },
         {
+          "id": 286,
           "name": "Transfer Contract",
           "page": 64
         }
@@ -5278,14 +5134,17 @@
       ],
       "Spreuken": [
         {
+          "id": 284,
           "name": "Greater Demonic Eye",
           "page": 63
         },
         {
+          "id": 285,
           "name": "Invite Greater Demon",
           "page": 63
         },
         {
+          "id": 286,
           "name": "Transfer Contract",
           "page": 64
         }
@@ -5311,18 +5170,22 @@
       "Eigenschappen": [],
       "Spreuken": [
         {
+          "id": 300,
           "name": "Detect Spirit",
           "page": 64
         },
         {
+          "id": 301,
           "name": "Reveal All Spirits",
           "page": 65
         },
         {
+          "id": 302,
           "name": "Break Minor Possession",
           "page": 65
         },
         {
+          "id": 303,
           "name": "Create Personal Grove",
           "page": 65
         }
@@ -5348,18 +5211,22 @@
       "Eigenschappen": [],
       "Spreuken": [
         {
+          "id": 300,
           "name": "Detect Spirit",
           "page": 64
         },
         {
+          "id": 301,
           "name": "Reveal All Spirits",
           "page": 65
         },
         {
+          "id": 302,
           "name": "Break Minor Possession",
           "page": 65
         },
         {
+          "id": 303,
           "name": "Create Personal Grove",
           "page": 65
         }
@@ -5390,18 +5257,22 @@
       ],
       "Spreuken": [
         {
+          "id": 304,
           "name": "Detect Impurity",
           "page": 66
         },
         {
+          "id": 305,
           "name": "Reveal All Impurities",
           "page": 66
         },
         {
+          "id": 306,
           "name": "Protection of the Grove",
           "page": 66
         },
         {
+          "id": 307,
           "name": "Invite Nature Spirit",
           "page": 67
         }
@@ -5432,18 +5303,22 @@
       ],
       "Spreuken": [
         {
+          "id": 304,
           "name": "Detect Impurity",
           "page": 66
         },
         {
+          "id": 305,
           "name": "Reveal All Impurities",
           "page": 66
         },
         {
+          "id": 306,
           "name": "Protection of the Grove",
           "page": 66
         },
         {
+          "id": 307,
           "name": "Invite Nature Spirit",
           "page": 67
         }
@@ -5474,18 +5349,22 @@
       ],
       "Spreuken": [
         {
+          "id": 304,
           "name": "Detect Impurity",
           "page": 66
         },
         {
+          "id": 305,
           "name": "Reveal All Impurities",
           "page": 66
         },
         {
+          "id": 306,
           "name": "Protection of the Grove",
           "page": 66
         },
         {
+          "id": 307,
           "name": "Invite Nature Spirit",
           "page": 67
         }
@@ -5516,18 +5395,22 @@
       ],
       "Spreuken": [
         {
+          "id": 304,
           "name": "Detect Impurity",
           "page": 66
         },
         {
+          "id": 305,
           "name": "Reveal All Impurities",
           "page": 66
         },
         {
+          "id": 306,
           "name": "Protection of the Grove",
           "page": 66
         },
         {
+          "id": 307,
           "name": "Invite Nature Spirit",
           "page": 67
         }
@@ -5558,14 +5441,17 @@
       ],
       "Spreuken": [
         {
+          "id": 308,
           "name": "Grove Meditation",
           "page": 67
         },
         {
+          "id": 309,
           "name": "Restore the Cycle",
           "page": 68
         },
         {
+          "id": 310,
           "name": "Invite Avatar of the Cycle",
           "page": 68
         }
@@ -5596,14 +5482,17 @@
       ],
       "Spreuken": [
         {
+          "id": 308,
           "name": "Grove Meditation",
           "page": 67
         },
         {
+          "id": 309,
           "name": "Restore the Cycle",
           "page": 68
         },
         {
+          "id": 310,
           "name": "Invite Avatar of the Cycle",
           "page": 68
         }
@@ -5634,14 +5523,17 @@
       ],
       "Spreuken": [
         {
+          "id": 308,
           "name": "Grove Meditation",
           "page": 67
         },
         {
+          "id": 309,
           "name": "Restore the Cycle",
           "page": 68
         },
         {
+          "id": 310,
           "name": "Invite Avatar of the Cycle",
           "page": 68
         }
@@ -5672,14 +5564,17 @@
       ],
       "Spreuken": [
         {
+          "id": 308,
           "name": "Grove Meditation",
           "page": 67
         },
         {
+          "id": 309,
           "name": "Restore the Cycle",
           "page": 68
         },
         {
+          "id": 310,
           "name": "Invite Avatar of the Cycle",
           "page": 68
         }
@@ -5705,22 +5600,27 @@
       "Eigenschappen": [],
       "Spreuken": [
         {
+          "id": 325,
           "name": "Detect Undead",
           "page": 69
         },
         {
+          "id": 326,
           "name": "Reveal All Undead",
           "page": 70
         },
         {
+          "id": 327,
           "name": "Break Minor Possession",
           "page": 70
         },
         {
+          "id": 328,
           "name": "Create Zombie",
           "page": 71
         },
         {
+          "id": 329,
           "name": "Minor Reconstruct",
           "page": 71
         }
@@ -5751,18 +5651,22 @@
       ],
       "Spreuken": [
         {
+          "id": 330,
           "name": "Reconstruct",
           "page": 71
         },
         {
+          "id": 331,
           "name": "Chilling Fear",
           "page": 71
         },
         {
+          "id": 332,
           "name": "Bone Armour",
           "page": 72
         },
         {
+          "id": 333,
           "name": "Invite Spirit of the Dead",
           "page": 72
         }
@@ -5793,18 +5697,22 @@
       ],
       "Spreuken": [
         {
+          "id": 330,
           "name": "Reconstruct",
           "page": 71
         },
         {
+          "id": 331,
           "name": "Chilling Fear",
           "page": 71
         },
         {
+          "id": 332,
           "name": "Bone Armour",
           "page": 72
         },
         {
+          "id": 333,
           "name": "Invite Spirit of the Dead",
           "page": 72
         }
@@ -5835,14 +5743,17 @@
       ],
       "Spreuken": [
         {
+          "id": 334,
           "name": "Ghostly Shackles",
           "page": 73
         },
         {
+          "id": 335,
           "name": "Unholy Bolt",
           "page": 73
         },
         {
+          "id": 336,
           "name": "Invite Ancestor",
           "page": 73
         }
@@ -5873,16 +5784,19 @@
       ],
       "Spreuken": [
         {
+          "id": 334,
           "name": "Ghostly Shackles",
           "page": 73
         },
         {
+          "id": 335,
           "name": "Unholy Bolt",
           "page": 73
         },
         {
+          "id": 336,
           "name": "Invite Ancestor",
-          "page": 74
+          "page": 73
         }
       ],
       "Recepten": []

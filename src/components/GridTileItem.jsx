@@ -6,22 +6,25 @@ import {
     RecipeTooltip
 } from './Tooltip.jsx';
 
+import {
+    getSpellBySkill
+} from '../SharedActions.js';
+
 SpellTile.propTypes = {
-    id: PropTypes.number.isRequired,
-    spellName: PropTypes.string.isRequired,
-    page: PropTypes.number,
+    skillId: PropTypes.number.isRequired,
+    spellId: PropTypes.number.isRequired
 };
 
-export function SpellTile({ id, spellName, page=1 }) {
-    return (
+export function SpellTile({ skillId, spellId }) {
+    const spell = getSpellBySkill(skillId, spellId);
 
+    return (
         <div className="grid-spreuk-item">
-            <div className="grid-spreuk-text">{"  " + spellName}</div>
+            <div className="grid-spreuk-text">{"  " + spell.spell}</div>
             <div className="grid-spreuk-icons">
                 <SpellTooltip
-                    id={id}
-                    spellName={spellName}
-                    page={page}
+                    skillId={skillId}
+                    spellId={spellId}
                 />
             </div>
         </div>

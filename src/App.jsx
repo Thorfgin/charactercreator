@@ -117,9 +117,8 @@ export default function App() {
                             {gridSpreuken?.map((item) => (
                                 <SpellTile
                                     key={uuidv4()}
-                                    id={item.id}
-                                    spellName={item.name}
-                                    page={item.page}
+                                    skillId={item.skillId}
+                                    spellId={item.spellId}
                                 />
                             ))}
                         </div>

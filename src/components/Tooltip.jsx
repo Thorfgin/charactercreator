@@ -118,16 +118,15 @@ export function SkillTooltip({ id, image = './images/img-info.png' }) {
 }
 
 SpellTooltip.propTypes = {
-    id: PropTypes.number.isRequired,
-    spellName: PropTypes.string.isRequired,
-    page: PropTypes.number.isRequired,
+    skillId: PropTypes.number.isRequired,
+    spellId: PropTypes.number.isRequired,
     image: PropTypes.string
 };
 
-export function SpellTooltip({ id, spellName, page, image = './images/img-info.png' }) {
+export function SpellTooltip({ skillId, spellId, image = './images/img-info.png' }) {
 
-    const sourceSkill = getSkillById(id);
-    const sourceSpell = getSpellBySkill(sourceSkill, spellName);
+    const sourceSkill = getSkillById(skillId);
+    const sourceSpell = getSpellBySkill(skillId, spellId);
     const description = getBlock(sourceSpell?.description, "description-block");
 
     const tooltipData = [
@@ -145,15 +144,15 @@ export function SpellTooltip({ id, spellName, page, image = './images/img-info.p
         <div className="grid-spreuk-icons">
             <GenericTooltip
                 header={`Vaardigheid: ${sourceSkill.skill}`}
-                subheader={`Spreuk/Techniek: ${spellName}`}
+                subheader={`Spreuk/Techniek: ${sourceSpell.spell}`}
                 message={tooltipItems || ''}
                 image={image}
             />
 
             <img
                 className="btn-image"
-                title={"Open Spreuken.pdf - pagina " + page}
-                onClick={() => openPdfPage('Spreuken.pdf', page)}
+                title={"Open Spreuken.pdf - pagina " + sourceSpell.page}
+                onClick={() => openPdfPage('Spreuken.pdf', sourceSpell.page)}
                 src="./images/img-pdf.png"
                 alt="PDF">
             </img>

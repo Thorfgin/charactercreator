@@ -4,6 +4,7 @@
       "categorie": "Ambachtsvaardigheden",
       "Skills": [
         {
+          "id": 250,
           "skill": "Meestersmid A",
           "Recipes": [
             {
@@ -23,6 +24,7 @@
           ]
         },
         {
+          "id": 476,
           "skill": "Meestersmid B",
           "Recipes": [
             {
@@ -42,6 +44,7 @@
           ]
         },
         {
+          "id": 477,
           "skill": "Meestersmid C",
           "Recipes": [
             {
@@ -61,6 +64,7 @@
           ]
         },
         {
+          "id": 251,
           "skill": "Houtbewerker A",
           "Recipes": [
             {
@@ -80,6 +84,7 @@
           ]
         },
         {
+          "id": 478,
           "skill": "Houtbewerker B",
           "Recipes": [
             {
@@ -99,6 +104,7 @@
           ]
         },
         {
+          "id": 479,
           "skill": "Houtbewerker C",
           "Recipes": [
             {
@@ -118,6 +124,7 @@
           ]
         },
         {
+          "id": 252,
           "skill": "Kleermaker A",
           "Recipes": [
             {
@@ -137,6 +144,7 @@
           ]
         },
         {
+          "id": 480,
           "skill": "Kleermaker B",
           "Recipes": [
             {
@@ -156,6 +164,7 @@
           ]
         },
         {
+          "id": 481,
           "skill": "Kleermaker C",
           "Recipes": [
             {
@@ -175,6 +184,7 @@
           ]
         },
         {
+          "id": 253,
           "skill": "Boekbinder A",
           "Recipes": [
             {
@@ -194,6 +204,7 @@
           ]
         },
         {
+          "id": 482,
           "skill": "Boekbinder B",
           "Recipes": [
             {
@@ -213,6 +224,7 @@
           ]
         },
         {
+          "id": 483,
           "skill": "Boekbinder C",
           "Recipes": [
             {
@@ -232,6 +244,7 @@
           ]
         },
         {
+          "id": 254,
           "skill": "Leerbewerker A",
           "Recipes": [
             {
@@ -251,6 +264,7 @@
           ]
         },
         {
+          "id": 484,
           "skill": "Leerbewerker B",
           "Recipes": [
             {
@@ -270,6 +284,7 @@
           ]
         },
         {
+          "id": 485,
           "skill": "Leerbewerker C",
           "Recipes": [
             {
@@ -289,6 +304,7 @@
           ]
         },
         {
+          "id": 255,
           "skill": "Juwelier A",
           "Recipes": [
             {
@@ -308,6 +324,7 @@
           ]
         },
         {
+          "id": 486,
           "skill": "Juwelier B",
           "Recipes": [
             {
@@ -327,6 +344,7 @@
           ]
         },
         {
+          "id": 487,
           "skill": "Juwelier C",
           "Recipes": [
             {
@@ -346,6 +364,7 @@
           ]
         },
         {
+          "id": 256,
           "skill": "Steenzetter A",
           "Recipes": [
             {
@@ -365,6 +384,7 @@
           ]
         },
         {
+          "id": 488,
           "skill": "Steenzetter B",
           "Recipes": [
             {
@@ -384,6 +404,7 @@
           ]
         },
         {
+          "id": 489,
           "skill": "Steenzetter C",
           "Recipes": [
             {
@@ -408,6 +429,7 @@
       "categorie": "Alchemistenvaardigheden",
       "Skills": [
         {
+          "id": 227,
           "skill": "Brouw Genezende Dranken A",
           "Recipes": [
             {
@@ -455,6 +477,7 @@
           ]
         },
         {
+          "id": 451,
           "skill": "Brouw Genezende Dranken B",
           "Recipes": [
             {
@@ -502,6 +525,7 @@
           ]
         },
         {
+          "id": 452,
           "skill": "Brouw Genezende Dranken C",
           "Recipes": [
             {
@@ -549,6 +573,7 @@
           ]
         },
         {
+          "id": 231,
           "skill": "Brouw Giffen A",
           "Recipes": [
             {
@@ -596,6 +621,7 @@
           ]
         },
         {
+          "id": 459,
           "skill": "Brouw Giffen B",
           "Recipes": [
             {
@@ -643,6 +669,7 @@
           ]
         },
         {
+          "id": 460,
           "skill": "Brouw Giffen C",
           "Recipes": [
             {
@@ -690,6 +717,7 @@
           ]
         },
         {
+          "id": 230,
           "skill": "Brouw Hallucinerende Elixers A",
           "Recipes": [
             {
@@ -737,6 +765,7 @@
           ]
         },
         {
+          "id": 457,
           "skill": "Brouw Hallucinerende Elixers B",
           "Recipes": [
             {
@@ -784,6 +813,7 @@
           ]
         },
         {
+          "id": 458,
           "skill": "Brouw Hallucinerende Elixers C",
           "Recipes": [
             {
@@ -831,6 +861,7 @@
           ]
         },
         {
+          "id": 228,
           "skill": "Brouw Kruiden Elixers A",
           "Recipes": [
             {
@@ -878,6 +909,7 @@
           ]
         },
         {
+          "id": 453,
           "skill": "Brouw Kruiden Elixers B",
           "Recipes": [
             {
@@ -925,6 +957,7 @@
           ]
         },
         {
+          "id": 454,
           "skill": "Brouw Kruiden Elixers C",
           "Recipes": [
             {
@@ -972,6 +1005,7 @@
           ]
         },
         {
+          "id": 229,
           "skill": "Brouw Magische Elixers A",
           "Recipes": [
             {
@@ -1019,6 +1053,7 @@
           ]
         },
         {
+          "id": 455,
           "skill": "Brouw Magische Elixers B",
           "Recipes": [
             {
@@ -1066,6 +1101,7 @@
           ]
         },
         {
+          "id": 456,
           "skill": "Brouw Magische Elixers C",
           "Recipes": [
             {

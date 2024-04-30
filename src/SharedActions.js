@@ -58,11 +58,10 @@ export function getExtraSkillsFromTable(tableData) {
 
 /// --- SPELLS & RECIPE --- ///
 // Ophalen van een spreuk op basis van de skill
-export function getSpellBySkill(sourceSkill, spellName) {
-    if (!sourceSkill || !spellName) { return; }
-
-    const sourceSpell = sourceSpreuken.find((item) => item.id.includes(sourceSkill?.id));
-    return sourceSpell?.Spells.find((item) => item.spell.toLowerCase() === spellName.toLowerCase());
+export function getSpellBySkill(skillId, spellId) {
+    if (!skillId || !spellId) { return; }
+    const sourceSpells = getSpellsBySkill(skillId);
+    return sourceSpells?.find((item) => item.id === spellId);
 }
 
 // Ophalen van alle spreuken op basis van de skill
@@ -445,12 +444,15 @@ export function updateGridSpreukenTiles(tableData) {
         const vaardigheid = getSkillById(record.id);
         const spells = vaardigheid.Spreuken || [];
         spells.forEach((spell) => {
-            const existingSpell = spellsAccumulator.find((existing) =>  existing.name.toLowerCase() === spell.name.toLowerCase());
-            if (existingSpell) { existingSpell.count += spell.count; }
+            const existingSpell = spellsAccumulator.find((existing) =>  existing.id === spell);
+            if (existingSpell) { existingSpell.count += spells.count; }
             else {
-                spell.id = vaardigheid.id;
-                spell.alt_skill = vaardigheid.alt_skill;
-                spellsAccumulator.push({ ...spell });
+                const newSpell = {
+                    "skillId": vaardigheid.id,
+                    "spellId": spell,
+                    "alt_skill": vaardigheid.alt_skill
+                };
+                spellsAccumulator.push({ ...newSpell });
             }
         });
         return spellsAccumulator;
