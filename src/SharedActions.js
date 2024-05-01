@@ -72,13 +72,17 @@ export function getSpellsBySkill(skillId) {
 }
 
 // Ophalen van een recept op bases van de skill
-export function getRecipeBySkill(sourceSkill, recipeName) {
-    if (!sourceSkill || !recipeName) { return; }
+export function getRecipyBySkill(skillId, recipyId) {
+    if (!skillId || !recipyId) { return; }
+    const sourceRecipies = getRecipesBySkill(skillId);
+    return sourceRecipies?.find((item) => item.id === recipyId);
+}
 
-    const skillFound = sourceRecepten.find((item) =>
-        item.skill.toLowerCase() === sourceSkill?.skill.toLowerCase() ||
-        item.skill.toLowerCase() === sourceSkill?.alt_skill.toLowerCase());
-    return skillFound?.Recipes.find((item) => item.recipy.toLowerCase() === recipeName.toLowerCase());
+// Ophalen van alle recepten op basis van de skill
+export function getRecipesBySkill(skillId) {
+    if (!skillId) { return; }
+    const sourceRecipy = sourceRecepten.find((item) => item.id === skillId);
+    return sourceRecipy?.Recipes;
 }
 
 export function getPropertyByName(name) {
@@ -444,7 +448,7 @@ export function updateGridSpreukenTiles(tableData) {
         const vaardigheid = getSkillById(record.id);
         const spells = vaardigheid.Spreuken || [];
         spells.forEach((spell) => {
-            const existingSpell = spellsAccumulator.find((existing) =>  existing.id === spell);
+            const existingSpell = spellsAccumulator.find((existing) => existing.id === spell);
             if (existingSpell) { existingSpell.count += spells.count; }
             else {
                 const newSpell = {
@@ -466,15 +470,18 @@ export function updateGridReceptenTiles(tableData) {
         const vaardigheid = getSkillById(record.id);
         const recepten = vaardigheid ? vaardigheid.Recepten : [];
 
-        for (const recipy of recepten) {
-            const existingRecipy = recipyAccumulator.find((existing) => existing?.name.toLowerCase() === recipy.name.toLowerCase());
-            if (existingRecipy) {
-                existingRecipy.count += recipy.count;
-            } else {
-                recipy.id = vaardigheid.id;
-                recipyAccumulator.push({ ...recipy });
+        recepten.forEach((recept) => {
+            const existingRecipy = recipyAccumulator.find((existing) => existing?.id === recept);
+            if (existingRecipy) { existingRecipy.count += recept.count; }
+            else {
+                const newRecipy = {
+                    "skillId": vaardigheid.id,
+                    "recipyId": recept,
+                    "alt_skill": vaardigheid.alt_skill
+                };
+                recipyAccumulator.push({ ...newRecipy });
             }
-        }
+        });
         return recipyAccumulator;
     }, []);
     return recipyProperties;

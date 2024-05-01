@@ -1001,32 +1001,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 43,
-          "name": "Heal scrape potion"
-        },
-        {
-          "id": 44,
-          "name": "Heal wound potion"
-        },
-        {
-          "id": 45,
-          "name": "Minor potion of heal crippling wound"
-        },
-        {
-          "id": 47,
-          "name": "Bleed salve"
-        },
-        {
-          "id": 46,
-          "name": "Heal crippling wound potion"
-        },
-        {
-          "id": 48,
-          "name": "Heal hangover"
-        }
-      ]
+      "Recepten": [ 43, 44, 45, 46, 47, 48 ]
     },
     {
       "id": 228,
@@ -1054,32 +1029,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 97,
-          "name": "Martial skill potion"
-        },
-        {
-          "id": 98,
-          "name": "Minor potion of strengthen will"
-        },
-        {
-          "id": 99,
-          "name": "Minor potion of focus"
-        },
-        {
-          "id": 100,
-          "name": "Retreat potion"
-        },
-        {
-          "id": 101,
-          "name": "Minor potion of strengthen body"
-        },
-        {
-          "id": 102,
-          "name": "Confidence potion"
-        }
-      ]
+      "Recepten": [ 97, 98, 99, 100, 101, 102 ]
     },
     {
       "id": 229,
@@ -1107,32 +1057,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 115,
-          "name": "Fire breath potion"
-        },
-        {
-          "id": 116,
-          "name": "Minor potion of divine connection"
-        },
-        {
-          "id": 117,
-          "name": "Minor potion of magic veins"
-        },
-        {
-          "id": 118,
-          "name": "Minor potion of divine inspiration"
-        },
-        {
-          "id": 119,
-          "name": "Minor potion of inspiration of the magi"
-        },
-        {
-          "id": 120,
-          "name": "Magical hair dye"
-        }
-      ]
+      "Recepten": [ 115, 116, 117, 118, 119, 120 ]
     },
     {
       "id": 230,
@@ -1160,32 +1085,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 79,
-          "name": "Smell of confusion"
-        },
-        {
-          "id": 80,
-          "name": "Minor fever potion"
-        },
-        {
-          "id": 81,
-          "name": "Vision of the soul"
-        },
-        {
-          "id": 82,
-          "name": "Vision of symbols"
-        },
-        {
-          "id": 83,
-          "name": "Visions of the lifted veil"
-        },
-        {
-          "id": 84,
-          "name": "Relive potion"
-        }
-      ]
+      "Recepten": [ 79, 80, 81, 82, 83, 84 ]
     },
     {
       "id": 231,
@@ -1213,32 +1113,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 62,
-          "name": "Minor venom"
-        },
-        {
-          "id": 61,
-          "name": "Minor weapon oil"
-        },
-        {
-          "id": 63,
-          "name": "Fright venom"
-        },
-        {
-          "id": 64,
-          "name": "Sleep poison"
-        },
-        {
-          "id": 65,
-          "name": "Muscle lock poison"
-        },
-        {
-          "id": 66,
-          "name": "Abortion poison"
-        }
-      ]
+      "Recepten": [ 61, 62, 63, 64, 65, 66 ]
     },
     {
       "id": 250,
@@ -1266,16 +1141,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 1,
-          "name": "Meesterstuk A (Metal)"
-        },
-        {
-          "id": 2,
-          "name": "Wetsteen (Lvl 1)"
-        }
-      ]
+      "Recepten": [ 1, 2 ]
     },
     {
       "id": 251,
@@ -1303,16 +1169,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 7,
-          "name": "Meesterstuk A (Wood)"
-        },
-        {
-          "id": 8,
-          "name": "Totem van de Wolf"
-        }
-      ]
+      "Recepten": [ 7, 8 ]
     },
     {
       "id": 252,
@@ -1340,16 +1197,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 13,
-          "name": "Meesterstuk A (Cloth)"
-        },
-        {
-          "id": 14,
-          "name": "Hoog kwaliteit Verband"
-        }
-      ]
+      "Recepten": [ 13, 14 ]
     },
     {
       "id": 253,
@@ -1377,16 +1225,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 19,
-          "name": "Meesterstuk A (Paper)"
-        },
-        {
-          "id": 20,
-          "name": "Scrollpapier"
-        }
-      ]
+      "Recepten": [ 19, 20 ]
     },
     {
       "id": 254,
@@ -1414,16 +1253,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 25,
-          "name": "Meesterstuk A (Leather)"
-        },
-        {
-          "id": 26,
-          "name": "Pantser Reparatie Set"
-        }
-      ]
+      "Recepten": [ 25, 26 ]
     },
     {
       "id": 255,
@@ -1451,16 +1281,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 31,
-          "name": "Meesterstuk A (Copper Ingot)"
-        },
-        {
-          "id": 32,
-          "name": "Vriendschaps Geschenk"
-        }
-      ]
+      "Recepten": [ 31, 32 ]
     },
     {
       "id": 256,
@@ -1488,16 +1309,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 37,
-          "name": "Meesterstuk A (Quartz)"
-        },
-        {
-          "id": 38,
-          "name": "Basis Sieraad"
-        }
-      ]
+      "Recepten": [ 37, 38 ]
     },
     {
       "id": 275,
@@ -2495,32 +2307,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 49,
-          "name": "Heal deadly wound potion"
-        },
-        {
-          "id": 50,
-          "name": "Cure weak disease potion"
-        },
-        {
-          "id": 51,
-          "name": "Cure disease potion"
-        },
-        {
-          "id": 52,
-          "name": "Courage potion"
-        },
-        {
-          "id": 53,
-          "name": "Wakeful potion"
-        },
-        {
-          "id": 54,
-          "name": "Cure heartache"
-        }
-      ]
+      "Recepten": [ 49, 50, 51, 52, 53, 54 ]
     },
     {
       "id": 452,
@@ -2548,32 +2335,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 55,
-          "name": "Heal all wounds potion"
-        },
-        {
-          "id": 56,
-          "name": "Cure strong disease potion"
-        },
-        {
-          "id": 57,
-          "name": "Muscle control potion"
-        },
-        {
-          "id": 58,
-          "name": "Concentration potion"
-        },
-        {
-          "id": 59,
-          "name": "Reroute blood potion"
-        },
-        {
-          "id": 60,
-          "name": "Cure amnesia"
-        }
-      ]
+      "Recepten": [ 55, 53, 57, 58, 59, 60 ]
     },
     {
       "id": 453,
@@ -2601,32 +2363,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 103,
-          "name": "Healing spit"
-        },
-        {
-          "id": 104,
-          "name": "Strengthen body potion"
-        },
-        {
-          "id": 105,
-          "name": "Long lasting strengthen body potion"
-        },
-        {
-          "id": 106,
-          "name": "Strengthen will potion"
-        },
-        {
-          "id": 107,
-          "name": "Focus potion"
-        },
-        {
-          "id": 108,
-          "name": "Empathy potion"
-        }
-      ]
+      "Recepten": [ 103, 104, 105, 106, 107, 108 ]
     },
     {
       "id": 454,
@@ -2654,32 +2391,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 109,
-          "name": "Healing blood"
-        },
-        {
-          "id": 110,
-          "name": "Major strengthen body potion"
-        },
-        {
-          "id": 111,
-          "name": "Anti-magic skin oil"
-        },
-        {
-          "id": 112,
-          "name": "Major strengthen will potion"
-        },
-        {
-          "id": 113,
-          "name": "Major focus potion"
-        },
-        {
-          "id": 114,
-          "name": "Happiness drink"
-        }
-      ]
+      "Recepten": [ 109, 110, 111, 112, 113, 114 ]
     },
     {
       "id": 455,
@@ -2707,32 +2419,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 121,
-          "name": "Magical inspiration potion"
-        },
-        {
-          "id": 122,
-          "name": "Potion of the divine connection"
-        },
-        {
-          "id": 123,
-          "name": "Potion of magic veins"
-        },
-        {
-          "id": 124,
-          "name": "Divine inspiration potion"
-        },
-        {
-          "id": 125,
-          "name": "Inspiration of the magi potion"
-        },
-        {
-          "id": 126,
-          "name": "Magical skin dye"
-        }
-      ]
+      "Recepten": [ 121, 122, 123, 124, 125, 126 ]
     },
     {
       "id": 456,
@@ -2760,32 +2447,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 127,
-          "name": "Major magical inspiration potion"
-        },
-        {
-          "id": 128,
-          "name": "Major potion of divine connection"
-        },
-        {
-          "id": 129,
-          "name": "Major potion of magic veins"
-        },
-        {
-          "id": 130,
-          "name": "Major divine inspiration potion"
-        },
-        {
-          "id": 131,
-          "name": "Major inspiration of the magi potion"
-        },
-        {
-          "id": 132,
-          "name": "Mirror personality potion"
-        }
-      ]
+      "Recepten": [ 127, 128, 129, 130, 131, 132 ]
     },
     {
       "id": 457,
@@ -2813,32 +2475,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 85,
-          "name": "Fever potion"
-        },
-        {
-          "id": 86,
-          "name": "Visions of glowing symbols"
-        },
-        {
-          "id": 87,
-          "name": "Visions of magic"
-        },
-        {
-          "id": 88,
-          "name": "Visions of numen"
-        },
-        {
-          "id": 89,
-          "name": "Visions of the past"
-        },
-        {
-          "id": 90,
-          "name": "Relive other potion"
-        }
-      ]
+      "Recepten": [ 85, 86, 87, 88, 89, 90 ]
     },
     {
       "id": 458,
@@ -2866,32 +2503,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 91,
-          "name": "Major fever potion"
-        },
-        {
-          "id": 92,
-          "name": "Visions of death"
-        },
-        {
-          "id": 93,
-          "name": "Visions of the zeitgeist"
-        },
-        {
-          "id": 94,
-          "name": "Visions of present"
-        },
-        {
-          "id": 95,
-          "name": "Future visions"
-        },
-        {
-          "id": 96,
-          "name": "Be other potion"
-        }
-      ]
+      "Recepten": [ 91, 92, 93, 94, 95, 96 ]
     },
     {
       "id": 459,
@@ -2919,32 +2531,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 67,
-          "name": "Venom"
-        },
-        {
-          "id": 68,
-          "name": "Weapon oil"
-        },
-        {
-          "id": 69,
-          "name": "Mute venom"
-        },
-        {
-          "id": 70,
-          "name": "Muscle lock venom"
-        },
-        {
-          "id": 71,
-          "name": "Agonizing poison"
-        },
-        {
-          "id": 72,
-          "name": "Sorrow drink"
-        }
-      ]
+      "Recepten": [ 67, 68, 69, 70, 71, 72 ]
     },
     {
       "id": 460,
@@ -2972,32 +2559,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 73,
-          "name": "Batch of venom"
-        },
-        {
-          "id": 74,
-          "name": "Major weapon oil"
-        },
-        {
-          "id": 75,
-          "name": "Confuse venom"
-        },
-        {
-          "id": 76,
-          "name": "Fatal venom"
-        },
-        {
-          "id": 77,
-          "name": "Fatal poison"
-        },
-        {
-          "id": 78,
-          "name": "Drink of willed death"
-        }
-      ]
+      "Recepten": [ 73, 74, 75, 76, 77, 78 ]
     },
     {
       "id": 475,
@@ -3054,16 +2616,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 3,
-          "name": "Meesterstuk B (Steel)"
-        },
-        {
-          "id": 4,
-          "name": "Wetsteen (Lvl 2)"
-        }
-      ]
+      "Recepten": [ 3, 4 ]
     },
     {
       "id": 477,
@@ -3091,16 +2644,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 5,
-          "name": "Meesterstuk C (Mithril)"
-        },
-        {
-          "id": 6,
-          "name": "Wetsteen (Lvl 3)"
-        }
-      ]
+      "Recepten": [ 5, 6 ]
     },
     {
       "id": 478,
@@ -3128,16 +2672,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 9,
-          "name": "Meesterstuk B (Ebony)"
-        },
-        {
-          "id": 10,
-          "name": "Totem van de Uil"
-        }
-      ]
+      "Recepten": [ 9, 10 ]
     },
     {
       "id": 479,
@@ -3165,16 +2700,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 11,
-          "name": "Meesterstuk C (Worldtree Sapling)"
-        },
-        {
-          "id": 12,
-          "name": "Totem van de Stier"
-        }
-      ]
+      "Recepten": [ 11, 12 ]
     },
     {
       "id": 480,
@@ -3202,16 +2728,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 15,
-          "name": "Meesterstuk B (Velvet)"
-        },
-        {
-          "id": 16,
-          "name": "Vlag van de Groep"
-        }
-      ]
+      "Recepten": [ 15, 16 ]
     },
     {
       "id": 481,
@@ -3239,16 +2756,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 17,
-          "name": "Meesterstuk C (Spidersilk)"
-        },
-        {
-          "id": 18,
-          "name": "Banier van de Groep"
-        }
-      ]
+      "Recepten": [ 17, 18 ]
     },
     {
       "id": 482,
@@ -3276,16 +2784,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 21,
-          "name": "Meesterstuk B (Vellum)"
-        },
-        {
-          "id": 22,
-          "name": "Leeg Vaardigheid Onderzoek Boek"
-        }
-      ]
+      "Recepten": [ 21, 22 ]
     },
     {
       "id": 483,
@@ -3313,16 +2812,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 23,
-          "name": "Meesterstuk C (Griffinskin Vellum)"
-        },
-        {
-          "id": 24,
-          "name": "Boek der Ervaringen"
-        }
-      ]
+      "Recepten": [ 23, 24 ]
     },
     {
       "id": 484,
@@ -3350,16 +2840,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 27,
-          "name": "Meesterstuk B (Scale)"
-        },
-        {
-          "id": 28,
-          "name": "Pantser Versterking"
-        }
-      ]
+      "Recepten": [ 27, 28 ]
     },
     {
       "id": 485,
@@ -3387,16 +2868,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 29,
-          "name": "Meesterstuk C (Dragonscale)"
-        },
-        {
-          "id": 30,
-          "name": "Zware Pantser Versterking"
-        }
-      ]
+      "Recepten": [ 29, 30 ]
     },
     {
       "id": 486,
@@ -3424,16 +2896,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 33,
-          "name": "Meesterstuk B (Silver Ingot)"
-        },
-        {
-          "id": 34,
-          "name": "Alliantie Juweel"
-        }
-      ]
+      "Recepten": [ 33, 34 ]
     },
     {
       "id": 487,
@@ -3461,16 +2924,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 35,
-          "name": "Meesterstuk C (Golden Ingot)"
-        },
-        {
-          "id": 36,
-          "name": "Huwelijks Juweel"
-        }
-      ]
+      "Recepten": [ 35, 36 ]
     },
     {
       "id": 488,
@@ -3498,16 +2952,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 39,
-          "name": "Meesterstuk B (Gems)"
-        },
-        {
-          "id": 40,
-          "name": "Duur Sieraad"
-        }
-      ]
+      "Recepten": [ 39, 40 ]
     },
     {
       "id": 489,
@@ -3535,16 +2980,7 @@
         }
       ],
       "Spreuken": [],
-      "Recepten": [
-        {
-          "id": 41,
-          "name": "Meesterstuk C (Flawless Gems)"
-        },
-        {
-          "id": 42,
-          "name": "Koninklijk Sieraad"
-        }
-      ]
+      "Recepten": [ 41, 42 ]
     },
     {
       "id": 500,
@@ -4831,23 +4267,7 @@
           "value": 5
         }
       ],
-      "Spreuken": [
-        {
-          "id": 284,
-          "name": "Greater Demonic Eye",
-          "page": 63
-        },
-        {
-          "id": 285,
-          "name": "Invite Greater Demon",
-          "page": 63
-        },
-        {
-          "id": 286,
-          "name": "Transfer Contract",
-          "page": 64
-        }
-      ],
+      "Spreuken": [ 284, 285, 286 ],
       "Recepten": []
     },
     {

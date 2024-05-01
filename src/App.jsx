@@ -127,11 +127,11 @@ export default function App() {
                             <h5>Recepten</h5>
                         </div>
                         <div className="grid-recepten">
-                            {gridRecepten.map((item) => (
+                            {gridRecepten?.map((item) => (
                                 <RecipeTile
                                     key={uuidv4()}
-                                    id={item.id}
-                                    recipeName={item.name}
+                                    skillId={item.skillId}
+                                    recipyId={item.recipyId}
                                 />
                             ))}
                         </div>

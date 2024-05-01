@@ -298,7 +298,6 @@ export default function SkillTable() {
     }, [tableData, onUpdateTableData]);
 
 
-
     return (
         <DragDropContext onDragEnd={handleDragEnd}>
             <table {...getTableProps()} className="App-table" id="App-table">
@@ -343,11 +342,9 @@ export default function SkillTable() {
                                             >
                                                 {row.cells.map((cell) => (
                                                     // eslint-disable-next-line react/jsx-key
-                                                    <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                                                    <td key={uuidv4()}>{cell.render('Cell')}</td>
                                                 ))}
-                                                <td role="cell">
-                                                    {requestActions(row)}
-                                                </td>
+                                                <td key={uuidv4()} > {requestActions(row)} </td>
                                             </tr>
                                         )}
                                     </Draggable>

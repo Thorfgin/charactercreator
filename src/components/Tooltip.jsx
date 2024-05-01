@@ -7,7 +7,7 @@ import {
     openPdfPage,
     getSkillById,
     getSpellBySkill,
-    getRecipeBySkill
+    getRecipyBySkill
 } from '../SharedActions.js'
 
 import {
@@ -161,20 +161,20 @@ export function SpellTooltip({ skillId, spellId, image = './images/img-info.png'
 }
 
 RecipeTooltip.propTypes = {
-    id: PropTypes.number.isRequired,
-    recipeName: PropTypes.string.isRequired,
+    skillId: PropTypes.number.isRequired,
+    recipyId: PropTypes.number.isRequired,
     image: PropTypes.string
 };
 
-export function RecipeTooltip({ id, recipeName, image = './images/img-info.png' }) {
-    const sourceSkill = getSkillById(id);
-    const sourceRecipe = getRecipeBySkill(sourceSkill, recipeName);
-    const description = getBlock(sourceRecipe?.effect, "description-block");
+export function RecipeTooltip({ skillId, recipyId, image = './images/img-info.png' }) {
+    const sourceSkill = getSkillById(skillId);
+    const sourceRecipy = getRecipyBySkill(skillId, recipyId);
+    const description = getBlock(sourceRecipy?.effect, "description-block");
 
     const tooltipData = [
         { label: 'Omschrijving', value: description || 'Recept informatie kon niet gevonden worden.' },
-        { label: 'Inspiratie kosten', value: sourceRecipe?.inspiration || null },
-        { label: 'Benodigdheden', value: sourceRecipe?.components || null },
+        { label: 'Inspiratie kosten', value: sourceRecipy?.inspiration || null },
+        { label: 'Benodigdheden', value: sourceRecipy?.components || null },
     ];
 
     const tooltipItems = getMapping(tooltipData);
@@ -183,7 +183,7 @@ export function RecipeTooltip({ id, recipeName, image = './images/img-info.png' 
         <div className="grid-spreuk-icons">
             <GenericTooltip
                 header={`Vaardigheid: ${sourceSkill.skill}`}
-                subheader={`Recept: ${recipeName}`}
+                subheader={`Recept: ${sourceRecipy.recipy}`}
                 message={tooltipItems || ''}
                 image={image}
             />

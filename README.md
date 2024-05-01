@@ -56,13 +56,12 @@
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	DONE
-	20240431	FIX: change the way skills are selected, by referencing id instead of skill.
+	20240501	FIX: change the way skills are selected, by referencing id instead of skill.
 			Skills may no be unique in name, for example 'extra wilskracht' exists twice in ExtraVaardigheden.
 			This may cause issues with the saves, because everything is reference by skillname.
 			FIX: vaardigheden.json: change the way spells/recipies are selected, by referencing id instead of name.
 			FIX spreuken.json: change the way spells are selected, by referencing spell id instead of spell name.
-			FIX recipes.json: change the way recipes are selected, by referencing recipe id instead of recipe name.
-
+			FIX recepten.json: change the way recipes are selected, by referencing recipe id instead of recipe name.
 
 	20240430	FIX: Typos in templates, sizing of the Info description of a Template.
 			FIX: Updated FAQ > printing the character is possible by PDF export.
