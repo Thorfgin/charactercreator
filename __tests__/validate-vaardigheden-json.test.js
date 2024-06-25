@@ -11,7 +11,7 @@ import {
 import {
     getSkillById,
     getSpellBySkill,
-    getRecipeBySkill,
+    getRecipyBySkill,
     getPropertyByName,
     getPdfURL
 } from '../src/SharedActions.js';
@@ -163,7 +163,7 @@ test('Skill with Spells listed in ExtraVaardigheden JSON should exist in Spreuke
 function listedRecipesExist(jsonArray) {
     const faultyRecords = jsonArray.flatMap((skill) =>
         skill.Recepten
-            .filter((recipe_id) => !getRecipeBySkill(skill.id, recipe_id))
+            .filter((recipe_id) => !getRecipyBySkill(skill.id, recipe_id))
             .map((recipe_id) => ({ id: skill.id, skill: skill.skill, recipe_id }))
     );
 

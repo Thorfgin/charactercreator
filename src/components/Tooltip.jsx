@@ -151,8 +151,8 @@ export function SpellTooltip({ skillId, spellId, image = './images/img-info.png'
 
             <img
                 className="btn-image"
-                title={"Open Spreuken.pdf - pagina " + sourceSpell.page}
-                onClick={() => openPdfPage('Spreuken.pdf', sourceSpell.page)}
+                title={"Open Spreuken_en_Technieken.pdf - pagina " + sourceSpell.page}
+                onClick={() => openPdfPage('Spreuken_en_Technieken.pdf', sourceSpell.page)}
                 src="./images/img-pdf.png"
                 alt="PDF">
             </img>

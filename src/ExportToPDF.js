@@ -488,7 +488,7 @@ export default async function useExportToPDF(charName, ruleset_version, tableDat
             }
             return false;
         });
-    uniqueLoreSheetValues.push({ pdf: "Samenvatting-regelsysteem.pdf" });
+    uniqueLoreSheetValues.push({ pdf: "Samenvatting_regelsysteem.pdf" });
 
     const pdf = new jsPDF({
         orientation: "p",

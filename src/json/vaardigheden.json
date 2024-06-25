@@ -296,7 +296,7 @@
       },
       "xp": 0,
       "loresheet": {
-        "pdf": "Armourpoint-kostuum-eisen.pdf",
+        "pdf": "Armourpoint_kostuum_eisen.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -940,7 +940,7 @@
       },
       "xp": 1,
       "loresheet": {
-        "pdf": "Kennis-van-kruiden.pdf",
+        "pdf": "Kennis_van_kruiden.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -988,7 +988,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Genezende-Dranken.pdf",
+        "pdf": "Genezende_Dranken.pdf",
         "page": 2
       },
       "multi_purchase": false,
@@ -1016,7 +1016,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Kruiden-Elixers.pdf",
+        "pdf": "Kruiden_Elixers.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -1044,7 +1044,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Magische-Elixers.pdf",
+        "pdf": "Magische_Elixers.pdf",
         "page": 2
       },
       "multi_purchase": false,
@@ -1072,7 +1072,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Hallucinerende-Elixers.pdf",
+        "pdf": "Hallucinerende_Elixers.pdf",
         "page": 2
       },
       "multi_purchase": false,
@@ -1128,7 +1128,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -1156,7 +1156,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -1184,7 +1184,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -1212,7 +1212,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -1240,7 +1240,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -1268,7 +1268,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -1296,7 +1296,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -2294,7 +2294,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Genezende-Dranken.pdf",
+        "pdf": "Genezende_Dranken.pdf",
         "page": 3
       },
       "multi_purchase": false,
@@ -2322,7 +2322,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Genezende-Dranken.pdf",
+        "pdf": "Genezende_Dranken.pdf",
         "page": 4
       },
       "multi_purchase": false,
@@ -2350,7 +2350,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Kruiden-Elixers.pdf",
+        "pdf": "Kruiden_Elixers.pdf",
         "page": 3
       },
       "multi_purchase": false,
@@ -2378,7 +2378,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Kruiden-Elixers.pdf",
+        "pdf": "Kruiden_Elixers.pdf",
         "page": 4
       },
       "multi_purchase": false,
@@ -2406,7 +2406,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Magische-Elixers.pdf",
+        "pdf": "Magische_Elixers.pdf",
         "page": 3
       },
       "multi_purchase": false,
@@ -2434,7 +2434,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Magische-Elixers.pdf",
+        "pdf": "Magische_Elixers.pdf",
         "page": 4
       },
       "multi_purchase": false,
@@ -2462,7 +2462,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Hallucinerende-Elixers.pdf",
+        "pdf": "Hallucinerende_Elixers.pdf",
         "page": 3
       },
       "multi_purchase": false,
@@ -2490,7 +2490,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Hallucinerende-Elixers.pdf",
+        "pdf": "Hallucinerende_Elixers.pdf",
         "page": 4
       },
       "multi_purchase": false,
@@ -2603,7 +2603,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -2631,7 +2631,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -2659,7 +2659,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -2687,7 +2687,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -2715,7 +2715,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -2743,7 +2743,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -2771,7 +2771,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -2799,7 +2799,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -2827,7 +2827,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -2855,7 +2855,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -2883,7 +2883,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -2911,7 +2911,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -2939,7 +2939,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -2967,7 +2967,7 @@
       },
       "xp": 2,
       "loresheet": {
-        "pdf": "Crafting-loresheets.pdf",
+        "pdf": "Crafting_loresheets.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -3523,7 +3523,7 @@
       },
       "xp": 1,
       "loresheet": {
-        "pdf": "Imbue-loresheet.pdf",
+        "pdf": "Imbue_loresheet.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -3550,7 +3550,7 @@
       },
       "xp": 1,
       "loresheet": {
-        "pdf": "Imbue-loresheet.pdf",
+        "pdf": "Imbue_loresheet.pdf",
         "page": 1
       },
       "multi_purchase": true,
@@ -3837,7 +3837,7 @@
       },
       "xp": 1,
       "loresheet": {
-        "pdf": "Imbue-loresheet.pdf",
+        "pdf": "Imbue_loresheet.pdf",
         "page": 1
       },
       "multi_purchase": false,
@@ -3864,7 +3864,7 @@
       },
       "xp": 1,
       "loresheet": {
-        "pdf": "Imbue-loresheet.pdf",
+        "pdf": "Imbue_loresheet.pdf",
         "page": 1
       },
       "multi_purchase": true,

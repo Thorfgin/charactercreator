@@ -72,7 +72,7 @@ export function getSpellsBySkill(skillId) {
 }
 
 // Ophalen van een recept op bases van de skill
-export function getRecipeBySkill(skillId, recipyId) {
+export function getRecipyBySkill(skillId, recipyId) {
     if (!skillId || !recipyId) { return; }
     const sourceRecipies = getRecipesBySkill(skillId);
     return sourceRecipies?.find((item) => item.id === recipyId);
@@ -500,23 +500,25 @@ export function getPdfURL(pdfName) {
     let rootURL = "";
     if ([
         "Vaardigheden.pdf",
-        "Crafting-loresheets.pdf",
-        "Imbue-loresheet.pdf",
-        "Armourpoint-kostuum-eisen.pdf",
+        "Spreuken_en_Technieken.pdf",
+        "Samenvatting_regelsysteem.pdf",
+        "Crafting_loresheets.pdf",
+        "Imbue_loresheet.pdf",
+        "Kennis_van_kruiden.pdf",
+        "Genezende_Dranken.pdf",
+        "Kruiden_Elixers.pdf",
+        "Magische-Elixers.pdf",
+        "Hallucinerende-Elixers.pdf",
+        "Giffen.pdf",
+        "Armourpoint_kostuum_eisen.pdf"
+    ].includes(pdfName)) { rootURL = "https://the-vortex.nl/wp-content/uploads/2024/06/" }
+    else if ([
         "priest_runes.ttf",
         "mage_glyphs.ttf"
     ].includes(pdfName)) { rootURL = "https://the-vortex.nl/wp-content/uploads/2022/04/" }
     else if ([
-        "Spreuken.pdf",
         "Priest-Runes.pdf",
-        "Mage-Glyphs.pdf",
-        "Kennis-van-kruiden.pdf",
-        "Genezende-Dranken.pdf",
-        "Kruiden-Elixers.pdf",
-        "Magische-Elixers.pdf",
-        "Hallucinerende-Elixers.pdf",
-        "Giffen.pdf",
-        "Samenvatting-regelsysteem.pdf"
+        "Mage-Glyphs.pdf"
     ].includes(pdfName)) { rootURL = "https://the-vortex.nl/wp-content/uploads/2022/03/" }
     else { console.warn("PDF name was not recognized as a valid option.", pdfName) }
     return rootURL;
