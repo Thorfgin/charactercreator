@@ -72,7 +72,7 @@ export function getSpellsBySkill(skillId) {
 }
 
 // Ophalen van een recept op bases van de skill
-export function getRecipyBySkill(skillId, recipyId) {
+export function getRecipeBySkill(skillId, recipyId) {
     if (!skillId || !recipyId) { return; }
     const sourceRecipies = getRecipesBySkill(skillId);
     return sourceRecipies?.find((item) => item.id === recipyId);
