@@ -17,10 +17,12 @@ getLocalStorage.propTypes = { key: PropTypes.string.isRequired };
 export function getLocalStorage(key) {
     if (typeof (Storage) !== "undefined") {
         const storedData = localStorage.getObject(key);
-        if (storedData) { return storedData; }
-        else { return []; }
+        return storedData || [];
     }
-    else { return []; }
+    else {
+        console.warn("Could not access local storage. Character cant be stored.")
+        return [];
+    }
 }
 
 setLocalStorage.propTypes = { key: PropTypes.string.isRequired };
@@ -32,6 +34,9 @@ export function setLocalStorage(key, data) {
             if (data) { localStorage.setObject(key, data); }
             else { localStorage.removeItem(key); }
         }
+    }
+    else {
+        console.warn("Could not access local storage. Character cant be stored.")
     }
 }
 
@@ -53,6 +58,7 @@ export function getAllLocalStorageKeys(givenKey) {
             }
         }
     }
+    else { console.warn("Could not access local storage. Stored characters cant be collected.") }
     return keys;
 }
 
@@ -233,10 +239,10 @@ export function exportCharacterToFile(name, is_checked, max_xp, data) {
         newFormat.name = name;
         newFormat.max_xp = max_xp;
         newFormat.is_checked = is_checked;
-        newFormat.Skills = addSkillsTo202310aFormat(data);
+        newFormat.Skills = data;
+        const updatedFormat  = convertDataToLatestFormat(newFormat);
 
-        console.log(newFormat);
-        const value = JSON.stringify(newFormat);
+        const value = JSON.stringify(updatedFormat);
         const encodedValue = encodeURIComponent(value);
         const unreadableValue = btoa(encodedValue);
         const blob = new Blob([unreadableValue], { type: 'application/octet-stream' });
