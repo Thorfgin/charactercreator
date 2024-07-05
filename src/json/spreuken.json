@@ -1167,7 +1167,7 @@
               "incantation": "In the name of... , I grant you time to think before you act! SLOW DISEASE!",
               "description": "De ontvanger krijgt het SLOW DISEASE effect",
               "spell_effect": "Enchantment, Direct, 5 meter",
-              "spell_duration": "",
+              "spell_duration": "5 minuten",
               "page": 44
             },
             {
