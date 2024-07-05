@@ -29,37 +29,24 @@ setLocalStorage.propTypes = { key: PropTypes.string.isRequired };
 
 // Store the data in the localStorage by Key
 export function setLocalStorage(key, data) {
-    if (typeof (Storage) !== "undefined") {
-        if (key) {
-            if (data) { localStorage.setObject(key, data); }
-            else { localStorage.removeItem(key); }
-        }
+    if (typeof Storage === "undefined") {
+        console.warn("Could not access local storage. Character can't be stored.");
+        return;
     }
-    else {
-        console.warn("Could not access local storage. Character cant be stored.")
-    }
+    // add data or clear is data is undefined
+    data ? localStorage.setObject(key, data) : localStorage.removeItem(key);
 }
 
 /* 
-Get all Keys that match the givenKey.
-If the givenKey is undefined, instead it returns all keys
+Get all Keys that match the givenKey
+Returns alls keys if no givenKey provided.
 */
 export function getAllLocalStorageKeys(givenKey) {
-    const keys = []
-    if (typeof (Storage) !== "undefined") {
-        for (let key in localStorage) {
-            // eslint-disable-next-line no-prototype-builtins
-            if (localStorage.hasOwnProperty(key)) {
-                if (!givenKey) { keys.push(key); }
-                else if (givenKey && key === givenKey) { keys.push(key); }
-                else {
-                    // do nothing
-                }
-            }
-        }
+    if (typeof Storage === "undefined") {
+        console.warn("Could not access local storage. Stored characters can't be collected.");
+        return [];
     }
-    else { console.warn("Could not access local storage. Stored characters cant be collected.") }
-    return keys;
+    return Object.keys(localStorage).filter(key => !givenKey || key === givenKey);
 }
 
 /// --- CONVERT DATA TO LATEST FORMAT --- ///
@@ -84,9 +71,14 @@ const addSkillsTo202310aFormat = (oldSkills) => {
                 (item) => item.skill.toLowerCase().includes(oldSkill.skill.toLowerCase()));
         }
 
+        // Skillnames adjusted per 07-2024
+        if (oldSkill.skill.toLowerCase() === "ritueel leider") {
+            sourceSkill = sourceExtraVaardigheden.find(item => item.id === 576);
+        }
+
         const newSkill = {
             "id": sourceSkill.id,
-            "skill": oldSkill.skill,
+            "skill": sourceSkill.skill,
             "count": oldSkill.count
         }
         newSkills.push(newSkill);

@@ -1,6 +1,11 @@
 [![CI/CD Master](https://github.com/Thorfgin/charactercreator/actions/workflows/node.js.yml/badge.svg)](https://github.com/Thorfgin/charactercreator/actions/workflows/node.js.yml)
 ![License](https://img.shields.io/github/license/Thorfgin/charactercreator)
 
+	For easy maintenance of the vaardigheden/spells/recipies
+	TEXT-TO-ONE-LINE Convertor: https://lingojam.com/TexttoOneLine
+
+	GESTOPT BIJ RECEPTEN - ?
+
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	TODO:
@@ -56,12 +61,18 @@
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	DONE
-	20240501	FIX: change the way skills are selected, by referencing id instead of skill.
+	20240707	FIX: change the way skills are selected, by referencing id instead of skill.
 			Skills may no be unique in name, for example 'extra wilskracht' exists twice in ExtraVaardigheden.
 			This may cause issues with the saves, because everything is reference by skillname.
 			FIX: vaardigheden.json: change the way spells/recipies are selected, by referencing id instead of name.
 			FIX spreuken.json: change the way spells are selected, by referencing spell id instead of spell name.
 			FIX recepten.json: change the way recipes are selected, by referencing recipe id instead of recipe name.
+			FIX Rules: updated the skills and pdf rulebook references after the ruleset update.
+			FIX Export Character: Saving a character to a file could result in a file without versioning.
+			FIX PDF export: Listing the prerequisites now, including category requirements aswell.
+			FIX saving: Fixed handling the name change of skills while loading a characters from storage or file.
+			ADDITION: A Pound of Elemental Flesh is available to all crafting skills, created a common shared categorie 
+			in the Crafting Recipies. 
 
 	20240430	FIX: Typos in templates, sizing of the Info description of a Template.
 			FIX: Updated FAQ > printing the character is possible by PDF export.
