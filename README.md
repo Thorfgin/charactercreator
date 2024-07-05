@@ -1,6 +1,11 @@
 [![CI/CD Master](https://github.com/Thorfgin/charactercreator/actions/workflows/node.js.yml/badge.svg)](https://github.com/Thorfgin/charactercreator/actions/workflows/node.js.yml)
 ![License](https://img.shields.io/github/license/Thorfgin/charactercreator)
 
+	For easy maintenance of the vaardigheden/spells/recipies
+	TEXT-TO-ONE-LINE Convertor: https://lingojam.com/TexttoOneLine
+
+	GESTOPT BIJ RECEPTEN - ?
+
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	TODO:
@@ -9,13 +14,9 @@
 	- 
 
 	MUST:
-	- FIX: change the way skills are selected, by referencing id instead of skill.
-	Skills may no be unique in name, for example 'extra wilskracht' exists twice in ExtraVaardigheden.
-	This may cause issues with the saves, because everything is reference by skillname.
 	- LANGUAGE: add multi-language support as an option >> English
 
-	- FIX: Chromium browser compatibility.
-
+	
 	SHOULD:
 	- FEATURE: Extend the character with a NOTE section to allow players to register remarks, powers/conditions, etc.
 	- FEATURE: Extend the character with a Imbue section to allow players to register imbues, description and cost, etc.
@@ -32,6 +33,9 @@
 	- integration with VOIDWALKER / create new characters
 		> this requires integration on perhaps an API level
 		> Needs to be done from within a player portal? Probably requires a Node.js server
+
+	COULD NOT REPRODUCE: 
+	- Chromium browser compatibility issues
 
 
 	PLAYER REQUESTS:
@@ -53,14 +57,28 @@
 	> DECLINED: Loresheet kolom is lang niet overal nodig, is het handig om de download PDF knop bij de acties te plaatsen?
 		Meh, weten dat er *geen* loresheet voor is, is soms net zo belangrijk. Ik zie ze liever in de tabel direct erbij
 
+
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	DONE
+	20240705	FIX: change the way skills are selected, by referencing id instead of skill.
+			Skills may no be unique in name, for example 'extra wilskracht' exists twice in ExtraVaardigheden.
+			This may cause issues with the saves, because everything is reference by skillname.
+			FIX: vaardigheden.json: change the way spells/recipies are selected, by referencing id instead of name.
+			FIX spreuken.json: change the way spells are selected, by referencing spell id instead of spell name.
+			FIX recepten.json: change the way recipes are selected, by referencing recipe id instead of recipe name.
+			FIX Rules: updated the skills and pdf rulebook references after the ruleset update.
+			FIX Export Character: Saving a character to a file could result in a file without versioning.
+			FIX PDF export: Listing the prerequisites now, including category requirements aswell.
+			FIX saving: Fixed handling the name change of skills while loading a characters from storage or file.
+			ADDITION: A Pound of Elemental Flesh is available to all crafting skills, created a common shared categorie 
+			in the Crafting Recipies. 
+
 	20240430	FIX: Typos in templates, sizing of the Info description of a Template.
-				FIX: Updated FAQ > printing the character is possible by PDF export.
+			FIX: Updated FAQ > printing the character is possible by PDF export.
 
 	20240420	CRITICAL FIX: Automatic CNAME listing for the GitHub Pages > or the site goes down
-				CRITICAL FIX: Sentry finding, ensure Safari can handle the PDF.
+			CRITICAL FIX: Sentry finding, ensure Safari can handle the PDF.
 				>> DEFECT: jsPDF PubSub Error Font is not stored as string-data in vFS, import fonts or remove declaration doc.addFont('InknutAntiqua-Regular.ttf'). 
 			FIX: Add text '/per Day' to mana gained.
 			FIX: Character Eigenschappen and Energy per Day is not not exporting propperly.
@@ -68,6 +86,7 @@
 			FIX: Close a modal when the user clicks outside the msg.
 			FIX: Change Recipe > Omschrijving, add text: 'Je kan nu Mythical Metal verwerken'.
 			FIX: When skills are sorted and a new skill is added, it is not added in the sorted order.
+			FIX: Filter skill 'Leermeester Expertise' from the Basisvaardigheden when IsChecked is set. 
 			
 	20240416	FIX: Kennis van Kruiden inspirition adjusted 3 to 2 inspiration.
 				FIX: Max saved XP cap raised from 2 to 3.

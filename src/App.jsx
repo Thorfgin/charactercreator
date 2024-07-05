@@ -117,9 +117,8 @@ export default function App() {
                             {gridSpreuken?.map((item) => (
                                 <SpellTile
                                     key={uuidv4()}
-                                    skillName={item.skill}
-                                    spellName={item.name}
-                                    page={item.page}
+                                    skillId={item.skillId}
+                                    spellId={item.spellId}
                                 />
                             ))}
                         </div>
@@ -128,11 +127,11 @@ export default function App() {
                             <h5>Recepten</h5>
                         </div>
                         <div className="grid-recepten">
-                            {gridRecepten.map((item) => (
+                            {gridRecepten?.map((item) => (
                                 <RecipeTile
                                     key={uuidv4()}
-                                    skillName={item.skill}
-                                    recipeName={item.name}
+                                    skillId={item.skillId}
+                                    recipyId={item.recipyId}
                                 />
                             ))}
                         </div>
