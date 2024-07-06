@@ -20,7 +20,7 @@ export function getLocalStorage(key) {
         return storedData || [];
     }
     else {
-        console.warn("Could not access local storage. Character cant be stored.")
+        console.warn("Could not access local storage. Data cant be collected.")
         return [];
     }
 }
@@ -30,7 +30,7 @@ setLocalStorage.propTypes = { key: PropTypes.string.isRequired };
 // Store the data in the localStorage by Key
 export function setLocalStorage(key, data) {
     if (typeof Storage === "undefined") {
-        console.warn("Could not access local storage. Character can't be stored.");
+        console.warn("Could not access local storage. Data can't be stored.");
         return;
     }
     // add data or clear is data is undefined
@@ -46,7 +46,7 @@ export function getAllLocalStorageKeys(givenKey) {
         console.warn("Could not access local storage. Stored characters can't be collected.");
         return [];
     }
-    return Object.keys(localStorage).filter(key => !givenKey || key === givenKey);
+    return Object.keys(localStorage).filter(key => !givenKey || key === givenKey || key === "settings");
 }
 
 /// --- CONVERT DATA TO LATEST FORMAT --- ///

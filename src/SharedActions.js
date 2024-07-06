@@ -17,9 +17,7 @@ import {
 
 /// --- SKILLS --- ///
 
-getSkillById.propTypes = {
-    id: PropTypes.number.isRequired
-};
+getSkillById.propTypes = { id: PropTypes.number.isRequired };
 
 // Ophalen van een vaardigheid op id
 export function getSkillById(id) {
@@ -29,9 +27,7 @@ export function getSkillById(id) {
     return sourceSkill;
 }
 
-getBasicSkillsFromTable.propTypes = {
-    tableData: PropTypes.array.isRequired
-};
+getSkillsByIds.propTypes = { ids: PropTypes.array.isRequired };
 
 // Helper function om skills uit de array op te halen
 export function getSkillsByIds(ids) {
@@ -43,6 +39,8 @@ export function getSkillsByIds(ids) {
     return skills;
 }
 
+getBasicSkillsFromTable.propTypes = { tableData: PropTypes.array.isRequired };
+
 // Ophalen van alle vaardigheden uit de basis vaardigheden die aanwezig zijn in de tabel
 export function getBasicSkillsFromTable(tableData) {
     const basicSkills = []
@@ -52,9 +50,7 @@ export function getBasicSkillsFromTable(tableData) {
     return basicSkills;
 }
 
-getExtraSkillsFromTable.propTypes = {
-    tableData: PropTypes.array.isRequired
-};
+getExtraSkillsFromTable.propTypes = { tableData: PropTypes.array.isRequired };
 
 // Ophalen van alle vaardigheden uit de extra vaardigheden die aanwezig zijn in de tabel
 export function getExtraSkillsFromTable(tableData) {
@@ -87,8 +83,8 @@ export function getSpellsBySkill(skillId) {
 export function getRecipyBySkill(skillId, recipyId) {
     if (!skillId || !recipyId) { return; }
     const sourceRecipies = getRecipesBySkill(skillId);
-    const recipyResult = sourceRecipies?.find((item) => item.id === recipyId) || getRecipyFromCommon(recipyId); 
-    return recipyResult 
+    const recipyResult = sourceRecipies?.find((item) => item.id === recipyId) || getRecipyFromCommon(recipyId);
+    return recipyResult
 }
 
 // Ophalen van alle recepten op basis van de skill
@@ -104,8 +100,35 @@ export function getRecipyFromCommon(recipyId) {
     return sourceCommonRecepten?.find(item => item.id === recipyId);
 }
 
+getPropertyByName.propTypes = { name: PropTypes.string.isRequired };
+
+// Ophalen van een default propertie value
 export function getPropertyByName(name) {
     return defaultProperties.find((item) => item.name === name);
+}
+
+
+getTextByLanguage.propTypes = { item: PropTypes.object.isRequired };
+
+// Ophalen van een text op basis van een taalcode
+export function getTextByLanguage(item) {
+    if (typeof item === String) { return item; }
+    // TODO: GET LANG FROM SETTINGS IN THE SHAREDSTATECONTEXT
+
+    const lang = "EN";
+    let text = "";
+    switch (lang) {
+        case "NL":
+            text = item.NL;
+            break;
+        case "EN":
+            text = item.EN;
+            break;
+        default:
+            text = item.NL;
+            break;
+    }
+    return text;
 }
 
 /// --- SELECT --- ///
@@ -114,8 +137,8 @@ export function getPropertyByName(name) {
 export function generateOptions(source) {
     return source.map((record) => ({
         id: record.id,
-        value: record.skill,
-        label: `${record.skill} (${record.xp} xp)`
+        value: getTextByLanguage(record.skill),
+        label: `${getTextByLanguage(record.skill) } (${record.xp} xp)`
     }));
 }
 
@@ -123,8 +146,8 @@ export function generateOptions(source) {
 export function regenerateOptions(source, tableData) {
     return source.map((record) => ({
         id: record.id,
-        value: record.skill,
-        label: `${record.skill} (${record.xp} xp)`
+        value: getTextByLanguage(record.skill),
+        label: `${getTextByLanguage(record.skill) } (${record.xp} xp)`
     })).filter((currentSkill) => !tableData.some((record) => record.id === currentSkill.id));
 }
 

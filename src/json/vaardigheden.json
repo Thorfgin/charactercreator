@@ -2,11 +2,17 @@
   "BasisVaardigheden": [
     {
       "id": 101,
-      "skill": "Ambidextrie",
+      "skill": {
+        "NL": "Ambidextrie",
+        "EN": "Ambidexterity"
+      },
       "alt_skill": "",
       "category": "Algemene vaardigheden",
       "page": 11,
-      "description": "Deze vaardigheid geeft je de mogelijkheid om 2 wapens tegelijk te gebruiken - in elke hand 1. Tevens geeft dit de mogelijkheid om met slechts 1 vrije hand spreuken te gebruiken. Een tweehandig wapen mag tijdelijk in 1 hand genomen worden zolang je er niet mee slaat of blokt, om op die manier bijvoorbeeld een spreuk te doen met 1 hand.",      
+      "description": {
+        "NL": "Deze vaardigheid geeft je de mogelijkheid om 2 wapens tegelijk te gebruiken - in elke hand 1. Tevens geeft dit de mogelijkheid om met slechts 1 vrije hand spreuken te gebruiken. Een tweehandig wapen mag tijdelijk in 1 hand genomen worden zolang je er niet mee slaat of blokt, om op die manier bijvoorbeeld een spreuk te doen met 1 hand.",
+        "EN": "Deze vaardigheid geeft je de mogelijkheid om 2 wapens tegelijk te gebruiken - in elke hand 1. Tevens geeft dit de mogelijkheid om met slechts 1 vrije hand spreuken te gebruiken. Een tweehandig wapen mag tijdelijk in 1 hand genomen worden zolang je er niet mee slaat of blokt, om op die manier bijvoorbeeld een spreuk te doen met 1 hand."
+      },
       "Requirements": {
         "skill": [],
         "any_list": []

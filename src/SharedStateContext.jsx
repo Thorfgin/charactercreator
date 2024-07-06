@@ -3,13 +3,18 @@ import PropTypes from 'prop-types';
 
 // components
 import { defaultProperties } from './SharedObjects.js';
-import { loadCharacterFromStorage } from './SharedStorage.js';
+import {
+    getLocalStorage,
+    setLocalStorage,
+    loadCharacterFromStorage
+} from './SharedStorage.js';
 
 // json
 import packageInfo from '../package.json';
 
 /// --- PREP LOCALSTORAGE DATA --- ///
 let rawData = null;
+let settings = null;
 
 if (typeof (Storage) !== "undefined") {
     Storage.prototype.setObject = function (key, value) {
@@ -34,6 +39,16 @@ if (typeof (Storage) !== "undefined") {
         else {
             return [];
         }
+    }
+
+    // Fetch & Set settings before page is loaded
+    const rawSettings = getLocalStorage("settings")
+    if (!rawSettings?.lang) {
+        settings = { "lang": "EN" };
+        setLocalStorage("settings", settings);
+    }
+    else {
+        settings = rawSettings;
     }
 
     // Fetch data before the page is loaded
@@ -62,6 +77,7 @@ export function SharedStateProvider({ children }) {
     const [version] = useState(packageInfo.version);
     const [ruleset_version] = useState(packageInfo.ruleset_version);
     const [creator] = useState(packageInfo.creator);
+    const [language] = useState(settings.lang);
     const [tableData, setTableData] = useState(getInitialData());
     const [isChecked, setIsChecked] = useState(getInitialCheckState());
     const [MAX_XP, setMAX_XP] = useState(getInitialXP());
@@ -90,6 +106,7 @@ export function SharedStateProvider({ children }) {
         version,
         ruleset_version,
         creator,
+        language,
 
         isChecked, setIsChecked,
         MAX_XP, setMAX_XP,
@@ -119,6 +136,7 @@ export function SharedStateProvider({ children }) {
         version,
         ruleset_version,
         creator,
+        language,
 
         isChecked, setIsChecked,
         MAX_XP, setMAX_XP,
