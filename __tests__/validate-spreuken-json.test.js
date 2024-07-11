@@ -8,15 +8,8 @@ import {
 } from '@jest/globals';
 
 // shared
-import {
-    getSpreuken,
-} from '../src/SharedObjects.js';
-
-import {
-    getSkillById,
-    getSpellBySkill,
-} from '../src/SharedActions.js';
-
+import { getSpreuken } from '../src/SharedObjects.js';
+import { getSkillById } from '../src/SharedActions.js';
 
 const sourceSpreuken = getSpreuken();
 
@@ -41,7 +34,7 @@ function hasUniqueSpellIDs(jsonData) {
     return duplicateIDs.size === 0;
 }
 
-// Chccks if the provided JSON data spell skill id definitions actualy exist in the vaardigheden
+// Checks if the provided JSON data spell skill id definitions actualy exist in the vaardigheden
 function hasExistingSkillIDs(jsonData) {
     const spellSkillIds = new Set(jsonData.Categories.flatMap(category => category.Skills.flatMap(skill => skill.id)));
     const faultyIDs = new Set();

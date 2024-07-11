@@ -9,6 +9,21 @@
         "type": "object",
         "properties": {
           "categorie": { "type": "string" },
+          "Common": {
+            "type": "array",
+            "minItems": 0,
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": { "type": "integer" },
+                "recipy": { "type": "string" },
+                "effect": { "type": "string" },
+                "inspiration": { "type": "string" },
+                "components": { "type": "string" }
+              },
+              "required": [ "id", "recipy", "effect", "inspiration", "components" ]
+            }
+          },
           "Skills": {
             "type": "array",
             "minItems": 1,
