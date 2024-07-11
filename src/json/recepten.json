@@ -443,36 +443,36 @@
           "Recipes": [
             {
               "id": 43,
-              "recipy": "Heal scrape potion",
-              "effect": "Geneest 1 HP. Werkt niet als de drinker uitgeschakeld of stervende is.",
+              "recipy": "Heal scrape",
+              "effect": "Geneest 1 HP. Werkt niet als de drinker uitgeschakeld of een FATAL heeft.",
               "inspiration": "1",
               "components": "-"
             },
             {
               "id": 44,
-              "recipy": "Heal wound potion",
-              "effect": "Geneest 3 HP. Werkt niet als de drinker uitgeschakeld of stervende is.",
+              "recipy": "Heal wound",
+              "effect": "Geneest 3 HP. Werkt niet als de drinker uitgeschakeld of een FATAL heeft.",
               "inspiration": "1",
               "components": "1 Catnip"
             },
             {
               "id": 45,
-              "recipy": "Minor potion of heal crippling wound",
-              "effect": "Geneest 1 HP als je niet stervende bent.",
+              "recipy": "Minor heal crippling wound",
+              "effect": "Geneest 1 HP als je geen FATAL hebt.",
               "inspiration": "1",
               "components": "1 Catnip 1 Ivan’s hood"
             },
             {
               "id": 46,
-              "recipy": "Heal crippling wound potion",
-              "effect": "Geneest 3 HP als je niet stervende bent.",
+              "recipy": "Heal crippling wound",
+              "effect": "Geneest 3 HP als geen FATAL hebt.",
               "inspiration": "1",
               "components": "1 Catnip 2 Ivan’s hood"
             },
             {
               "id": 47,
               "recipy": "Bleed salve",
-              "effect": "Verlengt de grace periode met 10 minuten. Werkt alleen op stervende personen.",
+              "effect": "Verlengt de grace periode met 10 minuten. Werkt alleen op personen met een FATAL.",
               "inspiration": "1",
               "components": "1 Catnip 1 Fools stem"
             },
@@ -491,43 +491,43 @@
           "Recipes": [
             {
               "id": 49,
-              "recipy": "Heal deadly wound potion",
+              "recipy": "Heal deadly wound",
               "effect": "Geneest FATAL en 1 HP.",
               "inspiration": "1",
               "components": "1 Catnip 1 Fools stem 1 Ivan’s hood"
             },
             {
               "id": 50,
-              "recipy": "Cure weak disease potion",
+              "recipy": "Cure weak disease",
               "effect": "Geneest een HIT DISEASE (inclusief de schade)",
               "inspiration": "1",
               "components": "1 Catnip"
             },
             {
               "id": 51,
-              "recipy": "Cure disease potion",
+              "recipy": "Cure disease",
               "effect": "Geneest een disease naar keuze (inclusief het effect of schade)",
               "inspiration": "1",
               "components": "2 Catnip"
             },
             {
               "id": 52,
-              "recipy": "Courage potion",
-              "effect": "Geneest of voorkomt de eerstvolgende 2 Fear of Fear poisons vandaag.",
+              "recipy": "Courage",
+              "effect": "Geneest of voorkomt de eerstvolgende 2 FEAR of FEAR POISONs vandaag.",
               "inspiration": "1",
               "components": "1 Catnip"
             },
             {
               "id": 53,
-              "recipy": "Wakeful potion",
-              "effect": "Geneest of voorkomt de eerstvolgende Sleep of Sleep poison vandaag.",
+              "recipy": "Wakeful",
+              "effect": "Geneest of voorkomt de eerstvolgende SLEEP of SLEEP POISON vandaag.",
               "inspiration": "1",
               "components": "1 Catnip"
             },
             {
               "id": 54,
               "recipy": "Cure Heartache",
-              "effect": "Versterkt voor een uur maar verwijdert vervolgens, onbeantwoorde verliefde gevoelens.",
+              "effect": "Versterkt voor een uur maar verwijdert vervolgens onbeantwoorde verliefde gevoelens.",
               "inspiration": "1",
               "components": "-"
             }
@@ -539,36 +539,36 @@
           "Recipes": [
             {
               "id": 55,
-              "recipy": "Heal all wounds potion",
+              "recipy": "Heal all wounds",
               "effect": "Geneest FATAL en geeft alle HP terug. Laat ook ritueel verwijderde ledematen teruggroeien.",
               "inspiration": "2",
               "components": "2 Catnip 1 Fools stem 1 Ivan’s hood 1 Nimpf’s blossom"
             },
             {
               "id": 56,
-              "recipy": "Cure strong disease potion",
+              "recipy": "Cure strong disease",
               "effect": "Geneest alle diseases en de effecten en schade daar door veroorzaakt.",
               "inspiration": "1",
               "components": "1 Catnip 1 Nimph’s blossom"
             },
             {
               "id": 57,
-              "recipy": "Muscle control potion",
-              "effect": "Geneest of voorkomt de eerstvolgende Paralyze, Paralyze poison, Torture of Torture poison vandaag.",
+              "recipy": "Muscle control",
+              "effect": "Geneest of voorkomt de eerstvolgende PARALYZE, PARALYZE POISON, TORTURE of TORTURE POSON vandaag.",
               "inspiration": "1",
               "components": "1 Catnip 1 Raven’s eye"
             },
             {
               "id": 58,
-              "recipy": "Concentration potion",
-              "effect": "Geneest of voorkomt de eerstvolgende Confuse of Confuse poison vandaag.",
+              "recipy": "Concentration",
+              "effect": "Geneest of voorkomt de eerstvolgende CONFUSE of CONFUSE POISON vandaag.",
               "inspiration": "1",
               "components": "1 Catnip"
             },
             {
               "id": 59,
-              "recipy": "Reroute blood potion",
-              "effect": "Geneest of voorkomt de eerstvolgende Fatal poison vandaag.",
+              "recipy": "Reroute blood",
+              "effect": "Geneest of voorkomt de eerstvolgende FATAL POISON vandaag.",
               "inspiration": "1",
               "components": "1 Catnip 1 Nimpf’s blossom"
             },
@@ -738,15 +738,15 @@
             },
             {
               "id": 80,
-              "recipy": "Minor fever potion",
-              "effect": "Je krijgt 1 rituele mana naar keuze terug. \nDeze potion kan je niet langer houdbaar maken.",
+              "recipy": "Minor fever",
+              "effect": "Je krijgt 1 rituele mana naar keuze terug. \\nDeze potion kan je niet langer houdbaar maken.",
               "inspiration": "1",
               "components": "1 Nodens Veil"
             },
             {
               "id": 81,
               "recipy": "Vision of the soul",
-              "effect": "Je kunt binnen 5 minuten eenmalig een DISCERN SOUL spreuk casten. \nEr is geen mana nodig om deze spreuk te casten.",
+              "effect": "Je kunt binnen 5 minuten eenmalig een DISCERN SOUL spreuk casten. \\nEr is geen mana nodig om deze spreuk te casten.",
               "inspiration": "1",
               "components": "1 Nodens Veil"
             },
@@ -766,7 +766,7 @@
             },
             {
               "id": 84,
-              "recipy": "Relive potion",
+              "recipy": "Relive",
               "effect": "Je herleeft in detail een eigen herinnering naar keuze. (Zolang jij of een ander speler zich dit OC herinnert. Deze potion kan niet gebruikt worden om informatie na te vragen bij spelleiding).",
               "inspiration": "1",
               "components": "-"
@@ -779,8 +779,8 @@
           "Recipes": [
             {
               "id": 85,
-              "recipy": "Fever potion",
-              "effect": "Je krijgt 2 rituele mana naar keuze terug. \nDeze potion kan je niet langer houdbaar maken.",
+              "recipy": "Fever",
+              "effect": "Je krijgt 2 rituele mana naar keuze terug. \\nDeze potion kan je niet langer houdbaar maken.",
               "inspiration": "1",
               "components": "1 Nodens Veil 1 Ivan’s hood"
             },
@@ -794,14 +794,14 @@
             {
               "id": 87,
               "recipy": "Visions of magic",
-              "effect": "Je kan binnen 5 minuten een DETECT MAGIC spreuk casten. \nEr is geen mana nodig om deze spreuk te casten.",
+              "effect": "Je kan binnen 5 minuten een DETECT MAGIC spreuk casten. \\nEr is geen mana nodig om deze spreuk te casten.",
               "inspiration": "1",
               "components": "1 Nodens Veil"
             },
             {
               "id": 88,
               "recipy": "Visions of numen",
-              "effect": "Je kan binnen 5 minuten een DETECT SPIRITUAL INFLUENCE spreuk casten. \nEr is geen mana nodig om deze spreuk te casten.",
+              "effect": "Je kan binnen 5 minuten een DETECT SPIRITUAL INFLUENCE spreuk casten. \\nEr is geen mana nodig om deze spreuk te casten.",
               "inspiration": "1",
               "components": "1 Nodens Veil"
             },
@@ -827,8 +827,8 @@
           "Recipes": [
             {
               "id": 91,
-              "recipy": "Major fever potion",
-              "effect": "Je krijgt 3 rituele mana naar keuze terug. \nDeze potion kan je niet langer houdbaar maken.",
+              "recipy": "Major fever",
+              "effect": "Je krijgt 3 rituele mana naar keuze terug. \\nDeze potion kan je niet langer houdbaar maken.",
               "inspiration": "1",
               "components": "1 Nodens Veil 2 Ivan’s hood"
             },
@@ -862,7 +862,7 @@
             },
             {
               "id": 96,
-              "recipy": "Be other potion",
+              "recipy": "Be other",
               "effect": "Je geest smelt gedurende 5 minuten samen met een aangeraakt persoon die hiervoor ongedwongen medewerking verleent. Beide personen ervaren elkaars gedachten, emoties en standpunten. Dit kan achteraf leiden tot kleine verandering in persoonlijkheden.",
               "inspiration": "1",
               "components": "-"
@@ -875,42 +875,42 @@
           "Recipes": [
             {
               "id": 97,
-              "recipy": "Martial skill potion",
+              "recipy": "Martial skill",
               "effect": "Geeft je de vaardigheid om 5 minuten 1 wapen of schild te gebruiken zonder de correcte vaardigheid",
               "inspiration": "1",
               "components": "-"
             },
             {
               "id": 98,
-              "recipy": "Minor potion of strengthen will",
-              "effect": "Je krijgt 1 wilskracht terug. \nDeze potion kan je niet langer houdbaar maken.",
+              "recipy": "Minor strengthen will",
+              "effect": "Je krijgt 1 wilskracht terug. \\nDeze potion kan je niet langer houdbaar maken.",
               "inspiration": "1",
               "components": "1 Bobost"
             },
             {
               "id": 99,
-              "recipy": "Minor potion of focus",
-              "effect": "Je krijgt 1 inspiratie terug. \nDeze potion kan je niet langer houdbaar maken.",
+              "recipy": "Minor focus",
+              "effect": "Je krijgt 1 inspiratie terug. \\nDeze potion kan je niet langer houdbaar maken.",
               "inspiration": "1",
               "components": "1 Bobost"
             },
             {
               "id": 100,
-              "recipy": "Retreat potion",
+              "recipy": "Retreat",
               "effect": "Voor 10 minuten kun je jezelf verdedigen en wegrennen terwijl je uitgeschakeld bent. Je kunt niet aanvallen of spreuken casten. Als je 1 schade oploopt verdwijnt dit effect.",
               "inspiration": "1",
               "components": "1 Bobost"
             },
             {
               "id": 101,
-              "recipy": "Minor potion of strengthen body",
+              "recipy": "Minor strengthen body",
               "effect": "Geeft 1 extra HP voor 5 minuten (geneesbaar)",
               "inspiration": "1",
               "components": "1 Bobost 1 Ivan’s hood"
             },
             {
               "id": 102,
-              "recipy": "Confidence potion",
+              "recipy": "Confidence",
               "effect": "Maakt je zelfverzekerd (maar helpt niet tegen het fear effect)",
               "inspiration": "1",
               "components": "-"
@@ -930,7 +930,7 @@
             },
             {
               "id": 104,
-              "recipy": "Strengthen body potion",
+              "recipy": "Strengthen body",
               "effect": "Geeft 2 extra HP voor 5 minuten (geneesbaar)",
               "inspiration": "1",
               "components": "1 Bobost 2 Ivan’s hood"
@@ -944,21 +944,21 @@
             },
             {
               "id": 106,
-              "recipy": "Strengthen will potion",
-              "effect": "Je krijgt 2 wilskracht terug. \nDeze potion kan je niet langer houdbaar maken.",
+              "recipy": "Strengthen will",
+              "effect": "Je krijgt 2 wilskracht terug. \\nDeze potion kan je niet langer houdbaar maken.",
               "inspiration": "1",
               "components": "1 Bobost 1 Ivan’s hood"
             },
             {
               "id": 107,
-              "recipy": "Focus potion",
-              "effect": "Je krijgt 2 inspiratie terug. \nDeze potion kan je niet langer houdbaar maken.",
+              "recipy": "Focus",
+              "effect": "Je krijgt 2 inspiratie terug. \\nDeze potion kan je niet langer houdbaar maken.",
               "inspiration": "1",
               "components": "1 Bobost 1 Raven’s eye"
             },
             {
               "id": 108,
-              "recipy": "Empathy potion",
+              "recipy": "Empathy",
               "effect": "Verhoogt je gevoelens van empathie en naastenliefde",
               "inspiration": "1",
               "components": "-"
@@ -978,29 +978,29 @@
             },
             {
               "id": 110,
-              "recipy": "Major strengthen body potion",
+              "recipy": "Major strengthen body",
               "effect": "Geeft 3 extra HP voor 5 minuten (geneesbaar)",
               "inspiration": "1",
               "components": "1 Bobost 2 Ivan’s hood 1 Bael’sammon’s rose"
             },
             {
               "id": 111,
-              "recipy": "Anti-magic skin oil",
+              "recipy": "Anti-magic skin",
               "effect": "Immuun voor de volgende spreuk die op je gecaste wordt binnen een uur",
               "inspiration": "1",
               "components": "1 Bobost 1 Nimpf’s blossom"
             },
             {
               "id": 112,
-              "recipy": "Major strengthen will potion",
-              "effect": "Je krijgt 3 wilskracht terug. \nDeze potion kan je niet langer houdbaar maken.",
+              "recipy": "Major strengthen will",
+              "effect": "Je krijgt 3 wilskracht terug. \\nDeze potion kan je niet langer houdbaar maken.",
               "inspiration": "1",
               "components": "1 Bobost 2 Ivan’s hood"
             },
             {
               "id": 113,
-              "recipy": "Major focus potion",
-              "effect": "Je krijgt 3 inspiratie terug. \nDeze potion kan je niet langer houdbaar maken.",
+              "recipy": "Major focus",
+              "effect": "Je krijgt 3 inspiratie terug. \\nDeze potion kan je niet langer houdbaar maken.",
               "inspiration": "1",
               "components": "1 Bobost 2 Raven’s eye"
             },
@@ -1019,36 +1019,36 @@
           "Recipes": [
             {
               "id": 115,
-              "recipy": "Fire breath potion",
-              "effect": "Je kunt vandaag eenmalig een Fireblast-spreuk casten, maar ontvangt na afloop zelf een BLAST effect.",
+              "recipy": "Fire breath",
+              "effect": "Je kunt vandaag eenmalig een Fireblast-spreuk casten zonder energie uit te geven, maar ontvangt na afloop zelf een BLAST effect.",
               "inspiration": "1",
               "components": "-"
             },
             {
               "id": 116,
-              "recipy": "Minor potion of divine connection",
-              "effect": "Je krijgt 1 spirituele mana terug. \nDeze potion kan je niet langer houdbaar maken.",
+              "recipy": "Minor divine connection",
+              "effect": "Je krijgt 1 spirituele mana terug. \\nDeze potion kan je niet langer houdbaar maken.",
               "inspiration": "1",
               "components": "1 Allysa’s bane"
             },
             {
               "id": 117,
-              "recipy": "Minor potion of magic veins",
-              "effect": "Je krijgt 1 elementaire mana terug. \nDeze potion kan je niet langer houdbaar maken.",
+              "recipy": "Minor magic veins",
+              "effect": "Je krijgt 1 elementaire mana terug. \\nDeze potion kan je niet langer houdbaar maken.",
               "inspiration": "1",
               "components": "1 Allysa’s bane"
             },
             {
               "id": 118,
-              "recipy": "Minor potion of divine inspiration",
-              "effect": "Je kunt vandaag eenmalig een niveau 1 priesterspreuk naar keuze casten. \nEr is geen mana nodig om de spreuk te casten.",
+              "recipy": "Minor divine inspiration",
+              "effect": "Bij het drinken kies je een level 1 priesterspreuk (die je niet per se zelf kent). Deze spreuk mag je vandaag eenmaal casten. Deze spreuk \\nEr is geen mana nodig om de spreuk te casten.",
               "inspiration": "1",
               "components": "1 Allysa’s bane 1 Raven’s eye"
             },
             {
               "id": 119,
               "recipy": "Minor potion of inspiration of the magi",
-              "effect": "Je kunt vandaag eenmalig een niveau 1 magierspreuk naar keuze casten. \nEr is geen mana nodig om de spreuk te casten.",
+              "effect": "Bij het drinken kies je een level 1 magierspreuk (die je niet per se zelf kent). Deze spreuk mag je vandaag eenmaal casten. \\nEr is geen mana nodig om de spreuk te casten.",
               "inspiration": "1",
               "components": "1 Allysa’s bane 1 Fools stem"
             },
@@ -1067,36 +1067,36 @@
           "Recipes": [
             {
               "id": 121,
-              "recipy": "Magical inspiration potion",
+              "recipy": "Magical inspiration",
               "effect": "Je kunt vandaag onbeperkt een niveau 1 spreuk naar keuze casten. Dit kost wel de correcte mana.",
               "inspiration": "1",
               "components": "1 Allysa’s bane 1 Raven’s eye 1 Fools stem"
             },
             {
               "id": 122,
-              "recipy": "Potion of the divine connection",
-              "effect": "Je krijgt 2 spirituele mana terug. \nDeze potion kan je niet langer houdbaar maken.",
+              "recipy": "Divine connection",
+              "effect": "Je krijgt 2 spirituele mana terug. \\nDeze potion kan je niet langer houdbaar maken.",
               "inspiration": "1",
               "components": "1 Allysa’s bane 1 Raven’s eye"
             },
             {
               "id": 123,
-              "recipy": "Potion of magic veins",
-              "effect": "Je krijgt 2 elementaire mana terug. \nDeze potion kan je niet langer houdbaar maken.",
+              "recipy": "Magic veins",
+              "effect": "Je krijgt 2 elementaire mana terug. \\nDeze potion kan je niet langer houdbaar maken.",
               "inspiration": "1",
               "components": "1 Allysa’s bane 1 Fools stem"
             },
             {
               "id": 124,
-              "recipy": "Divine inspiration potion",
-              "effect": "Je kunt vandaag eenmalig een niveau 2 priesterspreuk naar keuze casten. \nEr is geen mana nodig om de spreuk te casten.",
+              "recipy": "Divine inspiration",
+              "effect": "Bij het drinken kies je een level 2 priesterspreuk (die je niet per se zelf kent). Deze spreuk mag je vandaag eenmaal casten.\\nEr is geen mana nodig om de spreuk te casten.",
               "inspiration": "1",
               "components": "1 Allysa’s bane 1 Raven’s eye"
             },
             {
               "id": 125,
-              "recipy": "Inspiration of the magi potion",
-              "effect": "Je kunt vandaag eenmalig een niveau 2 magierspreuk naar keuze casten. \nEr is geen mana nodig om de spreuk te casten.",
+              "recipy": "Inspiration of the magi",
+              "effect": "Bij het drinken kies je een level 2 magierspreuk (die je niet per se zelf kent). Deze spreuk mag je vandaag eenmaal casten. \\nEr is geen mana nodig om de spreuk te casten.",
               "inspiration": "1",
               "components": "1 Allysa’s bane 1 Fools stem"
             },
@@ -1115,42 +1115,42 @@
           "Recipes": [
             {
               "id": 127,
-              "recipy": "Major magical inspiration potion",
+              "recipy": "Major magical inspiration",
               "effect": "Je kunt vandaag onbeperkt een niveau 2 spreuk naar keuze casten. Dit kost wel de correcte mana.",
               "inspiration": "1",
               "components": "1 Allysa’s bane 1 Raven’s eye 1 Fools stem 1 Oracle’s tung"
             },
             {
               "id": 128,
-              "recipy": "Major potion of divine connection",
-              "effect": "Je krijgt 3 spirituele mana terug. \nDeze potion kan je niet langer houdbaar maken.",
+              "recipy": "Major divine connection",
+              "effect": "Je krijgt 3 spirituele mana terug. \\nDeze potion kan je niet langer houdbaar maken.",
               "inspiration": "1",
               "components": "1 Allysa’s bane 2 Raven’s eye"
             },
             {
               "id": 129,
-              "recipy": "Major potion of magic veins",
-              "effect": "Je krijgt 3 elementaire mana terug. \nDeze potion kan je niet langer houdbaar maken.",
+              "recipy": "Major magic veins",
+              "effect": "Je krijgt 3 elementaire mana terug. \\nDeze potion kan je niet langer houdbaar maken.",
               "inspiration": "1",
               "components": "1 Allysa’s bane 2 Fools stem"
             },
             {
               "id": 130,
-              "recipy": "Major divine inspiration potion",
-              "effect": "Je kunt vandaag eenmalig een niveau 3 priesterspreuk naar keuze casten. \nEr is geen mana nodig om de spreuk te casten.",
+              "recipy": "Major divine inspiration",
+              "effect": "Bij het drinken kies je een level 3 priesterspreuk (die je niet per se zelf kent). Deze spreuk mag je vandaag eenmaal casten. \\nEr is geen mana nodig om de spreuk te casten.",
               "inspiration": "1",
               "components": "1 Allysa’s bane 2 Raven’s eye 1 Oracle’s tung"
             },
             {
               "id": 131,
-              "recipy": "Major inspiration of the magi potion",
-              "effect": "Je kunt vandaag eenmalig een niveau 3 magierspreuk naar keuze casten. \nEr is geen mana nodig om de spreuk te casten.",
+              "recipy": "Major inspiration of the magi",
+              "effect": "Bij het drinken kies je een level 3 magierspreuk (die je niet per se zelf kent). Deze spreuk mag je vandaag eenmaal casten. \\nEr is geen mana nodig om de spreuk te casten.",
               "inspiration": "1",
               "components": "1 Allysa’s bane 2 Fools stem 1 Oracle’s tung"
             },
             {
               "id": 132,
-              "recipy": "Mirror personality potion",
+              "recipy": "Mirror personality",
               "effect": "Gedurende een uur zullen je karaktertrekken en gedrag zich eenmalig aanpassen aan een persoon die voor je staat.",
               "inspiration": "1",
               "components": "-"
