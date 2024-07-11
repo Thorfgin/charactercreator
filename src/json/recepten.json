@@ -436,6 +436,7 @@
     },
     {
       "categorie": "Alchemistenvaardigheden",
+      "Common": [],
       "Skills": [
         {
           "id": 227,
