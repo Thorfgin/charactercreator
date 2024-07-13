@@ -12,10 +12,8 @@ CharacterTable.propTypes = {
 
 export default function CharacterTable({ selectedCharacter, handleCharacterChange }) {
     const tableRef = useRef(null);
-    let keys = [];
 
-    const allCharacterKeys = getAllLocalStorageKeys();
-    allCharacterKeys.forEach(key => key !== "CCdata" ? keys.push(key) : null);
+    const keys = getAllLocalStorageKeys();
     keys.sort((a, b) => a.localeCompare(b));
 
     function handleSelectCharacter(key) {

@@ -6,6 +6,10 @@ import {
     sourceExtraVaardigheden,
 } from './SharedObjects.js';
 
+import {
+    ritualLeader
+} from './SharedConstants.js';
+
 // json
 import packageInfo from '../package.json';
 
@@ -14,9 +18,9 @@ import packageInfo from '../package.json';
 getLocalStorage.propTypes = { key: PropTypes.string.isRequired };
 
 // Get the data stored in the localStorage by Key
-export function getLocalStorage(key) {
+export function getLocalStorage(key, encode = true) {
     if (typeof (Storage) !== "undefined") {
-        const storedData = localStorage.getObject(key);
+        const storedData = localStorage.getObject(key, encode);
         return storedData || [];
     }
     else {
@@ -28,13 +32,13 @@ export function getLocalStorage(key) {
 setLocalStorage.propTypes = { key: PropTypes.string.isRequired };
 
 // Store the data in the localStorage by Key
-export function setLocalStorage(key, data) {
+export function setLocalStorage(key, data, encode = true) {
     if (typeof Storage === "undefined") {
         console.warn("Could not access local storage. Data can't be stored.");
         return;
     }
     // add data or clear is data is undefined
-    data ? localStorage.setObject(key, data) : localStorage.removeItem(key);
+    data ? localStorage.setObject(key, data, encode) : localStorage.removeItem(key);
 }
 
 /* 
@@ -46,7 +50,12 @@ export function getAllLocalStorageKeys(givenKey) {
         console.warn("Could not access local storage. Stored characters can't be collected.");
         return [];
     }
-    return Object.keys(localStorage).filter(key => !givenKey || key === givenKey || key === "settings");
+    const keys = Object.keys(localStorage)
+        .filter(key =>
+            key !== "CCdata" &&
+            key !== "settings" && 
+            (!givenKey || key === givenKey));
+    return keys;
 }
 
 /// --- CONVERT DATA TO LATEST FORMAT --- ///
@@ -73,7 +82,7 @@ const addSkillsTo202310aFormat = (oldSkills) => {
 
         // Skillnames adjusted per 07-2024
         if (oldSkill.skill.toLowerCase() === "ritueel leider") {
-            sourceSkill = sourceExtraVaardigheden.find(item => item.id === 576);
+            sourceSkill = sourceExtraVaardigheden.find(item => item.id === ritualLeader);
         }
 
         const newSkill = {
@@ -145,7 +154,7 @@ function transformDataToTableData(rawSkills) {
         if (skill) {
             const updatedSkill = { ...skill };
             updatedSkill.count = rawSkill.count > updatedSkill.maxcount ? updatedSkill.maxcount : rawSkill.count;
-            updatedSkill.xp = rawSkill.count > 1 ? updatedSkill.xp * rawSkill.count : updatedSkill.xp;
+            updatedSkill.xp = rawSkill.count > 1 ? updatedSkill.xp * rawSkill.count : updatedSkill.xp;      
             tableData.push(updatedSkill);
         }
     }
@@ -232,7 +241,7 @@ export function exportCharacterToFile(name, is_checked, max_xp, data) {
         newFormat.max_xp = max_xp;
         newFormat.is_checked = is_checked;
         newFormat.Skills = data;
-        const updatedFormat  = convertDataToLatestFormat(newFormat);
+        const updatedFormat = convertDataToLatestFormat(newFormat);
 
         const value = JSON.stringify(updatedFormat);
         const encodedValue = encodeURIComponent(value);
@@ -261,4 +270,20 @@ export function importCharacterFromFile(rawData) {
         return convertedData;
     }
     catch { return undefined; }
+}
+
+// Haal de settings up uit de local storage. als language niet bestaat, maak hem aan met defaults.
+
+export function loadSettingsFromStorage() {
+    let settings = { "lang": "NL" };
+    const rawSettings = getLocalStorage("settings", false)
+    const jsonSettings = JSON.parse(rawSettings);
+    if (jsonSettings?.lang) { settings = jsonSettings }
+    else { setLocalStorage("settings", settings, false) }
+    return settings;
+}
+
+export function saveSettingsToStorage(settings) {
+    if (!settings) { settings = { "lang": "NL" }; }
+    setLocalStorage("settings", settings, false)
 }

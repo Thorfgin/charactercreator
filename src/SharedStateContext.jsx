@@ -4,9 +4,8 @@ import PropTypes from 'prop-types';
 // components
 import { defaultProperties } from './SharedObjects.js';
 import {
-    getLocalStorage,
-    setLocalStorage,
-    loadCharacterFromStorage
+    loadCharacterFromStorage,
+    loadSettingsFromStorage
 } from './SharedStorage.js';
 
 // json
@@ -14,45 +13,47 @@ import packageInfo from '../package.json';
 
 /// --- PREP LOCALSTORAGE DATA --- ///
 let rawData = null;
-let settings = null;
+let rawSettings = null;
 
 if (typeof (Storage) !== "undefined") {
-    Storage.prototype.setObject = function (key, value) {
+    Storage.prototype.setObject = function (key, value, encode) {
         if (!key || !value) { return; }
         if (typeof value === "object") { value = JSON.stringify(value); }
-        let encodedValue = encodeURIComponent(value);
-        let unreadableValue = btoa(encodedValue);
-        localStorage.setItem(key, unreadableValue);
+        let result = value;
+        if (encode === true) {
+            let encodedValue = encodeURIComponent(value);
+            let unreadableValue = btoa(encodedValue);
+            result = unreadableValue;
+        }
+        localStorage.setItem(key, result);
     }
 
     // Op dit moment wordt alleen de versie uitgelezen. Afwijkende versie nummers worden vooralsnog niet getoond.
-    Storage.prototype.getObject = function (key) {
+    Storage.prototype.getObject = function (key, decode) {
         if (!key) { return; }
         let value = this.getItem(key);
         if (!value) { return; }
-        let readableValue = atob(value);
-        let decodedValue = decodeURIComponent(readableValue);
-        if (decodedValue?.length >= 0) {
-            if (decodedValue[0] === "{" || decodedValue[1] === "{") { decodedValue = JSON.parse(decodedValue); }
-            return decodedValue;
+        if (decode === true) {
+            let readableValue = atob(value);
+
+            let decodedValue = decodeURIComponent(readableValue);
+            if (decodedValue?.length >= 0) {
+                if (decodedValue[0] === "{" || decodedValue[1] === "{") { decodedValue = JSON.parse(decodedValue); }
+                return decodedValue;
+            }
+            else {
+                return [];
+            }
         }
         else {
-            return [];
+            return value;
         }
-    }
-
-    // Fetch & Set settings before page is loaded
-    const rawSettings = getLocalStorage("settings")
-    if (!rawSettings?.lang) {
-        settings = { "lang": "EN" };
-        setLocalStorage("settings", settings);
-    }
-    else {
-        settings = rawSettings;
     }
 
     // Fetch data before the page is loaded
     rawData = loadCharacterFromStorage('CCdata');
+    // Fetch & Set settings before page is loaded
+    rawSettings = loadSettingsFromStorage();
 }
 
 /// --- PREP INITIAL TABLE DATA --- ///
@@ -60,6 +61,7 @@ const getInitialData = () => { return rawData?.Skills ? rawData?.Skills : []; }
 const getInitialXP = () => { return rawData?.max_xp ? rawData.max_xp : 15; }
 const getInitialCheckState = () => { return rawData?.is_checked === true; }
 const getInitialName = () => { return rawData?.name ? rawData.name : ""; }
+const getInitialLanguage = () => { return rawSettings?.lang ? rawSettings.lang : "NL" }
 
 /// --- SHARED STATE --- ///
 let SharedStateContext = createContext();
@@ -77,7 +79,7 @@ export function SharedStateProvider({ children }) {
     const [version] = useState(packageInfo.version);
     const [ruleset_version] = useState(packageInfo.ruleset_version);
     const [creator] = useState(packageInfo.creator);
-    const [language] = useState(settings.lang);
+    const [language, setLanguage] = useState(getInitialLanguage());
     const [tableData, setTableData] = useState(getInitialData());
     const [isChecked, setIsChecked] = useState(getInitialCheckState());
     const [MAX_XP, setMAX_XP] = useState(getInitialXP());
@@ -106,7 +108,7 @@ export function SharedStateProvider({ children }) {
         version,
         ruleset_version,
         creator,
-        language,
+        language, setLanguage,
 
         isChecked, setIsChecked,
         MAX_XP, setMAX_XP,
@@ -136,7 +138,7 @@ export function SharedStateProvider({ children }) {
         version,
         ruleset_version,
         creator,
-        language,
+        language, setLanguage,
 
         isChecked, setIsChecked,
         MAX_XP, setMAX_XP,

@@ -17,7 +17,8 @@ import {
     getAllLocalStorageKeys,
     saveCharacterToStorage,
     removeCharacterFromStorage,
-    exportCharacterToFile
+    exportCharacterToFile,
+    saveSettingsToStorage
 } from '../SharedStorage.js';
 import {
     meetsAllPrerequisites,
@@ -39,6 +40,7 @@ export default function Toolbar() {
     const {
         // packageinfo
         ruleset_version,
+        language, setLanguage,
 
         // table
         tableData, setTableData,
@@ -311,6 +313,31 @@ export default function Toolbar() {
     const exportToFile = () => { exportCharacterToFile(charName, isChecked, MAX_XP, tableData); }
     const exportToPDF = async () => { await ExportToPDF(charName, ruleset_version, tableData, MAX_XP, totalXP, gridSpreuken, gridRecepten); }
 
+    // Taal instellingne
+    // Handel het wisselen van de taalinstellingen af, alvorens het icoontje te wijziging.
+    // Refrest het scherm via een useEffect op de ShareStateContext > [language, setlanguage];
+    function handleChangeLanguage() {
+        const lang = (language === "NL") ? "EN" : "NL";
+        saveSettingsToStorage({ "lang": lang });
+        setLanguage(lang);
+    }
+
+    function getLanguageImage() {
+        switch (language) {
+            case "NL":
+                return "./images/button_NL.png";
+            case "EN":
+                return "./images/button_EN.png";
+            default:
+                return "./images/button_NL.png";
+        }        
+    }
+
+    // TODO: ADD USE-EFFECT ON THE TOGGLE OF THE LANGUAGE BUTTON
+    // LANGUAGE / SETLANGUAGE SHOULD BE AVAILABLE HERE
+    // useEffect(() => { onSelectSkill(true, selectedBasicSkill); }, [onSelectSkill, selectedBasicSkill]);
+
+
     // RETURN
     return (
         <div className="toolbar-container">
@@ -421,6 +448,9 @@ export default function Toolbar() {
                         </button>
                         <button className="btn-toolbar" title="Personage importeren" onClick={showUploadModal}>
                             <img className="btn-image" src="./images/button_upload.png" alt="Import Button" />
+                        </button>
+                        <button className="btn-toolbar" title="Selecteer Taal" onClick={handleChangeLanguage}>
+                            <img className="btn-image" src={getLanguageImage()} alt="Change Language" />
                         </button>
 
                     </div>

@@ -108,37 +108,14 @@ export function getPropertyByName(name) {
 }
 
 
-getTextByLanguage.propTypes = { item: PropTypes.object.isRequired };
-
-// Ophalen van een text op basis van een taalcode
-export function getTextByLanguage(item) {
-    if (typeof item === String) { return item; }
-    // TODO: GET LANG FROM SETTINGS IN THE SHAREDSTATECONTEXT
-
-    const lang = "EN";
-    let text = "";
-    switch (lang) {
-        case "NL":
-            text = item.NL;
-            break;
-        case "EN":
-            text = item.EN;
-            break;
-        default:
-            text = item.NL;
-            break;
-    }
-    return text;
-}
-
 /// --- SELECT --- ///
 
 // Ophalen van de skills uit vaardigheden/spreuken/recepten
 export function generateOptions(source) {
     return source.map((record) => ({
         id: record.id,
-        value: getTextByLanguage(record.skill),
-        label: `${getTextByLanguage(record.skill) } (${record.xp} xp)`
+        value: record.skill,
+        label: `${record.skill} (${record.xp} xp)`
     }));
 }
 
@@ -146,8 +123,8 @@ export function generateOptions(source) {
 export function regenerateOptions(source, tableData) {
     return source.map((record) => ({
         id: record.id,
-        value: getTextByLanguage(record.skill),
-        label: `${getTextByLanguage(record.skill) } (${record.xp} xp)`
+        value: record.skill,
+        label: `${record.skill} (${record.xp} xp)`
     })).filter((currentSkill) => !tableData.some((record) => record.id === currentSkill.id));
 }
 
