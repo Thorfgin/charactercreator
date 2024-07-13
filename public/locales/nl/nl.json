@@ -11,7 +11,8 @@
     "cancel": "Annuleren",
     "close": "Sluiten",
     "upload": "Upload",
-    "load": "Laad"
+    "load": "Laad",
+    "ok": "OK"
   },
   "toolbar": {
     "labels": {
@@ -117,6 +118,16 @@
     },
     "modals": {
       "cant_load_version": "Deze versie van dit personage kan helaas niet ingeladen worden.",
+      "unknown_error": "Er ging iets mis bij het inlezen van het bestand."
+    }
+  },
+  "loadpreset_modal": {
+    "labels": {
+      "view_template": "Bekijk een template",
+      "description": "Deze templates dienen als voorbeeld voor hoe bepaalde \narche - type personages er bij VA uit zou kunnen zien.\nPer arche - type hebben we getracht een voorbeeld te \ngeven van het soort spel dat je zou kunnen verwachten."
+    },
+    "modals": {
+      "cant_load_version": "De versie van deze templates komt niet overeen met de huidige regelset versie.",
       "unknown_error": "Er ging iets mis bij het inlezen van het bestand."
     }
   }

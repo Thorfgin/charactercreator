@@ -1,10 +1,14 @@
 import { v4 as uuidv4 } from 'uuid';
+import { useTranslation } from 'react-i18next';
 
 // Shared
 import { useSharedState } from '../SharedStateContext.jsx';
 
 // Toont een Modal message met alleen een sluit knop
 export default function ModalMessage() {
+    // Multi-Language support klaarzetten
+    const { t } = useTranslation();
+
     // Ophalen uit SharedStateContext
     const {
         modalMsg,
@@ -30,7 +34,7 @@ export default function ModalMessage() {
                     ))}
                 </div>
                 <button className="btn-primary" onClick={closeModal}>
-                    OK
+                    {t("generic.ok")}
                 </button>
             </div>
             <span className="close" onClick={closeModal}>&times;</span>

@@ -11,7 +11,8 @@
     "cancel": "Cancel",
     "close": "Close",
     "upload": "Upload",
-    "load": "Load"
+    "load": "Load",
+    "ok": "OK"
   },
   "toolbar": {
     "labels": {
@@ -117,6 +118,16 @@
     },
     "modals": {
       "cant_load_version": "This version of the character could not be loaded.",
+      "unknown_error": "Somethings went wrong while processing the file."
+    }
+  },
+  "loadpreset_modal": {
+    "labels": {
+      "view_template": "View a template",
+      "description": "These templates serve as an example for how certain\narche-type characters would look like at VA.\nWe tried to give an example of common arche - types\nand the type of play you could expect. "
+    },
+    "modals": {
+      "cant_load_version": "The version of this template does not match the current ruleset version.",
       "unknown_error": "Somethings went wrong while processing the file."
     }
   }
