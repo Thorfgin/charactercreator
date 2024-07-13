@@ -93,12 +93,16 @@ export function SkillTooltip({ id, image = './images/img-info.png' }) {
 
     // Check any_list
     const reqAny = getSkillsByIds(sourceSkill.Requirements.any_list);
-    if (reqAny.length > 0) { fullRequirementsBlock += `${t("skill_tooltip.any_of_these_req")} \\n${formatList(reqAny)} \\n`; }
+    if (reqAny.length > 0) {
+        fullRequirementsBlock += t("skill_tooltip.any_of_these_req");
+        fullRequirementsBlock += ` \\n${ formatList(reqAny) } \\n`; }
 
     // Check category
     const reqCategory = sourceSkill.Requirements.Category;
     if (reqCategory && reqCategory.name.length > 0) {
-        fullRequirementsBlock += `${reqCategory.value} ${t("skill_tooltip.category_req")} \\n${formatList(reqCategory.name)}`;
+        fullRequirementsBlock += `${reqCategory.value}`;
+        fullRequirementsBlock += t("skill_tooltip.category_req");
+        fullRequirementsBlock += ` \\n${formatList(reqCategory.name)}`;
     }
 
     const tooltipData = [
@@ -108,9 +112,10 @@ export function SkillTooltip({ id, image = './images/img-info.png' }) {
     ];
 
     const tooltipItems = useMapping(tooltipData);
+    const header = t("generic.skill");
 
     return GenericTooltip({
-        header: `${t("generic.skill")} ${sourceSkill?.skill || null}`,
+        header: `${header} ${sourceSkill?.skill || null}`,
         message: tooltipItems || null,
         image: image
     });
@@ -152,7 +157,7 @@ export function SpellTooltip({ skillId, spellId, image = './images/img-info.png'
 
             <img
                 className="btn-image"
-                title={t("spell_tooltip.pdf_reference") + " " + sourceSpell.page}
+                title={`${t("spell_tooltip.pdf_reference")} ${sourceSpell.page}`}
                 onClick={() => openPdfPage('Spreuken_en_Technieken.pdf', sourceSpell.page)}
                 src="./images/img-pdf.png"
                 alt="PDF">
@@ -207,7 +212,7 @@ export function CustomTooltip({ header, subheader = undefined, message, image = 
     const { t } = useTranslation();
 
     const description = getBlock(message, "description-block");
-    const tooltipData = [{ label: '', value: description || t("generic.info_not_found") }];
+    const tooltipData = [{ label: 'generic.no_label', value: description || t("generic.info_not_found") }];
     const tooltipItems = useMapping(tooltipData);
 
     return (

@@ -1,6 +1,7 @@
 {
   "welcome_message": "Welkom bij onze applicatie!",
   "generic": {
+    "no_label": "",
     "skill": "Vaardigheid:",
     "spell_technique": "Spreuk/Techniek:",
     "recipy": "Recept:",
@@ -9,7 +10,8 @@
     "confirm": "Bevestig",
     "cancel": "Annuleren",
     "close": "Sluiten",
-    "upload": "Upload"
+    "upload": "Upload",
+    "load": "Laad"
   },
   "toolbar": {
     "labels": {
@@ -98,6 +100,20 @@
   "fileupload_modal": {
     "labels": {
       "upload_file": "Upload een Bestand"
+    },
+    "modals": {
+      "cant_load_version": "Deze versie van dit personage kan helaas niet ingeladen worden.",
+      "unknown_error": "Er ging iets mis bij het inlezen van het bestand."
+    }
+  },
+  "character_table": {
+    "labels": {
+      "no_characters": "Geen personages gevonden"
+    }
+  },
+  "loadcharacter_modal": {
+    "labels": {
+      "load_character": "Laad een Character"
     },
     "modals": {
       "cant_load_version": "Deze versie van dit personage kan helaas niet ingeladen worden.",

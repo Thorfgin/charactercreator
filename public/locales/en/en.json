@@ -1,6 +1,7 @@
 {
   "welcome_message": "Welcome to our application!",
   "generic": {
+    "no_label": "",
     "skill": "Skill:",
     "spell_technique": "Spell/Technique:",
     "recipy": "Recepy:",
@@ -9,7 +10,8 @@
     "confirm": "Confirm",
     "cancel": "Cancel",
     "close": "Close",
-    "upload": "Upload"
+    "upload": "Upload",
+    "load": "Load"
   },
   "toolbar": {
     "labels": {
@@ -98,6 +100,20 @@
   "fileupload_modal": {
     "labels": {
       "upload_file": "Upload a File"
+    },
+    "modals": {
+      "cant_load_version": "This version of the character could not be loaded.",
+      "unknown_error": "Somethings went wrong while processing the file."
+    }
+  },
+  "character_table": {
+    "labels": {
+      "no_characters": "No characters found"
+    }
+  },
+  "loadcharacter_modal": {
+    "labels": {
+      "load_character": "Load a Character"
     },
     "modals": {
       "cant_load_version": "This version of the character could not be loaded.",

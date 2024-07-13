@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 // components
 import CharacterTable from './CharacterTable.jsx';
@@ -11,6 +12,9 @@ import {
 } from '../SharedStorage.js';
 
 function LoadCharacterModal() {
+    // Multi-Language support klaarzetten
+    const { t } = useTranslation();
+
     const [selectedCharacter, setSelectedCharacter] = useState("");
 
     // Ophalen uit SharedStateContext
@@ -28,20 +32,22 @@ function LoadCharacterModal() {
 
     // Laden uit de local storage van de browser
     function loadCharacterFromLocalStorage() {
-        const key = getAllLocalStorageKeys(selectedCharacter);
-        const charData = loadCharacterFromStorage(key);
-        if (charData) {
-            setCharName(charData.name || selectedCharacter.replace('CC-', ''));
-            setIsChecked(charData.is_checked);
-            setMAX_XP(charData.max_xp);
-            setTableData(charData.Skills);
-            setSelectedBasicSkill(null);
-            setSelectedExtraSkill(null);
-            closeModal();
+        try {
+            const key = getAllLocalStorageKeys(selectedCharacter);
+            const charData = loadCharacterFromStorage(key);
+            if (charData) {
+                setCharName(charData.name || selectedCharacter.replace('CC-', ''));
+                setIsChecked(charData.is_checked);
+                setMAX_XP(charData.max_xp);
+                setTableData(charData.Skills);
+                setSelectedBasicSkill(null);
+                setSelectedExtraSkill(null);
+                closeModal();
+            }
+            else if (!selectedCharacter || selectedCharacter.trim() === "") { return; }
         }
-        else if (!selectedCharacter || selectedCharacter.trim() === "") { return; }
-        else {
-            const msg = "Deze versie van dit personage kan helaas niet ingeladen worden.";
+        catch {
+            const msg = t("loadcharacter_modal.modals.cant_load_version");
             alert(msg);
             console.error(msg, key, charData);
         }
@@ -53,15 +59,15 @@ function LoadCharacterModal() {
     return (
         <div className="modal-overlay" onClick={closeModal}>
             <div className="load-modal" onClick={e => e.stopPropagation()}>
-                <h3>Laad een personage</h3>
+                <h3>{t("loadcharacter_modal.labels.load_character")}</h3>
                 <div className="upload-modal-block center-content">
                     <CharacterTable
                         selectedChar={selectedCharacter}
                         handleCharacterChange={handleCharacterChange} />
                 </div>
                 <div className="load-modal-block">
-                    <button className="btn-primary" onClick={loadCharacterFromLocalStorage}>Laad</button>
-                    <button className="btn-primary" onClick={closeModal}>Annuleren</button>
+                    <button className="btn-primary" onClick={loadCharacterFromLocalStorage}>{t("generic.load")}</button>
+                    <button className="btn-primary" onClick={closeModal}>{t("generic.cancel")}</button>
                 </div>
             </div>
             <span className="close" onClick={closeModal}>&times;</span>

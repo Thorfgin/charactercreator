@@ -51,8 +51,6 @@ export default function FileUploadModal() {
                             alert(msg);
                             console.error(msg, selectedFile, charData);
                         }
-
-
                     }
                 } catch (error) {
                     const msg = t("fileupload_modal.modals.unknown_error");
