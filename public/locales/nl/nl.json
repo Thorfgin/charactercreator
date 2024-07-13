@@ -1,20 +1,32 @@
 {
   "welcome_message": "Welkom bij onze applicatie!",
   "toolbar": {
-    "buttons": {
-      "select_language": "Selecteer taal"
+    "labels": {
+      "name": "Naam:",
+      "new_character": "Nieuw personage:",
+      "max_xp": "Max XP:",
+      "xp_left": "XP over:"
     },
-    "home": "Home",
-    "about": "Over",
-    "contact": "Contact"
+    "inputs": {
+      "base_skill": "Selecteer een basisvaardigheid",
+      "extra_skill": "Selecteer een extravaardigheid"
+    },
+    "buttons": {
+      "add_skill": "Toevoegen",
+      "add_skill_title_base": "Basis vaardigheid toevoegen",
+      "add_skill_title_extra": "Extra vaardigheid toevoegen",
+      "show_templates": "Toon templates",
+      "save_character": "Personage opslaan",
+      "load_character": "Personage laden",
+      "remove_character": "Personage verwijderen",
+      "export_pdf": "Exporteer naar PDF",
+      "export_file": "Personage exporteren",
+      "import_file": "Personage importeren",
+      "select_language": "Selecteer taal"
+    }
   },
-  "footer": {
-    "terms_of_service": "Servicevoorwaarden",
-    "privacy_policy": "Privacybeleid"
-  },
-  "buttons": {
-    "save": "Opslaan",
-    "cancel": "Annuleren",
-    "delete": "Verwijderen"
+  "tooltips": {
+    "new_character_header": "Nieuw personage",
+    "new_character_message": "Nieuwe personages mogen niet meer dan 3 XP punten bewaren. \nXP boven de 3 punten die niet besteed wordt, zal verloren raken. \n\nMocht je als nieuwe speler (toch) niet tevreden zijn met je keuze, dan is dat geen probleem: Tijdens en na je eerste event mag je via de infobalie in overleg nog vaardigheden verwisselen."
   }
 }

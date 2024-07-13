@@ -272,8 +272,7 @@ export function importCharacterFromFile(rawData) {
     catch { return undefined; }
 }
 
-// Haal de settings up uit de local storage. als language niet bestaat, maak hem aan met defaults.
-
+// Haal de i18n settings up uit de local storage. als language niet bestaat, return default.
 export function loadI18nFromStorage() {
     return getLocalStorage("i18nextLng", false) || "nl";
 }

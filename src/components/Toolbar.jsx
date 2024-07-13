@@ -18,8 +18,7 @@ import {
     getAllLocalStorageKeys,
     saveCharacterToStorage,
     removeCharacterFromStorage,
-    exportCharacterToFile,
-    loadI18nFromStorage
+    exportCharacterToFile
 } from '../SharedStorage.js';
 import {
     meetsAllPrerequisites,
@@ -365,60 +364,65 @@ export default function Toolbar() {
                     <div>
                         <div className="settings-row">
                             <label name="name_label">
-                                Naam: <input
-                                    name="name_input"
-                                    className="settings-personage"
-                                    type="text"
-                                    maxLength="25"
-                                    value={charName}
-                                    onChange={handleTextChange}
-                                />
+                                {t("toolbar.labels.name")}
                             </label>
+                            <input
+                                name="name_input"
+                                className="settings-personage"
+                                type="text"
+                                maxLength="25"
+                                value={charName}
+                                onChange={handleTextChange}
+                            />
+
                         </div>
                         <div className="settings-row">
                             <label name="new_character_label">
-                                Nieuw personage: <input
-                                    name="new_character_checkbox"
-                                    className="settings-checkbox"
-                                    type="checkbox"
-                                    checked={isChecked}
-                                    onChange={handleCheckboxChange}
-                                />
+                                {t("toolbar.labels.new_character")}
                             </label>
+                            <input
+                                name="new_character_checkbox"
+                                className="settings-checkbox"
+                                type="checkbox"
+                                checked={isChecked}
+                                onChange={handleCheckboxChange}
+                            />
                         </div>
                     </div>
                     <div className="settings-inputs">
                         <div className="settings-row">
-                            <label name="max_xp_label">
-                                Max XP:<input
-                                    name="max_xp_input"
-                                    type="number"
-                                    value={MAX_XP}
-                                    min={0}
-                                    max={100}
-                                    onBlur={handleInputValidate}
-                                    onChange={handleInputUpdate}
-                                    disabled={isChecked}
-                                    step={0.25}
-                                />
+                            <label className="xp_label">
+                                {t("toolbar.labels.max_xp")}
                             </label>
+                            <input
+                                name="max_xp_input"
+                                type="number"
+                                value={MAX_XP}
+                                min={0}
+                                max={100}
+                                onBlur={handleInputValidate}
+                                onChange={handleInputUpdate}
+                                disabled={isChecked}
+                                step={0.25}
+                            />
                         </div>
                         <div className="settings-row">
-                            <label name="xp_over_label">
-                                XP over: <input
-                                    className={isChecked && totalXP < 12 ? "xp_over_input" : null}
-                                    id="xp_over_input"
-                                    type="number"
-                                    value={MAX_XP - totalXP}
-                                    min={1}
-                                    max={100}
-                                    disabled={true}
-                                />
+                            <label className="xp_label">
+                                {t("toolbar.labels.xp_left")}
                             </label>
+                            <input
+                                className={isChecked && totalXP < 12 ? "xp_over_input" : null}
+                                id="xp_over_input"
+                                type="number"
+                                value={MAX_XP - totalXP}
+                                min={1}
+                                max={100}
+                                disabled={true}
+                            />
                             {(isChecked && totalXP < 12) ? (
                                 <CustomTooltip
-                                    header="Nieuw personage"
-                                    message="Nieuwe personages mogen niet meer dan 3 XP punten bewaren. \nXP boven de 3 punten die niet besteed wordt, zal verloren raken. \n\nMocht je als nieuwe speler (toch) niet tevreden zijn met je keuze, dan is dat geen probleem: Tijdens en na je eerste event mag je via de infobalie in overleg nog vaardigheden verwisselen."
+                                    header={t("tooltips.new_character_header")}
+                                    message={t("tooltips.new_character_message")}
                                     image={imageSrc[1]}
                                 />
                             ) : null}
@@ -427,28 +431,28 @@ export default function Toolbar() {
                 </div>
                 <div className="settings-btns">
                     <div className="settings-btns-row">
-                        <button className="btn-toolbar" title="Toon templates" onClick={showLoadPresetModal}>
+                        <button className="btn-toolbar" title={t("toolbar.buttons.show_templates")} onClick={showLoadPresetModal}>
                             <img className="btn-image" src="./images/button_presets.png" alt="Preset Button" />
                         </button>
-                        <button className="btn-toolbar" title="Personage opslaan" onClick={showConfirmUpdate}>
+                        <button className="btn-toolbar" title={t("toolbar.buttons.save_character")} onClick={showConfirmUpdate}>
                             <img className="btn-image" src="./images/button_save.png" alt="Save Button" />
                         </button>
-                        <button className="btn-toolbar" title="Personage laden" onClick={showLoadCharacterModal}>
+                        <button className="btn-toolbar" title={t("toolbar.buttons.load_character")} onClick={showLoadCharacterModal}>
                             <img className="btn-image" src="./images/button_load.png" alt="Load Button" />
                         </button>
-                        <button className="btn-toolbar" title="Personage verwijderen" onClick={showConfirmRemoval}>
+                        <button className="btn-toolbar" title={t("toolbar.buttons.remove_character")} onClick={showConfirmRemoval}>
                             <img className="btn-image" src="./images/button_trash.png" alt="Trash Button" />
                         </button>
                     </div>
                     <div className="btns-row">
-                        <button className="btn-toolbar" title="Exporteer naar PDF" onClick={exportToPDF}>
+                        <button className="btn-toolbar" title={t("toolbar.buttons.export_pdf")} onClick={exportToPDF}>
                             <img className="btn-image" src="./images/button_export-pdf.png" alt="Export PDF Button" />
                         </button>
-                        <button className="btn-toolbar" title="Personage exporteren" onClick={exportToFile}>
+                        <button className="btn-toolbar" title={t("toolbar.buttons.export_file")} onClick={exportToFile}>
                             <img className="btn-image" src="./images/button_download.png" alt="Export Button" />
 
                         </button>
-                        <button className="btn-toolbar" title="Personage importeren" onClick={showUploadModal}>
+                        <button className="btn-toolbar" title={t("toolbar.buttons.import_file")} onClick={showUploadModal}>
                             <img className="btn-image" src="./images/button_upload.png" alt="Import Button" />
                         </button>
                         <button className="btn-toolbar" title={t("toolbar.buttons.select_language")} onClick={handleChangeLanguage}>
@@ -470,7 +474,7 @@ export default function Toolbar() {
                     value={selectedBasicSkill}
                     onChange={(selectedBasicOption) => setSelectedBasicSkill(selectedBasicOption)}
                     onKeyDown={handleBasicSkillSelectKeyPress}
-                    placeholder="Selecteer een Basis vaardigheid"
+                    placeholder={t("toolbar.inputs.base_skill")}
                     isClearable
                     isSearchable
                 />
@@ -487,10 +491,10 @@ export default function Toolbar() {
 
                 <button
                     ref={btnAddBasicRef}
-                    title="Basis vaardigheid toevoegen"
+                    title={t("toolbar.buttons.add_skill_title_base")}
                     className="btn-primary"
                     onClick={handleBasicSkillSelection}>
-                    Toevoegen
+                    {t("toolbar.buttons.add_skill")}
                 </button>
             </div>
 
@@ -505,7 +509,7 @@ export default function Toolbar() {
                             value={selectedExtraSkill}
                             onChange={(selectedExtraOption) => setSelectedExtraSkill(selectedExtraOption)}
                             onKeyDown={handleExtraSkillSelectKeyPress}
-                            placeholder="Selecteer een Extra vaardigheid"
+                            placeholder={t("toolbar.inputs.extra_skill")}
                             isClearable
                             isSearchable
                         />
@@ -523,10 +527,10 @@ export default function Toolbar() {
 
                         <button
                             ref={btnAddExtraRef}
-                            title="Extra vaardigheid toevoegen"
+                            title={t("toolbar.buttons.add_skill_title_extra")}
                             className="btn-primary"
                             onClick={handleExtraSkillSelection}>
-                            Toevoegen
+                            {t("toolbar.buttons.add_skill")}
                         </button>
                     </div>
                 )}

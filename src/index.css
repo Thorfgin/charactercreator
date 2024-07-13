@@ -191,6 +191,10 @@
     padding: 2px;
 }
 
+.xp_label{
+    min-width: 47px;
+    width: auto;
+}
 .xp_over_input {
     color: red;
 }
@@ -453,6 +457,7 @@
 }
 
 .btn-primary {
+    min-width: 90px;
     width: auto;
     height: auto;
 }

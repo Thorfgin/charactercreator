@@ -1,20 +1,32 @@
 {
   "welcome_message": "Welcome to our application!",
   "toolbar": {
-    "buttons": {
-      "select_language": "Select Language"
+    "labels": {
+      "name": "Name:",
+      "new_character": "New character:",
+      "max_xp": "Max XP:",
+      "xp_left": "XP left:"
     },
-    "home": "Home",
-    "about": "About",
-    "contact": "Contact"
+    "inputs": {
+      "base_skill": "Select a base skill",
+      "extra_skill": "Select an extra skill"
+    },
+    "buttons": {
+      "add_skill": "Add",
+      "add_skill_title_base": "Add a base skill",
+      "add_skill_title_extra": "Add an extra skill",
+      "show_templates": "Show templates",
+      "save_character": "Save character",
+      "load_character": "Load character",
+      "remove_character": "Remove character",
+      "export_pdf": "Export to PDF",
+      "export_file": "Export character",
+      "import_file": "Import character",
+      "select_language": "Select Language"
+    }
   },
-  "footer": {
-    "terms_of_service": "Terms of Service",
-    "privacy_policy": "Privacy Policy"
-  },
-  "buttons": {
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete"
+  "tooltips": {
+    "new_character_header": "New character",
+    "new_character_message": "New characters may hold up to 3 XP points. \nAny XP exceeding 3 points that isn't used will be lost. \n\nIf you're a new player and not satisfied with your initial choice, don't worry: During and after your first event, you can still switch skills by consulting the information desk."
   }
 }
