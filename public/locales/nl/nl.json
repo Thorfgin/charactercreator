@@ -1,5 +1,12 @@
 {
   "welcome_message": "Welkom bij onze applicatie!",
+  "generic": {
+    "skill": "Vaardigheid:",
+    "spell_technique": "Spreuk/Techniek:",
+    "recipy": "Recept:",
+    "info_not_found": "Informatie kon niet gevonden worden.",
+    "special_mana": "Vaardigheid afhankelijk: Elementair of Spiritueel"
+  },
   "toolbar": {
     "labels": {
       "name": "Naam:",
@@ -13,6 +20,8 @@
     },
     "buttons": {
       "add_skill": "Toevoegen",
+      "subtract_skill": "Verminderen",
+      "remove_skill": "Verwijder",
       "add_skill_title_base": "Basis vaardigheid toevoegen",
       "add_skill_title_extra": "Extra vaardigheid toevoegen",
       "show_templates": "Toon templates",
@@ -23,10 +32,63 @@
       "export_file": "Personage exporteren",
       "import_file": "Personage importeren",
       "select_language": "Selecteer taal"
+    },
+    "tooltips": {
+      "new_character_header": "Nieuw personage",
+      "new_character_message": "Nieuwe personages mogen niet meer dan 3 XP punten bewaren. \nXP boven de 3 punten die niet besteed wordt, zal verloren raken. \n\nMocht je als nieuwe speler (toch) niet tevreden zijn met je keuze, dan is dat geen probleem: Tijdens en na je eerste event mag je via de infobalie in overleg nog vaardigheden verwisselen."
     }
   },
-  "tooltips": {
-    "new_character_header": "Nieuw personage",
-    "new_character_message": "Nieuwe personages mogen niet meer dan 3 XP punten bewaren. \nXP boven de 3 punten die niet besteed wordt, zal verloren raken. \n\nMocht je als nieuwe speler (toch) niet tevreden zijn met je keuze, dan is dat geen probleem: Tijdens en na je eerste event mag je via de infobalie in overleg nog vaardigheden verwisselen."
+  "skill_table": {
+    "header": {
+      "id": "ID",
+      "skill": "Vaardigheid",
+      "xp_cost": "XP kosten",
+      "loresheet": "Loresheet",
+      "amount": "Aantal keer",
+      "info": "Info",
+      "actions": "Acties"
+    },
+    "bottom_row": {
+      "skill_amount": "Aantal vaardigheden:",
+      "skill_totalxp": "Totaal:",
+      "button_erase": "Wissen",
+      "button_erase_title": "Alle vaardigheden verwijderen"
+    },
+    "modals": {
+      "not_allowed_to_add": "\nToevoegen is niet toegestaan.\n",
+      "maximum_skill_amount_reached": "Maximum aantal aankopen bereikt.",
+      "maximum_xp_reached": "Maximum XP bereikt."
+    }
+  },
+  "info_tooltip": {
+    "pdf_reference": "Open Vaardigheden.pdf - pagina"
+  },
+  "skill_tooltip": {
+    "extra_skill_req": "tenminste 1 Extra vaardigheid",
+    "any_of_these_req": "Een van de volgende:",
+    "category_req": "XP in de volgende categoriën:",
+    "labels": {
+      "xp_cost": "XP kosten",
+      "requirements": "Vereisten:",
+      "description": "Omschrijving:"
+    }
+  },
+  "spell_tooltip": {
+    "pdf_reference": "Open Spreuken_en_Technieken.pdf - pagina",
+    "labels": {
+      "energy_cost": "Energie kosten:",
+      "energy_type": "Energie type:",
+      "incantation": "Incantatie:",
+      "description": "Omschrijving:",
+      "effect": "Effect:",
+      "duration": "Duur:"
+    }
+  },
+  "recipe_tooltip": {
+    "labels": {
+      "inspiration_cost": "Inspiratie kosten:",
+      "description": "Omschrijving:",
+      "supplies": "Benodigdheden:"
+    }
   }
 }

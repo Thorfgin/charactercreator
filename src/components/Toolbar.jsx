@@ -421,8 +421,8 @@ export default function Toolbar() {
                             />
                             {(isChecked && totalXP < 12) ? (
                                 <CustomTooltip
-                                    header={t("tooltips.new_character_header")}
-                                    message={t("tooltips.new_character_message")}
+                                    header={t("toolbar.tooltips.new_character_header")}
+                                    message={t("toolbar.tooltips.new_character_message")}
                                     image={imageSrc[1]}
                                 />
                             ) : null}

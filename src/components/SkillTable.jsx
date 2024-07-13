@@ -2,6 +2,7 @@ import { useEffect, useCallback } from 'react';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import { useTable, useSortBy } from 'react-table';
 import { v4 as uuidv4 } from 'uuid';
+import { useTranslation } from 'react-i18next';
 
 // shared
 import { useSharedState } from '../SharedStateContext.jsx';
@@ -33,12 +34,12 @@ import LoreSheet from './LoreSheet.jsx';
 
 // SkillTabel Kolommen
 const columns = [
-    { Header: "ID", accessor: "id", id: "table-id", className: "col-id" },
-    { Header: "Vaardigheid", accessor: "skill", id: "table-skill", className: "col-vaardigheid" },
-    { Header: "XP Kosten", accessor: "xp", id: "table-xp", className: "col-xp" },
-    { Header: "Loresheet", accessor: "loresheet", id: "table-loresheet", className: "col-loresheet", Cell: (table) => { return <LoreSheet pdf={table?.cell?.value?.pdf}></LoreSheet> } },
-    { Header: "Aantal keer", accessor: "count", id: "table-count", className: "col-aantalkeer" },
-    { Header: "Info", id: "table-info", className: "col-info", Cell: (table) => { return <InfoTooltip row={table.cell.row}></InfoTooltip> } }
+    { Header: "skill_table.header.id", accessor: "id", id: "table-id", className: "col-id" },
+    { Header: "skill_table.header.skill", accessor: "skill", id: "table-skill", className: "col-vaardigheid" },
+    { Header: "skill_table.header.xp_cost", accessor: "xp", id: "table-xp", className: "col-xp" },
+    { Header: "skill_table.header.loresheet", accessor: "loresheet", id: "table-loresheet", className: "col-loresheet", Cell: (table) => { return <LoreSheet pdf={table?.cell?.value?.pdf}></LoreSheet> } },
+    { Header: "skill_table.header.amount", accessor: "count", id: "table-count", className: "col-aantalkeer" },
+    { Header: "skill_table.header.info", id: "table-info", className: "col-info", Cell: (table) => { return <InfoTooltip row={table.cell.row}></InfoTooltip> } }
 ];
 
 export default function SkillTable() {
@@ -60,6 +61,9 @@ export default function SkillTable() {
         setGridRecepten
     } = useSharedState();
 
+    // Multi-Language support klaarzetten
+    const { t } = useTranslation();
+
     /// --- TABLE CONTENT --- ///
     function getTableDataSums() {
         if (tableData.length > 0) {
@@ -67,17 +71,17 @@ export default function SkillTable() {
             return (
                 <tr key={uuidv4()}>
                     <td />
-                    <td>Aantal vaardigheden: {tableData.length} </td>
-                    <td>Totaal: {totalXP}</td>
+                    <td>{t("skill_table.bottom_row.skill_amount")} {tableData.length} </td>
+                    <td>{t("skill_table.bottom_row.skill_totalxp")} {totalXP}</td>
                     <td />
                     <td />
                     <td />
                     <td>
                         <button
-                            title="Alle vaardigheden verwijderen"
+                            title={t("skill_table.bottom_row.button_erase_title")}
                             className="btn-secondary"
                             onClick={clearCharacterBuild}>
-                            Wissen
+                            {t("skill_table.bottom_row.button_erase")}
                         </button>
                     </td>
                 </tr>
@@ -127,12 +131,12 @@ export default function SkillTable() {
             }
             else {
                 // Inbouwen extra zekerheid dat items niet twee keer in het grid komen.
-                setModalMsg("Maximum aantal aankopen bereikt. \nToevoegen is niet toegestaan.\n");
+                setModalMsg(t("skill_table.modals.maximum_skill_amount_reached") + t("skill_table.modals.not_allowed_to_add"));
                 setShowModal(true);
             }
         }
         else {
-            setModalMsg("Maximum XP (" + MAX_XP + ") bereikt. \nToevoegen is niet toegestaan.\n");
+            setModalMsg(t("skill_table.modals.maximum_xp_reached") + "(" + MAX_XP + ")" + t("skill_table.modals.not_allowed_to_add"));
             setShowModal(true);
         }
     }
@@ -167,21 +171,21 @@ export default function SkillTable() {
                     <div className="acties-overige">
                         <img
                             className="btn-image"
-                            title="Toevoegen"
+                            title={t("toolbar.buttons.add_skill")}
                             onClick={() => handleAdd(currentItem)}
                             src="./images/button_add.png"
                             alt="Add">
                         </img>
                         <img
                             className="btn-image"
-                            title="Verminderen"
+                            title={t("toolbar.buttons.subtract_skill")}
                             onClick={() => handleSubtract(currentItem)}
                             src="./images/button_subtract.png"
                             alt="Subtract">
                         </img>
                         <img
                             className="btn-image"
-                            title={currentItem.skill + " verwijderen"}
+                            title={t("toolbar.buttons.remove_skill") + " " + currentItem.skill }
                             onClick={() => handleDelete(currentItem)}
                             src="./images/button_remove.png"
                             alt="Remove">
@@ -196,7 +200,7 @@ export default function SkillTable() {
                     <div className="acties-overige">
                         <img
                             className="btn-image"
-                            title={currentItem.skill + " verwijderen"}
+                            title={t("toolbar.buttons.remove_skill") + " " + currentItem.skill}
                             onClick={() => handleDelete(currentItem)}
                             src="./images/button_remove.png"
                             alt="Remove">
@@ -304,12 +308,12 @@ export default function SkillTable() {
                                             {...headerProps}
                                             className={column.className}
                                         >
-                                            {column.render('Header')}
+                                            {t(column.render('Header'))}
                                             <span>{determineSortinSymbol(column)}</span>
                                         </th>
                                     );
                                 })}
-                                <th key={uuidv4()} className="col-acties">Acties</th>
+                                <th key={uuidv4()} className="col-acties">{t("skill_table.header.actions")}</th>
                             </tr>
                         );
                     })}

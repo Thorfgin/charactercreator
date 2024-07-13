@@ -1,5 +1,12 @@
 {
   "welcome_message": "Welcome to our application!",
+  "generic": {
+    "skill": "Skill:",
+    "spell_technique": "Spell/Technique:",
+    "recipy": "Recepy:",
+    "info_not_found": "Information could not be found.",
+    "special_mana": "Skill dependent: Elemental or Spiritual"
+  },
   "toolbar": {
     "labels": {
       "name": "Name:",
@@ -13,6 +20,8 @@
     },
     "buttons": {
       "add_skill": "Add",
+      "subtract_skill": "Subtract",
+      "remove_skill": "Remove",
       "add_skill_title_base": "Add a base skill",
       "add_skill_title_extra": "Add an extra skill",
       "show_templates": "Show templates",
@@ -23,10 +32,63 @@
       "export_file": "Export character",
       "import_file": "Import character",
       "select_language": "Select Language"
+    },
+    "tooltips": {
+      "new_character_header": "New character",
+      "new_character_message": "New characters may hold up to 3 XP points. \nAny XP exceeding 3 points that isn't used will be lost. \n\nIf you're a new player and not satisfied with your initial choice, don't worry: During and after your first event, you can still switch skills by consulting the information desk."
     }
   },
-  "tooltips": {
-    "new_character_header": "New character",
-    "new_character_message": "New characters may hold up to 3 XP points. \nAny XP exceeding 3 points that isn't used will be lost. \n\nIf you're a new player and not satisfied with your initial choice, don't worry: During and after your first event, you can still switch skills by consulting the information desk."
+  "skill_table": {
+    "header": {
+      "id": "ID",
+      "skill": "Skill",
+      "xp_cost": "XP cost",
+      "loresheet": "Loresheet",
+      "amount": "Count",
+      "info": "Info",
+      "actions": "Actions"
+    },
+    "bottom_row": {
+      "skill_amount": "Amount of Skills:",
+      "skill_totalxp": "Total:",
+      "button_erase": "Clear",
+      "button_erase_title": "Clear all skills"
+    },
+    "modals": {
+      "not_allowed_to_add": "\nAdding is not allowed.\n",
+      "maximum_skill_amount_reached": "Maximum amount of purchases reached.",
+      "maximum_xp_reached": "Maximum XP reached."
+    }
+  },
+  "info_tooltip": {
+    "pdf_reference": "Open Vaardigheden.pdf - page"
+  },
+  "skill_tooltip": {
+    "extra_skill_req": "At least one Extra skill",
+    "any_of_these_req": "One of these:",
+    "category_req": "xp in one of these categories:",
+    "labels": {
+      "xp_cost": "XP cost",
+      "requirements": "Requirements:",
+      "description": "Description:"
+    }
+  },
+  "spell_tooltip": {
+    "pdf_reference": "Open Spreuken_en_Technieken.pdf - page",
+    "labels": {
+      "energy_cost": "Energy cost:",
+      "energy_type": "Energy type:",
+      "incantation": "Incantation:",
+      "description": "Description:",
+      "effect": "Effect:",
+      "duration": "Duration:"
+    }
+  },
+  "recipe_tooltip": {
+    "labels": {
+      "inspiration_cost": "Inspiration cost:",
+      "description": "Description:",
+      "supplies": "Supplies:"
+    }
   }
 }

@@ -280,6 +280,12 @@
     min-width: 250px;
 }
 
+.col-xp,
+.col-loresheet,
+.col-aantalkeer {
+    min-width: 65px;
+}
+
 .col-info {
     min-width: 40px;
 }
@@ -463,6 +469,7 @@
 }
 
 .btn-secondary {
+    min-width: 70px;
     width: 100%;
     height: 24px;
 }

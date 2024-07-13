@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
+import { useTranslation } from 'react-i18next';
+
 
 // shared
 import {
@@ -25,16 +27,18 @@ const getBlock = (text, className) => {
     return description;
 }
 
-// Map items uit een block
-const getMapping = (tooltipData) => {
+// Map items uit een block  - translates all mapped items
+function useMapping(tooltipData) {
+    const { t } = useTranslation();
+
     return tooltipData.map((item) => {
         const uniqueKey = uuidv4();
-        const label = item.label;
+        const label = t(item.label);
         const value = item.value;
 
         return (
             <tr key={uniqueKey}>
-                {label ? <td className="tooltip-property">{label + ":"}</td> : null}
+                {label ? <td className="tooltip-property">{label}</td> : null}
                 <td className="tooltip-value">{value}</td>
             </tr>
         );
@@ -45,15 +49,17 @@ InfoTooltip.propTypes = { row: PropTypes.any.isRequired };
 
 // Plaats Info in de kolom
 export function InfoTooltip({ row }) {
-    let currentItem = getSkillById(row.original.id);
+    // Multi-Language support klaarzetten
+    const { t } = useTranslation();
 
+    let currentItem = getSkillById(row.original.id);
     return (
         <div className="info">
             <div className="acties-info">
                 <SkillTooltip id={currentItem.id} />
                 <img
                     className="btn-image"
-                    title={"Open Vaardigheden.pdf - pagina " + currentItem.page}
+                    title={t("info_tooltip.pdf_reference") + " " + currentItem.page}
                     onClick={() => openPdfPage('Vaardigheden.pdf', currentItem.page)}
                     src="./images/img-pdf.png"
                     alt="PDF">
@@ -69,6 +75,8 @@ SkillTooltip.propTypes = {
 };
 
 export function SkillTooltip({ id, image = './images/img-info.png' }) {
+    // Multi-Language support klaarzetten
+    const { t } = useTranslation();
 
     const sourceSkill = getSkillById(id);
     let fullRequirementsBlock = "";
@@ -80,28 +88,28 @@ export function SkillTooltip({ id, image = './images/img-info.png' }) {
     if (reqSkills.length > 0) { fullRequirementsBlock += `${formatList(reqSkills)} \\n`; }
 
     // Exception - "Leermeester Expertise"
-    if (sourceSkill.id === teacherSkill) { fullRequirementsBlock += "1 Extra vaardigheid"; }
+    if (sourceSkill.id === teacherSkill) { fullRequirementsBlock += t("skill_tooltip.extra_skill_req"); }
 
     // Check any_list
     const reqAny = getSkillsByIds(sourceSkill.Requirements.any_list);
-    if (reqAny.length > 0) { fullRequirementsBlock += `Een van de volgende: \\n${formatList(reqAny)} \\n`; }
+    if (reqAny.length > 0) { fullRequirementsBlock += `${t("skill_tooltip.any_of_these_req")} \\n${formatList(reqAny)} \\n`; }
 
     // Check category
     const reqCategory = sourceSkill.Requirements.Category;
     if (reqCategory && reqCategory.name.length > 0) {
-        fullRequirementsBlock += `${reqCategory.value} xp in de volgende categorie(n): \\n${formatList(reqCategory.name)}`;
+        fullRequirementsBlock += `${reqCategory.value} ${t("skill_tooltip.category_req")} \\n${formatList(reqCategory.name)}`;
     }
 
     const tooltipData = [
-        { label: 'XP kosten', value: sourceSkill.xp },
-        { label: 'Vereisten', value: getBlock(fullRequirementsBlock, "requirements-block") },
-        { label: 'Omschrijving', value: getBlock(sourceSkill.description, "description-block") },
+        { label: 'skill_tooltip.labels.xp_cost', value: sourceSkill.xp },
+        { label: 'skill_tooltip.labels.requirements', value: getBlock(fullRequirementsBlock, "requirements-block") },
+        { label: 'skill_tooltip.labels.description', value: getBlock(sourceSkill.description, "description-block") },
     ];
 
-    const tooltipItems = getMapping(tooltipData);
+    const tooltipItems = useMapping(tooltipData);
 
     return GenericTooltip({
-        header: `Vaardigheid: ${sourceSkill?.skill || null}`,
+        header: `${t("generic.skill")} ${sourceSkill?.skill || null}`,
         message: tooltipItems || null,
         image: image
     });
@@ -114,34 +122,36 @@ SpellTooltip.propTypes = {
 };
 
 export function SpellTooltip({ skillId, spellId, image = './images/img-info.png' }) {
+    // Multi-Language support klaarzetten
+    const { t } = useTranslation();
 
     const sourceSkill = getSkillById(skillId);
     const sourceSpell = getSpellBySkill(skillId, spellId);
     const description = getBlock(sourceSpell?.description, "description-block");
 
     const tooltipData = [
-        { label: 'Energie kosten', value: sourceSpell?.mana_cost || null },
-        { label: 'Energie type', value: (sourceSpell?.mana_type != "Special" ? sourceSpell?.mana_type : "Skill afhankelijk: Elementair of Spiritueel") || null },
-        { label: 'Incantatie', value: sourceSpell?.incantation || null },
-        { label: 'Omschrijving', value: description || 'Spreuk/Techniek informatie kon niet gevonden worden.' },
-        { label: 'Effect', value: sourceSpell?.spell_effect || null },
-        { label: 'Duur', value: sourceSpell?.spell_duration || null },
+        { label: 'spell_tooltip.labels.energy_cost', value: sourceSpell?.mana_cost || null },
+        { label: 'spell_tooltip.labels.energy_type', value: (sourceSpell?.mana_type != "Special" ? sourceSpell?.mana_type : t("generic.special_mana")) || null },
+        { label: 'spell_tooltip.labels.incantation', value: sourceSpell?.incantation || null },
+        { label: 'spell_tooltip.labels.description', value: description || t("generic.info_not_found") },
+        { label: 'spell_tooltip.labels.effect', value: sourceSpell?.spell_effect || null },
+        { label: 'spell_tooltip.labels.duration', value: sourceSpell?.spell_duration || null },
     ];
 
-    const tooltipItems = getMapping(tooltipData);
+    const tooltipItems = useMapping(tooltipData);
 
     return (
         <div className="grid-spreuk-icons">
             <GenericTooltip
-                header={`Vaardigheid: ${sourceSkill.skill}`}
-                subheader={`Spreuk/Techniek: ${sourceSpell.spell}`}
+                header={`${t("generic.skill")} ${sourceSkill.skill}`}
+                subheader={`${t("generic.spell_technique")} ${sourceSpell.spell}`}
                 message={tooltipItems || ''}
                 image={image}
             />
 
             <img
                 className="btn-image"
-                title={"Open Spreuken_en_Technieken.pdf - pagina " + sourceSpell.page}
+                title={t("spell_tooltip.pdf_reference") + " " + sourceSpell.page}
                 onClick={() => openPdfPage('Spreuken_en_Technieken.pdf', sourceSpell.page)}
                 src="./images/img-pdf.png"
                 alt="PDF">
@@ -157,23 +167,26 @@ RecipeTooltip.propTypes = {
 };
 
 export function RecipeTooltip({ skillId, recipyId, image = './images/img-info.png' }) {
+    // Multi-Language support klaarzetten
+    const { t } = useTranslation();
+
     const sourceSkill = getSkillById(skillId);
     const sourceRecipy = getRecipyBySkill(skillId, recipyId);
     const description = getBlock(sourceRecipy?.effect, "description-block");
 
     const tooltipData = [
-        { label: 'Omschrijving', value: description || 'Recept informatie kon niet gevonden worden.' },
-        { label: 'Inspiratie kosten', value: sourceRecipy?.inspiration || null },
-        { label: 'Benodigdheden', value: sourceRecipy?.components || null },
+        { label: 'recipe_tooltip.labels.description', value: description || t("generic.info_not_found") },
+        { label: 'recipe_tooltip.labels.inspiration_cost', value: sourceRecipy?.inspiration || null },
+        { label: 'recipe_tooltip.labels.supplies', value: sourceRecipy?.components || null },
     ];
 
-    const tooltipItems = getMapping(tooltipData);
+    const tooltipItems = useMapping(tooltipData);
 
     return (
         <div className="grid-spreuk-icons">
             <GenericTooltip
-                header={`Vaardigheid: ${sourceSkill.skill}`}
-                subheader={`Recept: ${sourceRecipy.recipy}`}
+                header={`${t("generic.skill")} ${sourceSkill.skill}`}
+                subheader={`${t("generic.recipy")} ${sourceRecipy.recipy}`}
                 message={tooltipItems || ''}
                 image={image}
             />
@@ -189,9 +202,12 @@ CustomTooltip.propTypes = {
 };
 
 export function CustomTooltip({ header, subheader = undefined, message, image = './images/img-info.png' }) {
+    // Multi-Language support klaarzetten
+    const { t } = useTranslation();
+
     const description = getBlock(message, "description-block");
-    const tooltipData = [{ label: '', value: description || 'Informatie kon niet gevonden worden.' }];
-    const tooltipItems = getMapping(tooltipData);
+    const tooltipData = [{ label: '', value: description || t("generic.info_not_found") }];
+    const tooltipItems = useMapping(tooltipData);
 
     return (
         <div className="grid-spreuk-icons">
