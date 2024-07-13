@@ -29,6 +29,7 @@ const getBlock = (text, className) => {
 
 // Map items uit een block  - translates all mapped items
 function useMapping(tooltipData) {
+    // Multi-Language support klaarzetten
     const { t } = useTranslation();
 
     return tooltipData.map((item) => {

@@ -5,7 +5,11 @@
     "spell_technique": "Spell/Technique:",
     "recipy": "Recepy:",
     "info_not_found": "Information could not be found.",
-    "special_mana": "Skill dependent: Elemental or Spiritual"
+    "special_mana": "Skill dependent: Elemental or Spiritual",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "close": "Close",
+    "upload": "Upload"
   },
   "toolbar": {
     "labels": {
@@ -89,6 +93,15 @@
       "inspiration_cost": "Inspiration cost:",
       "description": "Description:",
       "supplies": "Supplies:"
+    }
+  },
+  "fileupload_modal": {
+    "labels": {
+      "upload_file": "Upload a File"
+    },
+    "modals": {
+      "cant_load_version": "This version of the character could not be loaded.",
+      "unknown_error": "Somethings went wrong while processing the file."
     }
   }
 }

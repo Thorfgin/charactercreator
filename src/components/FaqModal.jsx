@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
+import { useTranslation } from 'react-i18next';
 
 // Components
 import Collapsible from './Collapsible.jsx';
@@ -12,6 +13,9 @@ const sourceFAQ = getSourceFAQ();
 // Toont een venster met daar in de meeste gestelde vragen.
 // Vragen zijn open/dicht te klappen
 export default function FAQModal() {
+    // Multi-Language support klaarzetten
+    const { t } = useTranslation();
+
     const { setShowFAQModal } = useSharedState();
     const closeModal = () => { setShowFAQModal(false); };
 
@@ -30,7 +34,7 @@ export default function FAQModal() {
                     ))}
                 </div>
                 <div><br /></div>
-                <button className="btn-primary" onClick={closeModal}>Sluiten</button>
+                <button className="btn-primary" onClick={closeModal}>{t("generic.close")}</button>
             </div>
             <span className="close" onClick={closeModal}>&times;</span>
         </div>

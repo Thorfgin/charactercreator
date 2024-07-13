@@ -16,6 +16,10 @@ i18n
         backend: {
             // path where resources get loaded from
             loadPath: '/locales/{{lng}}/{{lng}}.json',
+        },
+        saveMissing: true,
+        missingKeyHandler: function (lng, ns, key, fallbackValue) {
+            console.error(`Missing translation key: ${key} for language: ${lng} with fallbackValue: ${fallbackValue}`);
         }
     });
 

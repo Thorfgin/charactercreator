@@ -5,7 +5,11 @@
     "spell_technique": "Spreuk/Techniek:",
     "recipy": "Recept:",
     "info_not_found": "Informatie kon niet gevonden worden.",
-    "special_mana": "Vaardigheid afhankelijk: Elementair of Spiritueel"
+    "special_mana": "Vaardigheid afhankelijk: Elementair of Spiritueel",
+    "confirm": "Bevestig",
+    "cancel": "Annuleren",
+    "close": "Sluiten",
+    "upload": "Upload"
   },
   "toolbar": {
     "labels": {
@@ -89,6 +93,15 @@
       "inspiration_cost": "Inspiratie kosten:",
       "description": "Omschrijving:",
       "supplies": "Benodigdheden:"
+    }
+  },
+  "fileupload_modal": {
+    "labels": {
+      "upload_file": "Upload een Bestand"
+    },
+    "modals": {
+      "cant_load_version": "Deze versie van dit personage kan helaas niet ingeladen worden.",
+      "unknown_error": "Er ging iets mis bij het inlezen van het bestand."
     }
   }
 }
