@@ -1,0 +1,20 @@
+{
+  "welcome_message": "Welcome to our application!",
+  "toolbar": {
+    "buttons": {
+      "select_language": "Select Language"
+    },
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "footer": {
+    "terms_of_service": "Terms of Service",
+    "privacy_policy": "Privacy Policy"
+  },
+  "buttons": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete"
+  }
+}

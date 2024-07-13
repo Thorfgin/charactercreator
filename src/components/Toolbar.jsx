@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Select from 'react-select';
+import { useTranslation } from 'react-i18next';
 
 // Components
 import {
@@ -18,7 +19,7 @@ import {
     saveCharacterToStorage,
     removeCharacterFromStorage,
     exportCharacterToFile,
-    saveSettingsToStorage
+    loadI18nFromStorage
 } from '../SharedStorage.js';
 import {
     meetsAllPrerequisites,
@@ -66,6 +67,9 @@ export default function Toolbar() {
         gridRecepten
 
     } = useSharedState();
+
+    // Multi-Language support klaarzetten
+    const { i18n, t } = useTranslation();
 
     // SELECT & INFO
     const imageSrc = ["./images/img-info.png", "./images/img-info_red.png"]
@@ -187,7 +191,7 @@ export default function Toolbar() {
             return;
         }
 
-        const selectedExtraRecord = sourceExtraVaardigheden.find((record) => record.id === selectedExtraSkill.id );
+        const selectedExtraRecord = sourceExtraVaardigheden.find((record) => record.id === selectedExtraSkill.id);
         if (selectedExtraRecord && handleAddToTable(selectedExtraRecord)) { setSelectedExtraSkill(''); }
     }
 
@@ -315,28 +319,29 @@ export default function Toolbar() {
 
     // Taal instellingne
     // Handel het wisselen van de taalinstellingen af, alvorens het icoontje te wijziging.
-    // Refrest het scherm via een useEffect op de ShareStateContext > [language, setlanguage];
+    // Refrest het scherm via een useEffect, op basis van de ShareStateContext > [language, setlanguage];
     function handleChangeLanguage() {
-        const lang = (language === "NL") ? "EN" : "NL";
-        saveSettingsToStorage({ "lang": lang });
+        const lang = (language === "nl") ? "en" : "nl";
         setLanguage(lang);
     }
 
+    // UI Taal aanpassen
+    const changeLanguage = () => { i18n.changeLanguage(language); }
+
+    // Trigger de changeLanguage en verander de BtnImage wanneer de taal is aangepast.
+    useEffect(() => { changeLanguage() }, [language, setLanguage]);
+    useEffect(() => { getLanguageImage() }, [language, setLanguage]);
+
     function getLanguageImage() {
         switch (language) {
-            case "NL":
+            case "nl":
                 return "./images/button_NL.png";
-            case "EN":
+            case "en":
                 return "./images/button_EN.png";
             default:
                 return "./images/button_NL.png";
-        }        
+        }
     }
-
-    // TODO: ADD USE-EFFECT ON THE TOGGLE OF THE LANGUAGE BUTTON
-    // LANGUAGE / SETLANGUAGE SHOULD BE AVAILABLE HERE
-    // useEffect(() => { onSelectSkill(true, selectedBasicSkill); }, [onSelectSkill, selectedBasicSkill]);
-
 
     // RETURN
     return (
@@ -360,8 +365,8 @@ export default function Toolbar() {
                     <div>
                         <div className="settings-row">
                             <label name="name_label">
-                                Naam:
-                                <input name="name_input"
+                                Naam: <input
+                                    name="name_input"
                                     className="settings-personage"
                                     type="text"
                                     maxLength="25"
@@ -372,8 +377,7 @@ export default function Toolbar() {
                         </div>
                         <div className="settings-row">
                             <label name="new_character_label">
-                                Nieuw personage:
-                                <input
+                                Nieuw personage: <input
                                     name="new_character_checkbox"
                                     className="settings-checkbox"
                                     type="checkbox"
@@ -386,8 +390,7 @@ export default function Toolbar() {
                     <div className="settings-inputs">
                         <div className="settings-row">
                             <label name="max_xp_label">
-                                Max XP:
-                                <input
+                                Max XP:<input
                                     name="max_xp_input"
                                     type="number"
                                     value={MAX_XP}
@@ -402,9 +405,8 @@ export default function Toolbar() {
                         </div>
                         <div className="settings-row">
                             <label name="xp_over_label">
-                                XP over:
-                                <input
-                                    className = { isChecked && totalXP < 12 ? "xp_over_input" : null}
+                                XP over: <input
+                                    className={isChecked && totalXP < 12 ? "xp_over_input" : null}
                                     id="xp_over_input"
                                     type="number"
                                     value={MAX_XP - totalXP}
@@ -449,7 +451,7 @@ export default function Toolbar() {
                         <button className="btn-toolbar" title="Personage importeren" onClick={showUploadModal}>
                             <img className="btn-image" src="./images/button_upload.png" alt="Import Button" />
                         </button>
-                        <button className="btn-toolbar" title="Selecteer Taal" onClick={handleChangeLanguage}>
+                        <button className="btn-toolbar" title={t("toolbar.buttons.select_language")} onClick={handleChangeLanguage}>
                             <img className="btn-image" src={getLanguageImage()} alt="Change Language" />
                         </button>
 
@@ -476,7 +478,7 @@ export default function Toolbar() {
                 {   // Conditionele tooltip
                     selectedBasicSkill &&
                     <div className="select-info">
-                            <SkillTooltip
+                        <SkillTooltip
                             id={selectedBasicSkill.id}
                             image={imageSrc[currentBasicImageIndex]}
                         />
@@ -515,7 +517,7 @@ export default function Toolbar() {
                                 <SkillTooltip
                                     id={selectedExtraSkill.id}
                                     image={imageSrc[currentExtraImageIndex]}
-                                    />
+                                />
                             </div>
                         }
 

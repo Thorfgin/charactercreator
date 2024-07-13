@@ -1,0 +1,20 @@
+{
+  "welcome_message": "Welkom bij onze applicatie!",
+  "toolbar": {
+    "buttons": {
+      "select_language": "Selecteer taal"
+    },
+    "home": "Home",
+    "about": "Over",
+    "contact": "Contact"
+  },
+  "footer": {
+    "terms_of_service": "Servicevoorwaarden",
+    "privacy_policy": "Privacybeleid"
+  },
+  "buttons": {
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "delete": "Verwijderen"
+  }
+}

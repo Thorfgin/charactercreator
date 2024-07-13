@@ -53,7 +53,7 @@ export function getAllLocalStorageKeys(givenKey) {
     const keys = Object.keys(localStorage)
         .filter(key =>
             key !== "CCdata" &&
-            key !== "settings" && 
+            key !== "i18nextLng" && 
             (!givenKey || key === givenKey));
     return keys;
 }
@@ -274,16 +274,6 @@ export function importCharacterFromFile(rawData) {
 
 // Haal de settings up uit de local storage. als language niet bestaat, maak hem aan met defaults.
 
-export function loadSettingsFromStorage() {
-    let settings = { "lang": "NL" };
-    const rawSettings = getLocalStorage("settings", false)
-    const jsonSettings = JSON.parse(rawSettings);
-    if (jsonSettings?.lang) { settings = jsonSettings }
-    else { setLocalStorage("settings", settings, false) }
-    return settings;
-}
-
-export function saveSettingsToStorage(settings) {
-    if (!settings) { settings = { "lang": "NL" }; }
-    setLocalStorage("settings", settings, false)
+export function loadI18nFromStorage() {
+    return getLocalStorage("i18nextLng", false) || "nl";
 }

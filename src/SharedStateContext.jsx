@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { defaultProperties } from './SharedObjects.js';
 import {
     loadCharacterFromStorage,
-    loadSettingsFromStorage
+    loadI18nFromStorage
 } from './SharedStorage.js';
 
 // json
@@ -13,7 +13,7 @@ import packageInfo from '../package.json';
 
 /// --- PREP LOCALSTORAGE DATA --- ///
 let rawData = null;
-let rawSettings = null;
+let i18nLang = null;
 
 if (typeof (Storage) !== "undefined") {
     Storage.prototype.setObject = function (key, value, encode) {
@@ -53,7 +53,7 @@ if (typeof (Storage) !== "undefined") {
     // Fetch data before the page is loaded
     rawData = loadCharacterFromStorage('CCdata');
     // Fetch & Set settings before page is loaded
-    rawSettings = loadSettingsFromStorage();
+    i18nLang = loadI18nFromStorage();
 }
 
 /// --- PREP INITIAL TABLE DATA --- ///
@@ -61,7 +61,7 @@ const getInitialData = () => { return rawData?.Skills ? rawData?.Skills : []; }
 const getInitialXP = () => { return rawData?.max_xp ? rawData.max_xp : 15; }
 const getInitialCheckState = () => { return rawData?.is_checked === true; }
 const getInitialName = () => { return rawData?.name ? rawData.name : ""; }
-const getInitialLanguage = () => { return rawSettings?.lang ? rawSettings.lang : "NL" }
+const getInitialLanguage = () => { return i18nLang ? i18nLang : "nl" }
 
 /// --- SHARED STATE --- ///
 let SharedStateContext = createContext();
