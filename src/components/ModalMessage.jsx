@@ -11,6 +11,7 @@ export default function ModalMessage() {
 
     // Ophalen uit SharedStateContext
     const {
+        modalHeader,
         modalMsg,
         setShowModal
     } = useSharedState();
@@ -26,6 +27,7 @@ export default function ModalMessage() {
     return (
         <div className="modal-overlay" onClick={closeModal}>
             <div className="modal" onClick={e => e.stopPropagation()}>
+                <h3>{modalHeader}</h3>
                 <div className="modal-container">
                     {msgBlocks.map((block) => (
                         <div key={uuidv4()} className="modal-block">

@@ -35,6 +35,7 @@ export default function App() {
         showUploadModal,
         showLoadCharacterModal,
         showLoadPresetModal,
+        setModalHeader,
         setModalMsg,
         gridEigenschappen,
         gridEnergiePerDag,
@@ -44,6 +45,7 @@ export default function App() {
 
     function showDisclaimer() {
         if (showModal !== true) {
+            setModalHeader(t("generic.disclaimer"))
             setModalMsg(t("disclaimer"));
             setShowModal(true);
         }

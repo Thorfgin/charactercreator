@@ -87,6 +87,7 @@ export function SharedStateProvider({ children }) {
     const [selectedBasicSkill, setSelectedBasicSkill] = useState("");
     const [selectedExtraSkill, setSelectedExtraSkill] = useState("");
 
+    const [modalHeader, setModalHeader] = useState("");
     const [modalMsg, setModalMsg] = useState("");
     const [showModal, setShowModal] = useState(false);
     const [showFAQModal, setShowFAQModal] = useState(false);
@@ -118,6 +119,7 @@ export function SharedStateProvider({ children }) {
 
         tableData, setTableData,
 
+        modalHeader, setModalHeader,
         modalMsg, setModalMsg,
         showModal, setShowModal,
         showFAQModal, setShowFAQModal,

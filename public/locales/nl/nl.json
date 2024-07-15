@@ -3,6 +3,8 @@
   "disclaimer": "De character creator geeft een indicatie van de mogelijkheden. Er kunnen altijd afwijkingen zitten tussen de teksten in de character creator en de VA regelset.\n\nCheck altijd de laatste versie van de regelset op:\n https://the-vortex.nl/het-spel/regels/",
   "generic": {
     "no_label": "",
+    "oops": "OEPS...",
+    "error": "Er ging iets fout...",
     "disclaimer": "Disclamer",
     "skill": "Vaardigheid:",
     "spell_technique": "Spreuk/Techniek:",
@@ -23,7 +25,7 @@
   "toolbar": {
     "labels": {
       "name": "Naam:",
-      "new_character": "Nieuw personage:",
+      "new_character": "Nieuw character:",
       "max_xp": "Max XP:",
       "xp_left": "XP over:"
     },
@@ -47,8 +49,24 @@
       "select_language": "Selecteer taal"
     },
     "tooltips": {
-      "new_character_header": "Nieuw personage",
-      "new_character_message": "Nieuwe personages mogen niet meer dan 3 XP punten bewaren. \nXP boven de 3 punten die niet besteed wordt, zal verloren raken. \n\nMocht je als nieuwe speler (toch) niet tevreden zijn met je keuze, dan is dat geen probleem: Tijdens en na je eerste event mag je via de infobalie in overleg nog vaardigheden verwisselen."
+      "new_character_header": "Nieuw character",
+      "new_character_message": "Nieuwe characters mogen niet meer dan 3 XP punten bewaren. \nXP boven de 3 punten die niet besteed wordt, zal verloren raken. \n\nMocht je als nieuwe speler (toch) niet tevreden zijn met je keuze, dan is dat geen probleem: Tijdens en na je eerste event mag je via de infobalie in overleg nog vaardigheden verwisselen."
+    },
+    "modals": {
+      "confirmation_header": "Bevestiging",
+      "save_character": "Character opgeslagen:",
+      "overwrite_character_header": "Character overschrijven?",
+      "overwrite_character_text": "Character bestaat al.\nWilt u dit character oveschrijven?",
+      "confirm_remove_header": "Bevestig verwijderen",
+      "confirm_remove_text": "Weet u zeker dat u dit character wilt verwijderen?",
+      "remove_character": "Character verwijderd:",
+      "character_not_found": "Character niet gevonden:",
+      "name_can_not_be_empty": "Vul eerst de naam van het character in.",
+      "cant_add": "Toevoegen is niet toegestaan.",
+      "max_xp_reached": "Maximum XP bereikt.",
+      "max_xp_exceeded": "Maximum XP wordt overschreden.",
+      "skill_cost": "Deze vaardigheid kost:"
+
     }
   },
   "skill_table": {
@@ -109,13 +127,13 @@
       "upload_file": "Upload een Bestand"
     },
     "modals": {
-      "cant_load_version": "Deze versie van dit personage kan helaas niet ingeladen worden.",
+      "cant_load_version": "Deze versie van dit character kan helaas niet ingeladen worden.",
       "unknown_error": "Er ging iets mis bij het inlezen van het bestand."
     }
   },
   "character_table": {
     "labels": {
-      "no_characters": "Geen personages gevonden"
+      "no_characters": "Geen characters gevonden"
     }
   },
   "loadcharacter_modal": {
@@ -123,14 +141,14 @@
       "load_character": "Laad een Character"
     },
     "modals": {
-      "cant_load_version": "Deze versie van dit personage kan helaas niet ingeladen worden.",
+      "cant_load_version": "Deze versie van dit character kan helaas niet ingeladen worden.",
       "unknown_error": "Er ging iets mis bij het inlezen van het bestand."
     }
   },
   "loadpreset_modal": {
     "labels": {
       "view_template": "Bekijk een template",
-      "description": "Deze templates dienen als voorbeeld voor hoe bepaalde \narche - type personages er bij VA uit zou kunnen zien.\nPer arche - type hebben we getracht een voorbeeld te \ngeven van het soort spel dat je zou kunnen verwachten."
+      "description": "Deze templates dienen als voorbeeld voor hoe bepaalde \narche - type characters er bij VA uit zou kunnen zien.\nPer arche - type hebben we getracht een voorbeeld te \ngeven van het soort spel dat je zou kunnen verwachten."
     },
     "modals": {
       "cant_load_version": "De versie van deze templates komt niet overeen met de huidige regelset versie.",

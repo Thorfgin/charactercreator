@@ -10,6 +10,9 @@ export default function FileUploadModal() {
     const { t } = useTranslation();
 
     const {
+        setModalHeader,
+        setModalMsg,
+        setShowModal,
         setCharName,
         setIsChecked,
         setMAX_XP,
@@ -47,14 +50,18 @@ export default function FileUploadModal() {
                             closeModal();
                         }
                         else {
+                            setModalHeader(t("generic.oops"));
                             const msg = t("fileupload_modal.modals.cant_load_version");
-                            alert(msg);
+                            setModalMsg(msg);
+                            setShowModal(true);
                             console.error(msg, selectedFile, charData);
                         }
                     }
                 } catch (error) {
-                    const msg = t("fileupload_modal.modals.unknown_error");
-                    alert(msg);
+                    setModalHeader(t("generic.oops"));
+                    const msg = "fileupload_modal.modals.unknown_error";
+                    setModalMsg(t(msg));
+                    setShowModal(true);
                     console.error(msg, error);
                 }
             };

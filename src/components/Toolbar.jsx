@@ -35,6 +35,8 @@ import {
 // Zet een Toolbar klaar met daarin de mogelijkheid om:
 // Settings te wijzigen, Vaarigheden te selecteren, Personages te bewaren/laden of Personages te exporteren/importeren
 export default function Toolbar() {
+    // Multi-Language support klaarzetten
+    const { i18n, t } = useTranslation();
 
     // Ophalen uit SharedStateContext
     const {
@@ -51,6 +53,7 @@ export default function Toolbar() {
         selectedExtraSkill, setSelectedExtraSkill,
 
         // modals
+        setModalHeader,
         setModalMsg, setShowModal,
         setShowUploadModal,
         setShowLoadCharacterModal,
@@ -66,9 +69,6 @@ export default function Toolbar() {
         gridRecepten
 
     } = useSharedState();
-
-    // Multi-Language support klaarzetten
-    const { i18n, t } = useTranslation();
 
     // SELECT & INFO
     const imageSrc = ["./images/img-info.png", "./images/img-info_red.png"]
@@ -207,18 +207,23 @@ export default function Toolbar() {
         const hasSufficientFreeXP = (totalXP + selectedRecord.xp) <= Math.floor(MAX_XP) || selectedRecord.xp === 0;
         if (!hasSufficientFreeXP) {
             if (totalXP >= Math.floor(MAX_XP)) {
-                setModalMsg(
-                    "Maximum XP (" + MAX_XP + ") bereikt. \n" +
-                    "Toevoegen is niet toegestaan.\n");
+                setModalHeader(t("generic.oops"));
+                const max_xp_reached = t("toolbar.modals.max_xp_reached")
+                const cant_add = t("toolbar.modals.cant_add")
+                setModalMsg(`${max_xp_reached} (${MAX_XP}) \n${cant_add}`);
             }
             else if (totalXP < Math.floor(MAX_XP)) {
-                setModalMsg(
-                    "Maximum xp (" + MAX_XP + ") zal worden overschreden. \n" +
-                    "Deze skill kost: " + selectedRecord.xp + ". \n" +
-                    "Toevoegen is niet toegestaan.\n");
+                setModalHeader(t("generic.oops"));
+                const max_xp_exceeded = t("toolbar.modals.max_xp_exceeded")
+                const skill_cost = t("toolbar.modals.skill_cost")
+                const cant_add = t("toolbar.modals.cant_add")
+                setModalMsg(    `${max_xp_exceeded} (${MAX_XP})  \n 
+                                ${skill_cost} ${selectedRecord.xp} XP\n
+                                ${cant_add}`);
             } else {
                 console.error("There should be a reason for refusing to add the skill, but no reason was set.")
-                setModalMsg("Er ging iets fout...");
+                setModalHeader(t("generic.oops"));
+                setModalMsg(t("generic.error"));
             }
             setShowModal(true);
             return false;
@@ -264,7 +269,9 @@ export default function Toolbar() {
     function saveCharacterToLocalStorage() {
         saveCharacterToStorage(charName, charName, isChecked, MAX_XP, tableData)
         if (showConfirmUpdateModal === true) { closeConfirmUpdateModal(); }
-        setModalMsg(`Personage '${charName}' opgeslagen.`);
+        setModalHeader(t("toolbar.modals.confirmation_header"))
+        const text = t("toolbar.modals.save_character");
+        setModalMsg(`${text} \n\n${charName}`);
         setShowModal(true);
     }
 
@@ -273,9 +280,13 @@ export default function Toolbar() {
         const wasRemoved = removeCharacterFromStorage(charName);
         if (wasRemoved === true) {
             clearCharacterBuild();
-            setModalMsg(`Personage '${charName}' verwijderd.`);
+            setModalHeader(t("toolbar.modals.confirmation_header"))
+            const text = t("toolbar.modals.remove_character");
+            setModalMsg(`${text} ${charName}`);
         } else {
-            setModalMsg(`Personage '${charName}' niet gevonden.`);
+            setModalHeader(t("generic.oops"))
+            const text = t("toolbar.modals.character_not_found");
+            setModalMsg(`${text} ${charName}`);
         }
         closeConfirmRemoveModal();
         setShowModal(true);
@@ -284,8 +295,9 @@ export default function Toolbar() {
     // Eerst via ConfirmModal bevestigen, daarna verwijdern
     function showConfirmRemoval() {
         if (charName && charName.trim() !== '') {
-            setHeaderConfirmModal("Bevestig verwijderen");
-            setMsgConfirmModal("Weet u zeker dat u dit personage:\n'" + charName + "'\nwilt verwijderen?");
+            setHeaderConfirmModal(t("toolbar.modals.confirm_remove_header"));
+            const text = t("toolbar.modals.confirm_remove_text");
+            setMsgConfirmModal(`${text} \n\n ${charName}`);
             setShowConfirmRemoveModal(true);
         }
     }
@@ -298,8 +310,9 @@ export default function Toolbar() {
         if (charName && charName.trim() !== '') {
             const keys = getAllLocalStorageKeys(charName);
             if (keys.length > 0) {
-                setHeaderConfirmModal("Bevestig overschrijven");
-                setMsgConfirmModal("Personage bestaat al.\nWilt u dit personage:\n'" + charName + "'\n oveschrijven?");
+                setHeaderConfirmModal(t("toolbar.modals.overwrite_character_header"));
+                const msg = t("toolbar.modals.overwrite_character_text")
+                setMsgConfirmModal(`${msg} \n\n${charName}`);
                 setShowConfirmUpdateModal(true);
             }
             else {
@@ -307,7 +320,8 @@ export default function Toolbar() {
             }
         }
         else {
-            setModalMsg("Vul de naam van het personage in.");
+            setHeaderConfirmModal(t("generic.oops"));
+            setModalMsg(t("toolbar.modals.name_can_not_be_empty"));
             setShowModal(true);
         }
     }
