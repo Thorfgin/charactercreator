@@ -51,16 +51,16 @@ export const sourceCommonRecepten = [].concat(...recepten.Categories.map(categor
 
 /// --- TABLE PROPERTIES --- ///
 export const defaultProperties = [
-    { name: "hitpoints", image: "./images/image_hp.png", text: "Totaal HP", value: 1 },
-    { name: "armourpoints", image: "./images/image_ap.png", text: "Max AP", value: 0 },
-    { name: "elemental_mana", image: "./images/image_em.png", text: "Elementaire Mana", value: 0 },
-    { name: "elemental_ritual_mana", image: "./images/image_erm.png", text: "Rituele Elementaire Mana", value: 0 },
-    { name: "spiritual_mana", image: "./images/image_sm.png", text: "Spirituele Mana", value: 0 },
-    { name: "spiritual_ritual_mana", image: "./images/image_srm.png", text: "Rituele Spirituele Mana", value: 0 },
-    { name: "inspiration", image: "./images/image_ins.png", text: "Inspiratie", value: 0 },
-    { name: "willpower", image: "./images/image_wil.png", text: "Wilskracht", value: 0 },
-    { name: "glyph_craft_cap", image: "./images/image_glp_cra.png", text: "Glyph Craft cap", value: 0 },
-    { name: "glyph_imbue_cap", image: "./images/image_glp_imb.png", text: "Glyph Imbue cap", value: 0 },
-    { name: "rune_craft_cap", image: "./images/image_run_cra.png", text: "Rune Craft cap", value: 0 },
-    { name: "rune_imbue_cap", image: "./images/image_run_imb.png", text: "Rune Imbue cap", value: 0 }
+    { id: 1, name: "hitpoints", image: "./images/image_hp.png", text: 'shared_objects.hitpoints', value: 1 },
+    { id: 2, name: "armourpoints", image: "./images/image_ap.png", text: 'shared_objects.armourpoints', value: 0 },
+    { id: 3, name: "elemental_mana", image: "./images/image_em.png", text: 'shared_objects.elemental_mana', value: 0 },
+    { id: 4, name: "elemental_ritual_mana", image: "./images/image_erm.png", text: 'shared_objects.elemental_ritual_mana', value: 0 },
+    { id: 5, name: "spiritual_mana", image: "./images/image_sm.png", text: 'shared_objects.spiritual_mana', value: 0 },
+    { id: 6, name: "spiritual_ritual_mana", image: "./images/image_srm.png", text: 'shared_objects.spiritual_ritual_mana', value: 0 },
+    { id: 7, name: "inspiration", image: "./images/image_ins.png", text: 'shared_objects.inspiration', value: 0 },
+    { id: 8, name: "willpower", image: "./images/image_wil.png", text: 'shared_objects.willpower', value: 0 },
+    { id: 9, name: "glyph_craft_cap", image: "./images/image_glp_cra.png", text: 'shared_objects.glyph_craft_cap', value: 0 },
+    { id: 10, name: "glyph_imbue_cap", image: "./images/image_glp_imb.png", text: 'shared_objects.glyph_imbue_cap', value: 0 },
+    { id: 11, name: "rune_craft_cap", image: "./images/image_run_cra.png", text: 'shared_objects.rune_craft_cap', value: 0 },
+    { id: 12, name: "rune_imbue_cap", image: "./images/image_run_imb.png", text: 'shared_objects.rune_imbue_cap', value: 0 }
 ];

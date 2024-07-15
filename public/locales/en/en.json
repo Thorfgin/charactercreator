@@ -1,10 +1,14 @@
 {
   "welcome_message": "Welcome to our application!",
+  "disclaimer": "The character creator gives an idea of what's possible. There may be discrepancies between the text in the character creator and the VA rules.\n\nAlways check the latest version of the rules at:\n https://the-vortex.nl/het-spel/regels/",
   "generic": {
     "no_label": "",
+    "disclaimer": "Disclamer",
     "skill": "Skill:",
     "spell_technique": "Spell/Technique:",
+    "spells_and_techniques": "Spells & Techniques",
     "recipy": "Recepy:",
+    "recipies": "Recipies",
     "info_not_found": "Information could not be found.",
     "special_mana": "Skill dependent: Elemental or Spiritual",
     "confirm": "Confirm",
@@ -12,7 +16,9 @@
     "close": "Close",
     "upload": "Upload",
     "load": "Load",
-    "ok": "OK"
+    "ok": "OK",
+    "character_properties": "Character properties",
+    "energy_per_day": "Energy per Day"
   },
   "toolbar": {
     "labels": {
@@ -31,7 +37,7 @@
       "remove_skill": "Remove",
       "add_skill_title_base": "Add a base skill",
       "add_skill_title_extra": "Add an extra skill",
-      "show_templates": "Show templates",
+      "show_templates": "Show presets",
       "save_character": "Save character",
       "load_character": "Load character",
       "remove_character": "Remove character",
@@ -123,12 +129,38 @@
   },
   "loadpreset_modal": {
     "labels": {
-      "view_template": "View a template",
-      "description": "These templates serve as an example for how certain\narche-type characters would look like at VA.\nWe tried to give an example of common arche - types\nand the type of play you could expect. "
+      "view_template": "View a preset",
+      "description": "These presets serve as an example on what certain\narche-type characters would look like at VA.\nWe tried to give an example of common arche - types\nand the type of narrative/play you could expect. "
     },
     "modals": {
-      "cant_load_version": "The version of this template does not match the current ruleset version.",
+      "cant_load_version": "The version of this preset does not match the current ruleset version.",
       "unknown_error": "Somethings went wrong while processing the file."
     }
+  },
+  "releasenotes_modal": {
+    "labels": {
+      "version_info": "Version information",
+      "release_version": "release versie"
+    }
+  },
+  "template_table": {
+    "labels": {
+      "no_presets_found": "No presets found",
+      "template": "Preset:"
+    }
+  },
+  "shared_objects": {
+    "hitpoints": "Total HP",
+    "armourpoints": "Max AP",
+    "elemental_mana": "Elemental Mana",
+    "elemental_ritual_mana": "Ritual Elemental Mana",
+    "spiritual_mana": "Spiritual Mana",
+    "spiritual_ritual_mana": "Ritual Spiritual Mana",
+    "inspiration": "Inspiration",
+    "willpower": "Willpower",
+    "glyph_craft_cap": "Glyph Craft cap",
+    "glyph_imbue_cap": "Glpyh Imbue cap",
+    "rune_craft_cap": "Rune Craft cap",
+    "rune_imbue_cap": "Rune Imbue cap"
   }
 }

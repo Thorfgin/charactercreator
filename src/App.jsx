@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
+import { useTranslation } from 'react-i18next';
 
 // Shared
 import { useSharedState } from './SharedStateContext.jsx';
@@ -21,6 +22,9 @@ import SkillTable from './components/SkillTable.jsx';
 
 /// --- MAIN APP --- ///
 export default function App() {
+    // Multi-Language support klaarzetten
+    const { t } = useTranslation();
+
     const {
         version,
         creator,
@@ -40,13 +44,7 @@ export default function App() {
 
     function showDisclaimer() {
         if (showModal !== true) {
-            setModalMsg(
-                "De character creator geeft een indicatie van de mogelijkheden. " +
-                "Er kunnen altijd afwijkingen zitten tussen de teksten " +
-                "in de character creator en de VA regelset.\n\n" +
-                "Check altijd de laatste versie van de regelset op:\n" +
-                "https://the-vortex.nl/het-spel/regels/" +
-                "\n");
+            setModalMsg(t("disclaimer"));
             setShowModal(true);
         }
     }
@@ -81,21 +79,22 @@ export default function App() {
                 <div className="side-containers">
                     <div className="side-container-b" id="side-container-b">
                         <div className="summary-title">
-                            <h5>Character eigenschappen</h5>
+                            <h5>{t("generic.character_properties")}</h5>
                         </div>
                         <div className="grid-eigenschappen">
                             {gridEigenschappen.map((item) => (
                                 <GridEigenschapItem
+                                    id={item.id}
                                     name={item.name}
                                     key={uuidv4()}
                                     image={item.image}
-                                    text={item.text}
+                                    text={t(item.text)}
                                     value={item.value}
                                 />
                             ))}
                         </div>
                         <div className="summary-title">
-                            <h5>Energie per Dag</h5>
+                            <h5>{t("generic.energy_per_day")}</h5>
                         </div>
                         <div className="grid-eigenschappen">
                             {gridEnergiePerDag.map((item) => (
@@ -103,7 +102,7 @@ export default function App() {
                                     name={item.name}
                                     key={uuidv4()}
                                     image={item.image}
-                                    text={item.text}
+                                    text={t(item.text)}
                                     value={item.value}
                                 />
                             ))}
@@ -111,7 +110,7 @@ export default function App() {
                     </div>
                     <div className="side-container-a" id="side-container-a">
                         <div className="summary-title">
-                            <h5>Spreuken & Technieken</h5>
+                            <h5>{t("generic.spells_and_techniques")}</h5>
                         </div>
                         <div className="grid-spreuken">
                             {gridSpreuken?.map((item) => (
@@ -124,7 +123,7 @@ export default function App() {
                         </div>
 
                         <div className="summary-title">
-                            <h5>Recepten</h5>
+                            <h5>{t("generic.recipies")}</h5>
                         </div>
                         <div className="grid-recepten">
                             {gridRecepten?.map((item) => (
@@ -143,7 +142,7 @@ export default function App() {
                 <div className="release-notes" onClick={openReleaseNotesModal}><u>{version}</u></div>
                 <div>{creator}{'\u2122'}</div>
                 <div>
-                    <div className="disclaimer" onClick={showDisclaimer}><u>Disclaimer</u></div>
+                    <div className="disclaimer" onClick={showDisclaimer}><u>{t("generic.disclaimer")}</u></div>
                     <div className="faq" onClick={openFAQModal}><u>F.A.Q.</u></div>
                 </div>
             </footer>

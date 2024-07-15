@@ -1,10 +1,14 @@
 {
   "welcome_message": "Welkom bij onze applicatie!",
+  "disclaimer": "De character creator geeft een indicatie van de mogelijkheden. Er kunnen altijd afwijkingen zitten tussen de teksten in de character creator en de VA regelset.\n\nCheck altijd de laatste versie van de regelset op:\n https://the-vortex.nl/het-spel/regels/",
   "generic": {
     "no_label": "",
+    "disclaimer": "Disclamer",
     "skill": "Vaardigheid:",
     "spell_technique": "Spreuk/Techniek:",
+    "spells_and_techniques": "Spreuken & Technieken",
     "recipy": "Recept:",
+    "recipies": "Recipies",
     "info_not_found": "Informatie kon niet gevonden worden.",
     "special_mana": "Vaardigheid afhankelijk: Elementair of Spiritueel",
     "confirm": "Bevestig",
@@ -12,7 +16,9 @@
     "close": "Sluiten",
     "upload": "Upload",
     "load": "Laad",
-    "ok": "OK"
+    "ok": "OK",
+    "character_properties": "Character eigenschappen",
+    "energy_per_day": "Energie per Dag"
   },
   "toolbar": {
     "labels": {
@@ -130,5 +136,32 @@
       "cant_load_version": "De versie van deze templates komt niet overeen met de huidige regelset versie.",
       "unknown_error": "Er ging iets mis bij het inlezen van het bestand."
     }
+  },
+  "releasenotes_modal": {
+    "labels": {
+      "version_info": "Versie informatie",
+      "release_version": "release versie"
+    }
+
+  },
+  "template_table": {
+    "labels": {
+      "no_presets_found": "Geen presets gevonden",
+      "template": "Template:"
+    }
+  },
+  "shared_objects": {
+    "hitpoints": "Totaal HP",
+    "armourpoints": "Max AP",
+    "elemental_mana": "Elementaire Mana",
+    "elemental_ritual_mana": "Rituele Elementaire Mana",
+    "spiritual_mana": "Spirituele Mana",
+    "spiritual_ritual_mana": "Rituele Spirituele Mana",
+    "inspiration": "Inspiratie",
+    "willpower": "Wilskracht",
+    "glyph_craft_cap": "Glyph Craft cap",
+    "glyph_imbue_cap": "Glpyh Imbue cap",
+    "rune_craft_cap": "Rune Craft cap",
+    "rune_imbue_cap": "Rune Imbue cap"
   }
 }

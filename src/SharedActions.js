@@ -104,7 +104,7 @@ getPropertyByName.propTypes = { name: PropTypes.string.isRequired };
 
 // Ophalen van een default propertie value
 export function getPropertyByName(name) {
-    return defaultProperties.find((item) => item.name === name);
+    return defaultProperties.find((item) => item.name.toLowerCase() === name.toLowerCase());
 }
 
 
