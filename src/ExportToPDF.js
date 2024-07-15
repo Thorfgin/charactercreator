@@ -8,7 +8,7 @@ import {
     getSkillById,
     getSkillsByIds,
     getSpellBySkill,
-    getRecipyBySkill,
+    getRecipeBySkill,
 } from './SharedActions.js';
 
 let version = "";
@@ -169,11 +169,11 @@ async function addRecipeDescriptionsToPdf(pdf, gridRecepten, x = 20, y = 30) {
 
     for (const item of gridRecepten) {
         const skillData = getSkillById(item.skillId);
-        const recipyData = getRecipyBySkill(item.skillId, item.recipyId);
-        if (!skillData || !recipyData) { continue; }
+        const recipeData = getRecipeBySkill(item.skillId, item.recipeId);
+        if (!skillData || !recipeData) { continue; }
 
-        let newTitle = `${recipyData.recipy}`;
-        newTitle = newTitle + (recipyData.inspiration >= 1 ? ` ${recipyData.inspiration}` : ``);
+        let newTitle = `${recipeData.recipe}`;
+        newTitle = newTitle + (recipeData.inspiration >= 1 ? ` ${recipeData.inspiration}` : ``);
 
         const newBlock = {
             title: {
@@ -193,14 +193,14 @@ async function addRecipeDescriptionsToPdf(pdf, gridRecepten, x = 20, y = 30) {
             },
             components: {
                 options: {
-                    text: `Componenten: ${recipyData.components}`,
+                    text: `Componenten: ${recipeData.components}`,
                     isItalic: true,
                     fontSize: 11
                 }
             },
             description: {
                 options: {
-                    text: `${recipyData.effect}`,
+                    text: `${recipeData.effect}`,
                     fontSize: 11
                 }
             }

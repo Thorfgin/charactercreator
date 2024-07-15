@@ -80,11 +80,12 @@ export function getSpellsBySkill(skillId) {
 
 // Ophalen van een recept op basis van de skill
 // Algemene recepten ophalen uit de Commoon
-export function getRecipyBySkill(skillId, recipyId) {
-    if (!skillId || !recipyId) { return; }
-    const sourceRecipies = getRecipesBySkill(skillId);
-    const recipyResult = sourceRecipies?.find((item) => item.id === recipyId) || getRecipyFromCommon(recipyId);
-    return recipyResult
+export function getRecipeBySkill(skillId, recipeId) {
+    if (!skillId || !recipeId) { return; }
+    const sourceRecipes = getRecipesBySkill(skillId);
+    const recipeResult = sourceRecipes?.find((item) => item.id === recipeId) || getRecipeFromCommon
+        (recipeId);
+    return recipeResult
 }
 
 // Ophalen van alle recepten op basis van de skill
@@ -95,9 +96,9 @@ export function getRecipesBySkill(skillId) {
 }
 
 // Ophalen van recept uit de algemene recepten
-export function getRecipyFromCommon(recipyId) {
-    if (!recipyId) { return; }
-    return sourceCommonRecepten?.find(item => item.id === recipyId);
+export function getRecipeFromCommon(recipeId) {
+    if (!recipeId) { return; }
+    return sourceCommonRecepten?.find(item => item.id === recipeId);
 }
 
 getPropertyByName.propTypes = { name: PropTypes.string.isRequired };
@@ -481,32 +482,32 @@ export function updateGridSpreukenTiles(tableData) {
 
 // Op basis van de Recepten, voeg nieuwe tegels toe.
 export function updateGridReceptenTiles(tableData) {
-    const recipyMap = new Map();
+    const recipeMap = new Map();
 
     tableData.forEach((record) => {
         const vaardigheid = getSkillById(record.id);
         const recepten = vaardigheid ? vaardigheid.Recepten : [];
 
         recepten.forEach((recept) => {
-            if (recipyMap.has(recept)) {
-                const existingRecipy = recipyMap.get(recept);
-                existingRecipy.count += recept.count;
+            if (recipeMap.has(recept)) {
+                const existingRecipe = recipeMap.get(recept);
+                existingRecipe.count += recept.count;
             } else {
-                const newRecipy = {
+                const newRecipe = {
                     "skillId": vaardigheid.id,
-                    "recipyId": recept,
+                    "recipeId": recept,
                     "alt_skill": vaardigheid.alt_skill,
                     "count": recept.count || 1 // Assuming each recipe has an initial count of 1 if not specified
                 };
-                recipyMap.set(recept, newRecipy);
+                recipeMap.set(recept, newRecipe);
             }
         });
     });
 
     // Convert the map values to an array
-    const recipyProperties = Array.from(recipyMap.values());
+    const recipeProperties = Array.from(recipeMap.values());
 
-    return recipyProperties;
+    return recipeProperties;
 }
 
 /// --- PDF --- ///

@@ -10,7 +10,7 @@ import {
     getSkillById,
     getSkillsByIds,
     getSpellBySkill,
-    getRecipyBySkill
+    getRecipeBySkill
 } from '../SharedActions.js'
 
 import {
@@ -168,22 +168,22 @@ export function SpellTooltip({ skillId, spellId, image = './images/img-info.png'
 
 RecipeTooltip.propTypes = {
     skillId: PropTypes.number.isRequired,
-    recipyId: PropTypes.number.isRequired,
+    recipeId: PropTypes.number.isRequired,
     image: PropTypes.string
 };
 
-export function RecipeTooltip({ skillId, recipyId, image = './images/img-info.png' }) {
+export function RecipeTooltip({ skillId, recipeId, image = './images/img-info.png' }) {
     // Multi-Language support klaarzetten
     const { t } = useTranslation();
 
     const sourceSkill = getSkillById(skillId);
-    const sourceRecipy = getRecipyBySkill(skillId, recipyId);
-    const description = getBlock(sourceRecipy?.effect, "description-block");
+    const sourceRecipe = getRecipeBySkill(skillId, recipeId);
+    const description = getBlock(sourceRecipe?.effect, "description-block");
 
     const tooltipData = [
         { label: 'recipe_tooltip.labels.description', value: description || t("generic.info_not_found") },
-        { label: 'recipe_tooltip.labels.inspiration_cost', value: sourceRecipy?.inspiration || null },
-        { label: 'recipe_tooltip.labels.supplies', value: sourceRecipy?.components || null },
+        { label: 'recipe_tooltip.labels.inspiration_cost', value: sourceRecipe?.inspiration || null },
+        { label: 'recipe_tooltip.labels.supplies', value: sourceRecipe?.components || null },
     ];
 
     const tooltipItems = useMapping(tooltipData);
@@ -192,7 +192,7 @@ export function RecipeTooltip({ skillId, recipyId, image = './images/img-info.pn
         <div className="grid-spreuk-icons">
             <GenericTooltip
                 header={`${t("generic.skill")} ${sourceSkill.skill}`}
-                subheader={`${t("generic.recipy")} ${sourceRecipy.recipy}`}
+                subheader={`${t("generic.recipe")} ${sourceRecipe.recipe}`}
                 message={tooltipItems || ''}
                 image={image}
             />

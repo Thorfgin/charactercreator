@@ -1,7 +1,7 @@
 [![CI/CD Master](https://github.com/Thorfgin/charactercreator/actions/workflows/node.js.yml/badge.svg)](https://github.com/Thorfgin/charactercreator/actions/workflows/node.js.yml)
 ![License](https://img.shields.io/github/license/Thorfgin/charactercreator)
 
-	For easy maintenance of the vaardigheden/spells/recipies
+	For easy maintenance of the vaardigheden/spells/recipes
 	TEXT-TO-ONE-LINE Convertor: https://lingojam.com/TexttoOneLine
 
 	GESTOPT BIJ RECEPTEN - ?
@@ -64,7 +64,7 @@
 	20240705	FIX: change the way skills are selected, by referencing id instead of skill.
 			Skills may no be unique in name, for example 'extra wilskracht' exists twice in ExtraVaardigheden.
 			This may cause issues with the saves, because everything is reference by skillname.
-			FIX: vaardigheden.json: change the way spells/recipies are selected, by referencing id instead of name.
+			FIX: vaardigheden.json: change the way spells/recipes are selected, by referencing id instead of name.
 			FIX spreuken.json: change the way spells are selected, by referencing spell id instead of spell name.
 			FIX recepten.json: change the way recipes are selected, by referencing recipe id instead of recipe name.
 			FIX Rules: updated the skills and pdf rulebook references after the ruleset update.
@@ -72,7 +72,7 @@
 			FIX PDF export: Listing the prerequisites now, including category requirements aswell.
 			FIX saving: Fixed handling the name change of skills while loading a characters from storage or file.
 			ADDITION: A Pound of Elemental Flesh is available to all crafting skills, created a common shared categorie 
-			in the Crafting Recipies. 
+			in the Crafting Recipes. 
 
 	20240430	FIX: Typos in templates, sizing of the Info description of a Template.
 			FIX: Updated FAQ > printing the character is possible by PDF export.
@@ -90,7 +90,7 @@
 			
 	20240416	FIX: Kennis van Kruiden inspirition adjusted 3 to 2 inspiration.
 				FIX: Max saved XP cap raised from 2 to 3.
-			FIX: Size of the Recipy panel adjusted so "Minor potion of inspiration of the magi" fits.
+			FIX: Size of the Recipe panel adjusted so "Minor potion of inspiration of the magi" fits.
 			FIX: Changed the info panel for Spells to show Energy instead of Mana.
 
 	20231106	PRESETS: add a generic text and description per preset explaing the general style of play 
@@ -210,7 +210,7 @@
 	20230908	SPELLS/RECIPES have tooltips
 	
 
-	20230905	RECIPY gives a summary of the selected spells aquired by skills
+	20230905	RECIPE gives a summary of the selected spells aquired by skills
 			SPELLS & TECHNIQUE gives a summary of the selected spells aquired by skills
 			RESET: button on TOP reset the Character Creator, clears all tables.
 	

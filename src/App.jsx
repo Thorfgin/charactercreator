@@ -123,14 +123,14 @@ export default function App() {
                         </div>
 
                         <div className="summary-title">
-                            <h5>{t("generic.recipies")}</h5>
+                            <h5>{t("generic.recipes")}</h5>
                         </div>
                         <div className="grid-recepten">
                             {gridRecepten?.map((item) => (
                                 <RecipeTile
                                     key={uuidv4()}
                                     skillId={item.skillId}
-                                    recipyId={item.recipyId}
+                                    recipeId={item.recipeId}
                                 />
                             ))}
                         </div>
