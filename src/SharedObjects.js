@@ -1,10 +1,18 @@
+import { getCurrentLanguage } from './i18n.js';
+
 // jsons
-import vaardigheden from './json/vaardigheden.json';
-import spreuken from './json/spreuken.json';
-import recepten from './json/recepten.json';
-import presets from './json/presets.json';
-import releasenotes from './json/releasenotes.json';
-import faq from './json/faq.json';
+import vaardigheden_nl from './json/nl/vaardigheden.json';
+import vaardigheden_en from './json/en/vaardigheden.json';
+import spreuken_nl from './json/nl/spreuken.json';
+import spreuken_en from './json/en/spreuken.json';
+import recepten_nl from './json/nl/recepten.json';
+import recepten_en from './json/en/recepten.json';
+import presets_nl from './json/nl/presets.json';
+import presets_en from './json/en/presets.json';
+import releasenotes_nl from './json/nl/releasenotes.json';
+import releasenotes_en from './json/en/releasenotes.json';
+import faq_nl from './json/nl/faq.json';
+import faq_en from './json/en/faq.json';
 
 // functions
 import {
@@ -12,14 +20,23 @@ import {
     regenerateOptions
 } from './SharedActions.js';
 
+function useSourceByLanguage(optionNL, optionEN) {
+    const lang = getCurrentLanguage() || "nl";
+    switch (lang) {
+        case "nl": return optionNL;
+        case "en": return optionEN;
+        default: return optionNL;
+    }
+}
+
 // --- PRESETS --- ///
-export const getPresets = () => { return presets; }
+export const getPresets = () => { return useSourceByLanguage(presets_nl, presets_en); }
 
 // releasenotes
-export const getSourceReleaseNotes = () => { return releasenotes; }
+export const getSourceReleaseNotes = () => { return useSourceByLanguage(releasenotes_nl, releasenotes_en); }
 
 // FAQ
-export const getSourceFAQ = () => { return faq; }
+export const getSourceFAQ = () => { return useSourceByLanguage(faq_nl, faq_en); }
 
 
 /// --- SKILLS & SELECT PROPERTIES --- ///
@@ -30,23 +47,23 @@ export function setTotalXP(value) { totalXP = value; }
 export function resetTotalXP(tableData) { totalXP = tableData.length > 0 ? tableData.reduce((accumulator, skill) => accumulator + skill.xp, 0) : 0 }
 
 // vaardigheden
-export const getSourceVaardigheden = () => { return vaardigheden; }
-export const sourceBasisVaardigheden = vaardigheden.BasisVaardigheden;
+export const getSourceVaardigheden = () => { return useSourceByLanguage(vaardigheden_nl, vaardigheden_en) }
+export const sourceBasisVaardigheden = getSourceVaardigheden().BasisVaardigheden;
 export let optionsBasisVaardigheden = generateOptions(sourceBasisVaardigheden);
 export function regeneratedBasisVaardigheden(tableData) { optionsBasisVaardigheden = regenerateOptions(sourceBasisVaardigheden, tableData); }
 
-export const sourceExtraVaardigheden = vaardigheden.ExtraVaardigheden;
+export const sourceExtraVaardigheden = getSourceVaardigheden().ExtraVaardigheden;
 export let optionsExtraVaardigheden = generateOptions(sourceExtraVaardigheden);
 export function regeneratedExtraVaardigheden(tableData) { optionsExtraVaardigheden = regenerateOptions(sourceExtraVaardigheden, tableData); }
 
 // spreuken
-export const getSpreuken = () => { return spreuken; }
-export const sourceSpreuken = [].concat(...spreuken.Categories.map(category => category.Skills));
+export const getSpreuken = () => { return useSourceByLanguage(spreuken_nl, spreuken_en); }
+export const sourceSpreuken = [].concat(...getSpreuken().Categories.map(category => category.Skills));
 
 // recepten
-export const getRecepten = () => { return recepten; }
-export const sourceSkillRecepten = [].concat(...recepten.Categories.map(category => category.Skills));
-export const sourceCommonRecepten = [].concat(...recepten.Categories.map(category => category.Common).filter(Boolean));
+export const getRecepten = () => { return useSourceByLanguage(recepten_nl, recepten_en); }
+export const sourceSkillRecepten = [].concat(...getRecepten().Categories.map(category => category.Skills));
+export const sourceCommonRecepten = [].concat(...getRecepten().Categories.map(category => category.Common).filter(Boolean));
 
 
 /// --- TABLE PROPERTIES --- ///

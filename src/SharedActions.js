@@ -330,7 +330,7 @@ export function isSkillAPrerequisiteToAnotherSkill(removedSkillId, isRemoved, ta
                         }
                         // Standaard werking categorie
                         else {
-                            isPrerequisite = verifyRemovedSkillIsNotACategoryPrerequisite(tableData, categories, skillTableData.skill, removedSkillId, totalReqXP);
+                            isPrerequisite = verifyRemovedSkillIsNotACategoryPrerequisite(tableData, categories, skillTableData, removedSkillId, totalReqXP);
                         }
 
                         if (isPrerequisite === true) {
@@ -411,15 +411,16 @@ function verifyRemovedSkillIsNotOnlyAnyListPrerequisite(reqAnyIds, removedSkillI
 }
 
 // Check of een Category prerequisite behouden wordt wanneer de skill verwijdert/verlaagd wordt
-function verifyRemovedSkillIsNotACategoryPrerequisite(tableData, categories, item, removedSkill, totalReqXP) {
+function verifyRemovedSkillIsNotACategoryPrerequisite(tableData, categories, item, removedSkillId, totalReqXP) {
     let isPrerequisite = false;
     let selectedSkillsXP = 0;
+    const removedSkill = getSkillById(removedSkillId)
 
-    if (removedSkill.Category in categories) {
+    if (categories.includes(removedSkill.category) || categories.includes(item.Requirements.Category?.name[0])) {
         const selectedSkills = tableData.filter(tableItem => categories.includes(tableItem.category) && // van de juiste categorie
             (tableItem.Spreuken.length > 2 || tableItem.Recepten.length > 2) && // alleen skills met recepten of spreuken zijn doorgaans relevant                             
             tableItem.id !== item.id && // item waarvan pre-reqs gecheckt worden uitsluiten
-            tableItem.id !== removedSkill.id); // Skip zelf, deze is wordt verwijderd.
+            tableItem.id !== removedSkillId); // Skip zelf, deze is wordt verwijderd.
 
         selectedSkills.forEach(item => selectedSkillsXP += item.xp); // calculate XP
         if (totalReqXP > selectedSkillsXP) { isPrerequisite = true; }

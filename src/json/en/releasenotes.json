@@ -5,16 +5,20 @@
       "version": "v0.7.1",
       "Items": [
         {
-          "Description": "De gehele pagina en bronbestanden dynamisch te wijzigen van taal. Hiervoor zijn alle bronbestanden vertaald.",
-          "Title": "Feature: Vertaling naar Engels toegevoegd"
+          "description": "De gehele pagina en bronbestanden dynamisch te wijzigen van taal. Hiervoor zijn alle bronbestanden vertaald.",
+          "title": "Feature: Vertaling naar Engels toegevoegd"
         },
         {
-          "Description": "Een bug opgelost waardoor bij het verwijderen van vaardigheden die een uitzondering boden de verkeerde melding getoond werd.",
-          "Title": "BugFix: Verwijderen van uitgezonderde vaardigheden Druide/Necro/Demoloog"
+          "description": "Een bug opgelost waardoor bij het verwijderen van vaardigheden die een uitzondering boden de verkeerde melding getoond werd.",
+          "title": "BugFix: Verwijderen van uitgezonderde vaardigheden Druide/Necro/Demoloog"
         },
         {
-          "Description": "Een bug opgelost waardoor bij het toevoegen van uitgezonderde vaardigheden deze ten onrechte afgekeurd werden.",
-          "Title": "BugFix: Uitgezonderde vaardigheden Demoloog werden geweigerd"
+          "description": "Een bug opgelost waardoor bij het toevoegen van uitgezonderde vaardigheden deze ten onrechte afgekeurd werden.",
+          "title": "BugFix: Uitgezonderde vaardigheden Demoloog werden geweigerd"
+        },
+        {
+          "description": "Een bug opgelost waardoor bij het verwijderen van een vaardigheden deze ten onrechte goedgekeurd werd, \nondanks dat de resterende skills niet voldeden aan de minimale vereisten.",
+          "title": "BugFix: Bij categorie vereisten op aantal XP werd de vereiste XP niet juist berekend"
         }
       ]
     },

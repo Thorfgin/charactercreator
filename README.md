@@ -61,6 +61,13 @@
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	DONE
+	20243005	FEATURE: added i18n language support
+			FEATURE: split the resources to facilitate language support and added translation support to the SharedActions.
+			UNITTEST: fixed the unittests that broke due to adding a header to the MODAL message.
+			FIX: Fixed a bug that did not propperly convery why the druid cant remove a prerequisite skill.
+			FIX: Fixed a bug that prohibited the demonologist to add an Exception skill.
+			FIX: Fixed a bug that allowed category requirements to succeed, due to not properly requirements for each remaining skill.
+
 	20240705	FIX: change the way skills are selected, by referencing id instead of skill.
 			Skills may no be unique in name, for example 'extra wilskracht' exists twice in ExtraVaardigheden.
 			This may cause issues with the saves, because everything is reference by skillname.
