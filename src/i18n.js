@@ -24,3 +24,6 @@ i18n
     });
 
 export default i18n;
+
+// expose the translation directly for non-component functions
+export const T = (key) => i18n.t(key);

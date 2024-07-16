@@ -1,6 +1,7 @@
 {
   "welcome_message": "Welkom bij onze applicatie!",
   "disclaimer": "De character creator geeft een indicatie van de mogelijkheden. Er kunnen altijd afwijkingen zitten tussen de teksten in de character creator en de VA regelset.\n\nCheck altijd de laatste versie van de regelset op:\n https://the-vortex.nl/het-spel/regels/",
+  "undead": "Ondode in het pentagon!",
   "generic": {
     "no_label": "",
     "oops": "OEPS...",
@@ -66,7 +67,6 @@
       "max_xp_reached": "Maximum XP bereikt.",
       "max_xp_exceeded": "Maximum XP wordt overschreden.",
       "skill_cost": "Deze vaardigheid kost:"
-
     }
   },
   "skill_table": {
@@ -181,5 +181,14 @@
     "glyph_imbue_cap": "Glpyh Imbue cap",
     "rune_craft_cap": "Rune Craft cap",
     "rune_imbue_cap": "Rune Imbue cap"
+  },
+  "shared_actions": {
+    "modals": {
+      "cant_remove": "Verwijderen is niet toegestaan.",
+      "item_is_prerequisite": "Dit item is een vereiste voor de vaardigheid:",
+      "xp_requirement": "Dit item is nodig voor de vereiste XP",
+      "for skill": "voor de vaardigheid:",
+      "exception_requirement": "Dit item is nodig als uitzondering op vereisten voor de vaardigheid:"
+    }
   }
 }

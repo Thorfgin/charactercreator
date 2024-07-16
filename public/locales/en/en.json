@@ -1,6 +1,7 @@
 {
   "welcome_message": "Welcome to our application!",
   "disclaimer": "The character creator gives an idea of what's possible. There may be discrepancies between the text in the character creator and the VA rules.\n\nAlways check the latest version of the rules at:\n https://the-vortex.nl/het-spel/regels/",
+  "undead": "Undead in the pentagon!",
   "generic": {
     "no_label": "",
     "oops": "OOPS...",
@@ -179,5 +180,14 @@
     "glyph_imbue_cap": "Glpyh Imbue cap",
     "rune_craft_cap": "Rune Craft cap",
     "rune_imbue_cap": "Rune Imbue cap"
+  },
+  "shared_actions": {
+    "modals": {
+      "cant_remove": "Removal is not allowed.",
+      "item_is_prerequisite": "This item is a prerequisite for the skill:",
+      "xp_requirement": "This item is a prerequisite for the required XP",
+      "for_skill": "for skill:",
+      "exception_requirement": "This item is required as an exception to the prerequisites for the skill:"
+    }
   }
 }

@@ -14,7 +14,7 @@ import {
 } from '../SharedActions.js'
 
 import {
-    teacherSkill
+    teacherSkill_Id
 } from '../SharedConstants.js'
 
 // Converteer teksten naar tekstblokken.
@@ -89,7 +89,7 @@ export function SkillTooltip({ id, image = './images/img-info.png' }) {
     if (reqSkills.length > 0) { fullRequirementsBlock += `${formatList(reqSkills)} \\n`; }
 
     // Exception - "Leermeester Expertise"
-    if (sourceSkill.id === teacherSkill) { fullRequirementsBlock += t("skill_tooltip.extra_skill_req"); }
+    if (sourceSkill.id === teacherSkill_Id) { fullRequirementsBlock += t("skill_tooltip.extra_skill_req"); }
 
     // Check any_list
     const reqAny = getSkillsByIds(sourceSkill.Requirements.any_list);

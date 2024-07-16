@@ -1516,7 +1516,8 @@
         "Category": {
           "name": [ "Magiërvaardigheden" ],
           "value": 4
-        }
+        },
+        "exception": [ 625 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -1700,7 +1701,8 @@
         "Category": {
           "name": [ "Priestervaardigheden" ],
           "value": 4
-        }
+        },
+        "exception": [ 625 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -3389,7 +3391,8 @@
       "description": "Je krijgt 5 elementaire mana per dag.\\nJe krijgt toegang tot de spreuken: Aspect of the Efreet en Incinerate.",
       "Requirements": {
         "skill": [ 282 ],
-        "any_list": []
+        "any_list": [],
+        "exception": [625]
       },
       "xp": 4,
       "loresheet": {},
@@ -3627,7 +3630,8 @@
       "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Holy Bolt en Divine Armour.",
       "Requirements": {
         "skill": [ 328 ],
-        "any_list": []
+        "any_list": [],
+        "exception": [ 625 ]
       },
       "xp": 4,
       "loresheet": {},

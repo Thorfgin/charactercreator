@@ -7,7 +7,7 @@ import {
 } from './SharedObjects.js';
 
 import {
-    ritualLeader
+    ritualLeader_Id
 } from './SharedConstants.js';
 
 // json
@@ -82,7 +82,7 @@ const addSkillsTo202310aFormat = (oldSkills) => {
 
         // Skillnames adjusted per 07-2024
         if (oldSkill.skill.toLowerCase() === "ritueel leider") {
-            sourceSkill = sourceExtraVaardigheden.find(item => item.id === ritualLeader);
+            sourceSkill = sourceExtraVaardigheden.find(item => item.id === ritualLeader_Id);
         }
 
         const newSkill = {

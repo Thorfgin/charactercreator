@@ -53,6 +53,7 @@ export default function SkillTable() {
         setSelectedExtraSkill,
 
         setShowModal,
+        setModalHeader,
         setModalMsg,
 
         setGridEigenschappen,
@@ -106,7 +107,7 @@ export default function SkillTable() {
     // Verwijderen uit de tabel, updaten van grid
     function handleDelete(row) {
         // check of het een vereiste is
-        const isPrerequisite = isSkillAPrerequisiteToAnotherSkill(row.id, true, tableData, setModalMsg);
+        const isPrerequisite = isSkillAPrerequisiteToAnotherSkill(row.id, true, tableData, setModalHeader, setModalMsg);
         if (isPrerequisite) { setShowModal(true); }
         else { // Item weghalen uit grid
             setTableData((prevData) =>
@@ -143,7 +144,7 @@ export default function SkillTable() {
 
     function handleSubtract(row) {
         // check of het een vereiste is
-        const isPrerequisite = isSkillAPrerequisiteToAnotherSkill(row.id, false, tableData, setModalMsg);
+        const isPrerequisite = isSkillAPrerequisiteToAnotherSkill(row.id, false, tableData, setModalHeader, setModalMsg);
         if (isPrerequisite) { setShowModal(true); }
         else {
             const currentSkill = tableData.find(currentSkill => currentSkill.id === row.id);

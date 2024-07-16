@@ -1,6 +1,24 @@
 {
   "ReleaseNotes": [
     {
+      "date": "20-07-2024",
+      "version": "v0.7.1",
+      "Items": [
+        {
+          "Description": "De gehele pagina en bronbestanden dynamisch te wijzigen van taal. Hiervoor zijn alle bronbestanden vertaald.",
+          "Title": "Feature: Vertaling naar Engels toegevoegd"
+        },
+        {
+          "Description": "Een bug opgelost waardoor bij het verwijderen van vaardigheden die een uitzondering boden de verkeerde melding getoond werd.",
+          "Title": "BugFix: Verwijderen van uitgezonderde vaardigheden Druide/Necro/Demoloog"
+        },
+        {
+          "Description": "Een bug opgelost waardoor bij het toevoegen van uitgezonderde vaardigheden deze ten onrechte afgekeurd werden.",
+          "Title": "BugFix: Uitgezonderde vaardigheden Demoloog werden geweigerd"
+        }
+      ]
+    },
+    {
       "date": "05-07-2024",
       "version": "v0.6.1",
       "Items": [
