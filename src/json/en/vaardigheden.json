@@ -2,11 +2,11 @@
   "BasisVaardigheden": [
     {
       "id": 101,
-      "skill": "Ambidextrie - TEST",
+      "skill": "Ambidexterity",
       "alt_skill": "",
-      "category": "Algemene vaardigheden",
+      "category": "General skills",
       "page": 11,
-      "description": "Deze vaardigheid geeft je de mogelijkheid om 2 wapens tegelijk te gebruiken - in elke hand 1. Tevens geeft dit de mogelijkheid om met slechts 1 vrije hand spreuken te gebruiken. Een tweehandig wapen mag tijdelijk in 1 hand genomen worden zolang je er niet mee slaat of blokt, om op die manier bijvoorbeeld een spreuk te doen met 1 hand.",
+      "description": "This skill allows you to use 2 weapons simultaneously - one in each hand. It also allows you to use spells with only 1 hand free. A two-handed weapon can temporarily be held in 1 hand as long as you do not strike or block with it, for example, to cast a spell with 1 hand.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -22,11 +22,11 @@
     },
     {
       "id": 102,
-      "skill": "Lezen & Schrijven",
+      "skill": "Literacy",
       "alt_skill": "",
-      "category": "Algemene vaardigheden",
+      "category": "General skills",
       "page": 11,
-      "description": "Je kunt normaal, niet magisch of spiritueel schrift lezen en schrijven in elke taal die het personage beheerst.",
+      "description": "You can read and write normal, non-magical or spiritual script in any language that the character masters.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -42,11 +42,11 @@
     },
     {
       "id": 103,
-      "skill": "Runen Gebruiken",
+      "skill": "Rune Use",
       "alt_skill": "",
-      "category": "Algemene vaardigheden",
+      "category": "General skills",
       "page": 12,
-      "description": "Je kunt runen lezen en scrolls beschreven met runen gebruiken. Van dezevaardigheid is een loresheet beschikbaar op de website.Dit leert je ook runen imbues die op je eigen lichaam staan te lezen en gebruiken(personen met de “Runen Meesterschap” vaardigheid kunnen die op je lichaamplaatsen). Je lichaam heeft een maximale imbue cap van 20 voor runen imbues.",
+      "description": "You can read runes and use scrolls written with runes. A loresheet for this skill is available on the website. This also teaches you to read and use rune imbues on your own body (people with the “Rune Mastery” skill can place them on your body). Your body has a maximum imbue cap of 20 for rune imbues.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -71,11 +71,11 @@
     },
     {
       "id": 104,
-      "skill": "Runen Gewenning",
+      "skill": "Rune Attunement",
       "alt_skill": "",
-      "category": "Algemene vaardigheden",
+      "category": "General skills",
       "page": 12,
-      "description": "De maximale imbue cap van je lichaam voor runen imbues wordt verhoogt met 20. Deze vaardigheid mag je meerdere keren aankopen.",
+      "description": "Increases the maximum imbue cap of your body for rune imbues by 20. This skill can be purchased multiple times.",
       "Requirements": {
         "skill": [ 103 ],
         "any_list": []
@@ -96,11 +96,11 @@
     },
     {
       "id": 105,
-      "skill": "Glyph Gebruiken",
+      "skill": "Glyph Use",
       "alt_skill": "",
-      "category": "Algemene vaardigheden",
+      "category": "General skills",
       "page": 12,
-      "description": "Je kunt glyphs lezen en scrolls beschreven met glyphs gebruiken. Van deze vaardigheid is een loresheet beschikbaar op de website. Dit leert je ook glyph imbues die op je eigen lichaam staan te lezen en gebruiken (personen met de “Glyph meesterschap” vaardigheid kunnen die op je lichaam plaatsen). Je lichaam heeft een maximale imbue cap van 20 voor glyph imbues.",
+      "description": "You can read glyphs and use scrolls written with glyphs. A loresheet for this skill is available on the website. This also teaches you to read and use glyph imbues on your own body (people with the “Glyph Mastery” skill can place them on your body). Your body has a maximum imbue cap of 20 for glyph imbues.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -125,11 +125,11 @@
     },
     {
       "id": 106,
-      "skill": "Glyph Gewenning",
+      "skill": "Glyph Attunement",
       "alt_skill": "",
-      "category": "Algemene vaardigheden",
+      "category": "General skills",
       "page": 12,
-      "description": "De maximale imbue cap van je lichaam voor glyph weaves wordt verhoogt met 20. Deze vaardigheid mag je meerdere keren aankopen.",
+      "description": "Increases the maximum imbue cap of your body for glyph imbues by 20. This skill can be purchased multiple times.",
       "Requirements": {
         "skill": [ 105 ],
         "any_list": []
@@ -150,11 +150,11 @@
     },
     {
       "id": 107,
-      "skill": "Rekenen",
+      "skill": "Numeracy",
       "alt_skill": "",
-      "category": "Algemene vaardigheden",
+      "category": "General skills",
       "page": 12,
-      "description": "Je kan rekenen.",
+      "description": "You can perform mathematical calculations.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -170,11 +170,11 @@
     },
     {
       "id": 108,
-      "skill": "Levenskracht A",
+      "skill": "Lifeforce A",
       "alt_skill": "",
-      "category": "Algemene vaardigheden",
+      "category": "General skills",
       "page": 13,
-      "description": "Je hebt 2 hitpoints totaal",
+      "description": "You have a total of 2 hitpoints.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -195,11 +195,11 @@
     },
     {
       "id": 109,
-      "skill": "Levenskracht B",
+      "skill": "Lifeforce B",
       "alt_skill": "",
-      "category": "Algemene vaardigheden",
+      "category": "General skills",
       "page": 13,
-      "description": "Je hebt 3 hitpoints totaal",
+      "description": "You have a total of 3 hitpoints.",
       "Requirements": {
         "skill": [ 108 ],
         "any_list": []
@@ -220,11 +220,11 @@
     },
     {
       "id": 110,
-      "skill": "Levenskracht C",
+      "skill": "Lifeforce C",
       "alt_skill": "",
-      "category": "Algemene vaardigheden",
+      "category": "General skills",
       "page": 13,
-      "description": "Je hebt 4 hitpoints totaal",
+      "description": "You have a total of 4 hitpoints.",
       "Requirements": {
         "skill": [ 109 ],
         "any_list": []
@@ -245,11 +245,11 @@
     },
     {
       "id": 111,
-      "skill": "Leermeester Expertise",
+      "skill": "Teaching Expertise",
       "alt_skill": "",
-      "category": "Algemene vaardigheden",
+      "category": "General skills",
       "page": 13,
-      "description": "Je krijgt de mogelijkheid 2 leerlingen extra vaardigheden die je zelf bezit door te leren. Dit moeten vaardigheden zijn die je zelf hebt en dus geen vaardigheden verkregen uit items. In totaal mag een leermeester niet meer dan 8 leerlingen hebben. Dit is het totaal aantal, verkregen door rankings, items, powers en vaardigheden. Wanneer je een leerling aanneemt moet dit bij de uitcheck gemeld worden. Dit doe je door de PLIN-CHIN van de leerling te vermelden en welke vaardigheid er aangeleerd wordt. Dit alles meld je op de teaching-card die ingeleverd wordt tijdens de uitcheck.  \\nDeze vaardigheid kan tot 3 keer gekozen worden.",
+      "description": "You gain the ability to teach 2 additional skills to students that you possess yourself. These must be skills you have acquired and not skills obtained from items. A teacher may not have more than 8 students in total, acquired through ranks, items, powers, and skills. When you accept a student, this must be reported at checkout by specifying the PLIN-CHIN of the student and which skill is being taught. All of this should be noted on the teaching card submitted during checkout. \\nThis skill can be chosen up to 3 times.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -265,11 +265,11 @@
     },
     {
       "id": 125,
-      "skill": "Schilden",
+      "skill": "Shield Use",
       "alt_skill": "",
-      "category": "Pantservaardigheden",
+      "category": "Armour Skills",
       "page": 14,
-      "description": "Hiermee mag je een schild gebruiken met een maximale grootte van 60 cm bij 120 cm (of gelijkwaardig oppervlak).",
+      "description": "This allows you to use a shield with a maximum size of 60 cm by 120 cm (or equivalent area).",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -285,11 +285,11 @@
     },
     {
       "id": 126,
-      "skill": "Harnas I",
+      "skill": "Armour I",
       "alt_skill": "",
-      "category": "Pantservaardigheden",
+      "category": "Armour Skills",
       "page": 14,
-      "description": "Met deze vaardigheid kan je tot 2 armourpoints krijgen door het dragen van fysieke bepantsering.",
+      "description": "With this skill, you can gain up to 2 Armour points by wearing physical Armour.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -313,11 +313,11 @@
     },
     {
       "id": 127,
-      "skill": "Harnas II",
+      "skill": "Armour II",
       "alt_skill": "",
-      "category": "Pantservaardigheden",
+      "category": "Armour Skills",
       "page": 14,
-      "description": "Met deze vaardigheid kan je tot 4 armourpoints krijgen door het dragen van fysieke bepantsering. Als je onder je pantser nog een laag pantser draagt dat je minstens 1 extra armourpoint zou geven krijg je daarvoor in de plaats tweemaal per dag immuniteit voor strike. Roep de “NO EFFECT” call als je hier gebruik van maakt.",
+      "description": "With this skill, you can gain up to 4 Armour points by wearing physical Armour. If you wear an additional layer of Armour under your Armour that would give you at least 1 extra Armour point, you can instead gain immunity to strike twice per day. Call \"NO EFFECT\" when you use this ability.",
       "Requirements": {
         "skill": [ 126 ],
         "any_list": []
@@ -338,11 +338,11 @@
     },
     {
       "id": 128,
-      "skill": "Harnas III",
+      "skill": "Armour III",
       "alt_skill": "",
-      "category": "Pantservaardigheden",
+      "category": "Armour Skills",
       "page": 14,
-      "description": "Met deze vaardigheid kan je tot 6 armourpoints krijgen door het dragen van fysieke bepantsering. Als je onder je pantser nog een laag pantser draagt dat je minstens 3 extra armourpoint zou geven krijg je daarvoor in de plaats tweemaal per dag resist tegen blast (slechts 1 schade in plaats van 3). Roep de “RESIST” call als je hier gebruik van maakt. ",
+      "description": "With this skill, you can gain up to 6 Armour points by wearing physical Armour. If you wear an additional layer of Armour under your Armour that would give you at least 3 extra Armour points, you can instead gain resistance to blast twice per day (taking only 1 damage instead of 3). Call \"RESIST\" when you use this ability.",
       "Requirements": {
         "skill": [ 127 ],
         "any_list": []
@@ -363,11 +363,11 @@
     },
     {
       "id": 129,
-      "skill": "Harnas IV",
+      "skill": "Armour IV",
       "alt_skill": "",
-      "category": "Pantservaardigheden",
+      "category": "Armour skills",
       "page": 15,
-      "description": "Met deze vaardigheid kan je tot 8 armourpoints krijgen door het dragen van fysieke bepantsering. Als je onder je pantser nog een laag pantser draagt dat je minstens 4 extra armourpoint zou geven krijg je daarvoor in de plaats tweemaal per dag resist tegen crush (slechts 1 schade in plaats van 5). Roep de “RESIST” call als je hier gebruik van maakt. ",
+      "description": "With this skill, you can gain up to 8 Armour points by wearing physical Armour. If you wear an additional layer of Armour under your Armour that would give you at least 4 extra Armour points, you can instead gain resistance to crush twice per day (taking only 1 damage instead of 5). Call \"RESIST\" when you use this ability.",
       "Requirements": {
         "skill": [ 128 ],
         "any_list": []
@@ -388,11 +388,11 @@
     },
     {
       "id": 130,
-      "skill": "Spreuken in bepantsering",
+      "skill": "Armour Casting",
       "alt_skill": "",
-      "category": "Pantservaardigheden",
+      "category": "Armour skills",
       "page": 15,
-      "description": "Deze vaardigheid maakt het makkelijker om Magiër, Priester of Genezing spreuken te gebruiken in bepantsering. Om de bepantsering te kunnen dragen heb je ook de betreffende vaardigheid nodig! In onderstaande tabel zie je welk level spreuken je kan gebruiken met welke hoeveelheid pantser punten. Beschadigde pantser punten zit spreuken gebruik nog steeds in de weg. Let op! Extra AP zit spreuken gebruiken nooit in de weg. Hier hoef je dus geen rekening mee te houden. Je kan deze vaardigheid 1 keer kopen als basis vaardigheid en daarna nog 2 keer via een leermeester als extra vaardigheid (zie het hoofdstuk extra vaardigheden). \\n\\nSpreuken gedaan vanaf scrolls of met behulp van de “graveer spreuk” imbue, hebben geen last van pantser en mogen dus gedaan worden zonder deze vaardigheid, ongeacht hoeveel pantser iemand draagt. ",
+      "description": "This skill makes it easier to use Mage, Priest, or Healing spells while wearing Armour. To wear the Armour, you also need the respective skill! The table below shows the spell levels you can use with different amounts of Armour points. Damaged Armour points still obstruct spellcasting. Note! Extra AP never obstructs spellcasting. You can purchase this skill once as a base skill and then two more times via a teacher as an extra skill (see the additional skills chapter). \\n\\nSpells cast from scrolls or using the \"engrave spell\" imbue are unaffected by Armour and may be cast regardless of how much Armour someone wears.",
       "Requirements": {
         "skill": [ 126 ],
         "any_list": []
@@ -408,11 +408,11 @@
     },
     {
       "id": 131,
-      "skill": "Paladijn",
+      "skill": "Paladin",
       "alt_skill": "",
-      "category": "Pantservaardigheden",
+      "category": "Armour skills",
       "page": 16,
-      "description": "Een paladijn is een krijger die de zwakkeren tracht te helpen en vaak gebonden is aan een code van ridderlijkheid. Tijdens gevechten uit zich dat vaak in een combinatie van het dragen van pantser en genezersvaardigheden. Deze vaardigheid maakt het makkelijker om genezingspreuken te gebruiken in bepantsering. Om de bepantsering te kunnen dragen heb je ook de betreffende vaardigheid nodig! Je kunt met deze vaardigheid 4 armourpoints pantser dragen en nog altijd al je levels aan genezingsspreuken en paladijnspreuken gebruiken. Je kan deze vaardigheid 3 keer kopen. Per extra keer kun je 2 AP meer dragen en toch je genezing en paladijnspreuken blijven gebruiken.",
+      "description": "A paladin is a warrior who seeks to aid the weak and often adheres to a code of chivalry. In battle, this often manifests as a combination of wearing Armour and healing skills. This skill makes it easier to use healing spells while wearing Armour. To wear the Armour, you also need the respective skill! With this skill, you can wear up to 4 Armour points and still use all levels of healing and paladin spells. You can purchase this skill three times. Each additional purchase allows you to wear 2 more AP and still use your healing and paladin spells.",
       "Requirements": {
         "skill": [ 126 ],
         "any_list": [ 350, 351 ]
@@ -428,11 +428,11 @@
     },
     {
       "id": 150,
-      "skill": "Kleine Wapens",
+      "skill": "Small Weapons",
       "alt_skill": "",
-      "category": "Wapenvaardigheden",
+      "category": "Weapon skills",
       "page": 17,
-      "description": "Met deze vaardigheid mag je een wapen gebruiken met een maximum lengte van 45 cm, gerekend van uiteinde tot uiteinde.",
+      "description": "With this skill, you may use a weapon with a maximum length of 45 cm, measured from end to end.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -448,11 +448,11 @@
     },
     {
       "id": 151,
-      "skill": "Eenhandige Wapens",
+      "skill": "One-Handed Weapons",
       "alt_skill": "",
-      "category": "Wapenvaardigheden",
+      "category": "Weapon skills",
       "page": 17,
-      "description": "Met deze vaardigheid mag je een wapen gebruiken dat langer is dan 45 cm, met een maximum lengte van 110 cm, gerekend van uiteinde tot uiteinde.",
+      "description": "With this skill, you may use a weapon longer than 45 cm, with a maximum length of 110 cm, measured from end to end.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -468,13 +468,13 @@
     },
     {
       "id": 152,
-      "skill": "Tweehandige Wapens",
+      "skill": "Two-Handed Weapons",
       "alt_skill": "",
-      "category": "Wapenvaardigheden",
+      "category": "Weapon skills",
       "page": 17,
-      "description": "Met deze vaardigheid mag je een wapen gebruiken dat langer is dan 110 cm, met een maximum lengte van 150 cm, gerekend van uiteinde tot uiteinde. Een tweehandig wapen MOET altijd met twee handen gehanteerd worden. Met hanteren wordt bedoeld blokken of slaan. Een wapen hoeft niet ten alle tijden met twee handen vastgehouden te worden en mag bijvoorbeeld tegen een schouder rusten zodat je handen vrij zijn. ",
+      "description": "With this skill, you may use a weapon longer than 110 cm, with a maximum length of 150 cm, measured from end to end. A two-handed weapon MUST always be wielded with two hands when blocking or striking. The weapon does not have to be held with both hands at all times and can rest against a shoulder to free up your hands.",
       "Requirements": {
-        "skill": [],
+        "skill": [ 151 ],
         "any_list": []
       },
       "xp": 1,
@@ -488,13 +488,13 @@
     },
     {
       "id": 153,
-      "skill": "Staf Wapens",
+      "skill": "Pole Arms",
       "alt_skill": "",
-      "category": "Wapenvaardigheden",
+      "category": "Weapon skills",
       "page": 17,
-      "description": "Met deze vaardigheid mag je een wapen gebruiken dat langer is dan 150 cm, met een maximum lengte van 215 cm, gerekend van uiteinde tot uiteinde. Een wapen van langer dan 150 cm MOET altijd met twee handen gehanteerd worden. Waarbij tenminste één hand het midden van het wapen vast heeft. Met hanteren wordt bedoeld blokken of slaan. Een wapen hoeft niet ten alle tijden met twee handen vastgehouden te worden en mag bijvoorbeeld tegen een schouder rusten zodat je handen vrij zijn. ",
+      "description": "With this skill, you may use a weapon longer than 150 cm, with a maximum length of 215 cm, measured from end to end. A weapon longer than 150 cm MUST always be wielded with two hands, with at least one hand gripping the middle of the weapon. Wielding refers to blocking or striking. The weapon does not have to be held with both hands at all times and can rest against a shoulder to free up your hands.",
       "Requirements": {
-        "skill": [],
+        "skill": [ 151 ],
         "any_list": []
       },
       "xp": 1,
@@ -508,11 +508,11 @@
     },
     {
       "id": 154,
-      "skill": "Werp Wapens",
+      "skill": "Thrown Weapons",
       "alt_skill": "",
-      "category": "Wapenvaardigheden",
+      "category": "Weapon skills",
       "page": 17,
-      "description": "Hiermee mag je werpwapens gebruiken. Een werpwapen moet speciaal als werpwapen zijn goedgekeurd. Je mag maximaal 1 werpwapen tegelijkertijd gooien.",
+      "description": "With this skill, you may use throwing weapons. A throwing weapon must be specifically approved as a throwing weapon. You may throw a maximum of one throwing weapon at a time.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -528,11 +528,11 @@
     },
     {
       "id": 155,
-      "skill": "Boogschieten",
+      "skill": "Archery",
       "alt_skill": "",
-      "category": "Wapenvaardigheden",
+      "category": "Weapon skills",
       "page": 18,
-      "description": "Met deze vaardigheid mag je een boog of kruisboog gebruiken. Toegestaan zijn bogen met een trekkracht tot 30 pond (lbs., Engelse maat) en kruisbogen met een trekkracht tot 40 pond (lbs., Engelse maat). Een pijl doet 3 schade in plaats van de 1 schade die alle andere wapens standaard doen",
+      "description": "With this skill, you may use a bow or crossbow. Allowed are bows with a draw weight up to 30 pounds (lbs.) and crossbows with a draw weight up to 40 pounds (lbs.). An arrow deals 3 damage instead of the 1 damage that all other weapons standardly do.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -548,11 +548,11 @@
     },
     {
       "id": 175,
-      "skill": "Doorzettingsvermogen",
+      "skill": "Perseverance",
       "alt_skill": "",
-      "category": "Vechtersvaardigheden",
+      "category": "Fighter Skills",
       "page": 19,
-      "description": "Je krijgt 3 wilskracht per dag. \\nJe krijgt toegang tot de technieken: Crippling Blow en Minor Resilience.",
+      "description": "You gain 3 willpower per day. \nYou gain access to the techniques: Crippling Blow and Minor Resilience.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -573,11 +573,11 @@
     },
     {
       "id": 176,
-      "skill": "Kracht A",
+      "skill": "Strength A",
       "alt_skill": "",
-      "category": "Vechtersvaardigheden",
+      "category": "Fighter Skills",
       "page": 19,
-      "description": "Je krijgt 3 wilskracht per dag. \\nJe krijgt toegang tot de technieken: Striking Blow en Confusing Blow. ",
+      "description": "You gain 3 willpower per day. \nYou gain access to the techniques: Striking Blow and Confusing Blow.",
       "Requirements": {
         "skill": [ 175 ],
         "any_list": []
@@ -598,11 +598,11 @@
     },
     {
       "id": 177,
-      "skill": "Taaiheid A",
+      "skill": "Toughness A",
       "alt_skill": "",
-      "category": "Vechtersvaardigheden",
+      "category": "Fighter Skills",
       "page": 19,
-      "description": "Je krijgt 3 wilskracht per dag. \\nJe krijgt toegang tot de technieken: Resist blast en Pain suppression.",
+      "description": "You gain 3 willpower per day. \nYou gain access to the techniques: Resist blast and Pain suppression.",
       "Requirements": {
         "skill": [ 175 ],
         "any_list": []
@@ -623,11 +623,11 @@
     },
     {
       "id": 178,
-      "skill": "Leiderschap A",
+      "skill": "Leadership A",
       "alt_skill": "",
-      "category": "Vechtersvaardigheden",
+      "category": "Fighter Skills",
       "page": 19,
-      "description": "Je krijgt 3 wilskracht per dag. \\nJe krijgt toegang tot de technieken: Hold the Line en Retrieve Comrade",
+      "description": "You gain 3 willpower per day. \nYou gain access to the techniques: Hold the Line and Retrieve Comrade.",
       "Requirements": {
         "skill": [ 175 ],
         "any_list": []
@@ -648,11 +648,11 @@
     },
     {
       "id": 179,
-      "skill": "Bescherming A",
+      "skill": "Protection A",
       "alt_skill": "",
-      "category": "Vechtersvaardigheden",
+      "category": "Fighter Skills",
       "page": 20,
-      "description": "Je krijgt 3 wilskracht per dag. \\nJe krijgt toegang tot de technieken: Block Spell en Withstand Freeze",
+      "description": "You gain 3 willpower per day. \nYou gain access to the techniques: Block Spell and Withstand Freeze.",
       "Requirements": {
         "skill": [ 175, 125 ],
         "any_list": []
@@ -675,9 +675,9 @@
       "id": 180,
       "skill": "Berserker A",
       "alt_skill": "",
-      "category": "Vechtersvaardigheden",
+      "category": "Fighter Skills",
       "page": 20,
-      "description": "Je krijgt 3 wilskracht per dag. \\nJe krijgt toegang tot de technieken: Withstand Slow en Fearful Presence.",
+      "description": "You gain 3 willpower per day. \nYou gain access to the techniques: Withstand Slow and Fearful Presence.",
       "Requirements": {
         "skill": [ 175 ],
         "any_list": []
@@ -698,11 +698,11 @@
     },
     {
       "id": 181,
-      "skill": "Militaire training A",
+      "skill": "Military training A",
       "alt_skill": "",
-      "category": "Vechtersvaardigheden",
+      "category": "Fighter Skills",
       "page": 20,
-      "description": "Je krijgt 3 wilskracht per dag. \\nJe hebt 1 hitpoint meer.",
+      "description": "You gain 3 willpower per day. \nYou have 1 more hitpoint.",
       "Requirements": {
         "skill": [ 175 ],
         "any_list": []
@@ -729,11 +729,11 @@
     },
     {
       "id": 200,
-      "skill": "Eerste hulp bij gevechten",
+      "skill": "First Aid",
       "alt_skill": "",
-      "category": "Heelmeestervaardigheden",
+      "category": "Healer Skills",
       "page": 22,
-      "description": "Je krijgt 2 wilskracht per dag. \\nJe kunt andere mensen (dus niet jezelf) verbinden en hechten. Per minuut die je zonder onderbreking iemand behandelt, genees je 1 hitpoint (aangestoten worden, concentratie verliezen of geslagen worden verstoort de vaardigheid). Dit kost normaal geen wilskracht. Maar je kunt 1 wilskracht spenderen om na 1 minuut alle hitpoints te genezen. Deze vaardigheid werkt niet op personen met een FATAL! Voor deze vaardigheid zijn physreps vereist! Verband moet minimaal 4cm breed zijn en 4x om het te genezen lichaamsdeel gewikkeld kunnen worden om werkzaam te zijn. ",
+      "description": "You gain 2 willpower per day. \nYou can bind and suture other people (not yourself). For each uninterrupted minute of treatment, you heal 1 hitpoint (being jostled, losing concentration, or being hit disrupts the skill). Normally, this does not cost willpower. However, you can spend 1 willpower to heal all hitpoints after 1 minute. This skill does not work on individuals with a FATAL! Physreps are required for this skill! Bandages must be at least 4cm wide and able to be wrapped around the injured body part 4 times to be effective.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -754,11 +754,11 @@
     },
     {
       "id": 201,
-      "skill": "Snelle behandeling",
+      "skill": "Quick-and-Dirty Treatment",
       "alt_skill": "",
-      "category": "Heelmeestervaardigheden",
+      "category": "Healer Skills",
       "page": 22,
-      "description": "Je krijgt 1 extra wilskracht per dag. \\nAls je 1 wilskracht betaalt, dan tel je als 2 heelmeesters tijdens een behandeling om te bepalen hoe lang een behandeling duurt. ",
+      "description": "You gain 1 extra willpower per day. \nIf you pay 1 willpower, you count as 2 healers during a treatment to determine the treatment duration.",
       "Requirements": {
         "skill": [ 200 ],
         "any_list": []
@@ -779,11 +779,11 @@
     },
     {
       "id": 202,
-      "skill": "Slagveld operatie",
+      "skill": "Battlefield Surgery",
       "alt_skill": "",
-      "category": "Heelmeestervaardigheden",
+      "category": "Healer Skills",
       "page": 22,
-      "description": "Je krijgt 2 extra wilskracht per dag. \\nAls je 5 minuten lang iemand zonder onderbreking behandelt met behulp van minstens 1 andere heelmeester die “eerste hulp bij gevechten” heeft, dan kun je een FATAL effect verwijderen. Als je 1 wilskracht betaald dan kun je bij iemand een FATAL effect verwijderen zonder hulp. (tijdsperiode blijft wel gelijk) De grace period wordt tijdens de behandeling gestopt zodat de patiënt niet tijdens de behandeling sterft. \\nVoor deze vaardigheid zijn physreps vereist! Zoals een operatiekit en verbanden om de wond achteraf te verbinden. Hoe deze physrep er precies uitziet voor jouw personage mag je zelf invullen.",
+      "description": "You gain 2 extra willpower per day. \nIf you treat someone for 5 uninterrupted minutes with the help of at least 1 other healer who has 'Eerste hulp bij gevechten', you can remove a FATAL effect. If you spend 1 willpower, you can remove a FATAL effect on your own (time period remains the same). The grace period is paused during treatment so the patient does not die during the procedure. \nPhysreps are required for this skill! An operation kit and bandages for post-treatment are necessary. The specifics of the physrep can be tailored to your character.",
       "Requirements": {
         "skill": [ 200 ],
         "any_list": []
@@ -804,11 +804,11 @@
     },
     {
       "id": 203,
-      "skill": "Diagnostiek",
+      "skill": "Diagnostics",
       "alt_skill": "",
-      "category": "Heelmeestervaardigheden",
+      "category": "Healer Skills",
       "page": 23,
-      "description": "Je krijgt 2 extra wilskracht per dag. \\nVoor iedere 5 minuten dat je iemand (zelfs na hun dood) ongestoord medisch onderzoekt op symptomen en deze symptomen opzoekt in een naslagwerk dan detecteer je 1 van de volgende condities (indien aanwezig). Als er meerdere condities aanwezig zijn dan mag de patiënt kiezen welke als eerste gedetecteerd wordt: \n[Gif, Ziekte, Zielloos of invloeden op de ziel (werkt niet op doden), Ondood, Other being, Verslaving, Invloed van hypnose, Andere dingen…]. \nAls je 1 wilskracht betaald na de diagnose dan mag je onmiddellijk aan de speler die je aan het behandelen bent vragen of er nog meer te detecteren valt of dat je alles gevonden hebt.",
+      "description": "You gain 2 extra willpower per day. \nFor every 5 minutes you spend uninterrupted examining someone (even after death) and referencing symptoms in a compendium, you detect one of the following conditions (if present). If multiple conditions are present, the patient chooses which is detected first: \n[Poison, Disease, Soulless or soul influences (does not work on the dead), Undead, Other being, Addiction, Hypnosis influence, Other...]. \nIf you spend 1 willpower after the diagnosis, you can immediately ask the player if there is more to detect or if you have found everything.",
       "Requirements": {
         "skill": [ 200 ],
         "any_list": []
@@ -829,11 +829,11 @@
     },
     {
       "id": 204,
-      "skill": "Humorisch Patholoog",
+      "skill": "Balance Humors",
       "alt_skill": "",
-      "category": "Heelmeestervaardigheden",
+      "category": "Healer Skills",
       "page": 23,
-      "description": "Je krijgt 3 extra wilskracht per dag. \\nJe bezit medicijnen en methoden om ziektes te bestrijden. De rest is hetzelfde als de Bezoar Specialist. De grace period wordt tijdens de behandeling gestopt zodat de patiënt niet tijdens de behandeling sterft. De behandeling geneest per 5 minuten 1 wond die door een ziekte is veroorzaakt of verwijdert 1 specifiek type ziekte die een effect veroorzaakt. De patiënt krijgt een willekeurige bijwerking die jij als humorisch pathaloog beslist. Je mag niet twee maal dezelfde beslissing maken op 1 evenement. Als je alle 5 de bijwerkingen hebt gekozen dan begin je weer opnieuw: \\n1. De patiënt verliest 1 energie naar keuze \\n2. De patiënt verliest 2 energie naar keuze \\n3. De patiënt is extra agressief of prikkelbaar vandaag \\n4. Geen bijwerking \\n5. De patiënt heeft 1 minder hitpoint voor de rest van de dag (als de patiënt maar 1 hitpoint heeft verliest die 2 energie naar keuze). \\nAls je 1 wilskracht betaalt hoef je geen bijwerking te kiezen. \\n\\nVoor deze vaardigheid zijn physreps vereist! Je werkt immers met de lichaamsvloeistoffen van de patiënt.",
+      "description": "You gain 3 extra willpower per day. \nYou possess medicines and methods to combat diseases. The rest is the same as the Bezoarist. The grace period is paused during treatment so the patient does not die during the procedure. The treatment heals 1 wound caused by a disease every 5 minutes or removes one specific type of disease effect. The patient receives a random side effect decided by you as the humorisch pathologist. You cannot choose the same side effect twice per event. Once all 5 side effects have been chosen, you start over: \n1. The patient loses 1 energy of their choice \n2. The patient loses 2 energy of their choice \n3. The patient is extra aggressive or irritable today \n4. No side effect \n5. The patient has 1 less hitpoint for the rest of the day (if the patient only has 1 hitpoint, they lose 2 energy of their choice). \nIf you spend 1 willpower, you do not have to choose a side effect. \n\nPhysreps are required for this skill as you work with the patient's bodily fluids.",
       "Requirements": {
         "skill": [ 203 ],
         "any_list": []
@@ -854,11 +854,11 @@
     },
     {
       "id": 205,
-      "skill": "Bezoar specialist",
+      "skill": "Bezoarist",
       "alt_skill": "",
-      "category": "Heelmeestervaardigheden",
+      "category": "Healer Skills",
       "page": 24,
-      "description": "Je krijgt 3 extra wilskracht per dag. \\nJe bezit medicijnen en methoden om giffen te bestrijden. De rest is hetzelfde als Humorisch Patholoog. De grace period wordt tijdens de behandeling gestopt zodat de patiënt niet tijdens de behandeling sterft. De behandeling geneest per 5 minuten 1 wonde die door een gif is veroorzaakt of verwijdert 1 specifiek type ziekte die een effect veroorzaakt. De patiënt krijgt een willekeurige bijwerking die jij als Bezoar Specialist beslist. Je mag niet tweemaal dezelfde beslissing maken op 1 evenement. Als je alle 5 de bijwerkingen hebt gekozen dan begin je weer opnieuw: \\n1. De patiënt verliest 1 energie naar keuze \\n2. De patiënt verliest 2 energie naar keuze \\n3. De patiënt is extra agressief of prikkelbaar vandaag \\n4. Geen bijwerking \\n5. De patiënt heeft 1 minder hitpoint voor de rest van de dag (als de patiënt maar 1 hitpoint heeft verliest die 2 energie naar keuze). Wanneer je 1 wilskracht betaalt hoef je geen bijwerking te kiezen. \\n\\nVoor deze vaardigheid zijn physreps vereist! Je werkt immers met de lichaamsvloeistoffen van de patiënt.",
+      "description": "You gain 3 extra willpower per day. \nYou possess medicines and methods to combat poisons. The rest is the same as Humor Balancer. The grace period is paused during treatment so the patient does not die during the procedure. The treatment heals 1 wound caused by poison every 5 minutes or removes one specific type of poison effect. The patient receives a random side effect decided by you as the Bezoar Specialist. You cannot choose the same side effect twice per event. Once all 5 side effects have been chosen, you start over: \n1. The patient loses 1 energy of their choice \n2. The patient loses 2 energy of their choice \n3. The patient is extra aggressive or irritable today \n4. No side effect \n5. The patient has 1 less hitpoint for the rest of the day (if the patient only has 1 hitpoint, they lose 2 energy of their choice). If you spend 1 willpower, you do not have to choose a side effect. \n\nPhysreps are required for this skill as you work with the patient's bodily fluids.",
       "Requirements": {
         "skill": [ 203 ],
         "any_list": []
@@ -879,11 +879,11 @@
     },
     {
       "id": 206,
-      "skill": "Hypnotherapie",
+      "skill": "Hypnotherapy",
       "alt_skill": "",
-      "category": "Heelmeestervaardigheden",
+      "category": "Healer Skills",
       "page": 25,
-      "description": "Je krijgt 2 extra wilskracht per dag. \\nJe kunt bij een gewillig persoon (of groep van maximaal 5 personen) onbewuste triggers plaatsen gedurende een hypnose sessie van 5 minuten. Dit kost 1 wilskracht per groep. Tijdens de hypnose sessie wordt 1 van onderstaande effecten en een codewoord uitgekozen. De eerste keer dat de patiënt vandaag het codewoord hoort zal het gekozen effect onmiddellijk stoppen. Als de patiënt het codewoord hoort terwijl de patiënt niet onder invloed is van het effect dan is de hypnose ook verbruikt! Iemand kan maar onder invloed zijn van 1 beschermende hypnose tegelijk. \\n● Fear \\n● Freeze \\n● Mute \\n● Command \\n● Paralyze \\n● Confuse \\n● Incite Aggression \\n● Sleep \\n● Torture \\n● Fascinate \\n● Invite spreuken \\n\\nVoor de duidelijkheid: Als het effect veroorzaakt is door een gif of ziekte dan stopt het effect niet als de ziekte of gif nog niet genezen is. Anderzijds kan er in plaats van bovenstaande gekozen worden om de ontvanger van de hypnose de gehele dag immuun te maken tegen schadelijke hypnose. ",
+      "description": "You gain 2 extra willpower per day. \nYou can place unconscious triggers in a willing person (or a group of up to 5 people) during a 5-minute hypnosis session. This costs 1 willpower per group. During the session, one of the following effects and a codeword are chosen. The first time the patient hears the codeword today, the chosen effect immediately stops. If the patient hears the codeword while not under the influence of the effect, the hypnosis is also used up! A person can only be under the influence of one protective hypnosis at a time. \n● Fear \n● Freeze \n● Mute \n● Command \n● Paralyze \n● Confuse \n● Incite Aggression \n● Sleep \n● Torture \n● Fascinate \n● Invite spells \n\nFor clarity: If the effect is caused by a poison or disease, the effect does not stop if the disease or poison is not cured. Alternatively, you can choose to make the recipient immune to harmful hypnosis for the entire day.",
       "Requirements": {
         "skill": [ 200 ],
         "any_list": []
@@ -904,11 +904,11 @@
     },
     {
       "id": 207,
-      "skill": "Schadelijke hypnose",
+      "skill": "Harmful Hypnotism",
       "alt_skill": "",
-      "category": "Heelmeestervaardigheden",
+      "category": "Healer Skills",
       "page": 25,
-      "description": "Je krijgt 4 extra wilskracht per dag. \\nJe kunt bij een onwillige gevangen, uitgeschakeld (dus op 0 HP), bewusteloos of onbewust persoon onbewuste triggers plaatsen gedurende een hypnose sessie van 5 minuten. Dit kost 2 wilskracht. Tijdens de sessie wordt een codewoord en een instructie uitgekozen. De persoon herinnert zich niets van de hypnose sessie. De volgende keer dat de persoon het codewoord hoort voert die zo goed mogelijk de instructies uit gedurende 5 minuten. Nadat de instructies zijn uitgevoerd herinnert het slachtoffer zich alles weer, inclusief de hypnose sessie. Alle effecten van schadelijke hypnose verdwijnen bij de volgende zonsopgang. Iemand kan onder invloed zijn van meerdere schadelijke hypnose sessies tegelijk!",
+      "description": "You gain 4 extra willpower per day. \nYou can place unconscious triggers in an unwilling, captured, incapacitated (0 HP), unconscious, or unaware person during a 5-minute hypnosis session. This costs 2 willpower. During the session, a codeword and an instruction are chosen. The person remembers nothing of the hypnosis session. The next time the person hears the codeword, they follow the instructions as best they can for 5 minutes. After the instructions are carried out, the victim remembers everything, including the hypnosis session. All effects of harmful hypnosis disappear at the next sunrise. A person can be under the influence of multiple harmful hypnosis sessions at once!",
       "Requirements": {
         "skill": [ 206 ],
         "any_list": []
@@ -929,11 +929,11 @@
     },
     {
       "id": 225,
-      "skill": "Kennis van Kruiden",
+      "skill": "Herb Lore",
       "alt_skill": "",
-      "category": "Alchemistenvaardigheden",
+      "category": "Alchemist Skills",
       "page": 27,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt met deze vaardigheid kruiden herkennen en plukken als ze groeien in het wild. Als je deze vaardigheid niet hebt, kun je kruiden niet onderscheiden van andere plantjes. Kruiden mogen alleen geplukt worden tijdens de looptijd van het spel. \\nOok krijg je aan het begin van het evenement een specifiek aantal lege kruiden kaartjes. Hiermee kun je specifieke kruiden vinden bij gelamineerde “kruiden patches”. Instructies over hoe deze precies te gebruiken staan op deze gelamineerde papieren. \\nJe kunt met deze vaardigheid ook andere alchemisten helpen brouwsels maken, dit kost jou 2 inspiratie en heeft als effect dat het te maken drankje voor de brouwer 1 inspiratie minder kost om te brouwen.",
+      "description": "You gain 2 Inspiration per day. \nWith this skill, you can recognize and pick herbs when they grow in the wild. Without this skill, you cannot distinguish herbs from other plants. Herbs can only be picked during the game. \nAt the beginning of the event, you also receive a specific number of blank herb cards. These can be used to find specific herbs at laminated “herb patches.” Instructions on how to use these are on the laminated sheets. \nWith this skill, you can also help other alchemists make brews, costing you 2 inspiration and reducing the cost of the brew for the brewer by 1 inspiration.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -957,11 +957,11 @@
     },
     {
       "id": 226,
-      "skill": "Kruiden bewaren",
+      "skill": "Preserve Herbs",
       "alt_skill": "",
-      "category": "Alchemistenvaardigheden",
+      "category": "Alchemist Skills",
       "page": 28,
-      "description": "Je kunt kruiden geschikt maken om te bewaren, ook wel preserveren genoemd. Hierdoor kunnen deze kruiden maximaal 1 jaar en 1 dag bewaard worden. Je kunt 3 kruiden per dag of één drankje per dag (hierbij zijn potions die energie teruggeven uitgesloten) op deze wijze behandelen. Na het behandelen van het kruid of potion vul je een leeg KRUIDEN BEWAREN- of POTION BEWAREN-kaartje in. Je bevestigt de kruiden kaartjes aan dit ingevulde kaartje. Je kunt deze vaardigheid meerdere keren nemen. (Waarbij je per keer 3 kruiden/dag of 1 drankje/dag meer kunt bewaren).",
+      "description": "You can make herbs suitable for preservation, allowing them to be stored for up to 1 year and 1 day. You can treat 3 herbs or 1 potion per day (excluding potions that restore energy) this way. After treating the herb or potion, fill out a blank PRESERVED HERB or PRESERVED POTION card and attach it to the herb or potion card. You can take this skill multiple times (each time allowing you to preserve 3 more herbs/day or 1 more potion/day).",
       "Requirements": {
         "skill": [ 225 ],
         "any_list": []
@@ -977,11 +977,11 @@
     },
     {
       "id": 227,
-      "skill": "Brouw Genezende Dranken A",
-      "alt_skill": "Genezende Dranken A",
-      "category": "Alchemistenvaardigheden",
+      "skill": "Brew Healing Potions A",
+      "alt_skill": "Healing Potions A",
+      "category": "Alchemist Skills",
       "page": 28,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt basis genezende drankjes brouwen. Drankjes die op deze wijze gemaakt zijn, blijven 1 week houdbaar tenzij een specifiek ingrediënt toegevoegd wordt. \\nJe krijgt toegang tot de recepten: “Heal scrape potion”, “Heal wound potion”, “Minor potion of heal crippling wound”, “Bleed salve” en “Heal crippling wound potion”, “Heal hangover”.",
+      "description": "You gain 2 Inspiration per day. \nYou can brew basic healing potions. Potions made this way last 1 week unless a specific ingredient is added. \nYou gain access to the recipes: “Heal scrape potion,” “Heal wound potion,” “Minor potion of heal crippling wound,” “Bleed salve,” “Heal crippling wound potion,” and “Heal hangover.”",
       "Requirements": {
         "skill": [ 225 ],
         "any_list": []
@@ -1005,11 +1005,11 @@
     },
     {
       "id": 228,
-      "skill": "Brouw Kruiden Elixers A",
-      "alt_skill": "Kruiden Elixers A",
-      "category": "Alchemistenvaardigheden",
+      "skill": "Brew Herbal Elixirs A",
+      "alt_skill": "Herbal Elixirs A",
+      "category": "Alchemist Skills",
       "page": 28,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt basis kruiden elixers brouwen. Drankjes die op deze wijze gemaakt zijn, blijven 1 week houdbaar tenzij een specifiek ingrediënt toegevoegd wordt. \\nJe krijgt toegang tot de recepten “Martial skill potion”, “Minor potion of strengthen will”, “Minor potion of focus”, “Retreat potion”, “Minor potion of strengthen body” en “Confidence potion”. ",
+      "description": "You gain 2 Inspiration per day. \nYou can brew basic herbal elixirs. Potions made this way last 1 week unless a specific ingredient is added. \nYou gain access to the recipes: “Martial skill potion,” “Minor potion of strengthen will,” “Minor potion of focus,” “Retreat potion,” “Minor potion of strengthen body,” and “Confidence potion.”",
       "Requirements": {
         "skill": [ 225 ],
         "any_list": []
@@ -1033,11 +1033,11 @@
     },
     {
       "id": 229,
-      "skill": "Brouw Magische Elixers A",
-      "alt_skill": "Magische Elixers A",
-      "category": "Alchemistenvaardigheden",
+      "skill": "Brew Magical Elixirs A",
+      "alt_skill": "Magical Elixirs A",
+      "category": "Alchemist Skills",
       "page": 28,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt basis magische elixers brouwen. Drankjes die op deze wijze gemaakt zijn, blijven 1 week houdbaar tenzij een specifiek ingrediënt toegevoegd wordt. \\nJe krijgt toegang tot de recepten “Fire breath potion”, “Minor potion of divine connection”, “Minor potion of magic veins”, “Minor potion of divine inspiration”, “Minor potion of inspiration of the magi” en “Magical hair dye”.",
+      "description": "You gain 2 Inspiration per day. \nYou can brew basic magical elixirs. Potions made this way last 1 week unless a specific ingredient is added. \nYou gain access to the recipes: “Fire breath potion,” “Minor potion of divine connection,” “Minor potion of magic veins,” “Minor potion of divine inspiration,” “Minor potion of inspiration of the magi,” and “Magical hair dye.”",
       "Requirements": {
         "skill": [ 225 ],
         "any_list": []
@@ -1061,11 +1061,11 @@
     },
     {
       "id": 230,
-      "skill": "Brouw Hallucinerende Elixers A",
-      "alt_skill": "Hallucinerende Elixers A",
-      "category": "Alchemistenvaardigheden",
+      "skill": "Brew Hallucinogens A",
+      "alt_skill": "Hallucinogens A",
+      "category": "Alchemist Skills",
       "page": 29,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt basis hallucinerende elixers brouwen. Drankjes die op deze wijze gemaakt zijn, blijven 1 week houdbaar tenzij een specifiek ingrediënt toegevoegd wordt. \\nJe krijgt toegang tot de recepten “Smell of confusion”, “Minor fever potion”, “Vision of the soul”, “Vision of symbols”, “Visions of the lifted veil” en “Relive potion”.",
+      "description": "You gain 2 Inspiration per day. \nYou can brew basic hallucinatory elixirs. Potions made this way last 1 week unless a specific ingredient is added. \nYou gain access to the recipes: “Smell of confusion,” “Minor fever potion,” “Vision of the soul,” “Vision of symbols,” “Visions of the lifted veil,” and “Relive potion.”",
       "Requirements": {
         "skill": [ 225 ],
         "any_list": []
@@ -1089,11 +1089,11 @@
     },
     {
       "id": 231,
-      "skill": "Brouw Giffen A",
-      "alt_skill": "Giffen A",
-      "category": "Alchemistenvaardigheden",
+      "skill": "Brew Poison A",
+      "alt_skill": "Poison A",
+      "category": "Alchemist Skills",
       "page": 29,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt basis giffen brouwen. Giffen die op deze wijze gemaakt zijn, blijven 1 week houdbaar tenzij een specifiek ingrediënt toegevoegd wordt. \\nJe krijgt toegang tot de recepten “Minor venom”, “Minor weapon oil”, “Fright venom”, “Sleep poison”, “Muscle lock poison” en “Abortion poison”.",
+      "description": "You gain 2 Inspiration per day. \nYou can brew basic poisons. Poisons made this way last 1 week unless a specific ingredient is added. \nYou gain access to the recipes: “Minor venom,” “Minor weapon oil,” “Fright venom,” “Sleep poison,” “Muscle lock poison,” and “Abortion poison.”",
       "Requirements": {
         "skill": [ 225 ],
         "any_list": []
@@ -1117,11 +1117,11 @@
     },
     {
       "id": 250,
-      "skill": "Meestersmid A",
+      "skill": "Mastersmith A",
       "alt_skill": "",
-      "category": "Ambachtsvaardigheden",
+      "category": "Crafting Skills",
       "page": 31,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Mythical Metal verwerkt. Elke 2 Mythical Metal in een voorwerp verwerken kost 1 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Mythical Metal geeft het voorwerp 2 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Lvl 1 Wetsteen te maken. Zie de loresheet voor meer details.",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Metal. Every 2 Mythical Metal integrated into an item costs 1 inspiration. You can use inspiration from all days at the event. Each Mythical Metal increases the item's imbue capacity by 2. This skill also allows you to create a Level 1 Whetstone. See the loresheet for more details.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -1145,11 +1145,11 @@
     },
     {
       "id": 251,
-      "skill": "Houtbewerker A",
+      "skill": "Carpenter A",
       "alt_skill": "",
-      "category": "Ambachtsvaardigheden",
+      "category": "Crafting Skills",
       "page": 31,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Mythical Wood verwerkt. Elke 2 Mythical Wood in een voorwerp verwerken kost 1 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Mythical Wood geeft het voorwerp 2 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Totem van de Wolf te maken. Zie de loresheet voor meer details.",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Wood. Every 2 Mythical Wood integrated into an item costs 1 inspiration. You can use inspiration from all days at the event. Each Mythical Wood increases the item's imbue capacity by 2. This skill also allows you to create a Totem of the Wolf. See the loresheet for more details.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -1173,11 +1173,11 @@
     },
     {
       "id": 252,
-      "skill": "Kleermaker A",
+      "skill": "Tailor A",
       "alt_skill": "",
-      "category": "Ambachtsvaardigheden",
+      "category": "Crafting Skills",
       "page": 31,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Mythical Cloth verwerkt. Elke 2 Mythical Cloth in een voorwerp verwerken kost 1 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Mythical Cloth geeft het voorwerp 2 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om Hoog kwaliteit Verband te maken. Zie de loresheet voor meer details. ",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Cloth. Every 2 Mythical Cloth integrated into an item costs 1 inspiration. You can use inspiration from all days at the event. Each Mythical Cloth increases the item's imbue capacity by 2. This skill also allows you to create High-Quality Bandages. See the loresheet for more details.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -1201,11 +1201,11 @@
     },
     {
       "id": 253,
-      "skill": "Boekbinder A",
+      "skill": "Bookbinder A",
       "alt_skill": "",
-      "category": "Ambachtsvaardigheden",
+      "category": "Crafting Skills",
       "page": 31,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Mythical Paper verwerkt. Elke 2 Mythical Paper in een voorwerp verwerken kost 1 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Mythical Paper geeft het voorwerp 2 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om Scrollpapier te maken. Zie de loresheet voor meer details.",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Paper. Every 2 Mythical Paper integrated into an item costs 1 inspiration. You can use inspiration from all days at the event. Each Mythical Paper increases the item's imbue capacity by 2. This skill also allows you to create Scroll Paper. See the loresheet for more details.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -1229,11 +1229,11 @@
     },
     {
       "id": 254,
-      "skill": "Leerbewerker A",
+      "skill": "Leatherworker A",
       "alt_skill": "",
-      "category": "Ambachtsvaardigheden",
+      "category": "Crafting Skills",
       "page": 32,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Mythical Leather verwerkt. Elke 2 Mythical Leather in een voorwerp verwerken kost 1 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Mythical Leather geeft het voorwerp 2 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Pantser Reparatie Set te maken. Zie de loresheet voor meer details.",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Leather. Every 2 Mythical Leather integrated into an item costs 1 inspiration. You can use inspiration from all days at the event. Each Mythical Leather increases the item's imbue capacity by 2. This skill also allows you to create an Armor Repair Kit. See the loresheet for more details.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -1257,11 +1257,11 @@
     },
     {
       "id": 255,
-      "skill": "Juwelier A",
+      "skill": "Jeweler A",
       "alt_skill": "",
-      "category": "Ambachtsvaardigheden",
+      "category": "Crafting Skills",
       "page": 32,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Copper Ingots verwerkt. Elke 2 Copper Ingots in een voorwerp verwerken kost 1 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Copper Ingots geeft het voorwerp 1 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Vriendschaps Geschenk te maken. Zie de loresheet voor meer details. ",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Copper Ingots. Every 2 Copper Ingots integrated into an item costs 1 inspiration. You can use inspiration from all days at the event. Each Copper Ingot increases the item's imbue capacity by 1. This skill also allows you to create a Friendship Gift. See the loresheet for more details.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -1285,11 +1285,11 @@
     },
     {
       "id": 256,
-      "skill": "Steenzetter A",
+      "skill": "Gemsetter A",
       "alt_skill": "",
-      "category": "Ambachtsvaardigheden",
+      "category": "Crafting Skills",
       "page": 32,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Quartz verwerkt. Elke Quartz in een voorwerp verwerken kost 1 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Quartz geeft het voorwerp 3 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Basis Sieraad te maken. Zie de loresheet voor meer details.",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Quartz. Each Quartz used in an item costs 1 inspiration. You can use inspiration from all days at the event. Each Quartz increases the item's imbue capacity by 3. This skill also allows you to create a Basic Jewelry Piece. See the loresheet for more details.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -1313,11 +1313,11 @@
     },
     {
       "id": 275,
-      "skill": "Magiërspreuken A - Wit",
+      "skill": "Mage Spells A - White",
       "alt_skill": "White magic",
-      "category": "Magiërvaardigheden",
+      "category": "Mage Skills",
       "page": 33,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Detect Magic, Ray of Confusion, Dazzling Strike, Break Impurity en Counter Spell.",
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Detect Magic, Ray of Confusion, Dazzling Strike, Break Impurity, and Counter Spell.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -1338,11 +1338,11 @@
     },
     {
       "id": 276,
-      "skill": "Magiërspreuken A - Grijs",
+      "skill": "Mage Spells A - Grey",
       "alt_skill": "Grey magic",
-      "category": "Magiërvaardigheden",
+      "category": "Mage Skills",
       "page": 33,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Mend, Minor Reinforcement, Imbue Strike, Iron Will en Slow Movement.",
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Mend, Minor Reinforcement, Imbue Strike, Iron Will, and Slow Movement.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -1363,11 +1363,11 @@
     },
     {
       "id": 277,
-      "skill": "Magiërspreuken A - Zwart",
+      "skill": "Mage Spells A - Black",
       "alt_skill": "Black magic",
-      "category": "Magiërvaardigheden",
+      "category": "Mage Skills",
       "page": 34,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Magic Blast,Instill Fear, Incite Aggression, Forced Mute en Steal.",
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Magic Blast, Instill Fear, Incite Aggression, Forced Mute, and Steal.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -1388,18 +1388,14 @@
     },
     {
       "id": 278,
-      "skill": "Magiërspreuken B - Lucht",
+      "skill": "Mage Spells B - Air",
       "alt_skill": "Air Magic B",
-      "category": "Magiërvaardigheden",
+      "category": "Mage Skills",
       "page": 34,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Hidden Object, Chilling Winds, Freedom of Movement en Strike Cascade.",
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Hidden Object, Chilling Winds, Freedom of Movement, and Strike Cascade.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Magiërvaardigheden" ],
-          "value": 4
-        }
+        "any_list": [ 275, 276, 277 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -1417,18 +1413,14 @@
     },
     {
       "id": 279,
-      "skill": "Magiërspreuken B - Metaal",
-      "alt_skill": "Metal magic B",
-      "category": "Magiërvaardigheden",
+      "skill": "Mage Spells B - Metal",
+      "alt_skill": "Metal Magic B",
+      "category": "Mage Skills",
       "page": 34,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Strengthen Armour, Horrific Revelation, Boon of Disease en Life Draw.",
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Strengthen Armour, Horrific Revelation, Boon of Disease, and Life Draw.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Magiërvaardigheden" ],
-          "value": 4
-        },
+        "any_list": [ 275, 276, 277 ],
         "exception": [ 651, 675 ]
       },
       "xp": 4,
@@ -1447,16 +1439,16 @@
     },
     {
       "id": 280,
-      "skill": "Magiërspreuken B - Aarde",
-      "alt_skill": "Earth magic B",
-      "category": "Magiërvaardigheden",
+      "skill": "Mage Spells B - Earth",
+      "alt_skill": "Earth Magic B",
+      "category": "Mage Skills",
       "page": 34,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Harden, Minor Reinforcement Cascade, Sands of Sleep en Boon of Mending.",
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Harden, Minor Reinforcement Cascade, Sands of Sleep, and Boon of Mending.",
       "Requirements": {
         "skill": [],
         "any_list": [],
         "Category": {
-          "name": [ "Magiërvaardigheden" ],
+          "name": [ "Mage Skills" ],
           "value": 4
         }
       },
@@ -1476,18 +1468,14 @@
     },
     {
       "id": 281,
-      "skill": "Magiërspreuken B - Water",
-      "alt_skill": "Water magic B",
-      "category": "Magiërvaardigheden",
+      "skill": "Mage Spells B - Water",
+      "alt_skill": "Water Magic B",
+      "category": "Mage Skills",
       "page": 34,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Mind Protection, Force Truth, Corrupt the Flow of Life en Iceblast.",
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Mind Protection, Force Truth, Corrupt the Flow of Life, and Iceblast.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Magiërvaardigheden" ],
-          "value": 4
-        }
+        "any_list": [ 275, 276, 277 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -1505,18 +1493,14 @@
     },
     {
       "id": 282,
-      "skill": "Magiërspreuken B - Vuur",
+      "skill": "Mage Spells B - Fire",
       "alt_skill": "Fire Magic B",
-      "category": "Magiërvaardigheden",
+      "category": "Mage Skills",
       "page": 34,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Cleansed by Fire, Fireblast, Inner Fire en Imbue Blast.",
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Cleansed by Fire, Fireblast, Inner Fire, and Imbue Blast.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Magiërvaardigheden" ],
-          "value": 4
-        },
+        "any_list": [ 275, 276, 277 ],
         "exception": [ 625 ]
       },
       "xp": 4,
@@ -1535,18 +1519,14 @@
     },
     {
       "id": 283,
-      "skill": "Magiërspreuken B - Hout",
+      "skill": "Mage Spells B - Wood",
       "alt_skill": "Wood Magic B",
-      "category": "Magiërvaardigheden",
+      "category": "Mage Skills",
       "page": 35,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Rend Enchantment, Shatter Armour, Nature’s Protection en Charm Person.",
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Rend Enchantment, Shatter Armour, Nature’s Protection, and Charm Person.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Magiërvaardigheden" ],
-          "value": 4
-        },
+        "any_list": [ 275, 276, 277 ],
         "exception": [ 650 ]
       },
       "xp": 4,
@@ -1565,11 +1545,11 @@
     },
     {
       "id": 300,
-      "skill": "Paladijnspreuken A",
-      "alt_skill": "Paladijn A",
-      "category": "Paladijnvaardigheden",
+      "skill": "Paladin Spells A",
+      "alt_skill": "Paladin A",
+      "category": "Paladin Skills",
       "page": 35,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Hammer of Righteousness, Honorable challenge en Mercy Call",
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Hammer of Righteousness, Honorable Challenge, and Mercy Call.",
       "Requirements": {
         "skill": [ 131 ],
         "any_list": []
@@ -1590,11 +1570,11 @@
     },
     {
       "id": 301,
-      "skill": "Paladijnspreuken B",
-      "alt_skill": "Paladijn B",
-      "category": "Paladijnvaardigheden",
+      "skill": "Paladin Spells B",
+      "alt_skill": "Paladin B",
+      "category": "Paladin Skills",
       "page": 35,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Divine Heroism, Divine Blessing en Sanctuary",
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Divine Heroism, Divine Blessing, and Sanctuary.",
       "Requirements": {
         "skill": [ 300 ],
         "any_list": []
@@ -1615,11 +1595,11 @@
     },
     {
       "id": 325,
-      "skill": "Priesterspreuken A - Reinheid",
+      "skill": "Priest Spells A - Purity",
       "alt_skill": "Purity A",
-      "category": "Priestervaardigheden",
+      "category": "Priest Skills",
       "page": 36,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Endure Poison, Minor Reinforcement, Break Impurity, Counter Spell en Detect Spiritual influence.",
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Endure Poison, Minor Reinforcement, Break Impurity, Counter Spell, and Detect Spiritual Influence.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -1640,11 +1620,11 @@
     },
     {
       "id": 326,
-      "skill": "Priesterspreuken A - Toorn",
+      "skill": "Priest Spells A - Wrath",
       "alt_skill": "Wrath A",
-      "category": "Priestervaardigheden",
+      "category": "Priest Skills",
       "page": 36,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Endure Disease, Instill Fear, Minor Disease, Crave en Shattering Touch.",
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Endure Disease, Instill Fear, Minor Disease, Crave, and Shattering Touch.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -1665,11 +1645,11 @@
     },
     {
       "id": 327,
-      "skill": "Priesterspreuken A - Dood",
+      "skill": "Priest Spells A - Death",
       "alt_skill": "Death A",
-      "category": "Priestervaardigheden",
+      "category": "Priest Skills",
       "page": 37,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Discern Soul,Sanctuary, Lay to Rest, Ancestral Mind Protection en Reveal All Undead.",
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Discern Soul, Sanctuary, Lay to Rest, Ancestral Mind Protection, and Reveal All Undead.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -1690,18 +1670,14 @@
     },
     {
       "id": 328,
-      "skill": "Priesterspreuken B - Reinheid",
+      "skill": "Priest Spells B - Purity",
       "alt_skill": "Purity B",
-      "category": "Priestervaardigheden",
+      "category": "Priest Skills",
       "page": 37,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Disease of Temperance, Minor Regeneration, Pure Body and Mind, Protection from Impairment.",
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Disease of Temperance, Minor Regeneration, Pure Body and Mind, and Protection from Impairment.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Priestervaardigheden" ],
-          "value": 4
-        },
+        "any_list": [ 325, 326, 327 ],
         "exception": [ 625 ]
       },
       "xp": 4,
@@ -1720,18 +1696,14 @@
     },
     {
       "id": 329,
-      "skill": "Priesterspreuken B - Toorn",
+      "skill": "Priest Spells B - Wrath",
       "alt_skill": "Wrath B",
-      "category": "Priestervaardigheden",
+      "category": "Priest Skills",
       "page": 37,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Mute Cascade, Shatter Armour, Boon of Break Enchantment, Curse Life.",
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Mute Cascade, Shatter Armour, Boon of Break Enchantment, and Curse Life.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Priestervaardigheden" ],
-          "value": 4
-        }
+        "any_list": [ 325, 326, 327 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -1749,18 +1721,14 @@
     },
     {
       "id": 330,
-      "skill": "Priesterspreuken B - Dood",
+      "skill": "Priest Spells B - Death",
       "alt_skill": "Death B",
-      "category": "Priestervaardigheden",
+      "category": "Priest Skills",
       "page": 37,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Paralyze Undead, Speak with the Dead, Sanctuary Ward en Life Draw.",
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Paralyze Undead, Speak with the Dead, Sanctuary Ward, and Life Draw.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Priestervaardigheden" ],
-          "value": 4
-        },
+        "any_list": [ 325, 326, 327 ],
         "exception": [ 651, 675 ]
       },
       "xp": 4,
@@ -1779,18 +1747,14 @@
     },
     {
       "id": 331,
-      "skill": "Priesterspreuken B - Geest",
+      "skill": "Priest Spells B - Mind",
       "alt_skill": "Mind B",
-      "category": "Priestervaardigheden",
+      "category": "Priest Skills",
       "page": 37,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Fascinated Mind, Discern Pattern, Mind Protection en Commandment.",
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Fascinated Mind, Discern Pattern, Mind Protection, and Commandment.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Priestervaardigheden" ],
-          "value": 4
-        }
+        "any_list": [ 325, 326, 327 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -1808,18 +1772,14 @@
     },
     {
       "id": 332,
-      "skill": "Priesterspreuken B - Natuur",
+      "skill": "Priest Spells B - Nature",
       "alt_skill": "Nature B",
-      "category": "Priestervaardigheden",
+      "category": "Priest Skills",
       "page": 37,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Hex Weapon,Freedom of Movement, Resist Special Damage, Aspect of the Dryad",
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Hex Weapon, Freedom of Movement, Resist Special Damage, and Aspect of the Dryad.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Priestervaardigheden" ],
-          "value": 4
-        },
+        "any_list": [ 325, 326, 327 ],
         "exception": [ 650 ]
       },
       "xp": 4,
@@ -1838,11 +1798,11 @@
     },
     {
       "id": 350,
-      "skill": "Genezingsspreuken A (EL)",
-      "alt_skill": "Genezing A",
-      "category": "Genezingsvaardigheden (EL)",
+      "skill": "Healing Spells A (EL)",
+      "alt_skill": "Healing A",
+      "category": "Healing Skills (EL)",
       "page": 38,
-      "description": "Je krijgt 5 elementaire per dag. \\nJe krijgt toegang tot de spreuken: Discern Wounds, Discern Poisons, Discern Diseases, Heal Wounds en Remove Paralysis.",
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Discern Wounds, Discern Poisons, Discern Diseases, Heal Wounds, and Remove Paralysis.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -1863,11 +1823,11 @@
     },
     {
       "id": 351,
-      "skill": "Genezingsspreuken A (SP)",
-      "alt_skill": "Genezing A",
-      "category": "Genezingsvaardigheden (SP)",
+      "skill": "Healing Spells A (SP)",
+      "alt_skill": "Healing A",
+      "category": "Healing Skills (SP)",
       "page": 38,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Discern Wounds, Discern Poisons, Discern Diseases, Heal Wounds en Remove Paralysis.",
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Discern Wounds, Discern Poisons, Discern Diseases, Heal Wounds, and Remove Paralysis.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -1888,11 +1848,11 @@
     },
     {
       "id": 352,
-      "skill": "Genezingsspreuken B (EL)",
-      "alt_skill": "Genezing B",
-      "category": "Genezingsvaardigheden (EL)",
+      "skill": "Healing Spells B (EL)",
+      "alt_skill": "Healing B",
+      "category": "Healing Skills (EL)",
       "page": 38,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Heal Fatal Wound, Strengthen Body, Total Healing en Boon of Minor Healing.",
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Heal Fatal Wound, Strengthen Body, Total Healing, and Boon of Minor Healing.",
       "Requirements": {
         "skill": [ 350 ],
         "any_list": []
@@ -1913,11 +1873,11 @@
     },
     {
       "id": 353,
-      "skill": "Genezingsspreuken B (SP)",
-      "alt_skill": "Genezing B",
-      "category": "Genezingsvaardigheden (SP)",
+      "skill": "Healing Spells B (SP)",
+      "alt_skill": "Healing B",
+      "category": "Healing Skills (SP)",
       "page": 38,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Heal Fatal Wound, Strengthen Body, Total Healing en Boon of Minor Healing.",
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Heal Fatal Wound, Strengthen Body, Total Healing, and Boon of Minor Healing.",
       "Requirements": {
         "skill": [ 351 ],
         "any_list": []
@@ -1938,11 +1898,11 @@
     },
     {
       "id": 354,
-      "skill": "Genezer van Giffen (EL)",
-      "alt_skill": "Genezer van Giffen",
-      "category": "Genezingsvaardigheden (EL)",
+      "skill": "Poison Healer (EL)",
+      "alt_skill": "Poison Healer",
+      "category": "Healing Skills (EL)",
       "page": 39,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Heal Fatal Wound, Protection from Poison, Neutralise Poisons en Purge All Poisons.",
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Heal Fatal Wound, Protection from Poison, Neutralize Poisons, and Purge All Poisons.",
       "Requirements": {
         "skill": [ 350 ],
         "any_list": []
@@ -1963,11 +1923,11 @@
     },
     {
       "id": 355,
-      "skill": "Genezer van Giffen (SP)",
-      "alt_skill": "Genezer van Giffen",
-      "category": "Genezingsvaardigheden (SP)",
+      "skill": "Poison Healer (SP)",
+      "alt_skill": "Poison Healer",
+      "category": "Healing Skills (SP)",
       "page": 39,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Heal Fatal Wound, Protection from Poison, Neutralise Poisons en Purge All Poisons.",
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Heal Fatal Wound, Protection from Poison, Neutralize Poisons, and Purge All Poisons.",
       "Requirements": {
         "skill": [ 351 ],
         "any_list": []
@@ -1988,11 +1948,11 @@
     },
     {
       "id": 356,
-      "skill": "Genezer van Ziekten (EL)",
-      "alt_skill": "Genezer van Ziekten",
-      "category": "Genezingsvaardigheden (EL)",
+      "skill": "Disease Healer (EL)",
+      "alt_skill": "Disease Healer",
+      "category": "Healing Skills (EL)",
       "page": 39,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Heal Fatal Wound, Protection from Disease, Cure Diseases en Purge All Diseases.",
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Heal Fatal Wound, Protection from Disease, Cure Diseases, and Purge All Diseases.",
       "Requirements": {
         "skill": [ 350 ],
         "any_list": []
@@ -2013,11 +1973,11 @@
     },
     {
       "id": 357,
-      "skill": "Genezer van Ziekten (SP)",
-      "alt_skill": "Genezer van Ziekten",
-      "category": "Genezingsvaardigheden (SP)",
+      "skill": "Disease Healer (SP)",
+      "alt_skill": "Disease Healer",
+      "category": "Healing Skills (SP)",
       "page": 39,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Heal Fatal Wound, Protection from Disease, Cure Diseases en Purge All Diseases.",
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Heal Fatal Wound, Protection from Disease, Cure Diseases, and Purge All Diseases.",
       "Requirements": {
         "skill": [ 351 ],
         "any_list": []
@@ -2038,11 +1998,11 @@
     },
     {
       "id": 358,
-      "skill": "Genezer van Geest (EL)",
-      "alt_skill": "Genezer van Geest",
-      "category": "Genezingsvaardigheden (EL)",
+      "skill": "Mind Healer (EL)",
+      "alt_skill": "Mind Healer",
+      "category": "Healing Skills (EL)",
       "page": 39,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Heal Fatal Wound, Discern Mind-Affecting, Protection from Fear en Break Enchantment Cascade.",
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Heal Fatal Wound, Discern Mind-Affecting, Protection from Fear, and Break Enchantment Cascade.",
       "Requirements": {
         "skill": [ 350 ],
         "any_list": []
@@ -2063,11 +2023,11 @@
     },
     {
       "id": 359,
-      "skill": "Genezer van Geest (SP)",
-      "alt_skill": "Genezer van Geest",
-      "category": "Genezingsvaardigheden (SP)",
+      "skill": "Mind Healer (SP)",
+      "alt_skill": "Mind Healer",
+      "category": "Healing Skills (SP)",
       "page": 39,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Heal Fatal Wound, Discern Mind-Affecting, Protection from Fear en Break Enchantment Cascade.",
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Heal Fatal Wound, Discern Mind-Affecting, Protection from Fear, and Break Enchantment Cascade.",
       "Requirements": {
         "skill": [ 351 ],
         "any_list": []
@@ -2088,11 +2048,11 @@
     },
     {
       "id": 375,
-      "skill": "Elementair Ritualisme",
+      "skill": "Elemental Ritualism",
       "alt_skill": "",
-      "category": "Ritualisme",
+      "category": "Ritualism",
       "page": 40,
-      "description": "Je krijgt 2 elementaire rituele mana per dag.\\nMet deze vaardigheid kun je rituelen uitvoeren.\\nMet 1 of 2 punten in Elementair Ritualisme kun je enkel rituelen van andereondersteunen. Vanaf 3 punten kun je zelf rituelen initiëren en leiden.Je mag in een ritueel 1 van je eigen niet-rituele energie gebruiken per 2 ritueleenergie die je gebruikt. Deze telt dan als 1 elementaire rituele mana. Het istoegestaan om energie van resterende dagen van het evenement te gebruiken in je ritueel.Bijvoorbeeld: Je geeft met deze vaardigheid 10 elementaire rituele mana uit in eenritueel. Dan mag je in datzelfde ritueel ook bijvoorbeeld 3 wilskracht en 2elementaire spreuken mana uitgeven (Dus 5 niet-rituele energie in totaal).Het combineren van elementaire en spirituele mana is toegestaan in een ritueel.\\nDeze vaardigheid kan je meerdere malen kopen.",
+      "description": "You gain 2 elemental ritual mana per day.\nWith this skill, you can perform rituals.\nWith 1 or 2 points in Elemental Ritualism, you can only support rituals of others. From 3 points onward, you can initiate and lead rituals yourself. You may use 1 of your own non-ritual energy per 2 ritual energy used in a ritual. This counts as 1 elemental ritual mana. It is allowed to use energy from remaining days of the event in your ritual. For example: If you spend 10 elemental ritual mana in a ritual with this skill, you can also use, for example, 3 willpower and 2 elemental spell mana in the same ritual (a total of 5 non-ritual energy). Combining elemental and spiritual mana is allowed in a ritual.\nThis skill can be purchased multiple times.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -2113,11 +2073,11 @@
     },
     {
       "id": 376,
-      "skill": "Spiritueel Ritualisme",
+      "skill": "Spiritual Ritualism",
       "alt_skill": "",
-      "category": "Ritualisme",
+      "category": "Ritualism",
       "page": 41,
-      "description": "Je krijgt 2 spirituele rituele mana per dag.\\nMet deze vaardigheid kun je rituelen uitvoeren.\\nMet 1 of 2 punten in Spiritueel Ritualisme kun je enkel rituelen van andereondersteunen. Vanaf 3 punten kun je zelf rituelen initiëren en leiden.Je mag in een ritueel 1 van je eigen niet-rituele energie gebruiken per 2 rituele energie die je gebruikt. Deze telt dan als 1 spiritueel rituele mana. Het is toegestaanom energie van resterende dagen van het evenement te gebruiken in je ritueel. Bijvoorbeeld: Je geeft met deze vaardigheid 10 Spiritueel rituele mana uit in eenritueel. Dan mag je in datzelfde ritueel ook bijvoorbeeld 3 wilskracht en 2 spiritueelspreuken mana uitgeven (Dus 5 niet-rituele energie in totaal).Het combineren van elementaire en spirituele mana is toegestaan in een ritueel.\\nDeze vaardigheid kan je meerdere malen kopen.",
+      "description": "You gain 2 spiritual ritual mana per day.\nWith this skill, you can perform rituals.\nWith 1 or 2 points in Spiritual Ritualism, you can only support rituals of others. From 3 points onward, you can initiate and lead rituals yourself. You may use 1 of your own non-ritual energy per 2 ritual energy used in a ritual. This counts as 1 spiritual ritual mana. It is allowed to use energy from remaining days of the event in your ritual. For example: If you spend 10 spiritual ritual mana in a ritual with this skill, you can also use, for example, 3 willpower and 2 spiritual spell mana in the same ritual (a total of 5 non-ritual energy). Combining elemental and spiritual mana is allowed in a ritual.\nThis skill can be purchased multiple times.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -2140,11 +2100,11 @@
   "ExtraVaardigheden": [
     {
       "id": 400,
-      "skill": "Genees andere wezens",
+      "skill": "Heal Other Beings",
       "alt_skill": "",
-      "category": "Extra Algemene vaardigheden",
+      "category": "Extra General Skills",
       "page": 43,
-      "description": "Je kunt ‘Andere wezens’ (OTHER BEINGS) genezen met je heelmeester of genezingsvaardigheden. \\nDit zijn wezens zoals Servitars, Spirits, Elementals, Ondoden, etc. Een personage die een ander wezen is heeft altijd een condition waar dit expliciet op staat. Deze wezens zijn meestal zonder deze vaardigheid niet te genezen. Ook potions, items en scrolls kunnen deze wezens niet genezen zonder dat ze dit expliciet melden. Een genezer met deze vaardigheid kan met het uitvoeren van een DISCERN-spreuk,of de diagnostiek vaardigheid vaststellen of de ontvanger een OTHER BEING is. DISCERN-spreuken zijn Discern Wounds, Discern Diseases, Discern Afflictions enDiscern Poisons. Een caster kan het wezen vervolgens genezen door zijn reguliere incantatie aan tepassen en ergens in het tweede deel van de incantatie de woorden ‘other being’ te stoppen. Met deze aangepaste incantatie kan een niet-’other being’ niet genezen worden.",
+      "description": "You can heal ‘Other Beings’ with your healer skills or healing spells. \nThese are beings such as Servitars, Spirits, Elementals, Undead, etc. A character that is another being always has a condition that explicitly states this. These beings are usually not healable without this skill. Also, potions, items, and scrolls cannot heal these beings unless explicitly stated. A healer with this skill can use a DISCERN spell or the diagnostics skill to determine if the recipient is an OTHER BEING. DISCERN spells are Discern Wounds, Discern Diseases, Discern Afflictions, and Discern Poisons. The caster can then heal the being by modifying their regular incantation and including the words ‘other being’ in the second part of the incantation. This modified incantation cannot heal a non-’other being’.",
       "Requirements": {
         "skill": [],
         "any_list": [ 350, 351, 203, 325, 326, 327, 276, 277, 278 ]
@@ -2160,11 +2120,11 @@
     },
     {
       "id": 425,
-      "skill": "Extra Wilskracht",
+      "skill": "Extra Willpower",
       "alt_skill": "",
-      "category": "Extra Heelmeestervaardigheden",
+      "category": "Extra Healer Skills",
       "page": 42,
-      "description": "Je krijgt 2 extra willpower per dag. \\nJe hebt geleerd om met je innerlijke kracht meertechnieken en acties te kunnen uitvoeren. Je krijgt geen toegang tot extratechnieken.\\nDeze vaardigheid mag je meerdere keren aankopen.",
+      "description": "You gain 2 extra willpower per day. \nYou have learned to use your inner strength to perform more techniques and actions. You do not gain access to additional techniques.\nThis skill can be purchased multiple times.",
       "Requirements": {
         "skill": [],
         "any_list": [ 175, 200 ]
@@ -2185,11 +2145,11 @@
     },
     {
       "id": 426,
-      "skill": "Combineer lichamen",
+      "skill": "Combine Bodies",
       "alt_skill": "",
-      "category": "Extra Heelmeestervaardigheden",
+      "category": "Extra Healer Skills",
       "page": 43,
-      "description": "Je krijgt 2 extra wilskracht per dag. \\nJe kunt bij een ander persoon opereren gedurende een operatie van 5 minuten. Tijdens de operatie combineer je tijdelijk extra lichaamsdelen of reserve orgaan van een lijk met de patiënt. Dit resulteert erin dat de patiënt voor de rest van de dag 2 extra hitpoints heeft, 2 energie naar keuze verliest elke keer dat de patiënt uitgeschakeld (dus op 0 HP) raakt en onmiddellijk sterft als deze uitgeschakeld raakt zonder energie. De patiënt verliest slechts 1 energie als de patiënt uitgeschakeld wordt als de heelmeester er voor kiest om 3 wilskracht uit te geven gedurende de operatie.(let op dat extra hitpoints niet stacken met bijvoorbeeld extra hitpoints van spreuken) \\nVoor deze vaardigheid zijn phys reps vereist! Zoals een operatiekit en smink/protheses.",
+      "description": "You gain 2 extra willpower per day. \nYou can operate on another person during a 5-minute operation. During the operation, you temporarily combine extra body parts or a spare organ from a corpse with the patient. This results in the patient gaining 2 extra hit points for the rest of the day, losing 2 energy of their choice each time the patient is knocked out (reaches 0 HP), and immediately dying if knocked out without energy. The patient only loses 1 energy if knocked out if the healer chooses to spend 3 willpower during the operation. (Note that extra hit points do not stack with, for example, extra hit points from spells) \nPhys reps are required for this skill! Such as an operation kit and makeup/prosthetics.",
       "Requirements": {
         "skill": [ 202, 203 ],
         "any_list": []
@@ -2210,11 +2170,11 @@
     },
     {
       "id": 427,
-      "skill": "Afscheidbaar gezwel",
+      "skill": "Detachable Growth",
       "alt_skill": "",
-      "category": "Extra Heelmeestervaardigheden",
+      "category": "Extra Healer Skills",
       "page": 44,
-      "description": "Je krijgt 3 extra wilskracht per dag. \\nJe kunt bij een ander persoon opereren gedurende een operatie van 5 minuten. Tijdens de operatie plaats je een afscheidbaar gezwel ergens op het lichaam van de patiënt. Als de patiënt deze dag na de operatie 3 seconden en 3 energie naar keuze spendeert dan kan deze een enchantment, gif of ziekte in het gezwel forceren en daarna het gezwel doen afsterven waardoor de enchantment, gif of ziekte, en het effect ervan verdwijnt. Het gezwel is daarna ook weg en om dit nogmaals te gebruiken moet ook een nieuw gezwel geplaatst worden. De patiënt kan dit altijd doen onder invloed van een gif of ziekte (zo kan dus bijvoorbeeld een sleep poison zelf opgelost worden zonder hulp). De heelmeester kan er voor kiezen om tijdens de operatie wilskracht uit te geven om de energiekosten voor de patiënt te verlagen. Dit kost 1 wilskracht per energie. \\nVoor deze vaardigheid zijn physreps vereist! Zoals een operatiekit en smink/protheses",
+      "description": "You gain 3 extra willpower per day. \nYou can operate on another person during a 5-minute operation. During the operation, you place a detachable tumor somewhere on the patient's body. If the patient spends 3 seconds and 3 energy of their choice after the operation on the same day, they can force an enchantment, poison, or disease into the tumor and then make the tumor die, causing the enchantment, poison, or disease, and its effects to disappear. The tumor is then gone, and to use this ability again, a new tumor must be placed. The patient can always do this while under the influence of a poison or disease (e.g., self-resolving a sleep poison without help). The healer can choose to spend willpower during the operation to reduce the energy cost for the patient. This costs 1 willpower per energy. \nPhysreps are required for this skill! Such as an operation kit and makeup/prosthetics.",
       "Requirements": {
         "skill": [ 426 ],
         "any_list": []
@@ -2235,11 +2195,11 @@
     },
     {
       "id": 428,
-      "skill": "Creeër abominatie",
+      "skill": "Create Abomination",
       "alt_skill": "",
-      "category": "Extra Heelmeestervaardigheden",
+      "category": "Extra Healer Skills",
       "page": 45,
-      "description": "Je krijgt 3 extra wilskracht per dag. \\nDeze vaardigheid mag maar 1 maal per evenement gebruikt worden. Je kunt bij een (buitenspels gewillig) persoon opereren gedurende een operatie van minstens een kwartier met een team van minstens 4 heelmeesters met de slagveld operatie vaardigheid. Deze operatie kost 10 wilskracht en deze kosten mogen verdeeld worden onder de aanwezige heelmeesters. De patiënt zal omgevormd worden tot een sterke maar afzichtelijke abominatie. De patiënt krijgt de “abominatie” condition. \\n\\nAbomination condition: \\nDe patiënt heeft 2 extra hitpoints. De patiënt verliest 2 energie naar keuze elke keer dat de patiënt uitgeschakeld (dus op 0 HP) raakt en sterft als deze uitgeschakeld raakt zonder energie. De patiënt heeft een afscheidbaar gezwel dat na gebruik terug groeit na 5 minuten. De patiënt kan niet genezen worden tenzij de genezer de “genees andere wezens” vaardigheid heeft. (let op dat extra hitpoints niet stacken met bijvoorbeeld extra hitpoints van spreuken) Voor deze vaardigheid zijn physreps vereist! Zoals een operatiekit en smink/protheses. Let op dat deze vaardigheid het uiterlijk van een personage permanent drastisch veranderd, vandaar dat dit alleen uitgevoerd mag worden op een buitenspels gewillige speler.",
+      "description": "You gain 3 extra willpower per day. \nThis skill can only be used once per event. You can operate on a (out-of-game willing) person during an operation of at least 15 minutes with a team of at least 4 healers with the battlefield operation skill. This operation costs 10 willpower, which can be distributed among the healers present. The patient will be transformed into a strong but hideous abomination. The patient gains the “abomination” condition. \n\nAbomination condition: \nThe patient has 2 extra hit points. The patient loses 2 energy of their choice each time they are knocked out (reach 0 HP) and dies if knocked out without energy. The patient has a detachable tumor that regrows after 5 minutes after use. The patient cannot be healed unless the healer has the “heal other beings” skill. (Note that extra hit points do not stack with, for example, extra hit points from spells) Physreps are required for this skill! Such as an operation kit and makeup/prosthetics. Note that this skill permanently drastically changes a character's appearance, hence it should only be performed on a willing player out-of-game.",
       "Requirements": {
         "skill": [ 426 ],
         "any_list": []
@@ -2260,18 +2220,18 @@
     },
     {
       "id": 450,
-      "skill": "Brouw Expertise",
+      "skill": "Brew Expertise",
       "alt_skill": "",
-      "category": "Extra Alchemistenvaardigheden",
+      "category": "Extra Alchemist Skills",
       "page": 46,
-      "description": "Je krijgt 2 extra Inspiratie per dag. \\nJe hebt geleerd om met je vaardigheden meer drankjes te kunnen brouwen. Je krijgt geen toegang tot extra recepten. \\nDeze vaardigheid mag je meerdere keren aankopen.",
+      "description": "You gain 2 extra Inspiration per day. \nYou have learned to brew more potions with your skills. You do not gain access to extra recipes. \nThis skill can be purchased multiple times.",
       "Requirements": {
         "skill": [ 225 ],
         "any_list": [ 227, 228, 229, 230, 231 ]
       },
       "xp": 1,
       "loresheet": {},
-      "multi_purchase": false,
+      "multi_purchase": true,
       "count": 1,
       "maxcount": 99,
       "Eigenschappen": [
@@ -2285,11 +2245,11 @@
     },
     {
       "id": 451,
-      "skill": "Brouw Genezende Dranken B",
+      "skill": "Brew Healing Potions B",
       "alt_skill": "",
-      "category": "Extra Alchemistenvaardigheden",
+      "category": "Extra Alchemist Skills",
       "page": 46,
-      "description": "Je krijgt 3 Inspiratie per dag. \\nJe hebt geleerd om de lokale genezende drankjes te brouwen die niet op jouw thuiswereld bekend zijn. Drankjes die op deze wijze gemaakt zijn, blijven 1 week houdbaar tenzij een specifiek ingrediënt toegevoegd wordt. Voor het gebruik van deze vaardigheid heb je een laboratorium nodig. \\nJe krijgt toegang tot de recepten: “Heal deadly wound potion”, “Cure weak disease potion”, “Cure disease potion”, “Courage potion”, “Wakeful potion” en “Cure heartache”",
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local healing potions that are not known on your homeworld. Potions made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes: “Heal deadly wound potion”, “Cure weak disease potion”, “Cure disease potion”, “Courage potion”, “Wakeful potion” and “Cure heartache”.",
       "Requirements": {
         "skill": [ 227 ],
         "any_list": []
@@ -2313,11 +2273,11 @@
     },
     {
       "id": 452,
-      "skill": "Brouw Genezende Dranken C",
+      "skill": "Brew Healing Potions C",
       "alt_skill": "",
-      "category": "Extra Alchemistenvaardigheden",
+      "category": "Extra Alchemist Skills",
       "page": 47,
-      "description": "Je krijgt 3 Inspiratie per dag. \\nJe hebt geleerd om de lokale geavanceerde genezende drankjes te brouwen die niet op jouw thuiswereld bekend zijn. Drankjes die op deze wijze gemaakt zijn, blijven 1 week houdbaar tenzij een specifiek ingrediënt toegevoegd wordt. Voor het gebruik van deze vaardigheid heb je een laboratorium nodig. \\nJe krijgt toegang tot de recepten “Heal all wounds potion”, “Cure strong disease potion”, “Muscle control potion”, “Concentration potion”, “Reroute blood potion” en “Cure amnesia”.",
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local advanced healing potions that are not known on your homeworld. Potions made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes “Heal all wounds potion”, “Cure strong disease potion”, “Muscle control potion”, “Concentration potion”, “Reroute blood potion” and “Cure amnesia”.",
       "Requirements": {
         "skill": [ 451 ],
         "any_list": []
@@ -2341,11 +2301,11 @@
     },
     {
       "id": 453,
-      "skill": "Brouw Kruiden Elixers B",
+      "skill": "Brew Herbal Elixirs B",
       "alt_skill": "",
-      "category": "Extra Alchemistenvaardigheden",
+      "category": "Extra Alchemist Skills",
       "page": 47,
-      "description": "Je krijgt 3 Inspiratie per dag. \\nJe hebt geleerd om de lokale kruiden elixers te brouwen die niet op jouw thuiswereld bekend zijn. Drankjes die op deze wijze gemaakt zijn, blijven 1 week houdbaar tenzij een specifiek ingrediënt toegevoegd wordt. Voor het gebruik van deze vaardigheid heb je een laboratorium nodig. \\nJe krijgt toegang tot de recepten: “Healing spit”, “Strengthen body potion”, “Long lasting strengthen body”, “Strengthen will potion”, “Focus potion” en “Empathy potion”.",
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local herbal elixirs that are not known on your homeworld. Potions made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes: “Healing spit”, “Strengthen body potion”, “Long lasting strengthen body”, “Strengthen will potion”, “Focus potion” and “Empathy potion”.",
       "Requirements": {
         "skill": [ 228 ],
         "any_list": []
@@ -2369,11 +2329,11 @@
     },
     {
       "id": 454,
-      "skill": "Brouw Kruiden Elixers C",
+      "skill": "Brew Herbal Elixirs C",
       "alt_skill": "",
-      "category": "Extra Alchemistenvaardigheden",
+      "category": "Extra Alchemist Skills",
       "page": 47,
-      "description": "Je krijgt 3 Inspiratie per dag. \\nJe hebt geleerd om de lokale geavanceerde kruiden elixers te brouwen die niet op jouw thuiswereld bekend zijn. Drankjes die op deze wijze gemaakt zijn, blijven 1 week houdbaar tenzij een specifiek ingrediënt toegevoegd wordt. Voor het gebruik van deze vaardigheid heb je een laboratorium nodig. \\nJe krijgt toegang tot de recepten: “Healing blood”, “Major strengthen body potion”, “Anti-magic skin oil”, “Major strengthen will potion”, “Major focus potion” en “Happyness drink”.",
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local advanced herbal elixirs that are not known on your homeworld. Potions made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes: “Healing blood”, “Major strengthen body potion”, “Anti-magic skin oil”, “Major strengthen will potion”, “Major focus potion” and “Happiness drink”.",
       "Requirements": {
         "skill": [ 453 ],
         "any_list": []
@@ -2397,11 +2357,11 @@
     },
     {
       "id": 455,
-      "skill": "Brouw Magische Elixers B",
+      "skill": "Brew Magical Elixirs B",
       "alt_skill": "",
-      "category": "Extra Alchemistenvaardigheden",
+      "category": "Extra Alchemist Skills",
       "page": 48,
-      "description": "Je krijgt 3 Inspiratie per dag. \\nJe hebt geleerd om de lokale magische elixers te brouwen die niet op jouw thuiswereld bekend zijn. Drankjes die op deze wijze gemaakt zijn, blijven 1 week houdbaar tenzij een specifiek ingrediënt toegevoegd wordt. Voor het gebruik van deze vaardigheid heb je een laboratorium nodig. \\nJe krijgt toegang tot de recepten: “Magical inspiration potion”, “Potion of divine connection”, “Potion of magic veins”, “Divine inspiration potion”, “Inspiration of the magi potion” en “Magical skin dye”. ",
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local magical elixirs that are not known on your homeworld. Potions made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes: “Magical inspiration potion”, “Potion of divine connection”, “Potion of magic veins”, “Divine inspiration potion”, “Inspiration of the magi potion” and “Magical skin dye”.",
       "Requirements": {
         "skill": [ 229 ],
         "any_list": []
@@ -2425,11 +2385,11 @@
     },
     {
       "id": 456,
-      "skill": "Brouw Magische Elixers C",
+      "skill": "Brew Magical Elixirs C",
       "alt_skill": "",
-      "category": "Extra Alchemistenvaardigheden",
+      "category": "Extra Alchemist Skills",
       "page": 48,
-      "description": "Je krijgt 3 Inspiratie per dag. \\nJe hebt geleerd om de lokale geavanceerde magische elixers te brouwen die niet op jouw thuiswereld bekend zijn. Drankjes die op deze wijze gemaakt zijn, blijven 1 week houdbaar tenzij een specifiek ingrediënt toegevoegd wordt. Voor het gebruik van deze vaardigheid heb je een laboratorium nodig. \\nJe krijgt toegang tot de recepten: “Major magical inspiration potion”, “Major potion of divine connection”, “Major potion of magic veins”, “Major divine inspiration potion”, “Major inspiration of the magi potion” en “Mirror personality potion”.",
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local advanced magical elixirs that are not known on your homeworld. Potions made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes: “Major magical inspiration potion”, “Major potion of divine connection”, “Major potion of magic veins”, “Major divine inspiration potion”, “Major inspiration of the magi potion” and “Mirror personality potion”.",
       "Requirements": {
         "skill": [ 455 ],
         "any_list": []
@@ -2453,11 +2413,11 @@
     },
     {
       "id": 457,
-      "skill": "Brouw Hallucinerende Elixers B",
+      "skill": "Brew Hallucinogens B",
       "alt_skill": "",
-      "category": "Extra Alchemistenvaardigheden",
+      "category": "Extra Alchemist Skills",
       "page": 48,
-      "description": "Je krijgt 3 Inspiratie per dag. \\nJe hebt geleerd om de lokale hallucinerende elixers te brouwen die niet op jouw thuiswereld bekend zijn. Drankjes die op deze wijze gemaakt zijn, blijven 1 week houdbaar tenzij een specifiek ingrediënt toegevoegd wordt. Voor het gebruik van deze vaardigheid heb je een laboratorium nodig. \\nJe krijgt toegang tot de recepten: “Fever potion”, “Visions of glowing symbols”, “Visions of magic”, “Visions of numen”, “Visions of the past” en “Relive other potion”.",
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local hallucinogenic elixirs that are not known on your homeworld. Potions made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes: “Fever potion”, “Visions of glowing symbols”, “Visions of magic”, “Visions of numen”, “Visions of the past” and “Relive other potion”.",
       "Requirements": {
         "skill": [ 230 ],
         "any_list": []
@@ -2481,11 +2441,11 @@
     },
     {
       "id": 458,
-      "skill": "Brouw Hallucinerende Elixers C",
+      "skill": "Brew Hallucinogens C",
       "alt_skill": "",
-      "category": "Extra Alchemistenvaardigheden",
+      "category": "Extra Alchemist Skills",
       "page": 49,
-      "description": "Je krijgt 3 Inspiratie per dag. \\nJe hebt geleerd om de lokale geavanceerde hallucinerende elixers te brouwen die niet op jouw thuiswereld bekend zijn. Drankjes die op deze wijze gemaakt zijn, blijven 1 week houdbaar tenzij een specifiek ingrediënt toegevoegd wordt. Voor het gebruik van deze vaardigheid heb je een laboratorium nodig. \\nJe krijgt toegang tot de recepten: “Major fever potion”, “Visions of death”, “Visions of the zeitgeist”, “Visions of present”, “Future visions” en “Be other potion”.",
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local advanced hallucinogenic elixirs that are not known on your homeworld. Potions made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes: “Major fever potion”, “Visions of death”, “Visions of the zeitgeist”, “Visions of present”, “Future visions” and “Be other potion”.",
       "Requirements": {
         "skill": [ 457 ],
         "any_list": []
@@ -2509,11 +2469,11 @@
     },
     {
       "id": 459,
-      "skill": "Brouw Giffen B",
+      "skill": "Brew Poison B",
       "alt_skill": "",
-      "category": "Extra Alchemistenvaardigheden",
+      "category": "Extra Alchemist Skills",
       "page": 49,
-      "description": "Je krijgt 3 Inspiratie per dag. \\nJe hebt geleerd om de lokale giffen te brouwen die niet op jouw thuiswereld bekend zijn. Giffen die op deze wijze gemaakt zijn, blijven 1 week houdbaar tenzij een specifiek ingrediënt toegevoegd wordt. Voor het gebruik van deze vaardigheid heb je een laboratorium nodig. \\nJe krijgt toegang tot de recepten:“Venom”, “Weapon oil”, “Mute venom”, “Muscle lock venom”, “Agonizing poison” en “Sorrow drink”.",
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local poisons that are not known on your homeworld. Poisons made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes: “Venom”, “Weapon oil”, “Mute venom”, “Muscle lock venom”, “Agonizing poison” and “Sorrow drink”.",
       "Requirements": {
         "skill": [ 231 ],
         "any_list": []
@@ -2537,11 +2497,11 @@
     },
     {
       "id": 460,
-      "skill": "Brouw Giffen C",
+      "skill": "Brew Poison C",
       "alt_skill": "",
-      "category": "Extra Alchemistenvaardigheden",
+      "category": "Extra Alchemist Skills",
       "page": 49,
-      "description": "Je krijgt 3 Inspiratie per dag. \\nJe hebt geleerd om de lokale geavanceerde giffen te brouwen die niet op jouw thuiswereld bekend zijn. Giffen die op deze wijze gemaakt zijn, blijven 1 week houdbaar tenzij een specifiek ingrediënt toegevoegd wordt. Voor het gebruik van deze vaardigheid heb je een laboratorium nodig. \\nJe krijgt toegang tot de recepten: “Batch of venom”, “Major weapon oil”, “Confuse venom”, “Fatal venom”, “Fatal poison” en “Drink of willed death”.",
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local advanced poisons that are not known on your homeworld. Poisons made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes: “Batch of venom”, “Major weapon oil”, “Confuse venom”, “Fatal venom”, “Fatal poison” and “Drink of willed death”.",
       "Requirements": {
         "skill": [ 459 ],
         "any_list": []
@@ -2565,22 +2525,22 @@
     },
     {
       "id": 475,
-      "skill": "Ambachts Expertise",
+      "skill": "Artificer's' Expertise",
       "alt_skill": "",
-      "category": "Extra Ambachtsvaardigheden",
+      "category": "Extra Crafting Skills",
       "page": 50,
-      "description": "Je krijgt 2 Inspiratie per dag.  \\nDeze vaardigheid mag je meerdere keren aankopen.",
+      "description": "You gain 2 Inspiration per day. \nThis skill can be purchased multiple times.",
       "Requirements": {
         "skill": [],
         "any_list": [],
         "Category": {
-          "name": [ "Ambachtsvaardigheden" ],
+          "name": [ "Crafting Skills" ],
           "value": 2
         }
       },
       "xp": 1,
       "loresheet": {},
-      "multi_purchase": false,
+      "multi_purchase": true,
       "count": 1,
       "maxcount": 99,
       "Eigenschappen": [
@@ -2594,11 +2554,11 @@
     },
     {
       "id": 476,
-      "skill": "Meestersmid B",
+      "skill": "Mastersmith B",
       "alt_skill": "",
-      "category": "Extra Ambachtsvaardigheden",
+      "category": "Extra Crafting Skills",
       "page": 50,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Mythical Steel verwerkt. Elke Mythical Steel in een voorwerp verwerken kost 2 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Mythical Steel geeft het voorwerp 7 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Lvl 2 Wetsteen te maken. \\nZie de loresheet voor meer details. ",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Steel. Each use of Mythical Steel in an item costs 2 inspiration. You may use the inspiration from all days at the event. Each Mythical Steel provides the item with 7 higher imbue capacity. This skill also allows you to create a Level 2 Whetstone. \nSee the loresheet for more details.",
       "Requirements": {
         "skill": [ 250 ],
         "any_list": []
@@ -2622,11 +2582,11 @@
     },
     {
       "id": 477,
-      "skill": "Meestersmid C",
+      "skill": "Mastersmith C",
       "alt_skill": "",
-      "category": "Extra Ambachtsvaardigheden",
+      "category": "Extra Crafting Skills",
       "page": 50,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Mythical Mithril verwerkt. Elke Mythical Mithril in een voorwerp verwerken kost 7 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Mythical Mithril geeft het voorwerp 27 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Lvl 3 Wetsteen te maken. \\nZie de loresheet voor meer details.",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Mithril. Each use of Mythical Mithril in an item costs 7 inspiration. You may use the inspiration from all days at the event. Each Mythical Mithril provides the item with 27 higher imbue capacity. This skill also allows you to create a Level 3 Whetstone. \nSee the loresheet for more details.",
       "Requirements": {
         "skill": [ 476 ],
         "any_list": []
@@ -2650,11 +2610,11 @@
     },
     {
       "id": 478,
-      "skill": "Houtbewerker B",
+      "skill": "Carpenter B",
       "alt_skill": "",
-      "category": "Extra Ambachtsvaardigheden",
+      "category": "Extra Crafting Skills",
       "page": 51,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Mythical Ebony verwerkt. Elke Mythical Ebony in een voorwerp verwerken kost 2 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Mythical Ebony geeft het voorwerp 7 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Totem van de Uil te maken. \\nZie de loresheet voor meer details.",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Ebony. Each use of Mythical Ebony in an item costs 2 inspiration. You may use the inspiration from all days at the event. Each Mythical Ebony provides the item with 7 higher imbue capacity. This skill also allows you to create a Totem of the Owl. \nSee the loresheet for more details.",
       "Requirements": {
         "skill": [ 251 ],
         "any_list": []
@@ -2678,11 +2638,11 @@
     },
     {
       "id": 479,
-      "skill": "Houtbewerker C",
+      "skill": "Carpenter C",
       "alt_skill": "",
-      "category": "Extra Ambachtsvaardigheden",
+      "category": "Extra Crafting Skills",
       "page": 51,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Mythical Worldtree Sapling verwerkt. Elke Mythical Worldtree Sapling in een voorwerp verwerken kost 7 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Mythical Worldtree Sapling geeft het voorwerp 27 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Totem van de Stier te maken. \\nZie de loresheet voor meer details. ",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Worldtree Sapling. Each use of Mythical Worldtree Sapling in an item costs 7 inspiration. You may use the inspiration from all days at the event. Each Mythical Worldtree Sapling provides the item with 27 higher imbue capacity. This skill also allows you to create a Totem of the Bull. \nSee the loresheet for more details.",
       "Requirements": {
         "skill": [ 478 ],
         "any_list": []
@@ -2706,11 +2666,11 @@
     },
     {
       "id": 480,
-      "skill": "Kleermaker B",
+      "skill": "Tailor B",
       "alt_skill": "",
-      "category": "Extra Ambachtsvaardigheden",
+      "category": "Extra Crafting Skills",
       "page": 51,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Mythical Velvet verwerkt. Elke Mythical Velvet in een voorwerp verwerken kost 2 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Mythical Velvet geeft het voorwerp 7 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Vlag van de Groep te maken. \\nZie de loresheet voor meer details.",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Velvet. Each use of Mythical Velvet in an item costs 2 inspiration. You may use the inspiration from all days at the event. Each Mythical Velvet provides the item with 7 higher imbue capacity. This skill also allows you to create a Group Flag. \nSee the loresheet for more details.",
       "Requirements": {
         "skill": [ 252 ],
         "any_list": []
@@ -2734,11 +2694,11 @@
     },
     {
       "id": 481,
-      "skill": "Kleermaker C",
+      "skill": "Tailor C",
       "alt_skill": "",
-      "category": "Extra Ambachtsvaardigheden",
+      "category": "Extra Crafting Skills",
       "page": 51,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Mythical Spidersilk verwerkt. Elke Mythical Spidersilk in een voorwerp verwerken kost 7 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Mythical Spidersilk geeft het voorwerp 27 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Banier van de Groep te maken. \\nZie de loresheet voor meer details.",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Spidersilk. Each use of Mythical Spidersilk in an item costs 7 inspiration. You may use the inspiration from all days at the event. Each Mythical Spidersilk provides the item with 27 higher imbue capacity. This skill also allows you to create a Group Banner. \nSee the loresheet for more details.",
       "Requirements": {
         "skill": [ 480 ],
         "any_list": []
@@ -2762,11 +2722,11 @@
     },
     {
       "id": 482,
-      "skill": "Boekbinder B",
+      "skill": "Bookbinder B",
       "alt_skill": "",
-      "category": "Extra Ambachtsvaardigheden",
+      "category": "Extra Crafting Skills",
       "page": 52,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Mythical Vellum verwerkt. Elke Mythical Vellum in een voorwerp verwerken kost 2 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Mythical Vellum geeft het voorwerp 7 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Leeg Vaardigheid Onderzoek Boek te maken. \\nZie de loresheet voor meer details.",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Vellum. Each use of Mythical Vellum in an item costs 2 inspiration. You may use the inspiration from all days at the event. Each Mythical Vellum provides the item with 7 higher imbue capacity. This skill also allows you to create an Empty Skill Research Book. \nSee the loresheet for more details.",
       "Requirements": {
         "skill": [ 253 ],
         "any_list": []
@@ -2790,11 +2750,11 @@
     },
     {
       "id": 483,
-      "skill": "Boekbinder C",
+      "skill": "Bookbinder C",
       "alt_skill": "",
-      "category": "Extra Ambachtsvaardigheden",
+      "category": "Extra Crafting Skills",
       "page": 52,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Mythical Griffinskin Vellum verwerkt. Elke Mythical Griffinskin Vellum in een voorwerp verwerken kost 7 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Mythical Griffinskin Vellum geeft het voorwerp 27 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Boek der Ervaringen te maken. \\nZie de loresheet voor meer details. ",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Griffinskin Vellum. Each use of Mythical Griffinskin Vellum in an item costs 7 inspiration. You may use the inspiration from all days at the event. Each Mythical Griffinskin Vellum provides the item with 27 higher imbue capacity. This skill also allows you to create a Book of Experiences. \nSee the loresheet for more details.",
       "Requirements": {
         "skill": [ 482 ],
         "any_list": []
@@ -2818,11 +2778,11 @@
     },
     {
       "id": 484,
-      "skill": "Leerbewerker B",
+      "skill": "Leatherworker B",
       "alt_skill": "",
-      "category": "Extra Ambachtsvaardigheden",
+      "category": "Extra Crafting Skills",
       "page": 52,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Mythical Scale verwerkt. Elke Mythical Scale in een voorwerp verwerken kost 2 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Mythical Scale geeft het voorwerp 7 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Pantser Versterking te maken. \\nZie de loresheet voor meer details. ",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Scale. Each use of Mythical Scale in an item costs 2 inspiration. You may use the inspiration from all days at the event. Each Mythical Scale provides the item with 7 higher imbue capacity. This skill also allows you to create Armor Reinforcement. \nSee the loresheet for more details.",
       "Requirements": {
         "skill": [ 254 ],
         "any_list": []
@@ -2846,11 +2806,11 @@
     },
     {
       "id": 485,
-      "skill": "Leerbewerker C",
+      "skill": "Leatherworker C",
       "alt_skill": "",
-      "category": "Extra Ambachtsvaardigheden",
+      "category": "Extra Crafting Skills",
       "page": 52,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Mythical Dragonscale verwerkt. Elke Mythical Dragonscale in een voorwerp verwerken kost 7 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Mythical Dragonscale geeft het voorwerp 27 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Zware Pantser Versterking te maken. \\nZie de loresheet voor meer details.",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Dragonscale. Each use of Mythical Dragonscale in an item costs 7 inspiration. You may use the inspiration from all days at the event. Each Mythical Dragonscale provides the item with 27 higher imbue capacity. This skill also allows you to create Heavy Armor Reinforcement. \nSee the loresheet for more details.",
       "Requirements": {
         "skill": [ 484 ],
         "any_list": []
@@ -2874,11 +2834,11 @@
     },
     {
       "id": 486,
-      "skill": "Juwelier B",
+      "skill": "Jeweler B",
       "alt_skill": "",
-      "category": "Extra Ambachtsvaardigheden",
+      "category": "Extra Crafting Skills",
       "page": 53,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Silver Ingots verwerkt. Elke 2 Silver Ingots in een voorwerp verwerken kost 3 inspiratie (of 2 inspiratie voor 1 Silver ingot). Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Silver Ingots geeft het voorwerp 4 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Alliantie Juweel te maken. \\nZie de loresheet voor meer details. ",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Silver Ingots. Each 2 Silver Ingots used in an item costs 3 inspiration (or 2 inspiration for 1 Silver ingot). You may use the inspiration from all days at the event. Each Silver Ingot provides the item with 4 higher imbue capacity. This skill also allows you to create an Alliance Jewel. \nSee the loresheet for more details.",
       "Requirements": {
         "skill": [ 255 ],
         "any_list": []
@@ -2902,11 +2862,11 @@
     },
     {
       "id": 487,
-      "skill": "Juwelier C",
+      "skill": "Jeweler C",
       "alt_skill": "",
-      "category": "Extra Ambachtsvaardigheden",
+      "category": "Extra Crafting Skills",
       "page": 53,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin golden Ingots verwerkt. Elke 2 golden Ingots in een voorwerp verwerken kost 7 inspiratie (of 4 inspiratie voor 1 golden ingot). Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke gold Ingots geeft het voorwerp 16 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Huwelijks Juweel te maken. \\nZie de loresheet voor meer details. ",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Golden Ingots. Each 2 Golden Ingots used in an item costs 7 inspiration (or 4 inspiration for 1 Golden ingot). You may use the inspiration from all days at the event. Each Golden Ingot provides the item with 16 higher imbue capacity. This skill also allows you to create a Wedding Jewel. \nSee the loresheet for more details.",
       "Requirements": {
         "skill": [ 486 ],
         "any_list": []
@@ -2930,11 +2890,11 @@
     },
     {
       "id": 488,
-      "skill": "Steenzetter B",
+      "skill": "Gemsetter B",
       "alt_skill": "",
-      "category": "Extra Ambachtsvaardigheden",
+      "category": "Extra Crafting Skills",
       "page": 53,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Gems verwerkt. Elke Gem in een voorwerp verwerken kost 1 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Gem geeft het voorwerp 5 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Duur Sieraad te maken. \\nZie de loresheet voor meer details.",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Gems. Each Gem used in an item costs 1 inspiration. You may use the inspiration from all days at the event. Each Gem provides the item with 5 higher imbue capacity. This skill also allows you to create an Expensive Jewelry. \nSee the loresheet for more details.",
       "Requirements": {
         "skill": [ 256 ],
         "any_list": []
@@ -2958,11 +2918,11 @@
     },
     {
       "id": 489,
-      "skill": "Steenzetter C",
+      "skill": "Gemsetter C",
       "alt_skill": "",
-      "category": "Extra Ambachtsvaardigheden",
+      "category": "Extra Crafting Skills",
       "page": 53,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Flawless Gems verwerkt. Elke Flawless Gem in een voorwerp verwerken kost 2 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Flawless Gem geeft het voorwerp 10 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Koninklijk Sieraad te maken. \\nZie de loresheet voor meer details.",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Flawless Gems. Each Flawless Gem used in an item costs 2 inspiration. You may use the inspiration from all days at the event. Each Flawless Gem provides the item with 10 higher imbue capacity. This skill also allows you to create a Royal Jewelry. \nSee the loresheet for more details.",
       "Requirements": {
         "skill": [ 488 ],
         "any_list": []
@@ -2986,11 +2946,11 @@
     },
     {
       "id": 500,
-      "skill": "Extra Genezingsmana (EL)",
+      "skill": "Extra Healing Mana (EL)",
       "alt_skill": "",
-      "category": "Extra Genezingsvaardigheden (EL)",
+      "category": "Extra Healing Skills (EL)",
       "page": 54,
-      "description": "Je krijgt 2 elementaire mana extra. \\nJe krijgt geen toegang tot extra spreuken.\\nDeze vaardigheid mag je meerdere keren aankopen.",
+      "description": "You gain 2 extra elemental mana. \nYou do not gain access to additional spells. \nThis skill can be purchased multiple times.",
       "Requirements": {
         "skill": [ 350 ],
         "any_list": []
@@ -3011,11 +2971,11 @@
     },
     {
       "id": 501,
-      "skill": "Extra Genezingsmana (SP)",
+      "skill": "Extra Healing Mana (SP)",
       "alt_skill": "",
-      "category": "Extra Genezingsvaardigheden (SP)",
+      "category": "Extra Healing Skills (SP)",
       "page": 54,
-      "description": "Je krijgt 2 spirituele mana extra. \\nJe krijgt geen toegang tot extra spreuken.\\nDeze vaardigheid mag je meerdere keren aankopen.",
+      "description": "You gain 2 extra spiritual mana. \nYou do not gain access to additional spells. \nThis skill can be purchased multiple times.",
       "Requirements": {
         "skill": [ 351 ],
         "any_list": []
@@ -3036,16 +2996,16 @@
     },
     {
       "id": 502,
-      "skill": "Genezingsspreuken C (EL)",
-      "alt_skill": "Genezing C",
-      "category": "Extra Genezingsvaardigheden (EL)",
+      "skill": "Healing Spells C (EL)",
+      "alt_skill": "Healing C",
+      "category": "Extra Healing Skills (EL)",
       "page": 54,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Discern Afflictions, Major Regeneration en Purify Body.",
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Discern Afflictions, Major Regeneration, and Purify Body.",
       "Requirements": {
         "skill": [],
         "any_list": [],
         "Category": {
-          "name": [ "Genezingsvaardigheden (EL)" ],
+          "name": [ "Healing Skills (EL)" ],
           "value": 8
         }
       },
@@ -3065,16 +3025,16 @@
     },
     {
       "id": 503,
-      "skill": "Genezingsspreuken C (SP)",
-      "alt_skill": "Genezing C",
-      "category": "Extra Genezingsvaardigheden (SP)",
+      "skill": "Healing Spells C (SP)",
+      "alt_skill": "Healing C",
+      "category": "Extra Healing Skills (SP)",
       "page": 54,
-      "description": "JJe krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Discern Afflictions, Major Regeneration en Purify Body.",
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Discern Afflictions, Major Regeneration, and Purify Body.",
       "Requirements": {
         "skill": [],
         "any_list": [],
         "Category": {
-          "name": [ "Genezingsvaardigheden (SP)" ],
+          "name": [ "Healing Skills (SP)" ],
           "value": 8
         }
       },
@@ -3094,11 +3054,11 @@
     },
     {
       "id": 504,
-      "skill": "Immuun voor Giffen (SP)",
+      "skill": "Immune to Poisons (SP)",
       "alt_skill": "",
-      "category": "Extra Genezingsvaardigheden (SP)",
+      "category": "Extra Healing Skills (SP)",
       "page": 54,
-      "description": "Je bent zelf immuun voor alle giffen.",
+      "description": "You are immune to all poisons.",
       "Requirements": {
         "skill": [ 355 ],
         "any_list": []
@@ -3114,11 +3074,11 @@
     },
     {
       "id": 505,
-      "skill": "Immuun voor Giffen (EL)",
+      "skill": "Immune to Poisons (EL)",
       "alt_skill": "",
-      "category": "Extra Genezingsvaardigheden (EL)",
+      "category": "Extra Healing Skills (EL)",
       "page": 54,
-      "description": "Je bent zelf immuun voor alle giffen.",
+      "description": "You are immune to all poisons.",
       "Requirements": {
         "skill": [ 354 ],
         "any_list": []
@@ -3134,11 +3094,11 @@
     },
     {
       "id": 506,
-      "skill": "Immuun voor Ziekten (SP)",
+      "skill": "Immune to Diseases (SP)",
       "alt_skill": "",
-      "category": "Extra Genezingsvaardigheden (SP)",
+      "category": "Extra Healing Skills (SP)",
       "page": 55,
-      "description": "Je bent zelf immuun voor alle ziekten.",
+      "description": "You are immune to all diseases.",
       "Requirements": {
         "skill": [ 357 ],
         "any_list": []
@@ -3154,11 +3114,11 @@
     },
     {
       "id": 507,
-      "skill": "Immuun voor Ziekten (EL)",
+      "skill": "Immune to Diseases (EL)",
       "alt_skill": "",
-      "category": "Extra Genezingsvaardigheden (EL)",
+      "category": "Extra Healing Skills (EL)",
       "page": 55,
-      "description": "Je bent zelf immuun voor alle ziekten.",
+      "description": "You are immune to all diseases.",
       "Requirements": {
         "skill": [ 356 ],
         "any_list": []
@@ -3174,11 +3134,11 @@
     },
     {
       "id": 508,
-      "skill": "Immuun voor Geest Beïnvloedend A (SP)",
+      "skill": "Immune to Mind Influencing A (SP)",
       "alt_skill": "",
-      "category": "Extra Genezingsvaardigheden (SP)",
+      "category": "Extra Healing Skills (SP)",
       "page": 55,
-      "description": "Je bent zelf immuun Fear, Confuse en Sleep.",
+      "description": "You are immune to Fear, Confuse, and Sleep effects.",
       "Requirements": {
         "skill": [ 359 ],
         "any_list": []
@@ -3194,11 +3154,11 @@
     },
     {
       "id": 509,
-      "skill": "Immuun voor Geest Beïnvloedend A (EL)",
+      "skill": "Immune to Mind Influencing A (EL)",
       "alt_skill": "",
-      "category": "Extra Genezingsvaardigheden (EL)",
+      "category": "Extra Healing Skills (EL)",
       "page": 55,
-      "description": "Je bent zelf immuun Fear, Confuse en Sleep.",
+      "description": "You are immune to Fear, Confuse, and Sleep effects.",
       "Requirements": {
         "skill": [ 358 ],
         "any_list": []
@@ -3214,11 +3174,11 @@
     },
     {
       "id": 510,
-      "skill": "Immuun voor Geest Beïnvloedend B (SP)",
+      "skill": "Immune to Mind Influencing B (SP)",
       "alt_skill": "",
-      "category": "Extra Genezingsvaardigheden (SP)",
+      "category": "Extra Healing Skills (SP)",
       "page": 55,
-      "description": "Je bent zelf immuun voor alle Geestbeïnvloedende effecten: Command, Confuse, Fascinate, Fear, incite aggression, Sleep, Force Truth",
+      "description": "You are immune to all Mind-Affecting effects: Command, Confuse, Fascinate, Fear, Incite Aggression, Sleep, Force Truth",
       "Requirements": {
         "skill": [ 508 ],
         "any_list": []
@@ -3234,11 +3194,11 @@
     },
     {
       "id": 511,
-      "skill": "Immuun voor Geest Beïnvloedend B (EL)",
+      "skill": "Immune to Mind Influencing B (EL)",
       "alt_skill": "",
-      "category": "Extra Genezingsvaardigheden (EL)",
+      "category": "Extra Healing Skills (EL)",
       "page": 55,
-      "description": "Je bent zelf immuun voor alle Geestbeïnvloedende effecten: Command, Confuse, Fascinate, Fear, incite aggression, Sleep, Force Truth",
+      "description": "You are immune to all Mind-Affecting effects: Command, Confuse, Fascinate, Fear, Incite Aggression, Sleep, Force Truth",
       "Requirements": {
         "skill": [ 509 ],
         "any_list": []
@@ -3254,16 +3214,16 @@
     },
     {
       "id": 525,
-      "skill": "Extra Elementaire mana",
+      "skill": "Extra Elemental Mana",
       "alt_skill": "",
-      "category": "Extra Magiërvaardigheden",
+      "category": "Extra Mage Skills",
       "page": 56,
-      "description": "Je krijgt 2 elementaire mana extra. Je krijgt geen toegang tot extra spreuken. \\nDeze vaardigheid mag je meerdere keren aankopen.",
+      "description": "You gain 2 elemental mana extra. You do not gain access to extra spells. \\nThis skill can be purchased multiple times.",
       "Requirements": {
         "skill": [],
         "any_list": [],
         "Category": {
-          "name": [ "Magiërvaardigheden" ],
+          "name": [ "Mage Skills" ],
           "value": 4
         }
       },
@@ -3283,11 +3243,11 @@
     },
     {
       "id": 526,
-      "skill": "Magiërspreuken C - Lucht",
+      "skill": "Mage Spells C - Air",
       "alt_skill": "Air Magic C",
-      "category": "Extra Magiërvaardigheden",
+      "category": "Extra Mage Skills",
       "page": 56,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Force Field en Tempest of Cleansing.",
+      "description": "You gain 5 elemental mana per day. \\nYou gain access to the spells: Force Field and Tempest of Cleansing.",
       "Requirements": {
         "skill": [ 278 ],
         "any_list": []
@@ -3308,11 +3268,11 @@
     },
     {
       "id": 527,
-      "skill": "Magiërspreuken C - Metaal",
+      "skill": "Mage Spells C - Metal",
       "alt_skill": "Metal Magic C",
-      "category": "Extra Magiërvaardigheden",
+      "category": "Extra Mage Skills",
       "page": 56,
-      "description": "Je krijgt 5 elementaire mana per dag.\\nJe krijgt toegang tot de spreuken: Aura of Fear en Elemental Bolt.",
+      "description": "You gain 5 elemental mana per day.\\nYou gain access to the spells: Aura of Fear and Elemental Bolt.",
       "Requirements": {
         "skill": [ 279 ],
         "any_list": [],
@@ -3334,11 +3294,11 @@
     },
     {
       "id": 528,
-      "skill": "Magiërspreuken C - Aarde",
+      "skill": "Mage Spells C - Earth",
       "alt_skill": "Earth Magic C",
-      "category": "Extra Magiërvaardigheden",
+      "category": "Extra Mage Skills",
       "page": 57,
-      "description": "Je krijgt 5 elementaire mana per dag.\\nJe krijgt toegang tot de spreuken: Stoneskin en Imbue Crush.",
+      "description": "You gain 5 elemental mana per day.\\nYou gain access to the spells: Stoneskin and Imbue Crush.",
       "Requirements": {
         "skill": [ 280 ],
         "any_list": []
@@ -3359,11 +3319,11 @@
     },
     {
       "id": 529,
-      "skill": "Magiërspreuken C - Water",
+      "skill": "Mage Spells C - Water",
       "alt_skill": "Water Magic C",
-      "category": "Extra Magiërvaardigheden",
+      "category": "Extra Mage Skills",
       "page": 57,
-      "description": "Je krijgt 5 elementaire mana per dag.\\nJe krijgt toegang tot de spreuken: Gift of Knowledge en Paralyzing Touch.",
+      "description": "You gain 5 elemental mana per day.\\nYou gain access to the spells: Gift of Knowledge and Paralyzing Touch.",
       "Requirements": {
         "skill": [ 281 ],
         "any_list": []
@@ -3384,15 +3344,15 @@
     },
     {
       "id": 530,
-      "skill": "Magiërspreuken C - Vuur",
+      "skill": "Mage Spells C - Fire",
       "alt_skill": "Fire Magic C",
-      "category": "Extra Magiërvaardigheden",
+      "category": "Extra Mage Skills",
       "page": 57,
-      "description": "Je krijgt 5 elementaire mana per dag.\\nJe krijgt toegang tot de spreuken: Aspect of the Efreet en Incinerate.",
+      "description": "You gain 5 elemental mana per day.\\nYou gain access to the spells: Aspect of the Efreet and Incinerate.",
       "Requirements": {
         "skill": [ 282 ],
         "any_list": [],
-        "exception": [625]
+        "exception": [ 625 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -3410,11 +3370,11 @@
     },
     {
       "id": 531,
-      "skill": "Magiërspreuken C - Hout",
+      "skill": "Mage Spells C - Wood",
       "alt_skill": "Wood Magic C",
-      "category": "Extra Magiërvaardigheden",
+      "category": "Extra Mage Skills",
       "page": 57,
-      "description": "Je krijgt 5 elementaire mana per dag.\\nJe krijgt toegang tot de spreuken: Primal Rage en Aspect of the Viper.",
+      "description": "You gain 5 elemental mana per day.\\nYou gain access to the spells: Primal Rage and Aspect of the Viper.",
       "Requirements": {
         "skill": [ 283 ],
         "any_list": [],
@@ -3436,11 +3396,11 @@
     },
     {
       "id": 532,
-      "skill": "Magiërspreuken D - Vernietiging",
-      "alt_skill": "Speciale Magiërspreuken",
-      "category": "Extra Magiërvaardigheden",
+      "skill": "Mage Spells D - Destruction",
+      "alt_skill": "Special Mage Spells",
+      "category": "Extra Mage Skills",
       "page": 57,
-      "description": "Je krijgt 2 elementaire mana per dag.\\nJe krijgt toegang tot de spreuk: Wave of Destruction.",
+      "description": "You gain 2 elemental mana per day.\\nYou gain access to the spell: Wave of Destruction.",
       "Requirements": {
         "skill": [],
         "any_list": [ 526, 527, 528, 529, 530, 531 ]
@@ -3461,11 +3421,11 @@
     },
     {
       "id": 533,
-      "skill": "Magiërspreuken D - Dominatie",
-      "alt_skill": "Speciale Magiërspreuken",
-      "category": "Extra Magiërvaardigheden",
+      "skill": "Mage Spells D - Domination",
+      "alt_skill": "Special Mage Spells",
+      "category": "Extra Mage Skills",
       "page": 57,
-      "description": "Je krijgt 2 elementaire mana per dag.\\nJe krijgt toegang tot de spreuk: Dominate the Weak.",
+      "description": "You gain 2 elemental mana per day.\\nYou gain access to the spell: Dominate the Weak.",
       "Requirements": {
         "skill": [],
         "any_list": [ 526, 527, 528, 529, 530, 531 ]
@@ -3486,11 +3446,11 @@
     },
     {
       "id": 534,
-      "skill": "Magiërspreuken D - Epidemie",
-      "alt_skill": "Speciale Magiërspreuken",
-      "category": "Extra Magiërvaardigheden",
+      "skill": "Mage Spells D - Epidemic",
+      "alt_skill": "Special Mage Spells",
+      "category": "Extra Mage Skills",
       "page": 58,
-      "description": "Je krijgt 2 elementaire mana per dag.\\nJe krijgt toegang tot de spreuk: Epidemic.",
+      "description": "You gain 2 elemental mana per day.\\nYou gain access to the spell: Epidemic.",
       "Requirements": {
         "skill": [],
         "any_list": [ 526, 527, 528, 529, 530, 531 ]
@@ -3511,16 +3471,16 @@
     },
     {
       "id": 535,
-      "skill": "Glyphs scroll Vervaardigen",
+      "skill": "Glyph Scroll Crafting",
       "alt_skill": "",
-      "category": "Extra Magiërvaardigheden",
+      "category": "Extra Mage Skills",
       "page": 58,
-      "description": "Je kunt een scroll met glyphs beschrijven met 1 elementaire spreuk die je zelf beheerst. Het kan ook een spreuk zijn waartoe je slechts toegang hebt door middel van persoonlijke imbues, een rang, een power of een condition. Het kan niet een spreuk zijn waar je toegang tot hebt met behulp van een item, potion of andere spreuk. Voor het maken van een scroll is speciaal scroll-papier nodig. Scroll-papier is te herkennen aan de officiële VA-stempel rechtsonder op het papier.\\n\\n Je schrijft de gehele incantatie in glyphs nauwgezet op de scroll om hierna de spreuk te doen op deze geprepareerde scroll. Na het doen van de spreuk schrijf je onderaan de scroll, links naast de stempel, je PLIN, je CHIN en de datum waarop je de scroll beschreven hebt.\\n\\n Een dergelijke scroll is een item met 1 lading en kan gebruikt worden door personages met de vaardigheid GLYPHS GEBRUIKEN. De volledige incantatie van de spreuk moet je personage oplezen vanaf de scroll om de spreuk te casten. De scroll wordt vernietigd wanneer de spreuk wordt gebruikt. Scheur deze door en lever deze in bij spelleiding na gebruik.",
+      "description": "You can inscribe a scroll with glyphs using 1 elemental spell you control. It can also be a spell you only have access to through personal imbues, a rank, a power, or a condition. It cannot be a spell you have access to using an item, potion, or other spell. Special scroll paper is required to make a scroll. Scroll paper can be identified by the official VA stamp in the lower right corner of the paper.\\n\\nYou meticulously write the entire incantation in glyphs on the scroll to prepare it. After casting the spell on this prepared scroll, you write your PLIN, your CHIN, and the date on which you described the scroll at the bottom of the scroll, to the left of the stamp.\\n\\nSuch a scroll is an item with 1 charge and can be used by characters with the GLYPHS USE skill. Your character must recite the entire incantation of the spell from the scroll to cast the spell. The scroll is destroyed when the spell is used. Tear it up and deliver it to the game control after use.",
       "Requirements": {
         "skill": [ 105 ],
         "any_list": [],
         "Category": {
-          "name": [ "Magiërvaardigheden", "Genezingsvaardigheden (EL)" ],
+          "name": [ "Mage Skills", "Healing Skills (EL)" ],
           "value": 4
         }
       },
@@ -3538,16 +3498,16 @@
     },
     {
       "id": 536,
-      "skill": "Glyphs Meesterschap",
+      "skill": "Glyph Mastery",
       "alt_skill": "",
-      "category": "Extra Magiërvaardigheden",
+      "category": "Extra Mage Skills",
       "page": 59,
-      "description": "Je kunt voorwerpen of personen beschrijven met Glyphs en doordringen met magie, een zogenaamde ‘imbue’. Zie het imbue loresheet voor meer informatie.\\n\\n Met deze vaardigheid kun je een voorwerp of persoon met maximaal 10 elementaire mana imbuen. Je mag hiervoor de mana gebruiken van de resterende dagen op het evenement. Je kunt deze vaardigheid meerdere keren nemen. Per keer dat je deze vaardigheid extra geleerd hebt, verhoog je je maximum te imbuen hoeveelheid mana met 10. Zo kun je de hoeveelheid mana die je kunt gebruiken om voorwerpen te doordringen met elementaire energie, verhogen. Als het effect wat je wilt imbuen te veel mana vereist dan zul je samen moeten werken met andere personen met deze vaardigheid. \\nDeze vaardigheid mag je meerdere keren aankopen.",
+      "description": "You can inscribe objects or people with Glyphs and imbue them with magic, known as an ‘imbue’. Refer to the imbue lore sheet for more information.\\n\\nWith this skill, you can imbue an object or person with up to 10 elemental mana. You may use mana from the remaining days of the event for this purpose. You can purchase this skill multiple times. Each time you learn this skill additionally, you increase your maximum imbue mana quantity by 10. This allows you to increase the amount of mana you can use to infuse objects with elemental energy. If the effect you want to imbue requires too much mana, you will need to collaborate with other people with this skill.\\nThis skill may be purchased multiple times.",
       "Requirements": {
         "skill": [ 535 ],
         "any_list": [],
         "Category": {
-          "name": [ "Magiërvaardigheden", "Genezingsvaardigheden (EL)" ],
+          "name": [ "Mage Skills", "Healing Skills (EL)" ],
           "value": 8
         }
       },
@@ -3570,16 +3530,16 @@
     },
     {
       "id": 550,
-      "skill": "Extra Spirituele mana",
+      "skill": "Extra Spiritual Mana",
       "alt_skill": "",
-      "category": "Extra Priestervaardigheden",
+      "category": "Extra Priest Skills",
       "page": 60,
-      "description": "Je krijgt 2 spirituele mana extra. Je krijgt geen toegang tot extra spreuken.\\nDeze vaardigheid mag je meerdere keren aankopen",
+      "description": "You gain 2 spiritual mana extra. You do not gain access to extra spells.\\nThis skill may be purchased multiple times.",
       "Requirements": {
         "skill": [],
         "any_list": [],
         "Category": {
-          "name": [ "Priestervaardigheden" ],
+          "name": [ "Priest Skills" ],
           "value": 4
         }
       },
@@ -3599,16 +3559,16 @@
     },
     {
       "id": 551,
-      "skill": "Uitdrijving",
+      "skill": "Exorcism",
       "alt_skill": "",
-      "category": "Extra Priestervaardigheden",
+      "category": "Extra Priest Skills",
       "page": 60,
-      "description": "Je kan met je eigen (niet rituele) spirituele mana een ritueel uitvoeren om spirituele invloeden, of de bezetenheid door een ondode, servitar, spirit of een chaos-taint te verwijderen van een persoon of voorwerp.\\n\\n Dit hoeft niet per se op een rituele plek maar kan wel onderdeel zijn van een regulier uitdrijving ritueel op een rituele plek. Als deze vaardigheid gebruikt wordt als onderdeel van een groter ritueel dan kunnen ook meerdere personen met deze vaardigheid hun spirituele mana aanwenden om te helpen. Als je niet genoeg energie hebt om de bezetenheid te verwijderen dan verzwak je de bezetenheid, wat bij opeenvolgende pogingen die dag helpt.",
+      "description": "You can perform a ritual using your own (non-ritual) spiritual mana to remove spiritual influences or possession by an undead, servitar, spirit, or chaos-taint from a person or object.\\n\\nThis does not necessarily have to be at a ritual site but can be part of a regular exorcism ritual at a ritual site. If this skill is used as part of a larger ritual, multiple individuals with this skill can use their spiritual mana to assist. If you do not have enough energy to remove the possession, you weaken the possession, which helps in subsequent attempts that day.",
       "Requirements": {
         "skill": [],
         "any_list": [ 325, 326, 327 ],
         "Category": {
-          "name": [ "Priestervaardigheden" ],
+          "name": [ "Priest Skills" ],
           "value": 4
         }
       },
@@ -3623,11 +3583,11 @@
     },
     {
       "id": 552,
-      "skill": "Priesterspreuken C - Reinheid",
+      "skill": "Priest Spells C - Purity",
       "alt_skill": "Purity C",
-      "category": "Extra Priestervaardigheden",
+      "category": "Extra Priest Skills",
       "page": 61,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Holy Bolt en Divine Armour.",
+      "description": "You gain 5 spiritual mana per day.\\nYou gain access to the spells: Holy Bolt and Divine Armour.",
       "Requirements": {
         "skill": [ 328 ],
         "any_list": [],
@@ -3649,11 +3609,11 @@
     },
     {
       "id": 553,
-      "skill": "Priesterspreuken C - Toorn",
+      "skill": "Priest Spells C - Wrath",
       "alt_skill": "Wrath C",
-      "category": "Extra Priestervaardigheden",
+      "category": "Extra Priest Skills",
       "page": 61,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Sacred Torture en Divine Weapon.",
+      "description": "You gain 5 spiritual mana per day.\\nYou gain access to the spells: Sacred Torture and Divine Weapon.",
       "Requirements": {
         "skill": [ 329 ],
         "any_list": []
@@ -3674,11 +3634,11 @@
     },
     {
       "id": 554,
-      "skill": "Priesterspreuken C - Dood",
+      "skill": "Priest Spells C - Death",
       "alt_skill": "Death C",
-      "category": "Extra Priestervaardigheden",
+      "category": "Extra Priest Skills",
       "page": 61,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Destructive Touch en Septic Weapon.",
+      "description": "You gain 5 spiritual mana per day.\\nYou gain access to the spells: Destructive Touch and Septic Weapon.",
       "Requirements": {
         "skill": [ 330 ],
         "any_list": [],
@@ -3700,11 +3660,11 @@
     },
     {
       "id": 555,
-      "skill": "Priesterspreuken C - Geest",
+      "skill": "Priest Spells C - Mind",
       "alt_skill": "Mind C",
-      "category": "Extra Priestervaardigheden",
+      "category": "Extra Priest Skills",
       "page": 61,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Gift of Wisdom en Spell Shield.",
+      "description": "You gain 5 spiritual mana per day.\\nYou gain access to the spells: Gift of Wisdom and Spell Shield.",
       "Requirements": {
         "skill": [ 331 ],
         "any_list": []
@@ -3725,11 +3685,11 @@
     },
     {
       "id": 556,
-      "skill": "Priesterspreuken C - Natuur",
+      "skill": "Priest Spells C - Nature",
       "alt_skill": "Nature C",
-      "category": "Extra Priestervaardigheden",
+      "category": "Extra Priest Skills",
       "page": 61,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Barkskin en Major Disease.",
+      "description": "You gain 5 spiritual mana per day.\\nYou gain access to the spells: Barkskin and Major Disease.",
       "Requirements": {
         "skill": [ 332 ],
         "any_list": [],
@@ -3751,11 +3711,11 @@
     },
     {
       "id": 557,
-      "skill": "Priesterspreuken D - Inwijden",
-      "alt_skill": "Speciale Priesterspreuken",
-      "category": "Extra Priestervaardigheden",
+      "skill": "Priest Spells D - Consecrate",
+      "alt_skill": "Special Priest Spells",
+      "category": "Extra Priest Skills",
       "page": 61,
-      "description": "Je krijgt 2 spirituele mana per dag. \\nJe krijgt toegang tot de spreuk: Miracle of Consecration.",
+      "description": "You gain 2 spiritual mana per day.\\nYou gain access to the spell: Miracle of Consecration.",
       "Requirements": {
         "skill": [],
         "any_list": [ 552, 553, 554, 555, 556 ]
@@ -3776,11 +3736,11 @@
     },
     {
       "id": 558,
-      "skill": "Priesterspreuken D - Gebedsgenezing",
-      "alt_skill": "Speciale Priesterspreuken",
-      "category": "Extra Priestervaardigheden",
+      "skill": "Priest Spells D - Healing Prayer",
+      "alt_skill": "Special Priest Spells",
+      "category": "Extra Priest Skills",
       "page": 62,
-      "description": "Je krijgt 2 spirituele mana per dag. \\nJe krijgt toegang tot de spreuk: Miracle of Healing.",
+      "description": "You gain 2 spiritual mana per day.\\nYou gain access to the spell: Miracle of Healing.",
       "Requirements": {
         "skill": [],
         "any_list": [ 552, 553, 554, 555, 556 ]
@@ -3801,11 +3761,11 @@
     },
     {
       "id": 559,
-      "skill": "Priesterspreuken D - Toorn van de Goden",
-      "alt_skill": "Speciale Priesterspreuken",
-      "category": "Extra Priestervaardigheden",
+      "skill": "Priest Spells D - Wrath of the Gods",
+      "alt_skill": "Special Priest Spells",
+      "category": "Extra Priest Skills",
       "page": 62,
-      "description": "Je krijgt 2 spirituele mana per dag. \\nJe krijgt toegang tot de spreuk: Wrath of the Gods.",
+      "description": "You gain 2 spiritual mana per day.\\nYou gain access to the spell: Wrath of the Gods.",
       "Requirements": {
         "skill": [],
         "any_list": [ 552, 553, 554, 555, 556 ]
@@ -3826,16 +3786,16 @@
     },
     {
       "id": 560,
-      "skill": "Runen scroll Vervaardigen",
+      "skill": "Rune Scroll Craft",
       "alt_skill": "",
-      "category": "Extra Priestervaardigheden",
+      "category": "Extra Priest Skills",
       "page": 62,
-      "description": "Je kunt een scroll met runen beschrijven met 1 spirituele spreuk die je zelf beheerst. Het kan ook een spreuk zijn waartoe je slechts toegang hebt door middel van persoonlijke imbues, een rang, een power of een condition. Het kan niet een spreuk zijn waar je toegang tot hebt met behulp van een item, potion of andere spreuk. Voor het maken van een scroll is speciaal scroll-papier nodig. Scroll-papier is te herkennen aan de officiële VA-stempel rechtsonder op het papier.\\n\\n Je schrijft de gehele incantatie in runen nauwgezet op de scroll om hierna de spreuk te doen op deze geprepareerde scroll. Na het doen van de spreuk schrijf je onderaan de scroll, links naast de stempel, je PLIN, je CHIN en de datum waarop je de scroll beschreven hebt.\\n\\n Een dergelijke scroll is een item met 1 lading en kan gebruikt worden door personages met de vaardigheid RUNEN GEBRUIKEN. De volledige incantatie van de spreuk moet je personage oplezen vanaf de scroll om de spreuk te casten. De scroll wordt vernietigd wanneer de spreuk wordt gebruikt. Scheur deze door en lever deze in bij spelleiding na gebruik.",
+      "description": "You can inscribe a scroll with 1 spiritual spell that you possess. It can also be a spell to which you only have access through personal imbues, a rank, a power, or a condition. It cannot be a spell accessed through an item, potion, or other spell. Special scroll paper is required for making a scroll. Scroll paper is recognizable by the official VA stamp in the bottom right corner.\\n\\n You meticulously write the entire incantation in runes on the scroll, then perform the spell on this prepared scroll. After casting the spell, you write your PLIN, CHIN, and the date you inscribed the scroll at the bottom left next to the stamp.\\n\\n Such a scroll is an item with 1 charge and can be used by characters with the RUNE USE skill. The full incantation of the spell must be read from the scroll by your character to cast the spell. The scroll is destroyed when the spell is used. Tear it up and hand it in to the game masters after use.",
       "Requirements": {
         "skill": [ 103 ],
         "any_list": [],
         "Category": {
-          "name": [ "Priestervaardigheden", "Genezingsvaardigheden (SP)" ],
+          "name": [ "Priest Skills", "Healing Skills (SP)" ],
           "value": 4
         }
       },
@@ -3853,16 +3813,16 @@
     },
     {
       "id": 561,
-      "skill": "Runen Meesterschap",
+      "skill": "Rune Mastery",
       "alt_skill": "",
-      "category": "Extra Priestervaardigheden",
+      "category": "Extra Priest Skills",
       "page": 63,
-      "description": "Je kunt voorwerpen of personen beschrijven met Runen en doordringen met magie, een zogenaamde ‘imbue’. \\nZie het imbue loresheet voor meer informatie.\\n\\n Met deze vaardigheid kun je een voorwerp of persoon met maximaal 10 spirituele mana imbuen. Je mag hiervoor de mana gebruiken van de resterende dagen op het evenement. Je kunt deze vaardigheid meerdere keren nemen. Per keer dat je deze vaardigheid extra geleerd hebt, verhoog je je maximum te imbuen hoeveelheid mana met 10. Zo kun je de hoeveelheid mana die je kunt gebruiken om voorwerpen te doordringen met spirituele energie, verhogen. Als het effect wat je wilt imbuen te veel mana vereist dan zul je samen moeten werken met andere personen met deze vaardigheid. \\nDeze vaardigheid mag je meerdere keren aankopen.",
+      "description": "You can inscribe objects or persons with Runes and imbue them with magic, a so-called 'imbue'. \\nRefer to the imbue loresheet for more information.\\n\\n With this skill, you can imbue an object or person with up to 10 spiritual mana. You may use the mana from the remaining days of the event for this purpose. You can purchase this skill multiple times. Each additional purchase increases your maximum imbuing mana amount by 10. Thus, you can increase the amount of mana you can use to imbue objects with spiritual energy. If the effect you want to imbue requires too much mana, you will need to collaborate with other individuals possessing this skill. ",
       "Requirements": {
         "skill": [ 560 ],
         "any_list": [],
         "Category": {
-          "name": [ "Priestervaardigheden", "Genezingsvaardigheden (SP)" ],
+          "name": [ "Priest Skills", "Healing Skills (SP)" ],
           "value": 8
         }
       },
@@ -3885,11 +3845,11 @@
     },
     {
       "id": 575,
-      "skill": "Bloedwede",
+      "skill": "Woad of Blood",
       "alt_skill": "",
-      "category": "Extra Ritualistenvaardigheden",
+      "category": "Extra Ritual Skills",
       "page": 64,
-      "description": "Je kunt wedes in een ritueel of ceremonie aanbrengen op jezelf en anderen met het bloed van dieren. Iedere bloedwede kost rituele mana (of andere vormen van energie op de manier die je normaal kunt uitgeven gedurende rituelen) om aan te brengen (de kosten per persoon staan hieronder). Een dergelijke ritueel of ceremonie duurt minimaal 5 minuten (maar er kunnen meerdere wedes in 1 keer aangebracht worden). Het is niet mogelijk om meerdere wedes tegelijk te dragen en iedere wede dient duidelijk op het gezicht aangebracht te worden met verf of nepbloed.\\n\\n1 energie per persoon: \\nRat: Immuun voor ziekten; bestaande ziekten blijven. Duratie 1 uur\\nWolf: Immuun voor angst (fear). Duratie 1 uur\\nUil: Immuun zijn voor het eerstvolgende geest beïnvloedende effect. Duratie 1 uur of tot gebruik.\\nOs: Immuun voor strike en slow. Duratie 1 uur\\nSlang: Immuun voor giffen; bestaande giffen blijven. Duratie 1 uur\\nDas: De ontvanger heeft 1 extra hitpoint die niet genezen kan worden. Duratie 1 uur\\n\\n2 energie per persoon (onderstaande wedes vereisen minstens 4 punten in rituele vaardigheden)\\nBeer: De eerstvolgende klap van de ontvanger zal met het effect BLAST zijn. Dit mag alleen met een wapen wat groter is dan 45 cm. Duratie 1 uur of tot gebruik.\\nHertebok: De ontvanger zal gedurende de duratie van deze woad 4 maal STRIKE slagen mogen doen. Dit mag alleen met een wapen wat groter is dan 45 cm. Duratie 1 uur of tot op gebruikt. \\nEverzwijn: De ontvanger heeft 1 extra hitpoint. Duratie 1 uur. \\nPauw: De ontvanger kan 1 keer per 5 minuten het FASCINATE effect veroorzaken door gracieus te dansen en in de eerste zin daarna (zowel ic als oc) uit te leggen dat dat zo werkt. Duratie 1 uur. \\nGordeldier: De ontvanger heeft 1 extra armourpoint. Duratie 1 uur.",
+      "description": "You can apply Woads in a ritual or ceremony on yourself and others using the blood of animals. Each Woad costs ritual mana (or other forms of energy in the way you would normally spend during rituals) to apply (the costs per person are listed below). Such a ritual or ceremony takes at least 5 minutes (but multiple woads can be applied at once). It is not possible to wear multiple woads simultaneously, and each woad must be clearly applied to the face using paint or fake blood.\\n\\n1 energy per person:\\nRat: Immune to diseases; existing diseases remain. Duration 1 hour\\nWolf: Immune to fear. Duration 1 hour\\nOwl: Immune to the next mind-affecting effect. Duration 1 hour or until used.\\nOx: Immune to strike and slow. Duration 1 hour\\nSnake: Immune to poisons; existing poisons remain. Duration 1 hour\\nBadger: The recipient gains 1 extra hit point that cannot be healed. Duration 1 hour\\n\\n2 energy per person (the following woads require at least 4 points in ritual skills):\\nBear: The recipient's next strike will be with the BLAST effect. This may only be done with a weapon longer than 45 cm. Duration 1 hour or until used.\\nStag: During the duration of this woad the recipient may do 4 STRIKE hits. This may only be done with a weapon longer than 45 cm. Duration 1 hour or until used.\\nWild boar: The recipient has 1 extra hit point. Duration 1 hour.\\nPeacock: The recipient can cause the FASCINATE effect once every 5 minutes by dancing gracefully and explaining how that works in the first sentence after. Duration 1 hour.\\nArmadillo: The recipient has 1 extra armor point. Duration 1 hour.",
       "Requirements": {
         "skill": [],
         "any_list": [ 375, 376 ]
@@ -3905,16 +3865,16 @@
     },
     {
       "id": 576,
-      "skill": "Groepsritueel Specialist",
+      "skill": "Group Ritual Specialist",
       "alt_skill": "",
-      "category": "Extra Ritualistenvaardigheden",
+      "category": "Extra Ritual Skills",
       "page": 65,
-      "description": "Indien je een ritueel leidt en hier zelf 3 rituele mana in spendeert krijgt het ritueel 7 bonuspunten (vergelijkbaar met 7 mana) als er minstens 3 andere actieve participanten meedoen met het ritueel (of iemand telt als een actieve participant wordt besloten door de rituele spelleider). Deze personen hoeven niet per se energie te spenderen aan het ritueel, maar moeten wel bijdragen aan de symboliek van het ritueel door bijvoorbeeld iets uit te beelden. Je kunt dit 1 keer per dag toepassen voor elke keer dat je deze vaardigheid aankoopt, als je hem meerdere keren tijdens hetzelfde ritueel toepast heb je voor elke toepassing weer 3 extra mensen nodig. ",
+      "description": "If you lead a ritual and spend 3 ritual mana yourself, the ritual gains 7 bonus points (equivalent to 7 mana) if there are at least 3 other active participants in the ritual (whether someone counts as an active participant is decided by the ritual game master). These individuals do not necessarily have to spend energy on the ritual but must contribute to the symbolism of the ritual, for example by acting something out. You can apply this once per day for each time you purchase this skill, if you apply it multiple times during the same ritual you need 3 extra people for every application again. ",
       "Requirements": {
         "skill": [],
         "any_list": [],
         "Category": {
-          "name": [ "Ritualisme" ],
+          "name": [ "Ritual Skills" ],
           "value": 3
         }
       },
@@ -3929,16 +3889,16 @@
     },
     {
       "id": 577,
-      "skill": "Puur Ritueel",
+      "skill": "Pure Ritual",
       "alt_skill": "",
-      "category": "Extra Ritualistenvaardigheden",
+      "category": "Extra Ritual Skills",
       "page": 65,
-      "description": "Een ritueel telt als puur ritueel wanneer er (naast 1 vorm van rituele mana) slechts 1 andere vorm van energie in gestoken wordt. Als dit de gekozen energie is en er minstens 3 van dit type energie in gestoken wordt, dan krijgt het ritueel 7 bonuspunten (vergelijkbaar met 7 mana). Deze vaardigheid werkt niet als spiritueel en elementair door elkaar gebruikt wordt in dit ritueel.\\n\\n Je kunt dit 1 keer per dag toepassen voor elke keer dat je deze vaardigheid aankoopt. Hoe vaak je deze vaardigheid ook hebt en hoe veel ritualisten deze vaardigheid ook hebben, een ritueel kan maar eenmaal verklaard worden tot puur ritueel.\\n\\n Let op dat elke keer dat je deze vaardigheid aankoopt je opnieuw een vorm van energie kiest. Je kunt ook meerdere keren dezelfde vorm kiezen. Deze vaardigheid kan slechts 4 maal gekozen worden. ",
+      "description": "A ritual counts as a pure ritual when (in addition to 1 form of ritual mana) only 1 other form of energy is put into it. If this is the chosen energy and at least 3 of this type of energy are put into it, the ritual gets 7 bonus points (equivalent to 7 mana). This skill does not work if spiritual and elemental are used together in this ritual.\\n\\n You can apply this once per day for each time you buy this skill. No matter how many times you have this skill and how many ritualists have this skill, a ritual can only be declared pure ritual once.\\n\\n Note that each time you buy this skill you choose a new form of energy. You can also choose the same form multiple times. This skill can only be chosen 4 times. ",
       "Requirements": {
         "skill": [],
         "any_list": [],
         "Category": {
-          "name": [ "Ritualisme" ],
+          "name": [ "Ritual Skills" ],
           "value": 3
         }
       },
@@ -3953,16 +3913,16 @@
     },
     {
       "id": 578,
-      "skill": "Cirkel Vinden",
+      "skill": "Find Circle",
       "alt_skill": "",
-      "category": "Extra Ritualistenvaardigheden",
+      "category": "Extra Ritual Skills",
       "page": 66,
-      "description": "Je kunt na een kort ritueel (zonder cirkel) en het spenderen van 1 rituele mana op zoek gaan naar nabije geschikte rituele plekken waar vervolgens een cirkel getrokken kan worden door jou. Dit gebeurt altijd in overleg met spelleiding en werkt alleen als spelleiders de tijd hebben om ook op deze nieuwe plek rituelen te beoordelen. Het kan daarom ook zijn dat zo een plek slechts tijdelijk is. (spelleider vereist)",
+      "description": "After a short ritual (without circle) and spending 1 ritual mana, you can search for nearby suitable ritual locations where you can then draw a circle. This always happens in consultation with the game masters and only works if game masters have time to also assess rituals in these new locations. It can therefore also be that such a location is only temporarily. (game master required)",
       "Requirements": {
         "skill": [],
         "any_list": [],
         "Category": {
-          "name": [ "Ritualisme" ],
+          "name": [ "Ritual Skills" ],
           "value": 5
         }
       },
@@ -3977,11 +3937,11 @@
     },
     {
       "id": 600,
-      "skill": "Extra Wilskracht (Vechter)",
+      "skill": "Extra Willpower (Fighter)",
       "alt_skill": "",
-      "category": "Extra Vechtervaardigheden",
+      "category": "Extra Fighter Skills",
       "page": 67,
-      "description": "Je krijgt 2 extra willpower per dag. \\nJe hebt geleerd om met je innerlijke kracht meer technieken en acties te kunnen uitvoeren. Je krijgt geen toegang tot extra technieken.\\n Deze vaardigheid mag je meerdere keren aankopen. ",
+      "description": "You gain 2 extra willpower per day. \\nYou have expanded your inner strength. You do not gain access to extra techniques.\\n You can purchase this skill multiple times.",
       "Requirements": {
         "skill": [],
         "any_list": [ 175, 200 ]
@@ -4002,11 +3962,11 @@
     },
     {
       "id": 601,
-      "skill": "Kracht B",
+      "skill": "Strength B",
       "alt_skill": "",
-      "category": "Extra Vechtervaardigheden",
+      "category": "Extra Fighter Skills",
       "page": 67,
-      "description": "Je krijgt 3 wilskracht per dag.\\nJe krijgt toegang tot de technieken: Heavy Blow en Withstand Strike.",
+      "description": "You gain 3 willpower per day.\\nYou gain access to the techniques: Heavy Blow and Withstand Strike.",
       "Requirements": {
         "skill": [ 176 ],
         "any_list": []
@@ -4027,11 +3987,11 @@
     },
     {
       "id": 602,
-      "skill": "Taaiheid B",
+      "skill": "Toughness B",
       "alt_skill": "",
-      "category": "Extra Vechtervaardigheden",
+      "category": "Extra Fighter Skills",
       "page": 67,
-      "description": "Je krijgt 3 wilskracht per dag.\\nJe krijgt toegang tot de technieken: Poison & Disease Protection en Resist Crush.",
+      "description": "You gain 3 willpower per day.\\nYou gain access to the techniques: Poison & Disease Protection and Resist Crush.",
       "Requirements": {
         "skill": [ 177 ],
         "any_list": []
@@ -4052,11 +4012,11 @@
     },
     {
       "id": 603,
-      "skill": "Leiderschap B",
+      "skill": "Leadership B",
       "alt_skill": "",
-      "category": "Extra Vechtervaardigheden",
+      "category": "Extra Fighter Skills",
       "page": 68,
-      "description": "Je krijgt 3 wilskracht per dag.\nnJe krijgt toegang tot de technieken: Inspect Armour en Insight.",
+      "description": "You gain 3 willpower per day.\nYou gain access to the techniques: Inspect Armour and Insight.",
       "Requirements": {
         "skill": [ 178 ],
         "any_list": []
@@ -4077,11 +4037,11 @@
     },
     {
       "id": 604,
-      "skill": "Bescherming B",
+      "skill": "Protection B",
       "alt_skill": "",
-      "category": "Extra Vechtervaardigheden",
+      "category": "Extra Fighter Skills",
       "page": 68,
-      "description": "Je krijgt 3 wilskracht per dag. \\nJe krijgt toegang tot de technieken: Defensive Stance en Withstand Torture.",
+      "description": "You gain 3 willpower per day. \\nYou gain access to the techniques: Defensive Stance and Withstand Torture.",
       "Requirements": {
         "skill": [ 179 ],
         "any_list": []
@@ -4104,9 +4064,9 @@
       "id": 605,
       "skill": "Berserker B",
       "alt_skill": "",
-      "category": "Extra Vechtervaardigheden",
+      "category": "Extra Fighter Skills",
       "page": 68,
-      "description": "Je krijgt 3 wilskracht per dag. \\nJe krijgt toegang tot de technieken: Rage en Withstand Fear.",
+      "description": "You gain 3 willpower per day. \\nYou gain access to the techniques: Rage and Withstand Fear.",
       "Requirements": {
         "skill": [ 180 ],
         "any_list": []
@@ -4127,11 +4087,11 @@
     },
     {
       "id": 606,
-      "skill": "Militaire training B",
+      "skill": "Military Training B",
       "alt_skill": "",
-      "category": "Extra Vechtervaardigheden",
+      "category": "Extra Fighter Skills",
       "page": 68,
-      "description": "Je krijgt 3 wilskracht per dag. \\nJe hebt 1 hitpoint meer.",
+      "description": "You gain 3 willpower per day. \\nYou gain 1 extra hitpoint.",
       "Requirements": {
         "skill": [ 181 ],
         "any_list": []
@@ -4157,10 +4117,10 @@
     {
       "id": 625,
       "skill": "Demonologist A",
-      "alt_skill": "Demonoloog A",
-      "category": "Demonologie",
+      "alt_skill": "Demonologist A",
+      "category": "Demonology",
       "page": 70,
-      "description": "De demonoloog kan zijn demonologie, fire en purity spreuken casten met zowel spirituele als elementaire mana. \\nJe krijgt toegang tot de spreuken: “Detect Servitar”,“Reveal All Servitars”, “Break Minor Possession” en “Faustian Deal”.\\nDaarnaast mag een demonoloog de vereisten om “Fire” en “Purity” aan te leren, negeren.Tot slot krijgt de demonoloog 5 extra punten (vergelijkbaar met 5 energie) voor een ritueel als de demonoloog een ritueel leidt dat als effect heeft:\\n* Een servitar contract verbreken\\n* Een servitar possession verbreken\\n* Een specifieke servitar oproepen\\n* Iemand een servitar maken (kan alleen met toestemming van een godheiduiteraard)\\n* Sommige andere rituelen in overleg met rituele spelleiding.",
+      "description": "The demonologist can cast their Demonology, fire, and purity spells using both spiritual and elemental mana. \\nYou gain access to the spells: “Detect Servitar”,“Reveal All Servitars”, “Break Minor Possession”, and “Faustian Deal”.\\nAdditionally, a demonologist may ignore the requirements to learn “Fire” and “Purity” spells. Finally, the demonologist gains 5 extra points (equivalent to 5 energy) for a ritual if the demonologist leads a ritual with the following effects:\\n* Breaking a servitar contract\\n* Breaking a servitar possession\\n* Summoning a specific servitar\\n* Making someone a servitar (only with permission from a deity, of course)\\n* Some other rituals as agreed upon with ritual game masters.",
       "Requirements": {
         "skill": [],
         "any_list": [ 282, 328 ]
@@ -4177,10 +4137,10 @@
     {
       "id": 626,
       "skill": "Demonologist B (EL)",
-      "alt_skill": "Demonoloog B",
-      "category": "Demonologie",
+      "alt_skill": "Demonologist B",
+      "category": "Demonology",
       "page": 70,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot despreuken: “Demonic Eye”, “Command Servitar”, “Banish Servitar” “Smite Servitar en “Invite Demon”.",
+      "description": "You gain 5 elemental mana per day. \\nYou gain access to the spells: “Demonic Eye”, “Command Servitar”, “Banish Servitar”, “Smite Servitar”, and “Invite Demon”.",
       "Requirements": {
         "skill": [ 282, 625 ],
         "any_list": []
@@ -4202,10 +4162,10 @@
     {
       "id": 627,
       "skill": "Demonologist B (SP)",
-      "alt_skill": "Demonoloog B",
-      "category": "Demonologie",
+      "alt_skill": "Demonologist B",
+      "category": "Demonology",
       "page": 70,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot despreuken: “Demonic Eye”, “Command Servitar”, “Banish Servitar” “Smite Servitar en “Invite Demon”.",
+      "description": "You gain 5 spiritual mana per day. \\nYou gain access to the spells: “Demonic Eye”, “Command Servitar”, “Banish Servitar”, “Smite Servitar”, and “Invite Demon”.",
       "Requirements": {
         "skill": [ 328, 625 ],
         "any_list": []
@@ -4227,10 +4187,10 @@
     {
       "id": 628,
       "skill": "Demonologist C (EL)",
-      "alt_skill": "Demonoloog C",
-      "category": "Demonologie",
+      "alt_skill": "Demonologist C",
+      "category": "Demonology",
       "page": 70,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: “Greater Demonic Eye”, “Invite Greater Demon” en “Transfer Contract”.",
+      "description": "You gain 5 elemental mana per day. \\nYou gain access to the spells: “Greater Demonic Eye”, “Invite Greater Demon”, and “Transfer Contract”.",
       "Requirements": {
         "skill": [ 626 ],
         "any_list": []
@@ -4252,10 +4212,10 @@
     {
       "id": 629,
       "skill": "Demonologist C (SP)",
-      "alt_skill": "Demonoloog C",
-      "category": "Demonologie",
+      "alt_skill": "Demonologist C",
+      "category": "Demonology",
       "page": 70,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: “Greater Demonic Eye”, “Invite Greater Demon” en “Transfer Contract”.",
+      "description": "You gain 5 spiritual mana per day. \\nYou gain access to the spells: “Greater Demonic Eye”, “Invite Greater Demon”, and “Transfer Contract”.",
       "Requirements": {
         "skill": [ 627 ],
         "any_list": []
@@ -4276,11 +4236,11 @@
     },
     {
       "id": 650,
-      "skill": "Levens Druidisme A",
+      "skill": "Life Druidism A",
       "alt_skill": "Druid A",
-      "category": "Druidisme",
+      "category": "Druidism",
       "page": 72,
-      "description": "De druïde kan zijn druïde, wood en nature spreuken casten met zowel elementaire als spirituele mana. \\nJe krijgt toegang tot de spreuken: “Detect Spirit”, “Reveal All Spirits”, “Break Minor Possession” en “Create Personal Grove”.\\n Daarnaast mag een druïde de vereisten die nodig zijn voor het hierna aanleren van “Wood” en “Nature” vaardigheden negeren. Tot slot krijg de druide 5 extra punten (vergelijkbaar met 5 energie) voor een ritueelals de druïde een ritueel leidt dat als effect heeft:\\n* Een onnatuurlijke invloed van een plek verwijderen\\n* Het ecosysteem, als in balans tussen leven en dood bij planten en dierenbeïnvloeden\\n* Te reizen van Grove naar Grove\\n* Sommige andere rituelen in overleg met rituele spelleiding.",
+      "description": "The druid can cast their druid, wood, and nature spells using both elemental and spiritual mana. \\nYou gain access to the spells: “Detect Spirit”, “Reveal All Spirits”, “Break Minor Possession”, and “Create Personal Grove”.\\nAdditionally, a druid may ignore the requirements to learn “Wood” and “Nature” skills thereafter. Finally, the druid gains 5 extra points (equivalent to 5 energy) for a ritual if the druid leads a ritual with the following effects:\\n* Removing an unnatural influence from a place\\n* Influencing the ecosystem, balancing life and death among plants and animals\\n* Traveling from Grove to Grove\\n* Some other rituals as agreed upon with ritual game masters.",
       "Requirements": {
         "skill": [],
         "any_list": [ 283, 332 ]
@@ -4296,11 +4256,11 @@
     },
     {
       "id": 651,
-      "skill": "Doods Druidisme A",
+      "skill": "Death Druidism A",
       "alt_skill": "Druid A",
-      "category": "Druidisme",
+      "category": "Druidism",
       "page": 72,
-      "description": "De druïde kan zijn druïde, Metal en Death spreuken casten met zowel elementaire als spirituele mana. \\nJe krijgt toegang tot de spreuken: “Detect Spirit”, “Reveal All Spirits”, “Break Minor Possession” en “Create Personal Grove”.\\n Daarnaast mag een druïde de vereisten die nodig zijn voor het hierna aanleren van “Metal” en “Death” vaardigheden negeren. Tot slot krijg de druïde 5 extra punten (vergelijkbaar met 5 energie) voor een ritueelals de druïde een ritueel leidt dat als effect heeft:\\n* Een onnatuurlijke invloed van een plek verwijderen\\n* Het ecosysteem, als in balans tussen leven en dood bij planten en dierenbeïnvloeden\\n* Te reizen van Grove naar Grove\\n* Sommige andere rituelen in overleg met rituele spelleiding.",
+      "description": "The druid can cast their druid, metal, and death spells using both elemental and spiritual mana. \\nYou gain access to the spells: “Detect Spirit”, “Reveal All Spirits”, “Break Minor Possession”, and “Create Personal Grove”.\\nAdditionally, a druid may ignore the requirements to learn “Metal” and “Death” skills thereafter. Finally, the druid gains 5 extra points (equivalent to 5 energy) for a ritual if the druid leads a ritual with the following effects:\\n* Removing an unnatural influence from a place\\n* Influencing the ecosystem, balancing life and death among plants and animals\\n* Traveling from Grove to Grove\\n* Some other rituals as agreed upon with ritual game masters.",
       "Requirements": {
         "skill": [],
         "any_list": [ 279, 330 ]
@@ -4316,11 +4276,11 @@
     },
     {
       "id": 652,
-      "skill": "Levens Druidisme B (EL)",
+      "skill": "Life Druidism B (EL)",
       "alt_skill": "Druid B",
-      "category": "Druidisme",
+      "category": "Druidism",
       "page": 72,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: “Detect Impurity”, “Reveal All Impurities”, “Protection of the Grove” en “Invite Nature Spirit”.",
+      "description": "You gain 5 elemental mana per day. \\nYou gain access to the spells: “Detect Impurity”, “Reveal All Impurities”, “Protection of the Grove”, and “Invite Nature Spirit”.",
       "Requirements": {
         "skill": [ 283, 650 ],
         "any_list": []
@@ -4341,11 +4301,11 @@
     },
     {
       "id": 653,
-      "skill": "Levens Druidisme B (SP)",
+      "skill": "Life Druidism B (SP)",
       "alt_skill": "Druid B",
-      "category": "Druidisme",
+      "category": "Druidism",
       "page": 72,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: “Detect Impurity”, “Reveal All Impurities”, “Protection of the Grove” en “Invite Nature Spirit”.",
+      "description": "You gain 5 spiritual mana per day. \\nYou gain access to the spells: “Detect Impurity”, “Reveal All Impurities”, “Protection of the Grove”, and “Invite Nature Spirit”.",
       "Requirements": {
         "skill": [ 332, 650 ],
         "any_list": []
@@ -4366,11 +4326,11 @@
     },
     {
       "id": 654,
-      "skill": "Doods Druidisme B (EL)",
+      "skill": "Death Druidism B (EL)",
       "alt_skill": "Druid B",
-      "category": "Druidisme",
+      "category": "Druidism",
       "page": 72,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: “Detect Impurity”, “Reveal All Impurities”, “Protection of the Grove” en “Invite Nature Spirit”.",
+      "description": "You gain 5 elemental mana per day. \\nYou gain access to the spells: “Detect Impurity”, “Reveal All Impurities”, “Protection of the Grove”, and “Invite Nature Spirit”.",
       "Requirements": {
         "skill": [ 279, 651 ],
         "any_list": []
@@ -4391,11 +4351,11 @@
     },
     {
       "id": 655,
-      "skill": "Doods Druidisme B (SP)",
+      "skill": "Death Druidism B (SP)",
       "alt_skill": "Druid B",
-      "category": "Druidisme",
+      "category": "Druidism",
       "page": 72,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: “Detect Impurity”, “Reveal All Impurities”, “Protection of the Grove” en “Invite Nature Spirit”.",
+      "description": "You gain 5 spiritual mana per day. \\nYou gain access to the spells: “Detect Impurity”, “Reveal All Impurities”, “Protection of the Grove”, and “Invite Nature Spirit”.",
       "Requirements": {
         "skill": [ 330, 651 ],
         "any_list": []
@@ -4416,11 +4376,11 @@
     },
     {
       "id": 656,
-      "skill": "Levens Druidisme C (EL)",
+      "skill": "Life Druidism C (EL)",
       "alt_skill": "Druid C",
-      "category": "Druidisme",
+      "category": "Druidism",
       "page": 73,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken:\n“Grove Meditation”, “Restore the Cycle” en “Invite Avatar of the Cycle”.",
+      "description": "You gain 5 elemental mana per day. \\nYou gain access to the spells: “Grove Meditation”, “Restore the Cycle”, and “Invite Avatar of the Cycle”.",
       "Requirements": {
         "skill": [ 652 ],
         "any_list": []
@@ -4441,11 +4401,11 @@
     },
     {
       "id": 657,
-      "skill": "Levens Druidisme C (SP)",
+      "skill": "Life Druidism C (SP)",
       "alt_skill": "Druid C",
-      "category": "Druidisme",
+      "category": "Druidism",
       "page": 73,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken:\n“Grove Meditation”, “Restore the Cycle” en “Invite Avatar of the Cycle”.",
+      "description": "You gain 5 spiritual mana per day. \\nYou gain access to the spells: “Grove Meditation”, “Restore the Cycle”, and “Invite Avatar of the Cycle”.",
       "Requirements": {
         "skill": [ 653 ],
         "any_list": []
@@ -4466,11 +4426,11 @@
     },
     {
       "id": 658,
-      "skill": "Doods Druidisme C (EL)",
+      "skill": "Death Druidism C (EL)",
       "alt_skill": "Druid C",
-      "category": "Druidisme",
+      "category": "Druidism",
       "page": 73,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken:\n“Grove Meditation”, “Restore the Cycle” en “Invite Avatar of the Cycle”.",
+      "description": "You gain 5 elemental mana per day. \\nYou gain access to the spells: “Grove Meditation”, “Restore the Cycle”, and “Invite Avatar of the Cycle”.",
       "Requirements": {
         "skill": [ 654 ],
         "any_list": []
@@ -4491,11 +4451,11 @@
     },
     {
       "id": 659,
-      "skill": "Doods Druidisme C (SP)",
+      "skill": "Death Druidism C (SP)",
       "alt_skill": "Druid C",
-      "category": "Druidisme",
+      "category": "Druidism",
       "page": 73,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken:\n“Grove Meditation”, “Restore the Cycle” en “Invite Avatar of the Cycle”.",
+      "description": "You gain 5 spiritual mana per day. \\nYou gain access to the spells: “Grove Meditation”, “Restore the Cycle”, and “Invite Avatar of the Cycle”.",
       "Requirements": {
         "skill": [ 655 ],
         "any_list": []
@@ -4518,9 +4478,9 @@
       "id": 675,
       "skill": "Necromancer A",
       "alt_skill": "",
-      "category": "Necromantie",
+      "category": "Necromancy",
       "page": 75,
-      "description": "De necromancer kan diens necromantie, “Metal”, en “Death” spreuken casten met zowel spirituele als elementaire mana. \\nDe necromancer krijgt ook toegang tot de spreuken: “Detect Undead”, “Reveal All Undead”, “Break Minor Possession”, “Create Zombie” en “Minor Reconstruct”. \\nDaarnaast mag een necromancer de vereisten om “Metal” en “Death” aan te leren, negeren. Tot slot krijg de Necromancer 5 extra punten (vergelijkbaar met 5 energie) voor een ritueel als de Necromancer een ritueel leidt dat als effect heeft: \\n* Iemand ondood maken \\n* Het \"leven\" van een ondode in stand houden \\n* Spreken met lang dode wezens (soms zelfs zonder dat hun lichaam aanwezig is) \\n* Het dodenrijk betreden \\n* Sommige andere rituelen in overleg met rituele spelleiding.",
+      "description": "The necromancer can cast their necromancy, \"Metal\", and \"Death\" spells using both spiritual and elemental mana. \\nThe necromancer also gains access to the spells: “Detect Undead”, “Reveal All Undead”, “Break Minor Possession”, “Create Zombie”, and “Minor Reconstruct”. \\nAdditionally, a necromancer may ignore the requirements to learn \"Metal\" and \"Death\" skills. Finally, the necromancer gains 5 extra points (equivalent to 5 energy) for a ritual if the necromancer leads a ritual that has the following effect: \\n* Making someone undead \\n* Sustaining the \"life\" of an undead \\n* Speaking with long-dead beings (sometimes even without their body present) \\n* Entering the realm of the dead \\n* Some other rituals as agreed upon with ritual game mastering.",
       "Requirements": {
         "skill": [],
         "any_list": [ 279, 330 ]
@@ -4538,9 +4498,9 @@
       "id": 676,
       "skill": "Necromancer B (EL)",
       "alt_skill": "Necromancer B",
-      "category": "Necromantie",
+      "category": "Necromancy",
       "page": 75,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: “Reconstruct”, “Chilling Fear”, “Bone Armour” en “Invite Soul of the Damned”.",
+      "description": "You gain 5 elemental mana per day. \\nYou gain access to the spells: “Reconstruct”, “Chilling Fear”, “Bone Armour”, and “Invite Soul of the Damned”.",
       "Requirements": {
         "skill": [ 279, 675 ],
         "any_list": []
@@ -4563,9 +4523,9 @@
       "id": 677,
       "skill": "Necromancer B (SP)",
       "alt_skill": "Necromancer B",
-      "category": "Necromantie",
+      "category": "Necromancy",
       "page": 75,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: “Reconstruct”, “Chilling Fear”, “Bone Armour” en “Invite Soul of the Damned”.",
+      "description": "You gain 5 spiritual mana per day. \\nYou gain access to the spells: “Reconstruct”, “Chilling Fear”, “Bone Armour”, and “Invite Soul of the Damned”.",
       "Requirements": {
         "skill": [ 330, 675 ],
         "any_list": []
@@ -4588,9 +4548,9 @@
       "id": 678,
       "skill": "Necromancer C (EL)",
       "alt_skill": "Necromancer C",
-      "category": "Necromantie",
+      "category": "Necromancy",
       "page": 75,
-      "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken:\n“Ghostly Shackles”, “Unholy Bolt” en “Invite Ancestor”.",
+      "description": "You gain 5 elemental mana per day. \\nYou gain access to the spells: “Ghostly Shackles”, “Unholy Bolt”, and “Invite Ancestor”.",
       "Requirements": {
         "skill": [ 676 ],
         "any_list": []
@@ -4613,9 +4573,9 @@
       "id": 679,
       "skill": "Necromancer C (SP)",
       "alt_skill": "Necromancer C",
-      "category": "Necromantie",
+      "category": "Necromancy",
       "page": 75,
-      "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken:\n“Ghostly Shackles”, “Unholy Bolt” en “Invite Ancestor”.",
+      "description": "You gain 5 spiritual mana per day. \\nYou gain access to the spells: “Ghostly Shackles”, “Unholy Bolt”, and “Invite Ancestor”.",
       "Requirements": {
         "skill": [ 677 ],
         "any_list": []

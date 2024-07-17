@@ -29,14 +29,15 @@ function useSourceByLanguage(optionNL, optionEN) {
     }
 }
 
-// --- PRESETS --- ///
-export const getPresets = () => { return useSourceByLanguage(presets_nl, presets_en); }
+// Presets
+export function getPresets() { return useSourceByLanguage(presets_nl, presets_en); }
 
-// releasenotes
-export const getSourceReleaseNotes = () => { return useSourceByLanguage(releasenotes_nl, releasenotes_en); }
+// Release Notes
+export function getSourceReleaseNotes() { return useSourceByLanguage(releasenotes_nl, releasenotes_en); }
 
 // FAQ
-export const getSourceFAQ = () => { return useSourceByLanguage(faq_nl, faq_en); }
+
+export function getSourceFAQ() { return useSourceByLanguage(faq_nl, faq_en); }
 
 
 /// --- SKILLS & SELECT PROPERTIES --- ///
@@ -47,24 +48,34 @@ export function setTotalXP(value) { totalXP = value; }
 export function resetTotalXP(tableData) { totalXP = tableData.length > 0 ? tableData.reduce((accumulator, skill) => accumulator + skill.xp, 0) : 0 }
 
 // vaardigheden
-export const getSourceVaardigheden = () => { return useSourceByLanguage(vaardigheden_nl, vaardigheden_en) }
-export const sourceBasisVaardigheden = getSourceVaardigheden().BasisVaardigheden;
+export function getSourceVaardigheden(){ return useSourceByLanguage(vaardigheden_nl, vaardigheden_en) }
+export let sourceBasisVaardigheden = getSourceVaardigheden().BasisVaardigheden;
+export let sourceExtraVaardigheden = getSourceVaardigheden().ExtraVaardigheden;
 export let optionsBasisVaardigheden = generateOptions(sourceBasisVaardigheden);
-export function regeneratedBasisVaardigheden(tableData) { optionsBasisVaardigheden = regenerateOptions(sourceBasisVaardigheden, tableData); }
-
-export const sourceExtraVaardigheden = getSourceVaardigheden().ExtraVaardigheden;
 export let optionsExtraVaardigheden = generateOptions(sourceExtraVaardigheden);
-export function regeneratedExtraVaardigheden(tableData) { optionsExtraVaardigheden = regenerateOptions(sourceExtraVaardigheden, tableData); }
 
 // spreuken
-export const getSpreuken = () => { return useSourceByLanguage(spreuken_nl, spreuken_en); }
-export const sourceSpreuken = [].concat(...getSpreuken().Categories.map(category => category.Skills));
+export function getSpreuken() { return useSourceByLanguage(spreuken_nl, spreuken_en); }
+export let sourceSpreuken = [].concat(...getSpreuken().Categories.map(category => category.Skills));
 
 // recepten
-export const getRecepten = () => { return useSourceByLanguage(recepten_nl, recepten_en); }
-export const sourceSkillRecepten = [].concat(...getRecepten().Categories.map(category => category.Skills));
-export const sourceCommonRecepten = [].concat(...getRecepten().Categories.map(category => category.Common).filter(Boolean));
+export function getRecepten() { return useSourceByLanguage(recepten_nl, recepten_en); }
+export let sourceSkillRecepten = [].concat(...getRecepten().Categories.map(category => category.Skills));
+export let sourceCommonRecepten = [].concat(...getRecepten().Categories.map(category => category.Common).filter(Boolean));
 
+// regeneration
+export function regenerateVaardigheden(tableData) {
+    sourceBasisVaardigheden = getSourceVaardigheden().BasisVaardigheden;
+    sourceExtraVaardigheden = getSourceVaardigheden().ExtraVaardigheden;
+    optionsBasisVaardigheden = regenerateOptions(sourceBasisVaardigheden, tableData);
+    optionsExtraVaardigheden = regenerateOptions(sourceExtraVaardigheden, tableData);
+}
+
+export function regenerateSpreukenAndRecepten() {
+    sourceSpreuken = [].concat(...getSpreuken().Categories.map(category => category.Skills));
+    sourceSkillRecepten = [].concat(...getRecepten().Categories.map(category => category.Skills));
+    sourceCommonRecepten = [].concat(...getRecepten().Categories.map(category => category.Common).filter(Boolean));
+}
 
 /// --- TABLE PROPERTIES --- ///
 export const defaultProperties = [

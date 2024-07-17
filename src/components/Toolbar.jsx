@@ -21,6 +21,7 @@ import {
     exportCharacterToFile
 } from '../SharedStorage.js';
 import {
+    getSkillById,
     meetsAllPrerequisites,
     verifyTableContainsExtraSkill
 } from '../SharedActions.js';
@@ -29,7 +30,9 @@ import {
     sourceBasisVaardigheden,
     sourceExtraVaardigheden,
     optionsBasisVaardigheden,
-    optionsExtraVaardigheden
+    optionsExtraVaardigheden,
+    regenerateVaardigheden,
+    regenerateSpreukenAndRecepten
 } from '../SharedObjects.js'
 
 // Zet een Toolbar klaar met daarin de mogelijkheid om:
@@ -217,7 +220,7 @@ export default function Toolbar() {
                 const max_xp_exceeded = t("toolbar.modals.max_xp_exceeded")
                 const skill_cost = t("toolbar.modals.skill_cost")
                 const cant_add = t("toolbar.modals.cant_add")
-                setModalMsg(    `${max_xp_exceeded} (${MAX_XP})  \n 
+                setModalMsg(`${max_xp_exceeded} (${MAX_XP})  \n 
                                 ${skill_cost} ${selectedRecord.xp} XP\n
                                 ${cant_add}`);
             } else {
@@ -339,11 +342,25 @@ export default function Toolbar() {
     }
 
     // UI Taal aanpassen
-    const changeLanguage = () => { i18n.changeLanguage(language); }
+    const changeLanguage = useCallback(() => {
+        i18n.changeLanguage(language);
+        // regenereer de bronbestanden.
+        regenerateVaardigheden(tableData);
+        regenerateSpreukenAndRecepten();
+
+        // Vertalen van TableData, gezien die niet automatisch mee gaat
+        if (tableData.length > 0) {
+            const firstSkill = getSkillById(tableData[0]?.id);
+            if (tableData[0].skill !== firstSkill.skill) {
+                let newData = [];
+                tableData.forEach(skill => { newData.push(getSkillById(skill.id)) })
+                setTableData(newData);
+            }
+        }
+    }, [language, tableData, setTableData])
 
     // Trigger de changeLanguage en verander de BtnImage wanneer de taal is aangepast.
     useEffect(() => { changeLanguage() }, [language, setLanguage]);
-    useEffect(() => { getLanguageImage() }, [language, setLanguage]);
 
     function getLanguageImage() {
         switch (language) {

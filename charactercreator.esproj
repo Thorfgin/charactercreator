@@ -19,4 +19,9 @@
   <ItemGroup>
     <None Remove="src\NewFolder\**" />
   </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties src_4json_4en_4spreuken_1json__JsonSchema="{" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

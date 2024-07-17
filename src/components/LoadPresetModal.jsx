@@ -11,9 +11,6 @@ import { useSharedState } from '../SharedStateContext.jsx';
 import { getPresets } from '../SharedObjects.js'
 import { loadCharacterFromPreset } from '../SharedStorage.js'
 
-const presets = getPresets();
-const sourcePresets = presets.Presets;
-
 export default function LoadPresetModal() {
     // Multi-Language support klaarzetten
     const { t } = useTranslation();
@@ -47,7 +44,7 @@ export default function LoadPresetModal() {
     function handleSelectPreset(selectedTemp) { setSelectedTemplate(selectedTemp); }
 
     function loadPresetToTableData() {
-        const preset = sourcePresets.find(item => item.name === selectedTemplate)
+        const preset = getPresets().Presets.find(item => item.name === selectedTemplate)
         try {
             const charData = loadCharacterFromPreset(preset);
             if (charData) {

@@ -5,20 +5,8 @@
       "version": "v0.7.1",
       "Items": [
         {
-          "description": "De gehele pagina en bronbestanden dynamisch te wijzigen van taal. Hiervoor zijn alle bronbestanden vertaald.",
-          "title": "Feature: Vertaling naar Engels toegevoegd"
-        },
-        {
-          "description": "Een bug opgelost waardoor bij het verwijderen van vaardigheden die een uitzondering boden de verkeerde melding getoond werd.",
-          "title": "BugFix: Verwijderen van uitgezonderde vaardigheden Druide/Necro/Demoloog"
-        },
-        {
-          "description": "Een bug opgelost waardoor bij het toevoegen van uitgezonderde vaardigheden deze ten onrechte afgekeurd werden.",
-          "title": "BugFix: Uitgezonderde vaardigheden Demoloog werden geweigerd"
-        },
-        {
-          "description": "Een bug opgelost waardoor bij het verwijderen van een vaardigheden deze ten onrechte goedgekeurd werd, \nondanks dat de resterende skills niet voldeden aan de minimale vereisten.",
-          "title": "BugFix: Bij categorie vereisten op aantal XP werd de vereiste XP niet juist berekend"
+          "description": "The entire page and source files dynamically change language. All source files have been translated.",
+          "title": "Feature: Added English Translation"
         }
       ]
     },
@@ -27,24 +15,24 @@
       "version": "v0.6.1",
       "Items": [
         {
-          "description": "Met de laatste update zijn wat namen en referenties veranderd. De vaardigheden, spreuken, recepten en bijbehorende teksten/pagina nummers zijn gecontroleerd en waar nodig aangepast.",
-          "title": "Regels: Content en url referenties naar de regelset boekjes aangepast."
+          "description": "With the latest update, some names and references have been changed. Skills, spells, recipes, and associated texts/page numbers have been reviewed and adjusted where necessary.",
+          "title": "Rules: Content and URL references updated to the rulebooklets."
         },
         {
-          "description": "De wijze van ophalen van data uit de bronbestanden is defensiever opgezet en tegelijk aangepast om in de toekomst meerdere talen te kunnen ondersteunen.",
-          "title": "Techniek: Verschillende aanpassingen op de achtergrond in de bronbestand referenties."
+          "description": "The method of fetching data from source files has been made more defensive and simultaneously adjusted to support multiple languages in the future.",
+          "title": "Technology: Various background adjustments in source file references."
         },
         {
-          "description": "Het exporteren van een personage naar een bestand kon leiden tot een bestand zonder versienummer. Dit kon resulteren in een onbruikbaar bestand.",
-          "title": "BugFix: Export van een personage naar bestand"
+          "description": "Exporting a character to a file could result in a file without a version number. This could result in an unusable file.",
+          "title": "BugFix: Export of character to file"
         },
         {
-          "description": "Voorheen werd niet altijd op de juiste wijze getoond aan welke vereisten de vaardigheid moest voldoen. Deze zijn verbeterd en aangevuld met categorie vereisten.",
-          "title": "Looks & Feels: In de PDF export zijn bij vaardigheden de weergave van de vereisten verbeterd."
+          "description": "Previously, the requirements for skills were not always displayed correctly. These have been improved and supplemented with category requirements.",
+          "title": "Looks & Feels: Requirements display for skills improved in PDF export."
         },
         {
-          "description": "Het gebruik van het materiaal ''Pound of Elemental Flesh' is toegevoegd aan alle crafting vaardigheden.",
-          "title": "Onderhoud: Pound of Elemental Flesh als component aan Recepten toegevoegd"
+          "description": "The use of 'Pound of Elemental Flesh' material has been added to all crafting skills.",
+          "title": "Maintenance: Pound of Elemental Flesh added as component to Recipes"
         }
       ]
     },
@@ -53,12 +41,12 @@
       "version": "v0.5.6",
       "Items": [
         {
-          "description": "De omschrijving van een aantal templates is aangepast, ter verduidelijking.",
-          "title": "Looks & Feels: Verschillende tekstuele aanpassingen in de template omschrijvingen."
+          "description": "The description of several templates has been adjusted for clarification.",
+          "title": "Looks & Feels: Various textual adjustments in template descriptions."
         },
         {
-          "description": "De omschrijving van een template werd opgedeeld in twee vlakken, waardoor te tekst niet goed weergegeven werd. Dit is aangepast naar 1 veld.",
-          "title": "Looks & Feels: Veld grote van template omschrijving."
+          "description": "The description of a template was divided into two fields, causing the text to display incorrectly. This has been changed to one field.",
+          "title": "Looks & Feels: Template description field size."
         }
       ]
     },
@@ -67,39 +55,37 @@
       "version": "v0.5.5",
       "Items": [
         {
-          "description": "Wanneer 't vinkje 'nieuw personage' aan staat, is het niet langer mogelijk om 'Leermeester Expertise' te kiezen uit de selectielijst.",
-          "title": "Looks & Feels: Leermeester Expertise niet langer beschikbaar voor nieuwe personages."
+          "description": "When the 'new character' checkbox is checked, it is no longer possible to select 'Mentor Expertise' from the selection list.",
+          "title": "Looks & Feels: Mentor Expertise no longer available for new characters."
         },
         {
-          "description": "De character eigenschappen zijn opgesplitst tussen Character Eigenschappen en Energie per dag ter verduidelijking.",
-          "title": "Looks & Feels: Opsplitsing eigenschappen en Energie per Dag."
+          "description": "Character properties have been split between Character Properties and Energy per Day for clarification.",
+          "title": "Looks & Feels: Splitting properties and Energy per Day."
         },
         {
-          "description": "Om wijzigen doorvoeren in het veld op Mobiele devices te verbeteren, is de minimale waarde voor het veld Max XP aangepast naar 1 > 0.",
-          "title": "BugFix: Minimale MaxXP waarde verlaagd naar 0."
+          "description": "To improve field changes on mobile devices, the minimum value for the Max XP field has been adjusted from 1 > 0.",
+          "title": "BugFix: Minimum MaxXP value lowered to 0."
         },
         {
-          "description": "Deelvensters zijn naast de sluit knop (X) nu ook te sluiten door buiten het venster te klikken.",
-          "title": "Looks & Feels: Deelvenster sluiten aangepast."
+          "description": "Panels can now be closed by clicking outside the window, in addition to the close button (X).",
+          "title": "Looks & Feels: Updated panel closing."
         },
         {
-          "description": "Omschrijvingen van een aantal componenten met imbue verhogende waarde zijn ter verduidelijking aangepast.",
-          "title": "Looks & Feels: Verduidelijking van bepaalde crafting componenten."
+          "description": "Descriptions of several imbue-enhancing value components have been adjusted for clarification.",
+          "title": "Looks & Feels: Clarification of certain crafting components."
         },
         {
-          "description": "Wanneer er gewisseld werd tussen nieuw/bestaand en weer terug naar nieuw kon negatieve total xp ontstaan. Het toevoegen van een skill leverde hierbij een foutmelding op.",
-          "title": "BugFix: Toevoegen van skill bij negatieve total xp."
-        },
-
-        {
-          "description": "Wanneer er een nieuw item toegevoegd wordt aan de tabel, blijft de gekozen sorting in stand.",
-          "title": "BugFix: Sorting in tabel blijft behouden."
+          "description": "Switching between new/existing and back to new could result in negative total XP. Adding a skill would result in an error message.",
+          "title": "BugFix: Adding skill with negative total XP."
         },
         {
-          "description": "Er ontbrak een import voor een font, wat kon resulteren in een foutmelding bij het exporteren van een PDF document.",
-          "title": "BugFix: Console Error missende font type."
+          "description": "When a new item is added to the table, the chosen sorting remains intact.",
+          "title": "BugFix: Sorting in table preserved."
+        },
+        {
+          "description": "There was a missing import for a font, which could result in an error when exporting a PDF document.",
+          "title": "BugFix: Console Error missing font type."
         }
-
       ]
     },
     {
@@ -107,20 +93,20 @@
       "version": "v0.5.4",
       "Items": [
         {
-          "description": "Correctie op verkregen inspiratie bij de vaardigheid Kennis van Kruiden. 3 > 2 inspiratie.",
-          "title": "BugFix: Correctie Kennis van Kruiden."
+          "description": "Correction on inspiration gained from the skill Knowledge of Herbs. 3 > 2 inspiration.",
+          "title": "BugFix: Knowledge of Herbs Correction."
         },
         {
-          "description": "Correctie op maximum aantal XP welke bewaard mag worden, bij het aanmaken van een nieuw personage. 2 > 3 XP.",
-          "title": "BugFix: Correctie op maximaal te bewaren XP bij nieuw personage."
+          "description": "Correction on maximum XP that can be stored when creating a new character. 2 > 3 XP.",
+          "title": "BugFix: Correction on maximum XP to be stored for new character."
         },
         {
-          "description": "Correctie op grote van het paneel waardoor in sommige gevallen een item niet correct getoond kon worden.",
-          "title": "Looks & Feels: Correctie panel size Spreuken, Technieken & Recepten."
+          "description": "Correction on panel size causing items to not display correctly in some cases.",
+          "title": "Looks & Feels: Correction panel size Spells, Techniques & Recipes."
         },
         {
-          "description": "Correctie op de tooltip wanneer een spreuk, techniek of recept getoond wordt. de term mana is vervangen door de overkoepelende, correcte term: energie.",
-          "title": "BugFix: Correctie op tooltip voor Spreuken, Technieken & Recepten."
+          "description": "Correction on tooltip when displaying a spell, technique, or recipe. The term mana has been replaced by the overarching, correct term: energy.",
+          "title": "BugFix: Correction on tooltip for Spells, Techniques & Recipes."
         }
       ]
     },
@@ -129,20 +115,20 @@
       "version": "v0.5.3",
       "Items": [
         {
-          "description": "Elk template heeft een omschrijving gekregen van 't arche type personage en eventuele adviezen voor 't spelen van dit type bij VA.",
-          "title": "Feature: Templates bevatten een aanvullende omschrijving."
+          "description": "Each template has received a description of the archetype character and any advice for playing this type at VA.",
+          "title": "Feature: Templates include additional description."
         },
         {
-          "description": "In aanvulling op de beperking dat er maximaal 2 xp bewaard mag worden bij een nieuw personage, is de toevoeging voor nieuwe spelers gedaan dat zij via de infobalie nog wijzingen aan kunnen brengen, tijdens of na het eerste evenement.",
-          "title": "Looks/Feels: Aanvulling op minimale XP"
+          "description": "In addition to the restriction that a maximum of 2 XP can be stored for a new character, new players can now make changes via the info desk during or after the first event.",
+          "title": "Looks/Feels: Addition to minimum XP"
         },
         {
-          "description": "Exporteer naar PDF bevat een afbeelding van character eigenschappen. Deze afbeelding werd soms vervormd door afwijkend dimensies.",
-          "title": "Bugfix: Exporteer naar Pdf kan vervormde afbeeldingen bevatten."
+          "description": "Export to PDF includes an image of character properties. This image was sometimes distorted due to different dimensions.",
+          "title": "Bugfix: Export to PDF may contain distorted images."
         },
         {
-          "description": "Om bronbestanden beter te kunnen onderhouden, zijn er meerdere validaties toegevoegd waardoor deze consistenter onderhouden kunnen worden.",
-          "title": "Onderhoud: toevoeging van validaties op bronbestanden"
+          "description": "To better maintain source files, multiple validations have been added to ensure consistent maintenance.",
+          "title": "Maintenance: Addition of validations on source files"
         }
       ]
     },
@@ -151,32 +137,32 @@
       "version": "v0.5.2",
       "Items": [
         {
-          "description": "Door op de versie te klikken wordt de release informatie zichtbaar. Release informatie wordt automatisch getoond bij een update wanneer de checkbox 'automatisch release informatie tonen' aangevinkt is.",
-          "title": "Feature: Release informatie zichtbaar voor gebruikers"
+          "description": "Clicking on the version displays the release information. Release information is automatically shown upon an update when the 'automatically show release information' checkbox is checked.",
+          "title": "Feature: Release information visible to users"
         },
         {
-          "description": "Wanneer de checkbox uitgevinkt wordt, blijft de invoer behouden. Alleen bij inschakelen wordt alles gewist wanneer er een of meerdere extra vaardigheden aanwezig zijn.",
-          "title": "Looks/Feels: Checkbox 'Nieuw personage' aan/uitvinken wist niet altijd meer het grid."
+          "description": "When the checkbox is unchecked, the input remains. Only when enabled, everything is cleared when one or more extra skills are present.",
+          "title": "Looks/Feels: Checkbox 'New character' toggle doesn't always clear the grid."
         },
         {
-          "description": "Wanneer de checkbox nieuw personage aan staat, mag er niet meer dan 2 xp overblijven. Dit wordt kenbaar gemaakt met een rode tekst en info button.",
-          "title": "Looks/Feels: Beginnend personage mag niet meer dan 2 xp overhouden"
+          "description": "When the new character checkbox is checked, no more than 2 XP may remain. This is indicated by red text and an info button.",
+          "title": "Looks/Feels: Starting character may not keep more than 2 XP"
         },
         {
-          "description": "Exporteer naar PDF bevat een afbeelding van character eigenschappen  Deze afbeelding werd niet juist geschaald bij export vanaf een mobiel.",
-          "title": "Bugfix: Exporteer naar Pdf afbeelding schaalt niet bij export vanaf een mobiel"
+          "description": "Export to PDF includes an image of character properties. This image was improperly scaled when exported from a mobile device.",
+          "title": "Bugfix: Export to PDF image does not scale correctly when exported from a mobile device"
         },
         {
-          "description": "Wanneer de preset Paladijn gekozen werd, werd deze niet ingeladen door een fout in de indeling.",
-          "title": "Bugfix: Preset Paladijn toonde niet."
+          "description": "When selecting the Paladin preset, it was not loaded due to a layout error.",
+          "title": "Bugfix: Paladin preset did not load."
         },
         {
-          "description": "Wanneer een personage ingeladen werd, werden de Basis- en Extra selectievelden niet leeggemaakt. Hierdoor was het mogelijk vaardigheden dubbel in te voeren, wat tot fouten leidde.",
-          "title": "Bugfix: Laden van een personage leidde potentieel tot dubbele vaardigheden"
+          "description": "When loading a character, the Basic and Extra selection fields were not cleared. This allowed skills to be entered twice, leading to errors.",
+          "title": "Bugfix: Loading a character potentially led to duplicate skills"
         },
         {
-          "description": "Ter verbetering van onderhoudbaarheid en verbeteren van component kwaliteit is bepaalde functionaliteit van meldingen gedecentraliseerd.",
-          "title": "Onderhoud: Algemene verbeteringen en onderhoud."
+          "description": "To improve maintainability and enhance component quality, certain notification functionalities have been decentralized.",
+          "title": "Maintenance: General improvements and maintenance."
         }
       ]
     },
@@ -185,12 +171,12 @@
       "version": "v0.5.1",
       "Items": [
         {
-          "description": "Bij het opslaan van een personage (save/export) werden alle data van de vaardigheden mee geexporteerd. Hierdoor werden bijgewerkte vaardigheden niet zichtbaar en bleven oude issues bestaan. Methode van opslaan is aangepast, bestaande opslag/exports worden geconverteerd bij inladen.",
-          "title": "Feature: Aanpassing opslaan/export van een character."
+          "description": "When saving/exporting a character, all data from skills was exported, causing updated skills to not be visible and old issues to persist. Method of saving/exporting has been adjusted; existing saves/exports are converted upon loading.",
+          "title": "Feature: Adjustment to save/export of a character."
         },
         {
-          "description": "Wanneer een characternaam is ingevoerd wordt deze opgeslagen. Zowel in de exports als de korttijdelijk opslag van de browser wordt deze onthouden.",
-          "title": "Feature: Ingevoerde character naam wordt onthouden."
+          "description": "When a character name is entered, it is saved. Both in exports and temporary browser storage, it is remembered.",
+          "title": "Feature: Entered character name is remembered."
         }
       ]
     },
@@ -199,15 +185,14 @@
       "version": "v0.5.0",
       "Items": [
         {
-          "description": "Wanneer een character is klaargezet (aangemaakt of ingeladen), kan deze als pdf-export gedownload worden.",
-          "title": "Feature: Exporteren van character naar een PDF bestand"
+          "description": "When a character is prepared (created or loaded), it can be downloaded as a PDF export.",
+          "title": "Feature: Exporting character to a PDF file"
         },
         {
-          "description": "Uit een regressietest bleek er een specifieke situatie te bestaan waarbij het mogelijk was om vaardigheden over de max xp limiet heen toe te voegen",
-          "title": "Bugfix: Max xp overschreden in specifieke situatie."
+          "description": "A regression test revealed a specific situation where it was possible to exceed the max XP limit when adding skills.",
+          "title": "Bugfix: Exceeded max XP in specific situation."
         }
       ]
     }
-
   ]
 }

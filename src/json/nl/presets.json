@@ -1,7 +1,7 @@
 {
   "Presets": [
     {
-      "version": "2023-10a",
+      "version": "2023-10b",
       "name": "Vechter (Licht)",
       "max_xp": 15,
       "is_checked": true,
@@ -70,7 +70,7 @@
       ]
     },
     {
-      "version": "2023-10a",
+      "version": "2023-10b",
       "name": "Vechter (Zwaar)",
       "max_xp": 15,
       "is_checked": true,
@@ -139,7 +139,7 @@
       ]
     },
     {
-      "version": "2023-10a",
+      "version": "2023-10b",
       "name": "Barbaar",
       "max_xp": 15,
       "is_checked": true,
@@ -203,7 +203,7 @@
       ]
     },
     {
-      "version": "2023-10a",
+      "version": "2023-10b",
       "name": "Paladijn",
       "max_xp": 15,
       "is_checked": true,
@@ -267,7 +267,7 @@
       ]
     },
     {
-      "version": "2023-10a",
+      "version": "2023-10b",
       "name": "Oorlogsmagiër",
       "max_xp": 15,
       "is_checked": true,
@@ -331,7 +331,7 @@
       ]
     },
     {
-      "version": "2023-10a",
+      "version": "2023-10b",
       "name": "Magiër Ritualist",
       "max_xp": 15,
       "is_checked": true,
@@ -386,7 +386,7 @@
 
     },
     {
-      "version": "2023-10a",
+      "version": "2023-10b",
       "name": "Oorlogspriester",
       "max_xp": 15,
       "is_checked": true,
@@ -451,7 +451,7 @@
 
     },
     {
-      "version": "2023-10a",
+      "version": "2023-10b",
       "name": "Priester Ritualist",
       "max_xp": 15,
       "is_checked": true,
@@ -506,7 +506,7 @@
 
     },
     {
-      "version": "2023-10a",
+      "version": "2023-10b",
       "name": "Genezer (Elementair)",
       "max_xp": 15,
       "is_checked": true,
@@ -566,7 +566,7 @@
 
     },
     {
-      "version": "2023-10a",
+      "version": "2023-10b",
       "name": "Arts",
       "max_xp": 15,
       "is_checked": true,
@@ -636,7 +636,7 @@
 
     },
     {
-      "version": "2023-10a",
+      "version": "2023-10b",
       "name": "Alchemist",
       "max_xp": 15,
       "is_checked": true,
@@ -706,7 +706,7 @@
 
     },
     {
-      "version": "2023-10a",
+      "version": "2023-10b",
       "name": "Handelaar (Ambacht)",
       "max_xp": 15,
       "is_checked": true,
@@ -775,7 +775,7 @@
       ]
     },
     {
-      "version": "2023-10a",
+      "version": "2023-10b",
       "name": "Handelaar (Juwelier)",
       "max_xp": 15,
       "is_checked": true,
@@ -844,7 +844,7 @@
       ]
     },
     {
-      "version": "2023-10a",
+      "version": "2023-10b",
       "name": "Shamaan/Druïde",
       "max_xp": 15,
       "is_checked": true,
@@ -903,7 +903,7 @@
       ]
     },
     {
-      "version": "2023-10a",
+      "version": "2023-10b",
       "name": "Doodsaanbidder",
       "max_xp": 15,
       "is_checked": true,

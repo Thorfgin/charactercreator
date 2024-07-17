@@ -8,8 +8,6 @@ import Collapsible from './Collapsible.jsx';
 import { getSourceReleaseNotes } from '../SharedObjects.js';
 import { useSharedState } from '../SharedStateContext.jsx';
 
-const sourceReleaseNotes = getSourceReleaseNotes();
-
 // Toont een venster met daar in de release notes.
 // Release notes zijn open/dicht te klappen
 export default function ReleaseNotesModal() {
@@ -24,7 +22,7 @@ export default function ReleaseNotesModal() {
             <div className="releasenotes-modal" onClick={e => e.stopPropagation()}>
                 <h3>{t("releasenotes_modal.labels.version_info")}</h3>
                 <div className="release-notes-block">
-                    {sourceReleaseNotes.ReleaseNotes.map(({ date, version, Items }) => (
+                    {getSourceReleaseNotes().ReleaseNotes.map(({ date, version, Items }) => (
                         <div key={uuidv4()}>
                             <div className="header">
                                 <b>{`${date} ${t("releasenotes_modal.labels.release_version")} ${version}`}</b>

@@ -20,8 +20,6 @@ import {
     sourceBasisVaardigheden,
     sourceExtraVaardigheden,
     resetTotalXP,
-    regeneratedBasisVaardigheden,
-    regeneratedExtraVaardigheden,
     defaultProperties,
 } from '../SharedObjects.js';
 
@@ -45,6 +43,7 @@ const columns = [
 export default function SkillTable() {
     // SharedStateContext
     const {
+        language,
         tableData, setTableData,
         isChecked, setIsChecked,
         MAX_XP, setMAX_XP,
@@ -246,13 +245,12 @@ export default function SkillTable() {
     // Wanneer er iets aan de tableData verandert, wordt de nieuwe data opgeslagen.
     // Op basis van de nieuwe tableData worden de Selects, Grid en Spreuken/Recepten bijewerkt.
     const onUpdateTableData = useCallback(() => {
+        
         // LocalStorage bijwerken
         saveCharacterToStorage('CCdata', charName, isChecked, MAX_XP, tableData);
 
         // SELECT skill options bijwerken | reeds geselecteerde items worden uitgesloten.
         // INPUT resterende XP bijwerken
-        regeneratedBasisVaardigheden(tableData);
-        regeneratedExtraVaardigheden(tableData);
         resetTotalXP(tableData);
 
         // karakter eigenschappen container
@@ -285,12 +283,10 @@ export default function SkillTable() {
             return property.value !== ""
         });
         setGridRecepten(updatedGridReceptenContent);
-    }, [charName, isChecked, MAX_XP, tableData, setGridEigenschappen, setGridEnergiePerDag, setGridSpreuken, setGridRecepten]);
+    }, [charName, isChecked, MAX_XP, tableData, setTableData, setGridEigenschappen, setGridEnergiePerDag, setGridSpreuken, setGridRecepten]);
 
     // Wanneer tableData aangepast wordt, aanpassingen doorvoeren.
-    useEffect(() => {
-        onUpdateTableData();
-    }, [tableData, onUpdateTableData]);
+    useEffect(() => { onUpdateTableData(); }, [tableData, setTableData]);
 
 
     return (

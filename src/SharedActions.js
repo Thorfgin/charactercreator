@@ -75,7 +75,7 @@ export function getSpellBySkill(skillId, spellId) {
 // Ophalen van alle spreuken op basis van de skill
 export function getSpellsBySkill(skillId) {
     if (!skillId) { return; }
-    const sourceSpell = sourceSpreuken.find((item) => item.id.includes(skillId));
+    const sourceSpell = sourceSpreuken.find((item) => item.id.includes(skillId)); // let op. dit is een array.
     return sourceSpell?.Spells;
 }
 
@@ -126,7 +126,7 @@ export function regenerateOptions(source, tableData) {
         id: record.id,
         value: record.skill,
         label: `${record.skill} (${record.xp} xp)`
-    })).filter((currentSkill) => !tableData.some((record) => record.id === currentSkill.id));
+    })).filter((currentSkill) => !tableData?.some((record) => record.id === currentSkill.id));
 }
 
 /// --- VEREISTEN --- ///
@@ -395,19 +395,25 @@ function verifyRemovedSkillIsNotSkillPrerequisite(reqSkillIds, currentSkill, rem
 
 // Check of na verwijderen de overige skills nog voldoen voor de item.Any-List
 function verifyRemovedSkillIsNotOnlyAnyListPrerequisite(reqAnyIds, removedSkillId, tableData) {
-    let hasOtherSkillThatIsPrerequisite = false;
-
-    if (!reqAnyIds.includes(removedSkillId)) { hasOtherSkillThatIsPrerequisite = true; }
-    else {
-        for (const reqAnyId of reqAnyIds) {
-            hasOtherSkillThatIsPrerequisite = tableData.some((record) =>
-                record.id === reqAnyId &&
-                record.id !== removedSkillId);
-            if (hasOtherSkillThatIsPrerequisite === true) { break; }
+    let isPrerequisite = true;
+    if (reqAnyIds.includes(removedSkillId)) { // vanaf hier - MAGIE
+        const filteredTableData = tableData.filter(skill => skill.id !== removedSkillId) // haal verwijderde skill weg.
+        for (const req of reqAnyIds) {
+            // let op mogelijk dubbele AnyReqs (druid e.d.) - dus beide los van elkaar checken.
+            const filterTableData_NoReq = filteredTableData.filter(oldSkill => oldSkill.id !== req) 
+            for (const skill of filteredTableData) {
+                // Check per skill of deze nog voldoet aan de voorwaarden
+                const filterTableData_NoSkill = filterTableData_NoReq.filter(oldSkill => oldSkill.id !== skill.id)
+                const meetsPrerequisite = meetsAllPrerequisites(skill, filterTableData_NoSkill);
+                if (meetsPrerequisite) { continue; };
+                isPrerequisite = false;
+                break;
+            }
+            if (isPrerequisite) { break; }
         }
     }
-    // Return inverse, as it nameSkillToRemove is NOT a prerequisite
-    return !hasOtherSkillThatIsPrerequisite;
+    else { isPrerequisite = false; }
+    return isPrerequisite;
 }
 
 // Check of een Category prerequisite behouden wordt wanneer de skill verwijdert/verlaagd wordt
@@ -425,6 +431,7 @@ function verifyRemovedSkillIsNotACategoryPrerequisite(tableData, categories, ite
         selectedSkills.forEach(item => selectedSkillsXP += item.xp); // calculate XP
         if (totalReqXP > selectedSkillsXP) { isPrerequisite = true; }
     }
+
     return isPrerequisite;
 }
 
@@ -432,24 +439,25 @@ function verifyRemovedSkillIsNotACategoryPrerequisite(tableData, categories, ite
 // Dit is specifiek voor Druid/Necro die bepaalde vereisten mogen negeren
 function verifyTableExceptionSkillMeetsPrerequisite(tableData, reqExceptions, removedSkillId) {
     let isExceptionPrerequisite = false;
-    const filteredTableData = tableData.filter(oldSkill => oldSkill.id !== removedSkillId);
 
-    // Filter de skill met uitzonderingen weg om te zien of elke skill zichzelf in stand houd.
-    // Ogenschijnlijk de enige manier om te dubbelchecken of elke skill zichzelf 'draagt'.
-    // Dit is een hele lelijke dubbele loop omdat er meerdere uitzonderingen kunnen zijn (druid/necro)
-    for (const req of reqExceptions) {
-        const filterTableData_NoReq = filteredTableData.filter(oldSkill => oldSkill.id !== req)
-        for (const skill of filteredTableData) {
-            const filterTableData_NoSkill = filterTableData_NoReq.filter(oldSkill => oldSkill.id !== skill.id)
-            const meetsPrequisites = meetsAllPrerequisites(skill, filterTableData_NoSkill);
-            if (!meetsPrequisites) {
-                isExceptionPrerequisite = true;
-                break;
-            };
+    if (reqExceptions.includes(removedSkillId)) {
+        const filteredTableData = tableData.filter(oldSkill => oldSkill.id !== removedSkillId);
+        // Filter de skill met uitzonderingen weg om te zien of elke skill zichzelf in stand houd.
+        // Ogenschijnlijk de enige manier om te dubbelchecken of elke skill zichzelf 'draagt'.
+        // Dit is een hele lelijke dubbele loop omdat er meerdere uitzonderingen kunnen zijn (druid/necro)
+        for (const req of reqExceptions) {
+            const filterTableData_NoReq = filteredTableData.filter(oldSkill => oldSkill.id !== req)
+            for (const skill of filteredTableData) {
+                const filterTableData_NoSkill = filterTableData_NoReq.filter(oldSkill => oldSkill.id !== skill.id)
+                const meetsPrequisites = meetsAllPrerequisites(skill, filterTableData_NoSkill);
+                if (!meetsPrequisites) {
+                    isExceptionPrerequisite = true;
+                    break;
+                };
+            }
+            if (isExceptionPrerequisite) { break; }
         }
-        if (isExceptionPrerequisite) { break; }
     }
-
     return isExceptionPrerequisite;
 }
 
