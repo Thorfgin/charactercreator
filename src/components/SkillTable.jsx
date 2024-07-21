@@ -21,6 +21,7 @@ import {
     sourceExtraVaardigheden,
     resetTotalXP,
     defaultProperties,
+    regenerateVaardigheden,
 } from '../SharedObjects.js';
 
 import { saveCharacterToStorage } from '../SharedStorage.js';
@@ -245,7 +246,9 @@ export default function SkillTable() {
     // Wanneer er iets aan de tableData verandert, wordt de nieuwe data opgeslagen.
     // Op basis van de nieuwe tableData worden de Selects, Grid en Spreuken/Recepten bijewerkt.
     const onUpdateTableData = useCallback(() => {
-        
+        // Skill Selects bijwerken
+        regenerateVaardigheden(tableData);
+
         // LocalStorage bijwerken
         saveCharacterToStorage('CCdata', charName, isChecked, MAX_XP, tableData);
 

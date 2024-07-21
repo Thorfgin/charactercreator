@@ -259,6 +259,8 @@ export function isSkillAPrerequisiteToAnotherSkill(removedSkillId, isRemoved, ta
     let isPrerequisite = false;
 
     if (tableData.length > 1) {
+        if (!tableData.some(skill => skill.id === removedSkillId)) { return; }
+
         // Check leermeester expertise afhankelijkheden
         const containsTeacherSkill = tableData.some((record) => record.id === teacherSkill_Id);
         if (containsTeacherSkill) {
@@ -307,7 +309,7 @@ export function isSkillAPrerequisiteToAnotherSkill(removedSkillId, isRemoved, ta
 
                     // any_list
                     if (reqAny.length > 0 && isPrerequisite === false) {
-                        isPrerequisite = verifyRemovedSkillIsNotOnlyAnyListPrerequisite(reqAny, removedSkillId, tableData);
+                        isPrerequisite = verifyRemovedSkillIsNotOnlyAnyListPrerequisite(reqAny, skillTableData, removedSkillId, tableData);
                         if (isPrerequisite === true) {
                             setModalHeader(T("generic.oops"))
                             const prereq = T("shared_actions.modals.item_is_prerequisite")
@@ -394,25 +396,43 @@ function verifyRemovedSkillIsNotSkillPrerequisite(reqSkillIds, currentSkill, rem
 }
 
 // Check of na verwijderen de overige skills nog voldoen voor de item.Any-List
-function verifyRemovedSkillIsNotOnlyAnyListPrerequisite(reqAnyIds, removedSkillId, tableData) {
+function verifyRemovedSkillIsNotOnlyAnyListPrerequisite(reqAnyIds, skillTableData, removedSkillId, tableData) {
     let isPrerequisite = true;
-    if (reqAnyIds.includes(removedSkillId)) { // vanaf hier - MAGIE
-        const filteredTableData = tableData.filter(skill => skill.id !== removedSkillId) // haal verwijderde skill weg.
-        for (const req of reqAnyIds) {
-            // let op mogelijk dubbele AnyReqs (druid e.d.) - dus beide los van elkaar checken.
-            const filterTableData_NoReq = filteredTableData.filter(oldSkill => oldSkill.id !== req) 
-            for (const skill of filteredTableData) {
-                // Check per skill of deze nog voldoet aan de voorwaarden
-                const filterTableData_NoSkill = filterTableData_NoReq.filter(oldSkill => oldSkill.id !== skill.id)
-                const meetsPrerequisite = meetsAllPrerequisites(skill, filterTableData_NoSkill);
-                if (meetsPrerequisite) { continue; };
-                isPrerequisite = false;
-                break;
-            }
-            if (isPrerequisite) { break; }
+    // Als alle uitzondering aanwezig zijn. Op dit moment is dat maximaal 2 skills
+    // controleren of de andere uitzondering skill, zichzelf in stand houd.
+    if (reqAnyIds.every(id => skillTableData.Requirements.any_list.find(anyId => anyId === id)) &&
+        reqAnyIds.every(id => tableData.find(skill => skill.id === id))) {
+        const reqAnySkillId = reqAnyIds.find(skillId => skillId !== removedSkillId);
+        const reqAnySkill = getSkillById(reqAnySkillId);
+        const filteredTableData = tableData.filter(skill =>
+            skill.id !== skillTableData.id &&
+            skill.id !== removedSkillId &&
+            skill.id !== reqAnySkillId
+        )
+        const meetsRequirements = meetsAllPrerequisites(reqAnySkill, filteredTableData);
+        if (meetsRequirements) { isPrerequisite = false; }
+    } else {
+        // Als er geen of maar 1 uitzondering aanwezig is
+        // Checken of er meerdere counts zijn en hierin compenseren.
+        const removedSkill = tableData.find(skill => skill.id === removedSkillId);
+        if (removedSkill.count > 1) {
+            removedSkill.count -= 1;
+            removedSkill.xp -= 1;
+            isPrerequisite = !meetsAllPrerequisites(removedSkill, tableData);
         }
-    }
-    else { isPrerequisite = false; }
+        else {
+            // Anders kijken of weghalen wel mag.
+            const filteredTableData = tableData.filter(skill => skill.id !== removedSkillId) // haal verwijderde skill weg.
+            for (const skill of filteredTableData) {
+                const isValid = meetsAllPrerequisites(skill, filteredTableData);
+                if (!isValid) {
+                    isPrerequisite = true;
+                    break;
+                };
+                isPrerequisite = false;
+            };
+        };
+    };
     return isPrerequisite;
 }
 
