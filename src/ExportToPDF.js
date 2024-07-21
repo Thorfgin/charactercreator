@@ -1,6 +1,7 @@
 import html2canvas from "html2canvas";
 import { jsPDF } from "jspdf";
 import "jspdf-autotable";
+import { T } from "./i18n.js";
 
 // Shared
 import {
@@ -15,11 +16,11 @@ let version = "";
 
 // Definieer de table columns en headers
 const columns = [
-    { header: 'ID', dataKey: 'id' },
-    { header: 'Vaardigheid', dataKey: 'skill' },
-    { header: 'Aantal keer', dataKey: 'count' },
-    { header: 'XP Kosten', dataKey: 'xp' },
-    { header: 'Loresheet', dataKey: 'loresheet' },
+    { header: 'skill_table.header.id', dataKey: 'id' },
+    { header: 'skill_table.header.skill', dataKey: 'skill' },
+    { header: 'skill_table.header.amount', dataKey: 'count' },
+    { header: 'skill_table.header.xp_cost', dataKey: 'xp' },
+    { header: 'skill_table.header.loresheet', dataKey: 'loresheet' },
 ];
 
 // Definieer de Option variaties
@@ -62,7 +63,7 @@ async function addNewPage(pdf) {
     pdf.addPage();
     await addImageToPDF(pdf, './images/logo_100.png', { x: 70, y: 7.5, width: 50, height: 50 });
     await addTextBlockToPdf(pdf, ["Character Creator"], 82, 15, false, headerOptions);
-    await addTextBlockToPdf(pdf, [`Vortex Adventures - Character Creator - versie ${version}`], 105, 285, true);
+    await addTextBlockToPdf(pdf, [`Vortex Adventures - Character Creator - ${T("generic.version")} ${version}`], 105, 285, true);
 }
 
 
@@ -70,17 +71,16 @@ async function addNewPage(pdf) {
 async function addSkillDescriptionsToPdf(pdf, tableData, x = 20, y = 30) {
     const blockElements = [];
     for (const item of tableData) {
-        const punten = item.xp > 1 ? "punten" : "punt";
+        const punten = item.xp > 1 ? T("generic.points") : T("generic.point");
 
         const skillReqs = item.Requirements.skill.length > 0 ?
-            "Vereist: " + getSkillsByIds(item.Requirements.skill).join(", ") + "\\n" : "";
+            `${T("skill_tooltip.labels.requirements")} ${getSkillsByIds(item.Requirements.skill).join(", ")}\\n` : "";
         const anyReqs = item.Requirements.any_list.length > 0 ?
-            "Een van de volgende: " + getSkillsByIds(item.Requirements.any_list).join(", ") + "\\n" : "";
+            `${T("skill_tooltip.any_of_these_req")} ${getSkillsByIds(item.Requirements.any_list).join(", ")}\\n` : "";
         const categoryReqs = item.Requirements.Category ?
-            "Vereist tenminste " + item.Requirements.Category.value + " XP in: " +
-            item.Requirements.Category.name.join(", ") + "\\n" : ""; 
+            `${item.Requirements.Category.value} ${T("skill_tooltip.category_req")} ${item.Requirements.Category.name.join(", ")}\\n` : "";
         const exceptionReqs = item.Requirements.exception?.length > 0 ?
-            "Uitgezonderd: " + getSkillsByIds(item.Requirements.exception).join(", ") + "\\n": "";
+            `${T("generic.exception")} ${getSkillsByIds(item.Requirements.exception).join(", ")}\\n` : "";
         const vereisten = skillReqs + anyReqs + categoryReqs + exceptionReqs;
 
         const newBlock = {
@@ -134,7 +134,7 @@ async function addSpellDescriptionsToPdf(pdf, gridSpreuken, x = 20, y = 30) {
             },
             skill: {
                 options: {
-                    text: `Vaardigheid: ${skillData.skill}`,
+                    text: `${T("generic.skill")} ${skillData.skill}`,
                     fontSize: 11
                 }
             },
@@ -187,13 +187,13 @@ async function addRecipeDescriptionsToPdf(pdf, gridRecepten, x = 20, y = 30) {
             },
             skill: {
                 options: {
-                    text: `Vaardigheid: ${skillData.skill}`,
+                    text: `${T("generic.skill")} ${skillData.skill}`,
                     fontSize: 11
                 }
             },
             components: {
                 options: {
-                    text: `Componenten: ${recipeData.components}`,
+                    text: `${T("recipe_tooltip.labels.supplies")} ${recipeData.components}`,
                     isItalic: true,
                     fontSize: 11
                 }
@@ -366,6 +366,9 @@ async function addSkillTableToPdf(pdf, tableData, posY) {
         return row;
     });
 
+    // Headers omzetten naar de juiste taal.
+    columns.forEach(record => record.header = T(record.header));
+
     // Definieer de table settings.
     const tableOptions = {
         startY: posY, // Adjust the Y position where the table starts.
@@ -481,7 +484,7 @@ async function addTextBlockToPdf(pdf, textArray, x = 0, y = 0, isCentered = fals
 // Exporteren van de gegevens in de tableData en Grids naar PDF
 export default async function useExportToPDF(charName, ruleset_version, tableData, MAX_XP, totalXP, gridSpreuken, gridRecepten) {
     version = ruleset_version;
-    let name = (charName && charName !== "") ? charName : "Naam onbekend";
+    let name = (charName && charName !== "") ? charName : T("generic.no_name");
 
     const uniqueItemsSet = new Set();
     // Samenvoegen en Filteren van LoreSheets
@@ -514,25 +517,25 @@ export default async function useExportToPDF(charName, ruleset_version, tableDat
     await addImageToPDF(pdf, './images/pdf_cover.png');
     await addImageToPDF(pdf, './images/logo_100.png', { x: 52, y: 200, width: 75, height: 75 });
     await addTextBlockToPdf(pdf, ["Character Creator"], 72, 212, false, coverOptions);
-    await addTextBlockToPdf(pdf, [`versie ${version}`], 105, 222, true);
+    await addTextBlockToPdf(pdf, [`${T("generic.version")} ${version}`], 105, 222, true);
 
     // Page 2
     await addNewPage(pdf);
-    await addTextBlockToPdf(pdf, ["Character"], 35, 50, false, titleOptions);
+    await addTextBlockToPdf(pdf, [T("generic.character")], 35, 50, false, titleOptions);
     await addTextBlockToPdf(pdf, [`${name}`], 35, 55, false);
 
     await addTextBlockToPdf(pdf, ["XP"], 35, 70, false, titleOptions);
     await addTextBlockToPdf(pdf, [
-        `Totaal XP: ${MAX_XP}`,
-        `Uitgegeven XP: ${totalXP}`,
-        `Besteedbare XP: ${MAX_XP - totalXP}`,
-        `XP per Event: ${next_event_xp}`], 35, 75);
+        `${T("generic.total_xp")} ${MAX_XP}`,
+        `${T("generic.spent_xp")} ${totalXP}`,
+        `${T("generic.available_xp")} ${MAX_XP - totalXP}`,
+        `${T("generic.xp_gain")} ${next_event_xp}`], 35, 75);
 
-    await addTextBlockToPdf(pdf, ["Vaardigheden"], 35, 105, false, titleOptions);
+    await addTextBlockToPdf(pdf, [T("generic.skills")], 35, 105, false, titleOptions);
     await addTextBlockToPdf(pdf, [
-        `Aantal vaardigheden: ${tableData.length}`,
-        `Aantal spreuken/technieken: ${gridSpreuken.length}`,
-        `Aantal recepten: ${gridRecepten.length}`], 35, 110, false);
+        `${T("generic.skills_amount")} ${tableData.length}`,
+        `${T("generic.spells_amount")} ${gridSpreuken.length}`,
+        `${T("generic.recipes_amount")} ${gridRecepten.length}`], 35, 110, false);
 
     await addImgElementToPDF(pdf, "side-container-b", 100, 45);
 
@@ -544,26 +547,26 @@ export default async function useExportToPDF(charName, ruleset_version, tableDat
 
     /// --- VAARDIGHEDEN --- ///
     await addNewPage(pdf);
-    await addTextBlockToPdf(pdf, ["Vaardigheden"], 20, 30, false, bigTitleOptions);
+    await addTextBlockToPdf(pdf, [T("generic.skills")], 20, 30, false, bigTitleOptions);
     await addSkillDescriptionsToPdf(pdf, tableData, 20, 40);
 
     /// --- OPTIONEEL: SPREUKEN --- ///
     if (gridSpreuken.length > 0) {
         await addNewPage(pdf);
-        await addTextBlockToPdf(pdf, ["Spreuken & Technieken"], 20, 30, false, bigTitleOptions);
+        await addTextBlockToPdf(pdf, [T("generic.spells_and_techniques")], 20, 30, false, bigTitleOptions);
         await addSpellDescriptionsToPdf(pdf, gridSpreuken, 20, 40);
     }
 
     /// --- OPTIONEEL: RECEPTEN --- ///
     if (gridRecepten.length > 0) {
         await addNewPage(pdf);
-        await addTextBlockToPdf(pdf, ["Recepten"], 20, 30, false, bigTitleOptions);
+        await addTextBlockToPdf(pdf, [T("generic.recipes")], 20, 30, false, bigTitleOptions);
         await addRecipeDescriptionsToPdf(pdf, gridRecepten, 20, 40);
     }
 
     /// --- LoreSheets --- ///
     await addNewPage(pdf);
-    await addTextBlockToPdf(pdf, ["Bijlagen"], 20, 30, false, bigTitleOptions);
+    await addTextBlockToPdf(pdf, [T("generic.appendix")], 20, 30, false, bigTitleOptions);
     await addLoreSheetDescriptionsToPdf(pdf, uniqueLoreSheetValues, 20, 40);
 
     pdf.save(`${name}.pdf`);
