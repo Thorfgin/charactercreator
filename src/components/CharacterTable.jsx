@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
 // shared
 import { getAllLocalStorageKeys } from '../SharedStorage.js';
@@ -11,11 +12,12 @@ CharacterTable.propTypes = {
 };
 
 export default function CharacterTable({ selectedCharacter, handleCharacterChange }) {
-    const tableRef = useRef(null);
-    let keys = [];
+    // Multi-Language support klaarzetten
+    const { t } = useTranslation();
 
-    const allCharacterKeys = getAllLocalStorageKeys();
-    allCharacterKeys.forEach(key => key !== "CCdata" ? keys.push(key) : null);
+    const tableRef = useRef(null);
+
+    const keys = getAllLocalStorageKeys();
     keys.sort((a, b) => a.localeCompare(b));
 
     function handleSelectCharacter(key) {
@@ -46,9 +48,9 @@ export default function CharacterTable({ selectedCharacter, handleCharacterChang
                         <td>{key}</td>
                     </tr>
                 ))}
-                {!keys && (
+                {(!keys || keys.length === 0) && (
                     <tr>
-                        <td>Geen personages gevonden</td>
+                        <td>{t("character_table.labels.no_characters")}</td>
                     </tr>
                 )
                 }

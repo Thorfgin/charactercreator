@@ -191,6 +191,10 @@
     padding: 2px;
 }
 
+.xp_label{
+    min-width: 47px;
+    width: auto;
+}
 .xp_over_input {
     color: red;
 }
@@ -274,6 +278,12 @@
 /* main skill table - tabel rij eigenschappen */
 .col-vaardigheid {
     min-width: 250px;
+}
+
+.col-xp,
+.col-loresheet,
+.col-aantalkeer {
+    min-width: 65px;
 }
 
 .col-info {
@@ -453,11 +463,13 @@
 }
 
 .btn-primary {
+    min-width: 90px;
     width: auto;
     height: auto;
 }
 
 .btn-secondary {
+    min-width: 70px;
     width: 100%;
     height: 24px;
 }

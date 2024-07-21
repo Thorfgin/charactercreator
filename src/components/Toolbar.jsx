@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Select from 'react-select';
+import { useTranslation } from 'react-i18next';
 
 // Components
 import {
@@ -20,6 +21,7 @@ import {
     exportCharacterToFile
 } from '../SharedStorage.js';
 import {
+    getSkillById,
     meetsAllPrerequisites,
     verifyTableContainsExtraSkill
 } from '../SharedActions.js';
@@ -28,17 +30,22 @@ import {
     sourceBasisVaardigheden,
     sourceExtraVaardigheden,
     optionsBasisVaardigheden,
-    optionsExtraVaardigheden
+    optionsExtraVaardigheden,
+    regenerateVaardigheden,
+    regenerateSpreukenAndRecepten
 } from '../SharedObjects.js'
 
 // Zet een Toolbar klaar met daarin de mogelijkheid om:
 // Settings te wijzigen, Vaarigheden te selecteren, Personages te bewaren/laden of Personages te exporteren/importeren
 export default function Toolbar() {
+    // Multi-Language support klaarzetten
+    const { i18n, t } = useTranslation();
 
     // Ophalen uit SharedStateContext
     const {
         // packageinfo
         ruleset_version,
+        language, setLanguage,
 
         // table
         tableData, setTableData,
@@ -49,6 +56,7 @@ export default function Toolbar() {
         selectedExtraSkill, setSelectedExtraSkill,
 
         // modals
+        setModalHeader,
         setModalMsg, setShowModal,
         setShowUploadModal,
         setShowLoadCharacterModal,
@@ -185,7 +193,7 @@ export default function Toolbar() {
             return;
         }
 
-        const selectedExtraRecord = sourceExtraVaardigheden.find((record) => record.id === selectedExtraSkill.id );
+        const selectedExtraRecord = sourceExtraVaardigheden.find((record) => record.id === selectedExtraSkill.id);
         if (selectedExtraRecord && handleAddToTable(selectedExtraRecord)) { setSelectedExtraSkill(''); }
     }
 
@@ -202,18 +210,23 @@ export default function Toolbar() {
         const hasSufficientFreeXP = (totalXP + selectedRecord.xp) <= Math.floor(MAX_XP) || selectedRecord.xp === 0;
         if (!hasSufficientFreeXP) {
             if (totalXP >= Math.floor(MAX_XP)) {
-                setModalMsg(
-                    "Maximum XP (" + MAX_XP + ") bereikt. \n" +
-                    "Toevoegen is niet toegestaan.\n");
+                setModalHeader(t("generic.oops"));
+                const max_xp_reached = t("toolbar.modals.max_xp_reached")
+                const cant_add = t("toolbar.modals.cant_add")
+                setModalMsg(`${max_xp_reached} (${MAX_XP}) \n${cant_add}`);
             }
             else if (totalXP < Math.floor(MAX_XP)) {
-                setModalMsg(
-                    "Maximum xp (" + MAX_XP + ") zal worden overschreden. \n" +
-                    "Deze skill kost: " + selectedRecord.xp + ". \n" +
-                    "Toevoegen is niet toegestaan.\n");
+                setModalHeader(t("generic.oops"));
+                const max_xp_exceeded = t("toolbar.modals.max_xp_exceeded")
+                const skill_cost = t("toolbar.modals.skill_cost")
+                const cant_add = t("toolbar.modals.cant_add")
+                setModalMsg(`${max_xp_exceeded} (${MAX_XP})  \n 
+                                ${skill_cost} ${selectedRecord.xp} XP\n
+                                ${cant_add}`);
             } else {
                 console.error("There should be a reason for refusing to add the skill, but no reason was set.")
-                setModalMsg("Er ging iets fout...");
+                setModalHeader(t("generic.oops"));
+                setModalMsg(t("generic.error"));
             }
             setShowModal(true);
             return false;
@@ -259,7 +272,9 @@ export default function Toolbar() {
     function saveCharacterToLocalStorage() {
         saveCharacterToStorage(charName, charName, isChecked, MAX_XP, tableData)
         if (showConfirmUpdateModal === true) { closeConfirmUpdateModal(); }
-        setModalMsg(`Personage '${charName}' opgeslagen.`);
+        setModalHeader(t("toolbar.modals.confirmation_header"))
+        const text = t("toolbar.modals.save_character");
+        setModalMsg(`${text} \n\n${charName}`);
         setShowModal(true);
     }
 
@@ -268,9 +283,13 @@ export default function Toolbar() {
         const wasRemoved = removeCharacterFromStorage(charName);
         if (wasRemoved === true) {
             clearCharacterBuild();
-            setModalMsg(`Personage '${charName}' verwijderd.`);
+            setModalHeader(t("toolbar.modals.confirmation_header"))
+            const text = t("toolbar.modals.remove_character");
+            setModalMsg(`${text} ${charName}`);
         } else {
-            setModalMsg(`Personage '${charName}' niet gevonden.`);
+            setModalHeader(t("generic.oops"))
+            const text = t("toolbar.modals.character_not_found");
+            setModalMsg(`${text} ${charName}`);
         }
         closeConfirmRemoveModal();
         setShowModal(true);
@@ -279,8 +298,9 @@ export default function Toolbar() {
     // Eerst via ConfirmModal bevestigen, daarna verwijdern
     function showConfirmRemoval() {
         if (charName && charName.trim() !== '') {
-            setHeaderConfirmModal("Bevestig verwijderen");
-            setMsgConfirmModal("Weet u zeker dat u dit personage:\n'" + charName + "'\nwilt verwijderen?");
+            setHeaderConfirmModal(t("toolbar.modals.confirm_remove_header"));
+            const text = t("toolbar.modals.confirm_remove_text");
+            setMsgConfirmModal(`${text} \n\n ${charName}`);
             setShowConfirmRemoveModal(true);
         }
     }
@@ -293,8 +313,9 @@ export default function Toolbar() {
         if (charName && charName.trim() !== '') {
             const keys = getAllLocalStorageKeys(charName);
             if (keys.length > 0) {
-                setHeaderConfirmModal("Bevestig overschrijven");
-                setMsgConfirmModal("Personage bestaat al.\nWilt u dit personage:\n'" + charName + "'\n oveschrijven?");
+                setHeaderConfirmModal(t("toolbar.modals.overwrite_character_header"));
+                const msg = t("toolbar.modals.overwrite_character_text")
+                setMsgConfirmModal(`${msg} \n\n${charName}`);
                 setShowConfirmUpdateModal(true);
             }
             else {
@@ -302,7 +323,8 @@ export default function Toolbar() {
             }
         }
         else {
-            setModalMsg("Vul de naam van het personage in.");
+            setHeaderConfirmModal(t("generic.oops"));
+            setModalMsg(t("toolbar.modals.name_can_not_be_empty"));
             setShowModal(true);
         }
     }
@@ -310,6 +332,46 @@ export default function Toolbar() {
     // Exporteren
     const exportToFile = () => { exportCharacterToFile(charName, isChecked, MAX_XP, tableData); }
     const exportToPDF = async () => { await ExportToPDF(charName, ruleset_version, tableData, MAX_XP, totalXP, gridSpreuken, gridRecepten); }
+
+    // Taal instellingne
+    // Handel het wisselen van de taalinstellingen af, alvorens het icoontje te wijziging.
+    // Refrest het scherm via een useEffect, op basis van de ShareStateContext > [language, setlanguage];
+    function handleChangeLanguage() {
+        const lang = (language === "nl") ? "en" : "nl";
+        setLanguage(lang);
+    }
+
+    // UI Taal aanpassen
+    const changeLanguage = useCallback(() => {
+        i18n.changeLanguage(language);
+        // regenereer de bronbestanden.
+        regenerateVaardigheden(tableData);
+        regenerateSpreukenAndRecepten();
+
+        // Vertalen van TableData, gezien die niet automatisch mee gaat
+        if (tableData.length > 0) {
+            const firstSkill = getSkillById(tableData[0]?.id);
+            if (tableData[0].skill !== firstSkill.skill) {
+                let newData = [];
+                tableData.forEach(skill => { newData.push(getSkillById(skill.id)) })
+                setTableData(newData);
+            }
+        }
+    }, [language, tableData, setTableData])
+
+    // Trigger de changeLanguage en verander de BtnImage wanneer de taal is aangepast.
+    useEffect(() => { changeLanguage() }, [language, setLanguage]);
+
+    function getLanguageImage() {
+        switch (language) {
+            case "nl":
+                return "./images/button_NL.png";
+            case "en":
+                return "./images/button_EN.png";
+            default:
+                return "./images/button_NL.png";
+        }
+    }
 
     // RETURN
     return (
@@ -333,63 +395,65 @@ export default function Toolbar() {
                     <div>
                         <div className="settings-row">
                             <label name="name_label">
-                                Naam:
-                                <input name="name_input"
-                                    className="settings-personage"
-                                    type="text"
-                                    maxLength="25"
-                                    value={charName}
-                                    onChange={handleTextChange}
-                                />
+                                {t("toolbar.labels.name")}
                             </label>
+                            <input
+                                name="name_input"
+                                className="settings-personage"
+                                type="text"
+                                maxLength="25"
+                                value={charName}
+                                onChange={handleTextChange}
+                            />
+
                         </div>
                         <div className="settings-row">
                             <label name="new_character_label">
-                                Nieuw personage:
-                                <input
-                                    name="new_character_checkbox"
-                                    className="settings-checkbox"
-                                    type="checkbox"
-                                    checked={isChecked}
-                                    onChange={handleCheckboxChange}
-                                />
+                                {t("toolbar.labels.new_character")}
                             </label>
+                            <input
+                                name="new_character_checkbox"
+                                className="settings-checkbox"
+                                type="checkbox"
+                                checked={isChecked}
+                                onChange={handleCheckboxChange}
+                            />
                         </div>
                     </div>
                     <div className="settings-inputs">
                         <div className="settings-row">
-                            <label name="max_xp_label">
-                                Max XP:
-                                <input
-                                    name="max_xp_input"
-                                    type="number"
-                                    value={MAX_XP}
-                                    min={0}
-                                    max={100}
-                                    onBlur={handleInputValidate}
-                                    onChange={handleInputUpdate}
-                                    disabled={isChecked}
-                                    step={0.25}
-                                />
+                            <label className="xp_label">
+                                {t("toolbar.labels.max_xp")}
                             </label>
+                            <input
+                                name="max_xp_input"
+                                type="number"
+                                value={MAX_XP}
+                                min={0}
+                                max={100}
+                                onBlur={handleInputValidate}
+                                onChange={handleInputUpdate}
+                                disabled={isChecked}
+                                step={0.25}
+                            />
                         </div>
                         <div className="settings-row">
-                            <label name="xp_over_label">
-                                XP over:
-                                <input
-                                    className = { isChecked && totalXP < 12 ? "xp_over_input" : null}
-                                    id="xp_over_input"
-                                    type="number"
-                                    value={MAX_XP - totalXP}
-                                    min={1}
-                                    max={100}
-                                    disabled={true}
-                                />
+                            <label className="xp_label">
+                                {t("toolbar.labels.xp_left")}
                             </label>
+                            <input
+                                className={isChecked && totalXP < 12 ? "xp_over_input" : null}
+                                id="xp_over_input"
+                                type="number"
+                                value={MAX_XP - totalXP}
+                                min={1}
+                                max={100}
+                                disabled={true}
+                            />
                             {(isChecked && totalXP < 12) ? (
                                 <CustomTooltip
-                                    header="Nieuw personage"
-                                    message="Nieuwe personages mogen niet meer dan 3 XP punten bewaren. \nXP boven de 3 punten die niet besteed wordt, zal verloren raken. \n\nMocht je als nieuwe speler (toch) niet tevreden zijn met je keuze, dan is dat geen probleem: Tijdens en na je eerste event mag je via de infobalie in overleg nog vaardigheden verwisselen."
+                                    header={t("toolbar.tooltips.new_character_header")}
+                                    message={t("toolbar.tooltips.new_character_message")}
                                     image={imageSrc[1]}
                                 />
                             ) : null}
@@ -398,29 +462,32 @@ export default function Toolbar() {
                 </div>
                 <div className="settings-btns">
                     <div className="settings-btns-row">
-                        <button className="btn-toolbar" title="Toon templates" onClick={showLoadPresetModal}>
+                        <button className="btn-toolbar" title={t("toolbar.buttons.show_templates")} onClick={showLoadPresetModal}>
                             <img className="btn-image" src="./images/button_presets.png" alt="Preset Button" />
                         </button>
-                        <button className="btn-toolbar" title="Personage opslaan" onClick={showConfirmUpdate}>
+                        <button className="btn-toolbar" title={t("toolbar.buttons.save_character")} onClick={showConfirmUpdate}>
                             <img className="btn-image" src="./images/button_save.png" alt="Save Button" />
                         </button>
-                        <button className="btn-toolbar" title="Personage laden" onClick={showLoadCharacterModal}>
+                        <button className="btn-toolbar" title={t("toolbar.buttons.load_character")} onClick={showLoadCharacterModal}>
                             <img className="btn-image" src="./images/button_load.png" alt="Load Button" />
                         </button>
-                        <button className="btn-toolbar" title="Personage verwijderen" onClick={showConfirmRemoval}>
+                        <button className="btn-toolbar" title={t("toolbar.buttons.remove_character")} onClick={showConfirmRemoval}>
                             <img className="btn-image" src="./images/button_trash.png" alt="Trash Button" />
                         </button>
                     </div>
                     <div className="btns-row">
-                        <button className="btn-toolbar" title="Exporteer naar PDF" onClick={exportToPDF}>
+                        <button className="btn-toolbar" title={t("toolbar.buttons.export_pdf")} onClick={exportToPDF}>
                             <img className="btn-image" src="./images/button_export-pdf.png" alt="Export PDF Button" />
                         </button>
-                        <button className="btn-toolbar" title="Personage exporteren" onClick={exportToFile}>
+                        <button className="btn-toolbar" title={t("toolbar.buttons.export_file")} onClick={exportToFile}>
                             <img className="btn-image" src="./images/button_download.png" alt="Export Button" />
 
                         </button>
-                        <button className="btn-toolbar" title="Personage importeren" onClick={showUploadModal}>
+                        <button className="btn-toolbar" title={t("toolbar.buttons.import_file")} onClick={showUploadModal}>
                             <img className="btn-image" src="./images/button_upload.png" alt="Import Button" />
+                        </button>
+                        <button className="btn-toolbar" title={t("toolbar.buttons.select_language")} onClick={handleChangeLanguage}>
+                            <img className="btn-image" src={getLanguageImage()} alt="Change Language" />
                         </button>
 
                     </div>
@@ -438,7 +505,7 @@ export default function Toolbar() {
                     value={selectedBasicSkill}
                     onChange={(selectedBasicOption) => setSelectedBasicSkill(selectedBasicOption)}
                     onKeyDown={handleBasicSkillSelectKeyPress}
-                    placeholder="Selecteer een Basis vaardigheid"
+                    placeholder={t("toolbar.inputs.base_skill")}
                     isClearable
                     isSearchable
                 />
@@ -446,7 +513,7 @@ export default function Toolbar() {
                 {   // Conditionele tooltip
                     selectedBasicSkill &&
                     <div className="select-info">
-                            <SkillTooltip
+                        <SkillTooltip
                             id={selectedBasicSkill.id}
                             image={imageSrc[currentBasicImageIndex]}
                         />
@@ -455,10 +522,10 @@ export default function Toolbar() {
 
                 <button
                     ref={btnAddBasicRef}
-                    title="Basis vaardigheid toevoegen"
+                    title={t("toolbar.buttons.add_skill_title_base")}
                     className="btn-primary"
                     onClick={handleBasicSkillSelection}>
-                    Toevoegen
+                    {t("toolbar.buttons.add_skill")}
                 </button>
             </div>
 
@@ -473,7 +540,7 @@ export default function Toolbar() {
                             value={selectedExtraSkill}
                             onChange={(selectedExtraOption) => setSelectedExtraSkill(selectedExtraOption)}
                             onKeyDown={handleExtraSkillSelectKeyPress}
-                            placeholder="Selecteer een Extra vaardigheid"
+                            placeholder={t("toolbar.inputs.extra_skill")}
                             isClearable
                             isSearchable
                         />
@@ -485,16 +552,16 @@ export default function Toolbar() {
                                 <SkillTooltip
                                     id={selectedExtraSkill.id}
                                     image={imageSrc[currentExtraImageIndex]}
-                                    />
+                                />
                             </div>
                         }
 
                         <button
                             ref={btnAddExtraRef}
-                            title="Extra vaardigheid toevoegen"
+                            title={t("toolbar.buttons.add_skill_title_extra")}
                             className="btn-primary"
                             onClick={handleExtraSkillSelection}>
-                            Toevoegen
+                            {t("toolbar.buttons.add_skill")}
                         </button>
                     </div>
                 )}

@@ -1,0 +1,4598 @@
+{
+  "BasisVaardigheden": [
+    {
+      "id": 101,
+      "skill": "Ambidexterity",
+      "alt_skill": "",
+      "category": "General skills",
+      "page": 11,
+      "description": "This skill allows you to use 2 weapons simultaneously - one in each hand. It also allows you to use spells with only 1 hand free. A two-handed weapon can temporarily be held in 1 hand as long as you do not strike or block with it, for example, to cast a spell with 1 hand.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 102,
+      "skill": "Literacy",
+      "alt_skill": "",
+      "category": "General skills",
+      "page": 11,
+      "description": "You can read and write normal, non-magical or spiritual script in any language that the character masters.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 0,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 103,
+      "skill": "Rune Use",
+      "alt_skill": "",
+      "category": "General skills",
+      "page": 12,
+      "description": "You can read runes and use scrolls written with runes. A loresheet for this skill is available on the website. This also teaches you to read and use rune imbues on your own body (people with the “Rune Mastery” skill can place them on your body). Your body has a maximum imbue cap of 20 for rune imbues.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 1,
+      "loresheet": {
+        "pdf": "Priest-Runes.pdf",
+        "special": "priest_runes.ttf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "rune_imbue_cap",
+          "value": 20
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 104,
+      "skill": "Rune Attunement",
+      "alt_skill": "",
+      "category": "General skills",
+      "page": 12,
+      "description": "Increases the maximum imbue cap of your body for rune imbues by 20. This skill can be purchased multiple times.",
+      "Requirements": {
+        "skill": [ 103 ],
+        "any_list": []
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 99,
+      "Eigenschappen": [
+        {
+          "name": "rune_imbue_cap",
+          "value": 20
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 105,
+      "skill": "Glyph Use",
+      "alt_skill": "",
+      "category": "General skills",
+      "page": 12,
+      "description": "You can read glyphs and use scrolls written with glyphs. A loresheet for this skill is available on the website. This also teaches you to read and use glyph imbues on your own body (people with the “Glyph Mastery” skill can place them on your body). Your body has a maximum imbue cap of 20 for glyph imbues.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 1,
+      "loresheet": {
+        "pdf": "Mage-Glyphs.pdf",
+        "special": "mage_glyphs.ttf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "glyph_imbue_cap",
+          "value": 20
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 106,
+      "skill": "Glyph Attunement",
+      "alt_skill": "",
+      "category": "General skills",
+      "page": 12,
+      "description": "Increases the maximum imbue cap of your body for glyph imbues by 20. This skill can be purchased multiple times.",
+      "Requirements": {
+        "skill": [ 105 ],
+        "any_list": []
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 99,
+      "Eigenschappen": [
+        {
+          "name": "glyph_imbue_cap",
+          "value": 20
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 107,
+      "skill": "Numeracy",
+      "alt_skill": "",
+      "category": "General skills",
+      "page": 12,
+      "description": "You can perform mathematical calculations.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 0,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 108,
+      "skill": "Lifeforce A",
+      "alt_skill": "",
+      "category": "General skills",
+      "page": 13,
+      "description": "You have a total of 2 hitpoints.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "hitpoints",
+          "value": 1
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 109,
+      "skill": "Lifeforce B",
+      "alt_skill": "",
+      "category": "General skills",
+      "page": 13,
+      "description": "You have a total of 3 hitpoints.",
+      "Requirements": {
+        "skill": [ 108 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "hitpoints",
+          "value": 1
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 110,
+      "skill": "Lifeforce C",
+      "alt_skill": "",
+      "category": "General skills",
+      "page": 13,
+      "description": "You have a total of 4 hitpoints.",
+      "Requirements": {
+        "skill": [ 109 ],
+        "any_list": []
+      },
+      "xp": 3,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "hitpoints",
+          "value": 1
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 111,
+      "skill": "Teaching Expertise",
+      "alt_skill": "",
+      "category": "General skills",
+      "page": 13,
+      "description": "You gain the ability to teach 2 additional skills to students that you possess yourself. These must be skills you have acquired and not skills obtained from items. A teacher may not have more than 8 students in total, acquired through ranks, items, powers, and skills. When you accept a student, this must be reported at checkout by specifying the PLIN-CHIN of the student and which skill is being taught. All of this should be noted on the teaching card submitted during checkout. \\nThis skill can be chosen up to 3 times.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 3,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 125,
+      "skill": "Shield Use",
+      "alt_skill": "",
+      "category": "Armour Skills",
+      "page": 14,
+      "description": "This allows you to use a shield with a maximum size of 60 cm by 120 cm (or equivalent area).",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 126,
+      "skill": "Armour I",
+      "alt_skill": "",
+      "category": "Armour Skills",
+      "page": 14,
+      "description": "With this skill, you can gain up to 2 Armour points by wearing physical Armour.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 0,
+      "loresheet": {
+        "pdf": "Armourpoint_kostuum_eisen.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "armourpoints",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 127,
+      "skill": "Armour II",
+      "alt_skill": "",
+      "category": "Armour Skills",
+      "page": 14,
+      "description": "With this skill, you can gain up to 4 Armour points by wearing physical Armour. If you wear an additional layer of Armour under your Armour that would give you at least 1 extra Armour point, you can instead gain immunity to strike twice per day. Call \"NO EFFECT\" when you use this ability.",
+      "Requirements": {
+        "skill": [ 126 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "armourpoints",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 128,
+      "skill": "Armour III",
+      "alt_skill": "",
+      "category": "Armour Skills",
+      "page": 14,
+      "description": "With this skill, you can gain up to 6 Armour points by wearing physical Armour. If you wear an additional layer of Armour under your Armour that would give you at least 3 extra Armour points, you can instead gain resistance to blast twice per day (taking only 1 damage instead of 3). Call \"RESIST\" when you use this ability.",
+      "Requirements": {
+        "skill": [ 127 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "armourpoints",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 129,
+      "skill": "Armour IV",
+      "alt_skill": "",
+      "category": "Armour skills",
+      "page": 15,
+      "description": "With this skill, you can gain up to 8 Armour points by wearing physical Armour. If you wear an additional layer of Armour under your Armour that would give you at least 4 extra Armour points, you can instead gain resistance to crush twice per day (taking only 1 damage instead of 5). Call \"RESIST\" when you use this ability.",
+      "Requirements": {
+        "skill": [ 128 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "armourpoints",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 130,
+      "skill": "Armour Casting",
+      "alt_skill": "",
+      "category": "Armour skills",
+      "page": 15,
+      "description": "This skill makes it easier to use Mage, Priest, or Healing spells while wearing Armour. To wear the Armour, you also need the respective skill! The table below shows the spell levels you can use with different amounts of Armour points. Damaged Armour points still obstruct spellcasting. Note! Extra AP never obstructs spellcasting. You can purchase this skill once as a base skill and then two more times via a teacher as an extra skill (see the additional skills chapter). \\n\\nSpells cast from scrolls or using the \"engrave spell\" imbue are unaffected by Armour and may be cast regardless of how much Armour someone wears.",
+      "Requirements": {
+        "skill": [ 126 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 131,
+      "skill": "Paladin",
+      "alt_skill": "",
+      "category": "Armour skills",
+      "page": 16,
+      "description": "A paladin is a warrior who seeks to aid the weak and often adheres to a code of chivalry. In battle, this often manifests as a combination of wearing Armour and healing skills. This skill makes it easier to use healing spells while wearing Armour. To wear the Armour, you also need the respective skill! With this skill, you can wear up to 4 Armour points and still use all levels of healing and paladin spells. You can purchase this skill three times. Each additional purchase allows you to wear 2 more AP and still use your healing and paladin spells.",
+      "Requirements": {
+        "skill": [ 126 ],
+        "any_list": [ 350, 351 ]
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 3,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 150,
+      "skill": "Small Weapons",
+      "alt_skill": "",
+      "category": "Weapon skills",
+      "page": 17,
+      "description": "With this skill, you may use a weapon with a maximum length of 45 cm, measured from end to end.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 0,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 151,
+      "skill": "One-Handed Weapons",
+      "alt_skill": "",
+      "category": "Weapon skills",
+      "page": 17,
+      "description": "With this skill, you may use a weapon longer than 45 cm, with a maximum length of 110 cm, measured from end to end.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 152,
+      "skill": "Two-Handed Weapons",
+      "alt_skill": "",
+      "category": "Weapon skills",
+      "page": 17,
+      "description": "With this skill, you may use a weapon longer than 110 cm, with a maximum length of 150 cm, measured from end to end. A two-handed weapon MUST always be wielded with two hands when blocking or striking. The weapon does not have to be held with both hands at all times and can rest against a shoulder to free up your hands.",
+      "Requirements": {
+        "skill": [ 151 ],
+        "any_list": []
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 153,
+      "skill": "Pole Arms",
+      "alt_skill": "",
+      "category": "Weapon skills",
+      "page": 17,
+      "description": "With this skill, you may use a weapon longer than 150 cm, with a maximum length of 215 cm, measured from end to end. A weapon longer than 150 cm MUST always be wielded with two hands, with at least one hand gripping the middle of the weapon. Wielding refers to blocking or striking. The weapon does not have to be held with both hands at all times and can rest against a shoulder to free up your hands.",
+      "Requirements": {
+        "skill": [ 151 ],
+        "any_list": []
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 154,
+      "skill": "Thrown Weapons",
+      "alt_skill": "",
+      "category": "Weapon skills",
+      "page": 17,
+      "description": "With this skill, you may use throwing weapons. A throwing weapon must be specifically approved as a throwing weapon. You may throw a maximum of one throwing weapon at a time.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 155,
+      "skill": "Archery",
+      "alt_skill": "",
+      "category": "Weapon skills",
+      "page": 18,
+      "description": "With this skill, you may use a bow or crossbow. Allowed are bows with a draw weight up to 30 pounds (lbs.) and crossbows with a draw weight up to 40 pounds (lbs.). An arrow deals 3 damage instead of the 1 damage that all other weapons standardly do.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 175,
+      "skill": "Perseverance",
+      "alt_skill": "",
+      "category": "Fighter Skills",
+      "page": 19,
+      "description": "You gain 3 willpower per day. \nYou gain access to the techniques: Crippling Blow and Minor Resilience.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 3,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 3
+        }
+      ],
+      "Spreuken": [ 1, 2 ],
+      "Recepten": []
+    },
+    {
+      "id": 176,
+      "skill": "Strength A",
+      "alt_skill": "",
+      "category": "Fighter Skills",
+      "page": 19,
+      "description": "You gain 3 willpower per day. \nYou gain access to the techniques: Striking Blow and Confusing Blow.",
+      "Requirements": {
+        "skill": [ 175 ],
+        "any_list": []
+      },
+      "xp": 3,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 3
+        }
+      ],
+      "Spreuken": [ 3, 4 ],
+      "Recepten": []
+    },
+    {
+      "id": 177,
+      "skill": "Toughness A",
+      "alt_skill": "",
+      "category": "Fighter Skills",
+      "page": 19,
+      "description": "You gain 3 willpower per day. \nYou gain access to the techniques: Resist blast and Pain suppression.",
+      "Requirements": {
+        "skill": [ 175 ],
+        "any_list": []
+      },
+      "xp": 3,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 3
+        }
+      ],
+      "Spreuken": [ 7, 8 ],
+      "Recepten": []
+    },
+    {
+      "id": 178,
+      "skill": "Leadership A",
+      "alt_skill": "",
+      "category": "Fighter Skills",
+      "page": 19,
+      "description": "You gain 3 willpower per day. \nYou gain access to the techniques: Hold the Line and Retrieve Comrade.",
+      "Requirements": {
+        "skill": [ 175 ],
+        "any_list": []
+      },
+      "xp": 3,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 3
+        }
+      ],
+      "Spreuken": [ 11, 12 ],
+      "Recepten": []
+    },
+    {
+      "id": 179,
+      "skill": "Protection A",
+      "alt_skill": "",
+      "category": "Fighter Skills",
+      "page": 20,
+      "description": "You gain 3 willpower per day. \nYou gain access to the techniques: Block Spell and Withstand Freeze.",
+      "Requirements": {
+        "skill": [ 175, 125 ],
+        "any_list": []
+      },
+      "xp": 3,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 3
+        }
+      ],
+      "Spreuken": [ 15, 16 ],
+      "Recepten": []
+    },
+    {
+      "id": 180,
+      "skill": "Berserker A",
+      "alt_skill": "",
+      "category": "Fighter Skills",
+      "page": 20,
+      "description": "You gain 3 willpower per day. \nYou gain access to the techniques: Withstand Slow and Fearful Presence.",
+      "Requirements": {
+        "skill": [ 175 ],
+        "any_list": []
+      },
+      "xp": 3,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 3
+        }
+      ],
+      "Spreuken": [ 19, 20 ],
+      "Recepten": []
+    },
+    {
+      "id": 181,
+      "skill": "Military training A",
+      "alt_skill": "",
+      "category": "Fighter Skills",
+      "page": 20,
+      "description": "You gain 3 willpower per day. \nYou have 1 more hitpoint.",
+      "Requirements": {
+        "skill": [ 175 ],
+        "any_list": []
+      },
+      "xp": 3,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "id": 0,
+          "name": "hitpoints",
+          "value": 1
+        },
+        {
+          "id": 0,
+          "name": "willpower",
+          "value": 3
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 200,
+      "skill": "First Aid",
+      "alt_skill": "",
+      "category": "Healer Skills",
+      "page": 22,
+      "description": "You gain 2 willpower per day. \nYou can bind and suture other people (not yourself). For each uninterrupted minute of treatment, you heal 1 hitpoint (being jostled, losing concentration, or being hit disrupts the skill). Normally, this does not cost willpower. However, you can spend 1 willpower to heal all hitpoints after 1 minute. This skill does not work on individuals with a FATAL! Physreps are required for this skill! Bandages must be at least 4cm wide and able to be wrapped around the injured body part 4 times to be effective.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 201,
+      "skill": "Quick-and-Dirty Treatment",
+      "alt_skill": "",
+      "category": "Healer Skills",
+      "page": 22,
+      "description": "You gain 1 extra willpower per day. \nIf you pay 1 willpower, you count as 2 healers during a treatment to determine the treatment duration.",
+      "Requirements": {
+        "skill": [ 200 ],
+        "any_list": []
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 1
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 202,
+      "skill": "Battlefield Surgery",
+      "alt_skill": "",
+      "category": "Healer Skills",
+      "page": 22,
+      "description": "You gain 2 extra willpower per day. \nIf you treat someone for 5 uninterrupted minutes with the help of at least 1 other healer who has 'Eerste hulp bij gevechten', you can remove a FATAL effect. If you spend 1 willpower, you can remove a FATAL effect on your own (time period remains the same). The grace period is paused during treatment so the patient does not die during the procedure. \nPhysreps are required for this skill! An operation kit and bandages for post-treatment are necessary. The specifics of the physrep can be tailored to your character.",
+      "Requirements": {
+        "skill": [ 200 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 203,
+      "skill": "Diagnostics",
+      "alt_skill": "",
+      "category": "Healer Skills",
+      "page": 23,
+      "description": "You gain 2 extra willpower per day. \nFor every 5 minutes you spend uninterrupted examining someone (even after death) and referencing symptoms in a compendium, you detect one of the following conditions (if present). If multiple conditions are present, the patient chooses which is detected first: \n[Poison, Disease, Soulless or soul influences (does not work on the dead), Undead, Other being, Addiction, Hypnosis influence, Other...]. \nIf you spend 1 willpower after the diagnosis, you can immediately ask the player if there is more to detect or if you have found everything.",
+      "Requirements": {
+        "skill": [ 200 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 204,
+      "skill": "Balance Humors",
+      "alt_skill": "",
+      "category": "Healer Skills",
+      "page": 23,
+      "description": "You gain 3 extra willpower per day. \nYou possess medicines and methods to combat diseases. The rest is the same as the Bezoarist. The grace period is paused during treatment so the patient does not die during the procedure. The treatment heals 1 wound caused by a disease every 5 minutes or removes one specific type of disease effect. The patient receives a random side effect decided by you as the humorisch pathologist. You cannot choose the same side effect twice per event. Once all 5 side effects have been chosen, you start over: \n1. The patient loses 1 energy of their choice \n2. The patient loses 2 energy of their choice \n3. The patient is extra aggressive or irritable today \n4. No side effect \n5. The patient has 1 less hitpoint for the rest of the day (if the patient only has 1 hitpoint, they lose 2 energy of their choice). \nIf you spend 1 willpower, you do not have to choose a side effect. \n\nPhysreps are required for this skill as you work with the patient's bodily fluids.",
+      "Requirements": {
+        "skill": [ 203 ],
+        "any_list": []
+      },
+      "xp": 3,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 3
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 205,
+      "skill": "Bezoarist",
+      "alt_skill": "",
+      "category": "Healer Skills",
+      "page": 24,
+      "description": "You gain 3 extra willpower per day. \nYou possess medicines and methods to combat poisons. The rest is the same as Humor Balancer. The grace period is paused during treatment so the patient does not die during the procedure. The treatment heals 1 wound caused by poison every 5 minutes or removes one specific type of poison effect. The patient receives a random side effect decided by you as the Bezoar Specialist. You cannot choose the same side effect twice per event. Once all 5 side effects have been chosen, you start over: \n1. The patient loses 1 energy of their choice \n2. The patient loses 2 energy of their choice \n3. The patient is extra aggressive or irritable today \n4. No side effect \n5. The patient has 1 less hitpoint for the rest of the day (if the patient only has 1 hitpoint, they lose 2 energy of their choice). If you spend 1 willpower, you do not have to choose a side effect. \n\nPhysreps are required for this skill as you work with the patient's bodily fluids.",
+      "Requirements": {
+        "skill": [ 203 ],
+        "any_list": []
+      },
+      "xp": 3,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 3
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 206,
+      "skill": "Hypnotherapy",
+      "alt_skill": "",
+      "category": "Healer Skills",
+      "page": 25,
+      "description": "You gain 2 extra willpower per day. \nYou can place unconscious triggers in a willing person (or a group of up to 5 people) during a 5-minute hypnosis session. This costs 1 willpower per group. During the session, one of the following effects and a codeword are chosen. The first time the patient hears the codeword today, the chosen effect immediately stops. If the patient hears the codeword while not under the influence of the effect, the hypnosis is also used up! A person can only be under the influence of one protective hypnosis at a time. \n● Fear \n● Freeze \n● Mute \n● Command \n● Paralyze \n● Confuse \n● Incite Aggression \n● Sleep \n● Torture \n● Fascinate \n● Invite spells \n\nFor clarity: If the effect is caused by a poison or disease, the effect does not stop if the disease or poison is not cured. Alternatively, you can choose to make the recipient immune to harmful hypnosis for the entire day.",
+      "Requirements": {
+        "skill": [ 200 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 207,
+      "skill": "Harmful Hypnotism",
+      "alt_skill": "",
+      "category": "Healer Skills",
+      "page": 25,
+      "description": "You gain 4 extra willpower per day. \nYou can place unconscious triggers in an unwilling, captured, incapacitated (0 HP), unconscious, or unaware person during a 5-minute hypnosis session. This costs 2 willpower. During the session, a codeword and an instruction are chosen. The person remembers nothing of the hypnosis session. The next time the person hears the codeword, they follow the instructions as best they can for 5 minutes. After the instructions are carried out, the victim remembers everything, including the hypnosis session. All effects of harmful hypnosis disappear at the next sunrise. A person can be under the influence of multiple harmful hypnosis sessions at once!",
+      "Requirements": {
+        "skill": [ 206 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 4
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 225,
+      "skill": "Herb Lore",
+      "alt_skill": "",
+      "category": "Alchemist Skills",
+      "page": 27,
+      "description": "You gain 2 Inspiration per day. \nWith this skill, you can recognize and pick herbs when they grow in the wild. Without this skill, you cannot distinguish herbs from other plants. Herbs can only be picked during the game. \nAt the beginning of the event, you also receive a specific number of blank herb cards. These can be used to find specific herbs at laminated “herb patches.” Instructions on how to use these are on the laminated sheets. \nWith this skill, you can also help other alchemists make brews, costing you 2 inspiration and reducing the cost of the brew for the brewer by 1 inspiration.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 1,
+      "loresheet": {
+        "pdf": "Kennis_van_kruiden.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 226,
+      "skill": "Preserve Herbs",
+      "alt_skill": "",
+      "category": "Alchemist Skills",
+      "page": 28,
+      "description": "You can make herbs suitable for preservation, allowing them to be stored for up to 1 year and 1 day. You can treat 3 herbs or 1 potion per day (excluding potions that restore energy) this way. After treating the herb or potion, fill out a blank PRESERVED HERB or PRESERVED POTION card and attach it to the herb or potion card. You can take this skill multiple times (each time allowing you to preserve 3 more herbs/day or 1 more potion/day).",
+      "Requirements": {
+        "skill": [ 225 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 99,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 227,
+      "skill": "Brew Healing Potions A",
+      "alt_skill": "Healing Potions A",
+      "category": "Alchemist Skills",
+      "page": 28,
+      "description": "You gain 2 Inspiration per day. \nYou can brew basic healing potions. Potions made this way last 1 week unless a specific ingredient is added. \nYou gain access to the recipes: “Heal scrape potion,” “Heal wound potion,” “Minor potion of heal crippling wound,” “Bleed salve,” “Heal crippling wound potion,” and “Heal hangover.”",
+      "Requirements": {
+        "skill": [ 225 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Genezende_Dranken.pdf",
+        "page": 2
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 43, 44, 45, 46, 47, 48 ]
+    },
+    {
+      "id": 228,
+      "skill": "Brew Herbal Elixirs A",
+      "alt_skill": "Herbal Elixirs A",
+      "category": "Alchemist Skills",
+      "page": 28,
+      "description": "You gain 2 Inspiration per day. \nYou can brew basic herbal elixirs. Potions made this way last 1 week unless a specific ingredient is added. \nYou gain access to the recipes: “Martial skill potion,” “Minor potion of strengthen will,” “Minor potion of focus,” “Retreat potion,” “Minor potion of strengthen body,” and “Confidence potion.”",
+      "Requirements": {
+        "skill": [ 225 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Kruiden_Elixers.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 97, 98, 99, 100, 101, 102 ]
+    },
+    {
+      "id": 229,
+      "skill": "Brew Magical Elixirs A",
+      "alt_skill": "Magical Elixirs A",
+      "category": "Alchemist Skills",
+      "page": 28,
+      "description": "You gain 2 Inspiration per day. \nYou can brew basic magical elixirs. Potions made this way last 1 week unless a specific ingredient is added. \nYou gain access to the recipes: “Fire breath potion,” “Minor potion of divine connection,” “Minor potion of magic veins,” “Minor potion of divine inspiration,” “Minor potion of inspiration of the magi,” and “Magical hair dye.”",
+      "Requirements": {
+        "skill": [ 225 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Magische_Elixers.pdf",
+        "page": 2
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 115, 116, 117, 118, 119, 120 ]
+    },
+    {
+      "id": 230,
+      "skill": "Brew Hallucinogens A",
+      "alt_skill": "Hallucinogens A",
+      "category": "Alchemist Skills",
+      "page": 29,
+      "description": "You gain 2 Inspiration per day. \nYou can brew basic hallucinatory elixirs. Potions made this way last 1 week unless a specific ingredient is added. \nYou gain access to the recipes: “Smell of confusion,” “Minor fever potion,” “Vision of the soul,” “Vision of symbols,” “Visions of the lifted veil,” and “Relive potion.”",
+      "Requirements": {
+        "skill": [ 225 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Hallucinerende_Elixers.pdf",
+        "page": 2
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 79, 80, 81, 82, 83, 84 ]
+    },
+    {
+      "id": 231,
+      "skill": "Brew Poison A",
+      "alt_skill": "Poison A",
+      "category": "Alchemist Skills",
+      "page": 29,
+      "description": "You gain 2 Inspiration per day. \nYou can brew basic poisons. Poisons made this way last 1 week unless a specific ingredient is added. \nYou gain access to the recipes: “Minor venom,” “Minor weapon oil,” “Fright venom,” “Sleep poison,” “Muscle lock poison,” and “Abortion poison.”",
+      "Requirements": {
+        "skill": [ 225 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Giffen.pdf",
+        "page": 2
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 61, 62, 63, 64, 65, 66 ]
+    },
+    {
+      "id": 250,
+      "skill": "Mastersmith A",
+      "alt_skill": "",
+      "category": "Crafting Skills",
+      "page": 31,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Metal. Every 2 Mythical Metal integrated into an item costs 1 inspiration. You can use inspiration from all days at the event. Each Mythical Metal increases the item's imbue capacity by 2. This skill also allows you to create a Level 1 Whetstone. See the loresheet for more details.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 1, 2, 999 ]
+    },
+    {
+      "id": 251,
+      "skill": "Carpenter A",
+      "alt_skill": "",
+      "category": "Crafting Skills",
+      "page": 31,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Wood. Every 2 Mythical Wood integrated into an item costs 1 inspiration. You can use inspiration from all days at the event. Each Mythical Wood increases the item's imbue capacity by 2. This skill also allows you to create a Totem of the Wolf. See the loresheet for more details.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 7, 8, 999 ]
+    },
+    {
+      "id": 252,
+      "skill": "Tailor A",
+      "alt_skill": "",
+      "category": "Crafting Skills",
+      "page": 31,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Cloth. Every 2 Mythical Cloth integrated into an item costs 1 inspiration. You can use inspiration from all days at the event. Each Mythical Cloth increases the item's imbue capacity by 2. This skill also allows you to create High-Quality Bandages. See the loresheet for more details.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 13, 14, 999 ]
+    },
+    {
+      "id": 253,
+      "skill": "Bookbinder A",
+      "alt_skill": "",
+      "category": "Crafting Skills",
+      "page": 31,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Paper. Every 2 Mythical Paper integrated into an item costs 1 inspiration. You can use inspiration from all days at the event. Each Mythical Paper increases the item's imbue capacity by 2. This skill also allows you to create Scroll Paper. See the loresheet for more details.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 19, 20, 999 ]
+    },
+    {
+      "id": 254,
+      "skill": "Leatherworker A",
+      "alt_skill": "",
+      "category": "Crafting Skills",
+      "page": 32,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Leather. Every 2 Mythical Leather integrated into an item costs 1 inspiration. You can use inspiration from all days at the event. Each Mythical Leather increases the item's imbue capacity by 2. This skill also allows you to create an Armor Repair Kit. See the loresheet for more details.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 25, 26, 999 ]
+    },
+    {
+      "id": 255,
+      "skill": "Jeweler A",
+      "alt_skill": "",
+      "category": "Crafting Skills",
+      "page": 32,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Copper Ingots. Every 2 Copper Ingots integrated into an item costs 1 inspiration. You can use inspiration from all days at the event. Each Copper Ingot increases the item's imbue capacity by 1. This skill also allows you to create a Friendship Gift. See the loresheet for more details.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 31, 32, 999 ]
+    },
+    {
+      "id": 256,
+      "skill": "Gemsetter A",
+      "alt_skill": "",
+      "category": "Crafting Skills",
+      "page": 32,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Quartz. Each Quartz used in an item costs 1 inspiration. You can use inspiration from all days at the event. Each Quartz increases the item's imbue capacity by 3. This skill also allows you to create a Basic Jewelry Piece. See the loresheet for more details.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 37, 38, 999 ]
+    },
+    {
+      "id": 275,
+      "skill": "Mage Spells A - White",
+      "alt_skill": "White magic",
+      "category": "Mage Skills",
+      "page": 33,
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Detect Magic, Ray of Confusion, Dazzling Strike, Break Impurity, and Counter Spell.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 25, 26, 27, 28, 29 ],
+      "Recepten": []
+    },
+    {
+      "id": 276,
+      "skill": "Mage Spells A - Grey",
+      "alt_skill": "Grey magic",
+      "category": "Mage Skills",
+      "page": 33,
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Mend, Minor Reinforcement, Imbue Strike, Iron Will, and Slow Movement.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 30, 31, 32, 33, 34 ],
+      "Recepten": []
+    },
+    {
+      "id": 277,
+      "skill": "Mage Spells A - Black",
+      "alt_skill": "Black magic",
+      "category": "Mage Skills",
+      "page": 34,
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Magic Blast, Instill Fear, Incite Aggression, Forced Mute, and Steal.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 35, 36, 37, 38, 39 ],
+      "Recepten": []
+    },
+    {
+      "id": 278,
+      "skill": "Mage Spells B - Air",
+      "alt_skill": "Air Magic B",
+      "category": "Mage Skills",
+      "page": 34,
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Hidden Object, Chilling Winds, Freedom of Movement, and Strike Cascade.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 275, 276, 277 ]
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 40, 41, 42, 43 ],
+      "Recepten": []
+    },
+    {
+      "id": 279,
+      "skill": "Mage Spells B - Metal",
+      "alt_skill": "Metal Magic B",
+      "category": "Mage Skills",
+      "page": 34,
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Strengthen Armour, Horrific Revelation, Boon of Disease, and Life Draw.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 275, 276, 277 ],
+        "exception": [ 651, 675 ]
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 46, 47, 48, 49 ],
+      "Recepten": []
+    },
+    {
+      "id": 280,
+      "skill": "Mage Spells B - Earth",
+      "alt_skill": "Earth Magic B",
+      "category": "Mage Skills",
+      "page": 34,
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Harden, Minor Reinforcement Cascade, Sands of Sleep, and Boon of Mending.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [],
+        "Category": {
+          "name": [ "Mage Skills" ],
+          "value": 4
+        }
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 52, 53, 54, 55 ],
+      "Recepten": []
+    },
+    {
+      "id": 281,
+      "skill": "Mage Spells B - Water",
+      "alt_skill": "Water Magic B",
+      "category": "Mage Skills",
+      "page": 34,
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Mind Protection, Force Truth, Corrupt the Flow of Life, and Iceblast.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 275, 276, 277 ]
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 58, 59, 60, 61 ],
+      "Recepten": []
+    },
+    {
+      "id": 282,
+      "skill": "Mage Spells B - Fire",
+      "alt_skill": "Fire Magic B",
+      "category": "Mage Skills",
+      "page": 34,
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Cleansed by Fire, Fireblast, Inner Fire, and Imbue Blast.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 275, 276, 277 ],
+        "exception": [ 625 ]
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 64, 65, 66, 67 ],
+      "Recepten": []
+    },
+    {
+      "id": 283,
+      "skill": "Mage Spells B - Wood",
+      "alt_skill": "Wood Magic B",
+      "category": "Mage Skills",
+      "page": 35,
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Rend Enchantment, Shatter Armour, Nature’s Protection, and Charm Person.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 275, 276, 277 ],
+        "exception": [ 650 ]
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 70, 71, 72, 73 ],
+      "Recepten": []
+    },
+    {
+      "id": 300,
+      "skill": "Paladin Spells A",
+      "alt_skill": "Paladin A",
+      "category": "Paladin Skills",
+      "page": 35,
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Hammer of Righteousness, Honorable Challenge, and Mercy Call.",
+      "Requirements": {
+        "skill": [ 131 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 125, 126, 127 ],
+      "Recepten": []
+    },
+    {
+      "id": 301,
+      "skill": "Paladin Spells B",
+      "alt_skill": "Paladin B",
+      "category": "Paladin Skills",
+      "page": 35,
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Divine Heroism, Divine Blessing, and Sanctuary.",
+      "Requirements": {
+        "skill": [ 300 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 128, 129, 130 ],
+      "Recepten": []
+    },
+    {
+      "id": 325,
+      "skill": "Priest Spells A - Purity",
+      "alt_skill": "Purity A",
+      "category": "Priest Skills",
+      "page": 36,
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Endure Poison, Minor Reinforcement, Break Impurity, Counter Spell, and Detect Spiritual Influence.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 150, 151, 152, 153, 154 ],
+      "Recepten": []
+    },
+    {
+      "id": 326,
+      "skill": "Priest Spells A - Wrath",
+      "alt_skill": "Wrath A",
+      "category": "Priest Skills",
+      "page": 36,
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Endure Disease, Instill Fear, Minor Disease, Crave, and Shattering Touch.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 161, 162, 163, 164, 165 ],
+      "Recepten": []
+    },
+    {
+      "id": 327,
+      "skill": "Priest Spells A - Death",
+      "alt_skill": "Death A",
+      "category": "Priest Skills",
+      "page": 37,
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Discern Soul, Sanctuary, Lay to Rest, Ancestral Mind Protection, and Reveal All Undead.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 172, 173, 174, 175, 176 ],
+      "Recepten": []
+    },
+    {
+      "id": 328,
+      "skill": "Priest Spells B - Purity",
+      "alt_skill": "Purity B",
+      "category": "Priest Skills",
+      "page": 37,
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Disease of Temperance, Minor Regeneration, Pure Body and Mind, and Protection from Impairment.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 325, 326, 327 ],
+        "exception": [ 625 ]
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 155, 156, 157, 158 ],
+      "Recepten": []
+    },
+    {
+      "id": 329,
+      "skill": "Priest Spells B - Wrath",
+      "alt_skill": "Wrath B",
+      "category": "Priest Skills",
+      "page": 37,
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Mute Cascade, Shatter Armour, Boon of Break Enchantment, and Curse Life.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 325, 326, 327 ]
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 166, 167, 168, 169 ],
+      "Recepten": []
+    },
+    {
+      "id": 330,
+      "skill": "Priest Spells B - Death",
+      "alt_skill": "Death B",
+      "category": "Priest Skills",
+      "page": 37,
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Paralyze Undead, Speak with the Dead, Sanctuary Ward, and Life Draw.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 325, 326, 327 ],
+        "exception": [ 651, 675 ]
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 177, 178, 179, 180 ],
+      "Recepten": []
+    },
+    {
+      "id": 331,
+      "skill": "Priest Spells B - Mind",
+      "alt_skill": "Mind B",
+      "category": "Priest Skills",
+      "page": 37,
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Fascinated Mind, Discern Pattern, Mind Protection, and Commandment.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 325, 326, 327 ]
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 183, 184, 185, 186 ],
+      "Recepten": []
+    },
+    {
+      "id": 332,
+      "skill": "Priest Spells B - Nature",
+      "alt_skill": "Nature B",
+      "category": "Priest Skills",
+      "page": 37,
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Hex Weapon, Freedom of Movement, Resist Special Damage, and Aspect of the Dryad.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 325, 326, 327 ],
+        "exception": [ 650 ]
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 189, 190, 191, 192 ],
+      "Recepten": []
+    },
+    {
+      "id": 350,
+      "skill": "Healing Spells A (EL)",
+      "alt_skill": "Healing A",
+      "category": "Healing Skills (EL)",
+      "page": 38,
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Discern Wounds, Discern Poisons, Discern Diseases, Heal Wounds, and Remove Paralysis.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 225, 226, 227, 228, 229 ],
+      "Recepten": []
+    },
+    {
+      "id": 351,
+      "skill": "Healing Spells A (SP)",
+      "alt_skill": "Healing A",
+      "category": "Healing Skills (SP)",
+      "page": 38,
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Discern Wounds, Discern Poisons, Discern Diseases, Heal Wounds, and Remove Paralysis.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 225, 226, 227, 228, 229 ],
+      "Recepten": []
+    },
+    {
+      "id": 352,
+      "skill": "Healing Spells B (EL)",
+      "alt_skill": "Healing B",
+      "category": "Healing Skills (EL)",
+      "page": 38,
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Heal Fatal Wound, Strengthen Body, Total Healing, and Boon of Minor Healing.",
+      "Requirements": {
+        "skill": [ 350 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 230, 231, 232, 233 ],
+      "Recepten": []
+    },
+    {
+      "id": 353,
+      "skill": "Healing Spells B (SP)",
+      "alt_skill": "Healing B",
+      "category": "Healing Skills (SP)",
+      "page": 38,
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Heal Fatal Wound, Strengthen Body, Total Healing, and Boon of Minor Healing.",
+      "Requirements": {
+        "skill": [ 351 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 230, 231, 232, 233 ],
+      "Recepten": []
+    },
+    {
+      "id": 354,
+      "skill": "Poison Healer (EL)",
+      "alt_skill": "Poison Healer",
+      "category": "Healing Skills (EL)",
+      "page": 39,
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Heal Fatal Wound, Protection from Poison, Neutralize Poisons, and Purge All Poisons.",
+      "Requirements": {
+        "skill": [ 350 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 234, 235, 236, 237 ],
+      "Recepten": []
+    },
+    {
+      "id": 355,
+      "skill": "Poison Healer (SP)",
+      "alt_skill": "Poison Healer",
+      "category": "Healing Skills (SP)",
+      "page": 39,
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Heal Fatal Wound, Protection from Poison, Neutralize Poisons, and Purge All Poisons.",
+      "Requirements": {
+        "skill": [ 351 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 234, 235, 236, 237 ],
+      "Recepten": []
+    },
+    {
+      "id": 356,
+      "skill": "Disease Healer (EL)",
+      "alt_skill": "Disease Healer",
+      "category": "Healing Skills (EL)",
+      "page": 39,
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Heal Fatal Wound, Protection from Disease, Cure Diseases, and Purge All Diseases.",
+      "Requirements": {
+        "skill": [ 350 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 238, 239, 240, 241 ],
+      "Recepten": []
+    },
+    {
+      "id": 357,
+      "skill": "Disease Healer (SP)",
+      "alt_skill": "Disease Healer",
+      "category": "Healing Skills (SP)",
+      "page": 39,
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Heal Fatal Wound, Protection from Disease, Cure Diseases, and Purge All Diseases.",
+      "Requirements": {
+        "skill": [ 351 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 238, 239, 240, 241 ],
+      "Recepten": []
+    },
+    {
+      "id": 358,
+      "skill": "Mind Healer (EL)",
+      "alt_skill": "Mind Healer",
+      "category": "Healing Skills (EL)",
+      "page": 39,
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Heal Fatal Wound, Discern Mind-Affecting, Protection from Fear, and Break Enchantment Cascade.",
+      "Requirements": {
+        "skill": [ 350 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 242, 243, 244, 245 ],
+      "Recepten": []
+    },
+    {
+      "id": 359,
+      "skill": "Mind Healer (SP)",
+      "alt_skill": "Mind Healer",
+      "category": "Healing Skills (SP)",
+      "page": 39,
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Heal Fatal Wound, Discern Mind-Affecting, Protection from Fear, and Break Enchantment Cascade.",
+      "Requirements": {
+        "skill": [ 351 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 242, 243, 244, 245 ],
+      "Recepten": []
+    },
+    {
+      "id": 375,
+      "skill": "Elemental Ritualism",
+      "alt_skill": "",
+      "category": "Ritualism",
+      "page": 40,
+      "description": "You gain 2 elemental ritual mana per day.\nWith this skill, you can perform rituals.\nWith 1 or 2 points in Elemental Ritualism, you can only support rituals of others. From 3 points onward, you can initiate and lead rituals yourself. You may use 1 of your own non-ritual energy per 2 ritual energy used in a ritual. This counts as 1 elemental ritual mana. It is allowed to use energy from remaining days of the event in your ritual. For example: If you spend 10 elemental ritual mana in a ritual with this skill, you can also use, for example, 3 willpower and 2 elemental spell mana in the same ritual (a total of 5 non-ritual energy). Combining elemental and spiritual mana is allowed in a ritual.\nThis skill can be purchased multiple times.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 99,
+      "Eigenschappen": [
+        {
+          "name": "elemental_ritual_mana",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 376,
+      "skill": "Spiritual Ritualism",
+      "alt_skill": "",
+      "category": "Ritualism",
+      "page": 41,
+      "description": "You gain 2 spiritual ritual mana per day.\nWith this skill, you can perform rituals.\nWith 1 or 2 points in Spiritual Ritualism, you can only support rituals of others. From 3 points onward, you can initiate and lead rituals yourself. You may use 1 of your own non-ritual energy per 2 ritual energy used in a ritual. This counts as 1 spiritual ritual mana. It is allowed to use energy from remaining days of the event in your ritual. For example: If you spend 10 spiritual ritual mana in a ritual with this skill, you can also use, for example, 3 willpower and 2 spiritual spell mana in the same ritual (a total of 5 non-ritual energy). Combining elemental and spiritual mana is allowed in a ritual.\nThis skill can be purchased multiple times.",
+      "Requirements": {
+        "skill": [],
+        "any_list": []
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 99,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_ritual_mana",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    }
+  ],
+  "ExtraVaardigheden": [
+    {
+      "id": 400,
+      "skill": "Heal Other Beings",
+      "alt_skill": "",
+      "category": "Extra General Skills",
+      "page": 43,
+      "description": "You can heal ‘Other Beings’ with your healer skills or healing spells. \nThese are beings such as Servitars, Spirits, Elementals, Undead, etc. A character that is another being always has a condition that explicitly states this. These beings are usually not healable without this skill. Also, potions, items, and scrolls cannot heal these beings unless explicitly stated. A healer with this skill can use a DISCERN spell or the diagnostics skill to determine if the recipient is an OTHER BEING. DISCERN spells are Discern Wounds, Discern Diseases, Discern Afflictions, and Discern Poisons. The caster can then heal the being by modifying their regular incantation and including the words ‘other being’ in the second part of the incantation. This modified incantation cannot heal a non-’other being’.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 350, 351, 203, 325, 326, 327, 276, 277, 278 ]
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 425,
+      "skill": "Extra Willpower",
+      "alt_skill": "",
+      "category": "Extra Healer Skills",
+      "page": 42,
+      "description": "You gain 2 extra willpower per day. \nYou have learned to use your inner strength to perform more techniques and actions. You do not gain access to additional techniques.\nThis skill can be purchased multiple times.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 175, 200 ]
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 99,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 426,
+      "skill": "Combine Bodies",
+      "alt_skill": "",
+      "category": "Extra Healer Skills",
+      "page": 43,
+      "description": "You gain 2 extra willpower per day. \nYou can operate on another person during a 5-minute operation. During the operation, you temporarily combine extra body parts or a spare organ from a corpse with the patient. This results in the patient gaining 2 extra hit points for the rest of the day, losing 2 energy of their choice each time the patient is knocked out (reaches 0 HP), and immediately dying if knocked out without energy. The patient only loses 1 energy if knocked out if the healer chooses to spend 3 willpower during the operation. (Note that extra hit points do not stack with, for example, extra hit points from spells) \nPhys reps are required for this skill! Such as an operation kit and makeup/prosthetics.",
+      "Requirements": {
+        "skill": [ 202, 203 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 427,
+      "skill": "Detachable Growth",
+      "alt_skill": "",
+      "category": "Extra Healer Skills",
+      "page": 44,
+      "description": "You gain 3 extra willpower per day. \nYou can operate on another person during a 5-minute operation. During the operation, you place a detachable tumor somewhere on the patient's body. If the patient spends 3 seconds and 3 energy of their choice after the operation on the same day, they can force an enchantment, poison, or disease into the tumor and then make the tumor die, causing the enchantment, poison, or disease, and its effects to disappear. The tumor is then gone, and to use this ability again, a new tumor must be placed. The patient can always do this while under the influence of a poison or disease (e.g., self-resolving a sleep poison without help). The healer can choose to spend willpower during the operation to reduce the energy cost for the patient. This costs 1 willpower per energy. \nPhysreps are required for this skill! Such as an operation kit and makeup/prosthetics.",
+      "Requirements": {
+        "skill": [ 426 ],
+        "any_list": []
+      },
+      "xp": 3,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 3
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 428,
+      "skill": "Create Abomination",
+      "alt_skill": "",
+      "category": "Extra Healer Skills",
+      "page": 45,
+      "description": "You gain 3 extra willpower per day. \nThis skill can only be used once per event. You can operate on a (out-of-game willing) person during an operation of at least 15 minutes with a team of at least 4 healers with the battlefield operation skill. This operation costs 10 willpower, which can be distributed among the healers present. The patient will be transformed into a strong but hideous abomination. The patient gains the “abomination” condition. \n\nAbomination condition: \nThe patient has 2 extra hit points. The patient loses 2 energy of their choice each time they are knocked out (reach 0 HP) and dies if knocked out without energy. The patient has a detachable tumor that regrows after 5 minutes after use. The patient cannot be healed unless the healer has the “heal other beings” skill. (Note that extra hit points do not stack with, for example, extra hit points from spells) Physreps are required for this skill! Such as an operation kit and makeup/prosthetics. Note that this skill permanently drastically changes a character's appearance, hence it should only be performed on a willing player out-of-game.",
+      "Requirements": {
+        "skill": [ 426 ],
+        "any_list": []
+      },
+      "xp": 3,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 3
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 450,
+      "skill": "Brew Expertise",
+      "alt_skill": "",
+      "category": "Extra Alchemist Skills",
+      "page": 46,
+      "description": "You gain 2 extra Inspiration per day. \nYou have learned to brew more potions with your skills. You do not gain access to extra recipes. \nThis skill can be purchased multiple times.",
+      "Requirements": {
+        "skill": [ 225 ],
+        "any_list": [ 227, 228, 229, 230, 231 ]
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 99,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 451,
+      "skill": "Brew Healing Potions B",
+      "alt_skill": "",
+      "category": "Extra Alchemist Skills",
+      "page": 46,
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local healing potions that are not known on your homeworld. Potions made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes: “Heal deadly wound potion”, “Cure weak disease potion”, “Cure disease potion”, “Courage potion”, “Wakeful potion” and “Cure heartache”.",
+      "Requirements": {
+        "skill": [ 227 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Genezende_Dranken.pdf",
+        "page": 3
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 3
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 49, 50, 51, 52, 53, 54 ]
+    },
+    {
+      "id": 452,
+      "skill": "Brew Healing Potions C",
+      "alt_skill": "",
+      "category": "Extra Alchemist Skills",
+      "page": 47,
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local advanced healing potions that are not known on your homeworld. Potions made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes “Heal all wounds potion”, “Cure strong disease potion”, “Muscle control potion”, “Concentration potion”, “Reroute blood potion” and “Cure amnesia”.",
+      "Requirements": {
+        "skill": [ 451 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Genezende_Dranken.pdf",
+        "page": 4
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 3
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 55, 56, 57, 58, 59, 60 ]
+    },
+    {
+      "id": 453,
+      "skill": "Brew Herbal Elixirs B",
+      "alt_skill": "",
+      "category": "Extra Alchemist Skills",
+      "page": 47,
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local herbal elixirs that are not known on your homeworld. Potions made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes: “Healing spit”, “Strengthen body potion”, “Long lasting strengthen body”, “Strengthen will potion”, “Focus potion” and “Empathy potion”.",
+      "Requirements": {
+        "skill": [ 228 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Kruiden_Elixers.pdf",
+        "page": 3
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 3
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 103, 104, 105, 106, 107, 108 ]
+    },
+    {
+      "id": 454,
+      "skill": "Brew Herbal Elixirs C",
+      "alt_skill": "",
+      "category": "Extra Alchemist Skills",
+      "page": 47,
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local advanced herbal elixirs that are not known on your homeworld. Potions made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes: “Healing blood”, “Major strengthen body potion”, “Anti-magic skin oil”, “Major strengthen will potion”, “Major focus potion” and “Happiness drink”.",
+      "Requirements": {
+        "skill": [ 453 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Kruiden_Elixers.pdf",
+        "page": 4
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 3
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 109, 110, 111, 112, 113, 114 ]
+    },
+    {
+      "id": 455,
+      "skill": "Brew Magical Elixirs B",
+      "alt_skill": "",
+      "category": "Extra Alchemist Skills",
+      "page": 48,
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local magical elixirs that are not known on your homeworld. Potions made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes: “Magical inspiration potion”, “Potion of divine connection”, “Potion of magic veins”, “Divine inspiration potion”, “Inspiration of the magi potion” and “Magical skin dye”.",
+      "Requirements": {
+        "skill": [ 229 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Magische_Elixers.pdf",
+        "page": 3
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 3
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 121, 122, 123, 124, 125, 126 ]
+    },
+    {
+      "id": 456,
+      "skill": "Brew Magical Elixirs C",
+      "alt_skill": "",
+      "category": "Extra Alchemist Skills",
+      "page": 48,
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local advanced magical elixirs that are not known on your homeworld. Potions made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes: “Major magical inspiration potion”, “Major potion of divine connection”, “Major potion of magic veins”, “Major divine inspiration potion”, “Major inspiration of the magi potion” and “Mirror personality potion”.",
+      "Requirements": {
+        "skill": [ 455 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Magische_Elixers.pdf",
+        "page": 4
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 3
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 127, 128, 129, 130, 131, 132 ]
+    },
+    {
+      "id": 457,
+      "skill": "Brew Hallucinogens B",
+      "alt_skill": "",
+      "category": "Extra Alchemist Skills",
+      "page": 48,
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local hallucinogenic elixirs that are not known on your homeworld. Potions made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes: “Fever potion”, “Visions of glowing symbols”, “Visions of magic”, “Visions of numen”, “Visions of the past” and “Relive other potion”.",
+      "Requirements": {
+        "skill": [ 230 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Hallucinerende_Elixers.pdf",
+        "page": 3
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 3
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 85, 86, 87, 88, 89, 90 ]
+    },
+    {
+      "id": 458,
+      "skill": "Brew Hallucinogens C",
+      "alt_skill": "",
+      "category": "Extra Alchemist Skills",
+      "page": 49,
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local advanced hallucinogenic elixirs that are not known on your homeworld. Potions made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes: “Major fever potion”, “Visions of death”, “Visions of the zeitgeist”, “Visions of present”, “Future visions” and “Be other potion”.",
+      "Requirements": {
+        "skill": [ 457 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Hallucinerende_Elixers.pdf",
+        "page": 4
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 3
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 91, 92, 93, 94, 95, 96 ]
+    },
+    {
+      "id": 459,
+      "skill": "Brew Poison B",
+      "alt_skill": "",
+      "category": "Extra Alchemist Skills",
+      "page": 49,
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local poisons that are not known on your homeworld. Poisons made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes: “Venom”, “Weapon oil”, “Mute venom”, “Muscle lock venom”, “Agonizing poison” and “Sorrow drink”.",
+      "Requirements": {
+        "skill": [ 231 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Giffen.pdf",
+        "page": 3
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 3
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 67, 68, 69, 70, 71, 72 ]
+    },
+    {
+      "id": 460,
+      "skill": "Brew Poison C",
+      "alt_skill": "",
+      "category": "Extra Alchemist Skills",
+      "page": 49,
+      "description": "You gain 3 Inspiration per day. \nYou have learned to brew the local advanced poisons that are not known on your homeworld. Poisons made in this way remain good for 1 week unless a specific ingredient is added. You need a laboratory to use this skill. \nYou gain access to the recipes: “Batch of venom”, “Major weapon oil”, “Confuse venom”, “Fatal venom”, “Fatal poison” and “Drink of willed death”.",
+      "Requirements": {
+        "skill": [ 459 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Giffen.pdf",
+        "page": 4
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 3
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 73, 74, 75, 76, 77, 78 ]
+    },
+    {
+      "id": 475,
+      "skill": "Artificer's' Expertise",
+      "alt_skill": "",
+      "category": "Extra Crafting Skills",
+      "page": 50,
+      "description": "You gain 2 Inspiration per day. \nThis skill can be purchased multiple times.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [],
+        "Category": {
+          "name": [ "Crafting Skills" ],
+          "value": 2
+        }
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 99,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 476,
+      "skill": "Mastersmith B",
+      "alt_skill": "",
+      "category": "Extra Crafting Skills",
+      "page": 50,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Steel. Each use of Mythical Steel in an item costs 2 inspiration. You may use the inspiration from all days at the event. Each Mythical Steel provides the item with 7 higher imbue capacity. This skill also allows you to create a Level 2 Whetstone. \nSee the loresheet for more details.",
+      "Requirements": {
+        "skill": [ 250 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 3, 4, 999 ]
+    },
+    {
+      "id": 477,
+      "skill": "Mastersmith C",
+      "alt_skill": "",
+      "category": "Extra Crafting Skills",
+      "page": 50,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Mithril. Each use of Mythical Mithril in an item costs 7 inspiration. You may use the inspiration from all days at the event. Each Mythical Mithril provides the item with 27 higher imbue capacity. This skill also allows you to create a Level 3 Whetstone. \nSee the loresheet for more details.",
+      "Requirements": {
+        "skill": [ 476 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 5, 6, 999 ]
+    },
+    {
+      "id": 478,
+      "skill": "Carpenter B",
+      "alt_skill": "",
+      "category": "Extra Crafting Skills",
+      "page": 51,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Ebony. Each use of Mythical Ebony in an item costs 2 inspiration. You may use the inspiration from all days at the event. Each Mythical Ebony provides the item with 7 higher imbue capacity. This skill also allows you to create a Totem of the Owl. \nSee the loresheet for more details.",
+      "Requirements": {
+        "skill": [ 251 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 9, 10, 999 ]
+    },
+    {
+      "id": 479,
+      "skill": "Carpenter C",
+      "alt_skill": "",
+      "category": "Extra Crafting Skills",
+      "page": 51,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Worldtree Sapling. Each use of Mythical Worldtree Sapling in an item costs 7 inspiration. You may use the inspiration from all days at the event. Each Mythical Worldtree Sapling provides the item with 27 higher imbue capacity. This skill also allows you to create a Totem of the Bull. \nSee the loresheet for more details.",
+      "Requirements": {
+        "skill": [ 478 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 11, 12, 999 ]
+    },
+    {
+      "id": 480,
+      "skill": "Tailor B",
+      "alt_skill": "",
+      "category": "Extra Crafting Skills",
+      "page": 51,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Velvet. Each use of Mythical Velvet in an item costs 2 inspiration. You may use the inspiration from all days at the event. Each Mythical Velvet provides the item with 7 higher imbue capacity. This skill also allows you to create a Group Flag. \nSee the loresheet for more details.",
+      "Requirements": {
+        "skill": [ 252 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 15, 16, 999 ]
+    },
+    {
+      "id": 481,
+      "skill": "Tailor C",
+      "alt_skill": "",
+      "category": "Extra Crafting Skills",
+      "page": 51,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Spidersilk. Each use of Mythical Spidersilk in an item costs 7 inspiration. You may use the inspiration from all days at the event. Each Mythical Spidersilk provides the item with 27 higher imbue capacity. This skill also allows you to create a Group Banner. \nSee the loresheet for more details.",
+      "Requirements": {
+        "skill": [ 480 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 17, 18, 999 ]
+    },
+    {
+      "id": 482,
+      "skill": "Bookbinder B",
+      "alt_skill": "",
+      "category": "Extra Crafting Skills",
+      "page": 52,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Vellum. Each use of Mythical Vellum in an item costs 2 inspiration. You may use the inspiration from all days at the event. Each Mythical Vellum provides the item with 7 higher imbue capacity. This skill also allows you to create an Empty Skill Research Book. \nSee the loresheet for more details.",
+      "Requirements": {
+        "skill": [ 253 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 21, 22, 999 ]
+    },
+    {
+      "id": 483,
+      "skill": "Bookbinder C",
+      "alt_skill": "",
+      "category": "Extra Crafting Skills",
+      "page": 52,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Griffinskin Vellum. Each use of Mythical Griffinskin Vellum in an item costs 7 inspiration. You may use the inspiration from all days at the event. Each Mythical Griffinskin Vellum provides the item with 27 higher imbue capacity. This skill also allows you to create a Book of Experiences. \nSee the loresheet for more details.",
+      "Requirements": {
+        "skill": [ 482 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 23, 24, 999 ]
+    },
+    {
+      "id": 484,
+      "skill": "Leatherworker B",
+      "alt_skill": "",
+      "category": "Extra Crafting Skills",
+      "page": 52,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Scale. Each use of Mythical Scale in an item costs 2 inspiration. You may use the inspiration from all days at the event. Each Mythical Scale provides the item with 7 higher imbue capacity. This skill also allows you to create Armor Reinforcement. \nSee the loresheet for more details.",
+      "Requirements": {
+        "skill": [ 254 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 27, 28, 999 ]
+    },
+    {
+      "id": 485,
+      "skill": "Leatherworker C",
+      "alt_skill": "",
+      "category": "Extra Crafting Skills",
+      "page": 52,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Mythical Dragonscale. Each use of Mythical Dragonscale in an item costs 7 inspiration. You may use the inspiration from all days at the event. Each Mythical Dragonscale provides the item with 27 higher imbue capacity. This skill also allows you to create Heavy Armor Reinforcement. \nSee the loresheet for more details.",
+      "Requirements": {
+        "skill": [ 484 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 29, 30, 999 ]
+    },
+    {
+      "id": 486,
+      "skill": "Jeweler B",
+      "alt_skill": "",
+      "category": "Extra Crafting Skills",
+      "page": 53,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Silver Ingots. Each 2 Silver Ingots used in an item costs 3 inspiration (or 2 inspiration for 1 Silver ingot). You may use the inspiration from all days at the event. Each Silver Ingot provides the item with 4 higher imbue capacity. This skill also allows you to create an Alliance Jewel. \nSee the loresheet for more details.",
+      "Requirements": {
+        "skill": [ 255 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 33, 34, 999 ]
+    },
+    {
+      "id": 487,
+      "skill": "Jeweler C",
+      "alt_skill": "",
+      "category": "Extra Crafting Skills",
+      "page": 53,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Golden Ingots. Each 2 Golden Ingots used in an item costs 7 inspiration (or 4 inspiration for 1 Golden ingot). You may use the inspiration from all days at the event. Each Golden Ingot provides the item with 16 higher imbue capacity. This skill also allows you to create a Wedding Jewel. \nSee the loresheet for more details.",
+      "Requirements": {
+        "skill": [ 486 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 35, 36, 999 ]
+    },
+    {
+      "id": 488,
+      "skill": "Gemsetter B",
+      "alt_skill": "",
+      "category": "Extra Crafting Skills",
+      "page": 53,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Gems. Each Gem used in an item costs 1 inspiration. You may use the inspiration from all days at the event. Each Gem provides the item with 5 higher imbue capacity. This skill also allows you to create an Expensive Jewelry. \nSee the loresheet for more details.",
+      "Requirements": {
+        "skill": [ 256 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 39, 40, 999 ]
+    },
+    {
+      "id": 489,
+      "skill": "Gemsetter C",
+      "alt_skill": "",
+      "category": "Extra Crafting Skills",
+      "page": 53,
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Flawless Gems. Each Flawless Gem used in an item costs 2 inspiration. You may use the inspiration from all days at the event. Each Flawless Gem provides the item with 10 higher imbue capacity. This skill also allows you to create a Royal Jewelry. \nSee the loresheet for more details.",
+      "Requirements": {
+        "skill": [ 488 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {
+        "pdf": "Crafting_loresheets.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "inspiration",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": [ 41, 42, 999 ]
+    },
+    {
+      "id": 500,
+      "skill": "Extra Healing Mana (EL)",
+      "alt_skill": "",
+      "category": "Extra Healing Skills (EL)",
+      "page": 54,
+      "description": "You gain 2 extra elemental mana. \nYou do not gain access to additional spells. \nThis skill can be purchased multiple times.",
+      "Requirements": {
+        "skill": [ 350 ],
+        "any_list": []
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 99,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 501,
+      "skill": "Extra Healing Mana (SP)",
+      "alt_skill": "",
+      "category": "Extra Healing Skills (SP)",
+      "page": 54,
+      "description": "You gain 2 extra spiritual mana. \nYou do not gain access to additional spells. \nThis skill can be purchased multiple times.",
+      "Requirements": {
+        "skill": [ 351 ],
+        "any_list": []
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 99,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 502,
+      "skill": "Healing Spells C (EL)",
+      "alt_skill": "Healing C",
+      "category": "Extra Healing Skills (EL)",
+      "page": 54,
+      "description": "You gain 5 elemental mana per day. \nYou gain access to the spells: Discern Afflictions, Major Regeneration, and Purify Body.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [],
+        "Category": {
+          "name": [ "Healing Skills (EL)" ],
+          "value": 8
+        }
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 256, 257, 258 ],
+      "Recepten": []
+    },
+    {
+      "id": 503,
+      "skill": "Healing Spells C (SP)",
+      "alt_skill": "Healing C",
+      "category": "Extra Healing Skills (SP)",
+      "page": 54,
+      "description": "You gain 5 spiritual mana per day. \nYou gain access to the spells: Discern Afflictions, Major Regeneration, and Purify Body.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [],
+        "Category": {
+          "name": [ "Healing Skills (SP)" ],
+          "value": 8
+        }
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 256, 257, 258 ],
+      "Recepten": []
+    },
+    {
+      "id": 504,
+      "skill": "Immune to Poisons (SP)",
+      "alt_skill": "",
+      "category": "Extra Healing Skills (SP)",
+      "page": 54,
+      "description": "You are immune to all poisons.",
+      "Requirements": {
+        "skill": [ 355 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 505,
+      "skill": "Immune to Poisons (EL)",
+      "alt_skill": "",
+      "category": "Extra Healing Skills (EL)",
+      "page": 54,
+      "description": "You are immune to all poisons.",
+      "Requirements": {
+        "skill": [ 354 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 506,
+      "skill": "Immune to Diseases (SP)",
+      "alt_skill": "",
+      "category": "Extra Healing Skills (SP)",
+      "page": 55,
+      "description": "You are immune to all diseases.",
+      "Requirements": {
+        "skill": [ 357 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 507,
+      "skill": "Immune to Diseases (EL)",
+      "alt_skill": "",
+      "category": "Extra Healing Skills (EL)",
+      "page": 55,
+      "description": "You are immune to all diseases.",
+      "Requirements": {
+        "skill": [ 356 ],
+        "any_list": []
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 508,
+      "skill": "Immune to Mind Influencing A (SP)",
+      "alt_skill": "",
+      "category": "Extra Healing Skills (SP)",
+      "page": 55,
+      "description": "You are immune to Fear, Confuse, and Sleep effects.",
+      "Requirements": {
+        "skill": [ 359 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 509,
+      "skill": "Immune to Mind Influencing A (EL)",
+      "alt_skill": "",
+      "category": "Extra Healing Skills (EL)",
+      "page": 55,
+      "description": "You are immune to Fear, Confuse, and Sleep effects.",
+      "Requirements": {
+        "skill": [ 358 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 510,
+      "skill": "Immune to Mind Influencing B (SP)",
+      "alt_skill": "",
+      "category": "Extra Healing Skills (SP)",
+      "page": 55,
+      "description": "You are immune to all Mind-Affecting effects: Command, Confuse, Fascinate, Fear, Incite Aggression, Sleep, Force Truth",
+      "Requirements": {
+        "skill": [ 508 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 511,
+      "skill": "Immune to Mind Influencing B (EL)",
+      "alt_skill": "",
+      "category": "Extra Healing Skills (EL)",
+      "page": 55,
+      "description": "You are immune to all Mind-Affecting effects: Command, Confuse, Fascinate, Fear, Incite Aggression, Sleep, Force Truth",
+      "Requirements": {
+        "skill": [ 509 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 525,
+      "skill": "Extra Elemental Mana",
+      "alt_skill": "",
+      "category": "Extra Mage Skills",
+      "page": 56,
+      "description": "You gain 2 elemental mana extra. You do not gain access to extra spells. \\nThis skill can be purchased multiple times.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [],
+        "Category": {
+          "name": [ "Mage Skills" ],
+          "value": 4
+        }
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 99,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 526,
+      "skill": "Mage Spells C - Air",
+      "alt_skill": "Air Magic C",
+      "category": "Extra Mage Skills",
+      "page": 56,
+      "description": "You gain 5 elemental mana per day. \\nYou gain access to the spells: Force Field and Tempest of Cleansing.",
+      "Requirements": {
+        "skill": [ 278 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 44, 45 ],
+      "Recepten": []
+    },
+    {
+      "id": 527,
+      "skill": "Mage Spells C - Metal",
+      "alt_skill": "Metal Magic C",
+      "category": "Extra Mage Skills",
+      "page": 56,
+      "description": "You gain 5 elemental mana per day.\\nYou gain access to the spells: Aura of Fear and Elemental Bolt.",
+      "Requirements": {
+        "skill": [ 279 ],
+        "any_list": [],
+        "exception": [ 651, 675 ]
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 50, 51 ],
+      "Recepten": []
+    },
+    {
+      "id": 528,
+      "skill": "Mage Spells C - Earth",
+      "alt_skill": "Earth Magic C",
+      "category": "Extra Mage Skills",
+      "page": 57,
+      "description": "You gain 5 elemental mana per day.\\nYou gain access to the spells: Stoneskin and Imbue Crush.",
+      "Requirements": {
+        "skill": [ 280 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 56, 57 ],
+      "Recepten": []
+    },
+    {
+      "id": 529,
+      "skill": "Mage Spells C - Water",
+      "alt_skill": "Water Magic C",
+      "category": "Extra Mage Skills",
+      "page": 57,
+      "description": "You gain 5 elemental mana per day.\\nYou gain access to the spells: Gift of Knowledge and Paralyzing Touch.",
+      "Requirements": {
+        "skill": [ 281 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 62, 63 ],
+      "Recepten": []
+    },
+    {
+      "id": 530,
+      "skill": "Mage Spells C - Fire",
+      "alt_skill": "Fire Magic C",
+      "category": "Extra Mage Skills",
+      "page": 57,
+      "description": "You gain 5 elemental mana per day.\\nYou gain access to the spells: Aspect of the Efreet and Incinerate.",
+      "Requirements": {
+        "skill": [ 282 ],
+        "any_list": [],
+        "exception": [ 625 ]
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 68, 69 ],
+      "Recepten": []
+    },
+    {
+      "id": 531,
+      "skill": "Mage Spells C - Wood",
+      "alt_skill": "Wood Magic C",
+      "category": "Extra Mage Skills",
+      "page": 57,
+      "description": "You gain 5 elemental mana per day.\\nYou gain access to the spells: Primal Rage and Aspect of the Viper.",
+      "Requirements": {
+        "skill": [ 283 ],
+        "any_list": [],
+        "exception": [ 650 ]
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 74, 75 ],
+      "Recepten": []
+    },
+    {
+      "id": 532,
+      "skill": "Mage Spells D - Destruction",
+      "alt_skill": "Special Mage Spells",
+      "category": "Extra Mage Skills",
+      "page": 57,
+      "description": "You gain 2 elemental mana per day.\\nYou gain access to the spell: Wave of Destruction.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 526, 527, 528, 529, 530, 531 ]
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 2
+        }
+      ],
+      "Spreuken": [ 100 ],
+      "Recepten": []
+    },
+    {
+      "id": 533,
+      "skill": "Mage Spells D - Domination",
+      "alt_skill": "Special Mage Spells",
+      "category": "Extra Mage Skills",
+      "page": 57,
+      "description": "You gain 2 elemental mana per day.\\nYou gain access to the spell: Dominate the Weak.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 526, 527, 528, 529, 530, 531 ]
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 2
+        }
+      ],
+      "Spreuken": [ 101 ],
+      "Recepten": []
+    },
+    {
+      "id": 534,
+      "skill": "Mage Spells D - Epidemic",
+      "alt_skill": "Special Mage Spells",
+      "category": "Extra Mage Skills",
+      "page": 58,
+      "description": "You gain 2 elemental mana per day.\\nYou gain access to the spell: Epidemic.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 526, 527, 528, 529, 530, 531 ]
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 2
+        }
+      ],
+      "Spreuken": [ 102 ],
+      "Recepten": []
+    },
+    {
+      "id": 535,
+      "skill": "Glyph Scroll Crafting",
+      "alt_skill": "",
+      "category": "Extra Mage Skills",
+      "page": 58,
+      "description": "You can inscribe a scroll with glyphs using 1 elemental spell you control. It can also be a spell you only have access to through personal imbues, a rank, a power, or a condition. It cannot be a spell you have access to using an item, potion, or other spell. Special scroll paper is required to make a scroll. Scroll paper can be identified by the official VA stamp in the lower right corner of the paper.\\n\\nYou meticulously write the entire incantation in glyphs on the scroll to prepare it. After casting the spell on this prepared scroll, you write your PLIN, your CHIN, and the date on which you described the scroll at the bottom of the scroll, to the left of the stamp.\\n\\nSuch a scroll is an item with 1 charge and can be used by characters with the GLYPHS USE skill. Your character must recite the entire incantation of the spell from the scroll to cast the spell. The scroll is destroyed when the spell is used. Tear it up and deliver it to the game control after use.",
+      "Requirements": {
+        "skill": [ 105 ],
+        "any_list": [],
+        "Category": {
+          "name": [ "Mage Skills", "Healing Skills (EL)" ],
+          "value": 4
+        }
+      },
+      "xp": 1,
+      "loresheet": {
+        "pdf": "Imbue_loresheet.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 536,
+      "skill": "Glyph Mastery",
+      "alt_skill": "",
+      "category": "Extra Mage Skills",
+      "page": 59,
+      "description": "You can inscribe objects or people with Glyphs and imbue them with magic, known as an ‘imbue’. Refer to the imbue lore sheet for more information.\\n\\nWith this skill, you can imbue an object or person with up to 10 elemental mana. You may use mana from the remaining days of the event for this purpose. You can purchase this skill multiple times. Each time you learn this skill additionally, you increase your maximum imbue mana quantity by 10. This allows you to increase the amount of mana you can use to infuse objects with elemental energy. If the effect you want to imbue requires too much mana, you will need to collaborate with other people with this skill.\\nThis skill may be purchased multiple times.",
+      "Requirements": {
+        "skill": [ 535 ],
+        "any_list": [],
+        "Category": {
+          "name": [ "Mage Skills", "Healing Skills (EL)" ],
+          "value": 8
+        }
+      },
+      "xp": 1,
+      "loresheet": {
+        "pdf": "Imbue_loresheet.pdf",
+        "page": 1
+      },
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 99,
+      "Eigenschappen": [
+        {
+          "name": "glyph_craft_cap",
+          "value": 10
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 550,
+      "skill": "Extra Spiritual Mana",
+      "alt_skill": "",
+      "category": "Extra Priest Skills",
+      "page": 60,
+      "description": "You gain 2 spiritual mana extra. You do not gain access to extra spells.\\nThis skill may be purchased multiple times.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [],
+        "Category": {
+          "name": [ "Priest Skills" ],
+          "value": 4
+        }
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 99,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 551,
+      "skill": "Exorcism",
+      "alt_skill": "",
+      "category": "Extra Priest Skills",
+      "page": 60,
+      "description": "You can perform a ritual using your own (non-ritual) spiritual mana to remove spiritual influences or possession by an undead, servitar, spirit, or chaos-taint from a person or object.\\n\\nThis does not necessarily have to be at a ritual site but can be part of a regular exorcism ritual at a ritual site. If this skill is used as part of a larger ritual, multiple individuals with this skill can use their spiritual mana to assist. If you do not have enough energy to remove the possession, you weaken the possession, which helps in subsequent attempts that day.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 325, 326, 327 ],
+        "Category": {
+          "name": [ "Priest Skills" ],
+          "value": 4
+        }
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 552,
+      "skill": "Priest Spells C - Purity",
+      "alt_skill": "Purity C",
+      "category": "Extra Priest Skills",
+      "page": 61,
+      "description": "You gain 5 spiritual mana per day.\\nYou gain access to the spells: Holy Bolt and Divine Armour.",
+      "Requirements": {
+        "skill": [ 328 ],
+        "any_list": [],
+        "exception": [ 625 ]
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 159, 160 ],
+      "Recepten": []
+    },
+    {
+      "id": 553,
+      "skill": "Priest Spells C - Wrath",
+      "alt_skill": "Wrath C",
+      "category": "Extra Priest Skills",
+      "page": 61,
+      "description": "You gain 5 spiritual mana per day.\\nYou gain access to the spells: Sacred Torture and Divine Weapon.",
+      "Requirements": {
+        "skill": [ 329 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 170, 171 ],
+      "Recepten": []
+    },
+    {
+      "id": 554,
+      "skill": "Priest Spells C - Death",
+      "alt_skill": "Death C",
+      "category": "Extra Priest Skills",
+      "page": 61,
+      "description": "You gain 5 spiritual mana per day.\\nYou gain access to the spells: Destructive Touch and Septic Weapon.",
+      "Requirements": {
+        "skill": [ 330 ],
+        "any_list": [],
+        "exception": [ 651, 675 ]
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 181, 182 ],
+      "Recepten": []
+    },
+    {
+      "id": 555,
+      "skill": "Priest Spells C - Mind",
+      "alt_skill": "Mind C",
+      "category": "Extra Priest Skills",
+      "page": 61,
+      "description": "You gain 5 spiritual mana per day.\\nYou gain access to the spells: Gift of Wisdom and Spell Shield.",
+      "Requirements": {
+        "skill": [ 331 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 187, 188 ],
+      "Recepten": []
+    },
+    {
+      "id": 556,
+      "skill": "Priest Spells C - Nature",
+      "alt_skill": "Nature C",
+      "category": "Extra Priest Skills",
+      "page": 61,
+      "description": "You gain 5 spiritual mana per day.\\nYou gain access to the spells: Barkskin and Major Disease.",
+      "Requirements": {
+        "skill": [ 332 ],
+        "any_list": [],
+        "exception": [ 650 ]
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 193, 194 ],
+      "Recepten": []
+    },
+    {
+      "id": 557,
+      "skill": "Priest Spells D - Consecrate",
+      "alt_skill": "Special Priest Spells",
+      "category": "Extra Priest Skills",
+      "page": 61,
+      "description": "You gain 2 spiritual mana per day.\\nYou gain access to the spell: Miracle of Consecration.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 552, 553, 554, 555, 556 ]
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 2
+        }
+      ],
+      "Spreuken": [ 202 ],
+      "Recepten": []
+    },
+    {
+      "id": 558,
+      "skill": "Priest Spells D - Healing Prayer",
+      "alt_skill": "Special Priest Spells",
+      "category": "Extra Priest Skills",
+      "page": 62,
+      "description": "You gain 2 spiritual mana per day.\\nYou gain access to the spell: Miracle of Healing.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 552, 553, 554, 555, 556 ]
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 2
+        }
+      ],
+      "Spreuken": [ 200 ],
+      "Recepten": []
+    },
+    {
+      "id": 559,
+      "skill": "Priest Spells D - Wrath of the Gods",
+      "alt_skill": "Special Priest Spells",
+      "category": "Extra Priest Skills",
+      "page": 62,
+      "description": "You gain 2 spiritual mana per day.\\nYou gain access to the spell: Wrath of the Gods.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 552, 553, 554, 555, 556 ]
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 2
+        }
+      ],
+      "Spreuken": [ 201 ],
+      "Recepten": []
+    },
+    {
+      "id": 560,
+      "skill": "Rune Scroll Craft",
+      "alt_skill": "",
+      "category": "Extra Priest Skills",
+      "page": 62,
+      "description": "You can inscribe a scroll with 1 spiritual spell that you possess. It can also be a spell to which you only have access through personal imbues, a rank, a power, or a condition. It cannot be a spell accessed through an item, potion, or other spell. Special scroll paper is required for making a scroll. Scroll paper is recognizable by the official VA stamp in the bottom right corner.\\n\\n You meticulously write the entire incantation in runes on the scroll, then perform the spell on this prepared scroll. After casting the spell, you write your PLIN, CHIN, and the date you inscribed the scroll at the bottom left next to the stamp.\\n\\n Such a scroll is an item with 1 charge and can be used by characters with the RUNE USE skill. The full incantation of the spell must be read from the scroll by your character to cast the spell. The scroll is destroyed when the spell is used. Tear it up and hand it in to the game masters after use.",
+      "Requirements": {
+        "skill": [ 103 ],
+        "any_list": [],
+        "Category": {
+          "name": [ "Priest Skills", "Healing Skills (SP)" ],
+          "value": 4
+        }
+      },
+      "xp": 1,
+      "loresheet": {
+        "pdf": "Imbue_loresheet.pdf",
+        "page": 1
+      },
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 561,
+      "skill": "Rune Mastery",
+      "alt_skill": "",
+      "category": "Extra Priest Skills",
+      "page": 63,
+      "description": "You can inscribe objects or persons with Runes and imbue them with magic, a so-called 'imbue'. \\nRefer to the imbue loresheet for more information.\\n\\n With this skill, you can imbue an object or person with up to 10 spiritual mana. You may use the mana from the remaining days of the event for this purpose. You can purchase this skill multiple times. Each additional purchase increases your maximum imbuing mana amount by 10. Thus, you can increase the amount of mana you can use to imbue objects with spiritual energy. If the effect you want to imbue requires too much mana, you will need to collaborate with other individuals possessing this skill. ",
+      "Requirements": {
+        "skill": [ 560 ],
+        "any_list": [],
+        "Category": {
+          "name": [ "Priest Skills", "Healing Skills (SP)" ],
+          "value": 8
+        }
+      },
+      "xp": 1,
+      "loresheet": {
+        "pdf": "Imbue_loresheet.pdf",
+        "page": 1
+      },
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 99,
+      "Eigenschappen": [
+        {
+          "name": "rune_craft_cap",
+          "value": 10
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 575,
+      "skill": "Woad of Blood",
+      "alt_skill": "",
+      "category": "Extra Ritual Skills",
+      "page": 64,
+      "description": "You can apply Woads in a ritual or ceremony on yourself and others using the blood of animals. Each Woad costs ritual mana (or other forms of energy in the way you would normally spend during rituals) to apply (the costs per person are listed below). Such a ritual or ceremony takes at least 5 minutes (but multiple woads can be applied at once). It is not possible to wear multiple woads simultaneously, and each woad must be clearly applied to the face using paint or fake blood.\\n\\n1 energy per person:\\nRat: Immune to diseases; existing diseases remain. Duration 1 hour\\nWolf: Immune to fear. Duration 1 hour\\nOwl: Immune to the next mind-affecting effect. Duration 1 hour or until used.\\nOx: Immune to strike and slow. Duration 1 hour\\nSnake: Immune to poisons; existing poisons remain. Duration 1 hour\\nBadger: The recipient gains 1 extra hit point that cannot be healed. Duration 1 hour\\n\\n2 energy per person (the following woads require at least 4 points in ritual skills):\\nBear: The recipient's next strike will be with the BLAST effect. This may only be done with a weapon longer than 45 cm. Duration 1 hour or until used.\\nStag: During the duration of this woad the recipient may do 4 STRIKE hits. This may only be done with a weapon longer than 45 cm. Duration 1 hour or until used.\\nWild boar: The recipient has 1 extra hit point. Duration 1 hour.\\nPeacock: The recipient can cause the FASCINATE effect once every 5 minutes by dancing gracefully and explaining how that works in the first sentence after. Duration 1 hour.\\nArmadillo: The recipient has 1 extra armor point. Duration 1 hour.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 375, 376 ]
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 576,
+      "skill": "Group Ritual Specialist",
+      "alt_skill": "",
+      "category": "Extra Ritual Skills",
+      "page": 65,
+      "description": "If you lead a ritual and spend 3 ritual mana yourself, the ritual gains 7 bonus points (equivalent to 7 mana) if there are at least 3 other active participants in the ritual (whether someone counts as an active participant is decided by the ritual game master). These individuals do not necessarily have to spend energy on the ritual but must contribute to the symbolism of the ritual, for example by acting something out. You can apply this once per day for each time you purchase this skill, if you apply it multiple times during the same ritual you need 3 extra people for every application again. ",
+      "Requirements": {
+        "skill": [],
+        "any_list": [],
+        "Category": {
+          "name": [ "Ritual Skills" ],
+          "value": 3
+        }
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 99,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 577,
+      "skill": "Pure Ritual",
+      "alt_skill": "",
+      "category": "Extra Ritual Skills",
+      "page": 65,
+      "description": "A ritual counts as a pure ritual when (in addition to 1 form of ritual mana) only 1 other form of energy is put into it. If this is the chosen energy and at least 3 of this type of energy are put into it, the ritual gets 7 bonus points (equivalent to 7 mana). This skill does not work if spiritual and elemental are used together in this ritual.\\n\\n You can apply this once per day for each time you buy this skill. No matter how many times you have this skill and how many ritualists have this skill, a ritual can only be declared pure ritual once.\\n\\n Note that each time you buy this skill you choose a new form of energy. You can also choose the same form multiple times. This skill can only be chosen 4 times. ",
+      "Requirements": {
+        "skill": [],
+        "any_list": [],
+        "Category": {
+          "name": [ "Ritual Skills" ],
+          "value": 3
+        }
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 4,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 578,
+      "skill": "Find Circle",
+      "alt_skill": "",
+      "category": "Extra Ritual Skills",
+      "page": 66,
+      "description": "After a short ritual (without circle) and spending 1 ritual mana, you can search for nearby suitable ritual locations where you can then draw a circle. This always happens in consultation with the game masters and only works if game masters have time to also assess rituals in these new locations. It can therefore also be that such a location is only temporarily. (game master required)",
+      "Requirements": {
+        "skill": [],
+        "any_list": [],
+        "Category": {
+          "name": [ "Ritual Skills" ],
+          "value": 5
+        }
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 600,
+      "skill": "Extra Willpower (Fighter)",
+      "alt_skill": "",
+      "category": "Extra Fighter Skills",
+      "page": 67,
+      "description": "You gain 2 extra willpower per day. \\nYou have expanded your inner strength. You do not gain access to extra techniques.\\n You can purchase this skill multiple times.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 175, 200 ]
+      },
+      "xp": 1,
+      "loresheet": {},
+      "multi_purchase": true,
+      "count": 1,
+      "maxcount": 99,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 2
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 601,
+      "skill": "Strength B",
+      "alt_skill": "",
+      "category": "Extra Fighter Skills",
+      "page": 67,
+      "description": "You gain 3 willpower per day.\\nYou gain access to the techniques: Heavy Blow and Withstand Strike.",
+      "Requirements": {
+        "skill": [ 176 ],
+        "any_list": []
+      },
+      "xp": 3,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 3
+        }
+      ],
+      "Spreuken": [ 5, 6 ],
+      "Recepten": []
+    },
+    {
+      "id": 602,
+      "skill": "Toughness B",
+      "alt_skill": "",
+      "category": "Extra Fighter Skills",
+      "page": 67,
+      "description": "You gain 3 willpower per day.\\nYou gain access to the techniques: Poison & Disease Protection and Resist Crush.",
+      "Requirements": {
+        "skill": [ 177 ],
+        "any_list": []
+      },
+      "xp": 3,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 3
+        }
+      ],
+      "Spreuken": [ 9, 10 ],
+      "Recepten": []
+    },
+    {
+      "id": 603,
+      "skill": "Leadership B",
+      "alt_skill": "",
+      "category": "Extra Fighter Skills",
+      "page": 68,
+      "description": "You gain 3 willpower per day.\nYou gain access to the techniques: Inspect Armour and Insight.",
+      "Requirements": {
+        "skill": [ 178 ],
+        "any_list": []
+      },
+      "xp": 3,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 3
+        }
+      ],
+      "Spreuken": [ 13, 14 ],
+      "Recepten": []
+    },
+    {
+      "id": 604,
+      "skill": "Protection B",
+      "alt_skill": "",
+      "category": "Extra Fighter Skills",
+      "page": 68,
+      "description": "You gain 3 willpower per day. \\nYou gain access to the techniques: Defensive Stance and Withstand Torture.",
+      "Requirements": {
+        "skill": [ 179 ],
+        "any_list": []
+      },
+      "xp": 3,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 3
+        }
+      ],
+      "Spreuken": [ 17, 18 ],
+      "Recepten": []
+    },
+    {
+      "id": 605,
+      "skill": "Berserker B",
+      "alt_skill": "",
+      "category": "Extra Fighter Skills",
+      "page": 68,
+      "description": "You gain 3 willpower per day. \\nYou gain access to the techniques: Rage and Withstand Fear.",
+      "Requirements": {
+        "skill": [ 180 ],
+        "any_list": []
+      },
+      "xp": 3,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 3
+        }
+      ],
+      "Spreuken": [ 21, 22 ],
+      "Recepten": []
+    },
+    {
+      "id": 606,
+      "skill": "Military Training B",
+      "alt_skill": "",
+      "category": "Extra Fighter Skills",
+      "page": 68,
+      "description": "You gain 3 willpower per day. \\nYou gain 1 extra hitpoint.",
+      "Requirements": {
+        "skill": [ 181 ],
+        "any_list": []
+      },
+      "xp": 3,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "willpower",
+          "value": 3
+        },
+        {
+          "name": "hitpoints",
+          "value": 1
+        }
+      ],
+      "Spreuken": [],
+      "Recepten": []
+    },
+    {
+      "id": 625,
+      "skill": "Demonologist A",
+      "alt_skill": "Demonologist A",
+      "category": "Demonology",
+      "page": 70,
+      "description": "The demonologist can cast their Demonology, fire, and purity spells using both spiritual and elemental mana. \\nYou gain access to the spells: “Detect Servitar”,“Reveal All Servitars”, “Break Minor Possession”, and “Faustian Deal”.\\nAdditionally, a demonologist may ignore the requirements to learn “Fire” and “Purity” spells. Finally, the demonologist gains 5 extra points (equivalent to 5 energy) for a ritual if the demonologist leads a ritual with the following effects:\\n* Breaking a servitar contract\\n* Breaking a servitar possession\\n* Summoning a specific servitar\\n* Making someone a servitar (only with permission from a deity, of course)\\n* Some other rituals as agreed upon with ritual game masters.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 282, 328 ]
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [ 275, 276, 277, 278 ],
+      "Recepten": []
+    },
+    {
+      "id": 626,
+      "skill": "Demonologist B (EL)",
+      "alt_skill": "Demonologist B",
+      "category": "Demonology",
+      "page": 70,
+      "description": "You gain 5 elemental mana per day. \\nYou gain access to the spells: “Demonic Eye”, “Command Servitar”, “Banish Servitar”, “Smite Servitar”, and “Invite Demon”.",
+      "Requirements": {
+        "skill": [ 282, 625 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 279, 280, 281, 282, 283 ],
+      "Recepten": []
+    },
+    {
+      "id": 627,
+      "skill": "Demonologist B (SP)",
+      "alt_skill": "Demonologist B",
+      "category": "Demonology",
+      "page": 70,
+      "description": "You gain 5 spiritual mana per day. \\nYou gain access to the spells: “Demonic Eye”, “Command Servitar”, “Banish Servitar”, “Smite Servitar”, and “Invite Demon”.",
+      "Requirements": {
+        "skill": [ 328, 625 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 279, 280, 281, 282, 283 ],
+      "Recepten": []
+    },
+    {
+      "id": 628,
+      "skill": "Demonologist C (EL)",
+      "alt_skill": "Demonologist C",
+      "category": "Demonology",
+      "page": 70,
+      "description": "You gain 5 elemental mana per day. \\nYou gain access to the spells: “Greater Demonic Eye”, “Invite Greater Demon”, and “Transfer Contract”.",
+      "Requirements": {
+        "skill": [ 626 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 284, 285, 286 ],
+      "Recepten": []
+    },
+    {
+      "id": 629,
+      "skill": "Demonologist C (SP)",
+      "alt_skill": "Demonologist C",
+      "category": "Demonology",
+      "page": 70,
+      "description": "You gain 5 spiritual mana per day. \\nYou gain access to the spells: “Greater Demonic Eye”, “Invite Greater Demon”, and “Transfer Contract”.",
+      "Requirements": {
+        "skill": [ 627 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 284, 285, 286 ],
+      "Recepten": []
+    },
+    {
+      "id": 650,
+      "skill": "Life Druidism A",
+      "alt_skill": "Druid A",
+      "category": "Druidism",
+      "page": 72,
+      "description": "The druid can cast their druid, wood, and nature spells using both elemental and spiritual mana. \\nYou gain access to the spells: “Detect Spirit”, “Reveal All Spirits”, “Break Minor Possession”, and “Create Personal Grove”.\\nAdditionally, a druid may ignore the requirements to learn “Wood” and “Nature” skills thereafter. Finally, the druid gains 5 extra points (equivalent to 5 energy) for a ritual if the druid leads a ritual with the following effects:\\n* Removing an unnatural influence from a place\\n* Influencing the ecosystem, balancing life and death among plants and animals\\n* Traveling from Grove to Grove\\n* Some other rituals as agreed upon with ritual game masters.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 283, 332 ]
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [ 300, 301, 302, 303 ],
+      "Recepten": []
+    },
+    {
+      "id": 651,
+      "skill": "Death Druidism A",
+      "alt_skill": "Druid A",
+      "category": "Druidism",
+      "page": 72,
+      "description": "The druid can cast their druid, metal, and death spells using both elemental and spiritual mana. \\nYou gain access to the spells: “Detect Spirit”, “Reveal All Spirits”, “Break Minor Possession”, and “Create Personal Grove”.\\nAdditionally, a druid may ignore the requirements to learn “Metal” and “Death” skills thereafter. Finally, the druid gains 5 extra points (equivalent to 5 energy) for a ritual if the druid leads a ritual with the following effects:\\n* Removing an unnatural influence from a place\\n* Influencing the ecosystem, balancing life and death among plants and animals\\n* Traveling from Grove to Grove\\n* Some other rituals as agreed upon with ritual game masters.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 279, 330 ]
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [ 300, 301, 302, 303 ],
+      "Recepten": []
+    },
+    {
+      "id": 652,
+      "skill": "Life Druidism B (EL)",
+      "alt_skill": "Druid B",
+      "category": "Druidism",
+      "page": 72,
+      "description": "You gain 5 elemental mana per day. \\nYou gain access to the spells: “Detect Impurity”, “Reveal All Impurities”, “Protection of the Grove”, and “Invite Nature Spirit”.",
+      "Requirements": {
+        "skill": [ 283, 650 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 304, 305, 306, 307 ],
+      "Recepten": []
+    },
+    {
+      "id": 653,
+      "skill": "Life Druidism B (SP)",
+      "alt_skill": "Druid B",
+      "category": "Druidism",
+      "page": 72,
+      "description": "You gain 5 spiritual mana per day. \\nYou gain access to the spells: “Detect Impurity”, “Reveal All Impurities”, “Protection of the Grove”, and “Invite Nature Spirit”.",
+      "Requirements": {
+        "skill": [ 332, 650 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 304, 305, 306, 307 ],
+      "Recepten": []
+    },
+    {
+      "id": 654,
+      "skill": "Death Druidism B (EL)",
+      "alt_skill": "Druid B",
+      "category": "Druidism",
+      "page": 72,
+      "description": "You gain 5 elemental mana per day. \\nYou gain access to the spells: “Detect Impurity”, “Reveal All Impurities”, “Protection of the Grove”, and “Invite Nature Spirit”.",
+      "Requirements": {
+        "skill": [ 279, 651 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 304, 305, 306, 307 ],
+      "Recepten": []
+    },
+    {
+      "id": 655,
+      "skill": "Death Druidism B (SP)",
+      "alt_skill": "Druid B",
+      "category": "Druidism",
+      "page": 72,
+      "description": "You gain 5 spiritual mana per day. \\nYou gain access to the spells: “Detect Impurity”, “Reveal All Impurities”, “Protection of the Grove”, and “Invite Nature Spirit”.",
+      "Requirements": {
+        "skill": [ 330, 651 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 304, 305, 306, 307 ],
+      "Recepten": []
+    },
+    {
+      "id": 656,
+      "skill": "Life Druidism C (EL)",
+      "alt_skill": "Druid C",
+      "category": "Druidism",
+      "page": 73,
+      "description": "You gain 5 elemental mana per day. \\nYou gain access to the spells: “Grove Meditation”, “Restore the Cycle”, and “Invite Avatar of the Cycle”.",
+      "Requirements": {
+        "skill": [ 652 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 308, 309, 310 ],
+      "Recepten": []
+    },
+    {
+      "id": 657,
+      "skill": "Life Druidism C (SP)",
+      "alt_skill": "Druid C",
+      "category": "Druidism",
+      "page": 73,
+      "description": "You gain 5 spiritual mana per day. \\nYou gain access to the spells: “Grove Meditation”, “Restore the Cycle”, and “Invite Avatar of the Cycle”.",
+      "Requirements": {
+        "skill": [ 653 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 308, 309, 310 ],
+      "Recepten": []
+    },
+    {
+      "id": 658,
+      "skill": "Death Druidism C (EL)",
+      "alt_skill": "Druid C",
+      "category": "Druidism",
+      "page": 73,
+      "description": "You gain 5 elemental mana per day. \\nYou gain access to the spells: “Grove Meditation”, “Restore the Cycle”, and “Invite Avatar of the Cycle”.",
+      "Requirements": {
+        "skill": [ 654 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 308, 309, 310 ],
+      "Recepten": []
+    },
+    {
+      "id": 659,
+      "skill": "Death Druidism C (SP)",
+      "alt_skill": "Druid C",
+      "category": "Druidism",
+      "page": 73,
+      "description": "You gain 5 spiritual mana per day. \\nYou gain access to the spells: “Grove Meditation”, “Restore the Cycle”, and “Invite Avatar of the Cycle”.",
+      "Requirements": {
+        "skill": [ 655 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 308, 309, 310 ],
+      "Recepten": []
+    },
+    {
+      "id": 675,
+      "skill": "Necromancer A",
+      "alt_skill": "",
+      "category": "Necromancy",
+      "page": 75,
+      "description": "The necromancer can cast their necromancy, \"Metal\", and \"Death\" spells using both spiritual and elemental mana. \\nThe necromancer also gains access to the spells: “Detect Undead”, “Reveal All Undead”, “Break Minor Possession”, “Create Zombie”, and “Minor Reconstruct”. \\nAdditionally, a necromancer may ignore the requirements to learn \"Metal\" and \"Death\" skills. Finally, the necromancer gains 5 extra points (equivalent to 5 energy) for a ritual if the necromancer leads a ritual that has the following effect: \\n* Making someone undead \\n* Sustaining the \"life\" of an undead \\n* Speaking with long-dead beings (sometimes even without their body present) \\n* Entering the realm of the dead \\n* Some other rituals as agreed upon with ritual game mastering.",
+      "Requirements": {
+        "skill": [],
+        "any_list": [ 279, 330 ]
+      },
+      "xp": 2,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [],
+      "Spreuken": [ 325, 326, 327, 328, 329 ],
+      "Recepten": []
+    },
+    {
+      "id": 676,
+      "skill": "Necromancer B (EL)",
+      "alt_skill": "Necromancer B",
+      "category": "Necromancy",
+      "page": 75,
+      "description": "You gain 5 elemental mana per day. \\nYou gain access to the spells: “Reconstruct”, “Chilling Fear”, “Bone Armour”, and “Invite Soul of the Damned”.",
+      "Requirements": {
+        "skill": [ 279, 675 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 330, 331, 332, 333 ],
+      "Recepten": []
+    },
+    {
+      "id": 677,
+      "skill": "Necromancer B (SP)",
+      "alt_skill": "Necromancer B",
+      "category": "Necromancy",
+      "page": 75,
+      "description": "You gain 5 spiritual mana per day. \\nYou gain access to the spells: “Reconstruct”, “Chilling Fear”, “Bone Armour”, and “Invite Soul of the Damned”.",
+      "Requirements": {
+        "skill": [ 330, 675 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 330, 331, 332, 333 ],
+      "Recepten": []
+    },
+    {
+      "id": 678,
+      "skill": "Necromancer C (EL)",
+      "alt_skill": "Necromancer C",
+      "category": "Necromancy",
+      "page": 75,
+      "description": "You gain 5 elemental mana per day. \\nYou gain access to the spells: “Ghostly Shackles”, “Unholy Bolt”, and “Invite Ancestor”.",
+      "Requirements": {
+        "skill": [ 676 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "elemental_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 334, 335, 336 ],
+      "Recepten": []
+    },
+    {
+      "id": 679,
+      "skill": "Necromancer C (SP)",
+      "alt_skill": "Necromancer C",
+      "category": "Necromancy",
+      "page": 75,
+      "description": "You gain 5 spiritual mana per day. \\nYou gain access to the spells: “Ghostly Shackles”, “Unholy Bolt”, and “Invite Ancestor”.",
+      "Requirements": {
+        "skill": [ 677 ],
+        "any_list": []
+      },
+      "xp": 4,
+      "loresheet": {},
+      "multi_purchase": false,
+      "count": 1,
+      "maxcount": 1,
+      "Eigenschappen": [
+        {
+          "name": "spiritual_mana",
+          "value": 5
+        }
+      ],
+      "Spreuken": [ 334, 335, 336 ],
+      "Recepten": []
+    }
+  ]
+}
