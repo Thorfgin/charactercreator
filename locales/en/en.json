@@ -1,0 +1,208 @@
+{
+  "welcome_message": "Welcome to our application!",
+  "disclaimer": "The character creator gives an idea of what's possible. There may be discrepancies between the text in the character creator and the VA rules.\n\nAlways check the latest version of the rules at:\n https://the-vortex.nl/het-spel/regels/",
+  "undead": "Undead in the pentagon!",
+  "generic": {
+    "no_label": "",
+    "oops": "OOPS...",
+    "error": "Something went wrong...",
+    "version": "version",
+    "disclaimer": "Disclamer",
+    "skill": "Skill:",
+    "skills": "Skills",
+    "skills_amount": "Skill count:",
+    "spell_technique": "Spell/Technique:",
+    "spells_and_techniques": "Spells & Techniques",
+    "spells_amount": "Spell/Technique count:",
+    "recipe": "Recipe:",
+    "recipes": "Recipes",
+    "recipes_amount": "Recipe count:",
+    "info_not_found": "Information could not be found.",
+    "special_mana": "Skill dependent: Elemental or Spiritual",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "close": "Close",
+    "upload": "Upload",
+    "load": "Load",
+    "ok": "OK",
+    "character_properties": "Character properties",
+    "energy_per_day": "Energy per Day",
+    "points": "points",
+    "point": "point",
+    "exception": "Exception:",
+    "no_name": "Character unknown",
+    "character": "Character",
+    "total_xp": "Total XP:",
+    "spent_xp": "Spent XP:",
+    "available_xp": "Available XP:",
+    "xp_gain": "XP per Event:",
+    "appendix": "Appendix"
+  },
+  "toolbar": {
+    "labels": {
+      "name": "Name:",
+      "new_character": "New character:",
+      "max_xp": "Max XP:",
+      "xp_left": "XP left:"
+    },
+    "inputs": {
+      "base_skill": "Select a base skill",
+      "extra_skill": "Select an extra skill"
+    },
+    "buttons": {
+      "add_skill": "Add",
+      "subtract_skill": "Subtract",
+      "remove_skill": "Remove",
+      "add_skill_title_base": "Add a base skill",
+      "add_skill_title_extra": "Add an extra skill",
+      "show_templates": "Show presets",
+      "save_character": "Save character",
+      "load_character": "Load character",
+      "remove_character": "Remove character",
+      "export_pdf": "Export to PDF",
+      "export_file": "Export character",
+      "import_file": "Import character",
+      "select_language": "Select Language"
+    },
+    "tooltips": {
+      "new_character_header": "New character",
+      "new_character_message": "New characters may hold up to 3 XP points. \nAny XP exceeding 3 points that isn't used will be lost. \n\nIf you're a new player and not satisfied with your initial choice, don't worry: During and after your first event, you can still switch skills by consulting the information desk."
+    },
+    "modals": {
+      "confirmation_header": "Confirmation",
+      "save_character": "Character saved:",
+      "overwrite_character_header": "Replace Character?",
+      "overwrite_character_text": "Character already exists.\nDo you want to replace this character?",
+      "confirm_remove_header": "Confirm removal",
+      "confirm_remove_text": "Are you sure you want to remove this character?",
+      "remove_character": "Character removed:",
+      "character_not_found": "Character not found:",
+      "name_can_not_be_empty": "First enter the name of the character.",
+      "cant_add": "Adding is not allowed.",
+      "max_xp_reached": "Maximum XP reached.",
+      "max_xp_exceeded": "Maximum XP is exceeded.",
+      "skill_cost": "This skill costs:"
+    }
+  },
+  "skill_table": {
+    "header": {
+      "id": "ID",
+      "skill": "Skill",
+      "xp_cost": "XP cost",
+      "loresheet": "Loresheet",
+      "amount": "Count",
+      "info": "Info",
+      "actions": "Actions"
+    },
+    "bottom_row": {
+      "skill_amount": "Amount of Skills:",
+      "skill_totalxp": "Total:",
+      "button_erase": "Clear",
+      "button_erase_title": "Clear all skills"
+    },
+    "modals": {
+      "not_allowed_to_add": "\nAdding is not allowed.\n",
+      "maximum_skill_amount_reached": "Maximum amount of purchases reached.",
+      "maximum_xp_reached": "Maximum XP reached."
+    }
+  },
+  "info_tooltip": {
+    "pdf_reference": "Open Vaardigheden.pdf - page"
+  },
+  "skill_tooltip": {
+    "extra_skill_req": "At least one Extra skill",
+    "any_of_these_req": "One of these:",
+    "category_req": "xp in one of these categories:",
+    "labels": {
+      "xp_cost": "XP cost",
+      "requirements": "Requirements:",
+      "description": "Description:"
+    }
+  },
+  "spell_tooltip": {
+    "pdf_reference": "Open Spreuken_en_Technieken.pdf - page",
+    "labels": {
+      "energy_cost": "Energy cost:",
+      "energy_type": "Energy type:",
+      "incantation": "Incantation:",
+      "description": "Description:",
+      "effect": "Effect:",
+      "duration": "Duration:"
+    }
+  },
+  "recipe_tooltip": {
+    "labels": {
+      "inspiration_cost": "Inspiration cost:",
+      "description": "Description:",
+      "supplies": "Supplies:"
+    }
+  },
+  "fileupload_modal": {
+    "labels": {
+      "upload_file": "Upload a File"
+    },
+    "modals": {
+      "cant_load_version": "This version of the character could not be loaded.",
+      "unknown_error": "Somethings went wrong while processing the file."
+    }
+  },
+  "character_table": {
+    "labels": {
+      "no_characters": "No characters found"
+    }
+  },
+  "loadcharacter_modal": {
+    "labels": {
+      "load_character": "Load a Character"
+    },
+    "modals": {
+      "cant_load_version": "This version of the character could not be loaded.",
+      "unknown_error": "Somethings went wrong while processing the file."
+    }
+  },
+  "loadpreset_modal": {
+    "labels": {
+      "view_template": "View a preset",
+      "description": "These presets serve as an example on what certain\narche-type characters would look like at VA.\nWe tried to give an example of common arche - types\nand the type of narrative/play you could expect. "
+    },
+    "modals": {
+      "cant_load_version": "The version of this preset does not match the current ruleset version.",
+      "unknown_error": "Somethings went wrong while processing the file."
+    }
+  },
+  "releasenotes_modal": {
+    "labels": {
+      "version_info": "Version information",
+      "release_version": "release versie"
+    }
+  },
+  "template_table": {
+    "labels": {
+      "no_presets_found": "No presets found",
+      "template": "Preset:"
+    }
+  },
+  "shared_objects": {
+    "hitpoints": "Total HP",
+    "armourpoints": "Max AP",
+    "elemental_mana": "Elemental Mana",
+    "elemental_ritual_mana": "Ritual Elemental Mana",
+    "spiritual_mana": "Spiritual Mana",
+    "spiritual_ritual_mana": "Ritual Spiritual Mana",
+    "inspiration": "Inspiration",
+    "willpower": "Willpower",
+    "glyph_craft_cap": "Glyph Craft cap",
+    "glyph_imbue_cap": "Glpyh Imbue cap",
+    "rune_craft_cap": "Rune Craft cap",
+    "rune_imbue_cap": "Rune Imbue cap"
+  },
+  "shared_actions": {
+    "modals": {
+      "cant_remove": "Removal is not allowed.",
+      "item_is_prerequisite": "This item is a prerequisite for the skill:",
+      "xp_requirement": "This item is a prerequisite for the required XP",
+      "for_skill": "for skill:",
+      "exception_requirement": "This item is required as an exception to the prerequisites for the skill:"
+    }
+  }
+}

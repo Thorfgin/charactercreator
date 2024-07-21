@@ -1,0 +1,209 @@
+{
+  "welcome_message": "Welkom bij onze applicatie!",
+  "disclaimer": "De character creator geeft een indicatie van de mogelijkheden. Er kunnen altijd afwijkingen zitten tussen de teksten in de character creator en de VA regelset.\n\nCheck altijd de laatste versie van de regelset op:\n https://the-vortex.nl/het-spel/regels/",
+  "undead": "Ondode in het pentagon!",
+  "generic": {
+    "no_label": "",
+    "oops": "OEPS...",
+    "error": "Er ging iets fout...",
+    "version": "versie",
+    "disclaimer": "Disclamer",
+    "skill": "Vaardigheid:",
+    "skills": "Vaardigheden",
+    "skills_amount": "Aantal vaardigheden:",
+    "spell_technique": "Spreuk/Techniek:",
+    "spells_and_techniques": "Spreuken & Technieken",
+    "spells_amount": "Aantal spreuken/technieken:",
+    "recipe": "Recept:",
+    "recipes": "Recepten",
+    "recipes_amount": "Aantal recepten:",
+    "info_not_found": "Informatie kon niet gevonden worden.",
+    "special_mana": "Vaardigheid afhankelijk: Elementair of Spiritueel",
+    "confirm": "Bevestig",
+    "cancel": "Annuleren",
+    "close": "Sluiten",
+    "upload": "Upload",
+    "load": "Laad",
+    "ok": "OK",
+    "character_properties": "Character eigenschappen",
+    "energy_per_day": "Energie per Dag",
+    "points": "punten",
+    "point": "punt",
+    "exception": "Uitgezonderd:",
+    "no_name": "Onbekend personage",
+    "character": "Character",
+    "total_xp": "Totaal XP:",
+    "spent_xp": "Uitgegeven XP:",
+    "available_xp": "Besteedbare XP:",
+    "xp_gain": "XP per Event:",
+    "appendix": "Bijlagen"
+  },
+  "toolbar": {
+    "labels": {
+      "name": "Naam:",
+      "new_character": "Nieuw character:",
+      "max_xp": "Max XP:",
+      "xp_left": "XP over:"
+    },
+    "inputs": {
+      "base_skill": "Selecteer een basisvaardigheid",
+      "extra_skill": "Selecteer een extravaardigheid"
+    },
+    "buttons": {
+      "add_skill": "Toevoegen",
+      "subtract_skill": "Verminderen",
+      "remove_skill": "Verwijder",
+      "add_skill_title_base": "Basis vaardigheid toevoegen",
+      "add_skill_title_extra": "Extra vaardigheid toevoegen",
+      "show_templates": "Toon templates",
+      "save_character": "Personage opslaan",
+      "load_character": "Personage laden",
+      "remove_character": "Personage verwijderen",
+      "export_pdf": "Exporteer naar PDF",
+      "export_file": "Personage exporteren",
+      "import_file": "Personage importeren",
+      "select_language": "Selecteer taal"
+    },
+    "tooltips": {
+      "new_character_header": "Nieuw character",
+      "new_character_message": "Nieuwe characters mogen niet meer dan 3 XP punten bewaren. \nXP boven de 3 punten die niet besteed wordt, zal verloren raken. \n\nMocht je als nieuwe speler (toch) niet tevreden zijn met je keuze, dan is dat geen probleem: Tijdens en na je eerste event mag je via de infobalie in overleg nog vaardigheden verwisselen."
+    },
+    "modals": {
+      "confirmation_header": "Bevestiging",
+      "save_character": "Character opgeslagen:",
+      "overwrite_character_header": "Character overschrijven?",
+      "overwrite_character_text": "Character bestaat al.\nWilt u dit character oveschrijven?",
+      "confirm_remove_header": "Bevestig verwijderen",
+      "confirm_remove_text": "Weet u zeker dat u dit character wilt verwijderen?",
+      "remove_character": "Character verwijderd:",
+      "character_not_found": "Character niet gevonden:",
+      "name_can_not_be_empty": "Vul eerst de naam van het character in.",
+      "cant_add": "Toevoegen is niet toegestaan.",
+      "max_xp_reached": "Maximum XP bereikt.",
+      "max_xp_exceeded": "Maximum XP wordt overschreden.",
+      "skill_cost": "Deze vaardigheid kost:"
+    }
+  },
+  "skill_table": {
+    "header": {
+      "id": "ID",
+      "skill": "Vaardigheid",
+      "xp_cost": "XP kosten",
+      "loresheet": "Loresheet",
+      "amount": "Aantal keer",
+      "info": "Info",
+      "actions": "Acties"
+    },
+    "bottom_row": {
+      "skill_amount": "Aantal vaardigheden:",
+      "skill_totalxp": "Totaal:",
+      "button_erase": "Wissen",
+      "button_erase_title": "Alle vaardigheden verwijderen"
+    },
+    "modals": {
+      "not_allowed_to_add": "\nToevoegen is niet toegestaan.\n",
+      "maximum_skill_amount_reached": "Maximum aantal aankopen bereikt.",
+      "maximum_xp_reached": "Maximum XP bereikt."
+    }
+  },
+  "info_tooltip": {
+    "pdf_reference": "Open Vaardigheden.pdf - pagina"
+  },
+  "skill_tooltip": {
+    "extra_skill_req": "tenminste 1 Extra vaardigheid",
+    "any_of_these_req": "Een van de volgende:",
+    "category_req": "XP in de volgende categoriën:",
+    "labels": {
+      "xp_cost": "XP kosten",
+      "requirements": "Vereisten:",
+      "description": "Omschrijving:"
+    }
+  },
+  "spell_tooltip": {
+    "pdf_reference": "Open Spreuken_en_Technieken.pdf - pagina",
+    "labels": {
+      "energy_cost": "Energie kosten:",
+      "energy_type": "Energie type:",
+      "incantation": "Incantatie:",
+      "description": "Omschrijving:",
+      "effect": "Effect:",
+      "duration": "Duur:"
+    }
+  },
+  "recipe_tooltip": {
+    "labels": {
+      "inspiration_cost": "Inspiratie kosten:",
+      "description": "Omschrijving:",
+      "supplies": "Benodigdheden:"
+    }
+  },
+  "fileupload_modal": {
+    "labels": {
+      "upload_file": "Upload een Bestand"
+    },
+    "modals": {
+      "cant_load_version": "Deze versie van dit character kan helaas niet ingeladen worden.",
+      "unknown_error": "Er ging iets mis bij het inlezen van het bestand."
+    }
+  },
+  "character_table": {
+    "labels": {
+      "no_characters": "Geen characters gevonden"
+    }
+  },
+  "loadcharacter_modal": {
+    "labels": {
+      "load_character": "Laad een Character"
+    },
+    "modals": {
+      "cant_load_version": "Deze versie van dit character kan helaas niet ingeladen worden.",
+      "unknown_error": "Er ging iets mis bij het inlezen van het bestand."
+    }
+  },
+  "loadpreset_modal": {
+    "labels": {
+      "view_template": "Bekijk een template",
+      "description": "Deze templates dienen als voorbeeld voor hoe bepaalde \narche - type characters er bij VA uit zou kunnen zien.\nPer arche - type hebben we getracht een voorbeeld te \ngeven van het soort spel dat je zou kunnen verwachten."
+    },
+    "modals": {
+      "cant_load_version": "De versie van deze templates komt niet overeen met de huidige regelset versie.",
+      "unknown_error": "Er ging iets mis bij het inlezen van het bestand."
+    }
+  },
+  "releasenotes_modal": {
+    "labels": {
+      "version_info": "Versie informatie",
+      "release_version": "release versie"
+    }
+
+  },
+  "template_table": {
+    "labels": {
+      "no_presets_found": "Geen presets gevonden",
+      "template": "Template:"
+    }
+  },
+  "shared_objects": {
+    "hitpoints": "Totaal HP",
+    "armourpoints": "Max AP",
+    "elemental_mana": "Elementaire Mana",
+    "elemental_ritual_mana": "Rituele Elementaire Mana",
+    "spiritual_mana": "Spirituele Mana",
+    "spiritual_ritual_mana": "Rituele Spirituele Mana",
+    "inspiration": "Inspiratie",
+    "willpower": "Wilskracht",
+    "glyph_craft_cap": "Glyph Craft cap",
+    "glyph_imbue_cap": "Glpyh Imbue cap",
+    "rune_craft_cap": "Rune Craft cap",
+    "rune_imbue_cap": "Rune Imbue cap"
+  },
+  "shared_actions": {
+    "modals": {
+      "cant_remove": "Verwijderen is niet toegestaan.",
+      "item_is_prerequisite": "Dit item is een vereiste voor de vaardigheid:",
+      "xp_requirement": "Dit item is nodig voor de vereiste XP",
+      "for skill": "voor de vaardigheid:",
+      "exception_requirement": "Dit item is nodig als uitzondering op vereisten voor de vaardigheid:"
+    }
+  }
+}
