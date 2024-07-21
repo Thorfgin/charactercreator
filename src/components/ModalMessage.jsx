@@ -1,12 +1,17 @@
 import { v4 as uuidv4 } from 'uuid';
+import { useTranslation } from 'react-i18next';
 
 // Shared
 import { useSharedState } from '../SharedStateContext.jsx';
 
 // Toont een Modal message met alleen een sluit knop
 export default function ModalMessage() {
+    // Multi-Language support klaarzetten
+    const { t } = useTranslation();
+
     // Ophalen uit SharedStateContext
     const {
+        modalHeader,
         modalMsg,
         setShowModal
     } = useSharedState();
@@ -22,6 +27,7 @@ export default function ModalMessage() {
     return (
         <div className="modal-overlay" onClick={closeModal}>
             <div className="modal" onClick={e => e.stopPropagation()}>
+                <h3>{modalHeader}</h3>
                 <div className="modal-container">
                     {msgBlocks.map((block) => (
                         <div key={uuidv4()} className="modal-block">
@@ -30,7 +36,7 @@ export default function ModalMessage() {
                     ))}
                 </div>
                 <button className="btn-primary" onClick={closeModal}>
-                    OK
+                    {t("generic.ok")}
                 </button>
             </div>
             <span className="close" onClick={closeModal}>&times;</span>

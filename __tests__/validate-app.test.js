@@ -41,6 +41,7 @@ function getSkillsFromExtraVaardigheden(skillIds) {
 }
 
 // Prepare for useState Mock
+const setModalHeader = jest.fn();
 const setModalMsg = jest.fn();
 
 /// --- Pre-Requisites --- ///
@@ -48,7 +49,7 @@ const setModalMsg = jest.fn();
 describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
     beforeEach(() => {
         const useStateSpy = jest.spyOn(React, 'useState');
-        useStateSpy.mockImplementation((init) => [init, setModalMsg]);
+        useStateSpy.mockImplementation((init) => [init, setModalHeader, setModalMsg ]);
     })
 
     // No Prerequisites
@@ -56,7 +57,7 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
     test('Can remove a Skill that has no prerequisites', () => {
         const mockTableData = getSkillsFromBasisVaardigheden([103]);
 
-        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(103, true, mockTableData, setModalMsg);
+        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(103, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(false);
     });
 
@@ -66,10 +67,10 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
     test('Cannot remove a Skill that is a prerequisite of type: skill', () => {
         const mockTableData = getSkillsFromBasisVaardigheden([103, 104]); 
 
-        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(103, true, mockTableData, setModalMsg);
+        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(103, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(true);
 
-        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(104, true, mockTableData, setModalMsg);
+        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(104, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(false);
     });
 
@@ -81,7 +82,7 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
     test('Cannot remove a Skill that is the only matching prerequisite of type: any-list', () => {
         const skills = [126, 350, 131, 300 ]
         const mockTableData = getSkillsFromBasisVaardigheden(skills);
-        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(350, true, mockTableData, setModalMsg);
+        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(350, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(true);
     });
 
@@ -94,7 +95,7 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
     test('Can remove a Skill that still has a skill matching same prerequisite of type: any-list', () => {
         const skills = [126, 350, 351, 131, 300]
         const mockTableData = getSkillsFromBasisVaardigheden(skills);
-        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(350, true, mockTableData, setModalMsg);
+        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(350, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(false);
     });
 
@@ -111,16 +112,16 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
         const tableDataExtra = getSkillsFromExtraVaardigheden(extraSkills);
         const mockTableData = [...tableDataBasis, ...tableDataExtra]
 
-        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(350, true, mockTableData, setModalMsg);
+        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(350, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(false);
 
-        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(200, true, mockTableData, setModalMsg);
+        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(200, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(true);
 
-        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(203, true, mockTableData, setModalMsg);
+        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(203, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(false);
 
-        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(400, true, mockTableData, setModalMsg);
+        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(400, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(false);
     });
 
@@ -130,10 +131,10 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
     test('Cannot remove a Skill that is a prerequisite of type: by Category: 4 XP', () => {
         const mockTableData = getSkillsFromBasisVaardigheden([275, 279]);
 
-        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(275, true, mockTableData, setModalMsg);
+        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(275, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(true);
 
-        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(279, true, mockTableData, setModalMsg);
+        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(279, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(false);
     });
 
@@ -148,13 +149,13 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
         const tableDataExtra = getSkillsFromExtraVaardigheden(extraSkills);
         const mockTableData = [...tableDataBasis, ...tableDataExtra]
 
-        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(350, true, mockTableData, setModalMsg);
+        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(350, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(true);
 
-        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(352, true, mockTableData, setModalMsg);
+        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(352, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(true);
 
-        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(502, true, mockTableData, setModalMsg);
+        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(502, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(false);
     });
 
@@ -172,13 +173,13 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
 
         const mockTableData = [...tableDataBasis, ...tableDataExtra]
 
-        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(375, true, mockTableData, setModalMsg);
+        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(375, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(true);
 
-        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(376, true, mockTableData, setModalMsg);
+        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(376, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(false);
 
-        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(578, true, mockTableData, setModalMsg);
+        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(578, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(false);
     });
 
@@ -195,13 +196,13 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
 
         const mockTableData = [...tableDataBasis, ...tableDataExtra]
 
-        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(175, true, mockTableData, setModalMsg);
+        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(175, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(true);
 
-        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(111, true, mockTableData, setModalMsg);
+        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(111, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(false);
 
-        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(425, true, mockTableData, setModalMsg);
+        isPrerequisite = isSkillAPrerequisiteToAnotherSkill(425, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(true);
     });
 
@@ -218,7 +219,7 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
         const tableDataExtra = getSkillsFromExtraVaardigheden(extraSkills);
         const mockTableData = [...tableDataBasis, ...tableDataExtra]
         
-        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(651, true, mockTableData, setModalMsg);
+        let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(651, true, mockTableData, setModalHeader, setModalMsg);
         expect(isPrerequisite).toBe(true);
     });
 });
@@ -238,7 +239,7 @@ test('Can remove a Skill Count when it is a Skill prerequisite with Count > 1', 
     mockPaladijn.xp = 3;
     mockPaladijn.count = 3;
 
-    let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(131, false, mockTableData, setModalMsg);
+    let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(131, false, mockTableData, setModalHeader, setModalMsg);
     expect(isPrerequisite).toBe(false);
 });
 
@@ -255,7 +256,7 @@ test('Cannot remove a Skill Count when it is a Skill prerequisite with Count = 1
     mockPaladijn.xp = 1;
     mockPaladijn.count = 1;
 
-    let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(131, false, mockTableData, setModalMsg);
+    let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(131, false, mockTableData, setModalHeader, setModalMsg);
     expect(isPrerequisite).toBe(true);
 });
 

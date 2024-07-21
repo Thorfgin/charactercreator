@@ -6,7 +6,7 @@
       "alt_skill": "",
       "category": "Algemene vaardigheden",
       "page": 11,
-      "description": "Deze vaardigheid geeft je de mogelijkheid om 2 wapens tegelijk te gebruiken - in elke hand 1. Tevens geeft dit de mogelijkheid om met slechts 1 vrije hand spreuken te gebruiken. Een tweehandig wapen mag tijdelijk in 1 hand genomen worden zolang je er niet mee slaat of blokt, om op die manier bijvoorbeeld een spreuk te doen met 1 hand.",      
+      "description": "Deze vaardigheid geeft je de mogelijkheid om 2 wapens tegelijk te gebruiken - in elke hand 1. Tevens geeft dit de mogelijkheid om met slechts 1 vrije hand spreuken te gebruiken. Een tweehandig wapen mag tijdelijk in 1 hand genomen worden zolang je er niet mee slaat of blokt, om op die manier bijvoorbeeld een spreuk te doen met 1 hand.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -474,7 +474,7 @@
       "page": 17,
       "description": "Met deze vaardigheid mag je een wapen gebruiken dat langer is dan 110 cm, met een maximum lengte van 150 cm, gerekend van uiteinde tot uiteinde. Een tweehandig wapen MOET altijd met twee handen gehanteerd worden. Met hanteren wordt bedoeld blokken of slaan. Een wapen hoeft niet ten alle tijden met twee handen vastgehouden te worden en mag bijvoorbeeld tegen een schouder rusten zodat je handen vrij zijn. ",
       "Requirements": {
-        "skill": [],
+        "skill": [151],
         "any_list": []
       },
       "xp": 1,
@@ -494,7 +494,7 @@
       "page": 17,
       "description": "Met deze vaardigheid mag je een wapen gebruiken dat langer is dan 150 cm, met een maximum lengte van 215 cm, gerekend van uiteinde tot uiteinde. Een wapen van langer dan 150 cm MOET altijd met twee handen gehanteerd worden. Waarbij tenminste één hand het midden van het wapen vast heeft. Met hanteren wordt bedoeld blokken of slaan. Een wapen hoeft niet ten alle tijden met twee handen vastgehouden te worden en mag bijvoorbeeld tegen een schouder rusten zodat je handen vrij zijn. ",
       "Requirements": {
-        "skill": [],
+        "skill": [151],
         "any_list": []
       },
       "xp": 1,
@@ -1395,11 +1395,7 @@
       "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Hidden Object, Chilling Winds, Freedom of Movement en Strike Cascade.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Magiërvaardigheden" ],
-          "value": 4
-        }
+        "any_list": [ 275, 276, 277 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -1424,11 +1420,7 @@
       "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Strengthen Armour, Horrific Revelation, Boon of Disease en Life Draw.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Magiërvaardigheden" ],
-          "value": 4
-        },
+        "any_list": [ 275, 276, 277 ],
         "exception": [ 651, 675 ]
       },
       "xp": 4,
@@ -1454,11 +1446,7 @@
       "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Harden, Minor Reinforcement Cascade, Sands of Sleep en Boon of Mending.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Magiërvaardigheden" ],
-          "value": 4
-        }
+        "any_list": [ 275, 276, 277 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -1483,11 +1471,7 @@
       "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Mind Protection, Force Truth, Corrupt the Flow of Life en Iceblast.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Magiërvaardigheden" ],
-          "value": 4
-        }
+        "any_list": [ 275, 276, 277 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -1512,11 +1496,8 @@
       "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Cleansed by Fire, Fireblast, Inner Fire en Imbue Blast.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Magiërvaardigheden" ],
-          "value": 4
-        }
+        "any_list": [ 275, 276, 277 ],
+        "exception": [ 625 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -1541,11 +1522,7 @@
       "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: Rend Enchantment, Shatter Armour, Nature’s Protection en Charm Person.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Magiërvaardigheden" ],
-          "value": 4
-        },
+        "any_list": [ 275, 276, 277 ],
         "exception": [ 650 ]
       },
       "xp": 4,
@@ -1696,11 +1673,8 @@
       "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Disease of Temperance, Minor Regeneration, Pure Body and Mind, Protection from Impairment.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Priestervaardigheden" ],
-          "value": 4
-        }
+        "any_list": [325, 326, 327],
+        "exception": [ 625 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -1725,11 +1699,7 @@
       "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Mute Cascade, Shatter Armour, Boon of Break Enchantment, Curse Life.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Priestervaardigheden" ],
-          "value": 4
-        }
+        "any_list": [ 325, 326, 327 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -1754,11 +1724,7 @@
       "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Paralyze Undead, Speak with the Dead, Sanctuary Ward en Life Draw.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Priestervaardigheden" ],
-          "value": 4
-        },
+        "any_list": [ 325, 326, 327 ],
         "exception": [ 651, 675 ]
       },
       "xp": 4,
@@ -1784,11 +1750,7 @@
       "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Fascinated Mind, Discern Pattern, Mind Protection en Commandment.",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Priestervaardigheden" ],
-          "value": 4
-        }
+        "any_list": [ 325, 326, 327 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -1813,11 +1775,7 @@
       "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Hex Weapon,Freedom of Movement, Resist Special Damage, Aspect of the Dryad",
       "Requirements": {
         "skill": [],
-        "any_list": [],
-        "Category": {
-          "name": [ "Priestervaardigheden" ],
-          "value": 4
-        },
+        "any_list": [ 325, 326, 327 ],
         "exception": [ 650 ]
       },
       "xp": 4,
@@ -3389,7 +3347,8 @@
       "description": "Je krijgt 5 elementaire mana per dag.\\nJe krijgt toegang tot de spreuken: Aspect of the Efreet en Incinerate.",
       "Requirements": {
         "skill": [ 282 ],
-        "any_list": []
+        "any_list": [],
+        "exception": [625]
       },
       "xp": 4,
       "loresheet": {},
@@ -3627,7 +3586,8 @@
       "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: Holy Bolt en Divine Armour.",
       "Requirements": {
         "skill": [ 328 ],
-        "any_list": []
+        "any_list": [],
+        "exception": [ 625 ]
       },
       "xp": 4,
       "loresheet": {},
@@ -4153,7 +4113,7 @@
     {
       "id": 625,
       "skill": "Demonologist A",
-      "alt_skill": "Demonoloog A",
+      "alt_skill": "Demonologist A",
       "category": "Demonologie",
       "page": 70,
       "description": "De demonoloog kan zijn demonologie, fire en purity spreuken casten met zowel spirituele als elementaire mana. \\nJe krijgt toegang tot de spreuken: “Detect Servitar”,“Reveal All Servitars”, “Break Minor Possession” en “Faustian Deal”.\\nDaarnaast mag een demonoloog de vereisten om “Fire” en “Purity” aan te leren, negeren.Tot slot krijgt de demonoloog 5 extra punten (vergelijkbaar met 5 energie) voor een ritueel als de demonoloog een ritueel leidt dat als effect heeft:\\n* Een servitar contract verbreken\\n* Een servitar possession verbreken\\n* Een specifieke servitar oproepen\\n* Iemand een servitar maken (kan alleen met toestemming van een godheiduiteraard)\\n* Sommige andere rituelen in overleg met rituele spelleiding.",
@@ -4173,7 +4133,7 @@
     {
       "id": 626,
       "skill": "Demonologist B (EL)",
-      "alt_skill": "Demonoloog B",
+      "alt_skill": "Demonologist B",
       "category": "Demonologie",
       "page": 70,
       "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot despreuken: “Demonic Eye”, “Command Servitar”, “Banish Servitar” “Smite Servitar en “Invite Demon”.",
@@ -4198,7 +4158,7 @@
     {
       "id": 627,
       "skill": "Demonologist B (SP)",
-      "alt_skill": "Demonoloog B",
+      "alt_skill": "Demonologist B",
       "category": "Demonologie",
       "page": 70,
       "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot despreuken: “Demonic Eye”, “Command Servitar”, “Banish Servitar” “Smite Servitar en “Invite Demon”.",
@@ -4223,7 +4183,7 @@
     {
       "id": 628,
       "skill": "Demonologist C (EL)",
-      "alt_skill": "Demonoloog C",
+      "alt_skill": "Demonologist C",
       "category": "Demonologie",
       "page": 70,
       "description": "Je krijgt 5 elementaire mana per dag. \\nJe krijgt toegang tot de spreuken: “Greater Demonic Eye”, “Invite Greater Demon” en “Transfer Contract”.",
@@ -4248,7 +4208,7 @@
     {
       "id": 629,
       "skill": "Demonologist C (SP)",
-      "alt_skill": "Demonoloog C",
+      "alt_skill": "Demonologist C",
       "category": "Demonologie",
       "page": 70,
       "description": "Je krijgt 5 spirituele mana per dag. \\nJe krijgt toegang tot de spreuken: “Greater Demonic Eye”, “Invite Greater Demon” en “Transfer Contract”.",

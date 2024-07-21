@@ -1,0 +1,2476 @@
+{
+  "Categories": [
+    {
+      "categorie": "Fighter Skills",
+      "Skills": [
+        {
+          "id": [ 175 ],
+          "skill": "Perseverance",
+          "Spells": [
+            {
+              "id": 1,
+              "spell": "Crippling Blow",
+              "mana_type": "Willpower",
+              "mana_cost": "1",
+              "incantation": "SLOW!",
+              "description": "The warrior is able to focus their willpower on the legs of their opponent. Once, when striking the legs, the warrior can inflict a SLOW effect. This technique can only be used once per minute.",
+              "spell_effect": "Immediate",
+              "spell_duration": "5 minutes",
+              "page": 18
+            },
+            {
+              "id": 2,
+              "spell": "Minor Resilience",
+              "mana_type": "Willpower",
+              "mana_cost": "1",
+              "incantation": "By my might, grant me resilience!",
+              "description": "The warrior can grant themselves 1 extra hit point until sunrise. This extra hit point cannot be healed, so the technique must be repeated if the extra hit point is lost.",
+              "spell_effect": "Self",
+              "spell_duration": "Until sunrise",
+              "page": 18
+            }
+          ]
+        },
+        {
+          "id": [ 176 ],
+          "skill": "Strength A",
+          "Spells": [
+            {
+              "id": 3,
+              "spell": "Striking Blow",
+              "mana_type": "Willpower",
+              "mana_cost": "1",
+              "incantation": "STRIKE!",
+              "description": "The warrior is able to concentrate their willpower into an attack with a weapon. This weapon will strike with STRIKE once. This can only be done with a weapon larger than 45 cm. \\nThis technique can only be used once per minute.",
+              "spell_effect": "Immediate",
+              "spell_duration": "",
+              "page": 18
+            },
+            {
+              "id": 4,
+              "spell": "Confusing Blow",
+              "mana_type": "Willpower",
+              "mana_cost": "2",
+              "incantation": "CONFUSE!",
+              "description": "The warrior is able to concentrate their willpower into an attack with a weapon. This weapon will strike with CONFUSE once. This can only be done with a weapon larger than 45 cm. \\nThis technique can only be used once per minute.",
+              "spell_effect": "Immediate, Mind-affecting",
+              "spell_duration": "5 minutes",
+              "page": 19
+            }
+          ]
+        },
+        {
+          "id": [ 601 ],
+          "skill": "Strength B",
+          "Spells": [
+            {
+              "id": 5,
+              "spell": "Heavy Blow",
+              "mana_type": "Willpower",
+              "mana_cost": "2",
+              "incantation": "BLAST!",
+              "description": "The warrior is able to concentrate their willpower into an attack with a weapon. This weapon will strike with BLAST once. This can only be done with a weapon larger than 45 cm. The effect only occurs when the warrior wields their weapon with two hands. \\nThis technique can only be used once per minute.",
+              "spell_effect": "Immediate",
+              "spell_duration": "",
+              "page": 19
+            },
+            {
+              "id": 6,
+              "spell": "Withstand Strike",
+              "mana_type": "Willpower",
+              "mana_cost": "1",
+              "incantation": "I stand strong! NO EFFECT!",
+              "description": "The warrior is able to resist an attack using their willpower. In response to a STRIKE effect, the warrior can use their willpower to negate the effect, though they still take any potential damage from the weapon strike.",
+              "spell_effect": "Immediate, Self",
+              "spell_duration": "",
+              "page": 19
+            }
+          ]
+        },
+        {
+          "id": [ 177 ],
+          "skill": "Toughness A",
+          "Spells": [
+            {
+              "id": 7,
+              "spell": "Resist Blast",
+              "mana_type": "Willpower",
+              "mana_cost": "1",
+              "incantation": "I will withstand this blast!, RESIST!",
+              "description": "The warrior is able to resist an attack using their willpower. In response to a BLAST effect, the warrior can use their willpower and only receive 1 damage.",
+              "spell_effect": "Immediate, Self",
+              "spell_duration": "",
+              "page": 20
+            },
+            {
+              "id": 8,
+              "spell": "Pain Suppression",
+              "mana_type": "Willpower",
+              "mana_cost": "1",
+              "incantation": "By my will, I shall suppress my pain!",
+              "description": "This technique can only be used by incapacitated warriors (warriors at 0 HP). \\nWhen the warrior is incapacitated, they can, through a brief exertion of willpower, muster enough strength to rise and continue fighting. If the warrior takes another blow, they will be fatally wounded and dying. \\nAfter 1 minute, the warrior will become fatally wounded regardless.",
+              "spell_effect": "Immediate, Self",
+              "spell_duration": "60 seconds",
+              "page": 20
+            }
+          ]
+        },
+        {
+          "id": [ 602 ],
+          "skill": "Toughness B",
+          "Spells": [
+            {
+              "id": 9,
+              "spell": "Poison & Disease Protection",
+              "mana_type": "Willpower",
+              "mana_cost": "2",
+              "incantation": "By my might, I will not fall ill!",
+              "description": "The warrior is able to resist an attack using their willpower. \\nThe warrior is immune to the first POISON or DISEASE effect for the duration of this technique.",
+              "spell_effect": "Self",
+              "spell_duration": "1 hour or until used",
+              "page": 20
+            },
+            {
+              "id": 10,
+              "spell": "Resist Crush",
+              "mana_type": "Willpower",
+              "mana_cost": "2",
+              "incantation": "I will withstand this crush!, RESIST!",
+              "description": "The warrior is able to resist an attack using their willpower. \\nIn response to a CRUSH effect, the warrior can use their willpower and only receive 1 damage.",
+              "spell_effect": "Immediate, Self",
+              "spell_duration": "",
+              "page": 20
+            }
+          ]
+        },
+        {
+          "id": [ 178 ],
+          "skill": "Leadership A",
+          "Spells": [
+            {
+              "id": 11,
+              "spell": "Hold the Line",
+              "mana_type": "Willpower",
+              "mana_cost": "2",
+              "incantation": "By my might, we will hold the line!",
+              "description": "The warrior can use this technique on up to 3 people by repeating the last part of the incantation and briefly touching up to 3 individuals (during the last part of the incantation). \\nThe recipients are immune to the next FEAR or STRIKE effect for the duration of this technique.",
+              "spell_effect": "Touch",
+              "spell_duration": "1 hour or until used",
+              "page": 21
+            },
+            {
+              "id": 12,
+              "spell": "Rescue Comrade",
+              "mana_type": "Willpower",
+              "mana_cost": "1",
+              "incantation": "By my might, I will rescue you!",
+              "description": "When used on someone who is incapacitated (at 0 HP) or dying, that person can stand up and run alongside you as long as you continue to support them and repeat the incantation with them. If the touch or duration is broken/expired, the target of this skill collapses again. \\nNote: This is not healing. If the target is dying, time continues.",
+              "spell_effect": "Touch",
+              "spell_duration": "up to 1 minute",
+              "page": 21
+            }
+          ]
+        },
+        {
+          "id": [ 603 ],
+          "skill": "Leadership B",
+          "Spells": [
+            {
+              "id": 13,
+              "spell": "Inspect Armour",
+              "mana_type": "Willpower",
+              "mana_cost": "2",
+              "incantation": "By my might, wear this armour with pride!",
+              "description": "The touched armor gains 1 additional armor point for an hour or until it is damaged. This technique only works if the recipient wears at least 1 point of physical armor that needs to be briefly (15 seconds) inspected. This spell can be used on up to 3 armors simultaneously by repeating the last part of the incantation and touching up to 3 armors.",
+              "spell_effect": "Touch",
+              "spell_duration": "1 hour",
+              "page": 21
+            },
+            {
+              "id": 14,
+              "spell": "Insight",
+              "mana_type": "Willpower",
+              "mana_cost": "2",
+              "incantation": "I will keep focused, NO EFFECT!",
+              "description": "In response to a MIND-AFFECTING effect, you can use your willpower to ignore the effect.",
+              "spell_effect": "Immediate, Self",
+              "spell_duration": "",
+              "page": 21
+            }
+          ]
+        },
+        {
+          "id": [ 179 ],
+          "skill": "Protection A",
+          "Spells": [
+            {
+              "id": 15,
+              "spell": "Block Spell",
+              "mana_type": "Willpower",
+              "mana_cost": "2",
+              "incantation": "My shield will block that spell. NO EFFECT!",
+              "description": "The warrior may use their shield to counter a spell aimed at themselves or someone directly behind them. The technique must be initiated within 1 second after the incantation of the spell to be blocked is completed. \\nNOTE: Some spells cannot be countered. In that case, the caster will call out 'NO EFFECT' on your block spell, and the original spell will still take effect.",
+              "spell_effect": "Immediate",
+              "spell_duration": "",
+              "page": 22
+            },
+            {
+              "id": 16,
+              "spell": "Withstand Freeze",
+              "mana_type": "Willpower",
+              "mana_cost": "1",
+              "incantation": "I will not be held back by cold, NO EFFECT!",
+              "description": "For the duration of this technique, the warrior is immune to the next FREEZE effect.",
+              "spell_effect": "Self",
+              "spell_duration": "1 hour or until used",
+              "page": 22
+            }
+          ]
+        },
+        {
+          "id": [ 604 ],
+          "skill": "Protection B",
+          "Spells": [
+            {
+              "id": 17,
+              "spell": "Defensive Stance",
+              "mana_type": "Willpower",
+              "mana_cost": "3",
+              "incantation": "By my might, I will stand strong",
+              "description": "The warrior may take cover behind their shield, holding their position and cannot move more than 1 meter from their current location or this technique ends. The warrior gains 2 extra hit points and is immune to STRIKE and FEAR. This technique can only be used once every 5 minutes.",
+              "spell_effect": "Immediate, Self",
+              "spell_duration": "5 minutes or until stance is broken",
+              "page": 22
+            },
+            {
+              "id": 18,
+              "spell": "Withstand Torture",
+              "mana_type": "Willpower",
+              "mana_cost": "3",
+              "incantation": "This pain will not stop me, NO EFFECT!",
+              "description": "In response to a TORTURE effect, the warrior can use their willpower to ignore the effect. This technique must be initiated within 2 seconds after the torture is cast.",
+              "spell_effect": "Immediate, Self",
+              "spell_duration": "",
+              "page": 22
+            }
+          ]
+        },
+        {
+          "id": [ 180 ],
+          "skill": "Berserker A",
+          "Spells": [
+            {
+              "id": 19,
+              "spell": "Withstand Slow",
+              "mana_type": "Willpower",
+              "mana_cost": "1",
+              "incantation": "I will not slow down, NO EFFECT!",
+              "description": "For the duration of this technique, the warrior is immune to the next SLOW effect.",
+              "spell_effect": "Self",
+              "spell_duration": "1 hour or until used",
+              "page": 23
+            },
+            {
+              "id": 20,
+              "spell": "Fearful Presence",
+              "mana_type": "Willpower",
+              "mana_cost": "1",
+              "incantation": "Be afraid of my might, FEAR me!",
+              "description": "The recipient of this FEAR will do everything possible to quickly get out of sight of the fighter and will try to avoid the fighter for the duration of the technique. If unable to flee from the fighter, the recipient will cower in fear. When faced with a situation where they cannot escape and combat ensues, the recipient of the spell may attempt to defend themselves.",
+              "spell_effect": "Mind-affecting, 5 meters",
+              "spell_duration": "30 seconds",
+              "page": 23
+            }
+          ]
+        },
+        {
+          "id": [ 605 ],
+          "skill": "Berserker B",
+          "Spells": [
+            {
+              "id": 21,
+              "spell": "Rage",
+              "mana_type": "Willpower",
+              "mana_cost": "3",
+              "incantation": "By my might, Feel my rage !",
+              "description": "The warrior becomes reckless and aggressive. (Note: Safety first, Fight responcibly)\\nFor the duration of this technique, the warrior gains 3 extra hit points and can only use fighter skills.\\nThis technique can only be used once every 5 minutes.\\nNote: Safety firest, Fight responcibly!",
+              "spell_effect": "Self",
+              "spell_duration": "1 minute",
+              "page": 23
+            },
+            {
+              "id": 22,
+              "spell": "Withstand Fear",
+              "mana_type": "Willpower",
+              "mana_cost": "1",
+              "incantation": "I will stay focused, NO EFFECT!",
+              "description": "In response to a FEAR effect, the warrior can use their willpower to ignore the effect.",
+              "spell_effect": "Immediate, Self",
+              "spell_duration": "",
+              "page": 23
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categorie": "Mage Spells",
+      "Skills": [
+        {
+          "id": [ 275 ],
+          "skill": "White Magic",
+          "Spells": [
+            {
+              "id": 25,
+              "spell": "Detect Magic",
+              "mana_type": "Elemental",
+              "mana_cost": "1",
+              "incantation": "By the powers of the elements, I Detect Magic!",
+              "description": "This spell can be used in 2 different ways (but not simultaneously).\n\nOptions:\n1) All magical objects and persons within 5 meters of the magician will light up as magical. Persons and objects with an elemental enchantment or glyph imbue are considered magical. Detected persons must briefly raise their hand.\n2) The magician can touch an object or person and attempt to identify the type of magic present. If it's a spell they can cast themselves, they will even identify it exactly. This spell cannot identify other magicians.\n\nPossessing magical objects or being under the influence of magical spells or effects will not disrupt this spell's reading.",
+              "spell_effect": "Immediate, 5 meters or Touch",
+              "spell_duration": "",
+              "page": 24
+            },
+            {
+              "id": 26,
+              "spell": "Ray of Confusion",
+              "mana_type": "Elemental",
+              "mana_cost": "1",
+              "incantation": "By the powers of the elements, I CONFUSE you!",
+              "description": "The recipient receives a CONFUSE effect.",
+              "spell_effect": "Enchantment, Mind-affecting, 5 meters",
+              "spell_duration": "30 seconds",
+              "page": 24
+            },
+            {
+              "id": 27,
+              "spell": "Dazzling Strike",
+              "mana_type": "Elemental",
+              "mana_cost": "1",
+              "incantation": "By the powers of the elements, be blown away! STRIKE!",
+              "description": "The recipient of this spell will receive the STRIKE effect. The spell does not inflict damage, only the effect.",
+              "spell_effect": "Immediate, 5 meters",
+              "spell_duration": "",
+              "page": 24
+            },
+            {
+              "id": 28,
+              "spell": "Break Impurity",
+              "mana_type": "Elemental",
+              "mana_cost": "1",
+              "incantation": "By the powers of the elements, I BREAK this ENCHANTMENT!",
+              "description": "The recipient receives a BREAK ENCHANTMENT effect.",
+              "spell_effect": "Immediate, Touch",
+              "spell_duration": "",
+              "page": 24
+            },
+            {
+              "id": 29,
+              "spell": "Counter Spell",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of the elements, I counter that spell!",
+              "description": "Counters a spell. The magician must be within 5 meters of the caster of the spell they wish to counter. The counter spell must be initiated within 1 second after the incantation of the spell to be countered is completed.\n\nNOTE: Some spells cannot be countered. In such cases, the caster will call 'NO EFFECT' on your counter spell, and the original spell will still take effect.",
+              "spell_effect": "Immediate, 5 meters",
+              "spell_duration": "",
+              "page": 25
+            }
+          ]
+        },
+        {
+          "id": [ 276 ],
+          "skill": "Grey Magic",
+          "Spells": [
+            {
+              "id": 30,
+              "spell": "Mend",
+              "mana_type": "Elemental",
+              "mana_cost": "1",
+              "incantation": "By the powers of the elements, I Mend what was broken!",
+              "description": "The magician can repair 1 broken or damaged object. This spell can also be used to repair damaged armor.\n\nWhen used on armor, the armor is repaired for 1 armor point per 10 seconds of incantation time. You can also repair small broken objects, such as a torn letter, a broken cup, etc.",
+              "spell_effect": "Immediate, Touch",
+              "spell_duration": "10 seconds incantation time per AP",
+              "page": 25
+            },
+            {
+              "id": 31,
+              "spell": "Minor Reinforcement",
+              "mana_type": "Elemental",
+              "mana_cost": "1",
+              "incantation": "By the powers of the elements, I reinforce my/this armour!",
+              "description": "The touched armor gains 1 extra armor point until the spell ends or until it is removed. The spell only works if the recipient is wearing at least 1 point of physical armor.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 25
+            },
+            {
+              "id": 32,
+              "spell": "Imbue Strike",
+              "mana_type": "Elemental",
+              "mana_cost": "1",
+              "incantation": "By the powers of the elements, I Imbue this weapon to strike with great force!",
+              "description": "The touched weapon will cause the STRIKE effect on two hits of your choice within the hour. Only usable on weapons longer than 45 cm.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour or until used",
+              "page": 26
+            },
+            {
+              "id": 33,
+              "spell": "Iron Will",
+              "mana_type": "Elemental",
+              "mana_cost": "1",
+              "incantation": "By the powers of the elements, I forge a mind of iron!",
+              "description": "The recipient of this spell may once ignore a mind-affecting spell or effect.\n\nWhen a mind-affecting spell or effect is cast on the recipient of Iron Will, that person must say: 'By my Iron Will, I defy that spell. NO EFFECT!'",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour or until used",
+              "page": 26
+            },
+            {
+              "id": 34,
+              "spell": "Slow Movement",
+              "mana_type": "Elemental",
+              "mana_cost": "1",
+              "incantation": "By the powers of the elements, SLOW down!",
+              "description": "The recipient receives a SLOW effect.",
+              "spell_effect": "Enchantment, 5 meters",
+              "spell_duration": "5 minutes",
+              "page": 26
+            }
+          ]
+        },
+        {
+          "id": [ 277 ],
+          "skill": "Black Magic",
+          "Spells": [
+            {
+              "id": 35,
+              "spell": "Magic Blast",
+              "mana_type": "Elemental",
+              "mana_cost": "1",
+              "incantation": "By the powers of the elements, May my touch BLAST you!",
+              "description": "The recipient receives a BLAST effect (3 damage).",
+              "spell_effect": "Immediate, Touch",
+              "spell_duration": "",
+              "page": 27
+            },
+            {
+              "id": 36,
+              "spell": "Instill Fear",
+              "mana_type": "Elemental",
+              "mana_cost": "1",
+              "incantation": "By the powers of the elements, FEAR me!",
+              "description": "The recipient receives a FEAR effect.",
+              "spell_effect": "Enchantment, 5 meters",
+              "spell_duration": "30 seconds",
+              "page": 27
+            },
+            {
+              "id": 37,
+              "spell": "Incite Aggression",
+              "mana_type": "Elemental",
+              "mana_cost": "1",
+              "incantation": "By the powers of the elements, Release your anger! INCITE AGGRESSION!",
+              "description": "The recipient receives an INCITE AGGRESSION effect.",
+              "spell_effect": "Enchantment, 5 meters",
+              "spell_duration": "5 minutes",
+              "page": 27
+            },
+            {
+              "id": 38,
+              "spell": "Forced Mute",
+              "mana_type": "Elemental",
+              "mana_cost": "1",
+              "incantation": "By the powers of the elements, I silence you! MUTE!",
+              "description": "The recipient receives a MUTE effect.",
+              "spell_effect": "Enchantment, 5 meters",
+              "spell_duration": "30 seconds",
+              "page": 27
+            },
+            {
+              "id": 39,
+              "spell": "Steal",
+              "mana_type": "Elemental",
+              "mana_cost": "1",
+              "incantation": "By the powers of the elements, I COMMAND you to give me that <object>!",
+              "description": "The recipient gives you the object you name. This spell can only be cast outside of combat.",
+              "spell_effect": "Enchantment, 5 meters",
+              "spell_duration": "5 minutes",
+              "page": 27
+            }
+          ]
+        },
+        {
+          "id": [ 278 ],
+          "skill": "Air Magic B",
+          "Spells": [
+            {
+              "id": 40,
+              "spell": "Hidden Object",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the power of Air, may this object be hidden from sight, sound and touch.",
+              "description": "An object becomes completely unnoticeable and cannot be found as long as you keep it with you. The object will not light up when detection spells are used (e.g., a Detect Magic spell). A person can be searched (by saying so!!!) and bags can be inspected, but this object cannot be found. You may simply inform the person searching you that they do not find the object if they find it OOC. The object cannot be longer than 45 cm. You can bring out or use the object at any time, making it immediately visible and ending the spell. This spell only works if the object is out of sight (i.e., hidden).",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "The rest of the day or until the object is revealed",
+              "page": 27
+            },
+            {
+              "id": 41,
+              "spell": "Chilling Winds",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Air, May the wind freeze you: FREEZE!",
+              "description": "The recipient receives a FREEZE effect. The spell ends when the mage loses concentration. The mage must continue to repeat the word “FREEZE” every second to indicate that concentration is maintained.",
+              "spell_effect": "Enchantment, Concentration, 5 meters",
+              "spell_duration": "30 seconds",
+              "page": 28
+            },
+            {
+              "id": 42,
+              "spell": "Freedom of Movement",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Air, Let my/your movement be free!",
+              "description": "The recipient becomes immune to all PARALYZE, SLOW, FREEZE, and STRIKE effects for the duration of this spell.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 28
+            },
+            {
+              "id": 43,
+              "spell": "Strike Cascade",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Air, I call upon the Wind! STRIKE!",
+              "description": "For this spell, the second part of the incantation can be repeated up to 3 times (within 1 minute) to affect up to 3 different people. The recipient receives a STRIKE effect. The spell does no damage, only the effect.",
+              "spell_effect": "Immediate, 5 meters",
+              "spell_duration": "",
+              "page": 29
+            }
+          ]
+        },
+        {
+          "id": [ 526 ],
+          "skill": "Air Magic C",
+          "Spells": [
+            {
+              "id": 44,
+              "spell": "Force Field",
+              "mana_type": "Elemental",
+              "mana_cost": "3",
+              "incantation": "By the powers of Air, Let me be protected by a force field!",
+              "description": "The recipient gains 3 extra armor points for the duration of this spell, is protected against BLAST effects which only do 1 damage, and also receives the SLOW effect. This spell only works if the recipient is not wearing any other forms of armor (this contradicts the regular rules regarding extra AP). The SLOW effect can never be negated.",
+              "spell_effect": "Enchantment, Self",
+              "spell_duration": "1 hour",
+              "page": 29
+            },
+            {
+              "id": 45,
+              "spell": "Tempest of Cleansing",
+              "mana_type": "Elemental",
+              "mana_cost": "3",
+              "incantation": "By the powers of Air, I BREAK all ENCHANTMENT!",
+              "description": "The recipient receives a BREAK ALL ENCHANTMENT effect.",
+              "spell_effect": "Immediate, 5 meters",
+              "spell_duration": "",
+              "page": 29
+            }
+          ]
+        },
+        {
+          "id": [ 279 ],
+          "skill": "Metal Magic B",
+          "Spells": [
+            {
+              "id": 46,
+              "spell": "Strengthen Armour",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Metal, I will strengthen your armour!",
+              "description": "The person gains 1 extra armour point and the armour is immune to the next shatter effect.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 30
+            },
+            {
+              "id": 47,
+              "spell": "Horrific Revelation",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Metal, I have a horrific revelation for you, FASCINATE!",
+              "description": "The recipient will listen to you for up to 5 minutes as long as you speak about a terrifying story. After at least 2 minutes, you may stop speaking and end with a TORTURE call.",
+              "spell_effect": "Concentration, Enchantment, Mind-Affecting, 5 meters",
+              "spell_duration": "max 5 minutes",
+              "page": 30
+            },
+            {
+              "id": 48,
+              "spell": "Boon of Disease",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Metal, I grant you a boon of Disease",
+              "description": "The recipient receives a blessing allowing them to cast the HIT Disease spell once. This does not cost the recipient mana and armour does not hinder its use. The incantation 'By the powers of Metal, I bestow upon you a HIT disease!' must be spoken.\n\nHIT Disease:\nThe spell recipient takes 1 HIT DISEASE damage.\nDirect, 5 meters",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 30
+            },
+            {
+              "id": 49,
+              "spell": "Life Draw",
+              "mana_type": "Elemental",
+              "mana_cost": "1",
+              "incantation": "By the powers of Metal, I drain your life! HIT!",
+              "description": "The recipient receives a HIT effect, and the caster heals one hit point. Lost hit points will be restored or additional hit points added, up to a maximum of 3. The extra hit points from Life Draw are cumulative but cannot be combined with other spells and effects (the strongest effect counts). All extra hit points obtained through this spell disappear at the next sunrise.",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "",
+              "page": 31
+            }
+          ]
+        },
+        {
+          "id": [ 527 ],
+          "skill": "Metal Magic C",
+          "Spells": [
+            {
+              "id": 50,
+              "spell": "Aura of Fear",
+              "mana_type": "Elemental",
+              "mana_cost": "3",
+              "incantation": "By the powers of Metal, I surround myself with an Aura of Fear!",
+              "description": "For the duration of this spell (30 seconds), the mage can inflict an unlimited number of FEAR effects by touching his target(s). The effect of this FEAR is otherwise identical to the FEAR spell.",
+              "spell_effect": "Enchantment, Self",
+              "spell_duration": "30 seconds",
+              "page": 31
+            },
+            {
+              "id": 51,
+              "spell": "Elemental Bolt",
+              "mana_type": "Elemental",
+              "mana_cost": "3",
+              "incantation": "By the powers of Metal, I strike you with an Elemental Bolt! CRUSH!",
+              "description": "The recipient of this spell receives a CRUSH effect (5 damage).",
+              "spell_effect": "Direct, 5 meters",
+              "spell_duration": "",
+              "page": 31
+            }
+          ]
+        },
+        {
+          "id": [ 280 ],
+          "skill": "Earth Magic B",
+          "Spells": [
+            {
+              "id": 52,
+              "spell": "Harden",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Earth, I grant you protection of the earth!",
+              "description": "The recipient becomes immune to all SHATTER, PARALYZE, and FREEZE effects for the duration of this spell.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 32
+            },
+            {
+              "id": 53,
+              "spell": "Minor Reinforcement Cascade",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Earth, I reinforce your armour!",
+              "description": "The second part of the incantation can be repeated up to 3 times (within 1 minute) to give up to 3 different touched armours 1 extra armour point each until the spell ends or the points are worn off. The spell only works if the recipient is wearing at least 1 point of physical armour.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 32
+            },
+            {
+              "id": 54,
+              "spell": "Sands of Sleep",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Earth, I put you to SLEEP!",
+              "description": "The recipient receives a SLEEP effect.",
+              "spell_effect": "Enchantment, Mind-Affecting, 5 meters",
+              "spell_duration": "5 minutes",
+              "page": 32
+            },
+            {
+              "id": 55,
+              "spell": "Boon of Mending",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Earth, I grant you a Boon of Mending!",
+              "description": "The recipient receives a blessing allowing them to cast the Mend spell once. This does not cost the recipient mana and armour does not hinder its use. The incantation 'By the powers of the earth, I mend what is broken!' must be spoken.\n\nMend: By the powers of the earth, I mend what is broken!\nThe mage can repair one broken or damaged object. This spell can also be used to repair broken armour. When used on armour, it is repaired for 1 armour point per 10 seconds the spell is spoken. Small broken objects such as a torn letter, broken cup, etc. can also be repaired.\nDirect, Touch, 10 seconds incantation time per AP.",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "10 seconds incantation time per AP",
+              "page": 32
+            }
+          ]
+        },
+        {
+          "id": [ 528 ],
+          "skill": "Earth Magic C",
+          "Spells": [
+            {
+              "id": 56,
+              "spell": "Stoneskin",
+              "mana_type": "Elemental",
+              "mana_cost": "3",
+              "incantation": "By the powers of Earth, Let my Skin be as Stone!",
+              "description": "The recipient gains 3 extra hitpoints for the duration of this spell.",
+              "spell_effect": "Enchantment, Self",
+              "spell_duration": "5 minutes",
+              "page": 33
+            },
+            {
+              "id": 57,
+              "spell": "Imbue Crush",
+              "mana_type": "Elemental",
+              "mana_cost": "3",
+              "incantation": "By the powers of Earth, I Imbue this weapon to strike a Crushing blow!",
+              "description": "The touched weapon deals a CRUSH effect (5 damage) with one strike of choice. Can only be used on weapons longer than 45 cm and not on ranged weapons.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour or until used",
+              "page": 33
+            }
+          ]
+        },
+        {
+          "id": [ 281 ],
+          "skill": "Water Magic B",
+          "Spells": [
+            {
+              "id": 58,
+              "spell": "Mind Protection",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Water, Let my mind be protected!",
+              "description": "The mage is immune to all mind-affecting spells and effects for the duration of this spell.",
+              "spell_effect": "Enchantment, Self",
+              "spell_duration": "5 minutes",
+              "page": 35
+            },
+            {
+              "id": 59,
+              "spell": "Force Truth",
+              "mana_type": "Elemental",
+              "mana_cost": "1",
+              "incantation": "By the powers of Water, Answer me truthfully!",
+              "description": "The recipient cannot lie for the duration of this spell. They can remain silent or talk around the answer. Note: if this spell is countered using another spell or technique with an incantation, your character hears the incantation and knows the Force Truth spell did not work. If the recipient only says NO EFFECT, your character does not realize the spell failed.",
+              "spell_effect": "Enchantment, Mind-Affecting, Touch",
+              "spell_duration": "1 hour",
+              "page": 35
+            },
+            {
+              "id": 60,
+              "spell": "Corrupt the Flow of Life",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Water, I CURSE your LIFE!",
+              "description": "The recipient receives a CURSE LIFE effect.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 35
+            },
+            {
+              "id": 61,
+              "spell": "Iceblast",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Water, IceBLAST!",
+              "description": "The recipient of the spell receives a BLAST effect (3 damage).",
+              "spell_effect": "Direct, 5 meters",
+              "spell_duration": "",
+              "page": 35
+            }
+          ]
+        },
+        {
+          "id": [ 529 ],
+          "skill": "Water Magic C",
+          "Spells": [
+            {
+              "id": 62,
+              "spell": "Gift of Knowledge",
+              "mana_type": "Elemental",
+              "mana_cost": "3",
+              "incantation": "By the powers of Water, I Grant you the Gift of Knowledge!",
+              "description": "This spell can be used in three different ways (but not simultaneously).\n\nKnowledge of Spells\nThe recipient can cast spells from the magic skill chosen by the mage, up to level C, that the mage knows from a skill (not from an item, scroll, or condition). The recipient must pay the mana for casting the spells. The recipient does not gain extra mana. Direct, Enchantment, Touch, 1 hour\n\nKnowledge of Glyphs\nThe recipient gains the ability to read glyphs. This option requires the mage to have the GLYPHS READING skill; without it, they cannot grant this knowledge. Direct, Enchantment, Touch, 1 hour\n\nKnowledge of Languages\nThe recipient can read any normal, non-magical language for the duration of the spell. Secret and encrypted languages cannot usually be read with this. Enchantment, Touch, until sunrise.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "",
+              "page": 35
+            },
+            {
+              "id": 63,
+              "spell": "Paralyzing Touch",
+              "mana_type": "Elemental",
+              "mana_cost": "3",
+              "incantation": "By the powers of Water, I PARALYZE you!",
+              "description": "The recipient of the spell receives a PARALYZE effect.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "5 minutes",
+              "page": 35
+            }
+          ]
+        },
+        {
+          "id": [ 282 ],
+          "skill": "Fire Magic B",
+          "Spells": [
+            {
+              "id": 64,
+              "spell": "Cleansed by Fire",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Fire, I will burn away your poisons and diseases, CRUSH!",
+              "description": "This spell removes all poisons, diseases, and their effects from the recipient. The recipient also receives a CRUSH effect (5 damage), which cannot be RESISTED if the mage casts this spell on themselves. Note: This spell has a 10-second incantation time, making it difficult to use offensively as the caster must touch the target for 10 seconds. For more information, see the chapter on spells with longer incantation times.",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "10 seconds incantation time",
+              "page": 36
+            },
+            {
+              "id": 65,
+              "spell": "Fireblast",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Fire, FireBLAST!",
+              "description": "The recipient of the spell receives a BLAST effect (3 damage).",
+              "spell_effect": "Direct, 5 meters",
+              "spell_duration": "",
+              "page": 36
+            },
+            {
+              "id": 66,
+              "spell": "Inner Fire",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Fire, I kindle your/my inner fire!",
+              "description": "The recipient gains 1 extra hitpoint for the duration of the spell and is protected against the next BLAST effect, which will only deal 1 damage.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 36
+            },
+            {
+              "id": 67,
+              "spell": "Imbue Blast",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Fire, I imbue this weapon with explosive magic!",
+              "description": "The touched weapon can deal a BLAST effect (3 damage) on one chosen strike. This can only be used on weapons longer than 45 cm and cannot be used on ranged weapons.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour or until used",
+              "page": 36
+            }
+          ]
+        },
+        {
+          "id": [ 530 ],
+          "skill": "Fire Magic C",
+          "Spells": [
+            {
+              "id": 68,
+              "spell": "Aspect of the Efreet",
+              "mana_type": "Elemental",
+              "mana_cost": "5",
+              "incantation": "By the power of Fire, May the legendary Efreet channel through you!",
+              "description": "The willing recipient of this spell will scream in pain for 1 minute. During this minute, the player can apply a DESTROY effect to someone by touching them 3 times. After this minute, the recipient of the spell receives a FATAL effect. This FATAL effect cannot be prevented or reduced.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 minute",
+              "page": 36
+            },
+            {
+              "id": 69,
+              "spell": "Incinerate",
+              "mana_type": "Elemental",
+              "mana_cost": "3",
+              "incantation": "By the powers of Fire, Let my touch incinerate you! DESTROY!",
+              "description": "The recipient of the spell receives a DESTROY effect (10 damage).",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "",
+              "page": 38
+            }
+          ]
+        },
+        {
+          "id": [ 283 ],
+          "skill": "Wood Magic B",
+          "Spells": [
+            {
+              "id": 70,
+              "spell": "Rend Enchantment",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Wood, I BREAK an ENCHANTMENT from you and BLAST you with its energy!",
+              "description": "The recipient receives a BREAK ENCHANTMENT effect, removing one enchantment of their choice. If an enchantment is present, the recipient also receives a BLAST effect (3 damage).",
+              "spell_effect": "Direct, 5 meters",
+              "spell_duration": "",
+              "page": 38
+            },
+            {
+              "id": 71,
+              "spell": "Shatter Armour",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Wood, I SHATTER that Armour!",
+              "description": "The recipient of the spell receives a SHATTER effect.",
+              "spell_effect": "Direct, 5 meters",
+              "spell_duration": "",
+              "page": 38
+            },
+            {
+              "id": 72,
+              "spell": "Nature’s Protection",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Wood, I grant you Nature’s Protection",
+              "description": "The recipient gains 1 extra hitpoint for the duration of the spell and is protected against all POISON effects.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 38
+            },
+            {
+              "id": 73,
+              "spell": "Charm Person",
+              "mana_type": "Elemental",
+              "mana_cost": "2",
+              "incantation": "By the powers of Wood, I COMMAND you to treat me as a friend!",
+              "description": "The target will see you as a friend and treat you kindly. The spell ends if the recipient takes damage. If you talk to the person for at least one minute, you may apply a CONFUSE effect to them. Damage will end this spell.",
+              "spell_effect": "Enchantment, Mind-Affecting, 5 meters",
+              "spell_duration": "5 minutes",
+              "page": 38
+            }
+          ]
+        },
+        {
+          "id": [ 531 ],
+          "skill": "Wood Magic C",
+          "Spells": [
+            {
+              "id": 74,
+              "spell": "Primal Rage",
+              "mana_type": "Elemental",
+              "mana_cost": "3",
+              "incantation": "By the powers of Wood, Let your heart be filled with primal rage!",
+              "description": "The recipient gains 3 extra hitpoints and becomes immune to mind-affecting effects (except Primal Rage itself) for the duration of this spell. During this time, they will attack all enemies they see. If no enemies are in sight, they will attack random people. Their fighting style will be reckless and wild. Note: fight safely. The recipient can only use physical fighting abilities (mainly Weapon and Armor skills). They cannot use spells or combat techniques.",
+              "spell_effect": "Enchantment, Mind-Affecting, Touch",
+              "spell_duration": "5 minutes",
+              "page": 39
+            },
+            {
+              "id": 75,
+              "spell": "Aspect of the Viper",
+              "mana_type": "Elemental",
+              "mana_cost": "3",
+              "incantation": "By the powers of Wood, I imbue this weapon with viper venom!",
+              "description": "The mage may imbue a weapon of their choice. This weapon can then deal a PARALYZE POISON effect on one strike. If the mage drops the weapon before the spell ends, they receive a CURSE LIFE POISON, to which the mage is not immune. This effect does not work on ranged weapons.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour or until use",
+              "page": 39
+            }
+          ]
+        },
+        {
+          "id": [ 532, 533, 534 ],
+          "skill": "Special Mage Spells",
+          "Spells": [
+            {
+              "id": 100,
+              "spell": "Wave of Destruction",
+              "mana_type": "Elemental",
+              "mana_cost": "5",
+              "incantation": "By the powers of the elements, I wreak destruction upon you! DESTROY!",
+              "description": "This spell allows the second part of the incantation to be repeated up to 3 times (within 1 minute) to affect up to 3 different people. The recipient receives a DESTROY effect (10 damage). The mage cannot cast (from themselves or items, scrolls, etc.) for an hour after speaking this incantation, except for the described effect above. This spell can only be used once per day. This spell cannot be countered.",
+              "spell_effect": "Direct, 5 meters",
+              "spell_duration": "",
+              "page": 40
+            },
+            {
+              "id": 101,
+              "spell": "Dominate the Weak",
+              "mana_type": "Elemental",
+              "mana_cost": "5",
+              "incantation": "By the powers of the elements, I DOMINATE your weak body!",
+              "description": "The recipient of this spell must be incapacitated. The recipient receives a TOTAL HEALING and a DOMINATE effect. The mage cannot cast (from themselves or items, scrolls, etc.) for an hour after speaking this incantation. This spell cannot be countered.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "5 minutes",
+              "page": 40
+            },
+            {
+              "id": 102,
+              "spell": "Epidemic",
+              "mana_type": "Elemental",
+              "mana_cost": "3",
+              "incantation": "By the powers of the elements, You will spread Disease, Plague and Pestilence! FATAL DISEASE!",
+              "description": "The recipient of this spell must be incapacitated (at 0 hp). The recipient receives a FATAL DISEASE effect, and the user must explain the spell to the incapacitated recipient. As long as the FATAL DISEASE is still active, the first 3 people who touch the recipient will receive a BLAST DISEASE. (The recipient must call out this effect to the first 3 people who touch them, as explained by the mage.) This spell cannot be countered.",
+              "spell_effect": "Touch",
+              "spell_duration": "10 seconds",
+              "page": 40
+            }
+          ]
+        }
+
+      ]
+    },
+    {
+      "categorie": "Paladin Spells",
+      "Skills": [
+        {
+          "id": [ 300 ],
+          "skill": "Paladin A",
+          "Spells": [
+            {
+              "id": 125,
+              "spell": "Hammer of Righteousness",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "In the name of... , I strike you down with Righteousness! STRIKE!",
+              "description": "The recipient of this spell will receive the STRIKE effect.",
+              "spell_effect": "Direct, 5 meters",
+              "spell_duration": "",
+              "page": 41
+            },
+            {
+              "id": 126,
+              "spell": "Honorable Challenge",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "In the name of... , I COMMAND you to fight me honorably!",
+              "description": "The recipient must follow the paladin's command to engage in an honorable fight. Once this one-on-one fight has begun, if a second person attacks the paladin, the paladin will receive 1 extra armor point for 1 hour. The paladin only receives the extra armor point if they are wearing at least 1 point of physical armor.",
+              "spell_effect": "Enchantment",
+              "spell_duration": "",
+              "page": 41
+            },
+            {
+              "id": 127,
+              "spell": "Mercy Call",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "In the name of... , I COMMAND you to grant him/her/me Mercy!",
+              "description": "The paladin begs the aggressor to spare a target and subtly influences the aggressor's mind to be susceptible to their pleas. The paladin can choose either themselves or an incapacitated (at 0 hp) target, commanding the aggressor to spare people and not deliver a killing blow.",
+              "spell_effect": "Enchantment, Mind-Affecting, 5 meters",
+              "spell_duration": "5 minutes",
+              "page": 41
+            }
+          ]
+        },
+        {
+          "id": [ 301 ],
+          "skill": "Paladin B",
+          "Spells": [
+            {
+              "id": 128,
+              "spell": "Divine Heroism",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , I grant you Divine Heroism!",
+              "description": "The paladin can use this blessing on up to 3 people by repeating the last part of the incantation and touching up to 3 people. The recipient will be immune to the next FEAR or STRIKE effect and receive 1 extra hit point (which remains even if the one-time immunity to FEAR or STRIKE is used).",
+              "spell_effect": "Touch, Enchantment",
+              "spell_duration": "1 hour or until used",
+              "page": 41
+            },
+            {
+              "id": 129,
+              "spell": "Divine Blessing",
+              "mana_type": "Spiritual",
+              "mana_cost": "3",
+              "incantation": "In the name of... , I Pray for Divine Blessing!",
+              "description": "After a short incantation, the paladin receives 2 extra hit points and can deliver a STRIKE effect with their next attack. This can only be done with a weapon longer than 45 cm.",
+              "spell_effect": "Enchantment, Self",
+              "spell_duration": "1 hour",
+              "page": 42
+            },
+            {
+              "id": 130,
+              "spell": "Sanctuary",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "In the name of... , I grant this person sanctuary!",
+              "description": "The recipient will not die as long as the priest repeats the incantation approximately every 10 seconds and continues to touch the recipient. When the priest stops the incantation, the GRACE PERIOD (dying time) resumes from the moment the spell started.",
+              "spell_effect": "Concentration, Touch",
+              "spell_duration": "max 1 hour",
+              "page": 42
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categorie": "Priest Spells",
+      "Skills": [
+        {
+          "id": [ 325 ],
+          "skill": "Purity A",
+          "Spells": [
+            {
+              "id": 150,
+              "spell": "Endure Poison",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "In the name of... , I/you may endure poison!",
+              "description": "The recipient ignores the next POISON effect by calling NO EFFECT.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour or until used",
+              "page": 43
+            },
+            {
+              "id": 151,
+              "spell": "Minor Reinforcement",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "In the name of... , I reinforce my/this armour!",
+              "description": "The touched armor gains 1 extra armor point until the spell ends or the point is removed. The spell only works if the recipient is wearing at least 1 point of physical armor.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 43
+            },
+            {
+              "id": 152,
+              "spell": "Break Enchantment",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "In the name of... , I BREAK this ENCHANTMENT!",
+              "description": "The recipient receives the BREAK ENCHANTMENT effect.",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "",
+              "page": 43
+            },
+            {
+              "id": 153,
+              "spell": "Counter Spell",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , I counter that spell!",
+              "description": "Counters a spell. The priest must be within 5 meters of the caster of the spell to be countered. The counter spell must be started within 1 second after the incantation of the spell to be countered is completed. Note: some spells cannot be countered. In such cases, the caster will call “NO EFFECT” on your counter spell and the original spell will still take effect.",
+              "spell_effect": "Direct, 5 meters",
+              "spell_duration": "",
+              "page": 43
+            },
+            {
+              "id": 154,
+              "spell": "Detect Spiritual Influence",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "In the name of... , I detect spiritual influence!",
+              "description": "This spell can be used in 2 different ways (but not simultaneously).\\n1) All spiritual objects and persons within 5 meters of the priest will glow to the priest as being spiritual. Persons and objects with a priestly enchantment or rune imbue are spiritual. Persons detected must raise their hand.\\n2) The priest can touch an object or person and attempt to identify the type of spiritual influence. If it is a spell they can cast themselves, they will identify it exactly. This spell cannot identify priests. Possession of spiritual objects or being under the influence of spiritual spells/effects will not interfere with the reading of this spell.",
+              "spell_effect": "Direct, 5 meters or Touch",
+              "spell_duration": "",
+              "page": 44
+            }
+          ]
+        },
+        {
+          "id": [ 328 ],
+          "skill": "Purity B",
+          "Spells": [
+            {
+              "id": 155,
+              "spell": "Disease of Temperance",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , I grant you time to think before you act! SLOW DISEASE!",
+              "description": "The recipient receives the SLOW DISEASE effect.",
+              "spell_effect": "Enchantment, Direct, 5 meters",
+              "spell_duration": "5 minutes",
+              "page": 44
+            },
+            {
+              "id": 156,
+              "spell": "Minor Regeneration",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , I grant you/myself minor regeneration!",
+              "description": "The recipient may heal themselves for 1 hit point up to 3 times (within the next hour) as long as they are not incapacitated (at 0 hp). When used, the recipient must say the incantation “In the name of <deity caster>…, I regenerate my wounds”.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour or until used",
+              "page": 44
+            },
+            {
+              "id": 157,
+              "spell": "Pure Body and Mind",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , I grant your/my body and mind purity!",
+              "description": "The recipient receivers 1 extra hit point and becomes immune to all FEAR effects.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 45
+            },
+            {
+              "id": 158,
+              "spell": "Protection from Impairment",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "In the name of... , I grant you/me protection from impairments!",
+              "description": "The recipient becomes immune to all CONFUSE, MUTE, and SLEEP effects.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 45
+            }
+          ]
+        },
+        {
+          "id": [ 552 ],
+          "skill": "Purity C",
+          "Spells": [
+            {
+              "id": 159,
+              "spell": "Holy Bolt",
+              "mana_type": "Spiritual",
+              "mana_cost": "3",
+              "incantation": "In the name of... , I strike you with a Holy Bolt! CRUSH!",
+              "description": "The recipient of the spell receives a CRUSH damage effect (5 damage).",
+              "spell_effect": "Direct, 5 meters",
+              "spell_duration": "",
+              "page": 45
+            },
+            {
+              "id": 160,
+              "spell": "Divine Armour",
+              "mana_type": "Spiritual",
+              "mana_cost": "3",
+              "incantation": "In the name of... , May your armour be blessed by the divine!",
+              "description": "The touched armor gains 3 extra armor points until the spell ends or the points are removed and becomes immune to the SHATTER effect. The spell only works if the recipient is wearing at least 3 points of physical armor.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 45
+            }
+          ]
+        },
+        {
+          "id": [ 326 ],
+          "skill": "Wrath A",
+          "Spells": [
+            {
+              "id": 161,
+              "spell": "Endure Disease",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "In the name of... , I/you endure diseases!",
+              "description": "The recipient ignores the next DISEASE effect by calling NO EFFECT.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour or until used",
+              "page": 46
+            },
+            {
+              "id": 162,
+              "spell": "Instill Fear",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "In the name of... , FEAR me!",
+              "description": "The recipient of the spell receives a FEAR effect.",
+              "spell_effect": "Enchantment, Mind-affecting, 5 meters",
+              "spell_duration": "30 seconds",
+              "page": 46
+            },
+            {
+              "id": 163,
+              "spell": "Hit Disease",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , I afflict you with a HIT DISEASE!",
+              "description": "The recipient of the spell receives a HIT DISEASE effect.",
+              "spell_effect": "Direct, 5 meters",
+              "spell_duration": "",
+              "page": 46
+            },
+            {
+              "id": 164,
+              "spell": "Crave",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "In the name of... , I COMMAND you to crave <max 2 words that refers to an item>!",
+              "description": "The recipient must attempt to obtain the specified item, which must be referred to with a maximum of 2 words. Examples: money, that sword, that apple, etc.",
+              "spell_effect": "Enchantment, Mind-affecting, 5 meters",
+              "spell_duration": "5 minutes",
+              "page": 46
+            },
+            {
+              "id": 165,
+              "spell": "Shattering Touch",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "In the name of... , I SHATTER this armour!",
+              "description": "The touched armour of the recipient receives a SHATTER effect.",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "",
+              "page": 46
+            }
+          ]
+        },
+        {
+          "id": [ 329 ],
+          "skill": "Wrath B",
+          "Spells": [
+            {
+              "id": 166,
+              "spell": "Mute Cascade",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , I silence you, MUTE!",
+              "description": "The recipient of the spell receives a MUTE effect. The second part of the incantation can be repeated up to 3 times (within 1 minute) to affect up to 3 different people.",
+              "spell_effect": "Enchantment, 5 meters",
+              "spell_duration": "30 seconds",
+              "page": 46
+            },
+            {
+              "id": 167,
+              "spell": "Shatter Armour",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , I SHATTER that armour!",
+              "description": "The armour of the recipient receives a SHATTER effect.",
+              "spell_effect": "Direct, 5 meters",
+              "spell_duration": "",
+              "page": 47
+            },
+            {
+              "id": 168,
+              "spell": "Boon of Break Enchantment",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , I grant you a boon of Break Enchantment!",
+              "description": "The recipient receives a blessing allowing them to cast the Break Enchantment spell once without using mana. Armor does not hinder the use of this spell. The incantation “In the name of..., I break this enchantment!” must be spoken.\\n\\nBreak Enchantment:\\nIn the name of..., I break this enchantment!\\nThe recipient gains a BREAK ENCHANTMENT effect.\\nDirect, touch",
+              "spell_effect": "",
+              "spell_duration": "Until used",
+              "page": 47
+            },
+            {
+              "id": 169,
+              "spell": "Curse Life",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , I CURSE your LIFE!",
+              "description": "The recipient of the spell receives a CURSE LIFE effect.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 47
+            }
+          ]
+        },
+        {
+          "id": [ 553 ],
+          "skill": "Wrath C",
+          "Spells": [
+            {
+              "id": 170,
+              "spell": "Sacred Torture",
+              "mana_type": "Spiritual",
+              "mana_cost": "3",
+              "incantation": "In the name of... , may pain embrace you! TORTURE!",
+              "description": "The recipient receives a TORTURE effect.",
+              "spell_effect": "Enchantment, 5 meters",
+              "spell_duration": "30 seconds",
+              "page": 48
+            },
+            {
+              "id": 171,
+              "spell": "Divine Weapon",
+              "mana_type": "Spiritual",
+              "mana_cost": "3",
+              "incantation": "In the name of... , I imbue this weapon with divine wrath!",
+              "description": "The touched weapon can be used by anyone, can deal 2 hits of BLAST (3 damage each), and provides protection against FEAR, CONFUSE, and SLEEP effects. This spell does not work on ranged weapons.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 48
+            }
+          ]
+        },
+        {
+          "id": [ 327 ],
+          "skill": "Death A",
+          "Spells": [
+            {
+              "id": 172,
+              "spell": "Discern Soul",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "In the name of... , I discern your soul!",
+              "description": "This spell reveals the condition of a person's soul and identifies who currently controls it. It can indicate if the soul is normal, corrupted (such as undead), absent, or dedicated to a specific entity.",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "",
+              "page": 49
+            },
+            {
+              "id": 173,
+              "spell": "Sanctuary",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "In the name of... , I grant this person sanctuary!",
+              "description": "This spell ensures that the recipient cannot die as long as the priest maintains the incantation every 10 seconds and continues to touch them. If the priest stops chanting, the countdown of the 'GRACE PERIOD' (time until death) resumes from when the spell began.",
+              "spell_effect": "Concentration, Touch",
+              "spell_duration": "Up to 1 hour",
+              "page": 49
+            },
+            {
+              "id": 174,
+              "spell": "Lay to Rest",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "In the name of... , I lay this soul to rest!",
+              "description": "When cast on a deceased body, this spell prevents it from being turned into an undead creature. Unless counteracted by other means, the soul is laid to rest in accordance with the deceased's beliefs (such as with their deity, ancestors, or totem, not necessarily the priest's deity).\\n\\nTo perform this spell, a ceremony must be conducted:\\n1) If the ceremony lasts at least 5 minutes and successfully completes the spell, the priest regains their mana, effectively costing them 0 mana.\\n2) If the ceremony lasts less than 5 minutes, the soul is still laid to rest, but the priest does not regain their mana. Creatures cannot be laid to rest if the 'GRACE PERIOD' has not passed.",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "Ceremony of 5 minutes (part of incantation time)",
+              "page": 49
+            },
+            {
+              "id": 175,
+              "spell": "Ancestral mind protection",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "In the name of... , May your ancestors clear your mind!",
+              "description": "This spell removes any current mental influences affecting the recipient.",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "",
+              "page": 49
+            },
+            {
+              "id": 176,
+              "spell": "Reveal all undead",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "By the power of… , I reveal all undead!",
+              "description": "This spell causes undead or bodies possessed by undead to briefly glow.\\nThe glowing effect is visible to everyone, revealing all undead or possessed bodies within 5 meters, which will respond with 'Undead'.",
+              "spell_effect": "Direct, 5 meters",
+              "spell_duration": "",
+              "page": 50
+            }
+          ]
+        },
+        {
+          "id": [ 330 ],
+          "skill": "Death B",
+          "Spells": [
+            {
+              "id": 177,
+              "spell": "Paralyze Undead",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , I PARALYZE undead!",
+              "description": "If the recipient of this spell is undead, they are afflicted with a paralyzing effect for 5 minutes.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "5 minutes",
+              "page": 50
+            },
+            {
+              "id": 178,
+              "spell": "Speak with the Dead",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , let this Dead one Speak!",
+              "description": "This spell compels a dead body to answer up to 5 questions from the priest for 5 minutes. The dead can only respond with single-word answers, and the spell ends if the body is released.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "5 minutes",
+              "page": 50
+            },
+            {
+              "id": 179,
+              "spell": "Sanctuary Ward",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , I grant these people sanctuary!",
+              "description": "Up to 3 people are protected from death as long as the priest repeats the incantation every 10 seconds and touches each person at least once per minute. These must be the same 3 people throughout the spell's duration. If the priest stops chanting or the occasional touch causes them to be out of range, the countdown of the 'GRACE PERIOD' (time until death) resumes from when the spell started.",
+              "spell_effect": "Concentration, Touch",
+              "spell_duration": "Up to 1 hour",
+              "page": 50
+            },
+            {
+              "id": 180,
+              "spell": "Life Draw",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "In the name of... , LIFE DRAW!",
+              "description": "The recipient gains a healing effect, and the caster gains back one hit point. Lost hit points will be restored or additional hit points will be added, up to a maximum of 3. The extra hit points from Life Draw accumulate but cannot be combined with other spells or effects (the most potent effect takes precedence).\\nAll additional hit points gained through this spell vanish at the next sunrise.",
+              "spell_effect": "Enchantment, Direct, Touch",
+              "spell_duration": "",
+              "page": 51
+            }
+          ]
+        },
+        {
+          "id": [ 554 ],
+          "skill": "Death C",
+          "Spells": [
+            {
+              "id": 181,
+              "spell": "Destructive Touch",
+              "mana_type": "Spiritual",
+              "mana_cost": "3",
+              "incantation": "In the name of... , May death embrace you! DESTROY!",
+              "description": "The recipient of this spell suffers a devastating effect, taking 10 points of damage.",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "",
+              "page": 51
+            },
+            {
+              "id": 182,
+              "spell": "Septic Weapon",
+              "mana_type": "Spiritual",
+              "mana_cost": "3",
+              "incantation": "In the name of... , I imbue this weapon with putrid filth!",
+              "description": "The touched weapon becomes infused with putrid filth, causing it to inflict HIT POISON with up to three chosen strikes.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour or until used",
+              "page": 51
+            }
+          ]
+        },
+        {
+          "id": [ 331 ],
+          "skill": "Mind B",
+          "Spells": [
+            {
+              "id": 183,
+              "spell": "Fascinate Mind",
+              "mana_type": "Spiritual",
+              "mana_cost": "1",
+              "incantation": "In the name of... , I FASCINATE you!",
+              "description": "The recipient becomes fascinated under the effect of FASCINATE. The priest must preach and attempt to convince the recipient of the positive aspects of the priest's faith.",
+              "spell_effect": "Concentration, Enchantment, Mind-affecting, 5 meters",
+              "spell_duration": "Up to 5 minutes",
+              "page": 52
+            },
+            {
+              "id": 184,
+              "spell": "Discern Pattern",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , I discern your pattern!",
+              "description": "After speaking with the recipient for at least 5 minutes, the priest casts this spell. This allows the priest to gain more information about three aspects of the recipient. The recipient is aware that the spell has been used, as the incantation is in-character (IC).\\n\\nExamples of details the priest can choose from include: race, age, homeworld, faith, favorite food/drink, favorite color, things/people they hate most, love of their life if applicable, true name, self-image, greatest achievement in the recipient's eyes, greatest failure. With the recipient's consent, other information can also be revealed using this spell.",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "",
+              "page": 52
+            },
+            {
+              "id": 185,
+              "spell": "Mind Protection",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , let my mind be protected!",
+              "description": "For the duration of the spell, the priest becomes immune to all mind-affecting spells and effects.",
+              "spell_effect": "Enchantment, Self",
+              "spell_duration": "5 minutes",
+              "page": 52
+            },
+            {
+              "id": 186,
+              "spell": "Commandment",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , I command you to <max 5 words>!",
+              "description": "The recipient is affected by the COMMAND effect.",
+              "spell_effect": "Enchantment, Mind-affecting, 5 meters",
+              "spell_duration": "5 minutes",
+              "page": 52
+            }
+          ]
+        },
+        {
+          "id": [ 555 ],
+          "skill": "Mind C",
+          "Spells": [
+            {
+              "id": 187,
+              "spell": "Gift of Wisdom",
+              "mana_type": "Spiritual",
+              "mana_cost": "3",
+              "incantation": "In the name of... , I Grant you/me the Gift of Wisdom!",
+              "description": "This spell can be used in three different ways (but not simultaneously).\\n\\nOptions:\\nSpell Knowledge: For the duration of the spell, the recipient can cast spells from one of the priest's chosen priestly skills, up to level C, that the priest knows from their own skill (not from an item, scroll, or condition). The recipient must pay the mana cost for casting the spell themselves.\\nThe recipient does not gain additional mana.\\nEnchantment, Direct, Touch, 1 hour\\n\\nRune Knowledge: The recipient gains the ability to READ RUNES. This option requires that the priest themselves have the skill READ RUNES; without it, the priest cannot impart this knowledge to the recipient.\\nEnchantment, Direct, Touch, 1 hour\\n\\nLanguage Knowledge: For the duration of the spell, the recipient can read any normal, non-magical language. Secret languages and encrypted languages cannot typically be read with this ability.\\nEnchantment, Touch, until sunrise.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "",
+              "page": 52
+            },
+            {
+              "id": 188,
+              "spell": "Spell Shield",
+              "mana_type": "Spiritual",
+              "mana_cost": "3",
+              "incantation": "In the name of..., May I be shielded from hostile spells!",
+              "description": "As long as the priest continues to repeat the incantation, they are immune to all spells.",
+              "spell_effect": "Concentration, Self",
+              "spell_duration": "Up to 5 minutes",
+              "page": 53
+            }
+          ]
+        },
+        {
+          "id": [ 332 ],
+          "skill": "Nature B",
+          "Spells": [
+            {
+              "id": 189,
+              "spell": "Hex Weapon",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , I imbue this weapon to put your/my enemy to sleep!",
+              "description": "The touched weapon inflicts the SLEEP effect with a single strike of choice.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour or until used",
+              "page": 54
+            },
+            {
+              "id": 190,
+              "spell": "Freedom of Movement",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , Let my/your movements be free!",
+              "description": "For the duration of this spell, the recipient becomes immune to all PARALYZE, SLOW, FREEZE, and STRIKE effects.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 54
+            },
+            {
+              "id": 191,
+              "spell": "Resist Special Damage",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , I shield myself from strong blows!",
+              "description": "Upon receiving the next BLAST, CRUSH, or DESTROY effect, the priest suffers only 1 damage. When the recipient receives the effect, they must say, “By the Divine One’s Might, RESIST!”",
+              "spell_effect": "Enchantment, Self",
+              "spell_duration": "1 hour or until used",
+              "page": 54
+            },
+            {
+              "id": 192,
+              "spell": "Aspect of the Dryad",
+              "mana_type": "Spiritual",
+              "mana_cost": "2",
+              "incantation": "In the name of... , I grant you/me the fortitude of a dryad!",
+              "description": "The recipient gains 1 additional hit point and becomes immune to DISEASE effects for the duration of the spell. Any diseases affecting the recipient before the spell begins are not cured.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 54
+            }
+          ]
+        },
+        {
+          "id": [ 556 ],
+          "skill": "Nature C",
+          "Spells": [
+            {
+              "id": 193,
+              "spell": "Barkskin",
+              "mana_type": "Spiritual",
+              "mana_cost": "3",
+              "incantation": "In the name of... , May my skin be as bark!",
+              "description": "The recipient gains 3 additional hit points for the duration of the spell.",
+              "spell_effect": "Enchantment, Self",
+              "spell_duration": "5 minutes",
+              "page": 54
+            },
+            {
+              "id": 194,
+              "spell": "Blast Disease",
+              "mana_type": "Spiritual",
+              "mana_cost": "3",
+              "incantation": "In the name of... , I make a plague fall upon you! BLAST DISEASE!",
+              "description": "The recipient of the spell suffers a BLAST DISEASE effect (3 damage).",
+              "spell_effect": "Direct, 5 meters",
+              "spell_duration": "",
+              "page": 54
+            }
+          ]
+        },
+        {
+          "id": [ 557, 558, 559 ],
+          "skill": "Special Priest Spells",
+          "Spells": [
+            {
+              "id": 200,
+              "spell": "Miracle of Healing",
+              "mana_type": "Spiritual",
+              "mana_cost": "5",
+              "incantation": "In the name of... , I purge all your wounds, afflictions, and mend your armor!",
+              "description": "The recipient is cleansed of all wounds, diseases, poisons, FATALs, and CURSE LIFE enchantments, and is no longer disabled (at 0 hp) or dying. The recipient may choose to lose negative enchantments and invites as well. Additionally, all present armor on the recipient is restored. \n\nWhen combined with the HEAL OTHER BEING skill, this Miracle of Healing can also heal undead, servitars, demons, and other beings. \nThe priest cannot cast spells for one hour after invoking this incantation (both from themselves and items, scrolls, etc.).",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "30 seconds incantation time",
+              "page": 55
+            },
+            {
+              "id": 201,
+              "spell": "Wrath of the Gods",
+              "mana_type": "Spiritual",
+              "mana_cost": "5",
+              "incantation": "In the name of... , Feel the wrath of the/my God(s)! FATAL!",
+              "description": "The recipient must be disabled (at 0 hp). They receive a FATAL effect. \nAfter delivering this fatal effect, the incantation “Feel the wrath of the/my God(s)! Destroy!” can be spoken up to 5 times (within 1 hour) to inflict a DESTROY effect (10 damage) upon touch to up to 5 individuals. \n\nThe priest cannot cast spells for one hour after invoking this incantation (both from themselves and items, scrolls, etc.), except for the effects described above. \nThis spell cannot be countered.",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "",
+              "page": 55
+            },
+            {
+              "id": 202,
+              "spell": "Miracle of Consecration",
+              "mana_type": "Spiritual",
+              "mana_cost": "10",
+              "incantation": "In the name of... , I consecrate this object!",
+              "description": "Relic Creation \nAn ordinary item (such as a sword, banner, or cup) becomes a spiritual masterpiece. Obtain a temp item card from the info desk for this purpose. Multiple priests with Miracle of Consecration can collaborate in creating the relic, and each must expend 10 mana for the spell. The mana threshold for the masterpiece is 8, plus 4 for each additional priest participating in its creation. Only one relic can be created per event (moots or summonings), but you may assist others indefinitely in crafting their relics. The created Relic does not yet include a Spiritual imbue. \nAfter invoking this incantation, all participating priests cannot cast spells for one hour (both from themselves and items, scrolls, etc.). This item cannot be salvaged.",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "Ritual of at least 10 minutes (as the duration of the incantation)",
+              "page": 55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categorie": "Healing Spells",
+      "Skills": [
+        {
+          "id": [ 350, 351 ],
+          "skill": "Healing A",
+          "Spells": [
+            {
+              "id": 225,
+              "spell": "Discern Wounds",
+              "mana_type": "Special",
+              "mana_cost": "0",
+              "incantation": "By my healing powers, I discern your wounds!",
+              "description": "The healer determines how many hit points the recipient is missing. Additionally, the healer knows if the recipient is disabled (at 0 hp) or dying. Note: With this spell, you cannot see if someone has a poison, disease, curse life, or other condition preventing these wounds from being healed. If the player inadvertently tells you about such conditions, you must play it as not knowing.",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "",
+              "page": 57
+            },
+            {
+              "id": 226,
+              "spell": "Discern Poisons",
+              "mana_type": "Special",
+              "mana_cost": "0",
+              "incantation": "By my healing powers, I discern your poisons!",
+              "description": "The healer determines which poisons the recipient is suffering from.",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "",
+              "page": 57
+            },
+            {
+              "id": 227,
+              "spell": "Discern Diseases",
+              "mana_type": "Special",
+              "mana_cost": "0",
+              "incantation": "By my healing powers, I discern your diseases!",
+              "description": "The healer determines which diseases the recipient is suffering from.",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "",
+              "page": 57
+            },
+            {
+              "id": 228,
+              "spell": "Heal Wounds",
+              "mana_type": "Special",
+              "mana_cost": "1",
+              "incantation": "By my healing powers, I heal this wound!",
+              "description": "This spell heals 1 hit point every 10 seconds on the touched person. \nThe healer must keep their hand on the person to be healed after casting the spell and whisper softly. Up to 3 hit points, normal and/or extra, can be healed at a time. For more hit points, the spell must be cast again.",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "10 seconds incantation time per wound to be healed",
+              "page": 57
+            },
+            {
+              "id": 229,
+              "spell": "Remove Paralysis",
+              "mana_type": "Special",
+              "mana_cost": "1",
+              "incantation": "By my healing powers, I remove your paralysis!",
+              "description": "Removes all PARALYZE effects affecting the recipient.",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "10 seconds incantation time",
+              "page": 57
+            }
+          ]
+        },
+        {
+          "id": [ 352, 353 ],
+          "skill": "Healing B",
+          "Spells": [
+            {
+              "id": 230,
+              "spell": "Heal Fatal Wound",
+              "mana_type": "Special",
+              "mana_cost": "2",
+              "incantation": "By my healing powers, I heal this fatal wound!",
+              "description": "Stops the dying state, removes FATAL effects after 30 seconds, and heals 1 hit point. \nIf the healer continues healing, the spell will continue as a regular HEAL WOUND and can heal an additional 2 hit points.",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "30 seconds incantation time",
+              "page": 58
+            },
+            {
+              "id": 231,
+              "spell": "Strengthen Body",
+              "mana_type": "Special",
+              "mana_cost": "2",
+              "incantation": "By my healing powers, I grant you protection!",
+              "description": "The recipient gains 2 extra hit points for the duration of the spell.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 58
+            },
+            {
+              "id": 232,
+              "spell": "Total Healing",
+              "mana_type": "Special",
+              "mana_cost": "2",
+              "incantation": "By my healing powers, I grant you total healing!",
+              "description": "All normal wounds on the recipient are healed. This does not apply to fatal wounds, and poisons or diseases are not removed with this spell.",
+              "spell_effect": "Direct, Touch",
+              "spell_duration": "30 seconds incantation time",
+              "page": 58
+            },
+            {
+              "id": 233,
+              "spell": "Boon of Minor Healing",
+              "mana_type": "Special",
+              "mana_cost": "1",
+              "incantation": "By my healing powers, I grant you a boon of minor healing!",
+              "description": "The recipient receives a blessing allowing them to cast the Minor Healing spell once (see below). This costs the recipient no mana, and armor does not interfere with its use. However, the incantation “By my healing powers, I grant you/me minor healing!” must be spoken. \n\nMinor Healing: \nBy my healing powers, I grant you/me minor healing! \nHeals 1 HP on self or another. \nDirect, Touch",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour or until used",
+              "page": 58
+            }
+          ]
+        },
+        {
+          "id": [ 354, 355 ],
+          "skill": "Poison Healer",
+          "Spells": [
+            {
+              "id": 234,
+              "spell": "Heal Fatal Wound",
+              "mana_type": "Special",
+              "mana_cost": "2",
+              "incantation": "By my healing powers, I heal this fatal wound!",
+              "description": "Stops the dying state, removes FATAL effects after 30 seconds, and heals 1 hitpoint. If the healer continues to heal, the spell continues as regular HEAL WOUND and can heal an additional 2 hitpoints.",
+              "spell_effect": "Immediate, Touch",
+              "spell_duration": "30 seconds incantation time",
+              "page": 59
+            },
+            {
+              "id": 235,
+              "spell": "Protection from Poison",
+              "mana_type": "Special",
+              "mana_cost": "2",
+              "incantation": "By my healing powers, I grant you protection from poison!",
+              "description": "The recipient is immune to all POISON effects for the duration of the spell. Existing poison effects remain unaffected.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 59
+            },
+            {
+              "id": 236,
+              "spell": "Neutralize Poisons",
+              "mana_type": "Special",
+              "mana_cost": "1",
+              "incantation": "By my healing powers, I neutralize <name> poison!",
+              "description": "This spell heals 1 poison of 1 type every 10 seconds. The healer must maintain contact with the person being healed and softly murmur after casting the spell. Up to 3 poisons of the same type can be healed at a time, such as HIT POISON three times. For more poisons or different types, the spell must be recast. If the healer maintains the incantation after curing the poison, wounds caused by the poison are also healed at a rate of 1 HP every 10 seconds.",
+              "spell_effect": "Immediate, Touch",
+              "spell_duration": "10 seconds incantation time per poison or HP healed",
+              "page": 59
+            },
+            {
+              "id": 237,
+              "spell": "Purge All Poisons",
+              "mana_type": "Special",
+              "mana_cost": "3",
+              "incantation": "By my healing powers, I purge all your poisons!",
+              "description": "This spell removes all poisons and their effects present on the recipient and heals all wounds caused by poisons.",
+              "spell_effect": "Immediate, Touch",
+              "spell_duration": "Immediate",
+              "page": 59
+            }
+          ]
+        },
+        {
+          "id": [ 356, 357 ],
+          "skill": "Disease Healer",
+          "Spells": [
+            {
+              "id": 238,
+              "spell": "Heal Fatal Wound",
+              "mana_type": "Special",
+              "mana_cost": "2",
+              "incantation": "By my healing powers, I heal this fatal wound!",
+              "description": "Stops the dying state, removes FATAL effects after 30 seconds, and heals 1 hitpoint. If the healer continues to heal, the spell continues as regular HEAL WOUND and can heal an additional 2 hitpoints.",
+              "spell_effect": "Immediate, Touch",
+              "spell_duration": "30 seconds incantation time",
+              "page": 60
+            },
+            {
+              "id": 239,
+              "spell": "Protection from Disease",
+              "mana_type": "Special",
+              "mana_cost": "2",
+              "incantation": "By my healing powers, I grant you protection from disease!",
+              "description": "The recipient is immune to all DISEASE effects for the duration of the spell. Existing disease effects remain unaffected.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 60
+            },
+            {
+              "id": 240,
+              "spell": "Cure Diseases",
+              "mana_type": "Special",
+              "mana_cost": "1",
+              "incantation": "By my healing powers, I cure <name> disease!",
+              "description": "This spell cures 1 disease of 1 type every 10 seconds. The healer must maintain contact with the person being healed and softly murmur after casting the spell. Up to 3 diseases of the same type can be cured at a time, such as HIT DISEASE three times. For more diseases or different types, the spell must be recast. If the healer maintains the incantation after curing the disease, wounds caused by the disease are also healed at a rate of 1 HP every 10 seconds.",
+              "spell_effect": "Immediate, Touch",
+              "spell_duration": "10 seconds incantation time per disease or HP healed",
+              "page": 60
+            },
+            {
+              "id": 241,
+              "spell": "Cure All Diseases",
+              "mana_type": "Special",
+              "mana_cost": "3",
+              "incantation": "By my healing powers, I cure all your diseases",
+              "description": "This spell removes all diseases and their effects present on the recipient and heals all wounds caused by diseases.",
+              "spell_effect": "Immediate, Touch",
+              "spell_duration": "Immediate",
+              "page": 60
+            }
+          ]
+        },
+        {
+          "id": [ 358, 359 ],
+          "skill": "Mind Healer",
+          "Spells": [
+            {
+              "id": 242,
+              "spell": "Heal Fatal Wound",
+              "mana_type": "Special",
+              "mana_cost": "2",
+              "incantation": "By my healing powers, I heal this fatal wound!",
+              "description": "Stops the dying state, removes FATAL effects after 30 seconds, and heals 1 hitpoint. If the healer continues to heal, the spell continues as regular HEAL WOUND and can heal an additional 2 hitpoints.",
+              "spell_effect": "Immediate, Touch",
+              "spell_duration": "30 seconds incantation time",
+              "page": 61
+            },
+            {
+              "id": 243,
+              "spell": "Discern Mind-Affecting",
+              "mana_type": "Special",
+              "mana_cost": "0",
+              "incantation": "By my healing powers, I discern your mind-affecting ailments!",
+              "description": "The healer determines which mind-affecting effects the recipient is suffering from.",
+              "spell_effect": "Immediate, Touch",
+              "spell_duration": "",
+              "page": 61
+            },
+            {
+              "id": 244,
+              "spell": "Protection from Fear",
+              "mana_type": "Special",
+              "mana_cost": "1",
+              "incantation": "By my healing powers, I grant you protection from fear!",
+              "description": "The recipient is immune to all FEAR effects for the duration of the spell.",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour",
+              "page": 61
+            },
+            {
+              "id": 245,
+              "spell": "Break Enchantment Cascade",
+              "mana_type": "Special",
+              "mana_cost": "2",
+              "incantation": "By my healing powers, I BREAK your ENCHANTMENT!",
+              "description": "With this spell, the second part of the incantation can be spoken up to 3 times (within 1 minute) to affect up to 3 different people. The recipient loses one enchantment. If more than one enchantment is effectively affecting the target, the Healer must name the enchantment they wish to remove. Failure to do so allows the recipient to choose.",
+              "spell_effect": "Immediate, Touch",
+              "spell_duration": "",
+              "page": 61
+            }
+          ]
+        },
+        {
+          "id": [ 502, 503 ],
+          "skill": "Healing C",
+          "Spells": [
+            {
+              "id": 256,
+              "spell": "Discern Afflictions",
+              "mana_type": "Special",
+              "mana_cost": "0",
+              "incantation": "By my healing powers, I Discern your Wounds, Poisons, Diseases and Afflictions!",
+              "description": "The healer identifies all wounds, poisons, diseases, calls, and invitation spells affecting the recipient.",
+              "spell_effect": "Immediate, Touch",
+              "spell_duration": "30 seconds incantation time",
+              "page": 62
+            },
+            {
+              "id": 257,
+              "spell": "Major Regeneration",
+              "mana_type": "Special",
+              "mana_cost": "3",
+              "incantation": "By my healing powers, I grant myself/you major regeneration!",
+              "description": "The recipient may heal themselves 3 times for 2 hitpoints each as long as they are not disabled (at 0 hp). \\nUpon use, the recipient must chant 'By my healing powers, I regenerate my wounds.'",
+              "spell_effect": "Enchantment, Touch",
+              "spell_duration": "1 hour or until used",
+              "page": 62
+            },
+            {
+              "id": 258,
+              "spell": "Purify Body",
+              "mana_type": "Special",
+              "mana_cost": "5",
+              "incantation": "By my healing powers, I purify your body!",
+              "description": "All wounds of the recipient, including fatal wounds, are healed. All poisons and their effects are removed, and all diseases and their effects are cured.",
+              "spell_effect": "Immediate, Touch",
+              "spell_duration": "60 seconds incantation time",
+              "page": 62
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categorie": "Demonology",
+      "Skills": [
+        [
+          {
+            "id": [ 625 ],
+            "skill": "Demonologist A",
+            "Spells": [
+              {
+                "id": 275,
+                "spell": "Detect Servitar",
+                "mana_type": "Special",
+                "mana_cost": "0",
+                "incantation": "By the power of..., I detect servitar!",
+                "description": "This spell detects servitars or bodies possessed by servitars. The recipient whispers the answer (yes or no) in the caster's ear.",
+                "spell_effect": "Immediate, Touch",
+                "spell_duration": "",
+                "page": 63
+              },
+              {
+                "id": 276,
+                "spell": "Reveal All Servitars",
+                "mana_type": "Special",
+                "mana_cost": "1",
+                "incantation": "By the power of..., I reveal all servitars!",
+                "description": "This spell causes servitars or bodies possessed by servitars to briefly glow. This is visible to everyone nearby. \\nAll servitars or bodies possessed by servitars within 5 meters respond with 'Servitar'.",
+                "spell_effect": "Immediate, 5 meters",
+                "spell_duration": "",
+                "page": 63
+              },
+              {
+                "id": 277,
+                "spell": "Break Minor Possession",
+                "mana_type": "Special",
+                "mana_cost": "1",
+                "incantation": "By the power of..., I exorcise this body!",
+                "description": "An invitation spell immediately comes to an end.",
+                "spell_effect": "Immediate, Touch",
+                "spell_duration": "",
+                "page": 63
+              },
+              {
+                "id": 278,
+                "spell": "Faustian Deal",
+                "mana_type": "Special",
+                "mana_cost": "1",
+                "incantation": "By the power of this contract, may this blood sacrifice DESTROY you!",
+                "description": "The recipient of the spell gains a DESTROY effect. \\nThe caster, or a willing person standing next to you with at least 1 hitpoint remaining, permanently loses 2 hitpoints until the next sunrise. Note that if you are at 0 maximum HP, you are permanently disabled. \\nEach time you use this spell, it costs someone else 2 maximum hitpoints.",
+                "spell_effect": "Immediate, Touch",
+                "spell_duration": "",
+                "page": 63
+              }
+            ]
+          },
+          {
+            "id": [ 626, 627 ],
+            "skill": "Demonologist B",
+            "Spells": [
+              {
+                "id": 279,
+                "spell": "Demonic Eye",
+                "mana_type": "Special",
+                "mana_cost": "1",
+                "incantation": "By the power of..., My demonic eye will spot you once more!.... BLAST!",
+                "description": "This spell only works on a disabled (at 0 hp) or dying target. If you encounter this target later in the day, you may once deliver a BLAST effect at 5 meters without an incantation. Note that the enchantment of this spell is on the user of the spell, not on the ultimate target!",
+                "spell_effect": "Enchantment, 5 meters",
+                "spell_duration": "until sunrise or use",
+                "page": 64
+              },
+              {
+                "id": 280,
+                "spell": "Command Servitar",
+                "mana_type": "Special",
+                "mana_cost": "1",
+                "incantation": "By the power of your contract, heed my orders servitar!",
+                "description": "After casting this spell, you may give a command to a servitar. The servitar may choose not to execute this command at any time. Thus, this spell does nothing on its own but is necessary to cast 'Banish Servitar'.",
+                "spell_effect": "Immediate, 5 meters",
+                "spell_duration": "",
+                "page": 64
+              },
+              {
+                "id": 281,
+                "spell": "Banish Servitar",
+                "mana_type": "Special",
+                "mana_cost": "1",
+                "incantation": "By the power of your broken contract, I banish you!",
+                "description": "This spell may only be cast on a servitar that you have summoned (using a ritual or invite demon spell) and of which you are aware that the servitar has not carried out a command given by the 'Command Servitar' spell. The invite spell or ritual will immediately end.",
+                "spell_effect": "Immediate, 5 meters",
+                "spell_duration": "",
+                "page": 64
+              },
+              {
+                "id": 282,
+                "spell": "Smite Servitar",
+                "mana_type": "Special",
+                "mana_cost": "1",
+                "incantation": "By the power of..., I shall smite this servitar, BLAST!",
+                "description": "If the recipient of the spell is a servitar, they receive a BLAST effect (3 damage).",
+                "spell_effect": "Immediate, 5 meters",
+                "spell_duration": "",
+                "page": 64
+              },
+              {
+                "id": 283,
+                "spell": "Invite Demon",
+                "mana_type": "Special",
+                "mana_cost": "2",
+                "incantation": "By the power of..., I open this mind to receive a demon!",
+                "description": "The willing recipient (who has been explained the spell beforehand) will be partially possessed by a demon until the end of the spell. The two souls often fight for control over the body. A discern soul spell detects 2 souls in the recipient's body (one of which is a demon). A detect servitar spell also detects this. A break minor possession spell ends this spell. \\n\\nThe recipient gains 2 extra hitpoints and can cast the fireblast spell 4 times today without mana cost. \\n\\nIf the recipient does not disable at least 4 unwilling individuals (at 0 hp) by the end of the spell, they immediately lose 10 energy of their choice. If this energy is no longer available, the recipient will immediately be dying and can only be healed if the missing energy is paid by others touching the recipient.",
+                "spell_effect": "Touch",
+                "spell_duration": "until sunrise",
+                "page": 65
+              }
+            ]
+          },
+          {
+            "id": [ 628, 629 ],
+            "skill": "Demonologist C",
+            "Spells": [
+              {
+                "id": 284,
+                "spell": "Greater Demonic Eye",
+                "mana_type": "Special",
+                "mana_cost": "2",
+                "incantation": "By the power of..., My greater demonic eye will find you!.... CRUSH!",
+                "description": "This spell only works on a disabled (at 0 hp) or dying target. If you encounter this target later in the day, you may once deliver a CRUSH effect at 5 meters on the target without an incantation. Note that the enchantment of this spell is on the user of the spell, not on the ultimate target!",
+                "spell_effect": "Enchantment, 5 meters",
+                "spell_duration": "until sunrise or use",
+                "page": 65
+              },
+              {
+                "id": 285,
+                "spell": "Invite Greater Demon",
+                "mana_type": "Special",
+                "mana_cost": "3",
+                "incantation": "By the power of..., I open this mind to receive a greater demon!",
+                "description": "The willing recipient (who has been explained the spell beforehand) will be partially possessed by a demon until the end of the spell. The two souls often fight for control over the body. A discern soul spell detects 2 souls in the recipient's body (one of which is a demon). A detect servitar spell also detects this. A break minor possession spell ends this spell. \\n\\nThe recipient gains 3 extra hitpoints, can cast the fireblast spell 4 times today without mana cost, and can cast the incinerate spell 2 times today without mana cost. \\n\\nIf the recipient does not disable at least 6 unwilling individuals (at 0 hp) by the end of the spell, they immediately lose 20 energy of their choice. If this energy is no longer available, the recipient will immediately be dying and can only be healed if the missing energy is paid by others touching the recipient.",
+                "spell_effect": "Touch",
+                "spell_duration": "until sunrise",
+                "page": 66
+              },
+              {
+                "id": 286,
+                "spell": "Transfer Contract",
+                "mana_type": "Special",
+                "mana_cost": "1",
+                "incantation": "By the power of your contract, you are hereby also bound to this person!",
+                "description": "Another person (with energy of their choice) can cast 'Command Servitar' and 'Banish Servitar' on the servitar you have summoned, even if they cannot normally cast these spells.",
+                "spell_effect": "Immediate, Touch",
+                "spell_duration": "until sunrise",
+                "page": 66
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "categorie": "Druidism",
+      "Skills": [
+        {
+          "id": [ 650, 651 ],
+          "skill": "Druid A",
+          "Spells": [
+            {
+              "id": 300,
+              "spell": "Detect spirit",
+              "mana_type": "Special",
+              "mana_cost": "0",
+              "incantation": "By the power of... , I detect spirit!",
+              "description": "This spell detects spirits or bodies possessed by spirits. The recipient whispers the answer (yes or no) into the caster's ear.",
+              "spell_effect": "Immediate, touch",
+              "spell_duration": "",
+              "page": 67
+            },
+            {
+              "id": 301,
+              "spell": "Reveal all spirits",
+              "mana_type": "Special",
+              "mana_cost": "1",
+              "incantation": "By the power of... , I reveal all spirits!",
+              "description": "This spell causes spirits or bodies possessed by spirits to momentarily glow. This is visible to everyone nearby. All spirits or bodies possessed by spirits within 5 meters respond with \"spirit\".",
+              "spell_effect": "Immediate, 5 meters",
+              "spell_duration": "",
+              "page": 67
+            },
+            {
+              "id": 302,
+              "spell": "Break minor possession",
+              "mana_type": "Special",
+              "mana_cost": "1",
+              "incantation": "By the power of... , I exorcise this body!",
+              "description": "An invite spell immediately comes to an end.",
+              "spell_effect": "Immediate, touch",
+              "spell_duration": "",
+              "page": 67
+            },
+            {
+              "id": 303,
+              "spell": "Create personal grove",
+              "mana_type": "Special",
+              "mana_cost": "1",
+              "incantation": "By the power of... , I create this personal grove!",
+              "description": "You define a piece of nature as your personal grove until the end of the event. Do this by selecting three trees (at least 2 meters high) that are no more than 5 meters apart. This cannot be an existing ritual site or another person's personal grove. Everything within this triangle counts as your grove. You must also leave a personal item in the center of your grove. A druid can only have 1 grove at a time and must move their personal item from one grove to another if they wish to create a new one. A personal grove does not count as a ritual site. \\n\\nThe following spells can be cast for free by the druid within the grove (if the druid knows the spells). They cannot be cast for free on scrolls: \\nDetect Impurity \\nHorrific revelation \\nSpeak with the dead \\nBreak minor possession \\nCharm person \\nResist special damage (but ends if the druid leaves the grove)",
+              "spell_effect": "Immediate, touch",
+              "spell_duration": "5 minutes incantation time",
+              "page": 68
+            }
+          ]
+        },
+        {
+          "id": [ 652, 653, 654, 655 ],
+          "skill": "Druid B",
+          "Spells": [
+            {
+              "id": 304,
+              "spell": "Detect impurity",
+              "mana_type": "Special",
+              "mana_cost": "1",
+              "incantation": "By the power of... , I detect spirits, undead and servitars!",
+              "description": "This spell detects spirits, undead, servitars, or bodies possessed by spirits, undead, or servitars. The recipient whispers the answer (yes + which type or no) into the caster's ear.",
+              "spell_effect": "Immediate, touch",
+              "spell_duration": "",
+              "page": 68
+            },
+            {
+              "id": 305,
+              "spell": "Reveal all impurities",
+              "mana_type": "Special",
+              "mana_cost": "2",
+              "incantation": "By the power of... , I reveal all spirits, undead and servitars!",
+              "description": "This spell causes spirits, undead, or servitars, or bodies possessed by spirits, undead, or servitars to momentarily glow. This is visible to everyone nearby. \\nAll spirits or bodies possessed by spirits within 5 meters respond with \"spirit\". \\nAll undead or bodies possessed by undead within 5 meters respond with \"undead\". \\nAll servitars or bodies possessed by servitars within 5 meters respond with \"servitar\".",
+              "spell_effect": "Immediate, 5 meters",
+              "spell_duration": "",
+              "page": 68
+            },
+            {
+              "id": 306,
+              "spell": "Protection of the grove",
+              "mana_type": "Special",
+              "mana_cost": "2",
+              "incantation": "By the powers of... , I grant you the Protection of my grove",
+              "description": "The recipient gains 3 extra hitpoints for the duration of the spell. These extra hitpoints can only be healed in the personal Grove of the druid who cast this spell. You must be aware of the location of this grove and the personal item of the druid if you want these extra hitpoints to be healed. \\n\\nThis is a grove spell, after casting this spell the druid must return to their personal grove before casting another grove spell.",
+              "spell_effect": "Enchantment, touch",
+              "spell_duration": "1 hour",
+              "page": 69
+            },
+            {
+              "id": 307,
+              "spell": "Invite nature spirit",
+              "mana_type": "Special",
+              "mana_cost": "2",
+              "incantation": "By the power of… , I open this mind to receive a nature spirit!",
+              "description": "The willing recipient (who has been briefed on the spell beforehand) will be partially possessed by a nature spirit until the end of the spell. The nature spirit will attempt to cause as much life and death as possible but will generally assist the friends of the body it inhabits. A discern soul detects 2 souls in the recipient's body (one of which is a spirit). A detect spirit spell also detects this. A break minor possession spell ends this spell. \\n\\nThe recipient gains 2 extra hitpoints until the next sunrise and can cast incite aggression twice for free and charm person twice for free. The recipient can also, for 4 energy of their choice, remove a single effect from someone (such as a poison, disease, enchantment, or fatal effect). \\n\\nThe recipient will attempt to either make 2 people unaware of their possession fight each other, or will attempt to have 2 people, at least one of whom is unaware of their possession, engage in consensual sex. If this is not done before this spell's effect ends, the recipient loses 5 energy of their choice immediately. If this energy is no longer present, the recipient will immediately be dying, and can only be healed if the missing energy is paid by others who touch the recipient. \\n\\nThis is a grove spell, after casting this spell the druid must return to their personal grove before casting another grove spell.",
+              "spell_effect": "Touch",
+              "spell_duration": "until sunrise",
+              "page": 69
+            }
+          ]
+        },
+        {
+          "id": [ 656, 657, 658, 659 ],
+          "skill": "Druid C",
+          "Spells": [
+            {
+              "id": 308,
+              "spell": "Grove meditation",
+              "mana_type": "Special",
+              "mana_cost": "2",
+              "incantation": "By the powers of... , may my grove grant you tranquility.",
+              "description": "The recipient must meditate for 5 minutes in the druid's personal grove before the end of the spell to make this spell work. You must be aware of the location of this grove and the personal item of the druid if you want this spell to work. After meditation, the recipient loses all negative enchantments and heals all hitpoints, poisons, diseases, and the effects of poisons and diseases. However, if the meditation is interrupted by the person being addressed, touched, or attacked, the spell fails. \\n\\nThis is a grove spell, after casting this spell the druid must return to their personal grove before casting another grove spell.",
+              "spell_effect": "Enchantment, touch",
+              "spell_duration": "1 hour",
+              "page": 70
+            },
+            {
+              "id": 309,
+              "spell": "Restore the cycle",
+              "mana_type": "Special",
+              "mana_cost": "3",
+              "incantation": "By the power of… , I DESTROY this undead/servitar/spirit!",
+              "description": "A person made apparent to you by a spell as undead, servitar, spirit, or possessed by such a creature gets a DESTROY effect (10 damage). \\n\\nThis is a grove spell, after casting this spell the druid must return to their personal grove before casting another grove spell.",
+              "spell_effect": "Immediate, 5 meters",
+              "spell_duration": "",
+              "page": 70
+            },
+            {
+              "id": 310,
+              "spell": "Invite avatar of the Cycle",
+              "mana_type": "Special",
+              "mana_cost": "3",
+              "incantation": "By the power of… , I open this mind to receive the avatar of the cycle!",
+              "description": "The willing recipient, who has been briefed on the spell beforehand, will be partially possessed by a nature spirit called \"avatar of the cycle\" until the end of the spell. The avatar attempts to fight as many \"unnatural\" influences on the flow of souls as possible, such as undead, servitars influencing the material world, and even spirits present on the material world (though it sometimes makes exceptions for invited nature spirits since they also strengthen the cycles). The avatar will generally assist the friends of the body it inhabits as long as they pursue this goal. A discern soul detects 2 souls in the recipient's body (one of which is a spirit). A detect spirit spell also detects this. A break minor possession spell ends this spell. \\n\\nThe recipient gains 3 extra hitpoints until the next sunrise, can cast detect impurity for free, and can reveal all impurities or break minor possession for 1 energy of their choice. Finally, the recipient can strike with a BLAST with any weapon longer than 45cm on undead, servitars, spirits, or bodies possessed by these creatures, per minute. The presence of an avatar of the cycle can be a powerful symbol in some rituals concerning the flow of souls and exorcism rituals. \\n\\nThe recipient will attempt to find and fight undead, servitars, or spirits. They want to break at least 1 possession (caused by enemies) or kill/destroy 1 undead, servitar, or spirit in the material world. If this is not done before this spell's effect ends, the recipient loses 5 energy of their choice immediately. If this energy is no longer present, the recipient will immediately be dying, and can only be healed if the missing energy is paid by others who touch the recipient. \\n\\nThis is a grove spell, after casting this spell the druid must return to their personal grove before casting another grove spell.",
+              "spell_effect": "Touch",
+              "spell_duration": "until sunrise",
+              "page": 71
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categorie": "Necromancy",
+      "Skills": [
+        [
+          {
+            "id": [ 675 ],
+            "skill": "Necromancer A",
+            "Spells": [
+              {
+                "id": 325,
+                "spell": "Detect undead",
+                "mana_type": "Special",
+                "mana_cost": "0",
+                "incantation": "By the power of… , I detect undead!",
+                "description": "This spell detects undead or bodies possessed by undead. The recipient whispers the answer (yes or no) into the caster's ear.",
+                "spell_effect": "Immediate, touch",
+                "spell_duration": "",
+                "page": 72
+              },
+              {
+                "id": 326,
+                "spell": "Reveal all undead",
+                "mana_type": "Special",
+                "mana_cost": "1",
+                "incantation": "By the power of… , I reveal all undead!",
+                "description": "This spell causes undead or bodies possessed by undead to briefly glow. This glowing effect is visible to everyone. All undead or bodies possessed by undead within 5 meters respond with “Undead.”",
+                "spell_effect": "Immediate, 5 meters",
+                "spell_duration": "",
+                "page": 72
+              },
+              {
+                "id": 327,
+                "spell": "Break minor possession",
+                "mana_type": "Special",
+                "mana_cost": "1",
+                "incantation": "By the power of… , I exorcise this body!",
+                "description": "A minor possession spell immediately ends.",
+                "spell_effect": "Immediate, touch",
+                "spell_duration": "",
+                "page": 72
+              },
+              {
+                "id": 328,
+                "spell": "Create zombie",
+                "mana_type": "Special",
+                "mana_cost": "1",
+                "incantation": "By the power of… , Raise this dead/dying one!",
+                "description": "The spell affects a newly deceased willing character (up to 10 minutes dead). This spell can also be cast on a living willing character (including yourself), provided there is enough time to explain the spell properly. \\n\\nOnly a break enchantment can cancel the spell before you turn into a zombie. Once the character dies (or is already dead), it will rise as a Mindless, Soulless zombie with 8 hit points, immune to mind-affecting effects, and will obey all your commands. If you do not give the zombie any orders (or cannot give them because, for example, you were not present at the time of death… or cast the spell on yourself), it will instead attack anyone it sees. It can use all weapon and armor skills it knew during its life. However, it will no longer have other skills. It also cannot speak. Every 5 minutes, the undead loses one hit point, which can only be healed with 1 mana by someone with (MINOR) RECONSTRUCT at their disposal.",
+                "spell_effect": "Enchantment, touch",
+                "spell_duration": "until sunrise, 10 seconds incantation time",
+                "page": 73
+              },
+              {
+                "id": 329,
+                "spell": "Minor Reconstruct",
+                "mana_type": "Special",
+                "mana_cost": "1",
+                "incantation": "By the power of… , I Reconstruct this undead!",
+                "description": "This spell will heal 1 hit point on the touched undead. This spell also works on other beings that are undead.",
+                "spell_effect": "Immediate, touch",
+                "spell_duration": "",
+                "page": 73
+              }
+            ]
+          },
+          {
+            "id": [ 676, 677 ],
+            "skill": "Necromancer B",
+            "Spells": [
+              {
+                "id": 330,
+                "spell": "Reconstruct",
+                "mana_type": "Special",
+                "mana_cost": "1",
+                "incantation": "By the power of… , I Reconstruct this undead!",
+                "description": "This spell will heal 1 hit point every 10 seconds on the touched undead or body possessed by an undead. After casting the spell, the healer must keep their hand on the person to be healed and whisper softly. Up to 3 hit points, normal and/or extra, can be healed per casting. For more hit points, the spell must be cast again. This spell also works on other beings that are undead.",
+                "spell_effect": "Immediate, touch",
+                "spell_duration": "10 seconds incantation time",
+                "page": 73
+              },
+              {
+                "id": 331,
+                "spell": "Chilling fear",
+                "mana_type": "Special",
+                "mana_cost": "2",
+                "incantation": "By the powers of… , Feel the chilling touch of death: FREEZE!........ FEAR!",
+                "description": "The recipient receives a FREEZE effect as long as the necromancer continues to repeat “Freeze” every second (see “Freeze body” spell), but the necromancer must also remain in the same place to maintain concentration. If the necromancer stops the spell, they may also invoke the FEAR effect on the recipient.",
+                "spell_effect": "Concentration, Enchantment, Mind-affecting, 5 meters",
+                "spell_duration": "30 seconds",
+                "page": 74
+              },
+              {
+                "id": 332,
+                "spell": "Bone armour",
+                "mana_type": "Special",
+                "mana_cost": "1",
+                "incantation": "By the powers… , I steal your marrow! HIT!",
+                "description": "The recipient receives a HIT effect, adding 1 extra armor point to the user's armor points. Lost extra armor points will be restored with this spell, or extra armor points will be added, up to a maximum of 3. This spell only works if the user of the spell is not wearing other forms of armor (this contradicts the regular rules about extra AP). The extra armor points from bone armor are cumulative but cannot be combined with other spells and effects (the strongest effect counts). All extra armor points obtained through this spell disappear after an hour.",
+                "spell_effect": "Immediate, touch",
+                "spell_duration": "1 hour",
+                "page": 74
+              },
+              {
+                "id": 333,
+                "spell": "Invite Soul of the Damned",
+                "mana_type": "Special",
+                "mana_cost": "2",
+                "incantation": "By the power of… , I open this mind to receive a damned soul!",
+                "description": "The willing recipient (who has been explained the spell beforehand) will be partially possessed by an evil spirit of a deceased person until the end of the spell, which tries to sow as much fear as possible; the two souls often fight for control over the body. A discern soul spell detects 2 souls in the recipient's body (one of which is a spirit). A detect undead spell also detects this. A break minor possession spell will end this spell. \\n\\nThe recipient permanently loses 2 hit points until the next sunrise, even if this spell ends. Note that if you are at 0 maximum HP, you are permanently disabled. \\n\\nAnyone who addresses the recipient, attacks them, casts a spell on them, or touches them of their own accord receives a FEAR effect from the recipient. Today, the recipient can cast the sleep spell 4 times and the curse life spell 4 times without spending mana.",
+                "spell_effect": "Immediate, touch",
+                "spell_duration": "until sunrise",
+                "page": 75
+              }
+            ]
+          },
+          {
+            "id": [ 678, 679 ],
+            "skill": "Necromancer C",
+            "Spells": [
+              {
+                "id": 334,
+                "spell": "Ghostly shackles",
+                "mana_type": "Special",
+                "mana_cost": "1",
+                "incantation": "By the power of… , May these ghostly shackles hold you!",
+                "description": "This spell does not work in combat and thus not on people resisting within the 10-second incantation time by fighting; the spell only works on willing recipients or people who cannot resist because they are disabled (at 0 HP), asleep, bound by another ghostly shackles spell, or are forced to be willing. The recipient is bound to something or someone by invisible unbreakable shackles. The necromancer can choose which touched object or person this concerns. The shackles also prevent the expenditure of energy. (Therefore, as long as the spell is effective, the recipient cannot use items, spells, techniques, rituals, or imbues and cannot concentrate on crafting or alchemy projects.)",
+                "spell_effect": "Enchantment, touch",
+                "spell_duration": "1 hour, 10 seconds incantation time",
+                "page": 75
+              },
+              {
+                "id": 335,
+                "spell": "Unholy Bolt",
+                "mana_type": "Special",
+                "mana_cost": "3",
+                "incantation": "In the name of... , I strike you with an Unholy Bolt! Crush!",
+                "description": "The recipient of this spell receives a CRUSH effect (5 damage).",
+                "spell_effect": "Immediate, 5 meters",
+                "spell_duration": "",
+                "page": 76
+              },
+              {
+                "id": 336,
+                "spell": "Invite ancestor",
+                "mana_type": "Special",
+                "mana_cost": "3",
+                "incantation": "By the power of… , I open this mind to receive an ancestor!",
+                "description": "The willing recipient (who has been explained the spell beforehand) will be fully possessed by their chosen ancestor or an ancestor chosen by the necromancer until the end of the spell, behaving as the ancestor wishes (often helping and having similar goals to the recipient). A discern soul spell detects 2 souls in the recipient's body (one of which is an ancestor). A detect undead spell also detects this. A break minor possession spell ends this spell. \\n\\nThe recipient can no longer use skills, including skills from items, until the end of the spell. Instead, the recipient can choose 10 character points of basic skills to use, which the ancestor once had (this can be decided by the recipient themselves). Requirements can be ignored. Note that the recipient does not receive energy from the new skills! They can still use energy (of their choice) from the disabled skills to pay for the new skills, but never more than the ancestor would have had. \\n\\nYou can spend a maximum of 3 character points on ritual skills. You cannot spend character points on craft and alchemy skills. \\nIf the ancestor has enough personal imbue cap for glyphs or runes, the recipient can choose which of the available imbues on the body become active at the moment the spell is used, provided there is enough imbue cap for these imbues.",
+                "spell_effect": "Immediate, touch",
+                "spell_duration": "until sunrise",
+                "page": 76
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+import { T } from '../i18n.js';
+
 function Stone(options) {
     this.options = Object.assign({}, {
         imageSprite: './images/pentagon-sprite.gif',
@@ -38,7 +40,7 @@ function Stone(options) {
     this.initialize();
 }
 
-function StoneDispatch(options) {
+function StoneDispatch(options = {}) {
     this.id = "pentagon-stone";
     this.stones = [];
 
@@ -71,7 +73,7 @@ function StoneDispatch(options) {
         var headerOptions = {
             id: "pentagon-header",
             pos: { x: 0.4, y: 0.6 },
-            text: "Ondode in het pentagon!"
+            text: T("undead")
         };
 
         var header = this.createHeader(headerOptions);
@@ -112,6 +114,6 @@ function StoneDispatch(options) {
     this.initialize();
 }
 
-export function StoneController(options) {
-    return new StoneDispatch(options);
+export function StoneController() {
+    return new StoneDispatch();
 }

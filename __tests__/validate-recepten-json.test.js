@@ -22,41 +22,41 @@ function hasUniqueIDs(jsonData) {
     const skillRecipes = new Set(jsonData.Categories.flatMap(category =>
         category.Skills.flatMap(skill => skill.Recipes)
     ));
-    const commonRecipies = jsonData.Categories.flatMap(category => category.Common);
+    const commonRecipes = jsonData.Categories.flatMap(category => category.Common);
 
     const duplicateIDs = new Set();
     const uniqueIDs = new Set();
 
-    function checkRecipyId(recipy) {
-        if (uniqueIDs.has(recipy.id)) { duplicateIDs.add({ id: recipy.id, recipy: recipy.recipy }); }
-        else { uniqueIDs.add(recipy.id); }
+    function checkrecipeId(recipe) {
+        if (uniqueIDs.has(recipe.id)) { duplicateIDs.add({ id: recipe.id, recipe: recipe.recipe }); }
+        else { uniqueIDs.add(recipe.id); }
     }
 
-    skillRecipes.forEach(recipy => { checkRecipyId(recipy) });
-    commonRecipies.forEach(recipy => { checkRecipyId(recipy) });
+    skillRecipes.forEach(recipe => { checkrecipeId(recipe) });
+    commonRecipes.forEach(recipe => { checkrecipeId(recipe) });
 
-    if (duplicateIDs.size > 0) { console.warn('Duplicate Recipy IDs:', duplicateIDs); }
+    if (duplicateIDs.size > 0) { console.warn('Duplicate recipe IDs:', duplicateIDs); }
     return duplicateIDs.size === 0;
 }
 
 // Chccks if the provided JSON data spell skill id definitions actualy exist in the vaardigheden
 function hasExistingSkillIDs(jsonData) {
-    const recipySkillIds = new Set(jsonData.Categories.flatMap(category => category.Skills.flatMap(skill => skill.id)));
+    const recipeSkillIds = new Set(jsonData.Categories.flatMap(category => category.Skills.flatMap(skill => skill.id)));
     const faultyIDs = new Set();
-    recipySkillIds.forEach(id => {
+    recipeSkillIds.forEach(id => {
         const skill = getSkillById(id)
         if (!skill || skill === null) { faultyIDs.add(id); }
     });
 
-    if (faultyIDs.size > 0) { console.warn('faulty Recipy SkillIDs:', faultyIDs); }
+    if (faultyIDs.size > 0) { console.warn('faulty recipe SkillIDs:', faultyIDs); }
     return faultyIDs.size === 0;
 }
 
-test('Recepten JSON should have unique IDs per Recipy', () => {
+test('Recepten JSON should have unique IDs per recipe', () => {
     expect(hasUniqueIDs(sourceRecepten)).toBe(true);
 });
 
-test('Spreuken JSON should have skill IDs per Recipy that exist', () => {
+test('Spreuken JSON should have skill IDs per recipe that exist', () => {
     expect(hasExistingSkillIDs(sourceRecepten)).toBe(true);
 });
 

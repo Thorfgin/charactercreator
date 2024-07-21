@@ -1,0 +1,1164 @@
+{
+  "Categories": [
+    {
+      "categorie": "Ambachtsvaardigheden",
+      "Common": [
+        {
+          "id": 999,
+          "recipe": "Mastercrafted Item (Elemental Flesh)",
+          "effect": "You can now process Elemental Flesh. \\nThis increases the Imbue cap of the item by 7 per piece.",
+          "inspiration": "2",
+          "components": "Pound of Elemental Flesh"
+        }
+      ],
+      "Skills": [
+        {
+          "id": 250,
+          "skill": "Mastersmith A",
+          "Recipes": [
+            {
+              "id": 1,
+              "recipe": "Mastercrafted Item (Metal)",
+              "effect": "You can now process Mythical Metal. \\nThis increases the Imbue cap of the item by 2 per piece.",
+              "inspiration": "0.5",
+              "components": "Mythical Metal"
+            },
+            {
+              "id": 2,
+              "recipe": "Whetstone (Level 1)",
+              "effect": "This item can be used on a weapon that is at least 45 cm long, allowing the weapon to make one BLAST attack today. Only one whetstone can affect a weapon at a time.",
+              "inspiration": "",
+              "components": "2 inspiration or 1 Mythical Metal and 5 copper coins."
+            }
+          ]
+        },
+        {
+          "id": 476,
+          "skill": "Mastersmith B",
+          "Recipes": [
+            {
+              "id": 3,
+              "recipe": "Mastercrafted Item B (Steel)",
+              "effect": "You can now process Mythical Steel. \\nThis increases the Imbue cap of the item by: 7 per piece.",
+              "inspiration": "2",
+              "components": "Mythical Steel"
+            },
+            {
+              "id": 4,
+              "recipe": "Whetstone (Level 2)",
+              "effect": "This item can be used on a weapon of at least 45 cm, the weapon can CRUSH once today. A weapon can be influenced by 1 whetstone at a time.",
+              "inspiration": "",
+              "components": "3 inspiration for 1 Level 2 Whetstone or 1 Mythical Steel plus 10 copper coins for 2 Level 2 Whetstones"
+            }
+          ]
+        },
+        {
+          "id": 477,
+          "skill": "Mastersmith C",
+          "Recipes": [
+            {
+              "id": 5,
+              "recipe": "Mastercrafted Item C (Mithril)",
+              "effect": "You can now process Mythical Mithril. \\nThis increases the Imbue cap of the item by: 27 per piece.",
+              "inspiration": "7",
+              "components": "Mythical Mithril"
+            },
+            {
+              "id": 6,
+              "recipe": "Whetstone (Level 3)",
+              "effect": "This item can be used on a weapon of at least 45 cm, the weapon can DESTROY once today. A weapon can be influenced by 1 whetstone at a time.",
+              "inspiration": "",
+              "components": "4 inspiration for 1 Level 3 Whetstone or 1 Mythical Mithril for 5 Level 3 Whetstones"
+            }
+          ]
+        },
+        {
+          "id": 251,
+          "skill": "Carpenter A",
+          "Recipes": [
+            {
+              "id": 7,
+              "recipe": "Mastercrafted Item A (Wood)",
+              "effect": "You can now process Mythical Wood. \\nThis increases the Imbue cap of the item by: 2 per piece.",
+              "inspiration": "0.5",
+              "components": "Mythical Wood"
+            },
+            {
+              "id": 8,
+              "recipe": "Totem of the Wolf",
+              "effect": "This item can be used to make a person immune to fear for 1 hour or can be used during a Woad-of-Blood ritual to extend the Woad-of-Blood duration on 1 person to 2 hours instead of 1 hour.",
+              "inspiration": "",
+              "components": "1 inspiration for 1 Totem of the Wolf or 1 Mythical Wood and 5 copper coins for 2 Totems of the Wolf"
+            }
+          ]
+        },
+        {
+          "id": 478,
+          "skill": "Carpenter B",
+          "Recipes": [
+            {
+              "id": 9,
+              "recipe": "Mastercrafted Item B (Ebony)",
+              "effect": "You can now process Mythical Ebony. \\nThis increases the Imbue cap of the item by: 7 per piece.",
+              "inspiration": "2",
+              "components": "Mythical Ebony"
+            },
+            {
+              "id": 10,
+              "recipe": "Totem of the Owl",
+              "effect": "This item can be used to make a person immune to the next mindaffecting effect within the next hour, or can be used in combination with a Totem of the Wolf during a Woad-of-Blood ritual to extend the Woad-of-Blood duration on 1 person to 4 hours instead of 1 hour.",
+              "inspiration": "",
+              "components": "1 inspiration for 1 Totem of the Owl or 1 Mythical Ebony for 5 Totems of the Owl"
+            }
+          ]
+        },
+        {
+          "id": 479,
+          "skill": "Carpenter C",
+          "Recipes": [
+            {
+              "id": 11,
+              "recipe": "Mastercrafted Item C (Worldtree Sapling)",
+              "effect": "You can now process Mythical Worldtree Sapling. \\nThis increases the Imbue cap of the item by: 27 per piece.",
+              "inspiration": "7",
+              "components": "Mythical Worldtree Sapling"
+            },
+            {
+              "id": 12,
+              "recipe": "Totem of the Bull",
+              "effect": "This item can be used to give a person 2 extra HP for 1 hour, or can be used in combination with a Totem of the Wolf and a Totem of the Owl during a Woad-of-Blood ritual to extend the Woad-of-Blood duration on 1 person for the entire day instead of 1 hour.",
+              "inspiration": "",
+              "components": "4 inspiration for 1 Totem of the Bull or 1 Mythical Worldtree Sapling for 5 Totems of the Bull"
+            }
+          ]
+        },
+        {
+          "id": 252,
+          "skill": "Tailor A",
+          "Recipes": [
+            {
+              "id": 13,
+              "recipe": "Mastercrafted Item A (Cloth)",
+              "effect": "You can now process Mythical Cloth. \\nThis increases the Imbue cap of the item by 2 per piece.",
+              "inspiration": "0.5",
+              "components": "Mythical Cloth"
+            },
+            {
+              "id": 14,
+              "recipe": "High Quality Bandage",
+              "effect": "This item can be used with the Healing skill instead of requiring Willpower.",
+              "inspiration": "",
+              "components": "1 inspiration for 1 High Quality Bandage or 1 Mythical Cloth and 5 copper coins for 2 High Quality Bandages"
+            }
+          ]
+        },
+        {
+          "id": 480,
+          "skill": "Tailor B",
+          "Recipes": [
+            {
+              "id": 15,
+              "recipe": "Mastercrafted Item B (Velvet)",
+              "effect": "You can now process Mythical Velvet. \\nThis increases the Imbue cap of the item by 7 per piece.",
+              "inspiration": "2",
+              "components": "Mythical Velvet"
+            },
+            {
+              "id": 16,
+              "recipe": "Group Flag",
+              "effect": "This item can be used once to connect 10 members of a group or guild to it. These 10 members can choose to recover x energy of their choice within the tent where this flag hangs today by resting for a few minutes with at least 1 other member of the group.",
+              "inspiration": "",
+              "components": "10*x inspiration or 2 Mythical Velvet*x"
+            }
+          ]
+        },
+        {
+          "id": 481,
+          "skill": "Tailor C",
+          "Recipes": [
+            {
+              "id": 17,
+              "recipe": "Mastercrafted Item C (Spidersilk)",
+              "effect": "You can now process Mythical Spidersilk. \\nThis increases the Imbue cap of the item by 27 per piece.",
+              "inspiration": "7",
+              "components": "Mythical Spidersilk "
+            },
+            {
+              "id": 18,
+              "recipe": "Group Banner",
+              "effect": "This item can be used once to connect 12 members of a group or guild to it. These 12 members can choose to recover x energy of their choice after a battle today that they spent during that battle when the banner was raised.",
+              "inspiration": "",
+              "components": "8*x inspiration or 1 Mythical Spidersilk and 40 copper coins for an x of 3"
+            }
+          ]
+        },
+        {
+          "id": 253,
+          "skill": "Bookbinder A",
+          "Recipes": [
+            {
+              "id": 19,
+              "recipe": "Mastercrafted Item A (Paper)",
+              "effect": "You can now process Mythical Paper. \\nThis increases the Imbue cap of the item by 2 per piece.",
+              "inspiration": "0.5",
+              "components": "Mythical Paper"
+            },
+            {
+              "id": 20,
+              "recipe": "Scroll Paper",
+              "effect": "Scroll paper that can be used for the 'Rune Scroll Crafting' or 'Glyph Scroll Crafting' skill. Scroll paper does not expire unlike other mundane items.",
+              "inspiration": "",
+              "components": "3 inspiration or 2 Mythical paper"
+            }
+          ]
+        },
+        {
+          "id": 482,
+          "skill": "Bookbinder B",
+          "Recipes": [
+            {
+              "id": 21,
+              "recipe": "Mastercrafted Item B (Vellum)",
+              "effect": "You can now process Mythical Vellum. \\nThis increases the Imbue cap of the item by 7 per piece.",
+              "inspiration": "2",
+              "components": "Mythical Vellum"
+            },
+            {
+              "id": 22,
+              "recipe": "Empty Skill Research Book",
+              "effect": "If a person takes notes for 3 events about their research into an additional skill, they can then learn this additional skill without a teacher.",
+              "inspiration": "",
+              "components": "12 inspiration or 3 Mythical vellum"
+            }
+          ]
+        },
+        {
+          "id": 483,
+          "skill": "Bookbinder C",
+          "Recipes": [
+            {
+              "id": 23,
+              "recipe": "Mastercrafted Item C (Griffinskin Vellum)",
+              "effect": "You can now process Mythical Griffinskin Vellum. \\nThis increases the Imbue cap of the item by 27 per piece.",
+              "inspiration": "7",
+              "components": "Mythical Griffinskin Vellum"
+            },
+            {
+              "id": 24,
+              "recipe": "Book of Experiences",
+              "effect": "If a person makes personal notes about their life and experiences around this event, the person gets an additional 0.25 XP after this event. You can only use one such book per event.",
+              "inspiration": "",
+              "components": "20 inspiration or 1 Mythical griffinskin vellum"
+            }
+          ]
+        },
+        {
+          "id": 254,
+          "skill": "Leatherworker A",
+          "Recipes": [
+            {
+              "id": 25,
+              "recipe": "Mastercrafted Item A (Leather)",
+              "effect": "You can now process Mythical Leather. \\nThis increases the Imbue cap of the item by 2 per piece.",
+              "inspiration": "0.5",
+              "components": "Mythical Leather"
+            },
+            {
+              "id": 26,
+              "recipe": "Armor Repair Kit",
+              "effect": "This item can be used on armor to achieve the same effect as a Mend spell.",
+              "inspiration": "",
+              "components": "1 inspiration for 1 Armor Repair Kit or 1 Mythical leather and 5 copper coins for 2 Armor Repair Kits."
+            }
+          ]
+        },
+        {
+          "id": 484,
+          "skill": "Leatherworker B",
+          "Recipes": [
+            {
+              "id": 27,
+              "recipe": "Mastercrafted Item B (Scale)",
+              "effect": "You can now process Mythical Scale. \\nThis increases the Imbue cap of the item by 7 per piece.",
+              "inspiration": "2",
+              "components": "Mythical Scale"
+            },
+            {
+              "id": 28,
+              "recipe": "Armor Reinforcement",
+              "effect": "This item can be used on armor to add 1 extra armor point for a day.",
+              "inspiration": "",
+              "components": "2 inspiration for 1 Armor Reinforcement or 1 Mythical scale for 2 Armor Reinforcements"
+            }
+          ]
+        },
+        {
+          "id": 485,
+          "skill": "Leatherworker C",
+          "Recipes": [
+            {
+              "id": 29,
+              "recipe": "Mastercrafted Item C (Dragonscale)",
+              "effect": "You can now process Mythical Dragonscale. \\nThis increases the Imbue cap of the item by 27 per piece.",
+              "inspiration": "7",
+              "components": "Mythical Dragonscale"
+            },
+            {
+              "id": 30,
+              "recipe": "Heavy Armor Reinforcement",
+              "effect": "This item can be used on armor to add 2 extra armor points for a day.",
+              "inspiration": "",
+              "components": "3 inspiration for 1 Heavy Armor Reinforcement or 1 Mythical dragonscale for 7 Heavy Armor Reinforcements"
+            }
+          ]
+        },
+        {
+          "id": 255,
+          "skill": "Jeweler A",
+          "Recipes": [
+            {
+              "id": 31,
+              "recipe": "Mastercrafted Item A (Copper Ingot)",
+              "effect": "You can now process Copper Ingots. \\nThis increases the Imbue cap of the item by 2 per piece.",
+              "inspiration": "0.5",
+              "components": "Copper Ingot"
+            },
+            {
+              "id": 32,
+              "recipe": "Friendship Gift",
+              "effect": "You can give this item to someone and declare your friendship. This person then gains 2 energy of their choice. If this person dies during this event or the friendship ends, you lose 4 energy of your choice the next game day.",
+              "inspiration": "",
+              "components": "2 inspiration or 4 copper ingots"
+            }
+          ]
+        },
+        {
+          "id": 486,
+          "skill": "Jeweler B",
+          "Recipes": [
+            {
+              "id": 33,
+              "recipe": "Mastercrafted Item B (Silver Ingot)",
+              "effect": "You can now process Silver Ingots. \\nThis increases the Imbue cap of the item by 7 per piece.",
+              "inspiration": "2",
+              "components": "Silver Ingot"
+            },
+            {
+              "id": 34,
+              "recipe": "Alliance Jewel",
+              "effect": "With this item, two willing individuals can declare an alliance to each other. If either person lies to the other during this event or breaks a promise to the other, this item immediately breaks when the persons (re)unite, and both persons receive an incite aggression effect.",
+              "inspiration": "",
+              "components": "5 inspiration or 2 silver ingots"
+            }
+          ]
+        },
+        {
+          "id": 487,
+          "skill": "Jeweler C",
+          "Recipes": [
+            {
+              "id": 35,
+              "recipe": "Mastercrafted Item C (Golden Ingot)",
+              "effect": "You can now process Golden Ingots. \\nThis increases the Imbue cap of the item by 27 per piece.",
+              "inspiration": "7",
+              "components": "Gold Ingot"
+            },
+            {
+              "id": 36,
+              "recipe": "Wedding Jewel",
+              "effect": "With this item, someone can enter into a marriage with another person. From that moment until the end of the marriage, you can give 10 of your energy of your choice per day to the other person when you are together. If the other person ever dies or the marriage ends, you lose 10 energy of your choice the next game day. (With 2 items, you can make the connection work both ways.)",
+              "inspiration": "",
+              "components": "13 inspiration or 1 gold ingot"
+            }
+          ]
+        },
+        {
+          "id": 256,
+          "skill": "Stone Setter A",
+          "Recipes": [
+            {
+              "id": 37,
+              "recipe": "Mastercrafted Item A (Quartz)",
+              "effect": "You can now process Quartz. \\nThis increases the Imbue cap of the item by 2 per piece.",
+              "inspiration": "0.5",
+              "components": "Quartz"
+            },
+            {
+              "id": 38,
+              "recipe": "Basic Jewelry",
+              "effect": "You create a piece of jewelry using 5 of the same type of quartz and sell it for 3 gold (at the information desk). Every 2 inspiration you invest here reduces the required quartz by 1.",
+              "inspiration": "",
+              "components": "0 to 10 inspiration (depending on the amount of the same type of Quartz)"
+            }
+          ]
+        },
+        {
+          "id": 488,
+          "skill": "Stone Setter B",
+          "Recipes": [
+            {
+              "id": 39,
+              "recipe": "Mastercrafted Item B (Gems)",
+              "effect": "You can now process Gems. \\nThis increases the Imbue cap of the item by 5 per piece.",
+              "inspiration": "1",
+              "components": "Gem"
+            },
+            {
+              "id": 40,
+              "recipe": "Expensive Jewelry",
+              "effect": "You create a piece of jewelry using 5 of the same type of gems and sell it for 7 gold (at the information desk). Every 4 inspiration you invest here reduces the required gems by 1.",
+              "inspiration": "",
+              "components": "0 to 20 inspiration (depending on the amount of the same type of Gems)"
+            }
+          ]
+        },
+        {
+          "id": 489,
+          "skill": "Stone Setter C",
+          "Recipes": [
+            {
+              "id": 41,
+              "recipe": "Mastercrafted Item C (Flawless Gems)",
+              "effect": "You can now process Flawless Gems. \\nThis increases the Imbue cap of the item by 10 per piece.",
+              "inspiration": "2",
+              "components": "Flawless Gem"
+            },
+            {
+              "id": 42,
+              "recipe": "Royal Jewelry",
+              "effect": "You create a piece of jewelry using 5 of the same type of flawless gems and sell it for 15 gold (at the information desk). Every 8 inspiration you invest here reduces the required flawless gems by 1.",
+              "inspiration": "",
+              "components": "0 to 40 inspiration (depending on the amount of the same type of Flawless Gems)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categorie": "Alchemistenvaardigheden",
+      "Common": [],
+      "Skills": [
+        {
+          "id": 227,
+          "skill": "Brew Healing Drinks A",
+          "Recipes": [
+            {
+              "id": 43,
+              "recipe": "Heal scrape",
+              "effect": "Heals 1 HP. Does not work if the drinker is incapacitated or has a FATAL.",
+              "inspiration": "1",
+              "components": "-"
+            },
+            {
+              "id": 44,
+              "recipe": "Heal wound",
+              "effect": "Heals 3 HP. Does not work if the drinker is incapacitated or has a FATAL.",
+              "inspiration": "1",
+              "components": "1 Catnip"
+            },
+            {
+              "id": 45,
+              "recipe": "Minor heal crippling wound",
+              "effect": "Heals 1 HP if you do not have a FATAL.",
+              "inspiration": "1",
+              "components": "1 Catnip, 1 Ivan’s hood"
+            },
+            {
+              "id": 46,
+              "recipe": "Heal crippling wound",
+              "effect": "Heals 3 HP if you do not have a FATAL.",
+              "inspiration": "1",
+              "components": "1 Catnip, 2 Ivan’s hood"
+            },
+            {
+              "id": 47,
+              "recipe": "Bleed salve",
+              "effect": "Extends grace period by 10 minutes. Only works on individuals with a FATAL.",
+              "inspiration": "1",
+              "components": "1 Catnip, 1 Fool’s stem"
+            },
+            {
+              "id": 48,
+              "recipe": "Heal hangover",
+              "effect": "Heals effects of a hangover.",
+              "inspiration": "1",
+              "components": "-"
+            }
+          ]
+        },
+        {
+          "id": 451,
+          "skill": "Brew Healing Drinks B",
+          "Recipes": [
+            {
+              "id": 49,
+              "recipe": "Heal deadly wound",
+              "effect": "Heals FATAL and 1 HP.",
+              "inspiration": "1",
+              "components": "1 Catnip, 1 Fool’s stem, 1 Ivan’s hood"
+            },
+            {
+              "id": 50,
+              "recipe": "Cure weak disease",
+              "effect": "Heals a HIT DISEASE (including damage).",
+              "inspiration": "1",
+              "components": "1 Catnip"
+            },
+            {
+              "id": 51,
+              "recipe": "Cure disease",
+              "effect": "Heals a disease of choice (including effect or damage).",
+              "inspiration": "1",
+              "components": "2 Catnip"
+            },
+            {
+              "id": 52,
+              "recipe": "Courage",
+              "effect": "Heals or prevents the next 2 FEAR or FEAR POISON today.",
+              "inspiration": "1",
+              "components": "1 Catnip"
+            },
+            {
+              "id": 53,
+              "recipe": "Wakeful",
+              "effect": "Heals or prevents the next SLEEP or SLEEP POISON today.",
+              "inspiration": "1",
+              "components": "1 Catnip"
+            },
+            {
+              "id": 54,
+              "recipe": "Cure Heartache",
+              "effect": "Strengthens for an hour but then removes unrequited love feelings.",
+              "inspiration": "1",
+              "components": "-"
+            }
+          ]
+        },
+        {
+          "id": 452,
+          "skill": "Brew Healing Drinks C",
+          "Recipes": [
+            {
+              "id": 55,
+              "recipe": "Heal all wounds",
+              "effect": "Heals FATAL and restores all HP. Also regrows ritual removed limbs.",
+              "inspiration": "2",
+              "components": "2 Catnip, 1 Fool’s stem, 1 Ivan’s hood, 1 Nimpf’s blossom"
+            },
+            {
+              "id": 56,
+              "recipe": "Cure strong disease",
+              "effect": "Heals all diseases and the effects and damage caused.",
+              "inspiration": "1",
+              "components": "1 Catnip, 1 Nimph’s blossom"
+            },
+            {
+              "id": 57,
+              "recipe": "Muscle control",
+              "effect": "Heals or prevents the next PARALYZE, PARALYZE POISON, TORTURE or TORTURE POISON today.",
+              "inspiration": "1",
+              "components": "1 Catnip, 1 Raven’s eye"
+            },
+            {
+              "id": 58,
+              "recipe": "Concentration",
+              "effect": "Heals or prevents the next CONFUSE or CONFUSE POISON today.",
+              "inspiration": "1",
+              "components": "1 Catnip"
+            },
+            {
+              "id": 59,
+              "recipe": "Reroute blood",
+              "effect": "Heals or prevents the next FATAL POISON today.",
+              "inspiration": "1",
+              "components": "1 Catnip, 1 Nimpf’s blossom"
+            },
+            {
+              "id": 60,
+              "recipe": "Cure Amnesia",
+              "effect": "Removes mental blocks that make you forget things (such as hypnosis).",
+              "inspiration": "1",
+              "components": "-"
+            }
+          ]
+        },
+        {
+          "id": 231,
+          "skill": "Brew Poisons A",
+          "Recipes": [
+            {
+              "id": 61,
+              "recipe": "Minor weapon oil",
+              "effect": "Your next strike with a weapon of at least 45cm hits STRIKE.",
+              "inspiration": "1",
+              "components": "-"
+            },
+            {
+              "id": 62,
+              "recipe": "Minor venom",
+              "effect": "Your next strike hits HIT POISON.",
+              "inspiration": "1",
+              "components": "1 Spiderleaf"
+            },
+            {
+              "id": 63,
+              "recipe": "Fright venom",
+              "effect": "Your next strike hits FEAR POISON.",
+              "inspiration": "1",
+              "components": "1 Spiderleaf, 1 Fool’s stem"
+            },
+            {
+              "id": 64,
+              "recipe": "Sleep poison",
+              "effect": "Poisons food or drink with SLEEP POISON.",
+              "inspiration": "1",
+              "components": "1 Spiderleaf"
+            },
+            {
+              "id": 65,
+              "recipe": "Muscle lock poison",
+              "effect": "Poisons food or drink with PARALYZE POISON.",
+              "inspiration": "1",
+              "components": "1 Spiderleaf, 1 Raven’s eye"
+            },
+            {
+              "id": 66,
+              "recipe": "Abortion poison",
+              "effect": "If the willing pregnant person agrees, the fetus dies.",
+              "inspiration": "1",
+              "components": "-"
+            }
+          ]
+        },
+        {
+          "id": 459,
+          "skill": "Brew Poisons B",
+          "Recipes": [
+            {
+              "id": 67,
+              "recipe": "Venom",
+              "effect": "Your next strike hits BLAST POISON.",
+              "inspiration": "1",
+              "components": "1 Spiderleaf, 2 Fool’s stem"
+            },
+            {
+              "id": 68,
+              "recipe": "Weapon oil",
+              "effect": "Your next strike with a weapon of at least 45cm hits BLAST.",
+              "inspiration": "1",
+              "components": "1 Spiderleaf"
+            },
+            {
+              "id": 69,
+              "recipe": "Mute venom",
+              "effect": "Your next strike hits MUTE POISON.",
+              "inspiration": "1",
+              "components": "1 Spiderleaf"
+            },
+            {
+              "id": 70,
+              "recipe": "Muscle lock venom",
+              "effect": "Your next strike hits PARALYZE POISON.",
+              "inspiration": "1",
+              "components": "1 Spiderleaf, 1 Bael’sammon’s rose"
+            },
+            {
+              "id": 71,
+              "recipe": "Agonizing poison",
+              "effect": "Poisons food or drink with TORTURE POISON.",
+              "inspiration": "1",
+              "components": "1 Spiderleaf, 1 Fool’s stem, 1 Raven’s eye"
+            },
+            {
+              "id": 72,
+              "recipe": "Sorrow drink",
+              "effect": "Poisons food or drink, making a person depressed for an hour.",
+              "inspiration": "1",
+              "components": "-"
+            }
+          ]
+        },
+        {
+          "id": 460,
+          "skill": "Brew Poisons C",
+          "Recipes": [
+            {
+              "id": 73,
+              "recipe": "Batch of venom",
+              "effect": "Your next 2 strikes hit BLAST POISON.",
+              "inspiration": "1",
+              "components": "1 Spiderleaf, 1 Fool’s stem, 1 Bael’sammon’s rose"
+            },
+            {
+              "id": 74,
+              "recipe": "Major weapon oil",
+              "effect": "Your next strike with a weapon of at least 45cm hits CRUSH.",
+              "inspiration": "1",
+              "components": "5 Spiderleaf"
+            },
+            {
+              "id": 75,
+              "recipe": "Confuse venom",
+              "effect": "Your next 3 strikes hit CONFUSE POISON.",
+              "inspiration": "2",
+              "components": "2 Spiderleaf, 2 Fool’s stem, 1 Bael’sammon’s rose"
+            },
+            {
+              "id": 76,
+              "recipe": "Fatal venom",
+              "effect": "Your next strike hits FATAL POISON.",
+              "inspiration": "2",
+              "components": "2 Spiderleaf, 2 Bael’sammon’s rose"
+            },
+            {
+              "id": 77,
+              "recipe": "Fatal poison",
+              "effect": "Poisons food or drink with FATAL POISON.",
+              "inspiration": "1",
+              "components": "1 Spiderleaf, 1 Bael’sammon’s rose"
+            },
+            {
+              "id": 78,
+              "recipe": "Drink of willed death",
+              "effect": "If the willing drinker wishes, they can decide to spontaneously die at some point today.",
+              "inspiration": "1",
+              "components": "-"
+            }
+          ]
+        },
+        {
+          "id": 230,
+          "skill": "Brew Hallucinogenic Elixirs A",
+          "Recipes": [
+            {
+              "id": 79,
+              "recipe": "Smell of confusion",
+              "effect": "When this potion is opened, the opener and a person of choice within 5 meters receive a CONFUSE effect.",
+              "inspiration": "1",
+              "components": "-"
+            },
+            {
+              "id": 80,
+              "recipe": "Minor fever",
+              "effect": "You receive 1 ritual mana of choice back. \\nThis potion cannot be made durable.",
+              "inspiration": "1",
+              "components": "1 Nodens Veil"
+            },
+            {
+              "id": 81,
+              "recipe": "Vision of the soul",
+              "effect": "You can cast a DISCERN SOUL spell once within 5 minutes. \\nNo mana is required to cast this spell.",
+              "inspiration": "1",
+              "components": "1 Nodens Veil"
+            },
+            {
+              "id": 82,
+              "recipe": "Vision of symbols",
+              "effect": "Today you can use a scroll once without needing the RUNE USE or GLYPH USE skill.",
+              "inspiration": "1",
+              "components": "1 Nodens Veil"
+            },
+            {
+              "id": 83,
+              "recipe": "Visions of the lifted veil",
+              "effect": "When this potion is used at a ritual site with a connection to the spirit world (e.g., a grove), you may experience visions of spirits to gain insight into current affairs. Requires a game master when used.",
+              "inspiration": "1",
+              "components": "1 Nodens Veil, 1 Oracle’s tung"
+            },
+            {
+              "id": 84,
+              "recipe": "Relive",
+              "effect": "You vividly relive a personal memory of your choice. (As long as you or another player remembers this OC. This potion cannot be used to inquire information from the game master).",
+              "inspiration": "1",
+              "components": "-"
+            }
+          ]
+        },
+        {
+          "id": 457,
+          "skill": "Brew Hallucinogenic Elixirs B",
+          "Recipes": [
+            {
+              "id": 85,
+              "recipe": "Fever",
+              "effect": "You receive 2 ritual mana of choice back. \\nThis potion cannot be made durable.",
+              "inspiration": "1",
+              "components": "1 Nodens Veil, 1 Ivan’s hood"
+            },
+            {
+              "id": 86,
+              "recipe": "Visions of glowing symbols",
+              "effect": "You gain access to the RUNE USE and GLYPH USE skills until sunrise.",
+              "inspiration": "1",
+              "components": "1 Nodens Veil, 1 Oracle’s tung"
+            },
+            {
+              "id": 87,
+              "recipe": "Visions of magic",
+              "effect": "You can cast a DETECT MAGIC spell once within 5 minutes. \\nNo mana is required to cast this spell.",
+              "inspiration": "1",
+              "components": "1 Nodens Veil"
+            },
+            {
+              "id": 88,
+              "recipe": "Visions of numen",
+              "effect": "You can cast a DETECT SPIRITUAL INFLUENCE spell once within 5 minutes. \\nNo mana is required to cast this spell.",
+              "inspiration": "1",
+              "components": "1 Nodens Veil"
+            },
+            {
+              "id": 89,
+              "recipe": "Visions of the past",
+              "effect": "When this potion is used at a ritual site with a connection to the spirit world (e.g., a grove), up to 10 people may experience visions of spirits to gain insight into the history of a touched person or object. Requires a game master.",
+              "inspiration": "2",
+              "components": "2 Nodens Veil, 1 Raven’s eye, 1 Nimpf’s blossom"
+            },
+            {
+              "id": 90,
+              "recipe": "Relive other potion",
+              "effect": "You vividly relive a memory of a touched person who willingly cooperates. (As long as the player remembers this OC. This potion cannot be used to inquire information from the game master).",
+              "inspiration": "1",
+              "components": "-"
+            }
+          ]
+        },
+        {
+          "id": 458,
+          "skill": "Brew Hallucinogenic Elixirs C",
+          "Recipes": [
+            {
+              "id": 91,
+              "recipe": "Major fever",
+              "effect": "You receive 3 ritual mana of choice back. \\nThis potion cannot be made durable.",
+              "inspiration": "1",
+              "components": "1 Nodens Veil, 2 Ivan’s hood"
+            },
+            {
+              "id": 92,
+              "recipe": "Visions of death",
+              "effect": "Within 15 minutes, you can freely speak with the bodies of willing dead around you. You also pour a portion of the potion into their mouths (up to 10 bodies).",
+              "inspiration": "2",
+              "components": "2 Nodens Veil, 1 Fool’s stem, 1 Raven’s eye, 1 Nimpf’s blossom"
+            },
+            {
+              "id": 93,
+              "recipe": "Visions of the zeitgeist",
+              "effect": "Within 15 minutes, you can cast DISCERN SOUL spells up to 10 times. No mana is required to cast these spells.",
+              "inspiration": "2",
+              "components": "2 Nodens Veil, 1 Ivan’s hood, 1 Raven’s eye, 1 Oracle’s tung"
+            },
+            {
+              "id": 94,
+              "recipe": "Visions of present",
+              "effect": "When this potion is shared at a ritual site with a connection to the spirit world (e.g., a grove), up to 10 people may experience visions of spirits to gain insight into current affairs. Requires a game master.",
+              "inspiration": "2",
+              "components": "2 Nodens Veil, 2 Ivan’s hood, 1 Oracle’s tung"
+            },
+            {
+              "id": 95,
+              "recipe": "Future visions",
+              "effect": "When this potion is used at a ritual site with a connection to the spirit world (e.g., a grove), you may experience visions of spirits to gain insight into future events. Requires a game master.",
+              "inspiration": "3",
+              "components": "3 Nodens Veil, 1 Ivan’s hood, 1 Fool’s stem, 1 Oracle’s tung"
+            },
+            {
+              "id": 96,
+              "recipe": "Be other",
+              "effect": "Your mind melds with a touched person who willingly cooperates for 5 minutes. Both persons experience each other’s thoughts, emotions, and viewpoints. This may lead to minor personality changes afterwards.",
+              "inspiration": "1",
+              "components": "-"
+            }
+          ]
+        },
+        {
+          "id": 228,
+          "skill": "Brew Herbal Elixirs A",
+          "Recipes": [
+            {
+              "id": 97,
+              "recipe": "Martial skill",
+              "effect": "Grants you the ability to use 1 weapon or shield for 5 minutes without the correct skill.",
+              "inspiration": "1",
+              "components": "-"
+            },
+            {
+              "id": 98,
+              "recipe": "Minor strengthen will",
+              "effect": "You regain 1 willpower. \\nThis potion cannot be made long-lasting.",
+              "inspiration": "1",
+              "components": "1 Bobost"
+            },
+            {
+              "id": 99,
+              "recipe": "Minor focus",
+              "effect": "You regain 1 inspiration. \\nThis potion cannot be made long-lasting.",
+              "inspiration": "1",
+              "components": "1 Bobost"
+            },
+            {
+              "id": 100,
+              "recipe": "Retreat",
+              "effect": "For 10 minutes, you can defend and retreat while disabled. You cannot attack or cast spells. This effect ends if you suffer 1 damage.",
+              "inspiration": "1",
+              "components": "1 Bobost"
+            },
+            {
+              "id": 101,
+              "recipe": "Minor strengthen body",
+              "effect": "Grants 1 extra HP for 5 minutes (healable).",
+              "inspiration": "1",
+              "components": "1 Bobost, 1 Ivan’s hood"
+            },
+            {
+              "id": 102,
+              "recipe": "Confidence",
+              "effect": "Makes you confident (but does not protect against fear effects).",
+              "inspiration": "1",
+              "components": "-"
+            }
+          ]
+        },
+        {
+          "id": 453,
+          "skill": "Brew Herbal Elixirs B",
+          "Recipes": [
+            {
+              "id": 103,
+              "recipe": "Healing spit",
+              "effect": "Allows you to apply battlefield first aid (as the skill) today, using healing saliva.",
+              "inspiration": "1",
+              "components": "1 Bobost, 2 Raven’s eye"
+            },
+            {
+              "id": 104,
+              "recipe": "Strengthen body",
+              "effect": "Grants 2 extra HP for 5 minutes (healable).",
+              "inspiration": "1",
+              "components": "1 Bobost, 2 Ivan’s hood"
+            },
+            {
+              "id": 105,
+              "recipe": "Long lasting strengthen body potion",
+              "effect": "Grants 1 extra HP for the day (healable).",
+              "inspiration": "1",
+              "components": "1 Bobost, 1 Ivan’s hood, 1 Fools stem"
+            },
+            {
+              "id": 106,
+              "recipe": "Strengthen will",
+              "effect": "You regain 2 willpower. \\nThis potion cannot be made long-lasting.",
+              "inspiration": "1",
+              "components": "1 Bobost, 1 Ivan’s hood"
+            },
+            {
+              "id": 107,
+              "recipe": "Focus",
+              "effect": "You regain 2 inspiration. \\nThis potion cannot be made long-lasting.",
+              "inspiration": "1",
+              "components": "1 Bobost, 1 Raven’s eye"
+            },
+            {
+              "id": 108,
+              "recipe": "Empathy",
+              "effect": "Increases your feelings of empathy and charity.",
+              "inspiration": "1",
+              "components": "-"
+            }
+          ]
+        },
+        {
+          "id": 454,
+          "skill": "Brew Herbal Elixirs C",
+          "Recipes": [
+            {
+              "id": 109,
+              "recipe": "Healing blood",
+              "effect": "Allows you to apply battlefield surgery (as the skill) today, using healing blood.",
+              "inspiration": "1",
+              "components": "1 Bobost, 1 Raven’s eye, 1 Nimpf’s blossom"
+            },
+            {
+              "id": 110,
+              "recipe": "Major strengthen body",
+              "effect": "Grants 3 extra HP for 5 minutes (healable).",
+              "inspiration": "1",
+              "components": "1 Bobost, 2 Ivan’s hood, 1 Bael’sammon’s rose"
+            },
+            {
+              "id": 111,
+              "recipe": "Anti-magic skin",
+              "effect": "Immune to the next spell cast on you within an hour.",
+              "inspiration": "1",
+              "components": "1 Bobost, 1 Nimpf’s blossom"
+            },
+            {
+              "id": 112,
+              "recipe": "Major strengthen will",
+              "effect": "You regain 3 willpower. \\nThis potion cannot be made long-lasting.",
+              "inspiration": "1",
+              "components": "1 Bobost, 2 Ivan’s hood"
+            },
+            {
+              "id": 113,
+              "recipe": "Major focus",
+              "effect": "You regain 3 inspiration. \\nThis potion cannot be made long-lasting.",
+              "inspiration": "1",
+              "components": "1 Bobost, 2 Raven’s eye"
+            },
+            {
+              "id": 114,
+              "recipe": "Happiness drink",
+              "effect": "Makes you happy for an hour. Addictive to some individuals (you may decide).",
+              "inspiration": "1",
+              "components": "-"
+            }
+          ]
+        },
+        {
+          "id": 229,
+          "skill": "Brew Magical Elixirs A",
+          "Recipes": [
+            {
+              "id": 115,
+              "recipe": "Fire breath",
+              "effect": "Allows you to cast a Fireblast spell once today without expending energy, but you receive a BLAST effect afterward.",
+              "inspiration": "1",
+              "components": "-"
+            },
+            {
+              "id": 116,
+              "recipe": "Minor divine connection",
+              "effect": "You regain 1 spiritual mana. \\nThis potion cannot be made long-lasting.",
+              "inspiration": "1",
+              "components": "1 Allysa’s bane"
+            },
+            {
+              "id": 117,
+              "recipe": "Minor magic veins",
+              "effect": "You regain 1 elemental mana. \\nThis potion cannot be made long-lasting.",
+              "inspiration": "1",
+              "components": "1 Allysa’s bane"
+            },
+            {
+              "id": 118,
+              "recipe": "Minor divine inspiration",
+              "effect": "Upon drinking, choose a level 1 cleric spell (which you do not necessarily know). You can cast this spell once today without needing mana.",
+              "inspiration": "1",
+              "components": "1 Allysa’s bane, 1 Raven’s eye"
+            },
+            {
+              "id": 119,
+              "recipe": "Minor potion of inspiration of the magi",
+              "effect": "Upon drinking, choose a level 1 wizard spell (which you do not necessarily know). You can cast this spell once today without needing mana.",
+              "inspiration": "1",
+              "components": "1 Allysa’s bane, 1 Fools stem"
+            },
+            {
+              "id": 120,
+              "recipe": "Magical hair dye",
+              "effect": "Allows you, if desired, to permanently change your hair color once.",
+              "inspiration": "1",
+              "components": "-"
+            }
+          ]
+        },
+        {
+          "id": 455,
+          "skill": "Brew Magical Elixirs B",
+          "Recipes": [
+            {
+              "id": 121,
+              "recipe": "Magical inspiration",
+              "effect": "Allows you to cast an unlimited number of level 1 spells of your choice today. You still need the correct mana.",
+              "inspiration": "1",
+              "components": "1 Allysa’s bane, 1 Raven’s eye, 1 Fools stem"
+            },
+            {
+              "id": 122,
+              "recipe": "Divine connection",
+              "effect": "You regain 2 spiritual mana. \\nThis potion cannot be made long-lasting.",
+              "inspiration": "1",
+              "components": "1 Allysa’s bane, 1 Raven’s eye"
+            },
+            {
+              "id": 123,
+              "recipe": "Magic veins",
+              "effect": "You regain 2 elemental mana. \\nThis potion cannot be made long-lasting.",
+              "inspiration": "1",
+              "components": "1 Allysa’s bane, 1 Fools stem"
+            },
+            {
+              "id": 124,
+              "recipe": "Divine inspiration",
+              "effect": "Upon drinking, choose a level 2 cleric spell (which you do not necessarily know). You can cast this spell once today without needing mana.",
+              "inspiration": "1",
+              "components": "1 Allysa’s bane, 1 Raven’s eye"
+            },
+            {
+              "id": 125,
+              "recipe": "Inspiration of the magi",
+              "effect": "Upon drinking, choose a level 2 wizard spell (which you do not necessarily know). You can cast this spell once today without needing mana.",
+              "inspiration": "1",
+              "components": "1 Allysa’s bane, 1 Fools stem"
+            },
+            {
+              "id": 126,
+              "recipe": "Magical skin dye",
+              "effect": "Allows you, if desired, to permanently change your skin color once.",
+              "inspiration": "1",
+              "components": "-"
+            }
+          ]
+        },
+        {
+          "id": 456,
+          "skill": "Brew Magical Elixirs C",
+          "Recipes": [
+            {
+              "id": 127,
+              "recipe": "Major magical inspiration",
+              "effect": "Allows you to cast an unlimited number of level 2 spells of your choice today. You still need the correct mana.",
+              "inspiration": "1",
+              "components": "1 Allysa’s bane, 1 Raven’s eye, 1 Fools stem, 1 Oracle’s tung"
+            },
+            {
+              "id": 128,
+              "recipe": "Major divine connection",
+              "effect": "You regain 3 spiritual mana. \\nThis potion cannot be made long-lasting.",
+              "inspiration": "1",
+              "components": "1 Allysa’s bane, 2 Raven’s eye"
+            },
+            {
+              "id": 129,
+              "recipe": "Major magic veins",
+              "effect": "You regain 3 elemental mana. \\nThis potion cannot be made long-lasting.",
+              "inspiration": "1",
+              "components": "1 Allysa’s bane, 2 Fools stem"
+            },
+            {
+              "id": 130,
+              "recipe": "Major divine inspiration",
+              "effect": "Upon drinking, choose a level 3 cleric spell (which you do not necessarily know). You can cast this spell once today without needing mana.",
+              "inspiration": "1",
+              "components": "1 Allysa’s bane, 2 Raven’s eye, 1 Oracle’s tung"
+            },
+            {
+              "id": 131,
+              "recipe": "Major inspiration of the magi",
+              "effect": "Upon drinking, choose a level 3 wizard spell (which you do not necessarily know). You can cast this spell once today without needing mana.",
+              "inspiration": "1",
+              "components": "1 Allysa’s bane, 2 Fools stem, 1 Oracle’s tung"
+            },
+            {
+              "id": 132,
+              "recipe": "Mirror personality",
+              "effect": "For one hour, your character traits and behavior will temporarily mimic those of a person standing before you.",
+              "inspiration": "1",
+              "components": "-"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

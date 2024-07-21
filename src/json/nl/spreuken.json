@@ -2020,7 +2020,7 @@
       "Skills": [
         {
           "id": [ 625 ],
-          "skill": "Demonoloog A",
+          "skill": "Demonologist A",
           "Spells": [
             {
               "id": 275,
@@ -2070,7 +2070,7 @@
         },
         {
           "id": [ 626, 627 ],
-          "skill": "Demonoloog B",
+          "skill": "Demonologist B",
           "Spells": [
             {
               "id": 279,
@@ -2131,7 +2131,7 @@
         },
         {
           "id": [ 628, 629 ],
-          "skill": "Demonoloog C",
+          "skill": "Demonologist C",
           "Spells": [
             {
               "id": 284,

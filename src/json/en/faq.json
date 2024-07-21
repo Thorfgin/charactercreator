@@ -1,0 +1,64 @@
+{
+  "FAQ": [
+    {
+      "header": "Can I submit my character directly to VA?",
+      "message": "No, unfortunately, there is no connection possible with the VA character management and/or registration system. This module is intended to make it easier to create and/or manage your own character. It is still unknown if and how the VA info desk could/would use this. In the future, the player portal may provide a solution for this."
+    },
+    {
+      "header": "Can I save my character?",
+      "message": "Yes, if you close this window, your last entry will be saved. Additionally, you have the option to save the character by name in your browser's storage or download a data file that you can save locally on your device."
+    },
+    {
+      "header": "Why do I need to give my character a name before I can save it?",
+      "message": "To retrieve the characters, we need a name so you know which character it is. The name you enter does not need to be the final name. You are completely free to enter anything in the 'name' input field. You can also enter 'Character 1', 'Character 2', 'Character 3', etc."
+    },
+    {
+      "header": "Can I change my character after I have saved it?",
+      "message": "Yes, if you save the character after entering it, you can reload it later. You can then make changes to the character, but... Note: this will not affect the saved version! Do you want to save these changes separately? Don't forget to change the name first!"
+    },
+    {
+      "header": "Can I change my character after I have exported it?",
+      "message": "Yes, if you have exported the character, you can upload it again later. You can then make changes to the character, but... Note: this will not affect the local file! You will need to re-export the modified version!"
+    },
+    {
+      "header": "Can I print my character?",
+      "message": "Yes, you can print the page by creating a PDF document via the 'Export to PDF' button and then printing it. This PDF export is generated based on the table."
+    },
+    {
+      "header": "Why can I add 0.25 XP?",
+      "message": "For each event that the character has fully survived, your character receives XP. The amount of XP you receive depends on how much XP you have already accumulated. The amount of XP you receive is always divisible by 0.25. That is why this amount is chosen. For more information, see the rules for Growth in the Skills booklet on page 40.\n https://the-vortex.nl/wp-content/uploads/2022/04/Vaardigheden.pdf#page=40||Vaardigheden.pdf"
+    },
+    {
+      "header": "What is the difference between Basic and Extra skills?",
+      "message": "When you start a character, only Basic skills may be chosen. All skills from the list of Extra skills can only be learned in the game itself. This requires another player or NPC with the 'Mentor Expertise' skill, and the skill in question that you want to learn. How this works is explained in the rules for Growth in the Skills booklet on page 40.\n https://the-vortex.nl/wp-content/uploads/2022/04/Vaardigheden.pdf#page=40||Vaardigheden.pdf"
+    },
+    {
+      "header": "I have a suggestion for a (missing) archetype as a template!",
+      "message": "We would love to hear what you would like to see added to the templates. Questions about the templates or suggestions can be asked on the VA Discord in the channel:\n https://discord.com/channels/887411615178293298/889812948514639893||Website-feedback"
+    },
+    {
+      "header": "I have a question about the ruleset!",
+      "message": "We would love to hear how we can help you. Questions about the ruleset can be asked on the VA Discord in the channel:\n https://discord.com/channels/887411615178293298/1119280489140846754||Ruleset-questions"
+    },
+    {
+      "header": "I found an error in the ruleset!",
+      "message": "That's not good! We would love to hear what you have found. Errors in the ruleset can be reported on the VA Discord in the channel:\n https://discord.com/channels/887411615178293298/1119280489140846754||Ruleset-questions"
+    },
+    {
+      "header": "I found an error in the character creator",
+      "message": "That's not right, Of course, we want to fix this for you! When an error occurs in the browser (console), it is automatically logged. So, these errors do not need to be reported. Are you unsure or still want to report the error? Then report it to VA via email (vasecretaris@gmail.com) or on the VA Discord in the channel:\n https://discord.com/channels/887411615178293298/889812948514639893||Website-feedback"
+    },
+    {
+      "header": "I get a message that the ruleset version is not recognized during loading.",
+      "message": "That's frustrating. Unfortunately we cannot resolve this for you. You may have tried to load an older version of a character. Each character is saved with a mention of a ruleset version and additional details. This prevents incorrectly assembled characters. Currently, there is no support for loading older characters."
+    },
+    {
+      "header": "I get a message that the ruleset version cannot be read during loading.",
+      "message": "That's frustrating. Unfortunately we cannot resolve this for you. You may have tried to load a corrupted or outdated version of a character. Each character is saved with a mention of a ruleset version and additional details. This prevents incorrectly assembled characters. The character you have chosen does not (no longer) meet this standard. Currently, there is no support for loading incorrect or corrupted characters."
+    },
+    {
+      "header": "I get a message that something went wrong after uploading.",
+      "message": "That's frustrating. Something might be wrong with the file you are trying to load. Each character is saved with a mention of a ruleset version and additional details. If a file is tampered with, it can break. We advise you not to modify the content of saved or exported characters."
+    }
+  ]
+}

@@ -1,12 +1,18 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 // shared
 import { useSharedState } from '../SharedStateContext.jsx';
 import { importCharacterFromFile } from '../SharedStorage.js';
 
 export default function FileUploadModal() {
+    // Multi-Language support klaarzetten
+    const { t } = useTranslation();
 
     const {
+        setModalHeader,
+        setModalMsg,
+        setShowModal,
         setCharName,
         setIsChecked,
         setMAX_XP,
@@ -44,16 +50,19 @@ export default function FileUploadModal() {
                             closeModal();
                         }
                         else {
-                            const msg = "Deze versie van dit personage kan helaas niet ingeladen worden.";
-                            alert(msg);
+                            setModalHeader(t("generic.oops"));
+                            const msg = t("fileupload_modal.modals.cant_load_version");
+                            setModalMsg(msg);
+                            setShowModal(true);
                             console.error(msg, selectedFile, charData);
                         }
-
-
                     }
                 } catch (error) {
-                    alert("Er ging iets mis bij het inlezen van het bestand.");
-                    console.error("Er ging iets mis bij het inlezen van het bestand:", error);
+                    setModalHeader(t("generic.oops"));
+                    const msg = "fileupload_modal.modals.unknown_error";
+                    setModalMsg(t(msg));
+                    setShowModal(true);
+                    console.error(msg, error);
                 }
             };
 
@@ -67,13 +76,13 @@ export default function FileUploadModal() {
     return (
         <div className="modal-overlay" onClick={closeModal}>
             <div className="upload-modal" onClick={e => e.stopPropagation()}>
-                <h3>Upload een Bestand</h3>
+                <h3>{t("fileupload_modal.labels.upload_file")}</h3>
                 <div className="upload-modal-block center-content">
                     <input type="file" onChange={handleFileChange} />
                 </div>
                 <div className="upload-modal-block">
-                    <button className="btn-primary" onClick={handleUpload}>Upload</button>
-                    <button className="btn-primary" onClick={closeModal}>Annuleren</button>
+                    <button className="btn-primary" onClick={handleUpload}>{t("generic.upload")}</button>
+                    <button className="btn-primary" onClick={closeModal}>{t("generic.cancel")}</button>
                 </div>
             </div>
             <span className="close" onClick={closeModal}>&times;</span>
