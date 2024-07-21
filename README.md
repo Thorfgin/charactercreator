@@ -4,8 +4,6 @@
 	For easy maintenance of the vaardigheden/spells/recipes
 	TEXT-TO-ONE-LINE Convertor: https://lingojam.com/TexttoOneLine
 
-	GESTOPT BIJ RECEPTEN - ?
-
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	TODO:
@@ -14,8 +12,7 @@
 	- 
 
 	MUST:
-	- LANGUAGE: add multi-language support as an option >> English
-
+	-
 	
 	SHOULD:
 	- FEATURE: Extend the character with a NOTE section to allow players to register remarks, powers/conditions, etc.
@@ -61,7 +58,8 @@
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	DONE
-	20243005	FEATURE: added i18n language support
+	20240722	FEATURE: added i18n language support
+			LANGUAGE: add English as an option to multi-language support
 			FEATURE: split the resources to facilitate language support and added translation support to the SharedActions.
 			UNITTEST: fixed the unittests that broke due to adding a header to the MODAL message.
 			FIX: Fixed a bug that did not propperly convery why the druid cant remove a prerequisite skill.
