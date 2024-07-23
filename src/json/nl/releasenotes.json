@@ -1,6 +1,16 @@
 {
   "ReleaseNotes": [
     {
+      "date": "23-07-2024",
+      "version": "v0.7.2",
+      "Items": [
+        {
+          "description": "Bij het veranderen van taal kan het zijn dat niet alle waarden correct vertaald worden door een lokale cache in de browser. Aanpassing dwingt af dat de pagina voortaan correct geladen wordt.",
+          "title": " Bugfix: Vertaling werkt niet altijd door caching "
+        }
+      ]
+    },
+    {
       "date": "20-07-2024",
       "version": "v0.7.1",
       "Items": [
