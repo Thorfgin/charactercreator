@@ -18,6 +18,7 @@ import presets_en from './json/en/presets.json';
 import releasenotes_nl from './json/nl/releasenotes.json';
 import releasenotes_en from './json/en/releasenotes.json';
 import faq_nl from './json/nl/faq.json';
+import faq_en from './json/en/faq.json';
 
 function useSourceByLanguage(optionNL, optionEN) {
     const lang = getCurrentLanguage() || "nl";
