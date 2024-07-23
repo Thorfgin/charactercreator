@@ -1,6 +1,16 @@
 {
   "ReleaseNotes": [
     {
+      "date": "23-07-2024",
+      "version": "v0.7.2",
+      "Items": [
+        {
+          "description": "When switching language, the page may sometimes not translate all values correctly, due to a local browser cache. This change enforces refreshing and reloading of resources.",
+          "title": " Bugfix: Partial translation due to caching "
+        }
+      ]
+    },
+    {
       "date": "20-07-2024",
       "version": "v0.7.1",
       "Items": [
