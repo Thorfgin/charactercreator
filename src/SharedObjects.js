@@ -1,24 +1,13 @@
 import { getCurrentLanguage } from './i18n.js';
 
-// jsons
-import vaardigheden_nl from './json/nl/vaardigheden.json';
-import vaardigheden_en from './json/en/vaardigheden.json';
-import spreuken_nl from './json/nl/spreuken.json';
-import spreuken_en from './json/en/spreuken.json';
-import recepten_nl from './json/nl/recepten.json';
-import recepten_en from './json/en/recepten.json';
-import presets_nl from './json/nl/presets.json';
-import presets_en from './json/en/presets.json';
-import releasenotes_nl from './json/nl/releasenotes.json';
-import releasenotes_en from './json/en/releasenotes.json';
-import faq_nl from './json/nl/faq.json';
-import faq_en from './json/en/faq.json';
-
 // functions
 import {
     generateOptions,
     regenerateOptions
 } from './SharedActions.js';
+
+import { loadAllJsons } from './json/jsonLoader.js';
+const jsonData = await loadAllJsons();
 
 function useSourceByLanguage(optionNL, optionEN) {
     const lang = getCurrentLanguage() || "nl";
@@ -30,14 +19,14 @@ function useSourceByLanguage(optionNL, optionEN) {
 }
 
 // Presets
-export function getPresets() { return useSourceByLanguage(presets_nl, presets_en); }
+export function getPresets() { return useSourceByLanguage(jsonData.presets_nl, jsonData.presets_en); }
 
 // Release Notes
-export function getSourceReleaseNotes() { return useSourceByLanguage(releasenotes_nl, releasenotes_en); }
+export function getSourceReleaseNotes() { return useSourceByLanguage(jsonData.releasenotes_nl, jsonData.releasenotes_en); }
 
 // FAQ
 
-export function getSourceFAQ() { return useSourceByLanguage(faq_nl, faq_en); }
+export function getSourceFAQ() { return useSourceByLanguage(jsonData.faq_nl, jsonData.faq_en); }
 
 
 /// --- SKILLS & SELECT PROPERTIES --- ///
@@ -48,18 +37,18 @@ export function setTotalXP(value) { totalXP = value; }
 export function resetTotalXP(tableData) { totalXP = tableData.length > 0 ? tableData.reduce((accumulator, skill) => accumulator + skill.xp, 0) : 0 }
 
 // vaardigheden
-export function getSourceVaardigheden(){ return useSourceByLanguage(vaardigheden_nl, vaardigheden_en) }
+export function getSourceVaardigheden() { return useSourceByLanguage(jsonData.vaardigheden_nl, jsonData.vaardigheden_en); }
 export let sourceBasisVaardigheden = getSourceVaardigheden().BasisVaardigheden;
 export let sourceExtraVaardigheden = getSourceVaardigheden().ExtraVaardigheden;
 export let optionsBasisVaardigheden = generateOptions(sourceBasisVaardigheden);
 export let optionsExtraVaardigheden = generateOptions(sourceExtraVaardigheden);
 
 // spreuken
-export function getSpreuken() { return useSourceByLanguage(spreuken_nl, spreuken_en); }
+export function getSpreuken() { return useSourceByLanguage(jsonData.spreuken_nl, jsonData.spreuken_en); }
 export let sourceSpreuken = [].concat(...getSpreuken().Categories.map(category => category.Skills));
 
 // recepten
-export function getRecepten() { return useSourceByLanguage(recepten_nl, recepten_en); }
+export function getRecepten() { return useSourceByLanguage(jsonData.recepten_nl, jsonData.recepten_en); }
 export let sourceSkillRecepten = [].concat(...getRecepten().Categories.map(category => category.Skills));
 export let sourceCommonRecepten = [].concat(...getRecepten().Categories.map(category => category.Common).filter(Boolean));
 
@@ -78,6 +67,8 @@ export function regenerateSpreukenAndRecepten() {
 }
 
 /// --- TABLE PROPERTIES --- ///
+// text wordt opgehaald uit de i18n vertalingen
+
 export const defaultProperties = [
     { id: 1, name: "hitpoints", image: "./images/image_hp.png", text: 'shared_objects.hitpoints', value: 1 },
     { id: 2, name: "armourpoints", image: "./images/image_ap.png", text: 'shared_objects.armourpoints', value: 0 },
