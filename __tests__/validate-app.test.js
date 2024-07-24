@@ -1,11 +1,11 @@
 import * as React from 'react';
-import {
-    vi,
-    expect,
+import { 
+    jest,
     describe,
-    it,
-    beforeEach
-} from 'vitest'
+    test,
+    beforeEach,
+    expect
+} from '@jest/globals';
 
 import {
     isSkillAPrerequisiteToAnotherSkill,
@@ -40,16 +40,21 @@ function getSkillsFromExtraVaardigheden(skillIds) {
     return mockTableData;
 }
 
-// Mock implementation
-const setModalHeader = vi.fn();
-const setModalMsg = vi.fn();
+// Prepare for useState Mock
+const setModalHeader = jest.fn();
+const setModalMsg = jest.fn();
 
 /// --- Pre-Requisites --- ///
 
 describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
+    beforeEach(() => {
+        const useStateSpy = jest.spyOn(React, 'useState');
+        useStateSpy.mockImplementation((init) => [init, setModalHeader, setModalMsg ]);
+    })
+
     // No Prerequisites
     // 103 Runen gebruiken, 
-    it('Can remove a Skill that has no prerequisites', () => {
+    test('Can remove a Skill that has no prerequisites', () => {
         const mockTableData = getSkillsFromBasisVaardigheden([103]);
 
         let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(103, true, mockTableData, setModalHeader, setModalMsg);
@@ -59,7 +64,7 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
     // Single Skill
     // 103 Runen gebruiken, 
     // 104 Runen gewenning,
-    it('Cannot remove a Skill that is a prerequisite of type: skill', () => {
+    test('Cannot remove a Skill that is a prerequisite of type: skill', () => {
         const mockTableData = getSkillsFromBasisVaardigheden([103, 104]); 
 
         let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(103, true, mockTableData, setModalHeader, setModalMsg);
@@ -74,7 +79,7 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
     // 350 Genezingsspreuken A (EL)
     // 131 Paladijn
     // 300 Paladijnspreuken A
-    it('Cannot remove a Skill that is the only matching prerequisite of type: any-list', () => {
+    test('Cannot remove a Skill that is the only matching prerequisite of type: any-list', () => {
         const skills = [126, 350, 131, 300 ]
         const mockTableData = getSkillsFromBasisVaardigheden(skills);
         let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(350, true, mockTableData, setModalHeader, setModalMsg);
@@ -87,7 +92,7 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
     // 351 Genezingsspreuken A (SP)
     // 131 Paladijn
     // 300 Paladijnspreuken A
-    it('Can remove a Skill that still has a skill matching same prerequisite of type: any-list', () => {
+    test('Can remove a Skill that still has a skill matching same prerequisite of type: any-list', () => {
         const skills = [126, 350, 351, 131, 300]
         const mockTableData = getSkillsFromBasisVaardigheden(skills);
         let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(350, true, mockTableData, setModalHeader, setModalMsg);
@@ -99,7 +104,7 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
     // 200 Eerste hulp bij gevechten
     // 203 Diagnostiek
     // 400 Genees andere wezens
-    it('Can remove a Skill that still has a skill matching a different prerequisite of type: any-list', () => {
+    test('Can remove a Skill that still has a skill matching a different prerequisite of type: any-list', () => {
         const basisSkills = [350, 200, 203];
         const extraSkills = [400]
 
@@ -123,7 +128,7 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
     // Category
     // 275 Magiërspreuken A - Wit
     // 279 Magiërspreuken B - Metaal
-    it('Cannot remove a Skill that is a prerequisite of type: by Category: 4 XP', () => {
+    test('Cannot remove a Skill that is a prerequisite of type: by Category: 4 XP', () => {
         const mockTableData = getSkillsFromBasisVaardigheden([275, 279]);
 
         let isPrerequisite = isSkillAPrerequisiteToAnotherSkill(275, true, mockTableData, setModalHeader, setModalMsg);
@@ -136,7 +141,7 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
     // 350 Genezingsspreuken A (EL)
     // 352 Genezingsspreuken B (EL)
     // 502 Genezingsspreuken C (EL)
-    it('Cannot remove a Skill that is a prerequisite of type: by Category: 8 XP', () => {
+    test('Cannot remove a Skill that is a prerequisite of type: by Category: 8 XP', () => {
         const basisSkills = [350, 352];
         const extraSkills = [502]
 
@@ -157,7 +162,7 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
     // 375 Elementair Ritualisme
     // 376 Spiritueel Ritualisme
     // 578 Cirkel Vinden
-    it('Cannot remove a Ritualism Skill that is a prerequisite of type: by Category: 5 XP', () => {
+    test('Cannot remove a Ritualism Skill that is a prerequisite of type: by Category: 5 XP', () => {
         const basisSkills = [375, 376];
         const extraSkills = [578]
 
@@ -182,7 +187,7 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
     // 175 Doorzettingsvermogen
     // 111 Leermeester Expertise
     // 425 Extra Wilskracht
-    it('Cannot remove a extra skill that is a prerequisite to Teacher Expertise', () => {
+    test('Cannot remove a extra skill that is a prerequisite to Teacher Expertise', () => {
         const basisSkills = [175, 111];
         const extraSkills = [425]
 
@@ -206,7 +211,7 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
     // 330 Priesterspreuken B - Dood
     // 279 Magiërspreuken B - Metaal
     // 651 Doods Druidisme A
-    it('Cannot remove a Skill that is an Exception to the prerequisites', () => {
+    test('Cannot remove a Skill that is an Exception to the prerequisites', () => {
         const basisSkills = [327, 330, 279];
         const extraSkills = [651] 
 
@@ -227,7 +232,7 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
 // 131 Paladijn
 // 300 Paladijnspreuken A
 // 301 Paladijnspreuken B
-it('Can remove a Skill Count when it is a Skill prerequisite with Count > 1', () => {
+test('Can remove a Skill Count when it is a Skill prerequisite with Count > 1', () => {
     const basisSkills = [126, 350, 131, 300, 301];
     const mockTableData = getSkillsFromBasisVaardigheden(basisSkills);
     let mockPaladijn = mockTableData[2];
@@ -244,7 +249,7 @@ it('Can remove a Skill Count when it is a Skill prerequisite with Count > 1', ()
 // 131 Paladijn
 // 300 Paladijnspreuken A
 // 301 Paladijnspreuken B
-it('Cannot remove a Skill Count when it is a Skill prerequisite with Count = 1', () => {
+test('Cannot remove a Skill Count when it is a Skill prerequisite with Count = 1', () => {
     const basisSkills = [126, 350, 131, 300, 301];
     const mockTableData = getSkillsFromBasisVaardigheden(basisSkills);
     let mockPaladijn = mockTableData[2];
@@ -267,7 +272,7 @@ describe('Using meetsAllPrerequisites', () => {
     // 175 Doorzettingsvermogen
     // 425 Extra Wilskracht
     // 111 Leermeester Expertise
-    it('Can add Teacher Expertise when an Extra Skill is present', () => {
+    test('Can add Teacher Expertise when an Extra Skill is present', () => {
         const basisSkills = [175];
         const extraSkills = [425]
 
@@ -283,7 +288,7 @@ describe('Using meetsAllPrerequisites', () => {
 
     // 175 Doorzettingsvermogen
     // 111 Leermeester Expertise
-    it('Cannot add Teacher Expertise when an Extra Skill is not present', () => {
+    test('Cannot add Teacher Expertise when an Extra Skill is not present', () => {
         const basisSkills = [175];
 
         const mockTableData = getSkillsFromBasisVaardigheden(basisSkills);
@@ -296,7 +301,7 @@ describe('Using meetsAllPrerequisites', () => {
     // Single Skill
     // 126 Harnas I
     // 127 Harnas II
-    it('Can add a Skill that meets its Skill prerequisite', () => {
+    test('Can add a Skill that meets its Skill prerequisite', () => {
         const basisSkills = [126];
         const mockTableData = getSkillsFromBasisVaardigheden(basisSkills);
         const mockHarnasII = getSkillsFromBasisVaardigheden([127])[0];
@@ -306,7 +311,7 @@ describe('Using meetsAllPrerequisites', () => {
     });
 
     // 107 Rekenen
-    it('Cannot add a Skill that does not meet its Skill prerequisite', () => {
+    test('Cannot add a Skill that does not meet its Skill prerequisite', () => {
         const basisSkills = [107];
         const mockTableData = getSkillsFromBasisVaardigheden(basisSkills);
         const mockHarnasII = getSkillsFromBasisVaardigheden([127])[0];
@@ -318,7 +323,7 @@ describe('Using meetsAllPrerequisites', () => {
     // Any-list
     // 175 Doorzettingsvermogen
     // 425 Extra Wilskracht
-    it('Can add an extra skill that meets its Any-List prerequisite', () => {
+    test('Can add an extra skill that meets its Any-List prerequisite', () => {
         const basisSkills = [175];
         const extraSkills = [425]
 
@@ -334,7 +339,7 @@ describe('Using meetsAllPrerequisites', () => {
 
     // 107 Rekenen
     // 425 Extra Wilskracht
-    it('Cannot add an extra skill that does not meets its Any-List prerequisite', () => {
+    test('Cannot add an extra skill that does not meets its Any-List prerequisite', () => {
         const basisSkills = [107];
         const extraSkills = [425]
 
@@ -350,7 +355,7 @@ describe('Using meetsAllPrerequisites', () => {
     // Category
     // 375 Elementair Ritualisme
     // 576 Ritueel Leider
-    it('Can add an extra Ritualism skill that meets its Categorie prerequisite', () => {
+    test('Can add an extra Ritualism skill that meets its Categorie prerequisite', () => {
         const basisSkills = [375];
         const extraSkills = [576]
 
@@ -365,7 +370,7 @@ describe('Using meetsAllPrerequisites', () => {
     });
 
     // 578 Cirkel Vinden
-    it('Cannot add an extra Ritualism skill that does not meet its Categorie prerequisite', () => {
+    test('Cannot add an extra Ritualism skill that does not meet its Categorie prerequisite', () => {
         const basisSkills = [];
         const extraSkills = [578]
 
@@ -381,7 +386,7 @@ describe('Using meetsAllPrerequisites', () => {
 
     // 275 Magiërspreuken A - Wit
     // 279 Magiërspreuken B - Metaal
-    it('Can add a Skill that meets its prerequisite of type: by Category: 4 XP', () => {
+    test('Can add a Skill that meets its prerequisite of type: by Category: 4 XP', () => {
         const mockTableData = getSkillsFromBasisVaardigheden([275]);
         const mockMageB = getSkillsFromBasisVaardigheden([279])[0];
 
@@ -391,7 +396,7 @@ describe('Using meetsAllPrerequisites', () => {
 
     // 107 Rekenen
     // 279 Magiërspreuken B - Metaal
-    it('Cannot add a Skill does not meet its prerequisite of type: by Category: 4 XP', () => {
+    test('Cannot add a Skill does not meet its prerequisite of type: by Category: 4 XP', () => {
         const mockTableData = getSkillsFromBasisVaardigheden([107]);
         const mockMageB = getSkillsFromBasisVaardigheden([279])[0];
 
@@ -402,7 +407,7 @@ describe('Using meetsAllPrerequisites', () => {
     // 350 Genezingsspreuken A (EL)
     // 352 Genezingsspreuken B (EL)
     // 502 Genezingsspreuken C (EL)
-    it('Can add a Skill that meets its prerequisite of type: by Category: 8 XP', () => {
+    test('Can add a Skill that meets its prerequisite of type: by Category: 8 XP', () => {
         const basisSkills = [350, 352];
 
         const mockTableData = getSkillsFromBasisVaardigheden(basisSkills);
@@ -417,7 +422,7 @@ describe('Using meetsAllPrerequisites', () => {
     // 330 Priesterspreuken B - Dood
     // 279 Magiërspreuken B - Metaal
     // 651 Doods Druidisme A
-    it('Can add a Skill that is an Exception to the prerequisites', () => {
+    test('Can add a Skill that is an Exception to the prerequisites', () => {
         const basisSkills = [327, 330];
         const extraSkills = [651]
 

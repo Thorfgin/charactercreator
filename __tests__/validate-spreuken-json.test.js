@@ -3,9 +3,9 @@ import ajvKeywords from 'ajv-keywords';
 import ajvErrors from 'ajv-errors';
 
 import {
-    expect,
     test,
-} from 'vitest'
+    expect
+} from '@jest/globals';
 
 // shared
 import { getSpreuken } from '../src/SharedObjects.js';
