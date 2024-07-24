@@ -6,7 +6,7 @@
 
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-	TODO:
+	TODO: 
 	
 	CRITICALS:
 	- 
@@ -22,10 +22,11 @@
 	COULD:
 	- PREREQUISITES: add all single-tree prerequisite skills that are listed as a prerequisite.
 	- PREREQUISITES: add button to remove all skills that have it as a prerequisite.
-	- FEATURE: add an option to set a random amount of XP and sets random skills
+	- FEATURE: add an option to set a random amount of XP and sets random skills.
 	- FEATURE: add option that adds XP based on nr of events player.
 
 	WOULD: 
+	- TEST: add Component tests byy using the example __tests__ example-ui.js.
 	- FEATURE: add option that random XP based on randomly selected skills.
 	- integration with VOIDWALKER / create new characters
 		> this requires integration on perhaps an API level
@@ -58,6 +59,8 @@
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	DONE
+	20240724	FIX: Partial tranlsations due to caching. 
+
 	20240722	FEATURE: added i18n language support
 			LANGUAGE: add English as an option to multi-language support
 			FEATURE: split the resources to facilitate language support and added translation support to the SharedActions.
