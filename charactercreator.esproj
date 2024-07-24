@@ -13,15 +13,6 @@
   <ItemGroup>
     <None Include=".github\workflows\node.js.yml" />
   </ItemGroup>
-  <ItemGroup>
-    <TypeScriptConfiguration Remove="src\NewFolder\**" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Remove="src\NewFolder\**" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="coverage\" />
-  </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
       <UserProperties src_4json_4en_4spreuken_1json__JsonSchema="{" />

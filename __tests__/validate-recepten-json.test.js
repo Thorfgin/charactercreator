@@ -3,9 +3,10 @@ import ajvKeywords from 'ajv-keywords';
 import ajvErrors from 'ajv-errors';
 
 import {
-    expect,
-    test
-} from 'vitest'
+    test,
+    expect
+} from '@jest/globals';
+
 // shared
 import { getRecepten } from '../src/SharedObjects.js';
 import { getSkillById } from '../src/SharedActions.js';
