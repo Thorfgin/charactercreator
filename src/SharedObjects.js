@@ -20,7 +20,6 @@ export function getPresets() { return useSourceByLanguage(jsonData.presets_nl, j
 export function getSourceReleaseNotes() { return useSourceByLanguage(jsonData.releasenotes_nl, jsonData.releasenotes_en); }
 
 // FAQ
-
 export function getSourceFAQ() { return useSourceByLanguage(jsonData.faq_nl, jsonData.faq_en); }
 
 
