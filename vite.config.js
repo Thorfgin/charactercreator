@@ -9,6 +9,7 @@ export default defineConfig({
     base: '',
     publicDir: 'public',
     build: {
+        target: ['esnext'],  // Use 'esnext' to include modern features like top-level await
         copyPublicDir: true,
     },
     test: {

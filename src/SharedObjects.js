@@ -17,7 +17,6 @@ import { getCurrentLanguage } from './i18n.js';
 import loadAllJsons from './json/jsonLoader.js';
 const jsonData = await loadAllJsons();
 
-
 function useSourceByLanguage(optionNL, optionEN) {
     const lang = getCurrentLanguage() || "nl";
     switch (lang) {
