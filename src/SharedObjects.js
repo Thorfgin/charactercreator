@@ -1,22 +1,8 @@
 import { getCurrentLanguage } from './i18n.js';
 
 // jsons
-//import vaardigheden_nl from './json/nl/vaardigheden.json';
-//import vaardigheden_en from './json/en/vaardigheden.json';
-//import spreuken_nl from './json/nl/spreuken.json';
-//import spreuken_en from './json/en/spreuken.json';
-//import recepten_nl from './json/nl/recepten.json';
-//import recepten_en from './json/en/recepten.json';
-//import presets_nl from './json/nl/presets.json';
-//import presets_en from './json/en/presets.json';
-//import releasenotes_nl from './json/nl/releasenotes.json';
-//import releasenotes_en from './json/en/releasenotes.json';
-//import faq_nl from './json/nl/faq.json';
-//import faq_en from './json/en/faq.json';
-
 import loadAllJsons from './json/jsonLoader.js';
-const jsonData = await loadAllJsons();
-
+let jsonData = await loadAllJsons();
 
 function useSourceByLanguage(optionNL, optionEN) {
     const lang = getCurrentLanguage() || "nl";
