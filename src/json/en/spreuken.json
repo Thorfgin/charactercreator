@@ -54,7 +54,7 @@
               "incantation": "CONFUSE!",
               "description": "The warrior is able to concentrate their willpower into an attack with a weapon. This weapon will strike with CONFUSE once. This can only be done with a weapon larger than 45 cm. \\nThis technique can only be used once per minute.",
               "spell_effect": "Immediate, Mind-affecting",
-              "spell_duration": "5 minutes",
+              "spell_duration": "30 seconds",
               "page": 19
             }
           ]
