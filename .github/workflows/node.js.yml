@@ -36,7 +36,7 @@ jobs:
         run: npm test
       
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3.01
+        uses: actions/upload-pages-artifact@v3
         with:
           path: './dist'
 
