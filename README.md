@@ -35,7 +35,7 @@
 
 	COULD NOT REPRODUCE: 
 	- Chromium browser compatibility issues
-
+	- There is a known bug when click or dragg from 'Print to PDF' button causes an error under certain conditions
 
 	PLAYER REQUESTS:
 	> UNDER REVIEW: Als ik een skill wil toevoegen die niet mag (bijvoorbeeld een c skill zonder de B) dan wordt mij niet verteld WAAROM het niet mag.
@@ -60,6 +60,8 @@
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	DONE
+	20250502	Fix: adjusted duration for Strength Confusing Blow from 5 min to 30 sec. as per Ruleset.
+			
 	20240722	FEATURE: added i18n language support
 			LANGUAGE: add English as an option to multi-language support
 			FEATURE: split the resources to facilitate language support and added translation support to the SharedActions.
