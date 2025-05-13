@@ -54,7 +54,7 @@
               "incantation": "CONFUSE!",
               "description": "De krijger is in staat om diens wilskracht te concentreren in een aanval met een wapen. Dit wapen zal hierdoor eenmalig CONFUSE slaan. Dit mag alleen met een wapen wat groter is dan 45 cm. \\nDeze techniek kan slechts een keer per minuut gebruikt worden.",
               "spell_effect": "Direct, Geestbeïnvloedend",
-              "spell_duration": "30 seconds",
+              "spell_duration": "30 seconden",
               "page": 19
             }
           ]

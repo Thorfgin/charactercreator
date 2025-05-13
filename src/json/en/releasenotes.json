@@ -1,6 +1,16 @@
 {
   "ReleaseNotes": [
     {
+      "date": "13-05-2025",
+      "version": "v0.7.3",
+      "Items": [
+        {
+          "description": "Adjusted the text for the spell Life Draw (Death B) and duration for the technique Confusing Blow (Strength)",
+          "title": " Bugfix: Minimal textual adjustments"
+        }
+      ]
+    },
+    {
       "date": "23-07-2024",
       "version": "v0.7.2",
       "Items": [
