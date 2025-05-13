@@ -1477,7 +1477,7 @@
               "mana_type": "Spiritual",
               "mana_cost": "1",
               "incantation": "In the name of... , LIFE DRAW!",
-              "description": "The recipient gains a healing effect, and the caster gains back one hit point. Lost hit points will be restored or additional hit points will be added, up to a maximum of 3. The extra hit points from Life Draw accumulate but cannot be combined with other spells or effects (the most potent effect takes precedence).\\nAll additional hit points gained through this spell vanish at the next sunrise.",
+              "description": "The recipient gains a HIT effect, and the caster gains back one hit point. Lost hit points will be restored or additional hit points will be added, up to a maximum of 3. The extra hit points from Life Draw accumulate but cannot be combined with other spells or effects (the most potent effect takes precedence).\\nAll additional hit points gained through this spell vanish at the next sunrise.",
               "spell_effect": "Enchantment, Direct, Touch",
               "spell_duration": "",
               "page": 51

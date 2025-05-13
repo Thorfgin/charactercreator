@@ -60,7 +60,8 @@
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	DONE
-	20250502	Fix: adjusted duration for Strength Confusing Blow from 5 min to 30 sec. as per Ruleset.
+	20250513	FIX: adjusted the description of Life Draw (Death B) to match Ruleset.
+	20250502	FIX: adjusted duration for Strength Confusing Blow from 5 min to 30 sec. as per Ruleset.
 			
 	20240722	FEATURE: added i18n language support
 			LANGUAGE: add English as an option to multi-language support
