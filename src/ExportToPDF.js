@@ -357,7 +357,7 @@ async function addSkillTableToPdf(pdf, tableData, posY) {
     const rows = tableData.map((item) => {
         const row = {};
         columns.forEach((column) => {
-            if (column.dataKey === 'loresheet') {
+            if (column.dataKey.toLowerCase().trim() === 'loresheet') {
                 row[column.dataKey] = item[column.dataKey]?.pdf ? JSON.stringify(item[column.dataKey].pdf).replace(/"/g, '') : '';
             } else {
                 row[column.dataKey] = item[column.dataKey];
