@@ -17,8 +17,8 @@ import {
     sourceExtraVaardigheden
 } from '../src/SharedObjects.js';
 
-// Replace ë with the Unicode
-function replaceChar(word) { return word.replace(/ë/g, '\u00EB') }
+// Replace ï¿½ with the Unicode
+function replaceChar(word) { return word.replace(/ï¿½/g, '\u00EB') }
 
 // Fetch skills from BasisVaardigheden
 function getSkillsFromBasisVaardigheden(skillIds) {
@@ -126,8 +126,8 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
     });
 
     // Category
-    // 275 Magiërspreuken A - Wit
-    // 279 Magiërspreuken B - Metaal
+    // 275 Magiï¿½rspreuken A - Wit
+    // 279 Magiï¿½rspreuken B - Metaal
     test('Cannot remove a Skill that is a prerequisite of type: by Category: 4 XP', () => {
         const mockTableData = getSkillsFromBasisVaardigheden([275, 279]);
 
@@ -209,7 +209,7 @@ describe('Using isSkillAPrerequisiteToAnotherSkill', () => {
     // Exception (Druid/Necro)
     // 327 Priesterspreuken A - Dood
     // 330 Priesterspreuken B - Dood
-    // 279 Magiërspreuken B - Metaal
+    // 279 Magiï¿½rspreuken B - Metaal
     // 651 Doods Druidisme A
     test('Cannot remove a Skill that is an Exception to the prerequisites', () => {
         const basisSkills = [327, 330, 279];
@@ -384,8 +384,8 @@ describe('Using meetsAllPrerequisites', () => {
         expect(meetsPrerequisites).toBe(false);
     });
 
-    // 275 Magiërspreuken A - Wit
-    // 279 Magiërspreuken B - Metaal
+    // 275 Magiï¿½rspreuken A - Wit
+    // 279 Magiï¿½rspreuken B - Metaal
     test('Can add a Skill that meets its prerequisite of type: by Category: 4 XP', () => {
         const mockTableData = getSkillsFromBasisVaardigheden([275]);
         const mockMageB = getSkillsFromBasisVaardigheden([279])[0];
@@ -395,7 +395,7 @@ describe('Using meetsAllPrerequisites', () => {
     });
 
     // 107 Rekenen
-    // 279 Magiërspreuken B - Metaal
+    // 279 Magiï¿½rspreuken B - Metaal
     test('Cannot add a Skill does not meet its prerequisite of type: by Category: 4 XP', () => {
         const mockTableData = getSkillsFromBasisVaardigheden([107]);
         const mockMageB = getSkillsFromBasisVaardigheden([279])[0];
@@ -420,7 +420,7 @@ describe('Using meetsAllPrerequisites', () => {
     // Exception (Druid/Necro)
     // 327 Priesterspreuken A - Dood
     // 330 Priesterspreuken B - Dood
-    // 279 Magiërspreuken B - Metaal
+    // 279 Magiï¿½rspreuken B - Metaal
     // 651 Doods Druidisme A
     test('Can add a Skill that is an Exception to the prerequisites', () => {
         const basisSkills = [327, 330];
