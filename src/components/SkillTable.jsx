@@ -1,5 +1,5 @@
 import { useEffect, useCallback } from 'react';
-import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 import { useTable, useSortBy } from 'react-table';
 import { v4 as uuidv4 } from 'uuid';
 import { useTranslation } from 'react-i18next';
