@@ -8,27 +8,24 @@ import App from './App.jsx'
 import './index.css'
 
 // Sentry activeren
+
 Sentry.init({
     dsn: "https://c46c4a1529354a5e6cb900e73da17033@o4505997486915584.ingest.sentry.io/4505997516210176",
 
-    integrations: [
-        Sentry.browserTracingIntegration({
-            tracePropagationTargets: [
-                "localhost",
-                /^http:\/\/localhost:5173/,
-                /^https:\/\/thorfgin\.github\.io\/charactercreator\//
-            ],
-        }),
+    // Performance monitoring (automatic)
+    tracesSampleRate: 0.1, // 0 = off, 1 = 100%
 
-        Sentry.replayIntegration(),
-    ],
-
-    // Performance Monitoring
-    tracesSampleRate: 0.5,
-
-    // Session Replay
+    // Session Replay (automatic in v10)
     replaysSessionSampleRate: 0.1,
     replaysOnErrorSampleRate: 1.0,
+
+    // Domains to allow tracing/replay
+    allowedDomains: [
+        "thorfgin.github.io",
+        "builder.qequoia.nl",
+    ],
+
+    flushAsyncOnUnload: true, // (v10 option to prevent synchronous XHR flush)
 });
 
 
