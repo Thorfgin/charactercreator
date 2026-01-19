@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { useTranslation } from 'react-i18next';
+import { T } from '../i18n.js';
 
 // Components
 import Collapsible from './Collapsible.jsx';
@@ -11,21 +11,18 @@ import { useSharedState } from '../SharedStateContext.jsx';
 // Toont een venster met daar in de release notes.
 // Release notes zijn open/dicht te klappen
 export default function ReleaseNotesModal() {
-    // Multi-Language support klaarzetten
-    const { t } = useTranslation();
-
     const { setShowReleaseNotesModal } = useSharedState();
     const closeModal = () => { setShowReleaseNotesModal(false); };
 
     return (
         <div className="modal-overlay" onClick={closeModal}>
             <div className="releasenotes-modal" onClick={e => e.stopPropagation()}>
-                <h3>{t("releasenotes_modal.labels.version_info")}</h3>
+                <h3>{T("releasenotes_modal.labels.version_info")}</h3>
                 <div className="release-notes-block">
                     {getSourceReleaseNotes().ReleaseNotes.map(({ date, version, Items }) => (
                         <div key={uuidv4()}>
                             <div className="header">
-                                <b>{`${date} ${t("releasenotes_modal.labels.release_version")} ${version}`}</b>
+                                <b>{`${date} ${T("releasenotes_modal.labels.release_version")} ${version}`}</b>
                             </div>
                                 {Items.map(({ title, description }) => (
                                     <Collapsible
@@ -40,7 +37,7 @@ export default function ReleaseNotesModal() {
                     ))}
                 </div>
                 <div><br /></div>
-                <button className="btn-primary" onClick={closeModal}>{t("generic.close")}</button>
+                <button className="btn-primary" onClick={closeModal}>{T("generic.close")}</button>
             </div>
             <span className="close" onClick={closeModal}>&times;</span>
         </div>

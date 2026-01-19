@@ -2,7 +2,7 @@ import { useEffect, useCallback } from 'react';
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 import { useTable, useSortBy } from 'react-table';
 import { v4 as uuidv4 } from 'uuid';
-import { useTranslation } from 'react-i18next';
+import { T } from '../i18n.js';
 
 // shared
 import { useSharedState } from '../SharedStateContext.jsx';
@@ -62,9 +62,6 @@ export default function SkillTable() {
         setGridRecepten
     } = useSharedState();
 
-    // Multi-Language support klaarzetten
-    const { t } = useTranslation();
-
     /// --- TABLE CONTENT --- ///
     function getTableDataSums() {
         if (tableData.length > 0) {
@@ -72,17 +69,17 @@ export default function SkillTable() {
             return (
                 <tr key={uuidv4()}>
                     <td />
-                    <td>{t("skill_table.bottom_row.skill_amount")} {tableData.length} </td>
-                    <td>{t("skill_table.bottom_row.skill_totalxp")} {totalXP}</td>
+                    <td>{T("skill_table.bottom_row.skill_amount")} {tableData.length} </td>
+                    <td>{T("skill_table.bottom_row.skill_totalxp")} {totalXP}</td>
                     <td />
                     <td />
                     <td />
                     <td>
                         <button
-                            title={t("skill_table.bottom_row.button_erase_title")}
+                            title={T("skill_table.bottom_row.button_erase_title")}
                             className="btn-secondary"
                             onClick={clearCharacterBuild}>
-                            {t("skill_table.bottom_row.button_erase")}
+                            {T("skill_table.bottom_row.button_erase")}
                         </button>
                     </td>
                 </tr>
@@ -132,12 +129,12 @@ export default function SkillTable() {
             }
             else {
                 // Inbouwen extra zekerheid dat items niet twee keer in het grid komen.
-                setModalMsg(t("skill_table.modals.maximum_skill_amount_reached") + t("skill_table.modals.not_allowed_to_add"));
+                setModalMsg(T("skill_table.modals.maximum_skill_amount_reached") + T("skill_table.modals.not_allowed_to_add"));
                 setShowModal(true);
             }
         }
         else {
-            setModalMsg(t("skill_table.modals.maximum_xp_reached") + "(" + MAX_XP + ")" + t("skill_table.modals.not_allowed_to_add"));
+            setModalMsg(T("skill_table.modals.maximum_xp_reached") + "(" + MAX_XP + ")" + T("skill_table.modals.not_allowed_to_add"));
             setShowModal(true);
         }
     }
@@ -172,21 +169,21 @@ export default function SkillTable() {
                     <div className="acties-overige">
                         <img
                             className="btn-image"
-                            title={t("toolbar.buttons.add_skill")}
+                            title={T("toolbar.buttons.add_skill")}
                             onClick={() => handleAdd(currentItem)}
                             src="./images/button_add.png"
                             alt="Add">
                         </img>
                         <img
                             className="btn-image"
-                            title={t("toolbar.buttons.subtract_skill")}
+                            title={T("toolbar.buttons.subtract_skill")}
                             onClick={() => handleSubtract(currentItem)}
                             src="./images/button_subtract.png"
                             alt="Subtract">
                         </img>
                         <img
                             className="btn-image"
-                            title={t("toolbar.buttons.remove_skill") + " " + currentItem.skill }
+                            title={T("toolbar.buttons.remove_skill") + " " + currentItem.skill }
                             onClick={() => handleDelete(currentItem)}
                             src="./images/button_remove.png"
                             alt="Remove">
@@ -201,7 +198,7 @@ export default function SkillTable() {
                     <div className="acties-overige">
                         <img
                             className="btn-image"
-                            title={t("toolbar.buttons.remove_skill") + " " + currentItem.skill}
+                            title={T("toolbar.buttons.remove_skill") + " " + currentItem.skill}
                             onClick={() => handleDelete(currentItem)}
                             src="./images/button_remove.png"
                             alt="Remove">
@@ -308,12 +305,12 @@ export default function SkillTable() {
                                             {...headerProps}
                                             className={column.className}
                                         >
-                                            {t(column.render('Header'))}
+                                            {T(column.render('Header'))}
                                             <span>{determineSortinSymbol(column)}</span>
                                         </th>
                                     );
                                 })}
-                                <th key={uuidv4()} className="col-acties">{t("skill_table.header.actions")}</th>
+                                <th key={uuidv4()} className="col-acties">{T("skill_table.header.actions")}</th>
                             </tr>
                         );
                     })}

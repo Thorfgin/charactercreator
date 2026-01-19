@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
-import { useTranslation } from 'react-i18next';
+import { T } from '../i18n.js';
 
 ConfirmModal.propTypes = {
     header: PropTypes.string,
@@ -11,9 +11,6 @@ ConfirmModal.propTypes = {
 
 // Toont een Modal message met een Bevestig/Annuleer knop
 export default function ConfirmModal({ header, modalMsg, closeModal, onConfirm }) {
-    // Multi-Language support klaarzetten
-    const { t } = useTranslation();
-
     const msgBlocks = modalMsg.split('\n');
 
     return (
@@ -27,8 +24,8 @@ export default function ConfirmModal({ header, modalMsg, closeModal, onConfirm }
                         </div>
                     ))}
                 </div>
-                <button className="btn-primary" onClick={onConfirm}>{t("generic.confirm")}</button>
-                <button className="btn-primary" onClick={closeModal}>{t("generic.cancel")}</button>
+                <button className="btn-primary" onClick={onConfirm}>{T("generic.confirm")}</button>
+                <button className="btn-primary" onClick={closeModal}>{T("generic.cancel")}</button>
             </div>
             <span className="close" onClick={closeModal}>&times;</span>
         </div>

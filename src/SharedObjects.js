@@ -20,7 +20,7 @@ import releasenotes_en from './json/en/releasenotes.json';
 import faq_nl from './json/nl/faq.json';
 import faq_en from './json/en/faq.json';
 
-function useSourceByLanguage(optionNL, optionEN) {
+function sourceByLanguage(optionNL, optionEN) {
     const lang = getCurrentLanguage() || "nl";
     switch (lang) {
         case "nl": return optionNL;
@@ -30,14 +30,14 @@ function useSourceByLanguage(optionNL, optionEN) {
 }
 
 // Presets
-export function getPresets() { return useSourceByLanguage(presets_nl, presets_en); }
+export function getPresets() { return sourceByLanguage(presets_nl, presets_en); }
 
 // Release Notes
-export function getSourceReleaseNotes() { return useSourceByLanguage(releasenotes_nl, releasenotes_en); }
+export function getSourceReleaseNotes() { return sourceByLanguage(releasenotes_nl, releasenotes_en); }
 
 // FAQ
 
-export function getSourceFAQ() { return useSourceByLanguage(faq_nl, faq_en); }
+export function getSourceFAQ() { return sourceByLanguage(faq_nl, faq_en); }
 
 
 /// --- SKILLS & SELECT PROPERTIES --- ///
@@ -48,18 +48,18 @@ export function setTotalXP(value) { totalXP = value; }
 export function resetTotalXP(tableData) { totalXP = tableData.length > 0 ? tableData.reduce((accumulator, skill) => accumulator + skill.xp, 0) : 0 }
 
 // vaardigheden
-export function getSourceVaardigheden() { return useSourceByLanguage(vaardigheden_nl, vaardigheden_en); }
+export function getSourceVaardigheden() { return sourceByLanguage(vaardigheden_nl, vaardigheden_en); }
 export let sourceBasisVaardigheden = getSourceVaardigheden().BasisVaardigheden;
 export let sourceExtraVaardigheden = getSourceVaardigheden().ExtraVaardigheden;
 export let optionsBasisVaardigheden = generateOptions(sourceBasisVaardigheden);
 export let optionsExtraVaardigheden = generateOptions(sourceExtraVaardigheden);
 
 // spreuken
-export function getSpreuken() { return useSourceByLanguage(spreuken_nl, spreuken_en); }
+export function getSpreuken() { return sourceByLanguage(spreuken_nl, spreuken_en); }
 export let sourceSpreuken = [].concat(...getSpreuken().Categories.map(category => category.Skills));
 
 // recepten
-export function getRecepten() { return useSourceByLanguage(recepten_nl, recepten_en); }
+export function getRecepten() { return sourceByLanguage(recepten_nl, recepten_en); }
 export let sourceSkillRecepten = [].concat(...getRecepten().Categories.map(category => category.Skills));
 export let sourceCommonRecepten = [].concat(...getRecepten().Categories.map(category => category.Common).filter(Boolean));
 

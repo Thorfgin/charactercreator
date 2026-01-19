@@ -16,7 +16,7 @@ let bugsActive = false;
 GridEigenschapItem.propTypes = {
     image: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
-    value: PropTypes.any.isRequired,
+    value: PropTypes.any.isRequired
 };
 
 // Karakter eigenschappen griditem

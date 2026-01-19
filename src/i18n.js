@@ -12,7 +12,6 @@ const resources = {
     en: { translation: translations_en }
 };
 
-
 i18n
     .use(Backend)           // loads translations
     .use(LanguageDetector)  // detects user language

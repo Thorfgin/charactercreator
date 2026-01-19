@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Select from 'react-select';
-import { useTranslation } from 'react-i18next';
+import { T } from '../i18n.js';
 
 // Components
 import {
@@ -34,13 +34,11 @@ import {
     regenerateVaardigheden,
     regenerateSpreukenAndRecepten
 } from '../SharedObjects.js'
+import i18n from "i18next";
 
 // Zet een Toolbar klaar met daarin de mogelijkheid om:
 // Settings te wijzigen, Vaarigheden te selecteren, Personages te bewaren/laden of Personages te exporteren/importeren
 export default function Toolbar() {
-    // Multi-Language support klaarzetten
-    const { i18n, t } = useTranslation();
-
     // Ophalen uit SharedStateContext
     const {
         // packageinfo
@@ -210,23 +208,23 @@ export default function Toolbar() {
         const hasSufficientFreeXP = (totalXP + selectedRecord.xp) <= Math.floor(MAX_XP) || selectedRecord.xp === 0;
         if (!hasSufficientFreeXP) {
             if (totalXP >= Math.floor(MAX_XP)) {
-                setModalHeader(t("generic.oops"));
-                const max_xp_reached = t("toolbar.modals.max_xp_reached")
-                const cant_add = t("toolbar.modals.cant_add")
+                setModalHeader(T("generic.oops"));
+                const max_xp_reached = T("toolbar.modals.max_xp_reached")
+                const cant_add = T("toolbar.modals.cant_add")
                 setModalMsg(`${max_xp_reached} (${MAX_XP}) \n${cant_add}`);
             }
             else if (totalXP < Math.floor(MAX_XP)) {
-                setModalHeader(t("generic.oops"));
-                const max_xp_exceeded = t("toolbar.modals.max_xp_exceeded")
-                const skill_cost = t("toolbar.modals.skill_cost")
-                const cant_add = t("toolbar.modals.cant_add")
+                setModalHeader(T("generic.oops"));
+                const max_xp_exceeded = T("toolbar.modals.max_xp_exceeded")
+                const skill_cost = T("toolbar.modals.skill_cost")
+                const cant_add = T("toolbar.modals.cant_add")
                 setModalMsg(`${max_xp_exceeded} (${MAX_XP})  \n 
                                 ${skill_cost} ${selectedRecord.xp} XP\n
                                 ${cant_add}`);
             } else {
                 console.error("There should be a reason for refusing to add the skill, but no reason was set.")
-                setModalHeader(t("generic.oops"));
-                setModalMsg(t("generic.error"));
+                setModalHeader(T("generic.oops"));
+                setModalMsg(T("generic.error"));
             }
             setShowModal(true);
             return false;
@@ -272,8 +270,8 @@ export default function Toolbar() {
     function saveCharacterToLocalStorage() {
         saveCharacterToStorage(charName, charName, isChecked, MAX_XP, tableData)
         if (showConfirmUpdateModal === true) { closeConfirmUpdateModal(); }
-        setModalHeader(t("toolbar.modals.confirmation_header"))
-        const text = t("toolbar.modals.save_character");
+        setModalHeader(T("toolbar.modals.confirmation_header"))
+        const text = T("toolbar.modals.save_character");
         setModalMsg(`${text} \n\n${charName}`);
         setShowModal(true);
     }
@@ -283,12 +281,12 @@ export default function Toolbar() {
         const wasRemoved = removeCharacterFromStorage(charName);
         if (wasRemoved === true) {
             clearCharacterBuild();
-            setModalHeader(t("toolbar.modals.confirmation_header"))
-            const text = t("toolbar.modals.remove_character");
+            setModalHeader(T("toolbar.modals.confirmation_header"))
+            const text = T("toolbar.modals.remove_character");
             setModalMsg(`${text} ${charName}`);
         } else {
-            setModalHeader(t("generic.oops"))
-            const text = t("toolbar.modals.character_not_found");
+            setModalHeader(T("generic.oops"))
+            const text = T("toolbar.modals.character_not_found");
             setModalMsg(`${text} ${charName}`);
         }
         closeConfirmRemoveModal();
@@ -298,8 +296,8 @@ export default function Toolbar() {
     // Eerst via ConfirmModal bevestigen, daarna verwijdern
     function showConfirmRemoval() {
         if (charName && charName.trim() !== '') {
-            setHeaderConfirmModal(t("toolbar.modals.confirm_remove_header"));
-            const text = t("toolbar.modals.confirm_remove_text");
+            setHeaderConfirmModal(T("toolbar.modals.confirm_remove_header"));
+            const text = T("toolbar.modals.confirm_remove_text");
             setMsgConfirmModal(`${text} \n\n ${charName}`);
             setShowConfirmRemoveModal(true);
         }
@@ -313,8 +311,8 @@ export default function Toolbar() {
         if (charName && charName.trim() !== '') {
             const keys = getAllLocalStorageKeys(charName);
             if (keys.length > 0) {
-                setHeaderConfirmModal(t("toolbar.modals.overwrite_character_header"));
-                const msg = t("toolbar.modals.overwrite_character_text")
+                setHeaderConfirmModal(T("toolbar.modals.overwrite_character_header"));
+                const msg = T("toolbar.modals.overwrite_character_text")
                 setMsgConfirmModal(`${msg} \n\n${charName}`);
                 setShowConfirmUpdateModal(true);
             }
@@ -323,8 +321,8 @@ export default function Toolbar() {
             }
         }
         else {
-            setHeaderConfirmModal(t("generic.oops"));
-            setModalMsg(t("toolbar.modals.name_can_not_be_empty"));
+            setHeaderConfirmModal(T("generic.oops"));
+            setModalMsg(T("toolbar.modals.name_can_not_be_empty"));
             setShowModal(true);
         }
     }
@@ -333,7 +331,7 @@ export default function Toolbar() {
     const exportToFile = () => { exportCharacterToFile(charName, isChecked, MAX_XP, tableData); }
     const exportToPDF = async () => { await ExportToPDF(charName, ruleset_version, tableData, MAX_XP, totalXP, gridSpreuken, gridRecepten); }
 
-    // Taal instellingne
+    // Taal instellingen
     // Handel het wisselen van de taalinstellingen af, alvorens het icoontje te wijziging.
     // Refrest het scherm via een useEffect, op basis van de ShareStateContext > [language, setlanguage];
     function handleChangeLanguage() {
@@ -343,7 +341,8 @@ export default function Toolbar() {
 
     // UI Taal aanpassen
     const changeLanguage = useCallback(() => {
-        i18n.changeLanguage(language);
+        i18n.changeLanguage(language).then();
+
         // regenereer de bronbestanden.
         regenerateVaardigheden(tableData);
         regenerateSpreukenAndRecepten();
@@ -395,7 +394,7 @@ export default function Toolbar() {
                     <div>
                         <div className="settings-row">
                             <label name="name_label">
-                                {t("toolbar.labels.name")}
+                                {T("toolbar.labels.name")}
                             </label>
                             <input
                                 name="name_input"
@@ -409,7 +408,7 @@ export default function Toolbar() {
                         </div>
                         <div className="settings-row">
                             <label name="new_character_label">
-                                {t("toolbar.labels.new_character")}
+                                {T("toolbar.labels.new_character")}
                             </label>
                             <input
                                 name="new_character_checkbox"
@@ -423,7 +422,7 @@ export default function Toolbar() {
                     <div className="settings-inputs">
                         <div className="settings-row">
                             <label className="xp_label">
-                                {t("toolbar.labels.max_xp")}
+                                {T("toolbar.labels.max_xp")}
                             </label>
                             <input
                                 name="max_xp_input"
@@ -439,7 +438,7 @@ export default function Toolbar() {
                         </div>
                         <div className="settings-row">
                             <label className="xp_label">
-                                {t("toolbar.labels.xp_left")}
+                                {T("toolbar.labels.xp_left")}
                             </label>
                             <input
                                 className={isChecked && totalXP < 12 ? "xp_over_input" : null}
@@ -452,8 +451,8 @@ export default function Toolbar() {
                             />
                             {(isChecked && totalXP < 12) ? (
                                 <CustomTooltip
-                                    header={t("toolbar.tooltips.new_character_header")}
-                                    message={t("toolbar.tooltips.new_character_message")}
+                                    header={T("toolbar.tooltips.new_character_header")}
+                                    message={T("toolbar.tooltips.new_character_message")}
                                     image={imageSrc[1]}
                                 />
                             ) : null}
@@ -462,31 +461,31 @@ export default function Toolbar() {
                 </div>
                 <div className="settings-btns">
                     <div className="settings-btns-row">
-                        <button className="btn-toolbar" title={t("toolbar.buttons.show_templates")} onClick={showLoadPresetModal}>
+                        <button className="btn-toolbar" title={T("toolbar.buttons.show_templates")} onClick={showLoadPresetModal}>
                             <img className="btn-image" src="./images/button_presets.png" alt="Preset Button" />
                         </button>
-                        <button className="btn-toolbar" title={t("toolbar.buttons.save_character")} onClick={showConfirmUpdate}>
+                        <button className="btn-toolbar" title={T("toolbar.buttons.save_character")} onClick={showConfirmUpdate}>
                             <img className="btn-image" src="./images/button_save.png" alt="Save Button" />
                         </button>
-                        <button className="btn-toolbar" title={t("toolbar.buttons.load_character")} onClick={showLoadCharacterModal}>
+                        <button className="btn-toolbar" title={T("toolbar.buttons.load_character")} onClick={showLoadCharacterModal}>
                             <img className="btn-image" src="./images/button_load.png" alt="Load Button" />
                         </button>
-                        <button className="btn-toolbar" title={t("toolbar.buttons.remove_character")} onClick={showConfirmRemoval}>
+                        <button className="btn-toolbar" title={T("toolbar.buttons.remove_character")} onClick={showConfirmRemoval}>
                             <img className="btn-image" src="./images/button_trash.png" alt="Trash Button" />
                         </button>
                     </div>
                     <div className="btns-row">
-                        <button className="btn-toolbar" title={t("toolbar.buttons.export_pdf")} onClick={exportToPDF}>
+                        <button className="btn-toolbar" title={T("toolbar.buttons.export_pdf")} onClick={exportToPDF}>
                             <img className="btn-image" src="./images/button_export-pdf.png" alt="Export PDF Button" />
                         </button>
-                        <button className="btn-toolbar" title={t("toolbar.buttons.export_file")} onClick={exportToFile}>
+                        <button className="btn-toolbar" title={T("toolbar.buttons.export_file")} onClick={exportToFile}>
                             <img className="btn-image" src="./images/button_download.png" alt="Export Button" />
 
                         </button>
-                        <button className="btn-toolbar" title={t("toolbar.buttons.import_file")} onClick={showUploadModal}>
+                        <button className="btn-toolbar" title={T("toolbar.buttons.import_file")} onClick={showUploadModal}>
                             <img className="btn-image" src="./images/button_upload.png" alt="Import Button" />
                         </button>
-                        <button className="btn-toolbar" title={t("toolbar.buttons.select_language")} onClick={handleChangeLanguage}>
+                        <button className="btn-toolbar" title={T("toolbar.buttons.select_language")} onClick={handleChangeLanguage}>
                             <img className="btn-image" src={getLanguageImage()} alt="Change Language" />
                         </button>
 
@@ -505,7 +504,7 @@ export default function Toolbar() {
                     value={selectedBasicSkill}
                     onChange={(selectedBasicOption) => setSelectedBasicSkill(selectedBasicOption)}
                     onKeyDown={handleBasicSkillSelectKeyPress}
-                    placeholder={t("toolbar.inputs.base_skill")}
+                    placeholder={T("toolbar.inputs.base_skill")}
                     isClearable
                     isSearchable
                 />
@@ -522,10 +521,10 @@ export default function Toolbar() {
 
                 <button
                     ref={btnAddBasicRef}
-                    title={t("toolbar.buttons.add_skill_title_base")}
+                    title={T("toolbar.buttons.add_skill_title_base")}
                     className="btn-primary"
                     onClick={handleBasicSkillSelection}>
-                    {t("toolbar.buttons.add_skill")}
+                    {T("toolbar.buttons.add_skill")}
                 </button>
             </div>
 
@@ -540,7 +539,7 @@ export default function Toolbar() {
                             value={selectedExtraSkill}
                             onChange={(selectedExtraOption) => setSelectedExtraSkill(selectedExtraOption)}
                             onKeyDown={handleExtraSkillSelectKeyPress}
-                            placeholder={t("toolbar.inputs.extra_skill")}
+                            placeholder={T("toolbar.inputs.extra_skill")}
                             isClearable
                             isSearchable
                         />
@@ -558,10 +557,10 @@ export default function Toolbar() {
 
                         <button
                             ref={btnAddExtraRef}
-                            title={t("toolbar.buttons.add_skill_title_extra")}
+                            title={T("toolbar.buttons.add_skill_title_extra")}
                             className="btn-primary"
                             onClick={handleExtraSkillSelection}>
-                            {t("toolbar.buttons.add_skill")}
+                            {T("toolbar.buttons.add_skill")}
                         </button>
                     </div>
                 )}

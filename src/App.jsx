@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { useTranslation } from 'react-i18next';
+import { T } from './i18n.js';
 
 // Shared
 import { useSharedState } from './SharedStateContext.jsx';
@@ -22,8 +22,6 @@ import SkillTable from './components/SkillTable.jsx';
 
 /// --- MAIN APP --- ///
 export default function App() {
-    // Multi-Language support klaarzetten
-    const { t } = useTranslation();
 
     const {
         version,
@@ -45,8 +43,8 @@ export default function App() {
 
     function showDisclaimer() {
         if (showModal !== true) {
-            setModalHeader(t("generic.disclaimer"))
-            setModalMsg(t("disclaimer"));
+            setModalHeader(T("generic.disclaimer"))
+            setModalMsg(T("disclaimer"));
             setShowModal(true);
         }
     }
@@ -81,7 +79,7 @@ export default function App() {
                 <div className="side-containers">
                     <div className="side-container-b" id="side-container-b">
                         <div className="summary-title">
-                            <h5>{t("generic.character_properties")}</h5>
+                            <h5>{T("generic.character_properties")}</h5>
                         </div>
                         <div className="grid-eigenschappen">
                             {gridEigenschappen.map((item) => (
@@ -90,13 +88,13 @@ export default function App() {
                                     name={item.name}
                                     key={uuidv4()}
                                     image={item.image}
-                                    text={t(item.text)}
+                                    text={T(item.text)}
                                     value={item.value}
                                 />
                             ))}
                         </div>
                         <div className="summary-title">
-                            <h5>{t("generic.energy_per_day")}</h5>
+                            <h5>{T("generic.energy_per_day")}</h5>
                         </div>
                         <div className="grid-eigenschappen">
                             {gridEnergiePerDag.map((item) => (
@@ -104,7 +102,7 @@ export default function App() {
                                     name={item.name}
                                     key={uuidv4()}
                                     image={item.image}
-                                    text={t(item.text)}
+                                    text={T(item.text)}
                                     value={item.value}
                                 />
                             ))}
@@ -112,7 +110,7 @@ export default function App() {
                     </div>
                     <div className="side-container-a" id="side-container-a">
                         <div className="summary-title">
-                            <h5>{t("generic.spells_and_techniques")}</h5>
+                            <h5>{T("generic.spells_and_techniques")}</h5>
                         </div>
                         <div className="grid-spreuken">
                             {gridSpreuken?.map((item) => (
@@ -125,7 +123,7 @@ export default function App() {
                         </div>
 
                         <div className="summary-title">
-                            <h5>{t("generic.recipes")}</h5>
+                            <h5>{T("generic.recipes")}</h5>
                         </div>
                         <div className="grid-recepten">
                             {gridRecepten?.map((item) => (
@@ -144,7 +142,7 @@ export default function App() {
                 <div className="release-notes" onClick={openReleaseNotesModal}><u>{version}</u></div>
                 <div>{creator}{'\u2122'}</div>
                 <div>
-                    <div className="disclaimer" onClick={showDisclaimer}><u>{t("generic.disclaimer")}</u></div>
+                    <div className="disclaimer" onClick={showDisclaimer}><u>{T("generic.disclaimer")}</u></div>
                     <div className="faq" onClick={openFAQModal}><u>F.A.Q.</u></div>
                 </div>
             </footer>

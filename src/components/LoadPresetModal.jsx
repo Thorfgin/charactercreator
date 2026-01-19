@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { T } from '../i18n.js';
 import { v4 as uuidv4 } from 'uuid';
 
 // components
@@ -12,9 +12,6 @@ import { getPresets } from '../SharedObjects.js'
 import { loadCharacterFromPreset } from '../SharedStorage.js'
 
 export default function LoadPresetModal() {
-    // Multi-Language support klaarzetten
-    const { t } = useTranslation();
-
     const [selectedTemplate, setSelectedTemplate] = useState("");
 
     // Ophalen uit SharedStateContext
@@ -58,15 +55,15 @@ export default function LoadPresetModal() {
             }
         }
         catch {
-            console.error(t("loadpreset_modal.modals.cant_load_version"));
+            console.error(T("loadpreset_modal.modals.cant_load_version"));
         }
     }
 
     return (
         <div className="modal-overlay" onClick={closeModal}>
             <div className="preset-modal" onClick={e => e.stopPropagation()}>
-                <h3>{t("loadpreset_modal.labels.view_template")}</h3>
-                {getBlock(t("loadpreset_modal.labels.description"), "modal-description")}
+                <h3>{T("loadpreset_modal.labels.view_template")}</h3>
+                {getBlock(T("loadpreset_modal.labels.description"), "modal-description")}
                 <div className="preset-modal-block center-content">
                     <TemplateTable
                         selectedChar={selectedTemplate}
@@ -74,8 +71,8 @@ export default function LoadPresetModal() {
                     />
                 </div>
                 <div className="preset-modal-block">
-                    <button className="btn-primary" onClick={loadPresetToTableData}>{t("generic.load")}</button>
-                    <button className="btn-primary" onClick={closeModal}>{t("generic.cancel")}</button>
+                    <button className="btn-primary" onClick={loadPresetToTableData}>{T("generic.load")}</button>
+                    <button className="btn-primary" onClick={closeModal}>{T("generic.cancel")}</button>
                 </div>
             </div>
             <span className="close" onClick={closeModal}>&times;</span>

@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import PropTypes from 'prop-types';
-import { useTranslation } from 'react-i18next';
+import { T } from '../i18n.js';
 
 // shared
 import { CustomTooltip } from './Tooltip.jsx';
@@ -14,9 +14,6 @@ TemplateTable.propTypes = {
 };
 
 export default function TemplateTable({ selectedTemplate, handleTemplateChange }) {
-    // Multi-Language support klaarzetten
-    const { t } = useTranslation();
-
     const tableRef = useRef(null);
     const presets = getPresets();
     const sourcePresets = presets.Presets.sort((a, b) => a.name.localeCompare(b.name));
@@ -46,7 +43,7 @@ export default function TemplateTable({ selectedTemplate, handleTemplateChange }
                         {item.information !== "" && (
                             <td>
                                 <CustomTooltip
-                                    header={`${t("template_table.labels.template")} ${item.name}`}
+                                    header={`${T("template_table.labels.template")} ${item.name}`}
                                     message={item.information}
                                 />
                             </td>
@@ -55,7 +52,7 @@ export default function TemplateTable({ selectedTemplate, handleTemplateChange }
                 ))}
                 {!sourcePresets && (
                     <tr>
-                        <td>{t("template_tabe.labels.no_presets_found")}</td>
+                        <td>{T("template_tabe.labels.no_presets_found")}</td>
                     </tr>
                 )}
             </tbody>

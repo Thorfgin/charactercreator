@@ -10,22 +10,27 @@ import './index.css'
 // Sentry activeren
 Sentry.init({
     dsn: "https://c46c4a1529354a5e6cb900e73da17033@o4505997486915584.ingest.sentry.io/4505997516210176",
+
     integrations: [
-        new Sentry.BrowserTracing({
+        Sentry.browserTracingIntegration({
             tracePropagationTargets: [
                 "localhost",
                 /^http:\/\/localhost:5173/,
-                /^https:\/\/thorfgin\.github\.io\/charactercreator\//],
+                /^https:\/\/thorfgin\.github\.io\/charactercreator\//
+            ],
         }),
-        new Sentry.Replay(),
+
+        Sentry.replayIntegration(),
     ],
+
     // Performance Monitoring
-    tracesSampleRate: 0.5, // Capture 100% of the transactions, reduce in production!
+    tracesSampleRate: 0.5,
 
     // Session Replay
-    replaysSessionSampleRate: 0.1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
-    replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
+    replaysSessionSampleRate: 0.1,
+    replaysOnErrorSampleRate: 1.0,
 });
+
 
 // Function to handle orientation change
 function adjustViewportScale() {

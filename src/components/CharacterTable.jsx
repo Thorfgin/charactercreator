@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import PropTypes from 'prop-types';
-import { useTranslation } from 'react-i18next';
+import { T } from '../i18n.js';
 
 // shared
 import { getAllLocalStorageKeys } from '../SharedStorage.js';
@@ -12,9 +12,6 @@ CharacterTable.propTypes = {
 };
 
 export default function CharacterTable({ selectedCharacter, handleCharacterChange }) {
-    // Multi-Language support klaarzetten
-    const { t } = useTranslation();
-
     const tableRef = useRef(null);
 
     const keys = getAllLocalStorageKeys();
@@ -50,7 +47,7 @@ export default function CharacterTable({ selectedCharacter, handleCharacterChang
                 ))}
                 {(!keys || keys.length === 0) && (
                     <tr>
-                        <td>{t("character_table.labels.no_characters")}</td>
+                        <td>{T("character_table.labels.no_characters")}</td>
                     </tr>
                 )
                 }
