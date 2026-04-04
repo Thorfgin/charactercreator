@@ -7,6 +7,10 @@
         {
           "description": "Adjusted the text for the skill Gemsetter ABC and it's loresheets",
           "title": " Fix: Minimal textual adjustment."
+        },
+        {
+          "description": "To better maintain and improve component quality several updates have been made.",
+          "title": "Maintenance: General improvements and maintenance"
         }
       ]
     },

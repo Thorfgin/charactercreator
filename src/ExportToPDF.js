@@ -1,6 +1,6 @@
 import html2canvas from "html2canvas";
 import { jsPDF } from "jspdf";
-import "jspdf-autotable";
+import autoTable from 'jspdf-autotable';
 import { T } from "./i18n.js";
 
 // Shared
@@ -381,7 +381,7 @@ async function addSkillTableToPdf(pdf, tableData, posY) {
         alternateRowStyles: { fillColor: [240, 240, 240] }, // Alternate row styles.
     };
 
-    pdf.autoTable(tableOptions);
+    autoTable(pdf, tableOptions);
 }
 
 // Voeg een Afbeelding van een element via ID toe aan de pdf

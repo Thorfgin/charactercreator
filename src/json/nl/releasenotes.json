@@ -6,7 +6,11 @@
       "Items": [
         {
           "description": "Tekst aangepast bij de vaardigheid Steenzetter (Gemsetter ABC) en bijbehorende loresheets",
-          "title": " Fix: Minimale tekstuele aanpassingen op basis van wijziging in de vaardigheid"
+          "title": " Fix: Minimale tekstuele aanpassingen Steenzetter"
+        },
+        {
+          "description": "Ter verbetering van onderhoudbaarheid en verbeteren van component kwaliteit zijn verschillende updates uitgevoerd.",
+          "title": "Onderhoud: Algemene verbeteringen en onderhoud."
         }
       ]
     },
