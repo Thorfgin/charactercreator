@@ -1,6 +1,6 @@
 import html2canvas from "html2canvas";
 import { jsPDF } from "jspdf";
-import autoTable from 'jspdf-autotable';
+import autoTable, {applyPlugin} from 'jspdf-autotable';
 import { T } from "./i18n.js";
 
 // Shared
