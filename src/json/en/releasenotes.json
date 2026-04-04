@@ -1,12 +1,16 @@
 {
   "ReleaseNotes": [
     {
-      "date": "19-01-2026",
+      "date": "04-04-2026",
       "version": "v0.7.4",
       "Items": [
         {
-          "description": "To ensure future updates can be make, relevant packages were updated.",
-          "title": "BugFix: Updated packages."
+          "description": "Adjusted the text for the skill Gemsetter ABC and it's loresheets",
+          "title": " Fix: Minimal textual adjustment."
+        },
+        {
+          "description": "To better maintain and improve component quality several updates have been made.",
+          "title": "Maintenance: General improvements and maintenance"
         }
       ]
     },

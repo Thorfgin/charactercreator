@@ -374,7 +374,7 @@
         },
         {
           "id": 256,
-          "skill": "Stone Setter A",
+          "skill": "Gemsetter A",
           "Recipes": [
             {
               "id": 37,
@@ -385,16 +385,16 @@
             },
             {
               "id": 38,
-              "recipe": "Basic Jewelry",
-              "effect": "You create a piece of jewelry using 5 of the same type of quartz and sell it for 3 gold (at the information desk). Every 2 inspiration you invest here reduces the required quartz by 1.",
+              "recipe": "Murky Defensive Amulet",
+              "effect": "The wearer may today ignore a single instance of a poison or disease effect, by saying NO EFFECT.",
               "inspiration": "",
-              "components": "0 to 10 inspiration (depending on the amount of the same type of Quartz)"
+              "components": "4 inspiration or 2 of the same type of Quartz"
             }
           ]
         },
         {
           "id": 488,
-          "skill": "Stone Setter B",
+          "skill": "Gemsetter B",
           "Recipes": [
             {
               "id": 39,
@@ -405,16 +405,16 @@
             },
             {
               "id": 40,
-              "recipe": "Expensive Jewelry",
-              "effect": "You create a piece of jewelry using 5 of the same type of gems and sell it for 7 gold (at the information desk). Every 4 inspiration you invest here reduces the required gems by 1.",
+              "recipe": "Defensive Amulet",
+              "effect": "The wearer may today ignore two instances of a poison or disease effect, by saying NO EFFECT.",
               "inspiration": "",
-              "components": "0 to 20 inspiration (depending on the amount of the same type of Gems)"
+              "components": "8 inspiratie or 2 of the same type of Gems"
             }
           ]
         },
         {
           "id": 489,
-          "skill": "Stone Setter C",
+          "skill": "Gemsetter C",
           "Recipes": [
             {
               "id": 41,
@@ -425,10 +425,10 @@
             },
             {
               "id": 42,
-              "recipe": "Royal Jewelry",
-              "effect": "You create a piece of jewelry using 5 of the same type of flawless gems and sell it for 15 gold (at the information desk). Every 8 inspiration you invest here reduces the required flawless gems by 1.",
+              "recipe": "Pristine Defensive Amulet",
+              "effect": "The wearer may today ignore all instances of a poison or disease effect, by saying NO EFFECT. Every instance RESTISTED, will cost the wearer 1 energy.",
               "inspiration": "",
-              "components": "0 to 40 inspiration (depending on the amount of the same type of Flawless Gems)"
+              "components": "16 inspiration or 2 of the same type of Flawless Gems"
             }
           ]
         }
