@@ -44,7 +44,6 @@ const columns = [
 export default function SkillTable() {
     // SharedStateContext
     const {
-        language,
         tableData, setTableData,
         isChecked, setIsChecked,
         MAX_XP, setMAX_XP,
@@ -285,10 +284,13 @@ export default function SkillTable() {
         const updatedGridReceptenContent = updateGridReceptenTiles(tableData).filter((property) => {
             return property.value !== ""
         });
+
         setGridRecepten(updatedGridReceptenContent);
-    }, [charName, isChecked, MAX_XP, tableData, setTableData, setGridEigenschappen, setGridEnergiePerDag, setGridSpreuken, setGridRecepten]);
+    }, // eslint-disable-next-line
+        [charName, isChecked, MAX_XP, tableData, setTableData, setGridEigenschappen, setGridEnergiePerDag, setGridSpreuken, setGridRecepten]);
 
     // Wanneer tableData aangepast wordt, aanpassingen doorvoeren.
+    // eslint-disable-next-line
     useEffect(() => { onUpdateTableData(); }, [tableData, setTableData]);
 
 
@@ -297,10 +299,12 @@ export default function SkillTable() {
             <table {...getTableProps()} className="App-table" id="App-table">
                 <thead>
                     {headerGroups.map((headerGroup) => {
+                        // eslint-disable-next-line
                         const { key: headerGroupKey, ...headerGroupProps } = headerGroup.getHeaderGroupProps();
                         return (
                             <tr key={uuidv4()} {...headerGroupProps}>
                                 {headerGroup.headers.map((column) => {
+                                    // eslint-disable-next-line
                                     const { key: columnKey, ...headerProps } = column.getHeaderProps(column.getSortByToggleProps());
                                     return (
                                         <th
