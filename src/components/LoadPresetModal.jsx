@@ -1,15 +1,14 @@
-/* eslint-disable react/prop-types */
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { v4 as uuidv4 } from 'uuid';
+import {useState} from 'react';
+import {useTranslation} from 'react-i18next';
+import {v4 as uuidv4} from 'uuid';
 
 // components
 import TemplateTable from './TemplateTable.jsx';
 
 // Shared
-import { useSharedState } from '../SharedStateContext.jsx';
-import { getPresets } from '../SharedObjects.js'
-import { loadCharacterFromPreset } from '../SharedStorage.js'
+import {useSharedState} from '../SharedStateContext.jsx';
+import {getPresets} from '../SharedObjects.js'
+import {loadCharacterFromPreset} from '../SharedStorage.js'
 
 export default function LoadPresetModal() {
     // Multi-Language support klaarzetten
@@ -31,13 +30,13 @@ export default function LoadPresetModal() {
     const closeModal = () => { setShowLoadPresetModal(false); };
 
     // Converteer teksten naar tekstblokken.
+    // eslint-disable-next-line
     const getBlock = (text, className) => {
         if (!text) { return <p></p> }
         let descriptionBlock = text.split('\n');
-        const description = descriptionBlock.map((block) => (
-            <div key={uuidv4()}> {block === '' ? <br /> : block} </div>
+        return descriptionBlock.map((block) => (
+            <div key={uuidv4()}> {block === '' ? <br/> : block} </div>
         ));
-        return description;
     }
 
     // Selecteer personage

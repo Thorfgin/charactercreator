@@ -1,12 +1,9 @@
-import { createContext, useContext, useState, useMemo } from 'react';
+import {createContext, useContext, useMemo, useState} from 'react';
 import PropTypes from 'prop-types';
 
 // components
-import { defaultProperties } from './SharedObjects.js';
-import {
-    loadCharacterFromStorage,
-    loadI18nFromStorage
-} from './SharedStorage.js';
+import {defaultProperties} from './SharedObjects.js';
+import {loadCharacterFromStorage, loadI18nFromStorage} from './SharedStorage.js';
 
 // json
 import packageInfo from '../package.json';
@@ -22,8 +19,7 @@ if (typeof (Storage) !== "undefined") {
         let result = value;
         if (encode === true) {
             let encodedValue = encodeURIComponent(value);
-            let unreadableValue = btoa(encodedValue);
-            result = unreadableValue;
+            result = btoa(encodedValue);
         }
         localStorage.setItem(key, result);
     }
@@ -150,6 +146,7 @@ export function SharedStateProvider({ children }) {
 
         tableData, setTableData,
 
+        modalHeader, setModalHeader,
         modalMsg, setModalMsg,
         showModal, setShowModal,
         showFAQModal, setShowFAQModal,
