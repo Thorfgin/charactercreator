@@ -2,9 +2,9 @@ name: CI/CD Production Build
 
 on:
   push:
-    branches: ["master"]
+    branches: ["master", "development"]
   pull_request:
-    branches: ["master"]
+    branches: ["master", "development"]
 
 # Voorkom dubbele deploys als je snel achter elkaar pusht
 concurrency:
