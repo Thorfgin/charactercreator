@@ -32,24 +32,32 @@ function LoadCharacterModal() {
 
     // Laden uit de local storage van de browser
     function loadCharacterFromLocalStorage() {
+        // Validatie van input
+        if (!selectedCharacter || typeof selectedCharacter !== 'string' || selectedCharacter.trim() === "") {
+            return;
+        }
+
         try {
             const key = getAllLocalStorageKeys(selectedCharacter);
             const charData = loadCharacterFromStorage(key);
-            if (charData) {
-                setCharName(charData.name || selectedCharacter.replace('CC-', ''));
-                setIsChecked(charData.is_checked);
-                setMAX_XP(charData.max_xp);
-                setTableData(charData.Skills);
-                setSelectedBasicSkill(null);
-                setSelectedExtraSkill(null);
-                closeModal();
-            }
-            else if (!selectedCharacter || selectedCharacter.trim() === "") { return; }
-        }
-        catch {
+            if (!charData) return;
+
+            setCharName(charData.name || selectedCharacter.replace('CC-', ''));
+            setIsChecked(charData.is_checked ?? false);
+            setMAX_XP(charData.max_xp ?? 0);
+            setTableData(charData.Skills || []);
+            setSelectedBasicSkill(null);
+            setSelectedExtraSkill(null);
+            closeModal();
+
+        } catch (error) {
             const msg = t("loadcharacter_modal.modals.cant_load_version");
+            console.error(msg, {
+                character: selectedCharacter,
+                originalError: error
+            });
+
             alert(msg);
-            console.error(msg, key, charData);
         }
     }
 

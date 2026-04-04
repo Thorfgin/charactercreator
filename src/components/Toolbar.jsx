@@ -357,9 +357,12 @@ export default function Toolbar() {
                 setTableData(newData);
             }
         }
-    }, [language, tableData, setTableData])
+    },
+        // eslint-disable-next-line
+        [language, tableData, setTableData])
 
     // Trigger de changeLanguage en verander de BtnImage wanneer de taal is aangepast.
+    // eslint-disable-next-line
     useEffect(() => { changeLanguage() }, [language, setLanguage]);
 
     function getLanguageImage() {

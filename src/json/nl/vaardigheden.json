@@ -1289,7 +1289,7 @@
       "alt_skill": "",
       "category": "Ambachtsvaardigheden",
       "page": 32,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Quartz verwerkt. Elke Quartz in een voorwerp verwerken kost 1 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Quartz geeft het voorwerp 3 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Basis Sieraad te maken. Zie de loresheet voor meer details.",
+      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Quartz verwerkt. Elke Quartz in een voorwerp verwerken kost 1 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Quartz geeft het voorwerp 3 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Troebel Verdedigingsamulet te maken. Zie de loresheet voor meer details.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -2890,7 +2890,7 @@
       "alt_skill": "",
       "category": "Extra Ambachtsvaardigheden",
       "page": 53,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Gems verwerkt. Elke Gem in een voorwerp verwerken kost 1 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Gem geeft het voorwerp 5 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Duur Sieraad te maken. \\nZie de loresheet voor meer details.",
+      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Gems verwerkt. Elke Gem in een voorwerp verwerken kost 1 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Gem geeft het voorwerp 5 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Verdedigingsamulet te maken. \\nZie de loresheet voor meer details.",
       "Requirements": {
         "skill": [ 256 ],
         "any_list": []
@@ -2918,7 +2918,7 @@
       "alt_skill": "",
       "category": "Extra Ambachtsvaardigheden",
       "page": 53,
-      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Flawless Gems verwerkt. Elke Flawless Gem in een voorwerp verwerken kost 2 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Flawless Gem geeft het voorwerp 10 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Koninklijk Sieraad te maken. \\nZie de loresheet voor meer details.",
+      "description": "Je krijgt 2 Inspiratie per dag. \\nJe kunt voorwerpen vervaardigen met daarin Flawless Gems verwerkt. Elke Flawless Gem in een voorwerp verwerken kost 2 inspiratie. Je mag hiervoor de inspiratie gebruiken van alle dagen op het evenement. Elke Flawless Gem geeft het voorwerp 10 hogere imbue capaciteit. Deze vaardigheid geeft je ook de mogelijkheid om een Feilloos Verdedigingsamulet te maken. \\nZie de loresheet voor meer details.",
       "Requirements": {
         "skill": [ 488 ],
         "any_list": []

@@ -1,0 +1,66 @@
+name: CI/CD Production Build
+
+on:
+  push:
+    branches: ["master", "development"]
+  pull_request:
+    branches: ["master", "development"]
+
+# Global environment variables om deprecation warnings te voorkomen in 2026
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+# Voorkom dubbele deploys als je snel achter elkaar pusht
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  checks: write # Extra permissie om status reports goed te keuren
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js (24.x)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24 # Node 24 is de nieuwe standaard voor eind 2026
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Lint Source
+        run: npm run lint
+
+      - name: Run Tests
+        run: npm test
+
+      - name: Build Application
+        run: npm run build
+
+      - name: Upload Build Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+  deploy:
+    # Alleen uitvoeren op de master branch, na een succesvolle build
+    if: github.ref == 'refs/heads/master'
+    needs: build-and-test
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

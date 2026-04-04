@@ -592,16 +592,18 @@ export function getPdfURL(pdfName) {
     if ([
         "Vaardigheden.pdf",
         "Spreuken_en_Technieken.pdf",
-        "Samenvatting_regelsysteem.pdf",
         "Crafting_loresheets.pdf",
+    ].includes(pdfName)) { rootURL = "https://the-vortex.nl/wp-content/uploads/2026/03/" }
+    else if ([
+        "Armourpoint_kostuum_eisen.pdf",
+        "Samenvatting_regelsysteem.pdf",
         "Imbue_loresheet.pdf",
         "Kennis_van_kruiden.pdf",
         "Genezende_Dranken.pdf",
         "Kruiden_Elixers.pdf",
         "Magische_Elixers.pdf",
         "Hallucinerende_Elixers.pdf",
-        "Giffen.pdf",
-        "Armourpoint_kostuum_eisen.pdf"
+        "Giffen.pdf"
     ].includes(pdfName)) { rootURL = "https://the-vortex.nl/wp-content/uploads/2024/06/" }
     else if ([
         "priest_runes.ttf",

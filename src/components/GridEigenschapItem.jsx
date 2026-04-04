@@ -20,7 +20,7 @@ GridEigenschapItem.propTypes = {
 };
 
 // Karakter eigenschappen griditem
-export default function GridEigenschapItem({ id, name, image, text, value }) {
+export default function GridEigenschapItem({ id, image, text, value }) {
     const [clicked, setClicked] = useState(false);
     const [counter, setCounter] = useState(0);
     const [spiderController, setSpiderController] = useState(null);
@@ -36,7 +36,6 @@ export default function GridEigenschapItem({ id, name, image, text, value }) {
     };
 
     const getContent = () => {
-        // eslint-disable-next-line react/prop-types
         if (id === 1 && clicked && counter >= reqClicks) {
             const jstoggle = document.getElementById("App-VA-logo");
 

@@ -385,10 +385,10 @@
             },
             {
               "id": 38,
-              "recipe": "Basis Sieraad",
-              "effect": "Je maakt een sieraad van 5 dezelfde soorten quartz en verkoopt dit voor 3 goud (bij de infobalie). Elke 2 inspiratie die je hier in steekt zorgt er voor dat je 1 quartz minder nodig hebt.",
+              "recipe": "Troebel Verdedigingsamulet",
+              "effect": "De ontvanger mag vandaag eenmalig een gif- of ziekte-effect negeren door NO EFFECT te zeggen.",
               "inspiration": "",
-              "components": "0 tot 10 inspiratie (liggende aan de hoeveelheid dezelfde soort Quartz)"
+              "components": "4 inspiratie of 2 dezelfde soorten Quartz"
             }
           ]
         },
@@ -405,10 +405,10 @@
             },
             {
               "id": 40,
-              "recipe": "Duur Sieraad",
-              "effect": "Je maakt een sieraad van 5 dezelfde soorten gems en verkoopt dit voor 7 goud (bij de infobalie). Elke 4 inspiratie die je hier in steekt zorgt er voor dat je 1 gem minder nodig hebt.",
+              "recipe": "Verdedigingsamulet",
+              "effect": "De ontvanger mag vandaag twee keer een gif- of ziekte-effect negeren door NO EFFECT te zeggen.",
               "inspiration": "",
-              "components": "0 tot 20 inspiratie (liggende aan de hoeveelheid dezelfde soort Gems)"
+              "components": "8 inspiratie of 2 dezelfde soorten Gems"
             }
           ]
         },
@@ -425,10 +425,10 @@
             },
             {
               "id": 42,
-              "recipe": "Koninklijk Sieraad",
-              "effect": "Je maakt een sieraad van 5 dezelfde soorten flawless gems en verkoopt dit voor 15 goud (bij de infobalie). Elke 8 inspiratie die je hier in steekt zorgt er voor dat je 1 flawless gem minder nodig hebt.",
+              "recipe": "Feilloos Verdedigingsamulet",
+              "effect": "De ontvanger mag vandaag alle gif- of ziekte-effecten negeren door NO EFFECT te zeggen. Elke keer dat zo een effect genegeerd wordt, kost het de ontvanger 1 energie.",
               "inspiration": "",
-              "components": "0 tot 40 inspiratie (liggende aan de hoeveelheid dezelfde soort Flawless Gems)"
+              "components": "16 inspiratie of 2 dezelfde soorten Flawless Gems"
             }
           ]
         }
