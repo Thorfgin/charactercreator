@@ -60,6 +60,8 @@
 	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	DONE
+    20260404    FIX: adjusted the Skill Gemsetter ABC based on a rulechange
+                UPDATE: Fixed outdated packages
 	20250513	FIX: adjusted the description of Life Draw (Death B) to match Ruleset.
 	20250502	FIX: adjusted duration for Strength Confusing Blow from 5 min to 30 sec. as per Ruleset.
 			

@@ -1289,7 +1289,7 @@
       "alt_skill": "",
       "category": "Crafting Skills",
       "page": 32,
-      "description": "You gain 2 Inspiration per day. \nYou can craft items using Quartz. Each Quartz used in an item costs 1 inspiration. You can use inspiration from all days at the event. Each Quartz increases the item's imbue capacity by 3. This skill also allows you to create a Basic Jewelry Piece. See the loresheet for more details.",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Quartz. Each Quartz used in an item costs 1 inspiration. You can use inspiration from all days at the event. Each Quartz increases the item's imbue capacity by 3. This skill also allows you to create a Murky Defensive Amulet. See the loresheet for more details.",
       "Requirements": {
         "skill": [],
         "any_list": []
@@ -2894,7 +2894,7 @@
       "alt_skill": "",
       "category": "Extra Crafting Skills",
       "page": 53,
-      "description": "You gain 2 Inspiration per day. \nYou can craft items using Gems. Each Gem used in an item costs 1 inspiration. You may use the inspiration from all days at the event. Each Gem provides the item with 5 higher imbue capacity. This skill also allows you to create an Expensive Jewelry. \nSee the loresheet for more details.",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Gems. Each Gem used in an item costs 1 inspiration. You may use the inspiration from all days at the event. Each Gem provides the item with 5 higher imbue capacity. This skill also allows you to create a Defensive Amulet. \nSee the loresheet for more details.",
       "Requirements": {
         "skill": [ 256 ],
         "any_list": []
@@ -2922,7 +2922,7 @@
       "alt_skill": "",
       "category": "Extra Crafting Skills",
       "page": 53,
-      "description": "You gain 2 Inspiration per day. \nYou can craft items using Flawless Gems. Each Flawless Gem used in an item costs 2 inspiration. You may use the inspiration from all days at the event. Each Flawless Gem provides the item with 10 higher imbue capacity. This skill also allows you to create a Royal Jewelry. \nSee the loresheet for more details.",
+      "description": "You gain 2 Inspiration per day. \nYou can craft items using Flawless Gems. Each Flawless Gem used in an item costs 2 inspiration. You may use the inspiration from all days at the event. Each Flawless Gem provides the item with 10 higher imbue capacity. This skill also allows you to create a Pristine Defensive Amulet. \nSee the loresheet for more details.",
       "Requirements": {
         "skill": [ 488 ],
         "any_list": []
