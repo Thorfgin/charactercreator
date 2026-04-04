@@ -11,7 +11,8 @@
     "dev": "vite",
     "build": "vite build",
     "test": "jest",
-    "lint": "eslint . --report-unused-disable-directives --max-warnings 0"
+    "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@sentry/react": "^7.73.0",
